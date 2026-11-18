@@ -20,21 +20,21 @@
   /* פלטה: רקע בהיר קריר, שחור רך וצבע הדגשה אחד. במצב כהה אותו דבר הפוך.
      אין לבן מוחלט ואין שחור מוחלט, כדי שהמסך לא יעייף את העיניים.
      החלוקה: בערך 60 אחוז רקע, 30 אחוז טקסט ואפורים, 10 אחוז הדגשה. */
-  --paper:light-dark(#f3f5f9,#1e1e1e);
-  --surface:light-dark(#fafbfd,#27282b);
-  --inner:light-dark(#e7ebf2,#313338);
-  --ink:light-dark(#1e1e1e,#f3f5f9);
+  --paper:light-dark(#f3f5f9,#151515);
+  --surface:light-dark(#fafbfd,#1d1e20);
+  --inner:light-dark(#e7ebf2,#27282c);
+  --ink:light-dark(#151515,#f3f5f9);
   --ink-soft:light-dark(#474c55,#c1c6ce);
   --ink-faint:light-dark(#5f6570,#9ba1ab);
-  --line:light-dark(#d8dde6,#3b3d42);
+  --line:light-dark(#d8dde6,#323439);
   --line-strong:light-dark(#727986,#838993);
   --brand:light-dark(#1d52de,#7fb0ff);
   --brand-hover:light-dark(#113fbb,#a6c8ff);
   --brand-tint:light-dark(#dbe6ff,#263a63);
-  --on-brand:light-dark(#f3f5f9,#1e1e1e);
+  --on-brand:light-dark(#f3f5f9,#151515);
   --focus:var(--brand);
   --stale:var(--ink-soft);
-  --scrim:light-dark(rgb(30 30 30 / 0.5),rgb(12 12 14 / 0.66));
+  --scrim:light-dark(rgb(21 21 21 / 0.5),rgb(12 12 14 / 0.66));
 
   --t-hero:clamp(2.5rem,1.5rem + 4.4vw,4.5rem);
   --t-cat:clamp(1.5rem,1.2rem + 1.4vw,2.125rem);
