@@ -398,7 +398,7 @@ const html = `<!doctype html>
 
 <header class="bar">
   <div class="wrap bar-in">
-    <div class="views" id="views" role="group" aria-label="תצוגה">${[['cards', 'כרטיסים', ICON.viewCards], ['index', 'אינדקס', ICON.viewIndex], ['gallery', 'גלריה', ICON.viewGallery]].map(([k, l, ic]) => `<button type="button" class="view-btn" data-view-set="${k}" aria-pressed="${k === 'cards'}" title="תצוגת ${l}">${ic}<span class="sr-only">תצוגת ${l}</span></button>`).join('')}</div>
+    <div class="views" id="views" role="group" aria-label="תצוגה">${[['cards', 'כרטיסים', ICON.viewCards], ['index', 'אינדקס', ICON.viewIndex], ['gallery', 'גלריה', ICON.viewGallery]].map(([k, l, ic]) => `<button type="button" class="view-btn" data-view-set="${k}" aria-pressed="${k === 'cards'}" data-tip="${l}">${ic}<span class="sr-only">תצוגת ${l}</span></button>`).join('')}</div>
     <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">האטלס</span></a>
     <p class="bar-date"><span class="bar-date-l">תאריך הבדיקה האחרונה</span> <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
     <div class="bar-actions">

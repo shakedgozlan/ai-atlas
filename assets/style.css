@@ -109,6 +109,10 @@ button:disabled{cursor:not-allowed}
 .view-btn[aria-pressed="true"]{color:var(--on-brand)}
 .view-btn[aria-pressed="true"]::before{background:var(--brand)}
 .view-btn:focus-visible{outline-offset:-3px;border-radius:999px}
+/* שם התצוגה מופיע מיד במעבר עכבר או במיקוד מקלדת. תווית של האתר עצמו, בלי ההשהיה של תווית הדפדפן. */
+.view-btn:focus-visible::after{content:attr(data-tip)}
+@media (hover:hover){.view-btn:hover::after{content:attr(data-tip)}}
+.view-btn::after{position:absolute;top:calc(100% + 8px);inset-inline-start:0;z-index:2;padding:6px 10px;border-radius:8px;background:var(--ink);color:var(--paper);font-size:.8125rem;font-weight:500;line-height:1.2;white-space:nowrap;pointer-events:none}
 @media (min-width:1440px){
   .views{position:absolute;inset-inline-start:16px;top:50%;transform:translateY(-50%)}
 }
