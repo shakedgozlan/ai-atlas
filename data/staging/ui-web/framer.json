@@ -1,0 +1,285 @@
+{
+ "id": null,
+ "slug": "framer",
+ "category_id": 5,
+ "name": "Framer",
+ "former_name": null,
+ "rename_note": null,
+ "role": "בונה אתרים חזותי עם סוכני בינה מלאכותית, מערכת תוכן, אחסון ותמיכה בריבוי שפות.",
+ "url": "https://www.framer.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "שנה חינם לסטודנטים",
+   "detail": "סטודנטים מקבלים תוכנית Basic בחינם לשנה, עם 1,000 נקודות זיכוי לבינה מלאכותית בחודש, לאתר אישי, תיק עבודות ועבודות לימודים.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תמיכה באתרים מימין לשמאל",
+   "detail": "מאז 2 באוקטובר 2025 Framer הופכת אוטומטית פריסות Stacks ו־Grids בשפות מימין לשמאל, והעדכון מזכיר במפורש עברית.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות זיכוי מתחדשות גם בחינם",
+   "detail": "התוכנית החינמית כוללת 500 נקודות זיכוי לבינה מלאכותית בחודש, דומיין חינמי של Framer ורוחב פס של 1GB.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "דומיין משלכם רק בתשלום",
+   "detail": "בתוכנית החינמית האתר מתפרסם בדומיין של Framer. דומיין מותאם דורש תוכנית בתשלום.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "עורכים נוספים בתשלום נפרד",
+   "detail": "עורך נוסף עולה 20 דולר לחודש ועורך תוכן 10 דולר לחודש. צופים בחינם.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ההפיכה האוטומטית לימין־לשמאל חלקית",
+   "detail": "ההפיכה האוטומטית חלה רק על Stacks ו־Grids, ובפרויקטים קיימים צריך להפעיל אותה ידנית בהגדרות.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים, סטודנטים ופרילנסרים שבונים אתרי תדמית ותיקי עבודות בלי לכתוב קוד.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־10 דולר לחודש (תוכנית Basic). יש תוכנית חינמית עם 500 נקודות זיכוי לבינה מלאכותית בחודש.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "500 נקודות זיכוי לבינה מלאכותית בחודש, דומיין חינמי של Framer, רוחב פס של 1GB, 1,000 עמודים, 10 אוספי CMS, העלאת קבצים עד 5MB, שפה נוספת אחת",
+    "notes": "מספר העמודים ואוספי ה־CMS מתוך השאלות הנפוצות בעמוד המחירים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Basic",
+    "price": 10,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "מדרגות של 1,000 עד 15,000 נקודות זיכוי בחודש (המחיר עולה עם המדרגה)",
+    "notes": "העמוד מציג רק מחירים חודשיים ומציין שהחיוב לפי מחזור החיוב שנבחר בקופה; מחיר שנתי נפרד לא מוצג. 10 עמדות כלולות לפי העמוד.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 30,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "מדרגות של 3,000 עד 100,000 נקודות זיכוי בחודש",
+    "notes": "Experts בתוכנית Pro צורכים 50% פחות נקודות לכל הנחיה לפי העמוד. מחיר שנתי נפרד לא מוצג.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "נקודות זיכוי בהנחת כמות",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free ללא תשלום: 500 נקודות זיכוי לבינה מלאכותית בחודש, דומיין חינמי של Framer, רוחב פס של 1GB ו־1,000 עמודים.",
+  "trial": null,
+  "unverified_notes": "העמוד מציג מתג חיוב שנתי אך רק מחירים חודשיים, ולא ברור אם 10 ו־30 דולר הם מחיר בחיוב חודשי או שנתי. לא ברור מהעמוד אם התוכנית היא לאתר או לסביבת עבודה. מחירי מדרגות הנקודות הגבוהות לא נבדקו. העמוד מציין שמס מכירה עשוי להתווסף."
+ },
+ "privacy": {
+  "text": "לפי ה־AI Notice (גרסה 1.2, בתוקף מ־18 בספטמבר 2026), בתוכניות שאינן Enterprise המשתמש מעניק ל־Framer רישיון להשתמש בקלט ובפלט לאימון המודלים שלה, אלא אם האימון כובה בהגדרות סביבת העבודה. בתוכניות Enterprise אין אימון. ספקי המודלים החיצוניים אינם רשאים לאמן על הקלט והפלט.",
+  "training_on_user_data": "כן כברירת מחדל בתוכניות שאינן Enterprise, עם אפשרות לכבות בהגדרות סביבת העבודה. ב־Enterprise לא.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי ה־AI Notice, הקלט והפלט נחשבים 'Content' של הלקוח, והלקוח אחראי לו; Framer מחזיקה בזכויות בכלי הבינה המלאכותית ובנתוני השימוש, לא בפלט. המסמך לא קובע במפורש שהפלט שייך ללקוח. אין בכך הגנה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק תיעוד API או MCP רשמי.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "אתרים: עדכון רשמי מ־2 באוקטובר 2025 מזכיר עברית וערבית ומוסיף הפיכה אוטומטית של פריסות לימין־לשמאל. שפת הממשק: המקור לא מזכיר עברית.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "company": {
+  "name": "Framer",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי של החברה לא אומת."
+ },
+ "student_benefits": {
+  "text": "תוכנית Basic בחינם לשנה (העמוד מעריך אותה ב־120 דולר) ו־1,000 נקודות זיכוי לבינה מלאכותית בחודש, לאתר אישי בלבד. נדרשים מייל מוסדי ותמונה של תעודת סטודנט, הבדיקה עד 5 ימי עבודה, ואפשר לחדש כל 11 חודשים. כרגע רק ללקוחות חדשים.",
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.framer.com/pricing",
+   "title": "עמוד המחירים של Framer",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.framer.com/legal/ai-notice",
+   "title": "Framer AI Notice, גרסה 1.2 (בתוקף מ־18 בספטמבר 2026)",
+   "official": true,
+   "published": "2026-09-18",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://www.framer.com/updates/right-to-left-layout-direction",
+   "title": "עדכון Framer: כיווניות מימין לשמאל",
+   "official": true,
+   "published": "2025-10-02",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://www.framer.com/education/students/",
+   "title": "Framer לסטודנטים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "לא אומת: תאריך הגרסה המשמעותית האחרונה של כלי הבינה המלאכותית לא נקרא במקור רשמי.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": null,
+   "evidence": "research/stage4/ui-web.md"
+  },
+  "hebrew": {
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
+  },
+  "starting_price": {
+   "amount": 10,
+   "currency": "USD",
+   "billing": null,
+   "plan": "Basic",
+   "verified": false,
+   "label": "מ־10 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": null,
+    "of": 0,
+    "value": null,
+    "evidence": "research/stage4/ui-web.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/ui-web.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "500 נקודות זיכוי לבינה מלאכותית בחודש בתוכנית החינמית.",
+    "evidence": "research/stage4/ui-web.md"
+   }
+  }
+ }
+}

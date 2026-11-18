@@ -1,0 +1,358 @@
+{
+ "id": null,
+ "slug": "webflow",
+ "category_id": 5,
+ "name": "Webflow",
+ "former_name": null,
+ "rename_note": null,
+ "role": "פלטפורמה לעיצוב, בנייה ואחסון של אתרים מקצועיים, עם כלי בינה מלאכותית לבניית אתר מהנחיה, לכתיבה ול־SEO.",
+ "url": "https://webflow.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": "תוכנית הסטודנטים של Webflow הופסקה.",
+  "date_as_written": "February 28, 2026",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "אפשר להתחיל בחינם עם בינה מלאכותית",
+   "detail": "תוכנית האתר Starter חינמית וכוללת את Webflow AI, גישה לשרת MCP, 2 עמודים סטטיים ודומיין webflow.io. סביבת עבודה חינמית מקבלת 200 נקודות זיכוי לבינה מלאכותית בחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "אין אימון על תוכן הלקוחות",
+   "detail": "לפי Webflow, החברה לא משתמשת בנתוני לקוחות לאימון מודלים גנרטיביים, וההסכמים עם ספקי המודלים אוסרים עליהם לאמן על הנתונים.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "כלי בינה מלאכותית מגוונים",
+   "detail": "עמוד המחירים מונה בניית אתר מהנחיה, יצירת מקטעי עיצוב, יצירת רכיבי קוד, כתיבת תוכן ושיפור SEO ו־AEO.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "אין יותר הנחה לסטודנטים",
+   "detail": "תוכנית Webflow for Students הופסקה ב־28 בפברואר 2026, ואין תוכנית חלופית. החלופה היא תוכנית Starter החינמית.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "התוכנית החינמית מצומצמת",
+   "detail": "Starter כוללת 2 עמודים סטטיים, 1GB רוחב פס ו־50 שליחות טופס, ופרסום בדומיין מותאם לא אפשרי בה.",
+   "source_ids": [
+    "s1",
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מבנה תמחור כפול",
+   "detail": "משלמים בנפרד על תוכנית לאתר ועל תוכנית לסביבת העבודה, ובנוסף על עמדות עורכים (Full seat עולה 39 דולר לחודש בחיוב שנתי).",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים ומפתחי אתרים, פרילנסרים וסוכנויות שבונים אתרים מקצועיים עם מערכת תוכן.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "תוכנית אתר מ־15 דולר לחודש בחיוב שנתי (Basic). יש תוכנית Starter חינמית עם דומיין webflow.io.",
+  "model": "מנוי לאתר ולסביבת עבודה, עם נקודות זיכוי לבינה מלאכותית",
+  "plans": [
+   {
+    "name": "Starter (אתר)",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לאתר",
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "דומיין webflow.io, CMS מוגבל, 2 עמודים סטטיים, 1GB רוחב פס, 50 שליחות טופס, Webflow AI ושרת MCP, אחסון 5 אפליקציות ב־Webflow Cloud",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Basic (אתר)",
+    "price": 15,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לאתר",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "לאתרים פשוטים בלי CMS",
+    "notes": "מחיר בחיוב חודשי לא הוצג בעמוד שנקרא. בתוספת מסים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Premium (אתר)",
+    "price": 25,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לאתר",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "לאתרים עשירים בתוכן עם CMS ותנועה גבוהה",
+    "notes": "מחיר בחיוב חודשי לא הוצג בעמוד שנקרא.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Starter (סביבת עבודה)",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "200 נקודות זיכוי לבינה מלאכותית בחודש",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Freelancer (סביבת עבודה)",
+    "price": 16,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "300 נקודות זיכוי לבינה מלאכותית בחודש",
+    "notes": "לפרילנסרים עם מעט לקוחות.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Core (סביבת עבודה)",
+    "price": 19,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "300 נקודות זיכוי לבינה מלאכותית בחודש",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Agency (סביבת עבודה)",
+    "price": 35,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "400 נקודות זיכוי לבינה מלאכותית בחודש",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Growth (סביבת עבודה)",
+    "price": 49,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "400 נקודות זיכוי לבינה מלאכותית בחודש",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "תוכנית Team לפלטפורמה עולה 2,500 דולר לחודש בחוזה שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית האתר Starter ותוכנית סביבת העבודה Starter חינמיות: דומיין webflow.io, 2 עמודים סטטיים, 1GB רוחב פס, 50 שליחות טופס, Webflow AI ו־200 נקודות זיכוי לבינה מלאכותית בחודש לסביבת העבודה.",
+  "trial": null,
+  "unverified_notes": "בעמוד שנקרא הופיעו רק מחירים בחיוב שנתי; מחירי חיוב חודשי לתוכניות לא אומתו. העמוד מציין שסדר העמודות בטבלת הנקודות נראה לא עקבי, ולכן נלקחו המספרים מרשימות התכונות של כל תוכנית. לא ברור באילו תוכניות אתר נכלל 'Build a site'. עמדות: Full seat 39 דולר ו־Limited seat 15 דולר לחודש בחיוב שנתי. תוספת של 2,000 נקודות זיכוי עולה 20 דולר לחודש בחיוב שנתי."
+ },
+ "privacy": {
+  "text": "לפי עמוד הגישה של Webflow לבינה מלאכותית, Webflow לא משתמשת בנתוני לקוחות לאימון מודלים גנרטיביים, וההנחיות והפלט לא משמשים לשיפור מודלי בסיס. ההסכמים עם ספקים חיצוניים אוסרים עליהם לאמן על הנתונים. מנהלי סביבת עבודה יכולים לכבות את יכולות הבינה המלאכותית.",
+  "training_on_user_data": "לא, לפי המקור.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "העמוד שנקרא אינו עוסק בבעלות על הפלט ומפנה לתנאי המוצר, שלא נקראו.",
+  "watermark": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "עמוד המחירים מציין גישה לשרת MCP בתוכניות האתר. תיעוד ה־API לא נבדק.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "שרת MCP של Webflow"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "לא אומת: עמוד רשמי על שפות או על תמיכה בימין־לשמאל לא נקרא.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Webflow, Inc.",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "תוכנית Webflow for Students הופסקה ב־28 בפברואר 2026 ואין תוכנית חלופית מתוכננת. מי שקיבל הנחה לפני כן שומר אותה עד סוף התקופה. החלופה היא תוכנית Starter החינמית.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://webflow.com/pricing",
+   "title": "עמוד המחירים של Webflow",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://webflow.com/ai/our-approach",
+   "title": "Webflow AI: Our approach",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://help.webflow.com/hc/en-us/articles/33961230226963-Webflow-for-students",
+   "title": "מרכז העזרה של Webflow: Webflow for students (סיום התוכנית)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "לא אומת: תאריך הגרסה המשמעותית האחרונה של כלי הבינה המלאכותית לא נקרא במקור רשמי.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": null,
+   "evidence": "research/stage4/ui-web.md"
+  },
+  "hebrew": {
+   "value": "לא אומת",
+   "label": "עברית לא אומתה",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 15,
+   "currency": "USD",
+   "billing": "שנתי",
+   "plan": "Basic",
+   "verified": true,
+   "label": "מ־15 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": null,
+    "of": 0,
+    "value": null,
+    "evidence": "research/stage4/ui-web.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/ui-web.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "200 נקודות זיכוי לבינה מלאכותית בחודש בסביבת העבודה החינמית.",
+    "evidence": "research/stage4/ui-web.md"
+   }
+  }
+ }
+}
