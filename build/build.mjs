@@ -227,10 +227,8 @@ const heroSentence = liveCats.length === 1
 
 const facts = [
   [total, 'כלים באטלס'],
-  [vFull, 'עם מחיר שאומת ממקור רשמי'],
-  [vPart, 'עם מחיר שאומת חלקית'],
+  [dateShort(data.snapshot_date), 'תאריך הבדיקה'],
 ];
-if (vNone) facts.push([vNone, 'עם מחיר שלא אומת']);
 
 const html = `<!doctype html>
 <html lang="he" dir="rtl">
