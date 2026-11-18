@@ -21,6 +21,7 @@ const CURRENCY = { USD: 'דולר', EUR: 'אירו', GBP: 'לירות שטרלי
 const num = (n) => Number(n).toLocaleString('en-US', { maximumFractionDigits: 2 });
 
 const ICON = {
+  expand: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg>',
   price: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12.2V4.5h7.7l9.3 9.3-7.7 7.7-9.3-9.3Z"/><path d="M8 8.9v.2"/></svg>',
   good: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.25"/><path d="m7.75 12.4 2.9 2.9 5.6-6.1"/></svg>',
   warn: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6 2.6 19.8h18.8L12 3.6Z"/><path d="M12 10v4.6"/><path d="M12 17.1v.2"/></svg>',
@@ -49,9 +50,9 @@ function logoHtml(t) {
   if (!has(l.file)) return '';
   const alt = `הלוגו של ${t.name}`;
   if (has(l.file_dark)) {
-    return `<span class="logo"><img class="logo-light" src="${esc(l.file)}" alt="${esc(alt)}" height="28" loading="lazy" decoding="async"><img class="logo-dark" src="${esc(l.file_dark)}" alt="${esc(alt)}" height="28" loading="lazy" decoding="async"></span>`;
+    return `<span class="logo"><img class="logo-light" src="${esc(l.file)}" alt="${esc(alt)}" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="${esc(l.file_dark)}" alt="${esc(alt)}" width="56" height="56" loading="lazy" decoding="async"></span>`;
   }
-  return `<span class="logo"><img src="${esc(l.file)}" alt="${esc(alt)}" height="28" loading="lazy" decoding="async"></span>`;
+  return `<span class="logo"><img src="${esc(l.file)}" alt="${esc(alt)}" width="56" height="56" loading="lazy" decoding="async"></span>`;
 }
 
 function priceLine(t) {
@@ -116,42 +117,85 @@ function sourcesHtml(t) {
     const stale = s.stale ? '<span class="tag tag-stale">מקור ישן</span> ' : '';
     return `<li class="src"><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}<span class="sr-only"> (נפתח בלשונית חדשה)</span></a><span class="src-meta">${stale}${esc(bits.join(', '))}</span></li>`;
   }).join('');
-  return `<section class="fact fact-sources"><h5>מקורות</h5><ol class="sources">${items}</ol></section>`;
+  return `<ol class="sources">${items}</ol>`;
 }
 
-function fullHtml(t) {
+// חלון הפרטים של כלי: נפתח על כל המסך, והתוכן מחולק לחמש קבוצות קבועות.
+// קבוצה בלי תוכן בקובץ הנתונים לא מוצגת, וגם הקישור אליה בשורת הניווט לא מוצג.
+function sheetHtml(t) {
   const p = t.pricing || {};
-  const out = [];
-  if (t.strengths?.[2]) out.push(`<section class="fact"><h5>יתרון נוסף</h5><ul class="points">${point(t.strengths[2])}</ul></section>`);
-  if (t.limitations?.[2]) out.push(`<section class="fact"><h5>מגבלה נוספת</h5><ul class="points">${point(t.limitations[2])}</ul></section>`);
+  const id = t.id;
+  const list = (arr) => (arr?.length ? `<ul class="points">${arr.map(point).join('')}</ul>` : '');
+  const secs = [];
+  const sec = (key, title, inner) => { if (inner) secs.push({ key, title, html: `<section class="sec" id="d${id}-${key}" aria-labelledby="d${id}-${key}-h"><h4 id="d${id}-${key}-h" tabindex="-1">${title}</h4>${inner}</section>` }); };
+
+  const key = [
+    t.strengths?.length ? `<div class="panel panel-pro"><h5>${ICON.good}מה עובד טוב</h5>${list(t.strengths)}</div>` : '',
+    t.limitations?.length ? `<div class="panel panel-con"><h5>${ICON.warn}מה חשוב לדעת</h5>${list(t.limitations)}</div>` : '',
+    has(t.audience) ? `<div class="panel panel-who"><h5>למי זה מתאים</h5><p>${esc(t.audience)}</p></div>` : '',
+  ].filter(Boolean).join('');
+  sec('key', 'יתרונות ומגבלות', key ? `<div class="key-grid">${key}</div>` : '');
 
   const plans = p.plans?.length ? `<ul class="plans">${p.plans.map(planHtml).join('')}</ul>` : '';
-  out.push(block('מחיר מלא', `<p><span class="sub">מצב האימות:</span> ${esc(p.verification || 'לא אומת')}</p>${sub('שיטת התמחור', p.model)}${plans}`));
-  out.push(block('מה כלול בחינם', para(p.free_tier)));
-  out.push(block('מה ניתן רק לתקופת ניסיון', para(p.trial)));
-  out.push(block('מה לא אומת בתמחור', para(p.unverified_notes)));
-  out.push(block('פרטיות ואימון על נתוני משתמשים', para(t.privacy?.text) + sub('אימון על נתוני משתמשים', t.privacy?.training_on_user_data)));
-  out.push(block('זכויות מסחריות על התוצרים', para(t.commercial_rights?.text) + sub('סימן מים', t.commercial_rights?.watermark)));
-  out.push(block('גישה למפתחים', sub('ממשק למפתחים', t.developer_access?.api) + para(t.developer_access?.text)));
-  if (t.integrations?.items?.length) out.push(block('אינטגרציות', `<ul class="plain">${t.integrations.items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>`));
-  if (t.platforms?.items?.length) out.push(block('פלטפורמות', `<ul class="plain">${t.platforms.items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>`));
-  out.push(block('עברית', para(t.hebrew?.text)));
-  out.push(block('החברה', has(t.company?.name) ? `<p>${esc(t.company.name)}${has(t.company.country) ? ', ' + esc(t.company.country) : ''}</p>` : ''));
-  out.push(block('הטבות לסטודנטים', para(t.student_benefits?.text)));
-  out.push(block('שינוי שם', para(t.rename_note)));
-  out.push(block('מצב המוצר', sub('מצב', t.status?.state) + para(t.status?.note) + sub('התאריך כפי שהוא כתוב במקור', t.status?.date_as_written)));
-  if (!has(t.logo?.file)) out.push(block('למה אין כאן לוגו', para(t.logo?.missing_reason)));
-  out.push(sourcesHtml(t));
-  if (has(t.checked_date)) out.push(`<p class="checked">תאריך הבדיקה של הכלי: ${dateShort(t.checked_date)}</p>`);
-  return out.filter(Boolean).join('\n');
+  const priceFacts = [
+    block('מה כלול בחינם', para(p.free_tier)),
+    block('מה ניתן רק לתקופת ניסיון', para(p.trial)),
+    block('מה לא אומת בתמחור', para(p.unverified_notes)),
+  ].filter(Boolean).join('');
+  const priceMeta = `<p class="sec-meta"><span class="sub">מצב האימות:</span> ${esc(p.verification || 'לא אומת')}${has(p.model) ? `<br><span class="sub">שיטת התמחור:</span> ${esc(p.model)}` : ''}</p>`;
+  sec('price', 'מחיר', `${priceMeta}${plans}${priceFacts ? `<div class="facts">${priceFacts}</div>` : ''}`);
+
+  const terms = [
+    block('פרטיות ואימון על נתוני משתמשים', para(t.privacy?.text) + sub('אימון על נתוני משתמשים', t.privacy?.training_on_user_data)),
+    block('זכויות מסחריות על התוצרים', para(t.commercial_rights?.text) + sub('סימן מים', t.commercial_rights?.watermark)),
+  ].filter(Boolean).join('');
+  sec('terms', 'פרטיות וזכויות', terms ? `<div class="facts">${terms}</div>` : '');
+
+  const more = [
+    block('גישה למפתחים', sub('ממשק למפתחים', t.developer_access?.api) + para(t.developer_access?.text)),
+    t.integrations?.items?.length ? block('אינטגרציות', `<ul class="plain">${t.integrations.items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>`) : '',
+    t.platforms?.items?.length ? block('פלטפורמות', `<ul class="plain">${t.platforms.items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>`) : '',
+    block('עברית', para(t.hebrew?.text)),
+    block('החברה', has(t.company?.name) ? `<p>${esc(t.company.name)}${has(t.company.country) ? ', ' + esc(t.company.country) : ''}</p>` : ''),
+    block('הטבות לסטודנטים', para(t.student_benefits?.text)),
+    block('שינוי שם', para(t.rename_note)),
+    block('מצב המוצר', sub('מצב', t.status?.state) + para(t.status?.note) + sub('התאריך כפי שהוא כתוב במקור', t.status?.date_as_written)),
+    !has(t.logo?.file) ? block('למה אין כאן לוגו', para(t.logo?.missing_reason)) : '',
+  ].filter(Boolean).join('');
+  sec('more', 'עוד על הכלי', more ? `<div class="facts">${more}</div>` : '');
+
+  const checked = has(t.checked_date) ? `<p class="checked">תאריך הבדיקה של הכלי: ${dateShort(t.checked_date)}</p>` : '';
+  const src = sourcesHtml(t);
+  sec('src', 'מקורות', src || checked ? `${src}${checked}` : '');
+
+  const nav = secs.map((x) => `<li><a class="chip" href="#d${id}-${x.key}" data-sheet-jump>${x.title}</a></li>`).join('');
+  const former = has(t.former_name) ? ` <span class="sheet-former">לשעבר <bdi>${esc(t.former_name)}</bdi></span>` : '';
+  return `
+  <dialog class="sheet" id="detail-${id}" aria-labelledby="detail-${id}-h">
+    <header class="sheet-head">
+      <div class="wrap sheet-head-in">
+        ${logoHtml(t)}
+        <h3 class="sheet-title" id="detail-${id}-h" tabindex="-1"><span class="num" aria-hidden="true">${pad(id)}</span><span class="sr-only">כל הפרטים על </span><bdi>${esc(t.name)}</bdi></h3>
+        <button type="button" class="btn btn-close" data-sheet-close>${ICON.close}<span>סגירה</span></button>
+      </div>
+    </header>
+    <div class="sheet-scroll" tabindex="-1">
+      <div class="wrap sheet-body">
+        <div class="sheet-intro">
+          <p class="sheet-role">${esc(t.role)}${former}</p>
+          <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
+        </div>
+        <nav class="sheet-nav" aria-label="החלקים בעמוד הפרטים של ${esc(t.name)}"><ul role="list">${nav}</ul></nav>
+        ${secs.map((x) => x.html).join('\n        ')}
+      </div>
+    </div>
+  </dialog>`;
 }
 
 function cardHtml(t) {
   const cat = catById.get(t.category_id);
   const search = [t.name, t.former_name, t.role, cat?.name].filter(has).join(' ').toLowerCase();
   const former = has(t.former_name) ? `<p class="former">לשעבר <bdi>${esc(t.former_name)}</bdi></p>` : '';
-  const strengths = (t.strengths || []).slice(0, 2).map(point).join('');
-  const limits = (t.limitations || []).slice(0, 2).map(point).join('');
   return `
 <li class="card" id="tool-${t.id}" data-cat="${t.category_id}" data-search="${esc(search)}">
   <div class="card-head">
@@ -166,19 +210,11 @@ function cardHtml(t) {
     </div>
     ${priceLine(t)}
     <div class="card-actions">
-      <button type="button" class="btn btn-open" data-toggle aria-expanded="true" aria-controls="body-${t.id}"><span data-label>סגירת הפרטים</span><span class="sr-only"> על ${esc(t.name)}</span>${ICON.chevron}</button>
+      <button type="button" class="btn btn-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-${t.id}"><span>פרטים נוספים</span><span class="sr-only"> על ${esc(t.name)}</span>${ICON.expand}</button>
       <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
     </div>
   </div>
-  <div class="card-body" id="body-${t.id}">
-    ${strengths ? `<section class="panel"><h4>${ICON.good}מה עובד טוב</h4><ul class="points">${strengths}</ul></section>` : ''}
-    ${limits ? `<section class="panel"><h4>${ICON.warn}מה חשוב לדעת</h4><ul class="points">${limits}</ul></section>` : ''}
-    ${has(t.audience) ? `<section class="panel"><h4>למי זה מתאים</h4><p>${esc(t.audience)}</p></section>` : ''}
-    <button type="button" class="btn btn-full" data-toggle aria-expanded="true" aria-controls="full-${t.id}"><span data-label-full>כל הפרטים: מחיר מלא, פרטיות, זכויות ומקורות</span><span class="sr-only"> על ${esc(t.name)}</span>${ICON.chevron}</button>
-    <div class="full" id="full-${t.id}">
-${fullHtml(t)}
-    </div>
-  </div>
+${sheetHtml(t)}
 </li>`;
 }
 

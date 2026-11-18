@@ -1,5 +1,5 @@
-// התנהגות האתר: פתיחה וסגירה של כרטיסים, מצב כהה, והחלון ״מוצאים כיוון״.
-// בלי הקובץ הזה כל התוכן עדיין גלוי, רק בלי קיפול ובלי חיפוש.
+// התנהגות האתר: חלון הפרטים של כל כלי, מצב כהה, והחלון ״מוצאים כיוון״.
+// בלי הקובץ הזה כל התוכן עדיין גלוי: הפרטים מוצגים מתחת לכל כרטיס, בלי חלון ובלי חיפוש.
 (function () {
   'use strict';
   var doc = document;
@@ -7,21 +7,35 @@
   var $ = function (sel, el) { return (el || doc).querySelector(sel); };
   var $$ = function (sel, el) { return Array.prototype.slice.call((el || doc).querySelectorAll(sel)); };
 
-  /* ---------- פתיחה וסגירה ---------- */
-  function setOpen(btn, open) {
-    var target = doc.getElementById(btn.getAttribute('aria-controls'));
-    if (!target) return;
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    target.hidden = !open;
-    var label = $('[data-label]', btn);
-    if (label) label.textContent = open ? 'סגירת הפרטים' : 'פרטים נוספים';
-    var card = btn.closest('.card');
-    if (card && btn.classList.contains('btn-open')) card.classList.toggle('is-open', open);
-  }
-  $$('[data-toggle]').forEach(function (btn) {
-    setOpen(btn, false);
+  /* ---------- חלון הפרטים של כלי ---------- */
+  // הדפדפן מטפל בעצמו במקש היציאה, בכליאת המיקוד בתוך החלון ובהחזרת המיקוד לכפתור שפתח אותו.
+  var reduceMotion = function () { return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; };
+  $$('[data-sheet-open]').forEach(function (btn) {
+    var sheet = doc.getElementById(btn.getAttribute('aria-controls'));
+    if (!sheet || typeof sheet.showModal !== 'function') { btn.hidden = true; return; }
     btn.addEventListener('click', function () {
-      setOpen(btn, btn.getAttribute('aria-expanded') !== 'true');
+      sheet.showModal();
+      var scroller = $('.sheet-scroll', sheet);
+      if (scroller) scroller.scrollTop = 0;
+      var title = $('.sheet-title', sheet);
+      if (title) title.focus({ preventScroll: true });
+    });
+  });
+  $$('.sheet').forEach(function (sheet) {
+    var closeBtn = $('[data-sheet-close]', sheet);
+    if (closeBtn) closeBtn.addEventListener('click', function () { sheet.close(); });
+    $$('[data-sheet-jump]', sheet).forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var target = doc.getElementById(a.getAttribute('href').slice(1));
+        if (!target) return;
+        e.preventDefault();
+        // גוללים רק את אזור התוכן של החלון, כדי שהכותרת הקבועה לא תזוז
+        var scroller = $('.sheet-scroll', sheet);
+        var top = target.getBoundingClientRect().top - scroller.getBoundingClientRect().top + scroller.scrollTop - 16;
+        scroller.scrollTo({ top: Math.max(0, top), behavior: reduceMotion() ? 'auto' : 'smooth' });
+        var h = $('h4', target);
+        if (h) h.focus({ preventScroll: true });
+      });
     });
   });
 

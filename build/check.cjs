@@ -38,13 +38,13 @@ const audit = () => {
     const r = el.getBoundingClientRect();
     if (r.right > innerWidth + 1 || r.left < -1) out.clipped.push(`${el.className || el.tagName} "${n.nodeValue.trim().slice(0, 24)}"`);
   }
-  document.querySelectorAll('button, a.btn, input, select, .results a, .cat-nav a').forEach((el) => {
+  document.querySelectorAll('button, a.btn, a.chip, input, select, .results a, .cat-nav a').forEach((el) => {
     if (!visible(el) || el.closest('[hidden]')) return;
     if (el.closest('dialog') && !el.closest('dialog[open]')) return;
     const r = el.getBoundingClientRect();
     if (r.height < 43.5) out.targets.push(`${el.id || el.className} ${Math.round(r.height)}px`);
   });
-  document.querySelectorAll('.card-head, .card-body, .panel, .plan, .fact').forEach((el) => {
+  document.querySelectorAll('.card-head, .sheet-head, .sec, .panel, .plan, .fact').forEach((el) => {
     if (visible(el) && el.scrollWidth > el.clientWidth + 1) out.clipped.push(`scroll ${el.className}`);
   });
   return out;
@@ -73,45 +73,61 @@ const audit = () => {
       await report('סגור');
 
       // גודלי טקסט
-      const sizes = await page.evaluate(() => Object.fromEntries(['.role', '.price-text', '.detail', '.lead', '.name', '.panel h4', '.src'].map((s) => [s, parseFloat(getComputedStyle(document.querySelector(s)).fontSize)])));
+      const sizes = await page.evaluate(() => Object.fromEntries(['.role', '.price-text', '.detail', '.lead', '.name', '.panel h5', '.src'].map((s) => [s, parseFloat(getComputedStyle(document.querySelector(s)).fontSize)])));
       note(sizes['.role'] >= 16 && sizes['.price-text'] >= 16 && sizes['.detail'] >= 16 && sizes['.lead'] >= 16, `${tag} טקסט רגיל מתחת ל־16`, JSON.stringify(sizes));
       note(sizes['.src'] <= 12, `${tag} מידע טכני מעל 12`, String(sizes['.src']));
       note(sizes['.name'] >= 24, `${tag} שם הכלי קטן`, String(sizes['.name']));
 
-      // ראשי כרטיסים שווים בגובה בשורה, ופתיחה לא מותחת את השכן
+      // כרטיסים באותה שורה שווים בגובה
       const cards = page.locator('.card');
       const n = await cards.count();
       const box = async (sel) => page.locator(sel).first().boundingBox();
       if (width === 1440) {
         const h1 = (await box('#tool-1 .card-head')).height, h2 = (await box('#tool-2 .card-head')).height;
-        note(Math.abs(h1 - h2) < 1, `${tag} גובה כרטיסים סגורים לא אחיד`, `${h1} / ${h2}`);
-        await page.click('#tool-2 .btn-open');
-        const h1b = (await box('#tool-1')).height;
-        const visibleSurface = await page.evaluate(() => { const b = document.querySelector('#body-1'); return b.hidden; });
-        note(visibleSurface && Math.abs((await box('#tool-1 .card-head')).height - h1) < 1, `${tag} פתיחה מנפחת את הכרטיס השכן`, String(h1b));
-        await page.click('#tool-2 .btn-open');
+        note(Math.abs(h1 - h2) < 1, `${tag} גובה כרטיסים לא אחיד`, `${h1} / ${h2}`);
       }
 
-      // פתיחה וסגירה, ראשונה ומשנית
-      const open = page.locator('#tool-2 .btn-open'), full = page.locator('#tool-2 .btn-full');
-      note((await open.getAttribute('aria-expanded')) === 'false' && !(await page.locator('#body-2').isVisible()), `${tag} כרטיס לא סגור בהתחלה`);
+      // חלון הפרטים: פתיחה במקלדת, מיקוד, מילוי המסך, ניווט פנימי וסגירה
+      const open = page.locator('#tool-2 [data-sheet-open]');
+      const isOpen = (id) => page.locator(`#detail-${id}`).evaluate((d) => d.open);
+      note(!(await isOpen(2)), `${tag} חלון הפרטים פתוח בהתחלה`);
       await open.focus(); await page.keyboard.press('Enter');
-      note((await open.getAttribute('aria-expanded')) === 'true' && await page.locator('#body-2').isVisible(), `${tag} פתיחה במקלדת`);
-      note(!(await page.locator('#full-2').isVisible()), `${tag} פתיחה משנית גלויה כברירת מחדל`);
-      note((await page.locator('#body-2 .panel').nth(0).locator('.points > li').count()) === 2 && (await page.locator('#body-2 .panel').nth(1).locator('.points > li').count()) === 2, `${tag} לא שני יתרונות ושתי מגבלות`);
-      await full.focus(); await page.keyboard.press('Space');
-      note((await full.getAttribute('aria-expanded')) === 'true' && await page.locator('#full-2').isVisible(), `${tag} פתיחה משנית`);
-      if (shots) { await page.locator('#tool-2').scrollIntoViewIfNeeded(); await page.screenshot({ path: path.join(shots, `${tag}-2-open.png`) }); }
-      await full.click();
-      note(!(await page.locator('#full-2').isVisible()), `${tag} סגירת הפתיחה המשנית`);
+      await page.waitForTimeout(300);
+      note(await isOpen(2), `${tag} חלון הפרטים לא נפתח במקלדת`);
+      note(await page.evaluate(() => document.activeElement.id === 'detail-2-h'), `${tag} המיקוד לא עובר לכותרת החלון`);
+      const fill = await page.locator('#detail-2').boundingBox();
+      note(Math.abs(fill.width - width) < 1 && fill.x === 0 && fill.y === 0, `${tag} החלון לא ממלא את המסך`, JSON.stringify(fill));
+      note((await page.locator('#detail-2 .panel-pro .points > li').count()) >= 2 && (await page.locator('#detail-2 .panel-con .points > li').count()) >= 2, `${tag} חסרים יתרונות או מגבלות בחלון`);
+      const chips = await page.locator('#detail-2 .chip').count();
+      note(chips === (await page.locator('#detail-2 .sec').count()) && chips >= 3, `${tag} שורת הניווט לא תואמת את החלקים`, String(chips));
+      if (shots) await page.screenshot({ path: path.join(shots, `${tag}-2-sheet.png`) });
+      await page.locator('#detail-2 .chip').last().click();
+      await page.waitForTimeout(1500);
+      note(await page.evaluate(() => document.activeElement.id === 'd2-src-h'), `${tag} קפיצה לחלק בחלון`);
+      note(await page.locator('#d2-src-h').evaluate((h) => { const r = h.getBoundingClientRect(); const head = document.querySelector('#detail-2 .sheet-head').getBoundingClientRect(); return head.top === 0 && r.top >= head.bottom && r.bottom <= innerHeight; }), `${tag} החלק שקפצו אליו לא נראה`);
+      // המיקוד נשאר בתוך החלון
+      const trapped = await page.evaluate(async () => { const d = document.querySelector('#detail-2'); return d.matches(':modal') && !document.querySelector('#finder-open').closest('dialog'); });
+      note(trapped, `${tag} החלון לא נפתח כחלון חוסם`);
+      await page.keyboard.press('Escape');
+      note(!(await isOpen(2)), `${tag} מקש היציאה לא סוגר את חלון הפרטים`);
+      note(await page.evaluate(() => document.activeElement.matches('#tool-2 [data-sheet-open]')), `${tag} המיקוד לא חוזר לכפתור הפרטים`);
       await open.click();
-      note(!(await page.locator('#body-2').isVisible()), `${tag} סגירת כרטיס`);
+      await page.locator('#detail-2 [data-sheet-close]').click();
+      note(!(await isOpen(2)), `${tag} כפתור הסגירה לא סוגר`);
+      note(await page.evaluate(() => document.activeElement.matches('#tool-2 [data-sheet-open]')), `${tag} המיקוד לא חוזר אחרי כפתור הסגירה`);
+      note(await page.evaluate(() => getComputedStyle(document.documentElement).overflow !== 'hidden'), `${tag} הגלילה בעמוד נשארת נעולה`);
 
-      // הכול פתוח: כרטיס עם הרבה תוכן, שמות ארוכים, מקור ישן, מחיר לא מאומת
-      await page.evaluate(() => document.querySelectorAll('[data-toggle][aria-expanded="false"]').forEach((b) => b.click()));
-      await report('הכול פתוח');
-      if (shots) await page.screenshot({ path: path.join(shots, `${tag}-3-all-open.png`), fullPage: true });
-      await page.evaluate(() => document.querySelectorAll('[data-toggle][aria-expanded="true"]').forEach((b) => b.click()));
+      // כל חלון פרטים, בראש ובתחתית: כרטיס עם הרבה תוכן, שמות ארוכים, מקור ישן, מחיר לא מאומת
+      for (let i = 0; i < n; i++) {
+        const id = (await cards.nth(i).getAttribute('id')).replace('tool-', '');
+        await page.locator(`#tool-${id} [data-sheet-open]`).click();
+        await page.waitForTimeout(250);
+        await report(`חלון הפרטים של כלי ${id}`);
+        await page.locator(`#detail-${id} .sheet-scroll`).evaluate((el) => { el.style.scrollBehavior = 'auto'; el.scrollTop = el.scrollHeight; });
+        await report(`תחתית חלון הפרטים של כלי ${id}`);
+        if (shots && i === 0) await page.screenshot({ path: path.join(shots, `${tag}-3-sheet-end.png`) });
+        await page.keyboard.press('Escape');
+      }
 
       // קישורים ולוגואים
       const links = await page.evaluate(() => [...document.querySelectorAll('a[href^="http"]')].filter((a) => a.target !== '_blank' || !/noopener/.test(a.rel)).length);
@@ -200,7 +216,8 @@ const audit = () => {
   const ctx = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 760 } });
   const p = await ctx.newPage();
   await p.goto('file://' + file);
-  note(await p.locator('#body-1').isVisible() && await p.locator('#full-1').isVisible(), 'בלי סקריפטים התוכן מוסתר');
+  note(await p.locator('#detail-1').isVisible() && await p.locator('#d1-src').isVisible(), 'בלי סקריפטים התוכן מוסתר');
+  note(!(await p.locator('#tool-1 [data-sheet-open]').isVisible()), 'בלי סקריפטים כפתור הפרטים מוצג');
   await ctx.close();
   await browser.close();
 
