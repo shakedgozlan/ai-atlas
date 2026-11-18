@@ -14,7 +14,7 @@
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     target.hidden = !open;
     var label = $('[data-label]', btn);
-    if (label) label.textContent = open ? 'סגירה' : 'פתיחה';
+    if (label) label.textContent = open ? 'סגירת הפרטים' : 'פרטים נוספים';
     var card = btn.closest('.card');
     if (card && btn.classList.contains('btn-open')) card.classList.toggle('is-open', open);
   }

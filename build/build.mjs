@@ -56,13 +56,19 @@ function logoHtml(t) {
 function priceLine(t) {
   const p = t.pricing || {};
   const v = p.verification;
-  const mark = v === 'אומת ממקור רשמי' ? ['full', ICON.vFull] : v === 'אומת חלקית' ? ['part', ICON.vPart] : ['none', ICON.vNone];
   let text;
   if (has(p.summary_line)) text = esc(p.summary_line);
   else if (v === 'אומת חלקית') text = 'התמחור אומת רק בחלקו. מה שאומת מופיע בכל הפרטים.';
   else text = 'תמחור לא אומת.';
-  const label = has(p.summary_line) || v === 'אומת חלקית' ? esc(v) : 'לא אומת';
-  return `<p class="price"><span class="verify verify-${mark[0]}">${mark[1]}${label}</span><span class="price-text">${text}</span></p>`;
+  return `<p class="price"><span class="price-text">${text}</span></p>`;
+}
+
+function verifyPill(t) {
+  const p = t.pricing || {};
+  const v = p.verification;
+  const mark = v === 'אומת ממקור רשמי' ? ['full', ICON.vFull] : v === 'אומת חלקית' ? ['part', ICON.vPart] : ['none', ICON.vNone];
+  const label = !has(p.summary_line) && v !== 'אומת חלקית' ? 'מחיר לא אומת' : v === 'אומת ממקור רשמי' ? 'מחיר אומת' : v === 'אומת חלקית' ? 'מחיר אומת חלקית' : 'מחיר לא אומת';
+  return `<span class="verify verify-${mark[0]}">${mark[1]}${label}</span>`;
 }
 
 function point(x) {
@@ -142,14 +148,19 @@ function cardHtml(t) {
   return `
 <li class="card" id="tool-${t.id}" data-cat="${t.category_id}" data-search="${esc(search)}">
   <div class="card-head">
-    <div class="card-top"><span class="num" aria-hidden="true">${pad(t.id)}</span>${logoHtml(t)}</div>
-    <h3 class="name" tabindex="-1"><span class="sr-only">כלי מספר ${t.id}: </span><bdi>${esc(t.name)}</bdi></h3>
-    ${former}
-    <p class="role">${esc(t.role)}</p>
+    <div class="card-id${has(t.logo?.file) ? '' : ' no-logo'}">
+      ${logoHtml(t)}
+      <div class="card-meta">
+        <div class="card-top"><span class="num" aria-hidden="true">${pad(t.id)}</span>${verifyPill(t)}</div>
+        <h3 class="name" tabindex="-1"><span class="sr-only">כלי מספר ${t.id}: </span><bdi>${esc(t.name)}</bdi></h3>
+        ${former}
+        <p class="role">${esc(t.role)}</p>
+      </div>
+    </div>
     ${priceLine(t)}
     <div class="card-actions">
-      <button type="button" class="btn btn-open" data-toggle aria-expanded="true" aria-controls="body-${t.id}"><span data-label>סגירה</span><span class="sr-only"> של הפרטים על ${esc(t.name)}</span>${ICON.chevron}</button>
-      <a class="btn btn-quiet" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
+      <button type="button" class="btn btn-open" data-toggle aria-expanded="true" aria-controls="body-${t.id}">${ICON.chevron}<span data-label>סגירת הפרטים</span><span class="sr-only"> על ${esc(t.name)}</span></button>
+      <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
     </div>
   </div>
   <div class="card-body" id="body-${t.id}">
