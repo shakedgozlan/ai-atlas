@@ -234,7 +234,8 @@ details[open]>summary .chev{transform:rotate(180deg)}
 html.js .sheet[data-billing="m"] [data-bill="y"],html.js .sheet[data-billing="y"] [data-bill="m"]{display:none}
 .tiers{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:12px}
 .tier{display:grid;align-content:start;gap:4px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-inner);min-width:0;overflow-wrap:break-word}
-.tier-name{font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
+/* שם התוכנית באנגלית, ולכן צריך ליישר אותו לימין במפורש */
+.tier-name{text-align:right;font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
 .tier-line{display:block;line-height:1.35}
 .tier-price{display:block;font-size:1.125rem;font-weight:600;color:var(--ink);letter-spacing:-0.01em}
 .tier-terms{display:block;font-size:var(--t-tech);color:var(--ink-faint)}
@@ -269,7 +270,7 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
 .plan{padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-inner);min-width:0;overflow-wrap:break-word}
 .plan-head{flex-direction:column;align-items:flex-start !important}
 .plan-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 16px}
-.plan-name{font-weight:700}
+.plan-name{font-weight:700;text-align:right}
 .plan-price{font-weight:600}
 .plan-terms{font-weight:500}
 .plan-inc,.plan-notes{color:var(--ink-soft);margin-top:4px}
