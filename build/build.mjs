@@ -2,6 +2,7 @@
 // קובץ הנתונים הוא המקור היחיד: שדה ריק לא מוצג, ושום דבר לא מושלם כאן ביד.
 // הרצה: node build/build.mjs
 import { readFileSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -9,6 +10,11 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dataPath = process.env.ATLAS_DATA || join(root, 'data/tools.json');
 const outPath = process.env.ATLAS_OUT || join(root, 'index.html');
 const data = JSON.parse(readFileSync(dataPath, 'utf8'));
+
+// חותמת גרסה לקובצי העיצוב וההתנהגות: משתנה כשהתוכן משתנה, כדי שהדפדפן לא יציג דף חדש עם קבצים ישנים מהזיכרון.
+const stamp = (rel) => createHash('sha256').update(readFileSync(new URL(rel, import.meta.url))).digest('hex').slice(0, 10);
+const cssV = stamp('../assets/style.css');
+const jsV = stamp('../assets/app.js');
 
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const has = (v) => v !== null && v !== undefined && String(v).trim() !== '';
@@ -391,7 +397,7 @@ const html = `<!doctype html>
 <meta name="description" content="אטלס בעברית של כלי בינה מלאכותית: מה כל כלי עושה, כמה הוא עולה ומה חשוב לדעת עליו. צילום מצב ליום ${dateShort(data.snapshot_date)}.">
 <meta name="color-scheme" content="light dark">
 <script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;var v=localStorage.getItem('atlas-view');if(v==='index'||v==='gallery')document.documentElement.dataset.view=v}catch(e){}document.documentElement.classList.add('js')</script>
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=${cssV}">
 </head>
 <body>
 <a class="skip" href="#main">דילוג לרשימת הכלים</a>
@@ -483,7 +489,7 @@ ${sections}
 </dialog>
 <script type="application/json" id="search-index">${JSON.stringify(searchIndex).replace(/</g, '\\u003c')}</script>
 
-<script src="assets/app.js" defer></script>
+<script src="assets/app.js?v=${jsV}" defer></script>
 </body>
 </html>
 `;
