@@ -430,7 +430,7 @@ const html = `<!doctype html>
         <div class="menu-row"><span class="menu-l" aria-hidden="true">מצב כהה</span><button type="button" class="theme-switch" id="theme-toggle" role="switch" aria-checked="false">${ICON.sun}${ICON.moon}<span class="sr-only">מצב כהה</span></button></div>
       </div>
     </div>
-    <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">אטלס כלי הבינה</span></a>
+    <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">אטלס כלי AI</span></a>
     <p class="bar-date"><span class="bar-date-l">תאריך הבדיקה האחרונה</span> <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
     <div class="bar-actions">
       <button type="button" class="btn btn-primary" id="finder-open" aria-haspopup="dialog">${ICON.search}<span>חיפוש</span></button>

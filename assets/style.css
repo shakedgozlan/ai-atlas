@@ -142,9 +142,20 @@ html:not(.js) .menu{display:none}
 /* תאריך הבדיקה האחרונה: בסרגל במסך רחב, ותמיד גם בשורה קטנה בתחתית הדף */
 .bar-date{display:none;margin-inline-start:auto;font-size:var(--t-label);color:var(--ink-faint);white-space:nowrap}
 .bar-date time{color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
+/* במסך רחב כפתור החיפוש יושב במרכז הסרגל ורחב יותר, והתאריך בסוף רוחב התוכן */
 @media (min-width:760px){
-  .bar-date{display:block}
   .bar-actions{margin-inline-start:0}
+  #finder-open{position:absolute;inset-inline-start:50%;top:50%;transform:translate(50%,-50%);min-width:220px;justify-content:center}
+  .bar .theme-switch{margin-inline-start:auto}
+}
+@media (min-width:760px) and (max-width:999px){
+  .bar .brand-long{display:none}
+  .bar .brand-short{display:inline}
+  #finder-open{min-width:180px}
+}
+@media (min-width:1000px){
+  .bar-date{display:block}
+  .bar .theme-switch{margin-inline-start:0}
 }
 /* מתג יום ולילה: אייקונים בלבד. העיגול יושב על המצב הפעיל. השם לקוראי מסך נמצא בטקסט מוסתר. */
 .theme-switch{position:relative;display:inline-flex;align-items:center;justify-content:space-between;flex:none;width:84px;height:44px;padding:0 10px;border:1.5px solid var(--line-strong);border-radius:999px;background:var(--surface);color:var(--ink-faint);cursor:pointer;transition:border-color .12s ease}
