@@ -115,11 +115,9 @@ html:not(.js) .bar-actions{display:none}
   .hero{grid-template-columns:minmax(0,1fr) auto;align-items:end}
   .hero h1,.hero-lede{grid-column:1}
   .hero-facts{grid-column:2;grid-row:1 / span 2;flex-direction:column;gap:16px;margin-top:0;padding-top:0;border-top:0;padding-inline-start:clamp(24px,3vw,40px);border-inline-start:1px solid var(--line)}
-  .hero-facts div{flex-direction:row;align-items:baseline;gap:12px}
-  .hero-facts dd{min-width:1.6em}
 }
-.hero-facts div{display:flex;flex-direction:column-reverse;gap:2px}
-.hero-facts dd{font-size:clamp(1.75rem,1.4rem + 1.5vw,2.5rem);font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.hero-facts div{display:flex;flex-direction:column-reverse;align-items:flex-start;gap:2px;text-align:right}
+.hero-facts dd{margin:0;font-size:clamp(1.25rem,1.1rem + 0.6vw,1.5rem);font-weight:400;line-height:1.2;font-variant-numeric:tabular-nums}
 .hero-facts dt{font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
 
 /* סינון פעיל ומצב ריק */
