@@ -89,14 +89,44 @@ function versionDate(t) {
   const ms = Date.parse(raw);
   return Number.isNaN(ms) ? null : ms;
 }
-function newPill(t) {
+function isNewModel(t) {
   const ms = versionDate(t);
   const snap = Date.parse(data.snapshot_date);
-  if (ms == null || !has(t.filters?.new_notable?.latest_version)) return '';
+  if (ms == null || !has(t.filters?.new_notable?.latest_version)) return false;
   const days = (snap - ms) / 86400000;
-  if (days < 0 || days > NEW_DAYS) return '';
-  return `<span class="verify verify-new">מודל חדש</span>`;
+  if (days < 0 || days > NEW_DAYS) return false;
+  return true;
 }
+
+// שאר התגים בכרטיס. כל תג נקבע לפי כלל קבוע שמתועד ב־research/tags.md, ומוצג רק כשיש לו ראיה בנתונים.
+const CHEAP_MAX = 10;
+// סדר התגים הוא סדר החשיבות. בכרטיס מוצגים שני הראשונים בלבד (בקשת שקד), ובחלון הפרטים כולם.
+const TAGS = [
+  ['popular', 'פופולרי', 'מהאתרים שהכי הרבה נכנסים אליהם'],
+  ['reviews', 'בולט בסקירות', 'מופיע ברוב הסקירות העצמאיות'],
+  ['free', 'חינם מתחדש', 'נקודות חינם שמתחדשות כל יום או כל חודש'],
+  ['low', 'מחיר נמוך', 'מנוי של עד 10 דולר לחודש'],
+  ['new', 'מודל חדש', 'גרסה שיצאה ב־90 הימים האחרונים'],
+];
+const CARD_TAGS_MAX = 2;
+function toolTags(t) {
+  const g = t.filters?.tags || {};
+  const sp = t.filters?.starting_price || {};
+  const on = {
+    popular: g.popular?.value === true,
+    reviews: g.review_roundups?.value === true,
+    free: g.free_renewing?.value === true,
+    low: sp.verified === true && sp.currency === 'USD' && typeof sp.amount === 'number' && sp.amount <= CHEAP_MAX,
+    new: isNewModel(t),
+  };
+  return TAGS.filter(([k]) => on[k]);
+}
+const tagPill = ([k, label]) => `<li class="verify tag-${k}">${label}</li>`;
+function tagsHtml(t, max = CARD_TAGS_MAX, cls = '') {
+  const items = toolTags(t).slice(0, max).map(tagPill).join('');
+  return items ? `<ul class="card-tags${cls}" role="list" aria-label="תגים">${items}</ul>` : '';
+}
+const legendHtml = `<div class="legend" role="group" aria-labelledby="legend-h"><h2 class="filters-h" id="legend-h">מקרא התגים</h2><ul class="legend-list" role="list">${TAGS.map((x) => `<li><span class="verify tag-${x[0]}">${x[1]}</span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul></div>`;
 
 function verifyPill(t) {
   const p = t.pricing || {};
@@ -269,6 +299,7 @@ function sheetHtml(t) {
         <div class="sheet-id">
           <h3 class="sheet-title" id="detail-${id}-h" tabindex="-1"><span class="num" aria-hidden="true">${pad(id)}</span><span class="sr-only">כל הפרטים על </span><bdi>${esc(t.name)}</bdi></h3>
           <p class="sheet-role">${esc(t.role)}${former}</p>
+          ${tagsHtml(t, 9, ' sheet-tags')}
         </div>
         <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
         <button type="button" class="btn btn-close" data-sheet-close>${ICON.close}<span>סגירה</span></button>
@@ -330,7 +361,7 @@ function cardHtml(t) {
     <div class="card-id${has(t.logo?.file) ? '' : ' no-logo'}">
       ${logoHtml(t)}
       <div class="card-meta">
-        <div class="card-top"><span class="num" aria-hidden="true">${pad(t.id)}</span>${newPill(t)}</div>
+        <div class="card-top"><span class="num" aria-hidden="true">${pad(t.id)}</span>${tagsHtml(t)}</div>
         <h3 class="name" tabindex="-1"><span class="sr-only">כלי מספר ${t.id}: </span><bdi>${esc(t.name)}</bdi></h3>
         ${former}
         <p class="role">${esc(t.role)}</p>
@@ -459,6 +490,7 @@ const html = `<!doctype html>
         <button type="button" class="btn btn-quiet" id="filter-clear">ניקוי הסינון</button>
       </div>
     </div>
+    ${legendHtml}
     <div class="empty" id="page-empty" hidden>
       <h2>אין כלי שמתאים לכל הסננים</h2>
       <p>כדאי להוריד אחד מהסננים שנבחרו.</p>
