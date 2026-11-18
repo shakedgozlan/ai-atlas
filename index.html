@@ -6,7 +6,7 @@
 <title>אטלס כלי בינה מלאכותית</title>
 <meta name="description" content="אטלס בעברית של כלי בינה מלאכותית: מה כל כלי עושה, כמה הוא עולה ומה חשוב לדעת עליו. צילום מצב ליום 18.11.2026.">
 <meta name="color-scheme" content="light dark">
-<script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}document.documentElement.classList.add('js')</script>
+<script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;var v=localStorage.getItem('atlas-view');if(v==='index'||v==='gallery')document.documentElement.dataset.view=v}catch(e){}document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -35,6 +35,11 @@
   </section>
 
   <div class="wrap">
+    <div class="controls">
+    <div class="views" id="views" role="group" aria-labelledby="views-h">
+      <h2 class="filters-h" id="views-h">תצוגה</h2>
+      <div class="views-set"><button type="button" class="view-btn" data-view-set="cards" aria-pressed="true">כרטיסים</button><button type="button" class="view-btn" data-view-set="index" aria-pressed="false">אינדקס</button><button type="button" class="view-btn" data-view-set="gallery" aria-pressed="false">גלריה</button></div>
+    </div>
     <div class="filters" id="filters" role="group" aria-labelledby="filters-h">
       <h2 class="filters-h" id="filters-h">סינון</h2>
       <div class="filters-row">
@@ -45,6 +50,7 @@
         <p id="filter-text" role="status" aria-live="polite"></p>
         <button type="button" class="btn btn-quiet" id="filter-clear">ניקוי הסינון</button>
       </div>
+    </div>
     </div>
     <div class="empty" id="page-empty" hidden>
       <h2>אין כלי שמתאים לכל הסננים</h2>
@@ -75,6 +81,14 @@
       <button type="button" class="btn btn-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-1"><span>פרטים נוספים</span><span class="sr-only"> על Google Flow</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
       <a class="btn btn-site" href="https://support.google.com/flow/" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של Google Flow (נפתח בלשונית חדשה)</span></a>
     </div>
+  </div>
+  <div class="mini">
+    <span class="mini-num" aria-hidden="true">01</span>
+    <span class="mini-logo"><span class="logo"><img src="logos/google.svg" alt="הלוגו של Google Flow" width="56" height="56" loading="lazy" decoding="async"></span></span>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר 1: </span><bdi>Google Flow</bdi></h3>
+    <p class="mini-role">כלי של Google ליצירת קטעי וידאו, סצנות וסיפורים בבינה מלאכותית.</p>
+    <p class="mini-price"><span>מ־19.99 דולר לחודש</span></p>
+    <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-1"><span class="sr-only">פרטים נוספים על Google Flow</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
   </div>
 
   <dialog class="sheet" id="detail-1" aria-labelledby="detail-1-h" data-billing="m">
@@ -122,6 +136,14 @@
       <a class="btn btn-site" href="https://runway.com" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של Runway (נפתח בלשונית חדשה)</span></a>
     </div>
   </div>
+  <div class="mini">
+    <span class="mini-num" aria-hidden="true">02</span>
+    <span class="mini-logo"><span class="logo"><img class="logo-light" src="logos/runway.svg" alt="הלוגו של Runway" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/runway-dark.svg" alt="הלוגו של Runway" width="56" height="56" loading="lazy" decoding="async"></span></span>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר 2: </span><bdi>Runway</bdi></h3>
+    <p class="mini-role">פלטפורמה ליצירת וידאו ותמונות במגוון מודלים, לצד מוזיקה, קול ואפקטים.</p>
+    <p class="mini-price"><span>מ־15 דולר לחודש</span><small class="mini-free">יש תוכנית חינמית</small></p>
+    <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-2"><span class="sr-only">פרטים נוספים על Runway</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
+  </div>
 
   <dialog class="sheet" id="detail-2" aria-labelledby="detail-2-h" data-billing="m">
     <header class="sheet-head">
@@ -167,6 +189,14 @@
       <button type="button" class="btn btn-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-3"><span>פרטים נוספים</span><span class="sr-only"> על Kling AI</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
       <a class="btn btn-site" href="https://kling.ai" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של Kling AI (נפתח בלשונית חדשה)</span></a>
     </div>
+  </div>
+  <div class="mini">
+    <span class="mini-num" aria-hidden="true">03</span>
+    <span class="mini-logo"><span class="logo"><img class="logo-light" src="logos/kling.svg" alt="הלוגו של Kling AI" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/kling-dark.svg" alt="הלוגו של Kling AI" width="56" height="56" loading="lazy" decoding="async"></span></span>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר 3: </span><bdi>Kling AI</bdi></h3>
+    <p class="mini-role">מחולל וידאו ותמונות מטקסט ומתמונות, עם קול מובנה.</p>
+    <p class="mini-price"><span>מחיר לא אומת במלואו</span></p>
+    <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-3"><span class="sr-only">פרטים נוספים על Kling AI</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
   </div>
 
   <dialog class="sheet" id="detail-3" aria-labelledby="detail-3-h" data-billing="m">
@@ -214,6 +244,14 @@
       <a class="btn btn-site" href="https://hailuoai.video" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של Hailuo AI (נפתח בלשונית חדשה)</span></a>
     </div>
   </div>
+  <div class="mini">
+    <span class="mini-num" aria-hidden="true">04</span>
+    <span class="mini-logo"><span class="logo"><img src="logos/hailuo.svg" alt="הלוגו של Hailuo AI" width="56" height="56" loading="lazy" decoding="async"></span></span>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר 4: </span><bdi>Hailuo AI</bdi></h3>
+    <p class="mini-role">מחולל וידאו ותמונות מטקסט, מתמונות ומחומרי ייחוס, עם קול מסונכרן.</p>
+    <p class="mini-price"><span>מחיר לא אומת במלואו</span></p>
+    <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-4"><span class="sr-only">פרטים נוספים על Hailuo AI</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
+  </div>
 
   <dialog class="sheet" id="detail-4" aria-labelledby="detail-4-h" data-billing="m">
     <header class="sheet-head">
@@ -259,6 +297,14 @@
       <button type="button" class="btn btn-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-5"><span>פרטים נוספים</span><span class="sr-only"> על Luma</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
       <a class="btn btn-site" href="https://lumalabs.ai/" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של Luma (נפתח בלשונית חדשה)</span></a>
     </div>
+  </div>
+  <div class="mini">
+    <span class="mini-num" aria-hidden="true">05</span>
+    <span class="mini-logo"><span class="logo"><img class="logo-light" src="logos/luma.svg" alt="הלוגו של Luma" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/luma-dark.svg" alt="הלוגו של Luma" width="56" height="56" loading="lazy" decoding="async"></span></span>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר 5: </span><bdi>Luma</bdi></h3>
+    <p class="mini-role">סביבת יצירה בדפדפן להפקת וידאו, תמונות וקול במודלי Ray.</p>
+    <p class="mini-price"><span>מ־30 דולר לחודש</span></p>
+    <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-5"><span class="sr-only">פרטים נוספים על Luma</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
   </div>
 
   <dialog class="sheet" id="detail-5" aria-labelledby="detail-5-h" data-billing="m">
@@ -306,6 +352,14 @@
       <a class="btn btn-site" href="https://pika.art/" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של Pika (נפתח בלשונית חדשה)</span></a>
     </div>
   </div>
+  <div class="mini">
+    <span class="mini-num" aria-hidden="true">06</span>
+    <span class="mini-logo"><span class="logo"><img class="logo-light" src="logos/pika.svg" alt="הלוגו של Pika" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/pika-dark.svg" alt="הלוגו של Pika" width="56" height="56" loading="lazy" decoding="async"></span></span>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר 6: </span><bdi>Pika</bdi></h3>
+    <p class="mini-role">פלטפורמה ליצירה ולעריכה של סרטונים קצרים, תמונות וקול.</p>
+    <p class="mini-price"><span>מ־10 דולר לחודש</span><small class="mini-free">יש תוכנית חינמית</small></p>
+    <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-6"><span class="sr-only">פרטים נוספים על Pika</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
+  </div>
 
   <dialog class="sheet" id="detail-6" aria-labelledby="detail-6-h" data-billing="m">
     <header class="sheet-head">
@@ -351,6 +405,14 @@
       <button type="button" class="btn btn-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-7"><span>פרטים נוספים</span><span class="sr-only"> על Higgsfield</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
       <a class="btn btn-site" href="https://higgsfield.ai" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של Higgsfield (נפתח בלשונית חדשה)</span></a>
     </div>
+  </div>
+  <div class="mini">
+    <span class="mini-num" aria-hidden="true">07</span>
+    <span class="mini-logo"><span class="logo"><img class="logo-light" src="logos/higgsfield.svg" alt="הלוגו של Higgsfield" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/higgsfield-dark.svg" alt="הלוגו של Higgsfield" width="56" height="56" loading="lazy" decoding="async"></span></span>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר 7: </span><bdi>Higgsfield</bdi></h3>
+    <p class="mini-role">פלטפורמה ליצירת וידאו ותמונות במודלים משלה ובמודלים של חברות אחרות.</p>
+    <p class="mini-price"><span>מ־19 דולר לחודש</span><small class="mini-free">יש תוכנית חינמית</small></p>
+    <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-7"><span class="sr-only">פרטים נוספים על Higgsfield</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
   </div>
 
   <dialog class="sheet" id="detail-7" aria-labelledby="detail-7-h" data-billing="m">
@@ -398,6 +460,14 @@
       <a class="btn btn-site" href="https://www.vidu.com" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של Vidu (נפתח בלשונית חדשה)</span></a>
     </div>
   </div>
+  <div class="mini">
+    <span class="mini-num" aria-hidden="true">08</span>
+    <span class="mini-logo"><span class="logo"><img class="logo-light" src="logos/vidu.svg" alt="הלוגו של Vidu" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/vidu-dark.svg" alt="הלוגו של Vidu" width="56" height="56" loading="lazy" decoding="async"></span></span>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר 8: </span><bdi>Vidu</bdi></h3>
+    <p class="mini-role">מחולל וידאו מטקסט, מתמונה ומחומרי ייחוס, על בסיס מודלים משלו.</p>
+    <p class="mini-price"><span>מחיר לא אומת במלואו</span><small class="mini-free">יש תוכנית חינמית</small></p>
+    <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-8"><span class="sr-only">פרטים נוספים על Vidu</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
+  </div>
 
   <dialog class="sheet" id="detail-8" aria-labelledby="detail-8-h" data-billing="m">
     <header class="sheet-head">
@@ -444,6 +514,14 @@
       <a class="btn btn-site" href="https://dreamina.capcut.com" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של Dreamina (נפתח בלשונית חדשה)</span></a>
     </div>
   </div>
+  <div class="mini">
+    <span class="mini-num" aria-hidden="true">09</span>
+    <span class="mini-logo"><span class="logo"><img src="logos/dreamina.png" alt="הלוגו של Dreamina" width="56" height="56" loading="lazy" decoding="async"></span></span>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר 9: </span><bdi>Dreamina</bdi></h3>
+    <p class="mini-role">יצירת וידאו מטקסט, מתמונות ומקובצי ייחוס באמצעות מודלי Seedance.</p>
+    <p class="mini-price"><span>מ־15 דולר לחודש</span></p>
+    <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-9"><span class="sr-only">פרטים נוספים על Dreamina</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
+  </div>
 
   <dialog class="sheet" id="detail-9" aria-labelledby="detail-9-h" data-billing="m">
     <header class="sheet-head">
@@ -489,6 +567,14 @@
       <button type="button" class="btn btn-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-10"><span>פרטים נוספים</span><span class="sr-only"> על Wan</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
       <a class="btn btn-site" href="https://wan.video/" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של Wan (נפתח בלשונית חדשה)</span></a>
     </div>
+  </div>
+  <div class="mini">
+    <span class="mini-num" aria-hidden="true">10</span>
+    <span class="mini-logo"><span class="logo"><img src="logos/wan.png" alt="הלוגו של Wan" width="56" height="56" loading="lazy" decoding="async"></span></span>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר 10: </span><bdi>Wan</bdi></h3>
+    <p class="mini-role">פלטפורמת יצירה שמפיקה וידאו ותמונות מטקסט ומתמונות, כולל עריכה.</p>
+    <p class="mini-price"><span>מ־10 דולר לחודש</span><small class="mini-free">יש תוכנית חינמית</small></p>
+    <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-10"><span class="sr-only">פרטים נוספים על Wan</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg></button>
   </div>
 
   <dialog class="sheet" id="detail-10" aria-labelledby="detail-10-h" data-billing="m">

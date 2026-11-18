@@ -132,7 +132,15 @@ html:not(.js) .bar-actions{display:none}
 
 /* סינון פעיל ומצב ריק */
 /* סננים בדף הראשי: שורת כפתורים שקטה מעל הכרטיסים. כמה סננים יחד מצמצמים את הרשימה. */
-.filters{display:grid;gap:12px;margin-bottom:clamp(20px,3vw,32px)}
+.controls{display:flex;flex-wrap:wrap-reverse;align-items:flex-start;justify-content:space-between;gap:16px 40px;margin-bottom:clamp(20px,3vw,32px)}
+.filters{display:grid;gap:12px;flex:1 1 320px;min-width:0}
+/* מתג תצוגה: כרטיסים (ברירת המחדל), אינדקס או גלריה. הבחירה נשמרת בדפדפן. */
+.views{display:grid;gap:12px;flex:none}
+.views-set{display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.view-btn{min-height:44px;padding:6px 18px;border:0;border-radius:999px;background:transparent;color:var(--ink-soft);font:inherit;font-size:var(--t-label);font-weight:500;cursor:pointer;transition:background-color .12s ease,color .12s ease}
+.view-btn:hover{color:var(--brand)}
+.view-btn[aria-pressed="true"]{background:var(--brand);color:var(--on-brand)}
+html:not(.js) .views{display:none}
 .filters-h{font-size:var(--t-label);font-weight:500;color:var(--ink-faint)}
 .filters-row{display:flex;flex-wrap:wrap;gap:8px 24px}
 .filters-set{display:flex;flex-wrap:wrap;gap:8px}
@@ -196,6 +204,55 @@ html:not(.js) .filters{display:none}
   .card:hover .card-head{border-color:var(--brand)}
 }
 .btn-site{font-weight:500;padding-inline:20px}
+
+/* ---------- תצוגות האינדקס והגלריה ---------- */
+.mini{display:none;position:relative;min-width:0}
+:root[data-view="index"] .card-head,:root[data-view="gallery"] .card-head{display:none}
+.mini-open{position:absolute;inset:0;width:100%;height:100%;display:flex;align-items:center;justify-content:flex-end;padding:0 8px;border:0;border-radius:inherit;background:transparent;color:var(--ink-faint);cursor:pointer}
+.mini-open:focus-visible{outline-offset:-3px}
+.mini .logo{width:100%;padding:0;align-self:auto}
+.mini .logo img{max-width:none}
+.mini-num{font-variant-numeric:tabular-nums;color:var(--ink-faint)}
+.mini-name{font-weight:700;letter-spacing:-0.02em;line-height:1.05;text-align:right;overflow-wrap:break-word;min-width:0}
+.mini-role{color:var(--ink-soft)}
+.mini-price{font-weight:500}
+.mini-free{display:block;font-size:.8125rem;font-weight:400;color:var(--ink-faint)}
+
+/* אינדקס: שורה לכל כלי. השם הוא הדבר הגדול והמחיר תמיד באותה עמודה. */
+:root[data-view="index"] .cards{grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
+:root[data-view="index"] .card{margin-bottom:0}
+:root[data-view="index"] .mini{display:grid;grid-template-columns:3rem 32px minmax(9rem,17rem) minmax(0,1fr) 12.5rem 2rem;align-items:center;column-gap:20px;padding:22px 8px;border-bottom:1px solid var(--line);transition:background-color .12s ease}
+:root[data-view="index"] .mini-num{font-size:1.5rem}
+:root[data-view="index"] .mini-logo{width:32px}
+:root[data-view="index"] .mini-name{font-size:clamp(1.5rem,1.2rem + 1.2vw,2.125rem)}
+@media (hover:hover){
+  :root[data-view="index"] .card:hover .mini{background:var(--surface)}
+  :root[data-view="index"] .card:hover .mini-num,:root[data-view="index"] .card:hover .mini-name,:root[data-view="index"] .card:hover .mini-open{color:var(--brand)}
+}
+@media (max-width:859px){
+  :root[data-view="index"] .mini{grid-template-columns:2.4rem minmax(0,1fr) 28px;gap:4px 12px;padding:18px 4px}
+  :root[data-view="index"] .mini-num{font-size:1.125rem;grid-column:1;grid-row:1}
+  :root[data-view="index"] .mini-name{grid-column:2;grid-row:1}
+  :root[data-view="index"] .mini-logo{grid-column:3;grid-row:1;width:28px}
+  :root[data-view="index"] .mini-role,:root[data-view="index"] .mini-price{grid-column:2}
+  :root[data-view="index"] .mini-open .ico{display:none}
+}
+
+/* גלריה: אריח לכל כלי, עם סמל גדול, שם ומחיר */
+:root[data-view="gallery"] .cards{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+:root[data-view="gallery"] .card{margin-bottom:0}
+:root[data-view="gallery"] .mini{display:grid;flex:1;align-content:start;gap:6px;padding:16px 16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);transition:border-color .12s ease}
+:root[data-view="gallery"] .mini-num{font-size:var(--t-label);font-weight:500}
+:root[data-view="gallery"] .mini-logo{display:grid;place-items:center;aspect-ratio:4/3;background:var(--inner);border-radius:var(--r-inner);margin-bottom:8px}
+:root[data-view="gallery"] .mini-logo .logo{width:72px}
+:root[data-view="gallery"] .mini-name{font-size:1.375rem;line-height:1.1;letter-spacing:-0.01em}
+:root[data-view="gallery"] .mini-role,:root[data-view="gallery"] .mini-free,:root[data-view="gallery"] .mini-open .ico{display:none}
+:root[data-view="gallery"] .mini-price{font-size:var(--t-label);font-weight:400;color:var(--ink-soft)}
+@media (hover:hover){
+  :root[data-view="gallery"] .card:hover .mini{border-color:var(--brand)}
+  :root[data-view="gallery"] .card:hover .mini-num{color:var(--brand)}
+}
+@media (max-width:480px){:root[data-view="gallery"] .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .chev{transition:transform .15s ease}
 [aria-expanded="true"]>.chev{transform:rotate(180deg)}
 
@@ -404,7 +461,7 @@ html:not(.js) #finder-open{display:none}
   .bill-btn[aria-pressed="true"]{background:Highlight;color:HighlightText}
 }
 @media print{
-  .bar,.finder,.filters,.card-actions,.btn-close,.sheet-head .btn-site{display:none !important}
+  .bar,.finder,.filters,.views,.card-actions,.btn-close,.sheet-head .btn-site{display:none !important}
   .sheet{display:block !important;position:static;width:auto;height:auto;max-height:none;overflow:visible;box-shadow:none}
   .more-tabs,.bill{display:none !important}
   .more-panel[hidden]{display:block !important}

@@ -90,7 +90,7 @@ const audit = () => {
       }
 
       // חלון הפרטים: פתיחה במקלדת, מיקוד, מילוי המסך, ניווט פנימי וסגירה
-      const open = page.locator('#tool-2 [data-sheet-open]');
+      const open = page.locator('#tool-2 .card-head [data-sheet-open]');
       const isOpen = (id) => page.locator(`#detail-${id}`).evaluate((d) => d.open);
       note(!(await isOpen(2)), `${tag} חלון הפרטים פתוח בהתחלה`);
       await open.focus(); await page.keyboard.press('Enter');
@@ -144,7 +144,7 @@ const audit = () => {
       note(trapped, `${tag} החלון לא נפתח כחלון חוסם`);
       await page.keyboard.press('Escape');
       note(!(await isOpen(2)), `${tag} מקש היציאה לא סוגר את חלון הפרטים`);
-      note(await page.evaluate(() => document.activeElement.matches('#tool-2 [data-sheet-open]')), `${tag} המיקוד לא חוזר לכפתור הפרטים`);
+      note(await page.evaluate(() => document.activeElement.matches('#tool-2 .card-head [data-sheet-open]')), `${tag} המיקוד לא חוזר לכפתור הפרטים`);
       // לחיצה על הרקע המעומעם סוגרת
       await open.click();
       await page.mouse.click(4, 4);
@@ -152,13 +152,13 @@ const audit = () => {
       await open.click();
       await page.locator('#detail-2 [data-sheet-close]').click();
       note(!(await isOpen(2)), `${tag} כפתור הסגירה לא סוגר`);
-      note(await page.evaluate(() => document.activeElement.matches('#tool-2 [data-sheet-open]')), `${tag} המיקוד לא חוזר אחרי כפתור הסגירה`);
+      note(await page.evaluate(() => document.activeElement.matches('#tool-2 .card-head [data-sheet-open]')), `${tag} המיקוד לא חוזר אחרי כפתור הסגירה`);
       note(await page.evaluate(() => getComputedStyle(document.documentElement).overflow !== 'hidden'), `${tag} הגלילה בעמוד נשארת נעולה`);
 
       // כל חלון פרטים: סגור (במסך רחב בלי גלילה), ואז עם כל חלק מפורט פתוח, בראש ובתחתית
       for (let i = 0; i < n; i++) {
         const id = (await cards.nth(i).getAttribute('id')).replace('tool-', '');
-        await page.locator(`#tool-${id} [data-sheet-open]`).click();
+        await page.locator(`#tool-${id} .card-head [data-sheet-open]`).click();
         await page.waitForTimeout(250);
         await report(`חלון הפרטים של כלי ${id}`);
         if (width === 1440) {
@@ -255,6 +255,23 @@ const audit = () => {
       await page.click('#filter-clear');
       note((await page.locator('.card:not([hidden])').count()) === n && !(await page.locator('#filter-bar').isVisible()), `${tag} ניקוי הסינון`);
 
+      // מתג תצוגה: שלושה מצבים, בלי גלילה לרוחב, כל הכלים מוצגים, וחלון הפרטים נפתח מכל מצב
+      for (const v of ['index', 'gallery', 'cards']) {
+        await page.click(`[data-view-set="${v}"]`);
+        await page.waitForTimeout(200);
+        const sel = v === 'cards' ? '.card-head' : '.mini';
+        note((await page.locator(`${sel}:visible`).count()) === n, `${tag} תצוגת ${v}: לא כל הכלים מוצגים`);
+        note((await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)) <= 0, `${tag} תצוגת ${v}: גלילה לרוחב`);
+        note((await page.getAttribute(`[data-view-set="${v}"]`, 'aria-pressed')) === 'true', `${tag} תצוגת ${v}: המתג לא מסומן`);
+        await report('תצוגת ' + v);
+        if (shots) await page.screenshot({ path: path.join(shots, `${tag}-7-view-${v}.png`) });
+        if (v !== 'cards') {
+          await page.locator('#tool-3 .mini [data-sheet-open]').click();
+          note(await page.locator('#detail-3').evaluate((d) => d.open), `${tag} תצוגת ${v}: חלון הפרטים לא נפתח`);
+          await page.keyboard.press('Escape');
+        }
+      }
+
       // מצב כהה ובהיר
       const before = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
       await page.click('#theme-toggle');
@@ -280,7 +297,7 @@ const audit = () => {
   const p = await ctx.newPage();
   await p.goto('file://' + file);
   note(await p.locator('#detail-1').isVisible() && await p.locator('#d1-src .sources').isVisible(), 'בלי סקריפטים התוכן מוסתר');
-  note(!(await p.locator('#tool-1 [data-sheet-open]').isVisible()), 'בלי סקריפטים כפתור הפרטים מוצג');
+  note(!(await p.locator('#tool-1 .card-head [data-sheet-open]').isVisible()), 'בלי סקריפטים כפתור הפרטים מוצג');
   await ctx.close();
   await browser.close();
 

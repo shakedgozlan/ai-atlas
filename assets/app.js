@@ -85,6 +85,22 @@
     paintTheme();
   }
 
+  /* ---------- מתג תצוגה: כרטיסים, אינדקס או גלריה ---------- */
+  var viewBtns = $$('[data-view-set]');
+  function paintView() {
+    var v = root.dataset.view || 'cards';
+    viewBtns.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-view-set') === v)); });
+  }
+  viewBtns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var v = b.getAttribute('data-view-set');
+      if (v === 'cards') delete root.dataset.view; else root.dataset.view = v;
+      try { localStorage.setItem('atlas-view', v); } catch (e) { /* בלי שמירה, הבחירה תקפה לביקור הזה */ }
+      paintView();
+    });
+  });
+  paintView();
+
   /* ---------- סננים בדף הראשי ---------- */
   var filterBtns = $$('[data-filter-flag], [data-filter-cat]');
   var cards = $$('.card');
@@ -265,7 +281,8 @@
     $$('[data-open-tool]', dialog).forEach(function (b) {
       b.addEventListener('click', function () {
         var id = b.getAttribute('data-open-tool');
-        var opener = $('#tool-' + id + ' [data-sheet-open]');
+        // בכל כלי יש כפתור פרטים לכל תצוגה. בוחרים את זה שמוצג עכשיו.
+        var opener = $$('#tool-' + id + ' [data-sheet-open]').filter(function (b) { return b.offsetParent !== null; })[0] || $('#tool-' + id + ' [data-sheet-open]');
         saveRecent(q.value);
         dialog.close();
         if (!opener) return;

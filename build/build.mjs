@@ -271,6 +271,24 @@ function toolFlags(t) {
   };
 }
 
+// מחיר התחלתי קצר לתצוגות האינדקס והגלריה. מוצג רק כשהמחקר אימת אותו, אחרת נכתב שלא אומת.
+function startPrice(t) {
+  const sp = t.filters?.starting_price || {};
+  if (sp.verified === true && sp.amount != null && sp.currency === 'USD' && sp.billing === 'חודשי') return `מ־${sp.amount} דולר לחודש`;
+  return 'מחיר לא אומת במלואו';
+}
+// גרסה מצומצמת של הכלי, לתצוגות האינדקס והגלריה. מוסתרת בתצוגת הכרטיסים.
+function miniHtml(t, free) {
+  return `<div class="mini">
+    <span class="mini-num" aria-hidden="true">${pad(t.id)}</span>
+    <span class="mini-logo">${logoHtml(t)}</span>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר ${t.id}: </span><bdi>${esc(t.name)}</bdi></h3>
+    <p class="mini-role">${esc(t.role)}</p>
+    <p class="mini-price"><span>${startPrice(t)}</span>${free ? '<small class="mini-free">יש תוכנית חינמית</small>' : ''}</p>
+    <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-${t.id}"><span class="sr-only">פרטים נוספים על ${esc(t.name)}</span>${ICON.expand}</button>
+  </div>`;
+}
+
 function cardHtml(t) {
   const fl = toolFlags(t);
   const flags = FLAGS.map(([k]) => k).filter((k) => fl[k]).join(' ');
@@ -295,6 +313,7 @@ function cardHtml(t) {
       <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
     </div>
   </div>
+  ${miniHtml(t, fl.free)}
 ${sheetHtml(t)}
 </li>`;
 }
@@ -368,7 +387,7 @@ const html = `<!doctype html>
 <title>אטלס כלי בינה מלאכותית</title>
 <meta name="description" content="אטלס בעברית של כלי בינה מלאכותית: מה כל כלי עושה, כמה הוא עולה ומה חשוב לדעת עליו. צילום מצב ליום ${dateShort(data.snapshot_date)}.">
 <meta name="color-scheme" content="light dark">
-<script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}document.documentElement.classList.add('js')</script>
+<script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;var v=localStorage.getItem('atlas-view');if(v==='index'||v==='gallery')document.documentElement.dataset.view=v}catch(e){}document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -395,6 +414,11 @@ const html = `<!doctype html>
   </section>
 
   <div class="wrap">
+    <div class="controls">
+    <div class="views" id="views" role="group" aria-labelledby="views-h">
+      <h2 class="filters-h" id="views-h">תצוגה</h2>
+      <div class="views-set">${[['cards', 'כרטיסים'], ['index', 'אינדקס'], ['gallery', 'גלריה']].map(([k, l]) => `<button type="button" class="view-btn" data-view-set="${k}" aria-pressed="${k === 'cards'}">${l}</button>`).join('')}</div>
+    </div>
     <div class="filters" id="filters" role="group" aria-labelledby="filters-h">
       <h2 class="filters-h" id="filters-h">סינון</h2>
       <div class="filters-row">
@@ -405,6 +429,7 @@ const html = `<!doctype html>
         <p id="filter-text" role="status" aria-live="polite"></p>
         <button type="button" class="btn btn-quiet" id="filter-clear">ניקוי הסינון</button>
       </div>
+    </div>
     </div>
     <div class="empty" id="page-empty" hidden>
       <h2>אין כלי שמתאים לכל הסננים</h2>
