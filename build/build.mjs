@@ -379,7 +379,7 @@ const html = `<!doctype html>
     <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">האטלס</span></a>
     <p class="bar-date"><span class="bar-date-l">תאריך הבדיקה האחרונה</span> <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
     <div class="bar-actions">
-      <button type="button" class="btn btn-icon" id="theme-toggle">${ICON.moon}${ICON.sun}<span class="theme-label" data-theme-label>מצב כהה</span></button>
+      <button type="button" class="theme-switch" id="theme-toggle" role="switch" aria-checked="false">${ICON.sun}${ICON.moon}<span class="sr-only">מצב כהה</span></button>
       <button type="button" class="btn btn-primary" id="finder-open" aria-haspopup="dialog">${ICON.search}<span>חיפוש</span></button>
     </div>
   </div>

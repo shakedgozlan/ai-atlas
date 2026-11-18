@@ -71,7 +71,7 @@
   function paintTheme() {
     if (!themeBtn) return;
     var dark = isDark();
-    if (themeLabel) themeLabel.textContent = dark ? 'מצב בהיר' : 'מצב כהה';
+    themeBtn.setAttribute('aria-checked', String(dark));
     themeBtn.title = dark ? 'מעבר למצב בהיר' : 'מעבר למצב כהה';
   }
   if (themeBtn) {
