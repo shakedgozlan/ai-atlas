@@ -78,11 +78,11 @@
       "role": "כלי של Google ליצירת קטעי וידאו, סצנות וסיפורים בבינה מלאכותית.",
       "url": "https://support.google.com/flow/",
       "logo": {
-        "file": null,
+        "file": "logos/google.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "האתר של Flow נפתח רק אחרי התחברות לחשבון Google, ולכן הלוגו לא נאסף.",
-        "note": null
+        "source_url": "https://lobehub.com/icons",
+        "missing_reason": null,
+        "note": "זה הסמל של Google, החברה שמפעילה את Flow, ולא סמל נפרד של Flow. בעל האתר אישר זאת במפורש לכלי הזה ב־18 בנובמבר 2026, כי האתר של Flow נפתח רק אחרי התחברות לחשבון Google והסמל של Flow לא נאסף. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.103.0, רישיון MIT). סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
       },
       "status": {
         "state": "פעיל",
@@ -212,7 +212,8 @@
               "s2",
               "s5",
               "s8"
-            ]
+            ],
+            "price_short": "כ־100 דולר לחודש"
           },
           {
             "name": "Google AI Ultra (20x)",
@@ -228,7 +229,8 @@
               "s2",
               "s5",
               "s8"
-            ]
+            ],
+            "price_short": "200 דולר לחודש"
           }
         ],
         "free_tier": "50 נקודות זיכוי של Flow ביום בלי מנוי, שאינן נצברות מיום ליום. אפשר ליצור קטעים של 3 עד 10 שניות במודל Omni Flash 1.2. בשעות העומס יצירת וידאו עשויה לא להיות זמינה, אבל יצירת תמונות נשארת פתוחה.",
@@ -380,7 +382,59 @@
           "stale": false
         }
       ],
-      "checked_date": "2026-11-18"
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": true,
+          "basis": "הכלי עצמו הושק בתוך 18 החודשים האחרונים, וקיבל מודל חדש בנובמבר 2026.",
+          "launch_date": "May 20, 2025",
+          "launched_in_window": true,
+          "latest_version": "Gemini Omni 1.2 Flash",
+          "latest_version_date": "Nov 05, 2026",
+          "independent_reviews": 3,
+          "evidence": "research/new_and_notable.md"
+        },
+        "hebrew": {
+          "value": "נתמכת לפי המקור",
+          "label": "עברית ברשימת השפות הנתמכות",
+          "supported": true
+        },
+        "starting_price": {
+          "amount": 19.99,
+          "currency": "USD",
+          "billing": "חודשי",
+          "plan": "Google AI Pro",
+          "verified": true,
+          "label": "מ־19.99 דולר לחודש (Google AI Pro). מחיר התוכנית הזולה יותר לא אומת.",
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר",
+            "iOS",
+            "Android"
+          ],
+          "unverified": []
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 5,
+            "of": 6,
+            "value": true,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": true,
+            "basis": "נתח של כ־10% מהתנועה לפלטפורמות וידאו בינה מלאכותית בפברואר 2026 (OfficeChai לפי Similarweb).",
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "50 נקודות זיכוי ביום בלי מנוי.",
+            "evidence": "research/tags.md"
+          }
+        }
+      }
     },
     {
       "id": 2,
@@ -394,9 +448,9 @@
       "logo": {
         "file": "logos/runway.svg",
         "file_dark": "logos/runway-dark.svg",
-        "source_url": "https://runway.com/",
+        "source_url": "https://lobehub.com/icons",
         "missing_reason": null,
-        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+        "note": "סמל בלבד, בלי שם המותג, לבקשת בעל האתר. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.103.0, רישיון MIT) ב־18 בנובמבר 2026. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה. הלוגו המלא מהאתר הרשמי שמור בתיקייה logos/original."
       },
       "status": {
         "state": "פעיל",
@@ -721,7 +775,59 @@
           "stale": false
         }
       ],
-      "checked_date": "2026-11-18"
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": true,
+          "basis": "כלי ותיק שקיבל גרסה משמעותית במאי 2026. תאריך ההשקה של המוצר הראשון לא אומת.",
+          "launch_date": null,
+          "launched_in_window": false,
+          "latest_version": "Aleph 2.0",
+          "latest_version_date": "May 21, 2026",
+          "independent_reviews": 5,
+          "evidence": "research/new_and_notable.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 15,
+          "currency": "USD",
+          "billing": "חודשי",
+          "plan": "Standard",
+          "verified": true,
+          "label": "מ־15 דולר לחודש",
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר"
+          ],
+          "unverified": [
+            "אפליקציות לנייד"
+          ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 5,
+            "of": 6,
+            "value": true,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": true,
+            "basis": "נתח של כ־14% מהתנועה לפלטפורמות וידאו בינה מלאכותית בפברואר 2026 (OfficeChai לפי Similarweb).",
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          }
+        }
+      }
     },
     {
       "id": 3,
@@ -735,9 +841,9 @@
       "logo": {
         "file": "logos/kling.svg",
         "file_dark": "logos/kling-dark.svg",
-        "source_url": "https://kling.ai/",
+        "source_url": "https://lobehub.com/icons",
         "missing_reason": null,
-        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+        "note": "סמל בלבד, בלי שם המותג, לבקשת בעל האתר. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.103.0, רישיון MIT) ב־18 בנובמבר 2026. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה. הלוגו המלא מהאתר הרשמי שמור בתיקייה logos/original."
       },
       "status": {
         "state": "פעיל",
@@ -986,7 +1092,61 @@
           "stale": false
         }
       ],
-      "checked_date": "2026-11-18"
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": true,
+          "basis": "כלי מ־2024 שקיבל גרסה משמעותית באוקטובר 2026.",
+          "launch_date": "June 11, 2024",
+          "launched_in_window": false,
+          "latest_version": "Kling 4.0",
+          "latest_version_date": "October 15, 2026",
+          "independent_reviews": 4,
+          "evidence": "research/new_and_notable.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 10,
+          "currency": "USD",
+          "billing": "חודשי",
+          "plan": "Standard",
+          "verified": false,
+          "label": "10 דולר לחודש בחנות האפליקציות בארצות הברית. המחיר באתר לא אומת.",
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר",
+            "iOS",
+            "Mac"
+          ],
+          "unverified": [
+            "Android"
+          ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 5,
+            "of": 6,
+            "value": true,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": true,
+            "basis": "מקום 45 ברשימת 50 אתרי הבינה המלאכותית הנצפים של a16z (Similarweb, ינואר 2026), ונתח של כ־7% בפברואר 2026 (OfficeChai).",
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "הקצאת נקודות חינם בכניסה לחשבון מדי חודש. הכמות לא אומתה.",
+            "evidence": "research/tags.md"
+          }
+        }
+      }
     },
     {
       "id": 4,
@@ -1069,7 +1229,7 @@
       "audience": "יוצרים עצמאיים וצוותים קטנים באפליקציה, ומפתחים ועסקים דרך ה־API של MiniMax והמשקלים הפתוחים.",
       "pricing": {
         "verification": "אומת חלקית",
-        "summary_line": null,
+        "summary_line": "מ־9.99 דולר לחודש לפי הבלוג הרשמי מיולי 2026. סוג החיוב לא צוין. יש תוכנית חינמית.",
         "model": "מנוי עם נקודות זיכוי",
         "plans": [
           {
@@ -1081,7 +1241,7 @@
             "billing": null,
             "price_period": "לחודש",
             "includes": null,
-            "notes": "לפי פוסט בבלוג הרשמי מ־27 ביולי 2026 (המקור הרשמי העדכני יותר). הפוסט לא מציין אם החיוב חודשי או שנתי ולא כמה נקודות כלולות. סותר את המחיר שבתנאי המנוי מ־14.7.2025.",
+            "notes": "לפי פוסט בבלוג הרשמי מ־27 ביולי 2026. הפוסט לא מציין אם החיוב חודשי או שנתי ולא כמה נקודות זיכוי כלולות.",
             "source_ids": [
               "s4"
             ]
@@ -1095,7 +1255,7 @@
             "billing": null,
             "price_period": "לחודש",
             "includes": null,
-            "notes": "לפי פוסט בבלוג הרשמי מ־27 ביולי 2026 (המקור הרשמי העדכני יותר). הפוסט לא מציין אם החיוב חודשי או שנתי ולא כמה נקודות כלולות. סותר את המחיר שבתנאי המנוי מ־14.7.2025.",
+            "notes": "לפי פוסט בבלוג הרשמי מ־27 ביולי 2026. הפוסט לא מציין אם החיוב חודשי או שנתי ולא כמה נקודות זיכוי כלולות.",
             "source_ids": [
               "s4"
             ]
@@ -1109,11 +1269,16 @@
             "billing": null,
             "price_period": "לחודש",
             "includes": null,
-            "notes": "לפי פוסט בבלוג הרשמי מ־27 ביולי 2026 (המקור הרשמי העדכני יותר). הפוסט לא מציין אם החיוב חודשי או שנתי ולא כמה נקודות כלולות. סותר את המחיר שבתנאי המנוי מ־14.7.2025.",
+            "notes": "לפי פוסט בבלוג הרשמי מ־27 ביולי 2026. הפוסט לא מציין אם החיוב חודשי או שנתי ולא כמה נקודות זיכוי כלולות.",
             "source_ids": [
               "s4"
             ]
-          },
+          }
+        ],
+        "free_tier": "יש תוכנית חינמית. לפי תנאי המנוי (14.7.2025, מקור ישן): ההורדות כוללות סימן מים, ואפשר להעמיד עד שלוש משימות בתור. כמות הנקודות החינמיות כיום, וקיומה של הקצאה יומית, לא אומתו.",
+        "trial": "לא נמצאה תקופת ניסיון חינמית לתוכנית בתשלום. נקודות הבונוס למשתמשים חדשים פוקעות שלושה ימים אחרי שניתנו (מקור ישן).",
+        "unverified_notes": "הכרעה בין שני מחירונים רשמיים סותרים: מוצג המחירון מהבלוג הרשמי מ־27 ביולי 2026 (9.99, 34.99 ו־79.99 דולר לחודש), כי הוא המקור הרשמי החדש יותר. המחירון הקודם, מתנאי המנוי מ־14.7.2025 (14.99, 54.99 ו־119.99 דולר לחודש, ועוד התוכניות Ultra, Max ו־Unlimited), נשמר לתיעוד בלבד ואינו מוצג. המחיר נשאר מאומת חלקית: דף המנויים באתר נפתח רק למשתמש מחובר ולא נקרא, והבלוג אינו מציין אם החיוב חודשי או שנתי. הסקה: ייתכן שהמחירים הוזלו, וייתכן שהבלוג מצטט מחיר לחודש בחיוב שנתי. לא אומתו גם מחירים שנתיים, כמות נקודות הזיכוי בתוכניות הנוכחיות, והשאלה אם Ultra ו־Max עדיין נמכרות. יתר התנאים לקוחים מהמקור הישן: נקודות המנוי תקפות חודש ואינן נצברות, נקודות שנרכשו תקפות עד 31 בדצמבר של השנה השנייה שאחרי הרכישה, אפשר לבטל בכל עת החל ממחזור החיוב הבא, ואין החזר על תשלום שבוצע.",
+        "superseded_plans": [
           {
             "name": "Standard",
             "price": 14.99,
@@ -1198,10 +1363,7 @@
               "s3"
             ]
           }
-        ],
-        "free_tier": "יש תוכנית חינמית. לפי תנאי המנוי (14.7.2025, מקור ישן): ההורדות כוללות סימן מים, ואפשר להעמיד עד שלוש משימות בתור. כמות הנקודות החינמיות כיום, וקיומה של הקצאה יומית, לא אומתו.",
-        "trial": "לא נמצאה תקופת ניסיון חינמית לתוכנית בתשלום. נקודות הבונוס למשתמשים חדשים פוקעות שלושה ימים אחרי שניתנו (מקור ישן).",
-        "unverified_notes": "המחיר הנוכחי לא הוכרע. דף המנויים באתר מפנה לדף הבית למי שאינו מחובר, ושני מקורות רשמיים סותרים זה את זה: תנאי המנוי מ־14.7.2025 (14.99, 54.99 ו־119.99 דולר לחודש) ופוסט בבלוג הרשמי מ־27 ביולי 2026 (9.99, 34.99 ו־79.99 דולר לחודש). הסקה: ייתכן שהמחירים הוזלו, וייתכן שהבלוג מצטט מחיר חודשי בחיוב שנתי; אף אחד מהמקורות לא מבהיר זאת. לא אומתו גם מחירים שנתיים, כמות הנקודות בתוכניות הנוכחיות והשאלה אם Ultra ו־Max עדיין נמכרות. יתר התנאים לקוחים מהמקור הישן: נקודות המנוי תקפות חודש ואינן נצברות, נקודות שנרכשו תקפות עד 31 בדצמבר של השנה השנייה שאחרי הרכישה, אפשר לבטל בכל עת החל ממחזור החיוב הבא, ואין החזר על תשלום שבוצע."
+        ]
       },
       "privacy": {
         "text": "המשתמש מעניק לחברה רישיון עולמי, לצמיתות, בלתי חוזר וללא תמלוגים על התוכן שהעלה ועל התוצרים. מדיניות הפרטיות (דצמבר 2025, מקור ישן) קובעת שבדרך כלל מידע אישי אינו מועבר אל מחוץ לסינגפור, ושתמונות פנים ונתוני פנים שנגזרו מהן נמחקים לצמיתות אחרי יצירת הווידאו. לא נמצא הבדל בין תוכניות, ולא נמצא מקור שמראה שמנוי בתשלום מונע שימוש לאימון. לפי Google Play, האפליקציה עשויה לשתף עם צד שלישי מידע אישי, מידע פיננסי וחמישה סוגי נתונים נוספים.",
@@ -1333,7 +1495,60 @@
           "stale": false
         }
       ],
-      "checked_date": "2026-11-18"
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": true,
+          "basis": "המודל הראשון פורסם ב־2024, והמודל הנוכחי יצא ביולי 2026. תאריך ההשקה של האתר לא אומת. רק שתיים מהסקירות מזכירות את Hailuo בשמו, והשאר סוקרות את המודל.",
+          "launch_date": null,
+          "launched_in_window": false,
+          "latest_version": "MiniMax H3",
+          "latest_version_date": "2026-07-31",
+          "independent_reviews": 5,
+          "evidence": "research/new_and_notable.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 9.99,
+          "currency": "USD",
+          "billing": null,
+          "plan": "Standard",
+          "verified": false,
+          "label": "מ־9.99 דולר לחודש לפי הבלוג הרשמי מיולי 2026. סוג החיוב לא צוין.",
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר",
+            "Android"
+          ],
+          "unverified": [
+            "iOS"
+          ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 5,
+            "of": 6,
+            "value": true,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          }
+        }
+      }
     },
     {
       "id": 5,
@@ -1347,9 +1562,9 @@
       "logo": {
         "file": "logos/luma.svg",
         "file_dark": "logos/luma-dark.svg",
-        "source_url": "https://lumalabs.ai/",
+        "source_url": "https://lobehub.com/icons",
         "missing_reason": null,
-        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+        "note": "סמל בלבד, בלי שם המותג, לבקשת בעל האתר. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.103.0, רישיון MIT) ב־18 בנובמבר 2026. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה. הלוגו המלא מהאתר הרשמי שמור בתיקייה logos/original."
       },
       "status": {
         "state": "שינוי שם",
@@ -1760,7 +1975,59 @@
           "stale": false
         }
       ],
-      "checked_date": "2026-11-18"
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": true,
+          "basis": "המוצר הקודם, Dream Machine, הושק ב־2024 לפי מקור חדשותי. המודל הנוכחי יצא ביוני 2026.",
+          "launch_date": "June 12, 2024",
+          "launched_in_window": false,
+          "latest_version": "Ray3.2",
+          "latest_version_date": "June 9, 2026",
+          "independent_reviews": 5,
+          "evidence": "research/new_and_notable.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 30,
+          "currency": "USD",
+          "billing": "חודשי",
+          "plan": "Plus",
+          "verified": true,
+          "label": "מ־30 דולר לחודש",
+          "has_free_plan": null
+        },
+        "platforms": {
+          "verified": [
+            "אתר"
+          ],
+          "unverified": [
+            "iOS"
+          ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 5,
+            "of": 6,
+            "value": true,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          }
+        }
+      }
     },
     {
       "id": 6,
@@ -1774,9 +2041,9 @@
       "logo": {
         "file": "logos/pika.svg",
         "file_dark": "logos/pika-dark.svg",
-        "source_url": "https://pika.art/",
+        "source_url": "https://lobehub.com/icons",
         "missing_reason": null,
-        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+        "note": "סמל בלבד, בלי שם המותג, לבקשת בעל האתר. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.103.0, רישיון MIT) ב־18 בנובמבר 2026. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה. הלוגו המלא מהאתר הרשמי שמור בתיקייה logos/original."
       },
       "status": {
         "state": "פעיל",
@@ -2109,7 +2376,58 @@
           "stale": false
         }
       ],
-      "checked_date": "2026-11-18"
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": true,
+          "basis": "כלי מ־2023 שקיבל מודל חדש באוקטובר 2026. תאריכי הגרסאות מגיעים ממקורות צד שלישי בלבד, ויש בדיוק שתי סקירות עצמאיות.",
+          "launch_date": "November 28, 2023",
+          "launched_in_window": false,
+          "latest_version": "Pika H3 Flex",
+          "latest_version_date": "October 29, 2026",
+          "independent_reviews": 2,
+          "evidence": "research/new_and_notable.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 10,
+          "currency": "USD",
+          "billing": "חודשי",
+          "plan": "Starter",
+          "verified": true,
+          "label": "מ־10 דולר לחודש",
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר",
+            "iOS"
+          ],
+          "unverified": []
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 2,
+            "of": 6,
+            "value": false,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          }
+        }
+      }
     },
     {
       "id": 7,
@@ -2502,7 +2820,59 @@
           "stale": false
         }
       ],
-      "checked_date": "2026-11-18"
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": true,
+          "basis": "גרסה משמעותית באוקטובר 2026. תאריך ההשקה לא הוכרע: מקור חדשותי מדווח על השקה באפריל 2024, ועמוד האודות של החברה כותב שהושק ב־2025. שלוש הסקירות העצמאיות חלשות, וזה המקרה הגבולי ביותר ברשימה.",
+          "launch_date": null,
+          "launched_in_window": null,
+          "latest_version": "Cinema Studio 4.0",
+          "latest_version_date": "Oct. 28, 2026",
+          "independent_reviews": 3,
+          "evidence": "research/new_and_notable.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 19,
+          "currency": "USD",
+          "billing": "חודשי",
+          "plan": "Starter",
+          "verified": true,
+          "label": "מ־19 דולר לחודש",
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר"
+          ],
+          "unverified": [
+            "אפליקציות לנייד"
+          ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 1,
+            "of": 6,
+            "value": false,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": true,
+            "basis": "מקום 40 ברשימת 50 אתרי הבינה המלאכותית הנצפים של a16z (Similarweb, ינואר 2026).",
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          }
+        }
+      }
     },
     {
       "id": 8,
@@ -2516,9 +2886,9 @@
       "logo": {
         "file": "logos/vidu.svg",
         "file_dark": "logos/vidu-dark.svg",
-        "source_url": "https://www.vidu.com/",
+        "source_url": "https://lobehub.com/icons",
         "missing_reason": null,
-        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+        "note": "סמל בלבד, בלי שם המותג, לבקשת בעל האתר. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.103.0, רישיון MIT) ב־18 בנובמבר 2026. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה. הלוגו המלא מהאתר הרשמי שמור בתיקייה logos/original."
       },
       "status": {
         "state": "פעיל",
@@ -2796,7 +3166,59 @@
           "stale": false
         }
       ],
-      "checked_date": "2026-11-18"
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": true,
+          "basis": "כלי מ־2024 לפי מקור חדשותי, שקיבל מודל חדש בגרסת תצוגה מקדימה באוקטובר 2026.",
+          "launch_date": "2024.08.01",
+          "launched_in_window": false,
+          "latest_version": "Vidu Q4 Preview",
+          "latest_version_date": "October 7, 2026",
+          "independent_reviews": 3,
+          "evidence": "research/new_and_notable.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 8.25,
+          "currency": "USD",
+          "billing": "שנתי",
+          "plan": "Standard",
+          "verified": false,
+          "label": "8.25 דולר לחודש בחיוב שנתי, מסומן כהצעה לזמן מוגבל. מחיר בחיוב חודשי לא אומת.",
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר"
+          ],
+          "unverified": [
+            "אפליקציות לנייד"
+          ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 2,
+            "of": 6,
+            "value": false,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "נקודות זיכוי בהתחברות יומית. הכמות לא צוינה.",
+            "evidence": "research/tags.md"
+          }
+        }
+      }
     },
     {
       "id": 9,
@@ -2808,11 +3230,11 @@
       "role": "יצירת וידאו מטקסט, מתמונות ומקובצי ייחוס באמצעות מודלי Seedance.",
       "url": "https://dreamina.capcut.com",
       "logo": {
-        "file": null,
+        "file": "logos/dreamina.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "באתר הרשמי הלוגו מוצג כתמונה רגילה ולא כקובץ וקטורי. לא אותר קובץ וקטורי רשמי.",
-        "note": null
+        "source_url": "https://dreamina.capcut.com/",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג, לבקשת בעל האתר. נחתך מתמונת הלוגו שבכותרת האתר הרשמי, שנלקחה ב־18 בנובמבר 2026 (באתר אין קובץ וקטורי). סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
       },
       "status": {
         "state": "פעיל",
@@ -3048,7 +3470,59 @@
           "stale": true
         }
       ],
-      "checked_date": "2026-11-18"
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": true,
+          "basis": "מודל חדש ביולי 2026 לפי הודעת החברה, אבל עמוד רשמי מאוקטובר 2026 כותב שההפצה רק מתחילה. תאריך ההשקה של הכלי לא אומת. שתי סקירות מזכירות את Dreamina בשמו.",
+          "launch_date": null,
+          "launched_in_window": null,
+          "latest_version": "Seedance 2.5",
+          "latest_version_date": "July 31, 2026",
+          "independent_reviews": 2,
+          "evidence": "research/new_and_notable.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 15,
+          "currency": "USD",
+          "billing": "חודשי",
+          "plan": "Basic",
+          "verified": true,
+          "label": "מ־15 דולר לחודש, לפי המחירון בארצות הברית",
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר"
+          ],
+          "unverified": [
+            "אפליקציות לנייד"
+          ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 4,
+            "of": 6,
+            "value": false,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "נקודות זיכוי יומיות בחינם. הכמות לא צוינה.",
+            "evidence": "research/tags.md"
+          }
+        }
+      }
     },
     {
       "id": 10,
@@ -3060,11 +3534,11 @@
       "role": "פלטפורמת יצירה שמפיקה וידאו ותמונות מטקסט ומתמונות, כולל עריכה.",
       "url": "https://wan.video/",
       "logo": {
-        "file": null,
+        "file": "logos/wan.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "באתר הרשמי הלוגו מוצג כתמונה רגילה ולא כקובץ וקטורי. לא אותר קובץ וקטורי רשמי.",
-        "note": null
+        "source_url": "https://wan.video/",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג, לבקשת בעל האתר. נחתך מתמונת הלוגו שבכותרת האתר הרשמי, שנלקחה ב־18 בנובמבר 2026 (באתר אין קובץ וקטורי). סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
       },
       "status": {
         "state": "פעיל",
@@ -3297,7 +3771,59 @@
           "stale": false
         }
       ],
-      "checked_date": "2026-11-18"
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": true,
+          "basis": "המודל נפתח לציבור בפברואר 2025 לפי מקור חדשותי, והגרסה הנוכחית יצאה באוגוסט 2026 לפי מקור חדשותי. תאריך ההשקה של האתר לא אומת.",
+          "launch_date": null,
+          "launched_in_window": false,
+          "latest_version": "Wan3.0",
+          "latest_version_date": "Aug 24, 2026",
+          "independent_reviews": 3,
+          "evidence": "research/new_and_notable.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 10,
+          "currency": "USD",
+          "billing": "חודשי",
+          "plan": "Pro",
+          "verified": true,
+          "label": "מ־10 דולר לחודש",
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר",
+            "iOS",
+            "Android"
+          ],
+          "unverified": []
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 3,
+            "of": 6,
+            "value": false,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "נקודות זיכוי חינם בכניסה יומית. הכמות לא צוינה.",
+            "evidence": "research/tags.md"
+          }
+        }
+      }
     }
   ]
 }
