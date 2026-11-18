@@ -32,6 +32,7 @@ const ICON = {
   viewCards: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4.5" width="6.5" height="15" rx="1.5"/><rect x="13.5" y="4.5" width="6.5" height="15" rx="1.5"/></svg>',
   viewIndex: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15M4.5 12h15M4.5 17.5h15"/></svg>',
   viewGallery: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="6" height="6" rx="1.2"/><rect x="13.5" y="4.5" width="6" height="6" rx="1.2"/><rect x="4.5" y="13.5" width="6" height="6" rx="1.2"/><rect x="13.5" y="13.5" width="6" height="6" rx="1.2"/></svg>',
+  dots: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle class="fill" cx="12" cy="5" r="1.7"/><circle class="fill" cx="12" cy="12" r="1.7"/><circle class="fill" cx="12" cy="19" r="1.7"/></svg>',
   sun: '<svg class="ico ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3 7 7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7"/></svg>',
   moon: '<svg class="ico ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8.3 8.3 0 0 1 9.8 4a8.3 8.3 0 1 0 10.2 10.2Z"/></svg>',
   vFull: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>',
@@ -379,7 +380,6 @@ const facts = [
   [total, 'כלים באטלס'],
   // מספר הקטגוריות שיש בהן כלים. מתעדכן לבד כשנוספת קטגוריה לנתונים.
   [liveCats.length, liveCats.length === 1 ? 'קטגוריה באטלס' : 'קטגוריות באטלס'],
-  [dateShort(data.snapshot_date), 'תאריך הבדיקה האחרונה', 'fact-date'],
 ];
 
 const html = `<!doctype html>
@@ -398,11 +398,16 @@ const html = `<!doctype html>
 
 <header class="bar">
   <div class="wrap bar-in">
-    <div class="views" id="views" role="group" aria-label="תצוגה">${[['cards', 'כרטיסים', ICON.viewCards], ['index', 'אינדקס', ICON.viewIndex], ['gallery', 'גלריה', ICON.viewGallery]].map(([k, l, ic]) => `<button type="button" class="view-btn" data-view-set="${k}" aria-pressed="${k === 'cards'}" data-tip="${l}">${ic}<span class="sr-only">תצוגת ${l}</span></button>`).join('')}</div>
-    <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">האטלס</span></a>
+    <div class="menu" id="menu">
+      <button type="button" class="menu-btn" id="menu-open" aria-expanded="false" aria-controls="menu-panel">${ICON.dots}<span class="sr-only">הגדרות תצוגה</span></button>
+      <div class="menu-panel" id="menu-panel" hidden>
+        <div class="menu-row"><span class="menu-l" aria-hidden="true">תצוגה</span><div class="views" id="views" role="group" aria-label="תצוגה">${[['cards', 'כרטיסים', ICON.viewCards], ['index', 'אינדקס', ICON.viewIndex], ['gallery', 'גלריה', ICON.viewGallery]].map(([k, l, ic]) => `<button type="button" class="view-btn" data-view-set="${k}" aria-pressed="${k === 'cards'}" data-tip="${l}">${ic}<span class="sr-only">תצוגת ${l}</span></button>`).join('')}</div></div>
+        <div class="menu-row"><span class="menu-l" aria-hidden="true">מצב כהה</span><button type="button" class="theme-switch" id="theme-toggle" role="switch" aria-checked="false">${ICON.sun}${ICON.moon}<span class="sr-only">מצב כהה</span></button></div>
+      </div>
+    </div>
+    <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">אטלס כלי הבינה</span></a>
     <p class="bar-date"><span class="bar-date-l">תאריך הבדיקה האחרונה</span> <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
     <div class="bar-actions">
-      <button type="button" class="theme-switch" id="theme-toggle" role="switch" aria-checked="false">${ICON.sun}${ICON.moon}<span class="sr-only">מצב כהה</span></button>
       <button type="button" class="btn btn-primary" id="finder-open" aria-haspopup="dialog">${ICON.search}<span>חיפוש</span></button>
     </div>
   </div>
@@ -444,6 +449,7 @@ ${sections}
     <p class="foot-lede">${data.categories.length} קטגוריות מתוכננות, ${liveCats.length === 1 ? 'אחת מהן נחקרה' : liveCats.length + ' מהן נחקרו'} עד עכשיו.</p>
     <ol class="foot-cats" role="list">${footerCats}</ol>
     <p class="foot-note">המידע נכון ליום הבדיקה, ${dateLong(data.snapshot_date)}. מחירים ותנאים משתנים, ולכן כדאי לבדוק באתר הרשמי של כל כלי לפני החלטה. הלוגואים שייכים לחברות ומוצגים לצורך זיהוי בלבד.</p>
+    <p class="foot-date">תאריך הבדיקה האחרונה: <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
   </div>
 </footer>
 

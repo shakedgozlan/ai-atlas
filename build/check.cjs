@@ -256,7 +256,21 @@ const audit = () => {
       note((await page.locator('.card:not([hidden])').count()) === n && !(await page.locator('#filter-bar').isVisible()), `${tag} ניקוי הסינון`);
 
       // מתג תצוגה: שלושה מצבים, בלי גלילה לרוחב, כל הכלים מוצגים, וחלון הפרטים נפתח מכל מצב
+      // במסך צר המתגים נמצאים בתפריט שלוש הנקודות, ולכן פותחים אותו קודם
+      const openMenu = async () => {
+        if ((await page.locator('#menu-open').isVisible()) && !(await page.locator('#menu-panel').isVisible())) await page.click('#menu-open');
+      };
+      if (await page.locator('#menu-open').isVisible()) {
+        await openMenu();
+        note(await page.locator('#menu-panel').isVisible(), `${tag} תפריט שלוש הנקודות לא נפתח`);
+        await page.waitForTimeout(300);
+        await report('תפריט פתוח');
+        if (shots) await page.screenshot({ path: path.join(shots, `${tag}-8-menu.png`) });
+        await page.keyboard.press('Escape');
+        note(!(await page.locator('#menu-panel').isVisible()), `${tag} התפריט לא נסגר במקש Escape`);
+      }
       for (const v of ['index', 'gallery', 'cards']) {
+        await openMenu();
         await page.click(`[data-view-set="${v}"]`);
         await page.waitForTimeout(200);
         const sel = v === 'cards' ? '.card-head' : '.mini';
@@ -274,6 +288,7 @@ const audit = () => {
 
       // מצב כהה ובהיר
       const before = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+      await openMenu();
       await page.click('#theme-toggle');
       await page.waitForTimeout(300);
       const after = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);

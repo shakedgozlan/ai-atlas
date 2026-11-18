@@ -85,6 +85,22 @@
     paintTheme();
   }
 
+  /* ---------- תפריט שלוש נקודות (מסך צר): פותח וסוגר את לוח המתגים ---------- */
+  var menuBtn = $('#menu-open'), menuPanel = $('#menu-panel');
+  function setMenu(open) {
+    menuPanel.hidden = !open;
+    menuBtn.setAttribute('aria-expanded', String(open));
+  }
+  if (menuBtn && menuPanel) {
+    menuBtn.addEventListener('click', function () { setMenu(menuPanel.hidden); });
+    document.addEventListener('click', function (e) {
+      if (!menuPanel.hidden && !e.target.closest('#menu')) setMenu(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !menuPanel.hidden && menuBtn.offsetParent !== null) { setMenu(false); menuBtn.focus(); }
+    });
+  }
+
   /* ---------- מתג תצוגה: כרטיסים, אינדקס או גלריה ---------- */
   var viewBtns = $$('[data-view-set]');
   function paintView() {

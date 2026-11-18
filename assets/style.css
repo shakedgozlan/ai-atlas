@@ -118,18 +118,31 @@ button:disabled{cursor:not-allowed}
   /* מתג היום והלילה יוצא גם הוא מרוחב התוכן, לקצה השמאלי של הסרגל */
   .bar .theme-switch{position:absolute;inset-inline-end:16px;top:50%;transform:translateY(-50%)}
 }
-@media (max-width:479px){
-  #finder-open{padding-inline:0;width:44px;justify-content:center}
-  #finder-open span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+/* תפריט שלוש נקודות: במסך צר שני המתגים (תצוגה, יום ולילה) נכנסים לתוכו כדי לפנות את הסרגל.
+   במסך רחב העטיפה שקופה לפריסה והמתגים יושבים בסרגל עצמו. */
+.menu-btn{display:none}
+.menu,.menu-panel,.menu-row{display:contents}
+.menu-l{display:none}
+.bar .theme-switch{order:5}
+.bar-actions{order:6}
+@media (max-width:759px){
+  .menu{display:block;position:relative;flex:none}
+  .menu-btn{display:inline-grid;place-items:center;width:44px;height:44px;margin-inline-start:-10px;padding:0;border:0;border-radius:999px;background:transparent;color:var(--ink);cursor:pointer}
+  .menu-btn .ico{width:22px;height:22px}
+  .menu-btn:hover,.menu-btn[aria-expanded="true"]{background:var(--inner)}
+  .menu-panel{display:grid;gap:4px;position:absolute;top:calc(100% + 10px);inset-inline-start:-10px;z-index:30;width:max-content;min-width:248px;padding:8px 16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);box-shadow:0 12px 32px rgb(0 0 0 / .14)}
+  .menu-row{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:60px}
+  .menu-row+.menu-row{border-top:1px solid var(--line)}
+  .menu-l{display:block;font-size:var(--t-label);font-weight:500;color:var(--ink)}
 }
-@media (max-width:359px){.brand{display:none}}
-/* תאריך הבדיקה האחרונה: בסרגל במסך רחב, ובנתוני הפתיח במסך צר שבו אין לו מקום בסרגל */
+@media (min-width:760px){.menu-panel[hidden]{display:contents !important}}
+html:not(.js) .menu{display:none}
+/* תאריך הבדיקה האחרונה: בסרגל במסך רחב, ותמיד גם בשורה קטנה בתחתית הדף */
 .bar-date{display:none;margin-inline-start:auto;font-size:var(--t-label);color:var(--ink-faint);white-space:nowrap}
 .bar-date time{color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
 @media (min-width:760px){
   .bar-date{display:block}
   .bar-actions{margin-inline-start:0}
-  .hero-facts .fact-date{display:none}
 }
 /* מתג יום ולילה: אייקונים בלבד. העיגול יושב על המצב הפעיל. השם לקוראי מסך נמצא בטקסט מוסתר. */
 .theme-switch{position:relative;display:inline-flex;align-items:center;justify-content:space-between;flex:none;width:84px;height:44px;padding:0 10px;border:1.5px solid var(--line-strong);border-radius:999px;background:var(--surface);color:var(--ink-faint);cursor:pointer;transition:border-color .12s ease}
@@ -142,17 +155,17 @@ button:disabled{cursor:not-allowed}
 html:not(.js) .bar-actions{display:none}
 
 /* פתיח */
-.hero{padding-block:clamp(24px,4.5vw,48px) clamp(20px,3vw,32px);display:grid;grid-template-columns:minmax(0,1fr);column-gap:clamp(24px,5vw,72px)}
+.hero{padding-block:clamp(48px,9vw,112px) clamp(40px,7vw,88px);display:grid;grid-template-columns:minmax(0,1fr);column-gap:clamp(24px,5vw,72px)}
 .hero h1{text-wrap:balance;font-size:var(--t-hero);font-weight:700;line-height:1.02;letter-spacing:-0.015em;overflow-wrap:break-word;min-width:0}
-.hero-lede{margin-top:clamp(10px,1.2vw,16px);max-width:52ch;font-size:clamp(1.0625rem,1rem + 0.35vw,1.25rem);line-height:1.55;color:var(--ink-soft)}
-.hero-facts{display:flex;flex-wrap:wrap;gap:12px clamp(24px,5vw,56px);margin-top:clamp(20px,3vw,32px);padding-top:clamp(14px,min(2vw,2.2vh),24px);border-top:1px solid var(--line)}
+.hero-lede{margin-top:clamp(16px,1.6vw,24px);max-width:52ch;font-size:clamp(1.0625rem,1rem + 0.35vw,1.25rem);line-height:1.55;color:var(--ink-soft)}
+.hero-facts{display:flex;flex-wrap:wrap;gap:24px clamp(40px,12vw,72px);margin-top:clamp(36px,6vw,56px);padding-top:clamp(28px,5vw,40px);border-top:1px solid var(--line)}
 @media (min-width:980px){
   /* הכותרת ומשפט הפתיחה צמודים זה לזה. גובה עודף של עמודת הנתונים יורד מתחת למשפט, לא ביניהם. */
   .hero{grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto 1fr;align-items:start}
   .hero h1,.hero-lede{grid-column:1}
-  .hero-facts{grid-column:2;grid-row:1 / span 2;flex-direction:column;gap:16px;margin-top:0;padding-top:0;border-top:0;padding-inline-start:clamp(24px,3vw,40px);border-inline-start:1px solid var(--line)}
+  .hero-facts{grid-column:2;grid-row:1 / span 2;flex-direction:column;gap:32px;margin-top:0;padding-top:0;border-top:0;padding-inline-start:clamp(32px,4vw,56px);border-inline-start:1px solid var(--line)}
 }
-.hero-facts div{display:flex;flex-direction:column-reverse;align-items:flex-start;gap:2px;text-align:right}
+.hero-facts div{display:flex;flex-direction:column-reverse;align-items:flex-start;gap:8px;text-align:right}
 .hero-facts dd{margin:0;font-size:clamp(1.75rem,1.3rem + 1.6vw,2.625rem);font-weight:400;line-height:1.1;color:var(--ink-faint);font-variant-numeric:tabular-nums}
 .hero-facts dt{font-size:var(--t-label);font-weight:500;color:var(--ink)}
 
@@ -378,6 +391,7 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
 .pending .num{color:var(--ink-soft)}
 .cat-nav-count{font-size:var(--t-label);font-weight:500;color:var(--ink-soft);white-space:nowrap}
 .foot-note{margin-top:24px;max-width:70ch;color:var(--ink-soft)}
+.foot-date{margin-top:32px;font-size:.8125rem;color:var(--ink-faint);font-variant-numeric:tabular-nums}
 
 /* החלון הקופץ */
 /* חלון החיפוש: שכבה מעל הדף, כמו חלון הפרטים. שדה אחד גדול, ומתחתיו קיצורי דרך או תוצאות. */
