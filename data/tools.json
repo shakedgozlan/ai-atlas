@@ -2808,11 +2808,11 @@
       "role": "יצירת וידאו מטקסט, מתמונות ומקובצי ייחוס באמצעות מודלי Seedance.",
       "url": "https://dreamina.capcut.com",
       "logo": {
-        "file": null,
-        "file_dark": null,
-        "source_url": null,
-        "missing_reason": "באתר הרשמי הלוגו מוצג כתמונה רגילה ולא כקובץ וקטורי. לא אותר קובץ וקטורי רשמי.",
-        "note": null
+        "file": "logos/dreamina.png",
+        "file_dark": "logos/dreamina-dark.png",
+        "source_url": "https://dreamina.capcut.com/",
+        "missing_reason": null,
+        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026 כתמונה (360 על 96 נקודות), כי באתר אין קובץ וקטורי. בגרסה לרקע כהה הכיתוב הכהה הוחלף בלבן, והסמל הצבעוני לא שונה."
       },
       "status": {
         "state": "פעיל",
@@ -3060,11 +3060,11 @@
       "role": "פלטפורמת יצירה שמפיקה וידאו ותמונות מטקסט ומתמונות, כולל עריכה.",
       "url": "https://wan.video/",
       "logo": {
-        "file": null,
+        "file": "logos/wan.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "באתר הרשמי הלוגו מוצג כתמונה רגילה ולא כקובץ וקטורי. לא אותר קובץ וקטורי רשמי.",
-        "note": null
+        "source_url": "https://wan.video/",
+        "missing_reason": null,
+        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026 כתמונה (190 על 72 נקודות), כי באתר אין קובץ וקטורי. לוגו צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
       },
       "status": {
         "state": "פעיל",

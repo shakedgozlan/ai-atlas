@@ -160,7 +160,7 @@ html:not(.js) .bar-actions{display:none}
 .card-meta{display:flex;flex-direction:column;gap:8px;min-width:0}
 .card-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 12px;min-height:28px}
 .num{font-variant-numeric:tabular-nums;font-weight:700;color:var(--cat);font-size:var(--t-body);direction:ltr}
-.logo{display:grid;place-items:center;align-self:start;width:clamp(72px,18vw,108px);aspect-ratio:9 / 8;padding:10px;background:var(--inner);border-radius:var(--r-inner)}
+.logo{display:grid;place-items:center;align-self:stretch;width:clamp(72px,18vw,108px)}
 .logo img{width:100%;height:auto;max-height:44px;object-fit:contain}
 .logo-dark{display:none}
 :root[data-theme="dark"] .logo-dark{display:block}
@@ -269,7 +269,7 @@ html:not(.js) [data-toggle]{display:none}
 }
 @media (max-width:359px){
   .card-actions .btn{flex:1 1 100%}
-  .logo{width:56px;padding:6px}
+  .logo{width:56px}
   .verify{padding-inline:8px}
 }
 
