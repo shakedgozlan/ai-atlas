@@ -58,7 +58,7 @@ function priceLine(t) {
   const v = p.verification;
   let text;
   if (has(p.summary_line)) text = esc(p.summary_line);
-  else if (v === 'אומת חלקית') text = 'התמחור אומת רק בחלקו. מה שאומת מופיע בכל הפרטים.';
+  else if (v === 'אומת חלקית') text = 'פירוט המחירים שנבדקו, ומה עוד לא נבדק, מופיע בפרטים הנוספים.';
   else text = 'תמחור לא אומת.';
   return `<p class="price"><span class="price-text">${text}</span></p>`;
 }
@@ -68,6 +68,8 @@ function verifyPill(t) {
   const v = p.verification;
   const mark = v === 'אומת ממקור רשמי' ? ['full', ICON.vFull] : v === 'אומת חלקית' ? ['part', ICON.vPart] : ['none', ICON.vNone];
   const label = !has(p.summary_line) && v !== 'אומת חלקית' ? 'מחיר לא אומת' : v === 'אומת ממקור רשמי' ? 'מחיר אומת' : v === 'אומת חלקית' ? 'מחיר אומת חלקית' : 'מחיר לא אומת';
+  // התווית מוצגת רק כשהמחיר אומת במלואו. מה שלא אומת מפורט בתוך ״כל הפרטים״.
+  if (mark[0] !== 'full') return '';
   return `<span class="verify verify-${mark[0]}">${mark[1]}${label}</span>`;
 }
 
