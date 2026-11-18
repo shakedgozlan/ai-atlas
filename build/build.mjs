@@ -281,11 +281,13 @@ function toolFlags(t) {
   };
 }
 
-// מחיר התחלתי קצר לתצוגות האינדקס והגלריה. מוצג רק כשהמחקר אימת אותו, אחרת נכתב שלא אומת.
+// מחיר התחלתי לתצוגות האינדקס והגלריה, מתוך התווית שהמחקר כתב לכל כלי.
+// המשפט הראשון הוא המחיר, וההמשך (מה לא אומת, מאיזה מקור) מוצג מתחתיו כהערה קטנה ולא מושמט.
 function startPrice(t) {
-  const sp = t.filters?.starting_price || {};
-  if (sp.verified === true && sp.amount != null && sp.currency === 'USD' && sp.billing === 'חודשי') return `מ־${sp.amount} דולר לחודש`;
-  return 'מחיר לא אומת במלואו';
+  const label = String(t.filters?.starting_price?.label || '').trim();
+  if (!label) return ['מחיר לא אומת במלואו', ''];
+  const cut = label.indexOf('. ');
+  return cut === -1 ? [label.replace(/\.$/, ''), ''] : [label.slice(0, cut), label.slice(cut + 2)];
 }
 // גרסה מצומצמת של הכלי, לתצוגות האינדקס והגלריה. מוסתרת בתצוגת הכרטיסים.
 function miniHtml(t, free) {
@@ -294,7 +296,7 @@ function miniHtml(t, free) {
     <span class="mini-logo">${logoHtml(t)}</span>
     <h3 class="mini-name"><span class="sr-only">כלי מספר ${t.id}: </span><bdi>${esc(t.name)}</bdi></h3>
     <p class="mini-role">${esc(t.role)}</p>
-    <p class="mini-price"><span>${startPrice(t)}</span>${free ? '<small class="mini-free">יש תוכנית חינמית</small>' : ''}</p>
+    <p class="mini-price"><span>${esc(startPrice(t)[0])}</span>${startPrice(t)[1] ? `<small class="mini-note">${esc(startPrice(t)[1])}</small>` : ''}${free ? '<small class="mini-free">יש תוכנית חינמית</small>' : ''}</p>
     <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-${t.id}"><span class="sr-only">פרטים נוספים על ${esc(t.name)}</span>${ICON.expand}</button>
   </div>`;
 }
