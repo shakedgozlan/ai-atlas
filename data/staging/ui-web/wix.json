@@ -261,14 +261,14 @@
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
-   "value": null,
-   "basis": "גרסה משמעותית בחלון: Wix Harmony הוכרז ב־21 בינואר 2026. מספר הסקירות העצמאיות טרם נקבע.",
+   "value": true,
+   "basis": "Wix Harmony הוכרז ב־21 בינואר 2026, ו־2 סקירות עצמאיות מהשנה האחרונה מכסות את Wix.",
    "launch_date": null,
    "launched_in_window": false,
    "latest_version": "Wix Harmony",
    "latest_version_date": "Jan 21 2026",
    "latest_version_date_iso": "2026-01-21",
-   "independent_reviews": null,
+   "independent_reviews": 2,
    "evidence": "research/stage4/ui-web.md"
   },
   "hebrew": {
@@ -293,9 +293,9 @@
   },
   "tags": {
    "review_roundups": {
-    "count": null,
-    "of": 0,
-    "value": null,
+    "count": 2,
+    "of": 4,
+    "value": false,
     "evidence": "research/stage4/ui-web.md"
    },
    "popular": {

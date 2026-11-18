@@ -36,6 +36,14 @@
     "s1"
    ],
    "inference": false
+  },
+  {
+   "lead": "עבודה על קוד קיים",
+   "detail": "מאז הגרסה החדשה מ־3 בפברואר 2026, v0 יכול לייבא מאגר GitHub קיים, ליצור ענף לכל שיחה ולפתוח PR שמתפרסם במיזוג.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
   }
  ],
  "limitations": [
@@ -147,10 +155,13 @@
  "integrations": {
   "items": [
    "Vercel",
-   "GitHub"
+   "GitHub",
+   "Snowflake",
+   "AWS"
   ],
   "source_ids": [
-   "s1"
+   "s1",
+   "s3"
   ]
  },
  "platforms": {
@@ -195,19 +206,28 @@
    "published": "2026-03-17",
    "checked": "2026-11-18",
    "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://vercel.com/blog/introducing-the-new-v0",
+   "title": "הבלוג של Vercel: Introducing the new v0",
+   "official": true,
+   "published": "2026-02-03",
+   "checked": "2026-11-18",
+   "stale": false
   }
  ],
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
-   "value": null,
-   "basis": "לא אומת: תאריך הגרסה המשמעותית האחרונה לא נקרא במקור רשמי.",
-   "launch_date": null,
-   "launched_in_window": null,
-   "latest_version": null,
-   "latest_version_date": null,
-   "latest_version_date_iso": null,
-   "independent_reviews": null,
+   "value": true,
+   "basis": "גרסה חדשה של v0 לעבודת פרודקשן הוכרזה ב־3 בפברואר 2026, ו־2 סקירות עצמאיות מהשנה האחרונה מכסות את v0. לפי Vercel, v0 הפך לזמין לכלל ב־2024.",
+   "launch_date": "generally available in 2024",
+   "launched_in_window": false,
+   "latest_version": "The new v0",
+   "latest_version_date": "3 Feb 2026",
+   "latest_version_date_iso": "2026-02-03",
+   "independent_reviews": 2,
    "evidence": "research/stage4/ui-web.md"
   },
   "hebrew": {
@@ -232,9 +252,9 @@
   },
   "tags": {
    "review_roundups": {
-    "count": null,
-    "of": 0,
-    "value": null,
+    "count": 2,
+    "of": 4,
+    "value": false,
     "evidence": "research/stage4/ui-web.md"
    },
    "popular": {

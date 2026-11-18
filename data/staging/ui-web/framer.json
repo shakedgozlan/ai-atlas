@@ -240,7 +240,7 @@
    "latest_version": null,
    "latest_version_date": null,
    "latest_version_date_iso": null,
-   "independent_reviews": null,
+   "independent_reviews": 3,
    "evidence": "research/stage4/ui-web.md"
   },
   "hebrew": {
@@ -265,9 +265,9 @@
   },
   "tags": {
    "review_roundups": {
-    "count": null,
-    "of": 0,
-    "value": null,
+    "count": 3,
+    "of": 4,
+    "value": true,
     "evidence": "research/stage4/ui-web.md"
    },
    "popular": {
