@@ -355,7 +355,8 @@ const heroSentence = liveCats.length === 1
 
 const facts = [
   [total, 'כלים באטלס'],
-  liveCats.length === data.categories.length ? [data.categories.length, 'קטגוריות באטלס'] : [`${liveCats.length} מתוך ${data.categories.length}`, 'קטגוריות שנחקרו עד עכשיו'],
+  // מספר הקטגוריות שיש בהן כלים. מתעדכן לבד כשנוספת קטגוריה לנתונים.
+  [liveCats.length, liveCats.length === 1 ? 'קטגוריה באטלס' : 'קטגוריות באטלס'],
   [dateShort(data.snapshot_date), 'תאריך הבדיקה'],
 ];
 
@@ -386,7 +387,7 @@ const html = `<!doctype html>
 <main id="main" tabindex="-1">
   <section class="hero wrap" id="top" aria-labelledby="page-title">
     <h1 id="page-title">אטלס כלי בינה מלאכותית</h1>
-    <p class="hero-lede">מה כל כלי עושה, כמה הוא עולה ומה חשוב לדעת לפני שבוחרים. המידע נאסף מהמקורות הרשמיים של כל כלי.</p>
+    <p class="hero-lede">לפני שנרשמים לעוד כלי: מה הוא עושה באמת, כמה הוא עולה ואיפה הוא נופל. הכול מהמקורות הרשמיים, בעברית ובמקום אחד.</p>
     <dl class="hero-facts">
       ${facts.map(([n, l]) => `<div><dt>${l}</dt><dd>${n}</dd></div>`).join('\n      ')}
     </dl>

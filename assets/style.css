@@ -118,8 +118,8 @@ html:not(.js) .bar-actions{display:none}
   .hero-facts{grid-column:2;grid-row:1 / span 2;flex-direction:column;gap:16px;margin-top:0;padding-top:0;border-top:0;padding-inline-start:clamp(24px,3vw,40px);border-inline-start:1px solid var(--line)}
 }
 .hero-facts div{display:flex;flex-direction:column-reverse;align-items:flex-start;gap:2px;text-align:right}
-.hero-facts dd{margin:0;font-size:clamp(1.5rem,1.2rem + 1.1vw,2.125rem);font-weight:400;line-height:1.15;font-variant-numeric:tabular-nums}
-.hero-facts dt{font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
+.hero-facts dd{margin:0;font-size:clamp(1.75rem,1.3rem + 1.6vw,2.625rem);font-weight:400;line-height:1.1;color:var(--ink-faint);font-variant-numeric:tabular-nums}
+.hero-facts dt{font-size:var(--t-label);font-weight:500;color:var(--ink)}
 
 /* סינון פעיל ומצב ריק */
 /* סננים בדף הראשי: שורת כפתורים שקטה מעל הכרטיסים. כמה סננים יחד מצמצמים את הרשימה. */
