@@ -98,6 +98,13 @@ button:disabled{cursor:not-allowed}
 .brand:hover{color:var(--brand)}
 .brand-short{display:none}
 .bar-actions{display:flex;align-items:center;gap:8px}
+/* תאריך הבדיקה האחרונה: בסרגל במסך רחב, ובנתוני הפתיח במסך צר שבו אין לו מקום בסרגל */
+.bar-date{display:none;margin-inline-start:auto;font-size:var(--t-label);color:var(--ink-faint);white-space:nowrap}
+.bar-date time{color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
+@media (min-width:760px){
+  .bar-date{display:block}
+  .hero-facts .fact-date{display:none}
+}
 .ico-sun{display:none}
 :root[data-theme="dark"] .ico-sun{display:block}
 :root[data-theme="dark"] .ico-moon{display:none}
@@ -110,10 +117,11 @@ html:not(.js) .bar-actions{display:none}
 /* פתיח */
 .hero{padding-block:clamp(24px,4.5vw,48px) clamp(20px,3vw,32px);display:grid;grid-template-columns:minmax(0,1fr);column-gap:clamp(24px,5vw,72px)}
 .hero h1{text-wrap:balance;font-size:var(--t-hero);font-weight:700;line-height:1.02;letter-spacing:-0.015em;overflow-wrap:break-word;min-width:0}
-.hero-lede{margin-top:clamp(12px,2vw,24px);max-width:52ch;font-size:clamp(1.0625rem,1rem + 0.35vw,1.25rem);line-height:1.55;color:var(--ink-soft)}
+.hero-lede{margin-top:clamp(10px,1.2vw,16px);max-width:52ch;font-size:clamp(1.0625rem,1rem + 0.35vw,1.25rem);line-height:1.55;color:var(--ink-soft)}
 .hero-facts{display:flex;flex-wrap:wrap;gap:12px clamp(24px,5vw,56px);margin-top:clamp(20px,3vw,32px);padding-top:clamp(14px,min(2vw,2.2vh),24px);border-top:1px solid var(--line)}
 @media (min-width:980px){
-  .hero{grid-template-columns:minmax(0,1fr) auto;align-items:end}
+  /* הכותרת ומשפט הפתיחה צמודים זה לזה. גובה עודף של עמודת הנתונים יורד מתחת למשפט, לא ביניהם. */
+  .hero{grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto 1fr;align-items:start}
   .hero h1,.hero-lede{grid-column:1}
   .hero-facts{grid-column:2;grid-row:1 / span 2;flex-direction:column;gap:16px;margin-top:0;padding-top:0;border-top:0;padding-inline-start:clamp(24px,3vw,40px);border-inline-start:1px solid var(--line)}
 }

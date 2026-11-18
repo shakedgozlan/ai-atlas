@@ -357,7 +357,7 @@ const facts = [
   [total, 'כלים באטלס'],
   // מספר הקטגוריות שיש בהן כלים. מתעדכן לבד כשנוספת קטגוריה לנתונים.
   [liveCats.length, liveCats.length === 1 ? 'קטגוריה באטלס' : 'קטגוריות באטלס'],
-  [dateShort(data.snapshot_date), 'תאריך הבדיקה'],
+  [dateShort(data.snapshot_date), 'תאריך הבדיקה האחרונה', 'fact-date'],
 ];
 
 const html = `<!doctype html>
@@ -377,6 +377,7 @@ const html = `<!doctype html>
 <header class="bar">
   <div class="wrap bar-in">
     <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">האטלס</span></a>
+    <p class="bar-date"><span class="bar-date-l">תאריך הבדיקה האחרונה</span> <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
     <div class="bar-actions">
       <button type="button" class="btn btn-icon" id="theme-toggle">${ICON.moon}${ICON.sun}<span class="theme-label" data-theme-label>מצב כהה</span></button>
       <button type="button" class="btn btn-primary" id="finder-open" aria-haspopup="dialog">${ICON.search}<span>חיפוש</span></button>
@@ -389,7 +390,7 @@ const html = `<!doctype html>
     <h1 id="page-title">אטלס כלי בינה מלאכותית</h1>
     <p class="hero-lede">לפני שנרשמים לעוד כלי: מה הוא עושה באמת, כמה הוא עולה ואיפה הוא נופל. הכול מהמקורות הרשמיים, בעברית ובמקום אחד.</p>
     <dl class="hero-facts">
-      ${facts.map(([n, l]) => `<div><dt>${l}</dt><dd>${n}</dd></div>`).join('\n      ')}
+      ${facts.map(([n, l, c]) => `<div${c ? ` class="${c}"` : ''}><dt>${l}</dt><dd>${n}</dd></div>`).join('\n      ')}
     </dl>
   </section>
 
