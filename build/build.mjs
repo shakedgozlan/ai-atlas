@@ -199,11 +199,14 @@ function sheetHtml(t) {
     has(api) && !unverified(api) ? `<p><span class="sub">ממשק למפתחים:</span> ${esc(api)}</p>` : '',
     has(t.student_benefits?.text) ? `<p><span class="sub">הטבות לסטודנטים:</span> ${esc(t.student_benefits.text)}</p>` : '',
   ].join('');
-  const below = [
-    sec('sec-free', 'מה כלול בחינם', para(p.free_tier)),
-    sec('sec-trial', 'מה ניתן רק לתקופת ניסיון', para(p.trial)),
-    sec('sec-extra', 'עוד על הכלי', extra),
-  ].join('');
+  // רוחב העמודות בשורה הזאת נקבע לפי אורך הטקסט, כדי שהעמודות יצאו בגובה דומה
+  const belowParts = [
+    [sec('sec-free', 'מה כלול בחינם', para(p.free_tier)), String(p.free_tier ?? '').length],
+    [sec('sec-trial', 'מה ניתן רק לתקופת ניסיון', para(p.trial)), String(p.trial ?? '').length],
+    [sec('sec-extra', 'עוד על הכלי', extra), String(t.student_benefits?.text ?? '').length + 30],
+  ].filter((x) => x[0]);
+  const below = belowParts.map((x) => x[0]).join('');
+  const belowCols = belowParts.map((x) => `minmax(0,${Math.min(2, Math.max(1, x[1] / 120)).toFixed(2)}fr)`).join(' ');
 
   const plansFull = shown.length ? `${toggle}${has(p.model) ? `<p class="sec-meta"><span class="sub">שיטת התמחור:</span> ${esc(p.model)}</p>` : ''}<ul class="plans" role="list">${shown.map((o) => planHtml(o.p, billAttr(o), o.name)).join('')}</ul>` : '';
   const terms = [
@@ -247,7 +250,7 @@ function sheetHtml(t) {
       <div class="sheet-body">
         ${key ? `<div class="sheet-row">${key}</div>` : ''}
         ${price}
-        ${below ? `<div class="sheet-row">${below}</div>` : ''}
+        ${below ? `<div class="sheet-row sheet-row-b" style="--cols:${belowCols}">${below}</div>` : ''}
         ${moreHtml}
       </div>
     </div>

@@ -191,13 +191,13 @@ html:not(.js) .bar-actions{display:none}
 
 /* חלון הפרטים: שכבה שנפתחת מעל הדף. הדף נשאר מאחור, מעומעם. הכותרת קבועה, והתוכן נגלל רק אם פותחים פירוט. */
 html:has(.sheet[open]){overflow:hidden}
-.sheet{--pad:clamp(20px,3.4vw,44px);position:fixed;inset:0;inset-block:clamp(12px,4vh,40px) auto;width:min(1200px,100vw - 32px);max-width:none;height:auto;max-height:calc(100dvh - 2 * clamp(12px,4vh,40px));margin:0 auto;padding:0;border:1px solid var(--line-strong);border-radius:20px;background:var(--paper);color:var(--ink);overflow:clip;box-shadow:0 24px 64px -16px oklch(20% 0.03 200 / 0.45)}
+.sheet{--pad:clamp(24px,4.6vw,64px);position:fixed;inset:0;inset-block:clamp(10px,2.6vh,32px) auto;width:min(1240px,100vw - 64px);max-width:none;height:auto;max-height:calc(100dvh - 2 * clamp(10px,2.6vh,32px));margin:0 auto;padding:0;border:1px solid var(--line-strong);border-radius:var(--r-card);background:var(--paper);color:var(--ink);overflow:clip;box-shadow:0 24px 64px -16px oklch(20% 0.03 200 / 0.45)}
 .sheet[open]{display:flex;flex-direction:column;animation:sheet-in .22s cubic-bezier(.2,.8,.2,1)}
 @keyframes sheet-in{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
 .sheet::backdrop{background:var(--scrim);animation:scrim-in .22s ease-out}
 @keyframes scrim-in{from{opacity:0}to{opacity:1}}
 .sheet-head{flex:none;border-bottom:1px solid var(--line)}
-.sheet-head-in{display:flex;align-items:center;gap:12px clamp(12px,2vw,20px);padding:clamp(14px,1.8vw,22px) var(--pad)}
+.sheet-head-in{display:flex;align-items:center;gap:12px clamp(12px,2vw,20px);padding:clamp(16px,min(2.2vw,3vh),28px) var(--pad)}
 .sheet-head .logo{width:44px;height:44px;padding:0;align-self:center;flex:none}
 .sheet-head .logo img{width:100%}
 .sheet-id{flex:1;min-width:0}
@@ -208,10 +208,10 @@ html:has(.sheet[open]){overflow:hidden}
 .sheet-former{color:var(--ink-faint)}
 .sheet-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
 .sheet-scroll:focus{outline:none}
-.sheet-body{--t-sheet:0.9375rem;display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(14px,min(2.6vw,2.2vh),32px);padding:clamp(14px,min(2.4vw,2.4vh),28px) var(--pad) clamp(18px,3vh,44px);font-size:var(--t-sheet);line-height:1.55;color:var(--ink-soft)}
+.sheet-body{--t-sheet:0.9375rem;display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(12px,min(2.6vw,1.8vh),32px);padding:clamp(16px,min(2.6vw,3vh),32px) var(--pad) clamp(20px,3.6vh,56px);font-size:var(--t-sheet);line-height:1.55;color:var(--ink-soft)}
 .sheet-head{--t-sheet:0.9375rem}
-.sheet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(14px,min(2.6vw,2.2vh),32px) clamp(24px,3.4vw,48px);align-items:start}
-.sec{min-width:0;overflow-wrap:break-word}
+.sheet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(12px,min(2.6vw,1.8vh),32px) clamp(24px,3.4vw,48px);align-items:start}
+.sec{min-width:0;overflow-wrap:break-word;padding-top:10px;border-top:2px solid var(--cat)}
 .sec-h{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:24px;margin-bottom:8px}
 .sec h4{display:flex;align-items:center;gap:6px;font-size:var(--t-label);font-weight:600;line-height:1.3;color:var(--ink-faint)}
 .sec h4 .ico{width:16px;height:16px}
@@ -322,6 +322,9 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
 .cat-nav li>a:active{background:var(--brand-tint)}
 
 /* מסכים צרים */
+@media (min-width:900px){
+  .sheet-row-b{grid-template-columns:var(--cols)}
+}
 /* מסך גבוה: יש מקום לטקסט בגודל מלא */
 @media (min-width:1100px) and (min-height:960px){
   .sheet-body,.sheet-head{--t-sheet:1rem}
@@ -336,6 +339,7 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
   .tier{padding:10px 14px}
   .sheet-more{padding-top:14px}
   .sec-h{margin-bottom:4px}
+  .sec{padding-top:8px}
 }
 @media (min-width:600px) and (max-width:1023px){
   .tiers{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
@@ -348,7 +352,7 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
   .sum{gap:12px}
   .sum-row{grid-template-columns:minmax(0,1fr);row-gap:0}
   .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:20px 20px 0 0;border-inline:0;border-bottom:0}
+  .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
   .sheet-head-in{flex-wrap:wrap}
   .sheet-head .btn-site{order:3;flex:1 1 100%}
   .pt summary{min-height:44px}
