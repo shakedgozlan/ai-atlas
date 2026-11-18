@@ -415,6 +415,24 @@
             "Android"
           ],
           "unverified": []
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 5,
+            "of": 6,
+            "value": true,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": true,
+            "basis": "נתח של כ־10% מהתנועה לפלטפורמות וידאו בינה מלאכותית בפברואר 2026 (OfficeChai לפי Similarweb).",
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "50 נקודות זיכוי ביום בלי מנוי.",
+            "evidence": "research/tags.md"
+          }
         }
       }
     },
@@ -790,6 +808,24 @@
           "unverified": [
             "אפליקציות לנייד"
           ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 5,
+            "of": 6,
+            "value": true,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": true,
+            "basis": "נתח של כ־14% מהתנועה לפלטפורמות וידאו בינה מלאכותית בפברואר 2026 (OfficeChai לפי Similarweb).",
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          }
         }
       }
     },
@@ -1091,6 +1127,24 @@
           "unverified": [
             "Android"
           ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 5,
+            "of": 6,
+            "value": true,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": true,
+            "basis": "מקום 45 ברשימת 50 אתרי הבינה המלאכותית הנצפים של a16z (Similarweb, ינואר 2026), ונתח של כ־7% בפברואר 2026 (OfficeChai).",
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "הקצאת נקודות חינם בכניסה לחשבון מדי חודש. הכמות לא אומתה.",
+            "evidence": "research/tags.md"
+          }
         }
       }
     },
@@ -1475,6 +1529,24 @@
           "unverified": [
             "iOS"
           ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 5,
+            "of": 6,
+            "value": true,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          }
         }
       }
     },
@@ -1936,6 +2008,24 @@
           "unverified": [
             "iOS"
           ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 5,
+            "of": 6,
+            "value": true,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          }
         }
       }
     },
@@ -2318,6 +2408,24 @@
             "iOS"
           ],
           "unverified": []
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 2,
+            "of": 6,
+            "value": false,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          }
         }
       }
     },
@@ -2745,6 +2853,24 @@
           "unverified": [
             "אפליקציות לנייד"
           ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 1,
+            "of": 6,
+            "value": false,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": true,
+            "basis": "מקום 40 ברשימת 50 אתרי הבינה המלאכותית הנצפים של a16z (Similarweb, ינואר 2026).",
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          }
         }
       }
     },
@@ -3073,6 +3199,24 @@
           "unverified": [
             "אפליקציות לנייד"
           ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 2,
+            "of": 6,
+            "value": false,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "נקודות זיכוי בהתחברות יומית. הכמות לא צוינה.",
+            "evidence": "research/tags.md"
+          }
         }
       }
     },
@@ -3359,6 +3503,24 @@
           "unverified": [
             "אפליקציות לנייד"
           ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 4,
+            "of": 6,
+            "value": false,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "נקודות זיכוי יומיות בחינם. הכמות לא צוינה.",
+            "evidence": "research/tags.md"
+          }
         }
       }
     },
@@ -3642,6 +3804,24 @@
             "Android"
           ],
           "unverified": []
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 3,
+            "of": 6,
+            "value": false,
+            "evidence": "research/tags.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/tags.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "נקודות זיכוי חינם בכניסה יומית. הכמות לא צוינה.",
+            "evidence": "research/tags.md"
+          }
         }
       }
     }

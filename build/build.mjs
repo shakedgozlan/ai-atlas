@@ -95,7 +95,22 @@ function newPill(t) {
   if (ms == null || !has(t.filters?.new_notable?.latest_version)) return '';
   const days = (snap - ms) / 86400000;
   if (days < 0 || days > NEW_DAYS) return '';
-  return `<span class="verify verify-new">מודל חדש</span>`;
+  return `<li class="verify verify-new">מודל חדש</li>`;
+}
+
+// שאר התגים בכרטיס. כל תג נקבע לפי כלל קבוע שמתועד ב־research/tags.md, ומוצג רק כשיש לו ראיה בנתונים.
+const CHEAP_MAX = 10;
+function tagsHtml(t) {
+  const g = t.filters?.tags || {};
+  const sp = t.filters?.starting_price || {};
+  const pill = (label) => `<li class="verify verify-new">${label}</li>`;
+  const out = [newPill(t)];
+  if (g.review_roundups?.value === true) out.push(pill('בולט בסקירות'));
+  if (g.popular?.value === true) out.push(pill('פופולרי'));
+  if (sp.verified === true && sp.currency === 'USD' && typeof sp.amount === 'number' && sp.amount <= CHEAP_MAX) out.push(pill('מחיר נמוך'));
+  if (g.free_renewing?.value === true) out.push(pill('חינם מתחדש'));
+  const items = out.filter(Boolean).join('');
+  return items ? `<ul class="card-tags" role="list" aria-label="תגים">${items}</ul>` : '';
 }
 
 function verifyPill(t) {
@@ -330,7 +345,7 @@ function cardHtml(t) {
     <div class="card-id${has(t.logo?.file) ? '' : ' no-logo'}">
       ${logoHtml(t)}
       <div class="card-meta">
-        <div class="card-top"><span class="num" aria-hidden="true">${pad(t.id)}</span>${newPill(t)}</div>
+        <div class="card-top"><span class="num" aria-hidden="true">${pad(t.id)}</span>${tagsHtml(t)}</div>
         <h3 class="name" tabindex="-1"><span class="sr-only">כלי מספר ${t.id}: </span><bdi>${esc(t.name)}</bdi></h3>
         ${former}
         <p class="role">${esc(t.role)}</p>
