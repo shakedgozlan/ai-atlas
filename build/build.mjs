@@ -259,12 +259,15 @@ function sheetHtml(t) {
 }
 
 // עובדות שאפשר לסנן לפיהן. כל אחת נשענת רק על מה שכתוב בנתונים במפורש.
-const FLAGS = [['free', 'תוכנית חינמית'], ['student', 'מידע על הטבות לסטודנטים'], ['api', 'ממשק למפתחים']];
+const FLAGS = [['free', 'תוכנית חינמית'], ['student', 'מידע על הטבות לסטודנטים'], ['api', 'ממשק למפתחים'], ['mobile', 'אפליקציה לטלפון'], ['hebrew', 'תמיכה בעברית']];
 function toolFlags(t) {
   return {
     free: (t.pricing?.plans || []).some((x) => x.price === 0),
     student: has(t.student_benefits?.text),
     api: t.developer_access?.api === 'יש',
+    // רק ערכים שאומתו במחקר. ערך ריק או לא מאומת לא נחשב.
+    mobile: (t.filters?.platforms?.verified || []).some((x) => x === 'iOS' || x === 'Android'),
+    hebrew: t.filters?.hebrew?.supported === true,
   };
 }
 
