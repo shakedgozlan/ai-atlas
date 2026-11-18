@@ -34,6 +34,12 @@
   --brand-tint:light-dark(#dbe6ff,#172247);
   --new:light-dark(#a8430a,#ffa860);
   --new-tint:light-dark(#fdeadb,#3a2412);
+  --hot:light-dark(#b3261e,#ff8a80);
+  --hot-tint:light-dark(#fde7e4,#3a1614);
+  --low:light-dark(#0b6a8a,#6fd0f0);
+  --low-tint:light-dark(#dff1f8,#0f2c38);
+  --free:light-dark(#1e6b3a,#7fd69b);
+  --free-tint:light-dark(#e0f3e6,#12301c);
   --on-brand:light-dark(#f3f5f9,#151515);
   --focus:var(--brand);
   --stale:var(--ink-soft);
@@ -239,9 +245,13 @@ html:not(.js) .filters{display:none}
 .sum-pro dd,.sum-con dd{font-weight:500}
 .verify{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border:1px solid var(--line-strong);border-radius:999px;background:var(--inner);font-size:var(--t-label);font-weight:500;line-height:1.4;color:var(--ink-soft);white-space:nowrap}
 .verify-full{color:var(--brand);border-color:currentColor;background:var(--brand-tint)}
-/* צבע שני, חם, שמור לתגים שבכרטיס בלבד (בקשת שקד). לא להשתמש בו במקום אחר. */
-.card-tags{flex-basis:100%;display:flex;flex-wrap:wrap;justify-content:flex-start;gap:6px;margin:0;padding:0;list-style:none;min-width:0}
-.verify-new{color:var(--new);border-color:currentColor;background:var(--new-tint)}
+/* תגי הכרטיס (בקשת שקד): בצד שמאל של השורה העליונה, לכל תג צבע לפי המשמעות. הצבעים האלה שמורים לתגים בלבד. */
+.card-top:has(.card-tags){flex-wrap:nowrap;align-items:flex-start}
+.card-tags{flex:1;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px;margin:0;padding:0;list-style:none;min-width:0}
+.tag-reviews{color:var(--new);border-color:currentColor;background:var(--new-tint)}
+.tag-popular{color:var(--hot);border-color:currentColor;background:var(--hot-tint)}
+.tag-low{color:var(--low);border-color:currentColor;background:var(--low-tint)}
+.tag-free{color:var(--free);border-color:currentColor;background:var(--free-tint)}
 .price-text{color:var(--ink)}
 .card-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:16px}
 .btn-open{background:var(--inner);padding-inline:20px}
