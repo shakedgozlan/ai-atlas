@@ -17,24 +17,24 @@
   color-scheme:light dark;
   --font:'Rubik',system-ui,-apple-system,'Segoe UI','Arial Hebrew',Arial,sans-serif;
 
-  /* פלטה: לבן, שחור וצבע הדגשה אחד. במצב כהה אותו דבר הפוך.
-     החלוקה: בערך 70 אחוז רקע, 25 אחוז טקסט ואפורים, 5 אחוז הדגשה.
-     ההדגשה מופיעה רק במעבר עכבר, במיקוד מקלדת, בלחיצה ובמצב נבחר. */
-  --paper:light-dark(#ffffff,#0b0b0b);
-  --surface:light-dark(#ffffff,#141414);
-  --inner:light-dark(#f4f4f4,#1d1d1d);
-  --ink:light-dark(#0d0d0d,#f5f5f5);
-  --ink-soft:light-dark(#474747,#c4c4c4);
-  --ink-faint:light-dark(#6a6a6a,#989898);
-  --line:light-dark(#e2e2e2,#2e2e2e);
-  --line-strong:light-dark(#7a7a7a,#808080);
-  --brand:light-dark(#1d52de,#75a9ff);
-  --brand-hover:light-dark(#113fbb,#9dc4ff);
-  --brand-tint:light-dark(#e8f0ff,#1b2c51);
-  --on-brand:light-dark(#ffffff,#0b0b0b);
+  /* פלטה: רקע בהיר קריר, שחור רך וצבע הדגשה אחד. במצב כהה אותו דבר הפוך.
+     אין לבן מוחלט ואין שחור מוחלט, כדי שהמסך לא יעייף את העיניים.
+     החלוקה: בערך 60 אחוז רקע, 30 אחוז טקסט ואפורים, 10 אחוז הדגשה. */
+  --paper:light-dark(#f3f5f9,#1e1e1e);
+  --surface:light-dark(#fafbfd,#27282b);
+  --inner:light-dark(#e7ebf2,#313338);
+  --ink:light-dark(#1e1e1e,#f3f5f9);
+  --ink-soft:light-dark(#474c55,#c1c6ce);
+  --ink-faint:light-dark(#5f6570,#9ba1ab);
+  --line:light-dark(#d8dde6,#3b3d42);
+  --line-strong:light-dark(#727986,#838993);
+  --brand:light-dark(#1d52de,#7fb0ff);
+  --brand-hover:light-dark(#113fbb,#a6c8ff);
+  --brand-tint:light-dark(#dbe6ff,#263a63);
+  --on-brand:light-dark(#f3f5f9,#1e1e1e);
   --focus:var(--brand);
   --stale:var(--ink-soft);
-  --scrim:light-dark(rgb(13 13 13 / 0.55),rgb(0 0 0 / 0.72));
+  --scrim:light-dark(rgb(30 30 30 / 0.5),rgb(12 12 14 / 0.66));
 
   --t-hero:clamp(2.5rem,1.5rem + 4.4vw,4.5rem);
   --t-cat:clamp(1.5rem,1.2rem + 1.4vw,2.125rem);
@@ -61,8 +61,8 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);f
 h1,h2,h3,h4,h5,p,ul,ol,dl,dd{margin:0}
 ul,ol{padding:0;list-style:none}
 img{max-width:100%;display:block}
-a{color:var(--ink);text-underline-offset:0.2em}
-a:hover{color:var(--brand)}
+a{color:var(--brand);text-underline-offset:0.2em}
+a:hover{color:var(--brand-hover)}
 bdi{unicode-bidi:isolate}
 button,input,select{font:inherit;color:inherit}
 a[href],button,summary,select,label[for]{cursor:pointer}
@@ -83,11 +83,11 @@ button:disabled{cursor:not-allowed}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 16px;border:1.5px solid var(--line-strong);border-radius:var(--r-ctl);background:var(--surface);color:var(--ink);font-size:var(--t-body);font-weight:600;line-height:1.3;text-decoration:none;transition:background-color .12s ease,border-color .12s ease,color .12s ease}
 .btn:hover{border-color:var(--brand);color:var(--brand);background:var(--surface)}
 .btn:active{background:var(--brand-tint)}
-.btn-primary{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-.btn-primary:hover{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
-.btn-primary:active{background:var(--brand-hover);border-color:var(--brand-hover);color:var(--on-brand)}
-.btn-quiet{border-color:transparent;background:transparent;color:var(--ink);text-decoration:underline;padding-inline:8px}
-.btn-quiet:hover{border-color:transparent;background:transparent;color:var(--brand)}
+.btn-primary{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.btn-primary:hover{background:var(--brand-hover);border-color:var(--brand-hover);color:var(--on-brand)}
+.btn-primary:active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.btn-quiet{border-color:transparent;background:transparent;color:var(--brand);text-decoration:underline;padding-inline:8px}
+.btn-quiet:hover{border-color:transparent;background:transparent;color:var(--brand-hover)}
 .btn-icon{padding-inline:12px}
 
 /* פס עליון */
@@ -140,7 +140,7 @@ html:not(.js) .filters{display:none}
 /* קטגוריה */
 .cat{padding-bottom:clamp(24px,5vw,48px)}
 .cat-head{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:clamp(12px,2vw,20px);padding-block:clamp(16px,3vw,28px) clamp(12px,2vw,20px);border-top:2px solid var(--ink)}
-.cat-num{grid-row:span 2;font-size:clamp(2.5rem,2rem + 2.4vw,4rem);font-weight:800;line-height:0.9;color:var(--ink);font-variant-numeric:tabular-nums;align-self:start}
+.cat-num{grid-row:span 2;font-size:clamp(2.5rem,2rem + 2.4vw,4rem);font-weight:800;line-height:0.9;color:var(--brand);font-variant-numeric:tabular-nums;align-self:start}
 .cat-head h2{text-wrap:balance;font-size:var(--t-cat);font-weight:700;line-height:1.2;overflow-wrap:break-word;min-width:0}
 .cat-count{font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
 
@@ -154,7 +154,7 @@ html:not(.js) .filters{display:none}
 .card-id.no-logo{grid-template-columns:minmax(0,1fr)}
 .card-meta{display:flex;flex-direction:column;gap:8px;min-width:0}
 .card-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 12px;min-height:28px}
-.num{font-variant-numeric:tabular-nums;font-weight:700;color:var(--ink-faint);transition:color .12s ease;font-size:var(--t-body);direction:ltr}
+.num{font-variant-numeric:tabular-nums;font-weight:700;color:var(--brand);font-size:var(--t-body);direction:ltr}
 /* הלוגו הוא סמל ריבועי בלבד, בלי שם המותג. הוא ממורכז בעמודה בגובה שורות הכותרת. */
 .logo{display:grid;place-items:center;align-self:stretch;width:clamp(56px,13vw,88px);padding:clamp(4px,1vw,12px)}
 .logo img{width:100%;max-width:56px;height:auto;aspect-ratio:1;object-fit:contain}
@@ -177,7 +177,7 @@ html:not(.js) .filters{display:none}
 .sum dd{margin:0;min-width:0;overflow-wrap:break-word}
 .sum-pro dd,.sum-con dd{font-weight:500}
 .verify{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border:1px solid var(--line-strong);border-radius:999px;background:var(--inner);font-size:var(--t-label);font-weight:500;line-height:1.4;color:var(--ink-soft);white-space:nowrap}
-.verify-full{color:var(--ink);border-color:currentColor}
+.verify-full{color:var(--brand);border-color:currentColor;background:var(--brand-tint)}
 .price-text{color:var(--ink)}
 .card-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:16px}
 .btn-open{background:var(--inner);padding-inline:20px}
@@ -186,7 +186,6 @@ html:not(.js) .filters{display:none}
 .card-head{transition:border-color .12s ease}
 @media (hover:hover){
   .card:hover .card-head{border-color:var(--brand)}
-  .card:hover .num{color:var(--brand)}
 }
 .btn-site{font-weight:500;padding-inline:20px}
 .chev{transition:transform .15s ease}
@@ -324,7 +323,7 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
 .results{display:grid}
 .res{display:grid;grid-template-columns:2.2em minmax(0,1fr) auto;gap:4px 12px;align-items:baseline;width:100%;min-height:44px;padding:12px 8px;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;text-align:start;cursor:pointer;border-radius:0}
 .res:hover{background:var(--inner)}
-.res:hover .num,.res:hover .res-name{color:var(--brand)}
+.res:hover .res-name{color:var(--brand)}
 .res:active{background:var(--brand-tint)}
 .res-text{display:grid;gap:2px;min-width:0}
 .res-name{font-weight:600;font-size:1.0625rem;text-align:right}
