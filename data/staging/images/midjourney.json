@@ -1,0 +1,345 @@
+{
+ "id": null,
+ "slug": "midjourney",
+ "category_id": 3,
+ "name": "Midjourney",
+ "former_name": null,
+ "rename_note": null,
+ "role": "מחולל תמונות לפי תיאור טקסט, עם כלים לסגנון, עריכה ווידאו קצר.",
+ "url": "https://www.midjourney.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "מצב Relax ללא הגבלה מ־Standard",
+   "detail": "מ־Standard ומעלה אפשר ליצור תמונות ללא הגבלה במצב Relax, לצד 15 עד 60 שעות GPU מהיר בחודש לפי התוכנית.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "גרסה 8 בפיתוח פעיל",
+   "detail": "V8.1 הביאה מצב HD מהיר וזול פי 3 לפי ההודעה, ובספטמבר 2026 נוסף מודל עריכה V8.2 באתר הניסיוני.",
+   "source_ids": [
+    "s3",
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "כלי סגנון ומודבורדים",
+   "detail": "לפי הודעת V8.1, מודבורדים והפניות סגנון (sref) יציבים יותר, וחזרו הנחיות תמונה ומשקלי תמונה.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "אין תוכנית חינמית בעמוד המחירים",
+   "detail": "עמוד המחירים מציג ארבע תוכניות בתשלום בלבד, מ־10 דולר לחודש, ואינו מזכיר ניסיון חינם.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "יצירות פרטיות רק ב־Pro ומעלה",
+   "detail": "מצב Stealth, שמסתיר את היצירות, כלול רק ב־Pro וב־Mega.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "V8 זמין רק באתר הניסיוני",
+   "detail": "מודלי V8 זמינים רק ב־alpha.midjourney.com ונמצאים בבדיקות מוקדמות, ולכן עשויים להשתנות בלי הודעה.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים, מאיירים ויוצרים שמחפשים תמונות אסתטיות ומוכנים לשלם מנוי.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "מ־10 דולר לחודש בחיוב חודשי, או 8 דולר לחודש בחיוב שנתי. אין תוכנית חינמית בעמוד המחירים.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Basic",
+    "price": 10,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "זמן GPU מהיר לא צוין בעמוד, אפשר לקנות שעות Fast נוספות",
+    "notes": "העמוד מציג את הסימן $ בלי לציין קוד מטבע.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Basic",
+    "price": 8,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "זמן GPU מהיר לא צוין בעמוד, אפשר לקנות שעות Fast נוספות",
+    "notes": "מחיר לחודש בחיוב שנתי (20% הנחה לפי העמוד).",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Standard",
+    "price": 30,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "15 שעות GPU מהיר בחודש, יצירת תמונות ללא הגבלה במצב Relax",
+    "notes": "העמוד מציג את הסימן $ בלי לציין קוד מטבע.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Standard",
+    "price": 24,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "15 שעות GPU מהיר בחודש, יצירת תמונות ללא הגבלה במצב Relax",
+    "notes": "מחיר לחודש בחיוב שנתי (20% הנחה לפי העמוד).",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 60,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "30 שעות GPU מהיר בחודש, Relax ללא הגבלה לתמונות ולווידאו SD, מצב Stealth",
+    "notes": "העמוד מציג את הסימן $ בלי לציין קוד מטבע.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 48,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "30 שעות GPU מהיר בחודש, Relax ללא הגבלה לתמונות ולווידאו SD, מצב Stealth",
+    "notes": "מחיר לחודש בחיוב שנתי (20% הנחה לפי העמוד).",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Mega",
+    "price": 120,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "60 שעות GPU מהיר בחודש, Relax ללא הגבלה לתמונות ולווידאו SD, מצב Stealth",
+    "notes": "העמוד מציג את הסימן $ בלי לציין קוד מטבע.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Mega",
+    "price": 96,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "60 שעות GPU מהיר בחודש, Relax ללא הגבלה לתמונות ולווידאו SD, מצב Stealth",
+    "notes": "מחיר לחודש בחיוב שנתי (20% הנחה לפי העמוד).",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": null,
+  "unverified_notes": "לא אומתו: זמן ה־GPU המהיר של Basic, תנאי השימוש המסחרי המלאים (כולל ההגבלה לחברות עם הכנסה גבוהה, שמוכרת מגרסאות קודמות של התנאים), וקיומה של תקופת ניסיון. מרכז העזרה ותנאי השימוש ב־docs.midjourney.com לא נטענו."
+ },
+ "privacy": {
+  "text": "לא אומת. תנאי השימוש ומדיניות הפרטיות ב־docs.midjourney.com לא נטענו. לפי עמוד המחירים, רק Pro ו־Mega כוללות מצב Stealth שמסתיר יצירות, ומכאן שבשאר התוכניות היצירות גלויות.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "commercial_rights": {
+  "text": "עמוד המחירים מציין \"General commercial terms\" בכל ארבע התוכניות. הפרטים, כולל בעלות על התוצרים ותנאים לחברות גדולות, לא נקראו בתנאי השימוש עצמם. רישיון מסחרי אינו מגן מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נמצא מקור רשמי על API ציבורי.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק, הנחיות בעברית או טקסט עברי בתמונות.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Midjourney",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי לא נקרא ממקור רשמי."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הנחה לסטודנטים. עמוד המחירים אינו מציג מחיר לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.midjourney.com/pricing",
+   "title": "עמוד המחירים של Midjourney",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://updates.midjourney.com/alpha-changelog-9-2-26",
+   "title": "Midjourney: Alpha Changelog - 9/2/26",
+   "official": true,
+   "published": "2026-09-02",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://updates.midjourney.com/v8-1-alpha/",
+   "title": "Midjourney: V8.1 Alpha (בלי תאריך בעמוד)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://a16z.com/100-gen-ai-apps-6/",
+   "title": "a16z: The Top 100 Gen AI Consumer Apps, מהדורה 6",
+   "official": false,
+   "published": "2026-03-09",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "כלי ותיק שמפתח את V8 בשנת 2026; מודל העריכה V8.2 עלה לאתר הניסיוני בסוף אוגוסט 2026. מופיע ב־6 מתוך 6 סקירות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "V8.2 edit model (alpha)",
+   "latest_version_date": "9/2/26",
+   "latest_version_date_iso": "2026-09-02",
+   "independent_reviews": 6,
+   "evidence": "research/stage4/images.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 10,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Basic",
+   "verified": true,
+   "label": "מ־10 דולר לחודש",
+   "has_free_plan": false
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/images.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מקום 46 ברשימת אתרי הבינה המלאכותית של a16z, מהדורה 6 (מרץ 2026, נתוני Similarweb לינואר 2026).",
+    "evidence": "research/stage4/images.md"
+   },
+   "free_renewing": {
+    "value": false,
+    "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
+    "evidence": "research/stage4/images.md"
+   }
+  }
+ }
+}

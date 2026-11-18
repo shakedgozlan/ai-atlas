@@ -1,0 +1,297 @@
+{
+ "id": null,
+ "slug": "krea",
+ "category_id": 3,
+ "name": "Krea",
+ "former_name": null,
+ "rename_note": null,
+ "role": "סטודיו ליצירת תמונות ווידאו במודלים של Krea ושל חברות אחרות, עם שליטה בסגנון ושדרוג תמונות.",
+ "url": "https://www.krea.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "מודלים משלה עם שליטה בסגנון",
+   "detail": "Krea 2, שפורסם ב־12 במאי 2026, הוא מודל יסוד ראשון של Krea שנבנה מאפס, עם שילוב של כמה הפניות סגנון וכוונון עוצמת כל אחת. בעמוד המחירים מופיע גם Krea 3 כחדש.",
+   "source_ids": [
+    "s2",
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות חינמיות כל יום",
+   "detail": "התוכנית החינמית כוללת 100 יחידות חישוב ביום, שמתחדשות כל יום לפי ה־FAQ.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "רישיון מסחרי מ־Basic",
+   "detail": "כל התוכניות בתשלום, מ־Basic, מסומנות עם רישיון מסחרי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "המחיר הרגיל לא ברור",
+   "detail": "בזמן הבדיקה עמוד המחירים הציג מבצע Black Friday של עד 75% הנחה, והמחירים המחוקים אינם מתיישבים עם סכומי החיסכון.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "רישיון מסחרי לא מופיע בתוכנית החינמית",
+   "detail": "בכרטיס של Free לא מופיע רישיון מסחרי, בניגוד לתוכניות בתשלום.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים ויוצרים שרוצים לנסות מודלים רבים ולשלוט בסגנון התמונה.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "יש תוכנית חינמית עם 100 יחידות חישוב ביום. בתשלום מ־5 דולר לחודש בחיוב שנתי במחיר מבצע Black Friday; המחיר הרגיל לא אומת.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "100 יחידות חישוב ביום, מתחדשות כל יום",
+    "notes": "רישיון מסחרי לא מופיע בכרטיס התוכנית החינמית.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Basic",
+    "price": 5,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "5,000 יחידות חישוב בחודש, רישיון מסחרי",
+    "notes": "מחיר מבצע; מחיר מחוק 9 דולר. בטבלת ההשוואה מופיע 5.25 דולר לחודש. בזמן הבדיקה רץ מבצע \"Black Friday ✱ Up to 75% off\" עם ספירה לאחור. המחיר המחוק אינו מתיישב עם סכומי החיסכון המוצגים, ולכן המחיר הרגיל לא ברור.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 21,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "20,000 יחידות חישוב בחודש, רישיון מסחרי",
+    "notes": "מחיר מבצע; מחיר מחוק 42 דולר. בזמן הבדיקה רץ מבצע \"Black Friday ✱ Up to 75% off\" עם ספירה לאחור. המחיר המחוק אינו מתיישב עם סכומי החיסכון המוצגים, ולכן המחיר הרגיל לא ברור.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Max",
+    "price": 28,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "40,000 יחידות חישוב בחודש, רישיון מסחרי",
+    "notes": "מחיר מבצע; מחיר מחוק 94 דולר. בזמן הבדיקה רץ מבצע \"Black Friday ✱ Up to 75% off\" עם ספירה לאחור. המחיר המחוק אינו מתיישב עם סכומי החיסכון המוצגים, ולכן המחיר הרגיל לא ברור.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": 96,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "80,000 יחידות חישוב בחודש, עד 50 מושבים, רישיון מסחרי",
+    "notes": "מחיר מבצע; מחיר מחוק 200 דולר. סוג החיוב לא צוין.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "חבילות מותאמות",
+    "notes": "",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Free: 100 יחידות חישוב ביום שמתחדשות כל יום. רישיון מסחרי לא מופיע בכרטיס התוכנית.",
+  "trial": null,
+  "unverified_notes": "עמוד המחירים הרשמי הציג בזמן הבדיקה מבצע Black Friday (\"Up to 75% off\", עם ספירה לאחור). המחירים המחוקים (9, 42, 94 ו־200 דולר) אינם מתיישבים עם סכומי החיסכון, ובטבלת ההשוואה Basic מופיע ב־5.25 דולר במקום 5. סקירת Rework (עודכנה 16 ביולי 2026) מציגה מחירים אחרים: Basic ב־9 דולר, Pro ב־35 דולר ו־Max ב־70 דולר לחודש; זה מקור צד שלישי ואינו משמש כמחיר. מחירים בחיוב חודשי לא אומתו. לא נבדקו: מחירון ה־API, תנאי השימוש ומדיניות הפרטיות."
+ },
+ "privacy": {
+  "text": "לא אומת: תנאי השימוש ומדיניות הפרטיות לא נקראו. ההודעה על Krea 2 אינה עוסקת באימון על תוכן המשתמשים.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי עמוד המחירים, כל התוכניות בתשלום כוללות רישיון מסחרי. בכרטיס של התוכנית החינמית רישיון מסחרי לא מופיע. התנאים המלאים לא נקראו.",
+  "watermark": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "קיים עמוד מחירון API של Krea (krea.ai/app/api/pricing), אך הוא לא נקרא.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: עמוד המחירים וההודעה על Krea 2 אינם מזכירים שפות.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Krea",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי לא נקרא ממקור רשמי."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הנחה לסטודנטים. עמוד המחירים אינו מזכיר הנחה כזו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.krea.ai/pricing",
+   "title": "עמוד המחירים של Krea (בזמן מבצע Black Friday)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://canvas.krea.ai/blog/krea-2-image-model",
+   "title": "Krea: Introducing Krea 2",
+   "official": true,
+   "published": "2026-05-12",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://resources.rework.com/tools/ai-tools/best-ai-image-generators-2026",
+   "title": "Rework: Best AI Image Generators in 2026 (עודכן 16 ביולי 2026)",
+   "official": false,
+   "published": "2026-07-16",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "Krea 2 פורסם ב־12 במאי 2026, ו־Krea 3 מסומן כחדש בעמוד המחירים בלי תאריך. מופיע ב־2 סקירות עצמאיות בחלון (Zapier ו־Rework).",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Krea 2",
+   "latest_version_date": "May 12, 2026",
+   "latest_version_date_iso": "2026-05-12",
+   "independent_reviews": 2,
+   "evidence": "research/stage4/images.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": "USD",
+   "billing": null,
+   "plan": "Basic",
+   "verified": false,
+   "label": "מחיר רגיל לא אומת",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 2,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/images.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/images.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "100 יחידות חישוב ביום שמתחדשות כל יום.",
+    "evidence": "research/stage4/images.md"
+   }
+  }
+ }
+}

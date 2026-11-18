@@ -94,3 +94,7 @@ Already in the atlas (category 6, video generation): Google Flow, Runway, Kling 
 11. no-code-apps (target 7): Lovable, Bolt, Replit, Base44, Emergent, Bubble, Firebase Studio. Alternates: Glide, Softr, Rork, Anything, Google AI Studio, Hostinger Horizons.
 12. agents-automation (target 8): Zapier, Make, n8n, Manus, Lindy, Gumloop, Relay.app, Genspark. Alternates: Relevance AI, Microsoft Copilot Studio, Dify, Langflow, Activepieces, Pipedream.
 13. meetings-knowledge (target 9): Otter, Fireflies, Granola, Fathom, tl;dv, Notion, NotebookLM, Julius, Read AI. Alternates: Wispr Flow, Airtable, Mem, Circleback, Jamie, Elicit, Superwhisper.
+
+## Addendum: when the fetch quota runs out
+
+The first three researchers lost many fields because the shared page-fetch quota (about 100 an hour) ran out. When a fetch fails with a quota or rate-limit error, do not give up on the field: finish whatever writing you can, then wait about 15 minutes and try again, up to four waits in total. Spend the fetches in this order across ALL your tools before going deeper on any one: pricing page for every tool, then terms / commercial use and training policy for every tool, then latest-version date, then roundups (each opened once), then Hebrew and student pages.

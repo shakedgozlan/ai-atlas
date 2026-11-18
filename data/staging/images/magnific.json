@@ -1,0 +1,322 @@
+{
+ "id": null,
+ "slug": "magnific",
+ "category_id": 3,
+ "name": "Magnific",
+ "former_name": "Freepik AI",
+ "rename_note": "לפי Magnific, ב־28 באפריל 2026 Freepik איחדה את כל כלי הבינה המלאכותית שלה תחת השם Magnific. החשבונות, המנויים, הנקודות ומפתחות ה־API של Freepik עברו כמו שהם, ואפליקציית Freepik לנייד הפכה לאפליקציית Magnific. Magnific היה קודם שם המשדרג (upscaler) שבבעלות Freepik.",
+ "role": "פלטפורמה ליצירה ועריכה של תמונות, וידאו ושמע במודלים רבים, עם משדרגי תמונה וספריית סטוק.",
+ "url": "https://www.magnific.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "שינוי שם",
+  "note": "Freepik AI נקרא כעת Magnific, והאתר הרשמי הוא magnific.com. העמוד אינו מתייחס לאתר הסטוק freepik.com.",
+  "date_as_written": "April 28, 2026",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "מודלים רבים ומשדרגים במנוי אחד",
+   "detail": "כל התוכניות כוללות מודלי תמונה, וידאו ושמע, משדרגי תמונה ווידאו, Brand Kit ויותר מ־250 מיליון נכסי סטוק. Plus מוסיפה את משדרגי Magnific ו־Topaz.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "יצירה ללא הגבלה מ־Plus",
+   "detail": "Plus כוללת \"UNLIMITED generations\" ב־Nano Banana 2 ברזולוציית 1K ובמודלים נבחרים נוספים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חיבורים לעבודה עם כלים אחרים",
+   "detail": "כל התוכניות כוללות MCP ותוספים, ComfyUI ו־API לפי נקודות. מפתחות API של Freepik ממשיכים לעבוד.",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "הנקודות ניתנות לשנה, לא לחודש",
+   "detail": "הנקודות מוצגות כמכסה שנתית (240K ב־Premium) שתקפה לשנה, בלי איפוס חודשי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "אין תוכנית חינמית בעמוד המחירים",
+   "detail": "עמוד המחירים מציג שלוש תוכניות בתשלום בלבד, מ־20 דולר לחודש, ואינו מתאר תוכנית חינמית.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "המחירים לא כוללים מע״מ",
+   "detail": "לפי העמוד, המחירים אינם כוללים מע״מ ומסים מקומיים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "יוצרים ומעצבים שרוצים מודלים רבים, משדרגים וסטוק במנוי אחד.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־20 דולר לחודש בחיוב חודשי או 14.50 דולר לחודש בחיוב שנתי (Premium, 240K נקודות לשנה), לפני מע״מ. תוכנית חינמית לא מוצגת.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Premium",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "240K נקודות בשנה, מודלי תמונה, וידאו ושמע, Magnific One ו־Brand Kit, רישיון AI מסחרי, משדרגי תמונה ווידאו, MCP ותוספים, ComfyUI, API לפי נקודות, יותר מ־250 מיליון נכסי סטוק",
+    "notes": "מחיר ללא מע״מ ומסים מקומיים. הנקודות שנתיות, תקפות לשנה, בלי איפוס חודשי. העמוד מציג את הסימן $ בלי קוד מטבע.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Premium",
+    "price": 14.5,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "240K נקודות בשנה, כמו בחיוב חודשי",
+    "notes": "מחיר ללא מע״מ ומסים מקומיים. הנקודות שנתיות, תקפות לשנה, בלי איפוס חודשי. \"Save 25% with annual\".",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Plus",
+    "price": 45,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "600K נקודות בשנה, יצירה ללא הגבלה (\"UNLIMITED generations\") ב־Nano Banana 2 ברזולוציית 1K ובמודלים נבחרים, רישיון AI מסחרי כולל זכויות למוזיקה, משדרגי Magnific ו־Topaz",
+    "notes": "מחיר ללא מע״מ ומסים מקומיים. הנקודות שנתיות, תקפות לשנה, בלי איפוס חודשי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Plus",
+    "price": 33.75,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "600K נקודות בשנה, כמו בחיוב חודשי",
+    "notes": "מחיר ללא מע״מ ומסים מקומיים. הנקודות שנתיות, תקפות לשנה, בלי איפוס חודשי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 110,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "הכול כמו ב־Plus; העמוד מציג 1.5M ו־4M נקודות בשנה לצד Nano Banana 2 ב־2K ו־Nano Banana Pro",
+    "notes": "מחיר ללא מע״מ ומסים מקומיים. הנקודות שנתיות, תקפות לשנה, בלי איפוס חודשי. פריסת העמוד שבורה, ולכן לא ברור איזו כמות נקודות שייכת לאיזו אפשרות.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 82.5,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "כמו בחיוב חודשי",
+    "notes": "מחיר ללא מע״מ ומסים מקומיים. הנקודות שנתיות, תקפות לשנה, בלי איפוס חודשי. כמות הנקודות לא ברורה, ראו הערה בחיוב חודשי.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": null,
+  "unverified_notes": "לא אומתו: תוכנית חינמית (לא מוצגת בעמוד המחירים), כמות הנקודות ב־Pro (העמוד מציג 1.5M ו־4M נקודות בשנה בפריסה שבורה), מחיר נקודות נוספות, תנאי הרישיון המסחרי המלאים ומדיניות האימון. אתרי צד שלישי מציגים מחירים ושמות תוכניות אחרים (למשל Premium+ ו־Essential); לא השתמשנו בהם, והמחירים לקוחים רק מ־magnific.com/pricing. המטבע מוצג כ־$ בלי קוד. יש החזר כספי בתוך 30 יום לפי העמוד."
+ },
+ "privacy": {
+  "text": "לא אומת: מדיניות הפרטיות ותנאי השימוש של Magnific לא נקראו, ועמוד שינוי השם אינו עוסק באימון על תוכן המשתמשים.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "כל התוכניות בעמוד המחירים כוללות \"Commercial AI license\"; Plus ו־Pro כוללות גם זכויות למוזיקה. תנאי הרישיון עצמם לא נקראו, ורישיון מסחרי אינו מגן מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "כל התוכניות כוללות גישה ל־API שמחויבת לפי נקודות. מפתחות API של Freepik ממשיכים לעבוד ב־Magnific. מחירון ה־API לא נבדק.",
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "MCP",
+   "ComfyUI",
+   "Google Drive",
+   "Topaz (משדרגים בתוכנית Plus)"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "אפליקציות לנייד"
+  ],
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: עמוד שינוי השם מזכיר הקראת טקסט \"in multiple languages\" בלי לפרט שפות.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "company": {
+  "name": "Freepik",
+  "parent": null,
+  "country": "ספרד",
+  "note": "לפי Magnific, Freepik אימצה את השם Magnific לפלטפורמת הבינה המלאכותית שלה. הישות המשפטית לא צוינה. המדינה הוסקה מהמשפט \"founded in Málaga in 2010\"."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הנחה לסטודנטים. עמוד המחירים אינו מזכיר הנחה כזו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.magnific.com/pricing",
+   "title": "עמוד המחירים של Magnific",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.magnific.com/freepik-ai",
+   "title": "Magnific: Freepik AI is now Magnific",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://a16z.com/100-gen-ai-apps-6/",
+   "title": "a16z: The Top 100 Gen AI Consumer Apps, מהדורה 6",
+   "official": false,
+   "published": "2026-03-09",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "שינוי השם ב־28 באפריל 2026 אינו גרסת מודל, ותאריך הגרסה המשמעותית האחרונה לא אומת. מופיע ב־5 מתוך 6 סקירות (ארבע מהן בשם Freepik). נכלל ככלי מוביל.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 5,
+   "evidence": "research/stage4/images.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 20,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Premium",
+   "verified": true,
+   "label": "מ־20 דולר לחודש",
+   "has_free_plan": null
+  },
+  "platforms": {
+   "verified": [
+    "אתר",
+    "אפליקציות לנייד"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 5,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/images.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מופיע בשם Freepik ברשימת 50 האתרים של a16z, מהדורה 6 (מרץ 2026, נתוני ינואר 2026), בסדר אלפביתי ובלי מקום.",
+    "evidence": "research/stage4/images.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/images.md"
+   }
+  }
+ }
+}
