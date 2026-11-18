@@ -21,6 +21,7 @@ const CURRENCY = { USD: 'דולר', EUR: 'אירו', GBP: 'לירות שטרלי
 const num = (n) => Number(n).toLocaleString('en-US', { maximumFractionDigits: 2 });
 
 const ICON = {
+  price: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12.2V4.5h7.7l9.3 9.3-7.7 7.7-9.3-9.3Z"/><path d="M8 8.9v.2"/></svg>',
   good: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.25"/><path d="m7.75 12.4 2.9 2.9 5.6-6.1"/></svg>',
   warn: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6 2.6 19.8h18.8L12 3.6Z"/><path d="M12 10v4.6"/><path d="M12 17.1v.2"/></svg>',
   chevron: '<svg class="ico chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
@@ -58,9 +59,13 @@ function priceLine(t) {
   const v = p.verification;
   let text;
   if (has(p.summary_line)) text = esc(p.summary_line);
-  else if (v === 'אומת חלקית') text = 'פירוט המחירים שנבדקו, ומה עוד לא נבדק, מופיע בפרטים הנוספים.';
+  else if (v === 'אומת חלקית') text = 'הפירוט בפרטים הנוספים.';
   else text = 'תמחור לא אומת.';
-  return `<p class="price"><span class="price-text">${text}</span></p>`;
+  // תקציר לסריקה מהירה: היתרון הראשון, המגבלה הראשונה ושורת המחיר. הכול מקובץ הנתונים.
+  const pro = (t.strengths || [])[0]?.lead;
+  const con = (t.limitations || [])[0]?.lead;
+  const row = (cls, icon, label, value) => `<div class="sum-row ${cls}"><dt>${icon}${label}</dt><dd>${value}</dd></div>`;
+  return `<dl class="sum">${has(pro) ? row('sum-pro', ICON.good, 'יתרון', esc(pro)) : ''}${has(con) ? row('sum-con', ICON.warn, 'חשוב לדעת', esc(con)) : ''}${row('sum-price', ICON.price, 'מחיר', `<span class="price-text">${text}</span>`)}</dl>`;
 }
 
 function verifyPill(t) {
@@ -161,7 +166,7 @@ function cardHtml(t) {
     </div>
     ${priceLine(t)}
     <div class="card-actions">
-      <button type="button" class="btn btn-open" data-toggle aria-expanded="true" aria-controls="body-${t.id}">${ICON.chevron}<span data-label>סגירת הפרטים</span><span class="sr-only"> על ${esc(t.name)}</span></button>
+      <button type="button" class="btn btn-open" data-toggle aria-expanded="true" aria-controls="body-${t.id}"><span data-label>סגירת הפרטים</span><span class="sr-only"> על ${esc(t.name)}</span>${ICON.chevron}</button>
       <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
     </div>
   </div>
