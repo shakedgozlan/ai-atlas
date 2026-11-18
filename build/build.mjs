@@ -306,7 +306,7 @@ const vNone = total - vFull - vPart;
 const sections = liveCats.map((c) => {
   const list = toolsByCat.get(c.id);
   return `
-<section class="cat" id="cat-${c.id}" data-cat-section="${c.id}" style="--cat: var(--cat-${c.id})" aria-labelledby="cat-title-${c.id}">
+<section class="cat" id="cat-${c.id}" data-cat-section="${c.id}" aria-labelledby="cat-title-${c.id}">
   <header class="cat-head">
     <span class="cat-num" aria-hidden="true">${pad(c.id)}</span>
     <h2 id="cat-title-${c.id}" tabindex="-1">${esc(c.name)}</h2>
@@ -320,7 +320,7 @@ const sections = liveCats.map((c) => {
 // חלון החיפוש: שורה מוכנה לכל כלי, ואינדקס שהחיפוש המקומי קורא. אותו אינדקס ישמש גם מודל, כשיחובר.
 const finderResults = data.tools.slice().sort((a, b) => a.id - b.id).map((t) => {
   const cat = catById.get(t.category_id);
-  return `<li data-result="${t.id}" style="--cat: var(--cat-${t.category_id})"><button type="button" class="res" data-open-tool="${t.id}"><span class="num" aria-hidden="true">${pad(t.id)}</span><span class="res-text"><bdi class="res-name">${esc(t.name)}</bdi><span class="res-role">${esc(t.role)}</span><span class="res-why" data-why hidden></span></span><span class="res-cat">${esc(cat?.name)}</span></button></li>`;
+  return `<li data-result="${t.id}"><button type="button" class="res" data-open-tool="${t.id}"><span class="num" aria-hidden="true">${pad(t.id)}</span><span class="res-text"><bdi class="res-name">${esc(t.name)}</bdi><span class="res-role">${esc(t.role)}</span><span class="res-why" data-why hidden></span></span><span class="res-cat">${esc(cat?.name)}</span></button></li>`;
 }).join('');
 const low = (v) => String(v ?? '').toLowerCase();
 const searchIndex = data.tools.map((t) => ({
@@ -337,13 +337,13 @@ const SHORTCUTS = FLAGS.filter(([k]) => searchIndex.some((x) => x[k])).map(([k, 
 const catNav = data.categories.map((c) => {
   const n = toolsByCat.get(c.id)?.length || 0;
   return n
-    ? `<li style="--cat: var(--cat-${c.id})"><a href="#cat-${c.id}" data-jump><span class="num" aria-hidden="true">${pad(c.id)}</span><span>${esc(c.name)}</span><span class="cat-nav-count">${countTools(n)}</span></a></li>`
+    ? `<li><a href="#cat-${c.id}" data-jump><span class="num" aria-hidden="true">${pad(c.id)}</span><span>${esc(c.name)}</span><span class="cat-nav-count">${countTools(n)}</span></a></li>`
     : `<li class="pending"><span class="num" aria-hidden="true">${pad(c.id)}</span><span>${esc(c.name)}</span><span class="cat-nav-count">עוד לא נחקרה</span></li>`;
 }).join('');
 
 const footerCats = data.categories.map((c) => {
   const n = toolsByCat.get(c.id)?.length || 0;
-  return `<li${n ? ` style="--cat: var(--cat-${c.id})"` : ' class="pending"'}><span class="num" aria-hidden="true">${pad(c.id)}</span><span>${n ? `<a href="#cat-${c.id}">${esc(c.name)}</a>` : esc(c.name)}</span><span class="cat-nav-count">${n ? countTools(n) : 'עוד לא נחקרה'}</span></li>`;
+  return `<li${n ? '' : ' class="pending"'}><span class="num" aria-hidden="true">${pad(c.id)}</span><span>${n ? `<a href="#cat-${c.id}">${esc(c.name)}</a>` : esc(c.name)}</span><span class="cat-nav-count">${n ? countTools(n) : 'עוד לא נחקרה'}</span></li>`;
 }).join('');
 
 const heroSentence = liveCats.length === 1

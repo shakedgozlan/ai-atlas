@@ -78,11 +78,11 @@
       "role": "כלי של Google ליצירת קטעי וידאו, סצנות וסיפורים בבינה מלאכותית.",
       "url": "https://support.google.com/flow/",
       "logo": {
-        "file": null,
+        "file": "logos/google.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "האתר של Flow נפתח רק אחרי התחברות לחשבון Google, ולכן הלוגו לא נאסף.",
-        "note": null
+        "source_url": "https://lobehub.com/icons",
+        "missing_reason": null,
+        "note": "זה הסמל של Google, החברה שמפעילה את Flow, ולא סמל נפרד של Flow. בעל האתר אישר זאת במפורש לכלי הזה ב־18 בנובמבר 2026, כי האתר של Flow נפתח רק אחרי התחברות לחשבון Google והסמל של Flow לא נאסף. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.103.0, רישיון MIT). סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
       },
       "status": {
         "state": "פעיל",
