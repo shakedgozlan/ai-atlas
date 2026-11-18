@@ -33,13 +33,20 @@
   </section>
 
   <div class="wrap">
-    <div class="filter-bar" id="filter-bar" hidden>
-      <p id="filter-text" role="status" aria-live="polite"></p>
-      <button type="button" class="btn btn-quiet" id="filter-clear">ניקוי הסינון</button>
+    <div class="filters" id="filters" role="group" aria-labelledby="filters-h">
+      <h2 class="filters-h" id="filters-h">סינון</h2>
+      <div class="filters-row">
+        
+        <div class="filters-set" role="group" aria-label="מה יש בכלי"><button type="button" class="btn short" data-filter-flag="free" aria-pressed="false">תוכנית חינמית</button><button type="button" class="btn short" data-filter-flag="student" aria-pressed="false">מידע על הטבות לסטודנטים</button><button type="button" class="btn short" data-filter-flag="api" aria-pressed="false">ממשק למפתחים</button></div>
+      </div>
+      <div class="filter-bar" id="filter-bar" hidden>
+        <p id="filter-text" role="status" aria-live="polite"></p>
+        <button type="button" class="btn btn-quiet" id="filter-clear">ניקוי הסינון</button>
+      </div>
     </div>
     <div class="empty" id="page-empty" hidden>
-      <h2>אין תוצאות</h2>
-      <p>שום כלי באטלס לא מתאים לחיפוש הזה. כדאי לנסות שם אחר או קטגוריה אחרת.</p>
+      <h2>אין כלי שמתאים לכל הסננים</h2>
+      <p>כדאי להוריד אחד מהסננים שנבחרו.</p>
       <button type="button" class="btn btn-primary" id="page-empty-clear">ניקוי הסינון</button>
     </div>
 
@@ -50,7 +57,7 @@
     <p class="cat-count">10 כלים</p>
   </header>
   <ul class="cards" role="list">
-<li class="card" id="tool-1" data-cat="6" data-search="google flow כלי של google ליצירת קטעי וידאו, סצנות וסיפורים בבינה מלאכותית. וידאו: יצירה מטקסט ומתמונה">
+<li class="card" id="tool-1" data-cat="6" data-flags="student api" data-search="google flow כלי של google ליצירת קטעי וידאו, סצנות וסיפורים בבינה מלאכותית. וידאו: יצירה מטקסט ומתמונה">
   <div class="card-head">
     <div class="card-id no-logo">
       
@@ -96,7 +103,7 @@
     </div>
   </dialog>
 </li>
-<li class="card" id="tool-2" data-cat="6" data-search="runway פלטפורמה ליצירת וידאו ותמונות במגוון מודלים, לצד מוזיקה, קול ואפקטים. וידאו: יצירה מטקסט ומתמונה">
+<li class="card" id="tool-2" data-cat="6" data-flags="free student api" data-search="runway פלטפורמה ליצירת וידאו ותמונות במגוון מודלים, לצד מוזיקה, קול ואפקטים. וידאו: יצירה מטקסט ומתמונה">
   <div class="card-head">
     <div class="card-id">
       <span class="logo"><img class="logo-light" src="logos/runway.svg" alt="הלוגו של Runway" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/runway-dark.svg" alt="הלוגו של Runway" width="56" height="56" loading="lazy" decoding="async"></span>
@@ -142,7 +149,7 @@
     </div>
   </dialog>
 </li>
-<li class="card" id="tool-3" data-cat="6" data-search="kling ai מחולל וידאו ותמונות מטקסט ומתמונות, עם קול מובנה. וידאו: יצירה מטקסט ומתמונה">
+<li class="card" id="tool-3" data-cat="6" data-flags="api" data-search="kling ai מחולל וידאו ותמונות מטקסט ומתמונות, עם קול מובנה. וידאו: יצירה מטקסט ומתמונה">
   <div class="card-head">
     <div class="card-id">
       <span class="logo"><img class="logo-light" src="logos/kling.svg" alt="הלוגו של Kling AI" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/kling-dark.svg" alt="הלוגו של Kling AI" width="56" height="56" loading="lazy" decoding="async"></span>
@@ -188,7 +195,7 @@
     </div>
   </dialog>
 </li>
-<li class="card" id="tool-4" data-cat="6" data-search="hailuo ai מחולל וידאו ותמונות מטקסט, מתמונות ומחומרי ייחוס, עם קול מסונכרן. וידאו: יצירה מטקסט ומתמונה">
+<li class="card" id="tool-4" data-cat="6" data-flags="api" data-search="hailuo ai מחולל וידאו ותמונות מטקסט, מתמונות ומחומרי ייחוס, עם קול מסונכרן. וידאו: יצירה מטקסט ומתמונה">
   <div class="card-head">
     <div class="card-id">
       <span class="logo"><img src="logos/hailuo.svg" alt="הלוגו של Hailuo AI" width="56" height="56" loading="lazy" decoding="async"></span>
@@ -234,7 +241,7 @@
     </div>
   </dialog>
 </li>
-<li class="card" id="tool-5" data-cat="6" data-search="luma dream machine סביבת יצירה בדפדפן להפקת וידאו, תמונות וקול במודלי ray. וידאו: יצירה מטקסט ומתמונה">
+<li class="card" id="tool-5" data-cat="6" data-flags="student api" data-search="luma dream machine סביבת יצירה בדפדפן להפקת וידאו, תמונות וקול במודלי ray. וידאו: יצירה מטקסט ומתמונה">
   <div class="card-head">
     <div class="card-id">
       <span class="logo"><img class="logo-light" src="logos/luma.svg" alt="הלוגו של Luma" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/luma-dark.svg" alt="הלוגו של Luma" width="56" height="56" loading="lazy" decoding="async"></span>
@@ -280,7 +287,7 @@
     </div>
   </dialog>
 </li>
-<li class="card" id="tool-6" data-cat="6" data-search="pika פלטפורמה ליצירה ולעריכה של סרטונים קצרים, תמונות וקול. וידאו: יצירה מטקסט ומתמונה">
+<li class="card" id="tool-6" data-cat="6" data-flags="free student api" data-search="pika פלטפורמה ליצירה ולעריכה של סרטונים קצרים, תמונות וקול. וידאו: יצירה מטקסט ומתמונה">
   <div class="card-head">
     <div class="card-id">
       <span class="logo"><img class="logo-light" src="logos/pika.svg" alt="הלוגו של Pika" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/pika-dark.svg" alt="הלוגו של Pika" width="56" height="56" loading="lazy" decoding="async"></span>
@@ -326,7 +333,7 @@
     </div>
   </dialog>
 </li>
-<li class="card" id="tool-7" data-cat="6" data-search="higgsfield פלטפורמה ליצירת וידאו ותמונות במודלים משלה ובמודלים של חברות אחרות. וידאו: יצירה מטקסט ומתמונה">
+<li class="card" id="tool-7" data-cat="6" data-flags="free api" data-search="higgsfield פלטפורמה ליצירת וידאו ותמונות במודלים משלה ובמודלים של חברות אחרות. וידאו: יצירה מטקסט ומתמונה">
   <div class="card-head">
     <div class="card-id">
       <span class="logo"><img class="logo-light" src="logos/higgsfield.svg" alt="הלוגו של Higgsfield" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/higgsfield-dark.svg" alt="הלוגו של Higgsfield" width="56" height="56" loading="lazy" decoding="async"></span>
@@ -372,7 +379,7 @@
     </div>
   </dialog>
 </li>
-<li class="card" id="tool-8" data-cat="6" data-search="vidu מחולל וידאו מטקסט, מתמונה ומחומרי ייחוס, על בסיס מודלים משלו. וידאו: יצירה מטקסט ומתמונה">
+<li class="card" id="tool-8" data-cat="6" data-flags="free api" data-search="vidu מחולל וידאו מטקסט, מתמונה ומחומרי ייחוס, על בסיס מודלים משלו. וידאו: יצירה מטקסט ומתמונה">
   <div class="card-head">
     <div class="card-id">
       <span class="logo"><img class="logo-light" src="logos/vidu.svg" alt="הלוגו של Vidu" width="56" height="56" loading="lazy" decoding="async"><img class="logo-dark" src="logos/vidu-dark.svg" alt="הלוגו של Vidu" width="56" height="56" loading="lazy" decoding="async"></span>
@@ -418,7 +425,7 @@
     </div>
   </dialog>
 </li>
-<li class="card" id="tool-9" data-cat="6" data-search="dreamina יצירת וידאו מטקסט, מתמונות ומקובצי ייחוס באמצעות מודלי seedance. וידאו: יצירה מטקסט ומתמונה">
+<li class="card" id="tool-9" data-cat="6" data-flags="" data-search="dreamina יצירת וידאו מטקסט, מתמונות ומקובצי ייחוס באמצעות מודלי seedance. וידאו: יצירה מטקסט ומתמונה">
   <div class="card-head">
     <div class="card-id">
       <span class="logo"><img src="logos/dreamina.png" alt="הלוגו של Dreamina" width="56" height="56" loading="lazy" decoding="async"></span>
@@ -464,7 +471,7 @@
     </div>
   </dialog>
 </li>
-<li class="card" id="tool-10" data-cat="6" data-search="wan פלטפורמת יצירה שמפיקה וידאו ותמונות מטקסט ומתמונות, כולל עריכה. וידאו: יצירה מטקסט ומתמונה">
+<li class="card" id="tool-10" data-cat="6" data-flags="free api" data-search="wan פלטפורמת יצירה שמפיקה וידאו ותמונות מטקסט ומתמונות, כולל עריכה. וידאו: יצירה מטקסט ומתמונה">
   <div class="card-head">
     <div class="card-id">
       <span class="logo"><img src="logos/wan.png" alt="הלוגו של Wan" width="56" height="56" loading="lazy" decoding="async"></span>

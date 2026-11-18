@@ -85,6 +85,47 @@
     paintTheme();
   }
 
+  /* ---------- סננים בדף הראשי ---------- */
+  var filterBtns = $$('[data-filter-flag], [data-filter-cat]');
+  var cards = $$('.card');
+  var catSections = $$('[data-cat-section]');
+  var filterBar = $('#filter-bar');
+  var filterText = $('#filter-text');
+  var pageEmpty = $('#page-empty');
+  function countWords(n) { return n === 1 ? 'כלי אחד' : n + ' כלים'; }
+  function applyFilters() {
+    var on = filterBtns.filter(function (b) { return b.getAttribute('aria-pressed') === 'true'; });
+    var flags = on.map(function (b) { return b.getAttribute('data-filter-flag'); }).filter(Boolean);
+    var cats = on.map(function (b) { return b.getAttribute('data-filter-cat'); }).filter(Boolean);
+    var shown = 0;
+    cards.forEach(function (card) {
+      var have = (card.getAttribute('data-flags') || '').split(' ');
+      var ok = flags.every(function (f) { return have.indexOf(f) !== -1; }) && (cats.length === 0 || cats.indexOf(card.getAttribute('data-cat')) !== -1);
+      card.hidden = !ok;
+      if (ok) shown += 1;
+    });
+    catSections.forEach(function (sec) { sec.hidden = !$$('.card', sec).some(function (c) { return !c.hidden; }); });
+    if (pageEmpty) pageEmpty.hidden = shown !== 0;
+    if (filterBar) {
+      filterBar.hidden = on.length === 0;
+      if (filterText) filterText.textContent = on.length === 0 ? '' : (shown === 0 ? 'אין כלים מתאימים.' : 'מוצגים ' + countWords(shown) + ' מתוך ' + cards.length + '.');
+    }
+  }
+  function clearFilters() {
+    filterBtns.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+    applyFilters();
+  }
+  filterBtns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true'));
+      applyFilters();
+    });
+  });
+  var filterClear = $('#filter-clear');
+  if (filterClear) filterClear.addEventListener('click', function () { clearFilters(); if (filterBtns[0]) filterBtns[0].focus(); });
+  var pageEmptyClear = $('#page-empty-clear');
+  if (pageEmptyClear) pageEmptyClear.addEventListener('click', function () { clearFilters(); if (filterBtns[0]) filterBtns[0].focus(); });
+
   /* ---------- חלון החיפוש ---------- */
   // החיפוש מקומי: הוא מתאים את המילים שנכתבו לשם, לתיאור, ליתרונות ולקהל של כל כלי, ומדרג לפי ההתאמה.
   // כדי לחבר מודל בהמשך מחליפים רק את rank, שמקבלת טקסט ומחזירה רשימת כלים מדורגת עם נימוק.
@@ -220,6 +261,7 @@
         saveRecent(q.value);
         dialog.close();
         if (!opener) return;
+        if (opener.closest('.card').hidden) clearFilters();
         opener.scrollIntoView({ block: 'center' });
         opener.focus({ preventScroll: true });
         opener.click();

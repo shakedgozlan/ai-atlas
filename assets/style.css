@@ -136,7 +136,16 @@ html:not(.js) .bar-actions{display:none}
 .hero-facts dt{font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
 
 /* סינון פעיל ומצב ריק */
-.filter-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;margin-bottom:var(--gap);padding:8px 16px;background:var(--brand-tint);border-radius:var(--r-inner);font-weight:500}
+/* סננים בדף הראשי: שורת כפתורים שקטה מעל הכרטיסים. כמה סננים יחד מצמצמים את הרשימה. */
+.filters{display:grid;gap:12px;margin-bottom:clamp(20px,3vw,32px)}
+.filters-h{font-size:var(--t-label);font-weight:600;color:var(--ink-faint)}
+.filters-row{display:flex;flex-wrap:wrap;gap:8px 24px}
+.filters-set{display:flex;flex-wrap:wrap;gap:8px}
+.filters .short{background:var(--surface)}
+.filters .short[aria-pressed="true"]{background:var(--ink)}
+html:not(.js) .filters{display:none}
+.filter-bar{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
+.filter-bar .btn{min-height:44px}
 .empty{padding:clamp(32px,6vw,64px) 0;display:grid;gap:12px;justify-items:start}
 .empty h2{font-size:var(--t-cat);font-weight:700}
 .empty p{max-width:48ch;color:var(--ink-soft)}
@@ -392,7 +401,7 @@ html:not(.js) #finder-open{display:none}
   .bill-btn[aria-pressed="true"]{background:Highlight;color:HighlightText}
 }
 @media print{
-  .bar,.finder,.filter-bar,.card-actions,.btn-close,.sheet-head .btn-site{display:none !important}
+  .bar,.finder,.filters,.card-actions,.btn-close,.sheet-head .btn-site{display:none !important}
   .sheet{display:block !important;position:static;width:auto;height:auto;max-height:none;overflow:visible;box-shadow:none}
   .more-tabs,.bill{display:none !important}
   .more-panel[hidden]{display:block !important}

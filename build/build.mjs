@@ -258,12 +258,24 @@ function sheetHtml(t) {
   </dialog>`;
 }
 
+// עובדות שאפשר לסנן לפיהן. כל אחת נשענת רק על מה שכתוב בנתונים במפורש.
+const FLAGS = [['free', 'תוכנית חינמית'], ['student', 'מידע על הטבות לסטודנטים'], ['api', 'ממשק למפתחים']];
+function toolFlags(t) {
+  return {
+    free: (t.pricing?.plans || []).some((x) => x.price === 0),
+    student: has(t.student_benefits?.text),
+    api: t.developer_access?.api === 'יש',
+  };
+}
+
 function cardHtml(t) {
+  const fl = toolFlags(t);
+  const flags = FLAGS.map(([k]) => k).filter((k) => fl[k]).join(' ');
   const cat = catById.get(t.category_id);
   const search = [t.name, t.former_name, t.role, cat?.name].filter(has).join(' ').toLowerCase();
   const former = has(t.former_name) ? `<p class="former">לשעבר <bdi>${esc(t.former_name)}</bdi></p>` : '';
   return `
-<li class="card" id="tool-${t.id}" data-cat="${t.category_id}" data-search="${esc(search)}">
+<li class="card" id="tool-${t.id}" data-cat="${t.category_id}" data-flags="${flags}" data-search="${esc(search)}">
   <div class="card-head">
     <div class="card-id${has(t.logo?.file) ? '' : ' no-logo'}">
       ${logoHtml(t)}
@@ -318,12 +330,9 @@ const searchIndex = data.tools.map((t) => ({
   who: low(t.audience),
   pros: (t.strengths || []).map((x) => ({ lead: x.lead, text: low(`${x.lead} ${x.detail}`) })),
   // קיצורי הדרך נשענים רק על מה שכתוב בנתונים במפורש
-  free: (t.pricing?.plans || []).some((x) => x.price === 0),
-  student: has(t.student_benefits?.text),
-  api: t.developer_access?.api === 'יש',
+  ...toolFlags(t),
 }));
-const SHORTCUTS = [['free', 'יש תוכנית חינמית'], ['student', 'יש מידע על הטבות לסטודנטים'], ['api', 'יש ממשק למפתחים']]
-  .filter(([k]) => searchIndex.some((x) => x[k]));
+const SHORTCUTS = FLAGS.filter(([k]) => searchIndex.some((x) => x[k])).map(([k, label]) => [k, `יש ${label}`]);
 
 const catNav = data.categories.map((c) => {
   const n = toolsByCat.get(c.id)?.length || 0;
@@ -380,13 +389,20 @@ const html = `<!doctype html>
   </section>
 
   <div class="wrap">
-    <div class="filter-bar" id="filter-bar" hidden>
-      <p id="filter-text" role="status" aria-live="polite"></p>
-      <button type="button" class="btn btn-quiet" id="filter-clear">ניקוי הסינון</button>
+    <div class="filters" id="filters" role="group" aria-labelledby="filters-h">
+      <h2 class="filters-h" id="filters-h">סינון</h2>
+      <div class="filters-row">
+        ${liveCats.length > 1 ? `<div class="filters-set" role="group" aria-label="קטגוריה">${liveCats.map((c) => `<button type="button" class="btn short" data-filter-cat="${c.id}" aria-pressed="false">${esc(c.name)}</button>`).join('')}</div>` : ''}
+        <div class="filters-set" role="group" aria-label="מה יש בכלי">${SHORTCUTS.map(([k]) => `<button type="button" class="btn short" data-filter-flag="${k}" aria-pressed="false">${FLAGS.find((f) => f[0] === k)[1]}</button>`).join('')}</div>
+      </div>
+      <div class="filter-bar" id="filter-bar" hidden>
+        <p id="filter-text" role="status" aria-live="polite"></p>
+        <button type="button" class="btn btn-quiet" id="filter-clear">ניקוי הסינון</button>
+      </div>
     </div>
     <div class="empty" id="page-empty" hidden>
-      <h2>אין תוצאות</h2>
-      <p>שום כלי באטלס לא מתאים לחיפוש הזה. כדאי לנסות שם אחר או קטגוריה אחרת.</p>
+      <h2>אין כלי שמתאים לכל הסננים</h2>
+      <p>כדאי להוריד אחד מהסננים שנבחרו.</p>
       <button type="button" class="btn btn-primary" id="page-empty-clear">ניקוי הסינון</button>
     </div>
 ${sections}

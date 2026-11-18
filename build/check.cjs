@@ -237,6 +237,24 @@ const audit = () => {
       note(await page.locator('#finder-recent-list button', { hasText: 'pika' }).isVisible(), `${tag} חיפושים אחרונים`);
       await page.keyboard.press('Escape');
 
+      // סננים בדף הראשי: מצמצמים את הכרטיסים, המספר הקבוע של הכלי לא משתנה, ואפשר לנקות
+      const fbtn = page.locator('#filters [data-filter-flag]').first();
+      const flag = await fbtn.getAttribute('data-filter-flag');
+      const expect = await page.locator(`.card[data-flags~="${flag}"]`).count();
+      await fbtn.click();
+      note((await page.locator('.card:not([hidden])').count()) === expect && expect >= 1 && expect <= n, `${tag} סינון בדף הראשי`, String(expect));
+      note(await page.locator('#filter-bar').isVisible() && (await fbtn.getAttribute('aria-pressed')) === 'true', `${tag} מצב הסינון לא מוצג`);
+      const firstShown = page.locator('.card:not([hidden])').first();
+      note((await firstShown.locator('.num').first().textContent()) === (await firstShown.getAttribute('id')).replace('tool-', '').padStart(2, '0'), `${tag} המספר משתנה בסינון`);
+      await page.waitForTimeout(250);
+      await report('דף מסונן');
+      if (shots) await page.screenshot({ path: path.join(shots, `${tag}-6-filtered.png`) });
+      await page.locator('#filters [data-filter-flag]').evaluateAll((els) => els.forEach((e) => { if (e.getAttribute('aria-pressed') !== 'true') e.click(); }));
+      const left = await page.locator('.card:not([hidden])').count();
+      note(left === 0 ? await page.locator('#page-empty').isVisible() : left <= expect, `${tag} צירוף סננים`, String(left));
+      await page.click('#filter-clear');
+      note((await page.locator('.card:not([hidden])').count()) === n && !(await page.locator('#filter-bar').isVisible()), `${tag} ניקוי הסינון`);
+
       // מצב כהה ובהיר
       const before = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
       await page.click('#theme-toggle');
