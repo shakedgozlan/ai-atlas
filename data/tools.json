@@ -282,7 +282,9 @@
       },
       "company": {
         "name": "Google",
-        "country": null
+        "parent": null,
+        "country": null,
+        "note": null
       },
       "student_benefits": {
         "text": "לפי עמוד התוכניות, סטודנטים מקבלים את Google AI Pro בחינם לשנה, או את Google AI Pro יחד עם YouTube Premium ב־8.99 דולר לחודש. ההטבות תקפות עד ארבע שנים, מחייבות אימות דרך SheerID ואינן זמינות בחשבונות של מוסד הלימודים. הזמינות משתנה ממדינה למדינה, והזמינות בישראל לא אומתה.",
@@ -391,6 +393,7 @@
           "launched_in_window": true,
           "latest_version": "Gemini Omni 1.2 Flash",
           "latest_version_date": "Nov 05, 2026",
+          "latest_version_date_iso": "2026-11-05",
           "independent_reviews": 3,
           "evidence": "research/new_and_notable.md"
         },
@@ -701,7 +704,9 @@
       },
       "company": {
         "name": "Runway AI, Inc.",
-        "country": null
+        "parent": null,
+        "country": null,
+        "note": null
       },
       "student_benefits": {
         "text": "קיים מאמר עזרה רשמי על הנחות לסטודנטים ולאנשי חינוך, אך תוכנו לא נטען: גובה ההנחה, התוכניות הזכאיות ואופן האימות לא אומתו. עמוד המחירים אינו מציג מחיר לסטודנטים.",
@@ -784,6 +789,7 @@
           "launched_in_window": false,
           "latest_version": "Aleph 2.0",
           "latest_version_date": "May 21, 2026",
+          "latest_version_date_iso": "2026-05-21",
           "independent_reviews": 5,
           "evidence": "research/new_and_notable.md"
         },
@@ -1011,8 +1017,10 @@
         ]
       },
       "company": {
-        "name": "Kling AI Pte. Ltd. (חברת האם: Kuaishou Technology)",
-        "country": null
+        "name": "Kling AI Pte. Ltd.",
+        "parent": "Kuaishou Technology",
+        "country": null,
+        "note": null
       },
       "student_benefits": {
         "text": null,
@@ -1101,6 +1109,7 @@
           "launched_in_window": false,
           "latest_version": "Kling 4.0",
           "latest_version_date": "October 15, 2026",
+          "latest_version_date_iso": "2026-10-15",
           "independent_reviews": 4,
           "evidence": "research/new_and_notable.md"
         },
@@ -1414,8 +1423,10 @@
         ]
       },
       "company": {
-        "name": "Nanonoble Pte. Ltd. (בעלת המותג: MiniMax)",
-        "country": null
+        "name": "Nanonoble Pte. Ltd.",
+        "parent": "MiniMax",
+        "country": null,
+        "note": "Nanonoble היא החברה המפעילה, והמותג שייך ל־MiniMax."
       },
       "student_benefits": {
         "text": null,
@@ -1504,6 +1515,7 @@
           "launched_in_window": false,
           "latest_version": "MiniMax H3",
           "latest_version_date": "2026-07-31",
+          "latest_version_date_iso": "2026-07-31",
           "independent_reviews": 5,
           "evidence": "research/new_and_notable.md"
         },
@@ -1820,7 +1832,9 @@
       },
       "company": {
         "name": "Luma AI, Inc.",
-        "country": "ארצות הברית"
+        "parent": null,
+        "country": "ארצות הברית",
+        "note": null
       },
       "student_benefits": {
         "text": "לא נמצאה הנחת סטודנטים. יש תוכנית חינוך עם טופס בקשה למחנכים וטופס התעניינות לשגרירי סטודנטים, אבל העמוד לא מציין הנחה, נקודות חינם או מחיר.",
@@ -1984,6 +1998,7 @@
           "launched_in_window": false,
           "latest_version": "Ray3.2",
           "latest_version_date": "June 9, 2026",
+          "latest_version_date_iso": "2026-06-09",
           "independent_reviews": 5,
           "evidence": "research/new_and_notable.md"
         },
@@ -2284,7 +2299,9 @@
       },
       "company": {
         "name": "Mellis, Inc.",
-        "country": "ארצות הברית"
+        "parent": null,
+        "country": "ארצות הברית",
+        "note": null
       },
       "student_benefits": {
         "text": "לא נמצאה הנחת סטודנטים, לא בעמוד המחירים ולא ברשימת השאלות הנפוצות; התשובות עצמן לא נטענו.",
@@ -2385,6 +2402,7 @@
           "launched_in_window": false,
           "latest_version": "Pika H3 Flex",
           "latest_version_date": "October 29, 2026",
+          "latest_version_date_iso": "2026-10-29",
           "independent_reviews": 2,
           "evidence": "research/new_and_notable.md"
         },
@@ -2722,7 +2740,9 @@
       },
       "company": {
         "name": "Higgsfield Inc.",
-        "country": "ארצות הברית"
+        "parent": null,
+        "country": "ארצות הברית",
+        "note": null
       },
       "student_benefits": {
         "text": null,
@@ -2829,6 +2849,7 @@
           "launched_in_window": null,
           "latest_version": "Cinema Studio 4.0",
           "latest_version_date": "Oct. 28, 2026",
+          "latest_version_date_iso": "2026-10-28",
           "independent_reviews": 3,
           "evidence": "research/new_and_notable.md"
         },
@@ -3104,7 +3125,9 @@
       },
       "company": {
         "name": "Shengshu Technology",
-        "country": null
+        "parent": null,
+        "country": null,
+        "note": null
       },
       "student_benefits": {
         "text": null,
@@ -3175,6 +3198,7 @@
           "launched_in_window": false,
           "latest_version": "Vidu Q4 Preview",
           "latest_version_date": "October 7, 2026",
+          "latest_version_date_iso": "2026-10-07",
           "independent_reviews": 3,
           "evidence": "research/new_and_notable.md"
         },
@@ -3407,8 +3431,10 @@
         ]
       },
       "company": {
-        "name": "TikTok USDS Joint Venture LLC (מפעילת הפלטפורמה למשתמשים בארצות הברית, לפי המסמכים האמריקאיים; הגוף המפעיל מחוץ לארצות הברית, כולל בישראל, לא אומת)",
-        "country": "ארצות הברית (כתובת הקשר של הגוף האמריקאי)"
+        "name": "TikTok USDS Joint Venture LLC",
+        "parent": null,
+        "country": "ארצות הברית",
+        "note": "מפעילת הפלטפורמה למשתמשים בארצות הברית, לפי המסמכים האמריקאיים. הגוף המפעיל מחוץ לארצות הברית, כולל בישראל, לא אומת."
       },
       "student_benefits": {
         "text": null,
@@ -3479,6 +3505,7 @@
           "launched_in_window": null,
           "latest_version": "Seedance 2.5",
           "latest_version_date": "July 31, 2026",
+          "latest_version_date_iso": "2026-07-31",
           "independent_reviews": 2,
           "evidence": "research/new_and_notable.md"
         },
@@ -3726,8 +3753,10 @@
         ]
       },
       "company": {
-        "name": "Alibaba Cloud (לפי השורה בתחתית האתר: Powered by Alibaba Cloud; הישות המשפטית המפעילה לא אומתה)",
-        "country": null
+        "name": "Alibaba Cloud",
+        "parent": null,
+        "country": null,
+        "note": "לפי השורה בתחתית האתר: Powered by Alibaba Cloud. הישות המשפטית המפעילה לא אומתה."
       },
       "student_benefits": {
         "text": null,
@@ -3780,6 +3809,7 @@
           "launched_in_window": false,
           "latest_version": "Wan3.0",
           "latest_version_date": "Aug 24, 2026",
+          "latest_version_date_iso": "2026-08-24",
           "independent_reviews": 3,
           "evidence": "research/new_and_notable.md"
         },
