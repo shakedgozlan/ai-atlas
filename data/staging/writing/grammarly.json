@@ -1,0 +1,369 @@
+{
+ "id": null,
+ "slug": "grammarly",
+ "category_id": 2,
+ "name": "Grammarly",
+ "former_name": null,
+ "rename_note": "שם החברה שונה ל־Superhuman (הודעה מ־29 באוקטובר 2025). שם המוצר Grammarly נשאר.",
+ "role": "עוזר כתיבה שמתקן דקדוק ואיות, מציע ניסוחים ומייצר טקסט בתוך האפליקציות והאתרים שכותבים בהם.",
+ "url": "https://www.grammarly.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": "החברה שמאחורי Grammarly הודיעה שהיא נקראת מעתה Superhuman. Grammarly ממשיך כמוצר כתיבה בתוך חבילת Superhuman, ולפי מרכז העזרה כמעט כל היכולות הקיימות נשארות ללא שינוי.",
+  "date_as_written": "October 29, 2025",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "הנחה של 50% לסטודנטים",
+   "detail": "לפי מרכז העזרה, סטודנטים שמאמתים זכאות דרך SheerID מקבלים 50% הנחה על Grammarly Pro לתקופת מנוי אחת, במבצע מוגבל בזמן.",
+   "source_ids": [
+    "s5"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית עם מכסה חודשית",
+   "detail": "התוכנית החינמית מתקנת טעויות, מזהה טון וכוללת 100 הנחיות AI בחודש. Pro מעלה את המכסה ל־2,000 הנחיות למשתמש בחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הצעות כתיבה ב־24 שפות נוסף לאנגלית",
+   "detail": "לפי מרכז העזרה, ההצעות הרב־לשוניות כלולות בכל התוכניות, כולל החינמית.",
+   "source_ids": [
+    "s6"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "עברית לא ברשימת השפות",
+   "detail": "רשימת 24 השפות הנתמכות לצד אנגלית במרכז העזרה לא מזכירה עברית.",
+   "source_ids": [
+    "s6"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ניסוח מחדש ובדיקת מקוריות רק בתשלום",
+   "detail": "שינוי טון, שכתוב משפטים שלמים, זיהוי טקסט AI ובדיקת העתקה אינם זמינים בתוכנית החינמית.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "התוכן משמש לאימון כברירת מחדל",
+   "detail": "לפי מדיניות הפרטיות, Superhuman מאמנת את מודלי ה־AI שלה על מידע שנאסף, ואפשר לשלוט בכך בהגדרות החשבון.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים, כותבים ואנשי מקצוע שכותבים באנגלית או בשפות הנתמכות, לבד או בארגון.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "Pro ב־12 דולר למשתמש לחודש בחיוב שנתי, או 15 דולר בחיוב חודשי. יש תוכנית חינמית עם 100 הנחיות AI בחודש.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "תיקון טעויות, זיהוי טון, 100 הנחיות AI בחודש",
+    "notes": "בעמוד של Superhuman התוכנית החינמית כוללת גם את Docs ו־Go עם עזרה מוגבלת של Grammarly.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 12,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "שינוי טון, שכתוב משפטים, זיהוי טקסט AI ובדיקת העתקה, 2,000 הנחיות AI למשתמש בחודש",
+    "notes": "בעמוד של Superhuman: \"per member / month, billed annually\". בעמוד של Grammarly מוצג 12 דולר בלי ציון תקופת חיוב. יש תקופת ניסיון חינמית.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 15,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "כמו Pro בחיוב שנתי",
+    "notes": "המחיר החודשי מופיע רק בעמוד התוכניות של Superhuman.",
+    "source_ids": [
+     "s2"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": 33,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "מופיע בעמוד של Superhuman בלבד.",
+    "source_ids": [
+     "s2"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": 40,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "מופיע בעמוד של Superhuman בלבד.",
+    "source_ids": [
+     "s2"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "הנחיות AI ללא הגבלה, SSO, SCIM, הצפנה במפתח של הלקוח",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free ללא תשלום: תיקון טעויות, זיהוי טון ו־100 הנחיות AI בחודש.",
+  "trial": "לתוכנית Pro יש תקופת ניסיון חינמית עם תזכורת במייל יומיים לפני סיומה. אורך התקופה לא צוין בעמוד שנקרא.",
+  "unverified_notes": "בעמוד grammarly.com/plans מחיר Pro הוא 12 דולר בלי ציון חודשי או שנתי, והמחיר החודשי של 15 דולר מופיע רק בעמוד התוכניות של Superhuman, שבו התוכנית כוללת גם מוצרים נוספים של החברה. לכן לא ודאי שמדובר באותה תוכנית בדיוק. בעמוד של Superhuman המטבע מוצג כסימן $ בלבד."
+ },
+ "privacy": {
+  "text": "לפי מדיניות הפרטיות של Superhuman (בתוקף מ־16 בנובמבר 2026), החברה משתמשת במידע שנאסף כדי לאמן את מודלי ה־AI שלה, והמשתמש יכול להחליט אם התוכן שלו ישמש לאימון דרך הגדרות האימון בחשבון. ספקי AI חיצוניים מוגבלים מלאמן על תוכן הלקוחות. בחשבונות ארגוניים ובחשבונות חינוך התוכן מעובד לפי החוזה עם הארגון.",
+  "training_on_user_data": "כן, עם אפשרות שליטה בהגדרות החשבון. ספקים חיצוניים לא מאמנים על התוכן.",
+  "source_ids": [
+   "s4",
+   "s7"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת. תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "Superhuman Go, עוזר שפועל ביותר ממיליון אתרים ואפליקציות"
+  ],
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "תוסף לדפדפן"
+  ],
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: מאמר השפות במרכז העזרה מונה 24 שפות להצעות כתיבה נוסף לאנגלית, ועברית אינה ביניהן. המאמר מציין שיש גם תרגום, בלי רשימת שפות. שפת הממשק לא נבדקה.",
+  "source_ids": [
+   "s6"
+  ]
+ },
+ "company": {
+  "name": "Superhuman Platform Inc.",
+  "parent": null,
+  "country": null,
+  "note": "לפי מדיניות הפרטיות, Superhuman Platform Inc. היא החברה שנקראה קודם Grammarly."
+ },
+ "student_benefits": {
+  "text": "לפי מרכז העזרה, סטודנטים מקבלים 50% הנחה על Grammarly Pro במבצע מוגבל בזמן, אחרי אימות דרך SheerID. ההנחה חלה על תקופת מנוי אחת, לא מצטרפת להנחות אחרות ולא חלה על רכישה דרך App Store או Google Play.",
+  "source_ids": [
+   "s5"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.grammarly.com/plans",
+   "title": "עמוד התוכניות של Grammarly",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://superhuman.com/plans",
+   "title": "עמוד התוכניות של Superhuman",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://support.grammarly.com/hc/en-us/articles/40707200788493-What-is-Superhuman",
+   "title": "מרכז העזרה של Grammarly: מה זה Superhuman",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://superhuman.com/legal/privacy-policy",
+   "title": "מדיניות הפרטיות של Superhuman (בתוקף מ־16 בנובמבר 2026)",
+   "official": true,
+   "published": "2026-11-16",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://support.grammarly.com/hc/en-us/articles/38895500890125-Does-Grammarly-offer-discounts-for-students",
+   "title": "מרכז העזרה של Grammarly: הנחה לסטודנטים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s6",
+   "url": "https://help.superhuman.com/hc/en-us/articles/46242287887757-Does-Grammarly-support-languages-other-than-English",
+   "title": "מרכז העזרה: שפות שבהן Grammarly תומך",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s7",
+   "url": "https://grammarly.com/ai/responsible-ai",
+   "title": "Grammarly: מחויבות ל־AI אחראי",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s8",
+   "url": "https://a16z.com/100-gen-ai-apps-6/",
+   "title": "a16z: The Top 100 Gen AI Consumer Apps, מהדורה 6",
+   "official": false,
+   "published": "2026-03-09",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s9",
+   "url": "https://www.theneuron.ai/explainer-articles/a16z-just-ranked-the-100-most-popular-ai-apps-heres-the-full-list-and-what-it-tells-us-/",
+   "title": "The Neuron: העתק של רשימת a16z עם הדירוג",
+   "official": false,
+   "published": "2026-03-13",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "לא אומת: תאריך הגרסה האחרונה לא נבדק במקור רשמי, והסקירות העצמאיות לא נספרו כי מכסת הגישה לדפים נגמרה.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": null,
+   "evidence": "research/stage4/writing.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 12,
+   "currency": "USD",
+   "billing": "שנתי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־12 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "תוסף לדפדפן"
+   ],
+   "unverified": [
+    "אתר"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": null,
+    "of": 0,
+    "value": null,
+    "evidence": "research/stage4/writing.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מקום 18 ברשימת 50 מוצרי הרשת של a16z, מהדורה 6 ממרץ 2026, לפי ביקורים ייחודיים ב־Similarweb בינואר 2026.",
+    "evidence": "research/stage4/writing.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "100 הנחיות AI בחודש בתוכנית החינמית.",
+    "evidence": "research/stage4/writing.md"
+   }
+  }
+ }
+}

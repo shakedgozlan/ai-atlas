@@ -1,0 +1,409 @@
+{
+ "id": null,
+ "slug": "claude",
+ "category_id": 1,
+ "name": "Claude",
+ "former_name": null,
+ "rename_note": null,
+ "role": "עוזר שיחה של Anthropic לכתיבה, ניתוח קבצים, מחקר ויצירת מסמכים, מצגות וקוד.",
+ "url": "https://claude.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "הרבה כלים כבר בחינם",
+   "detail": "לפי עמוד המחירים, Free כוללת חיפוש ברשת, יצירת קבצים, הרצת קוד, זיכרון, חיבור לאפליקציות, Artifacts, Claude Design, Slides ו־Docs.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הנחה בחיוב שנתי",
+   "detail": "Pro עולה 20 דולר בחיוב חודשי, או 17 דולר לחודש בחיוב שנתי (200 דולר מראש).",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "API מתועד עם מחירון גלוי",
+   "detail": "Opus 5.5 זמין ב־API במחיר 4 דולר למיליון טוקנים בקלט ו־20 דולר בפלט, וגם ב־AWS, Google Cloud ו־Azure.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מכסת שימוש בחלונות זמן",
+   "detail": "בכל התוכניות השימוש מוגבל לחלון של 5 שעות ולשבוע. Max נותנת פי 5 מ־Pro ו־Ultra פי 10.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "Opus ו־Research רק בתשלום",
+   "detail": "בתוכנית Free זמינים Sonnet ו־Haiku. Opus, Claude Code ו־Research דורשים Pro ומעלה, ו־Free מוגבלת ל־5 Projects.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ממשק בלי עברית",
+   "detail": "רשימת שפות הממשק הרשמית אינה כוללת עברית. לפי אותו עמוד אפשר לכתוב ל־Claude בכל שפה.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים, כותבים, חוקרים ומפתחים שעובדים עם מסמכים ארוכים, קבצים וקוד.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "Pro עולה 20 דולר לחודש, או 17 דולר לחודש בחיוב שנתי. יש תוכנית חינמית עם מכסה מתחדשת.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "שימוש מוגבל בחלון של 5 שעות ובשבוע. אתר, מחשב ונייד, חיפוש ברשת, יצירת קבצים, הרצת קוד, זיכרון, חיבור לאפליקציות, Artifacts, Claude Design, Slides, Docs. עד 5 Projects. Sonnet ו־Haiku.",
+    "notes": "Opus, Claude Code ו־Research אינם זמינים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "יותר שימוש מ־Free, Opus, Claude Code, Claude Science, Projects ללא הגבלה, Research, Claude in Chrome ו־Microsoft 365, תזמון משימות, Claude Data, Sheets ו־Whiteboards (בטא).",
+    "notes": "Fable זמין דרך קרדיטים לשימוש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 17,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "כמו Pro בחיוב חודשי.",
+    "notes": "מחיר לחודש בחיוב שנתי, 200 דולר מראש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Max",
+    "price": 100,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "פי 5 מ־Pro בחלון של 5 שעות ובשבוע, Fable עד מחצית המכסה השבועית, 100 דולר בחודש בקרדיטים ל־API, גישה מוקדמת ועדיפות בשעות עומס.",
+    "notes": "סוג החיוב לא צוין בעמוד.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Ultra",
+    "price": 200,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "פי 10 מ־Pro בשבוע, בלי מגבלת 5 שעות (לחשבונות מאומתים), Fable עד מחצית המכסה השבועית, 200 דולר בחודש בקרדיטים ל־API.",
+    "notes": "חיוב חודשי בלבד.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team Standard",
+    "price": 25,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "2 עד 150 משתמשים. יותר שימוש מ־Pro, Claude Code, Cowork, SSO, חיוב מרוכז, בלי אימון על התוכן כברירת מחדל.",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team Standard",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "כמו בחיוב חודשי.",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team Premium",
+    "price": 125,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "פי 5 משימוש מושב Standard.",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team Premium",
+    "price": 100,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "פי 5 משימוש מושב Standard.",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "מינימום 20 מושבים, ועוד שימוש בתעריפי API.",
+    "notes": "העמוד כותב US$.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Education",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "תוכנית לכל האוניברסיטה: סטודנטים, סגל ועובדים, וקרדיטים ל־API ללמידה.",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free קבועה עם מכסה שמתחדשת בחלון של 5 שעות ובשבוע. כוללת Sonnet ו־Haiku, חיפוש ברשת, יצירת קבצים, הרצת קוד, זיכרון, Artifacts ועד 5 Projects.",
+  "trial": null,
+  "unverified_notes": "העמוד מציג \"$\" בלי קוד מטבע, למעט Enterprise שמסומן US$. גודל המכסה המדויק בכל תוכנית אינו מפורסם במספרים. סוג החיוב של Max לא צוין."
+ },
+ "privacy": {
+  "text": "לפי מרכז הפרטיות של Anthropic (16 במרץ 2026), בתוכניות הצרכניות Free, Pro ו־Max השיחות ישמשו לשיפור המודלים אם בוחרים לאפשר זאת בהגדרת Model Improvement. ברירת המחדל לא צוינה בעמוד. שיחות Incognito אינן משמשות לאימון. שיחות שסומנו לבדיקת בטיחות עשויות לשמש לאימון. משוב בכפתורי האגודל נשמר עד 5 שנים. לפי עמוד המחירים, ב־Team אין אימון על התוכן כברירת מחדל.",
+  "training_on_user_data": "בתוכניות הצרכניות לפי בחירת המשתמש בהגדרה; ברירת המחדל לא צוינה. ב־Team לא כברירת מחדל.",
+  "source_ids": [
+   "s2",
+   "s1"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת. תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "Claude Platform עם API. Opus 5.5 (מזהה claude-opus-5-5) עולה 4 דולר למיליון טוקנים בקלט ו־20 דולר בפלט, ו־8/40 דולר במצב מהיר. זמין גם ב־Amazon Web Services, Google Cloud ו־Microsoft Azure. Max ו־Ultra כוללות קרדיטים חודשיים ל־API.",
+  "source_ids": [
+   "s3",
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Microsoft 365",
+   "Claude in Chrome",
+   "Claude Code",
+   "חיבור לאפליקציות"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "מחשב שולחני",
+   "אפליקציות לנייד",
+   "תוסף ל־Chrome"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית. רשימת שפות הממשק הרשמית (אנגלית, צרפתית, גרמנית, הינדי, אינדונזית, איטלקית, יפנית, קוריאנית, פורטוגזית וספרדית) אינה כוללת עברית. לפי אותו עמוד אפשר לשוחח עם Claude בכל שפה והוא עונה בשפה שבה כותבים.",
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "company": {
+  "name": "Anthropic",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "אין הנחה אישית לסטודנטים בעמוד המחירים. יש תוכנית Education למוסדות, לסטודנטים, לסגל ולעובדים, במחיר מוזל לפי הצעת מחיר.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://claude.com/pricing",
+   "title": "עמוד המחירים של Claude",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+   "title": "מרכז הפרטיות של Anthropic: Is my data used for model training?",
+   "official": true,
+   "published": "2026-03-16",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://www.anthropic.com/claude-opus-5-5",
+   "title": "Anthropic: Introducing Claude Opus 5.5",
+   "official": true,
+   "published": "2026-09-22",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://support.claude.com/en/articles/10769299-how-to-use-claude-in-your-preferred-language",
+   "title": "מרכז העזרה של Claude: שימוש בשפה המועדפת",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "כלי מוביל ותיק שקיבל את Opus 5.5 בספטמבר 2026, ומופיע בכל שש הסקירות. עמוד המחירים מסמן גם את Fable 5.2 כחדש, ללא תאריך.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Claude Opus 5.5",
+   "latest_version_date": "September 22, 2026",
+   "latest_version_date_iso": "2026-09-22",
+   "independent_reviews": 6,
+   "evidence": "research/stage4/assistants.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 20,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־20 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר",
+    "אפליקציות לנייד",
+    "תוסף לדפדפן"
+   ],
+   "unverified": [
+    "iOS",
+    "Android",
+    "Mac",
+    "Windows"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/assistants.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מקום 6 ברשימת אתרי הבינה המלאכותית של a16z, מהדורה 6 (מרץ 2026, לפי Similarweb לינואר 2026). מופיע גם במהדורה השביעית (אוקטובר 2026).",
+    "evidence": "research/stage4/assistants.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "מכסת Free מתחדשת בחלון של 5 שעות ובכל שבוע.",
+    "evidence": "research/stage4/assistants.md"
+   }
+  }
+ }
+}

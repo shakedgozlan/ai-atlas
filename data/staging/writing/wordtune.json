@@ -1,0 +1,258 @@
+{
+ "id": null,
+ "slug": "wordtune",
+ "category_id": 2,
+ "name": "Wordtune",
+ "former_name": null,
+ "rename_note": null,
+ "role": "עוזר כתיבה שמציע ניסוחים חלופיים, מתקן איות ודקדוק ומסכם טקסטים.",
+ "url": "https://www.wordtune.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "הנחה של 30% לסטודנטים",
+   "detail": "סטודנטים, אנשי חינוך וארגונים ללא מטרות רווח מקבלים 30% הנחה על תוכניות חודשיות ושנתיות, עם מייל אקדמי או הוכחת לימודים, בפנייה לתמיכה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית Unlimited עם ימי ניסיון",
+   "detail": "Unlimited מוצגת ב־9.99 דולר לחודש, או 6.99 דולר לחודש בחיוב שנתי, עם 3 ימי ניסיון.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "בדיקת איות ודקדוק ללא הגבלה בחינם",
+   "detail": "התוכנית החינמית כוללת תיקוני איות ודקדוק ללא הגבלה, 10 ניסוחים מחדש והצעות AI ביום ו־3 סיכומים בחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "10 ניסוחים ביום בחינם",
+   "detail": "התוכנית החינמית מוגבלת ל־10 ניסוחים מחדש והצעות AI ביום ול־3 סיכומים בחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ההנחה לסטודנטים דורשת פנייה ידנית",
+   "detail": "כדי לקבל את ההנחה צריך לפנות לתמיכה עם מייל אקדמי ‎.edu או הוכחת לימודים או העסקה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים וכותבים שרוצים לשפר ניסוח של טקסטים קצרים באנגלית.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־6.99 דולר לחודש בחיוב חודשי, או 4.89 דולר לחודש בחיוב שנתי. יש תוכנית חינמית עם 10 ניסוחים ביום.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Basic",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "10 ניסוחים מחדש והצעות AI ביום, 3 סיכומים בחודש, תיקוני איות ודקדוק ללא הגבלה",
+    "notes": "\"for limited use only\".",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Advanced",
+    "price": 6.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "3 ימי ניסיון. העמוד לא מסמן במפורש שזה המחיר החודשי (הסקה).",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Advanced",
+    "price": 4.89,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "\"per month/ billed annually\". 3 ימי ניסיון.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Unlimited",
+    "price": 9.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "3 ימי ניסיון. העמוד לא מסמן במפורש שזה המחיר החודשי (הסקה).",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Unlimited",
+    "price": 6.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "\"per month/ billed annually\". 3 ימי ניסיון.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Basic ללא תשלום: 10 ניסוחים מחדש והצעות AI ביום, 3 סיכומים בחודש ותיקוני איות ודקדוק ללא הגבלה.",
+  "trial": "3 ימי ניסיון בתוכניות Advanced ו־Unlimited.",
+  "unverified_notes": "העמוד מציג שני מחירים לכל תוכנית ומצמיד את \"billed annually\" רק לנמוך, כך שהשיוך של המחיר הגבוה לחיוב חודשי הוא הסקה. המטבע מוצג כסימן $ בלי קוד מטבע. המכסות של Advanced ו־Unlimited לא פורטו בקריאה."
+ },
+ "privacy": {
+  "text": "לא אומת. מדיניות הפרטיות לא נקראה.",
+  "training_on_user_data": null,
+  "source_ids": []
+ },
+ "commercial_rights": {
+  "text": "לא אומת.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [],
+  "source_ids": []
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: עמוד התוכניות לא מציין שפות נתמכות, ועמוד שפות רשמי לא נקרא.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "company": {
+  "name": null,
+  "parent": null,
+  "country": null,
+  "note": "החברה שמפעילה את Wordtune לא אומתה בעמוד רשמי שנקרא."
+ },
+ "student_benefits": {
+  "text": "30% הנחה על תוכניות חודשיות ושנתיות לסטודנטים, לאנשי חינוך ולעובדי מוסדות אקדמיים וארגונים ללא מטרות רווח. נדרש מייל ‎.edu או הוכחת לימודים או העסקה, ופונים לתמיכה.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.wordtune.com/plans",
+   "title": "עמוד התוכניות של Wordtune",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "לא אומת: תאריך הגרסה האחרונה לא נבדק במקור רשמי, והסקירות העצמאיות לא נספרו כי מכסת הגישה לדפים נגמרה.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": null,
+   "evidence": "research/stage4/writing.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 6.99,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Advanced",
+   "verified": false,
+   "label": "מ־6.99 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [],
+   "unverified": [
+    "אתר",
+    "תוסף לדפדפן"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": null,
+    "of": 0,
+    "value": null,
+    "evidence": "research/stage4/writing.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/writing.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "10 ניסוחים מחדש והצעות AI ביום ו־3 סיכומים בחודש בתוכנית החינמית.",
+    "evidence": "research/stage4/writing.md"
+   }
+  }
+ }
+}
