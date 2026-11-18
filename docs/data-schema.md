@@ -41,6 +41,13 @@
 - `company`: `name`, `country`.
 - `student_benefits`: `text`, `source_ids`.
 - `sources`: לכל מקור `id`, `url`, `title`, `official` (אמת או שקר), `published` (אם ידוע), `checked` (תאריך הבדיקה), `stale` (אמת כשהמקור ישן).
+- `filters`: ערכים קצרים לסננים ולחיפוש באתר. כולם נגזרים משאר השדות או ממחקר נפרד, ואינם מחליפים אותם.
+  - `new_notable`: `value` (אמת, שקר, או ריק כשלא אומת) לפי ההגדרה בסעיף 4 בקובץ הפרומפט, `basis` (משפט קצר), `launch_date` (כפי שכתוב במקור, או ריק), `launched_in_window` (האם הכלי עצמו הושק ב־18 החודשים שלפני יום הבדיקה; ריק כשלא אומת), `latest_version`, `latest_version_date`, `independent_reviews` (מספר הסקירות העצמאיות שנמצאו), `evidence` (קובץ המחקר).
+  - `hebrew`: `value` (״נתמכת לפי המקור״, ״המקור לא מזכיר עברית״ או ״לא אומת״), `label` (קצר לתצוגה), `supported` (אמת, שקר או ריק; ריק פירושו שהמקור לא מזכיר עברית, ולא שאין תמיכה).
+  - `starting_price`: `amount`, `currency`, `billing`, `plan`, `verified` (אמת רק כשהמחיר הרגיל אומת ממקור רשמי), `label` (קצר לתצוגה), `has_free_plan` (אמת, שקר או ריק).
+  - `platforms`: `verified` ו־`unverified`, רשימות מתוך ״אתר״, ״iOS״, ״Android״, ״Mac״, ״אפליקציות לנייד״.
+- `pricing.superseded_plans`: תוכניות ממחירון רשמי ישן שהוחלף, באותו מבנה של `plans`. לתיעוד בלבד, לא לתצוגה.
+- `plans[].price_short`: מחיר קצר לתצוגה בכרטיס כשאין מחיר מספרי אחד, לצד `price_text` המלא.
 - `checked_date`: תאריך הבדיקה של הכלי.
 
 ## כללים
