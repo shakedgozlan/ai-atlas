@@ -81,6 +81,23 @@ function priceLine(t) {
   return `<dl class="sum">${has(pro) ? row('sum-pro', ICON.good, 'יתרון', esc(pro)) : ''}${has(con) ? row('sum-con', ICON.warn, 'חשוב לדעת', esc(con)) : ''}${row('sum-price', ICON.price, 'מחיר', `<span class="price-text">${text}</span>`)}</dl>`;
 }
 
+// תג ״מודל חדש״ בכרטיס: מוצג רק כשתאריך הגרסה האחרונה, כפי שנאסף במחקר, חל ב־90 הימים שלפני יום הבדיקה.
+// התאריך נשמר בנתונים כפי שנכתב במקור, ולכן מנרמלים אותו לפני הקריאה. תאריך שלא נקרא לא מקבל תג.
+const NEW_DAYS = 90;
+function versionDate(t) {
+  const raw = String(t.filters?.new_notable?.latest_version_date || '').replace(/([A-Za-z]{3,})\./, '$1').replace(/^(\d{4})\.(\d{2})\.(\d{2})$/, '$1-$2-$3');
+  const ms = Date.parse(raw);
+  return Number.isNaN(ms) ? null : ms;
+}
+function newPill(t) {
+  const ms = versionDate(t);
+  const snap = Date.parse(data.snapshot_date);
+  if (ms == null || !has(t.filters?.new_notable?.latest_version)) return '';
+  const days = (snap - ms) / 86400000;
+  if (days < 0 || days > NEW_DAYS) return '';
+  return `<span class="verify verify-new">מודל חדש</span>`;
+}
+
 function verifyPill(t) {
   const p = t.pricing || {};
   const v = p.verification;
@@ -313,7 +330,7 @@ function cardHtml(t) {
     <div class="card-id${has(t.logo?.file) ? '' : ' no-logo'}">
       ${logoHtml(t)}
       <div class="card-meta">
-        <div class="card-top"><span class="num" aria-hidden="true">${pad(t.id)}</span>${verifyPill(t)}</div>
+        <div class="card-top"><span class="num" aria-hidden="true">${pad(t.id)}</span>${newPill(t)}</div>
         <h3 class="name" tabindex="-1"><span class="sr-only">כלי מספר ${t.id}: </span><bdi>${esc(t.name)}</bdi></h3>
         ${former}
         <p class="role">${esc(t.role)}</p>

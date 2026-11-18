@@ -32,6 +32,8 @@
   --brand:light-dark(#1d52de,#5b8cff);
   --brand-hover:light-dark(#113fbb,#86a9ff);
   --brand-tint:light-dark(#dbe6ff,#172247);
+  --new:light-dark(#a8430a,#ffa860);
+  --new-tint:light-dark(#fdeadb,#3a2412);
   --on-brand:light-dark(#f3f5f9,#151515);
   --focus:var(--brand);
   --stale:var(--ink-soft);
@@ -226,6 +228,8 @@ html:not(.js) .filters{display:none}
 .sum-pro dd,.sum-con dd{font-weight:500}
 .verify{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border:1px solid var(--line-strong);border-radius:999px;background:var(--inner);font-size:var(--t-label);font-weight:500;line-height:1.4;color:var(--ink-soft);white-space:nowrap}
 .verify-full{color:var(--brand);border-color:currentColor;background:var(--brand-tint)}
+/* צבע שני, חם, שמור לתג ״מודל חדש״ בלבד (בקשת שקד). לא להשתמש בו במקום אחר. */
+.verify-new{color:var(--new);border-color:currentColor;background:var(--new-tint)}
 .price-text{color:var(--ink)}
 .card-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:16px}
 .btn-open{background:var(--inner);padding-inline:20px}
