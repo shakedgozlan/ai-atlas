@@ -38,13 +38,13 @@ const audit = () => {
     const r = el.getBoundingClientRect();
     if (r.right > innerWidth + 1 || r.left < -1) out.clipped.push(`${el.className || el.tagName} "${n.nodeValue.trim().slice(0, 24)}"`);
   }
-  document.querySelectorAll('button, a.btn, a.chip, input, select, .results a, .cat-nav a').forEach((el) => {
+  document.querySelectorAll('button, a.btn, .more summary, input, select, .results a, .cat-nav a').forEach((el) => {
     if (!visible(el) || el.closest('[hidden]')) return;
     if (el.closest('dialog') && !el.closest('dialog[open]')) return;
     const r = el.getBoundingClientRect();
     if (r.height < 43.5) out.targets.push(`${el.id || el.className} ${Math.round(r.height)}px`);
   });
-  document.querySelectorAll('.card-head, .sheet-head, .sec, .panel, .plan, .fact').forEach((el) => {
+  document.querySelectorAll('.card-head, .sheet-head, .sec, .tier, .plan, .fact').forEach((el) => {
     if (visible(el) && el.scrollWidth > el.clientWidth + 1) out.clipped.push(`scroll ${el.className}`);
   });
   return out;
@@ -73,8 +73,10 @@ const audit = () => {
       await report('סגור');
 
       // גודלי טקסט
-      const sizes = await page.evaluate(() => Object.fromEntries(['.role', '.price-text', '.detail', '.lead', '.name', '.panel h5', '.src'].map((s) => [s, parseFloat(getComputedStyle(document.querySelector(s)).fontSize)])));
-      note(sizes['.role'] >= 16 && sizes['.price-text'] >= 16 && sizes['.detail'] >= 16 && sizes['.lead'] >= 16, `${tag} טקסט רגיל מתחת ל־16`, JSON.stringify(sizes));
+      const sizes = await page.evaluate(() => Object.fromEntries(['.role', '.price-text', '.detail', '.lead', '.name', '.tier', '.src'].map((s) => [s, parseFloat(getComputedStyle(document.querySelector(s)).fontSize)])));
+      note(sizes['.role'] >= 16 && sizes['.price-text'] >= 16, `${tag} טקסט רגיל בכרטיס מתחת ל־16`, JSON.stringify(sizes));
+      // בחלון הפרטים הטקסט קטן יותר, לבקשת בעל האתר, אבל לא מתחת ל־14
+      note(sizes['.detail'] >= 14 && sizes['.lead'] >= 14 && sizes['.tier'] >= 14, `${tag} טקסט בחלון הפרטים מתחת ל־14`, JSON.stringify(sizes));
       note(sizes['.src'] <= 12, `${tag} מידע טכני מעל 12`, String(sizes['.src']));
       note(sizes['.name'] >= 24, `${tag} שם הכלי קטן`, String(sizes['.name']));
 
@@ -97,14 +99,26 @@ const audit = () => {
       note(await page.evaluate(() => document.activeElement.id === 'detail-2-h'), `${tag} המיקוד לא עובר לכותרת החלון`);
       const fill = await page.locator('#detail-2').boundingBox();
       note(Math.abs(fill.width - width) < 1 && fill.x === 0 && fill.y === 0, `${tag} החלון לא ממלא את המסך`, JSON.stringify(fill));
-      note((await page.locator('#detail-2 .panel-pro .points > li').count()) >= 2 && (await page.locator('#detail-2 .panel-con .points > li').count()) >= 2, `${tag} חסרים יתרונות או מגבלות בחלון`);
-      const chips = await page.locator('#detail-2 .chip').count();
-      note(chips === (await page.locator('#detail-2 .sec').count()) && chips >= 3, `${tag} שורת הניווט לא תואמת את החלקים`, String(chips));
+      note((await page.locator('#detail-2 .sec-pro .points > li').count()) >= 2 && (await page.locator('#detail-2 .sec-con .points > li').count()) >= 2, `${tag} חסרים יתרונות או מגבלות בחלון`);
+      // במסך רחב הכול נכנס בלי גלילה, וכרטיסי המחיר בשורה אחת
+      if (width === 1440) {
+        const tops = await page.locator('#detail-2 .tier').evaluateAll((els) => [...new Set(els.map((e) => Math.round(e.getBoundingClientRect().top)))]);
+        note(tops.length === 1, `${tag} כרטיסי המחיר לא בשורה אחת`, JSON.stringify(tops));
+      }
+      note((await page.locator('#detail-2 .more[open]').count()) === 0, `${tag} חלק מפורט פתוח מראש`);
+      note(!(await page.locator('#detail-2 .sources').isVisible()), `${tag} המקורות גלויים בלי שביקשו`);
       if (shots) await page.screenshot({ path: path.join(shots, `${tag}-2-sheet.png`) });
-      await page.locator('#detail-2 .chip').last().click();
-      await page.waitForTimeout(1500);
-      note(await page.evaluate(() => document.activeElement.id === 'd2-src-h'), `${tag} קפיצה לחלק בחלון`);
-      note(await page.locator('#d2-src-h').evaluate((h) => { const r = h.getBoundingClientRect(); const head = document.querySelector('#detail-2 .sheet-head').getBoundingClientRect(); return head.top === 0 && r.top >= head.bottom && r.bottom <= innerHeight; }), `${tag} החלק שקפצו אליו לא נראה`);
+      // פירוט של נקודה נפתח במקלדת
+      const pt = page.locator('#detail-2 .sec-pro .pt summary').first();
+      await pt.focus(); await page.keyboard.press('Enter');
+      note(await page.locator('#detail-2 .sec-pro .pt .detail').first().isVisible(), `${tag} פירוט הנקודה לא נפתח במקלדת`);
+      await page.keyboard.press('Enter');
+      // המקורות נפתחים רק בלחיצה, וחלק מפורט אחד פתוח בכל פעם
+      await page.locator('#d2-src > summary').click();
+      note(await page.locator('#detail-2 .sources').isVisible(), `${tag} המקורות לא נפתחים`);
+      await page.locator('#d2-terms > summary').click();
+      note((await page.locator('#detail-2 .more[open]').count()) === 1, `${tag} יותר מחלק מפורט אחד פתוח`);
+      await page.locator('#d2-terms > summary').click();
       // המיקוד נשאר בתוך החלון
       const trapped = await page.evaluate(async () => { const d = document.querySelector('#detail-2'); return d.matches(':modal') && !document.querySelector('#finder-open').closest('dialog'); });
       note(trapped, `${tag} החלון לא נפתח כחלון חוסם`);
@@ -117,15 +131,26 @@ const audit = () => {
       note(await page.evaluate(() => document.activeElement.matches('#tool-2 [data-sheet-open]')), `${tag} המיקוד לא חוזר אחרי כפתור הסגירה`);
       note(await page.evaluate(() => getComputedStyle(document.documentElement).overflow !== 'hidden'), `${tag} הגלילה בעמוד נשארת נעולה`);
 
-      // כל חלון פרטים, בראש ובתחתית: כרטיס עם הרבה תוכן, שמות ארוכים, מקור ישן, מחיר לא מאומת
+      // כל חלון פרטים: סגור (במסך רחב בלי גלילה), ואז עם כל חלק מפורט פתוח, בראש ובתחתית
       for (let i = 0; i < n; i++) {
         const id = (await cards.nth(i).getAttribute('id')).replace('tool-', '');
         await page.locator(`#tool-${id} [data-sheet-open]`).click();
         await page.waitForTimeout(250);
         await report(`חלון הפרטים של כלי ${id}`);
-        await page.locator(`#detail-${id} .sheet-scroll`).evaluate((el) => { el.style.scrollBehavior = 'auto'; el.scrollTop = el.scrollHeight; });
-        await report(`תחתית חלון הפרטים של כלי ${id}`);
-        if (shots && i === 0) await page.screenshot({ path: path.join(shots, `${tag}-3-sheet-end.png`) });
+        if (width === 1440) {
+          const over = await page.locator(`#detail-${id} .sheet-scroll`).evaluate((el) => el.scrollHeight - el.clientHeight);
+          note(over <= 0, `${tag} חלון הפרטים של כלי ${id} דורש גלילה`, String(over));
+        }
+        await page.locator(`#detail-${id} .pt`).evaluateAll((els) => els.forEach((e) => { e.open = true; }));
+        const mores = await page.locator(`#detail-${id} .more`).evaluateAll((els) => els.map((e) => e.id));
+        for (const m of mores) {
+          await page.locator(`#${m}`).evaluate((e) => { e.open = true; });
+          await report(`כלי ${id}, החלק ${m}`);
+          await page.locator(`#detail-${id} .sheet-scroll`).evaluate((el) => { el.scrollTop = el.scrollHeight; });
+          await report(`כלי ${id}, תחתית החלק ${m}`);
+          if (shots && i === 0 && m.endsWith('-plans')) await page.screenshot({ path: path.join(shots, `${tag}-3-sheet-open.png`) });
+          await page.locator(`#${m}`).evaluate((e) => { e.open = false; });
+        }
         await page.keyboard.press('Escape');
       }
 
@@ -216,7 +241,7 @@ const audit = () => {
   const ctx = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 760 } });
   const p = await ctx.newPage();
   await p.goto('file://' + file);
-  note(await p.locator('#detail-1').isVisible() && await p.locator('#d1-src').isVisible(), 'בלי סקריפטים התוכן מוסתר');
+  note(await p.locator('#detail-1').isVisible() && await p.locator('#d1-src > summary').isVisible(), 'בלי סקריפטים התוכן מוסתר');
   note(!(await p.locator('#tool-1 [data-sheet-open]').isVisible()), 'בלי סקריפטים כפתור הפרטים מוצג');
   await ctx.close();
   await browser.close();

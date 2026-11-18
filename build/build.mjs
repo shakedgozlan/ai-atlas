@@ -21,6 +21,7 @@ const CURRENCY = { USD: 'דולר', EUR: 'אירו', GBP: 'לירות שטרלי
 const num = (n) => Number(n).toLocaleString('en-US', { maximumFractionDigits: 2 });
 
 const ICON = {
+  chev: '<svg class="ico chev" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>',
   expand: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg>',
   price: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12.2V4.5h7.7l9.3 9.3-7.7 7.7-9.3-9.3Z"/><path d="M8 8.9v.2"/></svg>',
   good: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.25"/><path d="m7.75 12.4 2.9 2.9 5.6-6.1"/></svg>',
@@ -122,71 +123,102 @@ function sourcesHtml(t) {
 
 // חלון הפרטים של כלי: נפתח על כל המסך, והתוכן מחולק לחמש קבוצות קבועות.
 // קבוצה בלי תוכן בקובץ הנתונים לא מוצגת, וגם הקישור אליה בשורת הניווט לא מוצג.
+const unverified = (v) => /לא אומת/.test(String(v ?? ''));
+const planUnverified = (p) => (p.price === null || p.price === undefined) && (!has(p.price_text) || unverified(p.price_text));
+
+function planPrice(p) {
+  const cur = has(p.currency) ? CURRENCY[p.currency] || p.currency : '';
+  const priced = p.price !== null && p.price !== undefined;
+  if (p.price === 0) return '<span class="tier-line"><span class="tier-price">חינם</span></span>';
+  const main = priced ? `${num(p.price)}${cur ? ' ' + cur : ''}${has(p.price_period) ? ' ' + p.price_period : ''}` : p.price_text;
+  const terms = [];
+  if (has(p.billing)) terms.push(`חיוב ${p.billing}`);
+  if (has(p.per)) terms.push(p.per);
+  return `<span class="tier-line"><span class="tier-price">${esc(main)}</span>${terms.length ? ` <span class="tier-terms">${esc(terms.join(', '))}</span>` : ''}</span>`;
+}
+
+// כרטיס קצר לכל תוכנית: שם ומחיר בלבד. חיוב חודשי וחיוב שנתי של אותה תוכנית מוצגים באותו כרטיס.
+function tiersHtml(plans) {
+  const groups = [];
+  for (const pl of plans) {
+    let g = groups.find((x) => x.name === pl.name);
+    if (!g) { g = { name: pl.name, items: [] }; groups.push(g); }
+    g.items.push(pl);
+  }
+  return `<ul class="tiers" role="list" style="--n:${groups.length}">${groups.map((g) => `<li class="tier"><bdi class="tier-name">${esc(g.name)}</bdi>${g.items.map(planPrice).join('')}</li>`).join('')}</ul>`;
+}
+
 function sheetHtml(t) {
   const p = t.pricing || {};
   const id = t.id;
-  const list = (arr) => (arr?.length ? `<ul class="points">${arr.map(point).join('')}</ul>` : '');
-  const secs = [];
-  const sec = (key, title, inner) => { if (inner) secs.push({ key, title, html: `<section class="sec" id="d${id}-${key}" aria-labelledby="d${id}-${key}-h"><h4 id="d${id}-${key}-h" tabindex="-1">${title}</h4>${inner}</section>` }); };
+  const pt = (x) => {
+    const inf = x.inference ? ' <span class="tag">הסקה</span>' : '';
+    return `<li><details class="pt"><summary><span class="lead">${esc(x.lead)}</span>${inf}${ICON.chev}</summary><p class="detail">${esc(x.detail)}</p></details></li>`;
+  };
+  const sec = (cls, title, inner, icon = '') => (inner ? `<section class="sec ${cls}"><h4>${icon}${title}</h4>${inner}</section>` : '');
+  const more = (key, title, inner) => (inner ? `<details class="more" id="d${id}-${key}" name="more-${id}"><summary>${title}${ICON.chev}</summary><div class="more-body">${inner}</div></details>` : '');
 
   const key = [
-    t.strengths?.length ? `<div class="panel panel-pro"><h5>${ICON.good}מה עובד טוב</h5>${list(t.strengths)}</div>` : '',
-    t.limitations?.length ? `<div class="panel panel-con"><h5>${ICON.warn}מה חשוב לדעת</h5>${list(t.limitations)}</div>` : '',
-    has(t.audience) ? `<div class="panel panel-who"><h5>למי זה מתאים</h5><p>${esc(t.audience)}</p></div>` : '',
-  ].filter(Boolean).join('');
-  sec('key', 'יתרונות ומגבלות', key ? `<div class="key-grid">${key}</div>` : '');
+    sec('sec-pro', 'מה עובד טוב', t.strengths?.length ? `<ul class="points" role="list">${t.strengths.map(pt).join('')}</ul>` : '', ICON.good),
+    sec('sec-con', 'מה חשוב לדעת', t.limitations?.length ? `<ul class="points" role="list">${t.limitations.map(pt).join('')}</ul>` : '', ICON.warn),
+    sec('sec-who', 'למי זה מתאים', para(t.audience)),
+  ].join('');
 
-  const plans = p.plans?.length ? `<ul class="plans">${p.plans.map(planHtml).join('')}</ul>` : '';
-  const priceFacts = [
-    block('מה כלול בחינם', para(p.free_tier)),
-    block('מה ניתן רק לתקופת ניסיון', para(p.trial)),
-    block('מה לא אומת בתמחור', para(p.unverified_notes)),
-  ].filter(Boolean).join('');
-  const priceMeta = `<p class="sec-meta"><span class="sub">מצב האימות:</span> ${esc(p.verification || 'לא אומת')}${has(p.model) ? `<br><span class="sub">שיטת התמחור:</span> ${esc(p.model)}` : ''}</p>`;
-  sec('price', 'מחיר', `${priceMeta}${plans}${priceFacts ? `<div class="facts">${priceFacts}</div>` : ''}`);
+  const plans = (p.plans || []).filter((x) => !planUnverified(x));
+  const price = sec('sec-price', 'מחיר', plans.length ? tiersHtml(plans) : '<p>המחיר לא אומת מול מקור רשמי.</p>');
 
+  const api = t.developer_access?.api;
+  const extra = [
+    has(api) && !unverified(api) ? `<p><span class="sub">ממשק למפתחים:</span> ${esc(api)}</p>` : '',
+    has(t.student_benefits?.text) ? `<p><span class="sub">הטבות לסטודנטים:</span> ${esc(t.student_benefits.text)}</p>` : '',
+  ].join('');
+  const below = [
+    sec('sec-free', 'מה כלול בחינם', para(p.free_tier)),
+    sec('sec-trial', 'מה ניתן רק לתקופת ניסיון', para(p.trial)),
+    sec('sec-extra', 'עוד על הכלי', extra),
+  ].join('');
+
+  const plansFull = plans.length ? `${has(p.model) ? `<p class="sec-meta"><span class="sub">שיטת התמחור:</span> ${esc(p.model)}</p>` : ''}<ul class="plans" role="list">${plans.map(planHtml).join('')}</ul>` : '';
   const terms = [
     block('פרטיות ואימון על נתוני משתמשים', para(t.privacy?.text) + sub('אימון על נתוני משתמשים', t.privacy?.training_on_user_data)),
     block('זכויות מסחריות על התוצרים', para(t.commercial_rights?.text) + sub('סימן מים', t.commercial_rights?.watermark)),
   ].filter(Boolean).join('');
-  sec('terms', 'פרטיות וזכויות', terms ? `<div class="facts">${terms}</div>` : '');
-
-  const more = [
-    block('גישה למפתחים', sub('ממשק למפתחים', t.developer_access?.api) + para(t.developer_access?.text)),
-    t.integrations?.items?.length ? block('אינטגרציות', `<ul class="plain">${t.integrations.items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>`) : '',
+  const about = [
     t.platforms?.items?.length ? block('פלטפורמות', `<ul class="plain">${t.platforms.items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>`) : '',
+    t.integrations?.items?.length ? block('אינטגרציות', `<ul class="plain">${t.integrations.items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>`) : '',
     block('עברית', para(t.hebrew?.text)),
     block('החברה', has(t.company?.name) ? `<p>${esc(t.company.name)}${has(t.company.country) ? ', ' + esc(t.company.country) : ''}</p>` : ''),
-    block('הטבות לסטודנטים', para(t.student_benefits?.text)),
     block('שינוי שם', para(t.rename_note)),
-    block('מצב המוצר', sub('מצב', t.status?.state) + para(t.status?.note) + sub('התאריך כפי שהוא כתוב במקור', t.status?.date_as_written)),
-    !has(t.logo?.file) ? block('למה אין כאן לוגו', para(t.logo?.missing_reason)) : '',
   ].filter(Boolean).join('');
-  sec('more', 'עוד על הכלי', more ? `<div class="facts">${more}</div>` : '');
-
   const checked = has(t.checked_date) ? `<p class="checked">תאריך הבדיקה של הכלי: ${dateShort(t.checked_date)}</p>` : '';
   const src = sourcesHtml(t);
-  sec('src', 'מקורות', src || checked ? `${src}${checked}` : '');
+  const mores = [
+    more('plans', 'מה כלול בכל תוכנית', plansFull),
+    more('terms', 'פרטיות וזכויות', terms ? `<div class="facts">${terms}</div>` : ''),
+    more('about', 'פלטפורמות, עברית והחברה', about ? `<div class="facts">${about}</div>` : ''),
+    more('src', 'מקורות', src || checked ? `${src}${checked}` : ''),
+  ].join('');
 
-  const nav = secs.map((x) => `<li><a class="chip" href="#d${id}-${x.key}" data-sheet-jump>${x.title}</a></li>`).join('');
   const former = has(t.former_name) ? ` <span class="sheet-former">לשעבר <bdi>${esc(t.former_name)}</bdi></span>` : '';
   return `
   <dialog class="sheet" id="detail-${id}" aria-labelledby="detail-${id}-h">
     <header class="sheet-head">
       <div class="wrap sheet-head-in">
         ${logoHtml(t)}
-        <h3 class="sheet-title" id="detail-${id}-h" tabindex="-1"><span class="num" aria-hidden="true">${pad(id)}</span><span class="sr-only">כל הפרטים על </span><bdi>${esc(t.name)}</bdi></h3>
+        <div class="sheet-id">
+          <h3 class="sheet-title" id="detail-${id}-h" tabindex="-1"><span class="num" aria-hidden="true">${pad(id)}</span><span class="sr-only">כל הפרטים על </span><bdi>${esc(t.name)}</bdi></h3>
+          <p class="sheet-role">${esc(t.role)}${former}</p>
+        </div>
+        <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
         <button type="button" class="btn btn-close" data-sheet-close>${ICON.close}<span>סגירה</span></button>
       </div>
     </header>
     <div class="sheet-scroll" tabindex="-1">
       <div class="wrap sheet-body">
-        <div class="sheet-intro">
-          <p class="sheet-role">${esc(t.role)}${former}</p>
-          <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
-        </div>
-        <nav class="sheet-nav" aria-label="החלקים בעמוד הפרטים של ${esc(t.name)}"><ul role="list">${nav}</ul></nav>
-        ${secs.map((x) => x.html).join('\n        ')}
+        ${key ? `<div class="sheet-row">${key}</div>` : ''}
+        ${price}
+        ${below ? `<div class="sheet-row">${below}</div>` : ''}
+        ${mores ? `<div class="sheet-more">${mores}</div>` : ''}
       </div>
     </div>
   </dialog>`;
