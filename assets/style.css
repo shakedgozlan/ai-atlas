@@ -115,6 +115,8 @@ button:disabled{cursor:not-allowed}
 .view-btn::after{position:absolute;top:calc(100% + 8px);inset-inline-start:0;z-index:2;padding:6px 10px;border-radius:8px;background:var(--ink);color:var(--paper);font-size:.8125rem;font-weight:500;line-height:1.2;white-space:nowrap;pointer-events:none}
 @media (min-width:1440px){
   .views{position:absolute;inset-inline-start:16px;top:50%;transform:translateY(-50%)}
+  /* מתג היום והלילה יוצא גם הוא מרוחב התוכן, לקצה השמאלי של הסרגל */
+  .bar .theme-switch{position:absolute;inset-inline-end:16px;top:50%;transform:translateY(-50%)}
 }
 @media (max-width:479px){
   #finder-open{padding-inline:0;width:44px;justify-content:center}
