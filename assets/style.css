@@ -211,7 +211,7 @@ html:has(.sheet[open]){overflow:hidden}
 .sheet-body{--t-sheet:0.9375rem;display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(12px,min(2.6vw,1.8vh),32px);padding:clamp(16px,min(2.6vw,3vh),32px) var(--pad) clamp(20px,3.6vh,56px);font-size:var(--t-sheet);line-height:1.55;color:var(--ink-soft)}
 .sheet-head{--t-sheet:0.9375rem}
 .sheet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(12px,min(2.6vw,1.8vh),32px) clamp(24px,3.4vw,48px);align-items:start}
-.sec{min-width:0;overflow-wrap:break-word;padding-top:10px;border-top:2px solid var(--cat)}
+.sec{min-width:0;overflow-wrap:break-word;padding-top:12px;border-top:1px solid var(--line)}
 .sec-h{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:24px;margin-bottom:8px}
 .sec h4{display:flex;align-items:center;gap:6px;font-size:var(--t-label);font-weight:600;line-height:1.3;color:var(--ink-faint)}
 .sec h4 .ico{width:16px;height:16px}
