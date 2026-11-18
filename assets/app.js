@@ -23,6 +23,39 @@
   $$('.sheet').forEach(function (sheet) {
     var closeBtn = $('[data-sheet-close]', sheet);
     if (closeBtn) closeBtn.addEventListener('click', function () { sheet.close(); });
+    // לחיצה על הרקע המעומעם שמסביב לחלון סוגרת אותו
+    sheet.addEventListener('click', function (e) { if (e.target === sheet) sheet.close(); });
+    // בחירה בין חיוב חודשי לשנתי
+    var billBtns = $$('[data-bill-set]', sheet);
+    billBtns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var v = b.getAttribute('data-bill-set');
+        sheet.setAttribute('data-billing', v);
+        billBtns.forEach(function (x) { x.setAttribute('aria-pressed', String(x.getAttribute('data-bill-set') === v)); });
+      });
+    });
+    // כפתורי הפירוט: נשארים במקומם, והחלק שנבחר נפתח מתחתיהם. רק חלק אחד פתוח בכל פעם.
+    var moreBtns = $$('.more-btn', sheet);
+    var panelOf = function (b) { return doc.getElementById(b.getAttribute('aria-controls')); };
+    moreBtns.forEach(function (b) {
+      var panel = panelOf(b);
+      panel.hidden = true;
+      b.addEventListener('click', function () {
+        var open = b.getAttribute('aria-expanded') !== 'true';
+        moreBtns.forEach(function (x) { x.setAttribute('aria-expanded', 'false'); panelOf(x).hidden = true; });
+        if (!open) return;
+        b.setAttribute('aria-expanded', 'true');
+        panel.hidden = false;
+        var scroller = $('.sheet-scroll', sheet);
+        var tabs = b.parentNode;
+        var top = tabs.getBoundingClientRect().top - scroller.getBoundingClientRect().top + scroller.scrollTop - 12;
+        var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (panel.getBoundingClientRect().bottom > scroller.getBoundingClientRect().bottom) scroller.scrollTo({ top: Math.max(0, top), behavior: calm ? 'auto' : 'smooth' });
+      });
+    });
+    sheet.addEventListener('close', function () {
+      moreBtns.forEach(function (x) { x.setAttribute('aria-expanded', 'false'); panelOf(x).hidden = true; });
+    });
   });
 
   /* ---------- מצב בהיר וכהה ---------- */

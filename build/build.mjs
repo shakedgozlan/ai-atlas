@@ -86,10 +86,12 @@ function point(x) {
   return `<li><strong class="lead">${esc(x.lead)}${dot}</strong>${inf} <span class="detail">${esc(x.detail)}</span></li>`;
 }
 
-function planHtml(p) {
+function planHtml(p, attr = '', name = p.name) {
   const cur = has(p.currency) ? CURRENCY[p.currency] || p.currency : '';
   let main;
-  if (p.price !== null && p.price !== undefined) {
+  if (p.price === 0) {
+    main = 'חינם';
+  } else if (p.price !== null && p.price !== undefined) {
     main = `${num(p.price)}${cur ? ' ' + cur : ''}${has(p.price_period) ? ' ' + p.price_period : ''}`;
   } else {
     main = p.price_text;
@@ -98,11 +100,11 @@ function planHtml(p) {
   if (has(p.billing)) terms.push(`חיוב ${p.billing}`);
   if (has(p.per)) terms.push(p.per);
   if ((p.price === null || p.price === undefined) && has(p.price_period)) terms.push(`המחיר נקוב ${p.price_period}`);
-  const head = `<p class="plan-head"><bdi class="plan-name">${esc(p.name)}</bdi><span class="plan-price">${esc(main)}</span></p>`;
+  const head = `<p class="plan-head"><bdi class="plan-name">${esc(name)}</bdi><span class="plan-price">${esc(main)}</span></p>`;
   const termLine = terms.length ? `<p class="plan-terms">${esc(terms.join(', '))}</p>` : '';
   const inc = has(p.includes) ? `<p class="plan-inc">${esc(p.includes)}</p>` : '';
   const notes = has(p.notes) ? `<p class="plan-notes">${esc(p.notes)}</p>` : '';
-  return `<li class="plan">${head}${termLine}${inc}${notes}</li>`;
+  return `<li class="plan"${attr}>${head}${termLine}${inc}${notes}</li>`;
 }
 
 const block = (title, inner) => (inner ? `<section class="fact"><h5>${title}</h5>${inner}</section>` : '');
@@ -125,25 +127,48 @@ function sourcesHtml(t) {
 // קבוצה בלי תוכן בקובץ הנתונים לא מוצגת, וגם הקישור אליה בשורת הניווט לא מוצג.
 const unverified = (v) => /לא אומת/.test(String(v ?? ''));
 const planUnverified = (p) => (p.price === null || p.price === undefined) && (!has(p.price_text) || unverified(p.price_text));
+// האטלס פונה ליוצרים ולסטודנטים, ולכן תוכניות לארגונים בהצעת מחיר לא מוצגות.
+const planForOrgs = (p) => /enterprise/i.test(p.name) || /הצעת מחיר/.test(String(p.price_text ?? ''));
+const BILL = { 'חודשי': 'm', 'שנתי': 'y' };
 
-function planPrice(p) {
+// תוכניות לתצוגה: בלי מה שלא אומת ובלי תוכניות לארגונים, עם שם קצר (בלי קידומת שחוזרת בכל השמות),
+// ועם סימון של חיוב חודשי או שנתי כשלאותה תוכנית יש את שניהם.
+function shownPlans(t) {
+  const plans = (t.pricing?.plans || []).filter((x) => !planUnverified(x) && !planForOrgs(x));
+  const words = plans.map((x) => String(x.name).split(' '));
+  let k = 0;
+  if (new Set(plans.map((x) => x.name)).size > 1) {
+    while (words.every((w) => w.length > k + 1 && w[k] === words[0][k])) k++;
+  }
+  const out = plans.map((x, i) => ({ p: x, name: words[i].slice(k).join(' '), bill: '' }));
+  for (const o of out) {
+    const same = out.filter((q) => q.p.name === o.p.name).map((q) => q.p.billing);
+    if (same.includes('חודשי') && same.includes('שנתי') && BILL[o.p.billing]) o.bill = BILL[o.p.billing];
+  }
+  return out;
+}
+const billAttr = (o) => (o.bill ? ` data-bill="${o.bill}"` : '');
+const billToggle = (name) => `<div class="bill" role="group" aria-label="סוג החיוב ב־${esc(name)}"><button type="button" class="bill-btn" data-bill-set="m" aria-pressed="true">חודשי</button><button type="button" class="bill-btn" data-bill-set="y" aria-pressed="false">שנתי</button></div>`;
+
+function planPrice(o) {
+  const p = o.p;
+  if (p.price === 0) return `<span class="tier-line"${billAttr(o)}><span class="tier-price">חינם</span></span>`;
   const cur = has(p.currency) ? CURRENCY[p.currency] || p.currency : '';
   const priced = p.price !== null && p.price !== undefined;
-  if (p.price === 0) return '<span class="tier-line"><span class="tier-price">חינם</span></span>';
-  const main = priced ? `${num(p.price)}${cur ? ' ' + cur : ''}${has(p.price_period) ? ' ' + p.price_period : ''}` : p.price_text;
+  const main = priced ? `${num(p.price)}${cur ? ' ' + cur : ''}${has(p.price_period) ? ' ' + p.price_period : ''}` : (has(p.price_short) ? p.price_short : p.price_text);
   const terms = [];
-  if (has(p.billing)) terms.push(`חיוב ${p.billing}`);
+  if (has(p.billing) && !o.bill) terms.push(`חיוב ${p.billing}`);
   if (has(p.per)) terms.push(p.per);
-  return `<span class="tier-line"><span class="tier-price">${esc(main)}</span>${terms.length ? ` <span class="tier-terms">${esc(terms.join(', '))}</span>` : ''}</span>`;
+  return `<span class="tier-line"${billAttr(o)}><span class="tier-price">${esc(main)}</span>${terms.length ? `<span class="tier-terms">${esc(terms.join(', '))}</span>` : ''}</span>`;
 }
 
-// כרטיס קצר לכל תוכנית: שם ומחיר בלבד. חיוב חודשי וחיוב שנתי של אותה תוכנית מוצגים באותו כרטיס.
-function tiersHtml(plans) {
+// כרטיס קצר לכל תוכנית: שם ומחיר בלבד.
+function tiersHtml(shown) {
   const groups = [];
-  for (const pl of plans) {
-    let g = groups.find((x) => x.name === pl.name);
-    if (!g) { g = { name: pl.name, items: [] }; groups.push(g); }
-    g.items.push(pl);
+  for (const o of shown) {
+    let g = groups.find((x) => x.key === o.p.name);
+    if (!g) { g = { key: o.p.name, name: o.name, items: [] }; groups.push(g); }
+    g.items.push(o);
   }
   return `<ul class="tiers" role="list" style="--n:${groups.length}">${groups.map((g) => `<li class="tier"><bdi class="tier-name">${esc(g.name)}</bdi>${g.items.map(planPrice).join('')}</li>`).join('')}</ul>`;
 }
@@ -155,8 +180,9 @@ function sheetHtml(t) {
     const inf = x.inference ? ' <span class="tag">הסקה</span>' : '';
     return `<li><details class="pt"><summary><span class="lead">${esc(x.lead)}</span>${inf}${ICON.chev}</summary><p class="detail">${esc(x.detail)}</p></details></li>`;
   };
-  const sec = (cls, title, inner, icon = '') => (inner ? `<section class="sec ${cls}"><h4>${icon}${title}</h4>${inner}</section>` : '');
-  const more = (key, title, inner) => (inner ? `<details class="more" id="d${id}-${key}" name="more-${id}"><summary>${title}${ICON.chev}</summary><div class="more-body">${inner}</div></details>` : '');
+  const sec = (cls, title, inner, icon = '', extra = '') => (inner ? `<section class="sec ${cls}"><div class="sec-h"><h4>${icon}${title}</h4>${extra}</div>${inner}</section>` : '');
+  const mores = [];
+  const more = (key, title, inner) => { if (inner) mores.push({ key, title, inner }); };
 
   const key = [
     sec('sec-pro', 'מה עובד טוב', t.strengths?.length ? `<ul class="points" role="list">${t.strengths.map(pt).join('')}</ul>` : '', ICON.good),
@@ -164,8 +190,9 @@ function sheetHtml(t) {
     sec('sec-who', 'למי זה מתאים', para(t.audience)),
   ].join('');
 
-  const plans = (p.plans || []).filter((x) => !planUnverified(x));
-  const price = sec('sec-price', 'מחיר', plans.length ? tiersHtml(plans) : '<p>המחיר לא אומת מול מקור רשמי.</p>');
+  const shown = shownPlans(t);
+  const toggle = shown.some((o) => o.bill) ? billToggle(t.name) : '';
+  const price = sec('sec-price', 'מחיר', shown.length ? tiersHtml(shown) : '<p>המחיר לא אומת מול מקור רשמי.</p>', '', toggle);
 
   const api = t.developer_access?.api;
   const extra = [
@@ -178,7 +205,7 @@ function sheetHtml(t) {
     sec('sec-extra', 'עוד על הכלי', extra),
   ].join('');
 
-  const plansFull = plans.length ? `${has(p.model) ? `<p class="sec-meta"><span class="sub">שיטת התמחור:</span> ${esc(p.model)}</p>` : ''}<ul class="plans" role="list">${plans.map(planHtml).join('')}</ul>` : '';
+  const plansFull = shown.length ? `${toggle}${has(p.model) ? `<p class="sec-meta"><span class="sub">שיטת התמחור:</span> ${esc(p.model)}</p>` : ''}<ul class="plans" role="list">${shown.map((o) => planHtml(o.p, billAttr(o), o.name)).join('')}</ul>` : '';
   const terms = [
     block('פרטיות ואימון על נתוני משתמשים', para(t.privacy?.text) + sub('אימון על נתוני משתמשים', t.privacy?.training_on_user_data)),
     block('זכויות מסחריות על התוצרים', para(t.commercial_rights?.text) + sub('סימן מים', t.commercial_rights?.watermark)),
@@ -192,18 +219,21 @@ function sheetHtml(t) {
   ].filter(Boolean).join('');
   const checked = has(t.checked_date) ? `<p class="checked">תאריך הבדיקה של הכלי: ${dateShort(t.checked_date)}</p>` : '';
   const src = sourcesHtml(t);
-  const mores = [
-    more('plans', 'מה כלול בכל תוכנית', plansFull),
-    more('terms', 'פרטיות וזכויות', terms ? `<div class="facts">${terms}</div>` : ''),
-    more('about', 'פלטפורמות, עברית והחברה', about ? `<div class="facts">${about}</div>` : ''),
-    more('src', 'מקורות', src || checked ? `${src}${checked}` : ''),
-  ].join('');
+  more('plans', 'מה כלול בכל תוכנית', plansFull);
+  more('terms', 'פרטיות וזכויות', terms ? `<div class="facts">${terms}</div>` : '');
+  more('about', 'פלטפורמות, עברית והחברה', about ? `<div class="facts">${about}</div>` : '');
+  more('src', 'מקורות', src || checked ? `${src}${checked}` : '');
+  // שורת הכפתורים נשארת במקומה, והחלק שנבחר נפתח מתחתיה.
+  const moreHtml = mores.length ? `<div class="sheet-more">
+          <div class="more-tabs">${mores.map((x) => `<button type="button" class="btn more-btn" aria-expanded="false" aria-controls="d${id}-${x.key}"><span>${x.title}</span>${ICON.chev}</button>`).join('')}</div>
+          ${mores.map((x) => `<section class="more-panel" id="d${id}-${x.key}" aria-labelledby="d${id}-${x.key}-h"><h4 class="more-h" id="d${id}-${x.key}-h" tabindex="-1">${x.title}</h4>${x.inner}</section>`).join('\n          ')}
+        </div>` : '';
 
   const former = has(t.former_name) ? ` <span class="sheet-former">לשעבר <bdi>${esc(t.former_name)}</bdi></span>` : '';
   return `
-  <dialog class="sheet" id="detail-${id}" aria-labelledby="detail-${id}-h">
+  <dialog class="sheet" id="detail-${id}" aria-labelledby="detail-${id}-h" data-billing="m">
     <header class="sheet-head">
-      <div class="wrap sheet-head-in">
+      <div class="sheet-head-in">
         ${logoHtml(t)}
         <div class="sheet-id">
           <h3 class="sheet-title" id="detail-${id}-h" tabindex="-1"><span class="num" aria-hidden="true">${pad(id)}</span><span class="sr-only">כל הפרטים על </span><bdi>${esc(t.name)}</bdi></h3>
@@ -214,11 +244,11 @@ function sheetHtml(t) {
       </div>
     </header>
     <div class="sheet-scroll" tabindex="-1">
-      <div class="wrap sheet-body">
+      <div class="sheet-body">
         ${key ? `<div class="sheet-row">${key}</div>` : ''}
         ${price}
         ${below ? `<div class="sheet-row">${below}</div>` : ''}
-        ${mores ? `<div class="sheet-more">${mores}</div>` : ''}
+        ${moreHtml}
       </div>
     </div>
   </dialog>`;

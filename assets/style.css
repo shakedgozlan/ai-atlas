@@ -189,60 +189,68 @@ html:not(.js) .bar-actions{display:none}
 .chev{transition:transform .15s ease}
 [aria-expanded="true"]>.chev{transform:rotate(180deg)}
 
-/* בלי סקריפטים אין חלון: הפרטים מוצגים מתחת לכרטיס, והכפתורים שפותחים וסוגרים מוסתרים. */
-html:not(.js) .sheet{display:block;position:static;height:auto;overflow:visible;margin-top:8px;border:1px solid var(--line);border-radius:var(--r-card)}
-html:not(.js) .sheet-scroll{overflow:visible}
-html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close]{display:none}
-
-/* חלון הפרטים: נפתח על כל המסך. הכותרת קבועה למעלה, והתוכן נגלל מתחתיה. */
+/* חלון הפרטים: שכבה שנפתחת מעל הדף. הדף נשאר מאחור, מעומעם. הכותרת קבועה, והתוכן נגלל רק אם פותחים פירוט. */
 html:has(.sheet[open]){overflow:hidden}
-.sheet{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--paper);color:var(--ink);overflow:clip}
-.sheet[open]{display:flex;flex-direction:column;animation:sheet-in .18s ease-out}
-@keyframes sheet-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-.sheet::backdrop{background:var(--paper)}
+.sheet{--pad:clamp(16px,2.4vw,28px);position:fixed;inset:0;inset-block:clamp(12px,4vh,40px) auto;width:min(1180px,100vw - 32px);max-width:none;height:auto;max-height:calc(100dvh - 2 * clamp(12px,4vh,40px));margin:0 auto;padding:0;border:1px solid var(--line-strong);border-radius:20px;background:var(--paper);color:var(--ink);overflow:clip;box-shadow:0 24px 64px -16px oklch(20% 0.03 200 / 0.45)}
+.sheet[open]{display:flex;flex-direction:column;animation:sheet-in .22s cubic-bezier(.2,.8,.2,1)}
+@keyframes sheet-in{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+.sheet::backdrop{background:var(--scrim);animation:scrim-in .22s ease-out}
+@keyframes scrim-in{from{opacity:0}to{opacity:1}}
 .sheet-head{flex:none;background:var(--surface);border-bottom:1px solid var(--line)}
-.sheet-head-in{display:flex;align-items:center;gap:12px clamp(12px,2vw,20px);padding-block:10px}
-.sheet-head .logo{width:40px;height:40px;padding:0;align-self:center;flex:none}
+.sheet-head-in{display:flex;align-items:center;gap:12px clamp(12px,2vw,20px);padding:12px var(--pad)}
+.sheet-head .logo{width:44px;height:44px;padding:0;align-self:center;flex:none}
 .sheet-head .logo img{width:100%}
 .sheet-id{flex:1;min-width:0}
-.sheet-title{display:flex;align-items:baseline;gap:10px;font-size:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);font-weight:600;line-height:1.15;letter-spacing:-0.02em;overflow-wrap:anywhere}
+.sheet-title{display:flex;align-items:baseline;gap:10px;font-size:clamp(1.375rem,1.2rem + 0.8vw,1.75rem);font-weight:600;line-height:1.15;letter-spacing:-0.02em;overflow-wrap:anywhere}
 .sheet-title:focus-visible{outline-offset:4px}
 .sheet-title .num{font-size:var(--t-label);letter-spacing:0}
-.sheet-role{font-size:var(--t-label);line-height:1.4;color:var(--ink-soft);overflow-wrap:anywhere}
+.sheet-role{font-size:var(--t-sheet);line-height:1.4;color:var(--ink-soft);overflow-wrap:anywhere}
 .sheet-former{color:var(--ink-faint)}
 .sheet-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
 .sheet-scroll:focus{outline:none}
-/* החלון בנוי כך שבמסך רחב הכול נכנס בלי גלילה: טקסט קטן, שורות של עמודות, והפירוט סגור עד שמבקשים אותו */
-.sheet-body{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(12px,1.6vw,18px);padding-block:clamp(12px,1.8vw,20px) clamp(16px,2.4vw,24px);font-size:var(--t-label);line-height:1.5}
-.sheet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(12px,1.6vw,18px);align-items:start}
+.sheet-body{--t-sheet:0.9375rem;display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(14px,1.8vw,20px);padding:clamp(14px,2vw,20px) var(--pad) var(--pad);font-size:var(--t-sheet);line-height:1.5}
+.sheet-head{--t-sheet:0.9375rem}
+.sheet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(14px,1.8vw,20px);align-items:start}
 .sec{min-width:0;overflow-wrap:break-word;padding-top:10px;border-top:2px solid var(--cat)}
-.sec>h4{display:flex;align-items:center;gap:6px;font-size:var(--t-label);font-weight:700;line-height:1.3;margin-bottom:6px}
+.sec-h{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px}
+.sec h4{display:flex;align-items:center;gap:6px;font-size:var(--t-body);font-weight:700;line-height:1.3}
 .sec>p+p{margin-top:6px}
 .sec-meta{color:var(--ink-soft);margin-bottom:12px}
 .points{display:grid}
 .points li+li{border-top:1px solid var(--line)}
-.pt summary,.more summary{display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;list-style:none}
-.pt summary::-webkit-details-marker,.more summary::-webkit-details-marker{display:none}
-.pt summary{min-height:32px;padding:4px 0;padding-inline-end:4px}
+.pt summary{display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;list-style:none;min-height:36px;padding:5px 0;padding-inline-end:4px}
+.pt summary::-webkit-details-marker{display:none}
 .pt summary:hover .lead{text-decoration:underline;text-underline-offset:3px}
 .lead{flex:1;min-width:0;font-weight:500}
 .chev{flex:none;color:var(--ink-soft);transition:transform .15s ease}
 details[open]>summary .chev{transform:rotate(180deg)}
 .detail{color:var(--ink-soft);padding-bottom:8px}
-.tiers{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:8px}
-.tier{display:grid;align-content:start;gap:2px;padding:10px 12px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-inner);min-width:0;overflow-wrap:break-word}
+/* בחירה בין חיוב חודשי לשנתי: מוצג רק המחיר שנבחר */
+.bill{display:inline-flex;padding:3px;border:1px solid var(--line-strong);border-radius:999px;background:var(--surface)}
+.bill-btn{min-width:64px;min-height:30px;padding:2px 14px;border:0;border-radius:999px;background:transparent;color:var(--ink-soft);font:inherit;font-size:var(--t-label);font-weight:500;cursor:pointer}
+.bill-btn:hover{color:var(--ink)}
+.bill-btn[aria-pressed="true"]{background:var(--ink);color:var(--paper);font-weight:600}
+html.js .sheet[data-billing="m"] [data-bill="y"],html.js .sheet[data-billing="y"] [data-bill="m"]{display:none}
+.tiers{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:10px}
+.tier{display:grid;align-content:start;gap:2px;padding:12px 14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-inner);min-width:0;overflow-wrap:break-word}
 .tier-name{font-weight:700}
 .tier-line{display:block;line-height:1.35}
-.tier-price{font-weight:600}
-.tier-line+.tier-line .tier-price{font-weight:500}
-.tier-terms{font-size:var(--t-tech);color:var(--ink-soft)}
-.sheet-more{display:flex;flex-wrap:wrap;gap:8px}
-.more{min-width:0}
-.more[open]{flex:1 1 100%;order:1}
-.more summary{min-height:44px;padding:8px 14px;border:1px solid var(--line-strong);border-radius:var(--r-ctl);background:var(--surface);font-weight:500;transition:background-color .12s ease,border-color .12s ease}
-.more summary:hover{background:var(--inner);border-color:var(--ink)}
-.more[open] summary{display:inline-flex;background:var(--inner);border-color:var(--ink)}
-.more-body{padding-top:14px}
+.tier-price{display:block;font-weight:600}
+.tier-terms{display:block;font-size:var(--t-tech);color:var(--ink-soft)}
+.sheet-more{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.more-tabs{display:flex;flex-wrap:wrap;gap:8px}
+.more-btn{font-size:var(--t-sheet);font-weight:500}
+.more-btn[aria-expanded="true"]{background:var(--inner);border-color:var(--ink)}
+.more-btn[aria-expanded="true"] .chev{transform:rotate(180deg)}
+.more-panel{min-width:0;scroll-margin-top:12px}
+.more-panel>.bill{margin-bottom:12px}
+html.js .more-h{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.more-h{font-size:var(--t-body);font-weight:700;margin-bottom:8px}
+
+/* בלי סקריפטים אין חלון: הפרטים מוצגים מתחת לכרטיס, והכפתורים שפותחים וסוגרים מוסתרים. */
+html:not(.js) .sheet{display:block;position:static;width:auto;height:auto;max-height:none;overflow:visible;margin:8px 0 0;box-shadow:none}
+html:not(.js) .sheet-scroll{overflow:visible}
+html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .more-tabs,html:not(.js) .bill{display:none}
 .tag{display:inline-block;font-size:var(--t-tech);font-weight:600;line-height:1.5;padding:0 4px;border:1px solid var(--line-strong);border-radius:4px;color:var(--ink-soft);vertical-align:middle}
 .tag-stale{color:var(--stale);border-color:currentColor}
 
@@ -252,9 +260,10 @@ details[open]>summary .chev{transform:rotate(180deg)}
 .fact{padding-top:10px;border-top:1px solid var(--line);overflow-wrap:break-word;min-width:0}
 .sub{font-weight:600}
 .plain{display:grid;gap:4px;padding-inline-start:1.1em;list-style:disc}
-.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:8px;align-items:start}
+/* כל הקופסאות באותו גובה, לפי הגבוהה ביותר */
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));grid-auto-rows:1fr;gap:10px}
 .plan{padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-inner);min-width:0;overflow-wrap:break-word}
-.plan-head{flex-direction:column}
+.plan-head{flex-direction:column;align-items:flex-start !important}
 .plan-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 16px}
 .plan-name{font-weight:700}
 .plan-price{font-weight:600}
@@ -309,6 +318,20 @@ details[open]>summary .chev{transform:rotate(180deg)}
 .cat-nav li>a:active{background:var(--brand-tint)}
 
 /* מסכים צרים */
+/* מסך גבוה: יש מקום לטקסט בגודל מלא */
+@media (min-width:1100px) and (min-height:860px){
+  .sheet-body,.sheet-head{--t-sheet:1rem}
+}
+/* מסך נמוך: פחות רווחים, כדי שהחלון ייכנס בלי גלילה */
+@media (min-width:600px) and (max-height:780px){
+  .sheet{inset-block-start:10px;max-height:calc(100dvh - 20px)}
+  .sheet-head-in{padding-block:8px}
+  .sheet-body{gap:12px;padding-block:12px 16px}
+  .sheet-row{row-gap:12px}
+  .pt summary{min-height:32px;padding-block:3px}
+  .tier{padding:9px 12px}
+  .sec{padding-top:8px}
+}
 @media (min-width:600px) and (max-width:1023px){
   .tiers{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
 }
@@ -320,9 +343,12 @@ details[open]>summary .chev{transform:rotate(180deg)}
   .sum{gap:12px}
   .sum-row{grid-template-columns:minmax(0,1fr);row-gap:0}
   .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:20px 20px 0 0;border-inline:0;border-bottom:0}
   .sheet-head-in{flex-wrap:wrap}
   .sheet-head .btn-site{order:3;flex:1 1 100%}
   .pt summary{min-height:44px}
+  .bill-btn{min-height:38px}
+  .more-btn{flex:1 1 auto}
   .btn-close{padding-inline:12px}
 }
 @media (max-width:359px){
@@ -335,11 +361,16 @@ details[open]>summary .chev{transform:rotate(180deg)}
   *,*::before,*::after{transition-duration:0.01ms !important;animation-duration:0.01ms !important;scroll-behavior:auto !important}
 }
 @media (forced-colors:active){
-  .btn,.card-head,.tier,.plan,.more summary{border:1px solid CanvasText}
+  .btn,.card-head,.tier,.plan,.bill{border:1px solid CanvasText}
+  .bill-btn[aria-pressed="true"]{background:Highlight;color:HighlightText}
 }
 @media print{
   .bar,.finder,.filter-bar,.card-actions,.btn-close,.sheet-head .btn-site{display:none !important}
-  .sheet{display:block !important;position:static;height:auto;overflow:visible}
+  .sheet{display:block !important;position:static;width:auto;height:auto;max-height:none;overflow:visible;box-shadow:none}
+  .more-tabs,.bill{display:none !important}
+  .more-panel[hidden]{display:block !important}
+  .more-h{position:static !important;width:auto !important;height:auto !important;clip-path:none !important}
+  .sheet [data-bill]{display:block !important}
   .sheet-scroll{overflow:visible}
   .card{break-inside:avoid}
 }

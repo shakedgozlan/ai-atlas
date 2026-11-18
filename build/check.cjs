@@ -38,7 +38,7 @@ const audit = () => {
     const r = el.getBoundingClientRect();
     if (r.right > innerWidth + 1 || r.left < -1) out.clipped.push(`${el.className || el.tagName} "${n.nodeValue.trim().slice(0, 24)}"`);
   }
-  document.querySelectorAll('button, a.btn, .more summary, input, select, .results a, .cat-nav a').forEach((el) => {
+  document.querySelectorAll('button:not(.bill-btn), a.btn, input, select, .results a, .cat-nav a').forEach((el) => {
     if (!visible(el) || el.closest('[hidden]')) return;
     if (el.closest('dialog') && !el.closest('dialog[open]')) return;
     const r = el.getBoundingClientRect();
@@ -76,7 +76,7 @@ const audit = () => {
       const sizes = await page.evaluate(() => Object.fromEntries(['.role', '.price-text', '.detail', '.lead', '.name', '.tier', '.src'].map((s) => [s, parseFloat(getComputedStyle(document.querySelector(s)).fontSize)])));
       note(sizes['.role'] >= 16 && sizes['.price-text'] >= 16, `${tag} טקסט רגיל בכרטיס מתחת ל־16`, JSON.stringify(sizes));
       // בחלון הפרטים הטקסט קטן יותר, לבקשת בעל האתר, אבל לא מתחת ל־14
-      note(sizes['.detail'] >= 14 && sizes['.lead'] >= 14 && sizes['.tier'] >= 14, `${tag} טקסט בחלון הפרטים מתחת ל־14`, JSON.stringify(sizes));
+      note(sizes['.detail'] >= 15 && sizes['.lead'] >= 15 && sizes['.tier'] >= 15, `${tag} טקסט בחלון הפרטים מתחת ל־15`, JSON.stringify(sizes));
       note(sizes['.src'] <= 12, `${tag} מידע טכני מעל 12`, String(sizes['.src']));
       note(sizes['.name'] >= 24, `${tag} שם הכלי קטן`, String(sizes['.name']));
 
@@ -97,15 +97,25 @@ const audit = () => {
       await page.waitForTimeout(300);
       note(await isOpen(2), `${tag} חלון הפרטים לא נפתח במקלדת`);
       note(await page.evaluate(() => document.activeElement.id === 'detail-2-h'), `${tag} המיקוד לא עובר לכותרת החלון`);
+      // החלון הוא שכבה מעל הדף: במסך רחב רואים את הדף מסביב, ובטלפון הוא עולה מלמטה ברוחב מלא
       const fill = await page.locator('#detail-2').boundingBox();
-      note(Math.abs(fill.width - width) < 1 && fill.x === 0 && fill.y === 0, `${tag} החלון לא ממלא את המסך`, JSON.stringify(fill));
+      if (width === 1440) note(fill.x >= 16 && fill.y >= 8 && fill.x + fill.width <= width - 16 && fill.y + fill.height <= 900 - 8, `${tag} החלון לא נראה כשכבה מעל הדף`, JSON.stringify(fill));
+      else note(Math.abs(fill.width - width) < 1 && fill.y >= 8, `${tag} החלון בטלפון לא יושב נכון`, JSON.stringify(fill));
       note((await page.locator('#detail-2 .sec-pro .points > li').count()) >= 2 && (await page.locator('#detail-2 .sec-con .points > li').count()) >= 2, `${tag} חסרים יתרונות או מגבלות בחלון`);
-      // במסך רחב הכול נכנס בלי גלילה, וכרטיסי המחיר בשורה אחת
       if (width === 1440) {
         const tops = await page.locator('#detail-2 .tier').evaluateAll((els) => [...new Set(els.map((e) => Math.round(e.getBoundingClientRect().top)))]);
         note(tops.length === 1, `${tag} כרטיסי המחיר לא בשורה אחת`, JSON.stringify(tops));
       }
-      note((await page.locator('#detail-2 .more[open]').count()) === 0, `${tag} חלק מפורט פתוח מראש`);
+      note((await page.locator('#detail-2 .tier-name', { hasText: /enterprise/i }).count()) === 0, `${tag} מוצגת תוכנית לארגונים`);
+      // חודשי או שנתי: מוצג רק אחד מהם
+      const std = page.locator('#detail-2 .tier', { hasText: 'Standard' });
+      note((await std.locator('.tier-line:visible').count()) === 1 && (await std.innerText()).includes('15'), `${tag} בחיוב חודשי לא מוצג מחיר אחד`);
+      await page.locator('#detail-2 .sec-price [data-bill-set="y"]').click();
+      note((await std.locator('.tier-line:visible').count()) === 1 && (await std.innerText()).includes('12'), `${tag} המעבר לחיוב שנתי לא עובד`);
+      note((await page.locator('#detail-2 .sec-price [data-bill-set="y"]').getAttribute('aria-pressed')) === 'true', `${tag} מצב הכפתור של החיוב לא מתעדכן`);
+      const bh = await page.locator('#detail-2 .sec-price .bill-btn').first().boundingBox();
+      note(bh.height >= 30 && bh.width >= 44, `${tag} כפתור החיוב קטן מדי`, JSON.stringify(bh));
+      await page.locator('#detail-2 .sec-price [data-bill-set="m"]').click();
       note(!(await page.locator('#detail-2 .sources').isVisible()), `${tag} המקורות גלויים בלי שביקשו`);
       if (shots) await page.screenshot({ path: path.join(shots, `${tag}-2-sheet.png`) });
       // פירוט של נקודה נפתח במקלדת
@@ -113,18 +123,32 @@ const audit = () => {
       await pt.focus(); await page.keyboard.press('Enter');
       note(await page.locator('#detail-2 .sec-pro .pt .detail').first().isVisible(), `${tag} פירוט הנקודה לא נפתח במקלדת`);
       await page.keyboard.press('Enter');
-      // המקורות נפתחים רק בלחיצה, וחלק מפורט אחד פתוח בכל פעם
-      await page.locator('#d2-src > summary').click();
-      note(await page.locator('#detail-2 .sources').isVisible(), `${tag} המקורות לא נפתחים`);
-      await page.locator('#d2-terms > summary').click();
-      note((await page.locator('#detail-2 .more[open]').count()) === 1, `${tag} יותר מחלק מפורט אחד פתוח`);
-      await page.locator('#d2-terms > summary').click();
+      // כפתורי הפירוט: נשארים באותו סדר ובאותה שורה כשפותחים, ורק חלק אחד פתוח בכל פעם
+      const btnPos = () => page.locator('#detail-2 .more-btn').evaluateAll((els) => { const t = els[0].getBoundingClientRect().top; return els.map((e) => { const r = e.getBoundingClientRect(); return [Math.round(r.left), Math.round(r.top - t)]; }); });
+      const btnBefore = JSON.stringify(await btnPos());
+      await page.locator('#detail-2 [aria-controls="d2-plans"]').click();
+      await page.waitForTimeout(700);
+      note(JSON.stringify(await btnPos()) === btnBefore, `${tag} כפתורי הפירוט זזים כשפותחים חלק`);
+      note(await page.locator('#d2-plans .plans').isVisible(), `${tag} פירוט התוכניות לא נפתח`);
+      const ph = await page.locator('#d2-plans .plan:visible').evaluateAll((els) => [...new Set(els.map((e) => Math.round(e.getBoundingClientRect().height)))]);
+      note(ph.length === 1, `${tag} קופסאות התוכניות לא באותו גובה`, JSON.stringify(ph));
+      if (shots) await page.screenshot({ path: path.join(shots, `${tag}-3-sheet-open.png`) });
+      await page.locator('#detail-2 [aria-controls="d2-src"]').click();
+      await page.waitForTimeout(300);
+      note(await page.locator('#detail-2 .sources').isVisible() && !(await page.locator('#d2-plans').isVisible()), `${tag} המקורות לא נפתחים או שחלק אחר נשאר פתוח`);
+      note(JSON.stringify(await btnPos()) === btnBefore, `${tag} כפתורי הפירוט זזים במעבר בין חלקים`);
+      await page.locator('#detail-2 [aria-controls="d2-src"]').click();
+      note(!(await page.locator('#detail-2 .sources').isVisible()), `${tag} לחיצה שנייה לא סוגרת את החלק`);
       // המיקוד נשאר בתוך החלון
       const trapped = await page.evaluate(async () => { const d = document.querySelector('#detail-2'); return d.matches(':modal') && !document.querySelector('#finder-open').closest('dialog'); });
       note(trapped, `${tag} החלון לא נפתח כחלון חוסם`);
       await page.keyboard.press('Escape');
       note(!(await isOpen(2)), `${tag} מקש היציאה לא סוגר את חלון הפרטים`);
       note(await page.evaluate(() => document.activeElement.matches('#tool-2 [data-sheet-open]')), `${tag} המיקוד לא חוזר לכפתור הפרטים`);
+      // לחיצה על הרקע המעומעם סוגרת
+      await open.click();
+      await page.mouse.click(4, 4);
+      note(!(await isOpen(2)), `${tag} לחיצה על הרקע לא סוגרת את החלון`);
       await open.click();
       await page.locator('#detail-2 [data-sheet-close]').click();
       note(!(await isOpen(2)), `${tag} כפתור הסגירה לא סוגר`);
@@ -142,14 +166,13 @@ const audit = () => {
           note(over <= 0, `${tag} חלון הפרטים של כלי ${id} דורש גלילה`, String(over));
         }
         await page.locator(`#detail-${id} .pt`).evaluateAll((els) => els.forEach((e) => { e.open = true; }));
-        const mores = await page.locator(`#detail-${id} .more`).evaluateAll((els) => els.map((e) => e.id));
+        const mores = await page.locator(`#detail-${id} .more-btn`).evaluateAll((els) => els.map((e) => e.getAttribute('aria-controls')));
         for (const m of mores) {
-          await page.locator(`#${m}`).evaluate((e) => { e.open = true; });
+          await page.locator(`#detail-${id} [aria-controls="${m}"]`).evaluate((e) => e.click());
+          await page.locator(`#detail-${id} .sheet-scroll`).evaluate((el) => { el.scrollTop = 0; });
           await report(`כלי ${id}, החלק ${m}`);
           await page.locator(`#detail-${id} .sheet-scroll`).evaluate((el) => { el.scrollTop = el.scrollHeight; });
           await report(`כלי ${id}, תחתית החלק ${m}`);
-          if (shots && i === 0 && m.endsWith('-plans')) await page.screenshot({ path: path.join(shots, `${tag}-3-sheet-open.png`) });
-          await page.locator(`#${m}`).evaluate((e) => { e.open = false; });
         }
         await page.keyboard.press('Escape');
       }
@@ -241,7 +264,7 @@ const audit = () => {
   const ctx = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 760 } });
   const p = await ctx.newPage();
   await p.goto('file://' + file);
-  note(await p.locator('#detail-1').isVisible() && await p.locator('#d1-src > summary').isVisible(), 'בלי סקריפטים התוכן מוסתר');
+  note(await p.locator('#detail-1').isVisible() && await p.locator('#d1-src .sources').isVisible(), 'בלי סקריפטים התוכן מוסתר');
   note(!(await p.locator('#tool-1 [data-sheet-open]').isVisible()), 'בלי סקריפטים כפתור הפרטים מוצג');
   await ctx.close();
   await browser.close();
