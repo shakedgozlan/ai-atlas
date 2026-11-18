@@ -1,0 +1,3293 @@
+{
+  "snapshot_date": "2026-11-18",
+  "categories": [
+    {
+      "id": 1,
+      "slug": "assistants",
+      "name": "עוזרי שיחה, חיפוש ומחקר"
+    },
+    {
+      "id": 2,
+      "slug": "writing",
+      "name": "כתיבה, מסמכים ומצגות"
+    },
+    {
+      "id": 3,
+      "slug": "images",
+      "name": "תמונות: יצירה ועריכה"
+    },
+    {
+      "id": 4,
+      "slug": "graphic-design",
+      "name": "עיצוב גרפי ומיתוג"
+    },
+    {
+      "id": 5,
+      "slug": "ui-web",
+      "name": "עיצוב ממשק ובניית אתרים"
+    },
+    {
+      "id": 6,
+      "slug": "video-generation",
+      "name": "וידאו: יצירה מטקסט ומתמונה"
+    },
+    {
+      "id": 7,
+      "slug": "video-editing",
+      "name": "וידאו: עריכה, דמויות מדברות, כתוביות ודיבוב"
+    },
+    {
+      "id": 8,
+      "slug": "audio",
+      "name": "קול, מוזיקה וסאונד"
+    },
+    {
+      "id": 9,
+      "slug": "3d",
+      "name": "תלת־ממד"
+    },
+    {
+      "id": 10,
+      "slug": "code",
+      "name": "קוד ועוזרי פיתוח"
+    },
+    {
+      "id": 11,
+      "slug": "no-code-apps",
+      "name": "בניית אפליקציות בלי קוד"
+    },
+    {
+      "id": 12,
+      "slug": "agents-automation",
+      "name": "סוכנים ואוטומציה"
+    },
+    {
+      "id": 13,
+      "slug": "meetings-knowledge",
+      "name": "פגישות, תמלול, ניהול ידע ונתונים"
+    }
+  ],
+  "tools": [
+    {
+      "id": 1,
+      "slug": "google-flow",
+      "category_id": 6,
+      "name": "Google Flow",
+      "former_name": null,
+      "rename_note": null,
+      "role": "כלי של Google ליצירת קטעי וידאו, סצנות וסיפורים בבינה מלאכותית.",
+      "url": "https://support.google.com/flow/",
+      "logo": {
+        "file": null,
+        "file_dark": null,
+        "source_url": null,
+        "missing_reason": "לא אותר עמוד מותג או ערכת עיתונות רשמית, ולכן קובץ הלוגו לא אומת."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": "Google הודיעה שהמודלים Veo 3.1 Fast, Veo 3.1 Quality ו־Omni Flash 1.1 יוצאו משימוש ב־5 בדצמבר 2026; נכון למועד הבדיקה זה עדיין לא קרה. Veo 3.1 Lite אינו נכלל בהודעה. Veo Extend כבר הוצא משימוש ב־5 בנובמבר 2026. העמודים אינם מפרטים מה יקרה לפרויקטים קיימים.",
+        "date_as_written": "December 5, 2026",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      "strengths": [
+        {
+          "lead": "מכסה יומית בחינם, גם בלי מנוי",
+          "detail": "מי שאין לו מנוי Google AI מקבל 50 נקודות זיכוי של Flow בכל יום.",
+          "source_ids": [
+            "s2"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "כמה דרכי יצירה בכלי אחד",
+          "detail": "עם Omni Flash 1.2 אפשר ליצור וידאו מטקסט, מפריימים (באתר בלבד) ומחומרי ייחוס, וגם לערוך וידאו קיים.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "קטעים ארוכים יותר, הארכה ושדרוג רזולוציה למנויים",
+          "detail": "בתוכניות בתשלום אפשר ליצור קטעים של 3 עד 15 שניות, להאריך אותם ב־3 עד 10 שניות ולשדרג סרטוני Omni מ־360p ל־1080p. שדרוג ל־4K פתוח למנויי Ultra בלבד.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "מודלים יוצאים משימוש בהתראה קצרה",
+          "detail": "שלושה מודלי וידאו מתוכננים לצאת משימוש ב־5 בדצמבר 2026: Veo 3.1 Fast, Veo 3.1 Quality ו־Omni Flash 1.1. Veo Extend כבר הוצא משימוש ב־5 בנובמבר 2026.",
+          "source_ids": [
+            "s1",
+            "s2"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "השימוש החינמי קצר ועלול להיחסם בשעות העומס",
+          "detail": "בלי מנוי, יצירת וידאו עשויה לא להיות זמינה בשעות העומס (בערך 14:00 עד 17:00 לפי שעון UTC). הקטעים באורך 3 עד 10 שניות, ונקודות יומיות שלא נוצלו אינן נצברות.",
+          "source_ids": [
+            "s2",
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "מודלי Veo קצרים ומוגבלים ביכולות",
+          "detail": "Veo 3.1 Lite יוצר קטעים של 4, 6 או 8 שניות ב־720p, בלי עריכת וידאו קיים ובלי הארכה. ב־Veo 3.1 Quality אין יצירה מחומרי ייחוס, עריכת וידאו קיים או הארכה.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "יוצרים בני 18 ומעלה; Google מציגה את Flow ככלי שנבנה עם יוצרים ובשבילם.",
+      "pricing": {
+        "verification": "אומת חלקית",
+        "summary_line": "Google AI Pro: 19.99 דולר לחודש בחיוב חודשי. מחיר התוכנית הזולה יותר, Google AI Plus, לא אומת. יש מכסה יומית בחינם.",
+        "model": "נקודות זיכוי שמגיעות עם מנוי Google AI; Flow אינו נמכר בנפרד.",
+        "plans": [
+          {
+            "name": "Google AI Plus",
+            "price": null,
+            "price_text": "המחיר לא אומת",
+            "currency": "USD",
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "200 נקודות זיכוי של Flow בחודש, 3,000 נקודות זיכוי של Flow Music, אחסון של 400GB",
+            "notes": "הסכום לא הוצג בעמוד התוכניות הרשמי בעת הבדיקה, וגם סוג החיוב לא צוין; בעמוד נכתב רק שאפשר לבטל בכל עת.",
+            "source_ids": [
+              "s5",
+              "s2"
+            ]
+          },
+          {
+            "name": "Google AI Pro",
+            "price": 19.99,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "1,000 נקודות זיכוי של Flow בחודש, 10,000 נקודות זיכוי של Flow Music, אחסון של 5TB",
+            "notes": "המחיר נלקח ממחשבון החיסכון בעמוד התוכניות. נקודות חודשיות שלא נוצלו אינן נצברות. ב־Omni Flash 1.2 כל שנייה עולה נקודה אחת ב־360p ושלוש נקודות ב־720p.",
+            "source_ids": [
+              "s5",
+              "s2"
+            ]
+          },
+          {
+            "name": "Google AI Pro",
+            "price": 199.99,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לשנה",
+            "includes": "1,000 נקודות זיכוי של Flow בחודש, 10,000 נקודות זיכוי של Flow Music, אחסון של 5TB",
+            "notes": "המחיר נלקח ממחשבון החיסכון בעמוד התוכניות.",
+            "source_ids": [
+              "s5",
+              "s2"
+            ]
+          },
+          {
+            "name": "Google AI Ultra (5x)",
+            "price": null,
+            "price_text": "100 דולר לפי עמוד העזרה של Flow; 99.99 דולר במחשבון שבעמוד התוכניות",
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "10,000 נקודות זיכוי של Flow בחודש, אחסון של 20TB",
+            "notes": "המקורות הרשמיים אינם זהים: עמוד העזרה והבלוג נוקבים ב־100 דולר, ואילו המחשבון בעמוד התוכניות מציג 99.99 דולר לחודש בלי לציין לאיזו רמה הכוונה. המחיר המדויק בקופה לא אומת. תוכניות Ultra מחויבות על בסיס חודשי בלבד.",
+            "source_ids": [
+              "s2",
+              "s5",
+              "s8"
+            ]
+          },
+          {
+            "name": "Google AI Ultra (20x)",
+            "price": null,
+            "price_text": "200 דולר לפי עמוד העזרה של Flow; הסכום המדויק לא הוצג בעמוד התוכניות",
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "25,000 נקודות זיכוי של Flow בחודש, אחסון של 30TB",
+            "notes": "לפי הבלוג הרשמי ממאי 2026, מחיר התוכנית הבכירה ירד מ־250 ל־200 דולר לחודש. המחיר המדויק בקופה לא אומת. חיוב חודשי בלבד.",
+            "source_ids": [
+              "s2",
+              "s5",
+              "s8"
+            ]
+          }
+        ],
+        "free_tier": "50 נקודות זיכוי של Flow ביום בלי מנוי, שאינן נצברות מיום ליום. אפשר ליצור קטעים של 3 עד 10 שניות במודל Omni Flash 1.2. בשעות העומס יצירת וידאו עשויה לא להיות זמינה, אבל יצירת תמונות נשארת פתוחה.",
+        "trial": "עמוד התוכניות מזכיר תקופת ניסיון למנויי Google AI, אך משכה ותנאיה לא אומתו.",
+        "unverified_notes": "לא אומתו: מחיר Google AI Plus וסוג החיוב שלו, המחיר המדויק של שתי רמות Ultra, אורך תקופת הניסיון, מחיר רכישה של נקודות זיכוי נוספות, והאם המחיר הוא למשתמש או לחשבון. יש גם סתירה בין עמודים רשמיים בשאלה מי רשאי לקנות נקודות נוספות: עמוד העזרה של Flow מציין את מנויי Plus, Pro ו־Ultra, ואילו עמודי Google One מציינים שמנויי Plus אינם יכולים לקנות."
+      },
+      "privacy": {
+        "text": "אומת חלקית בלבד. עמוד השאלות הנפוצות הרשמי מונה אימון מודלים חדשים בין השימושים בנתוני המשתמשים, אך המשפט המלא וההקשר שלו לא נקראו. עמוד ההיכרות עם Flow אינו מתייחס לאימון, ומציין רק ש־Flow TV אינו אוסף נתונים. מדיניות הפרטיות של Flow עצמה לא נבדקה.",
+        "training_on_user_data": "עמוד השאלות הנפוצות הרשמי מזכיר אימון מודלים חדשים בין השימושים בנתונים; הניסוח המלא, ההיקף ואפשרות הסירוב לא אומתו.",
+        "source_ids": [
+          "s10",
+          "s4"
+        ]
+      },
+      "commercial_rights": {
+        "text": "Google מציינת שאינה טוענת לבעלות על תוכן מקורי שנוצר בשירותיה, ושהשימוש כפוף לתנאי השירות. הרשאה מפורשת לשימוש מסחרי בסרטוני Flow, לפי תוכנית, לא אומתה, משום שעמוד התנאים לא נבדק.",
+        "watermark": "כל התוצרים של Veo, Omni ו־Nano Banana כוללים סימן מים בלתי נראה מסוג SynthID. סימן מים גלוי נשלט במתג בתפריט הפרופיל, ומוחל אוטומטית על משתמשים בהודו, בדרום קוריאה ובווייטנאם שאינם מנויי Google AI Ultra 20x. מנגד, עמוד ההטבות של Google AI Plus מציין שתמונות וסרטונים נושאים סימן מים גלוי, ולכן לא אומת במלואו באילו תוכניות אפשר לכבות אותו.",
+        "source_ids": [
+          "s4",
+          "s7"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "ל־Flow עצמו לא נמצא אזכור של API בעמודים שנבדקו. מודלי הווידאו של Google פתוחים למפתחים דרך Gemini API: עמוד המחירים מציג את Gemini Omni Flash בכ־0.10 דולר לשניית וידאו ב־720p, בלי שכבה חינמית. מחירי Veo 3.1 ב־API ומועדי הוצאה משימוש של מודלים ב־API לא אומתו.",
+        "source_ids": [
+          "s9"
+        ]
+      },
+      "integrations": {
+        "items": [],
+        "source_ids": []
+      },
+      "platforms": {
+        "items": [
+          "אתר (דפדפן מבוסס Chromium, כגון Chrome או Edge)",
+          "אפליקציה ל־Android",
+          "אפליקציה ל־iPhone ול־iPad"
+        ],
+        "source_ids": [
+          "s4"
+        ]
+      },
+      "hebrew": {
+        "text": "עמוד הזמינות הרשמי מונה את העברית בין השפות הנתמכות ב־Flow ואת ישראל בין המדינות הנתמכות, וממליץ לכתוב הנחיות באנגלית לתוצאות הטובות ביותר. העמוד אינו מפרט מה כוללת התמיכה: ממשק בעברית, תצוגה מימין לשמאל, דיבור בעברית בסרטונים ותיאום שפתיים לא אומתו.",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      "company": {
+        "name": "Google",
+        "country": null
+      },
+      "student_benefits": {
+        "text": "לפי עמוד התוכניות, סטודנטים מקבלים את Google AI Pro בחינם לשנה, או את Google AI Pro יחד עם YouTube Premium ב־8.99 דולר לחודש. ההטבות תקפות עד ארבע שנים, מחייבות אימות דרך SheerID ואינן זמינות בחשבונות של מוסד הלימודים. הזמינות משתנה ממדינה למדינה, והזמינות בישראל לא אומתה.",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://support.google.com/flow/answer/16352836?hl=en",
+          "title": "מרכז העזרה של Google Flow: המודלים הזמינים",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://support.google.com/flow/answer/16526234?hl=en",
+          "title": "מרכז העזרה של Google Flow: נקודות זיכוי",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://support.google.com/flow/answer/16353544?hl=en",
+          "title": "מרכז העזרה של Google Flow: היכן אפשר להשתמש ב־Flow",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://support.google.com/flow/answer/16353333",
+          "title": "מרכז העזרה של Google Flow: תחילת העבודה",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://one.google.com/about/google-ai-plans?hl=fr",
+          "title": "עמוד התוכניות של Google AI (חלק מהמחירים לא הוצגו)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://support.google.com/googleone/answer/16287445",
+          "title": "מרכז העזרה של Google One: נקודות זיכוי לבינה מלאכותית",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s7",
+          "url": "https://support.google.com/googleone/answer/16882689?hl=en",
+          "title": "מרכז העזרה של Google One: ההטבות של Google AI Plus",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s8",
+          "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
+          "title": "הבלוג של Google: עדכון תוכניות המנוי של Google AI",
+          "official": true,
+          "published": "2026-05-19",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s9",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing?hl=en",
+          "title": "מחירון Gemini API (נקרא חלקית)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s10",
+          "url": "https://labs.google/fx/faq",
+          "title": "שאלות נפוצות של Google Labs (נקרא חלקית)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18"
+    },
+    {
+      "id": 2,
+      "slug": "runway",
+      "category_id": 6,
+      "name": "Runway",
+      "former_name": null,
+      "rename_note": "הכתובת runwayml.com מפנה כעת אל runway.com. לא נמצאה הודעה רשמית על שינוי בשם המוצר.",
+      "role": "פלטפורמה ליצירת וידאו ותמונות במגוון מודלים, לצד מוזיקה, קול ואפקטים.",
+      "url": "https://runway.com",
+      "logo": {
+        "file": null,
+        "file_dark": null,
+        "source_url": null,
+        "missing_reason": "לא אותר עמוד מותג או ערכת עיתונות רשמית, ולכן קובץ הלוגו לא אומת."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": "תוכנית Unlimited מוחלפת בתוכנית Max: Max מוצעת למנויים חדשים מאז 29 במאי 2026, ומנויי Unlimited הקיימים מתוכננים לעבור אליה ב־30 בנובמבר 2026. נכון למועד הבדיקה המעבר עדיין לא בוצע.",
+        "date_as_written": "November 30, 2026",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      "strengths": [
+        {
+          "lead": "מודלים רבים במנוי אחד",
+          "detail": "לפי עמוד המחירים, התוכניות מ־Standard ומעלה כוללות את כל מודלי הווידאו והתמונה, בהם Gen-4.5, Aleph 2.0, Kling 4.0, Seedance 2.0 Pro, Gen-4 Image ו־Nano Banana Pro.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "API מתועד עם מחירון גלוי",
+          "detail": "נקודת זיכוי ב־API עולה 0.01 דולר, ולכל מודל מפורסם תעריף של נקודות לשנייה.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "תוספות להפקה בתוכניות הגבוהות",
+          "detail": "Pro מוסיפה שדרוג וידאו ל־4K ללא הגבלה, ערכת מותג אחת, שכפול קול אחד ו־Runway MCP. Max מוסיפה פלט HDR, ProRes ורצפי תמונות.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "התוכנית החינמית היא הקצאה חד־פעמית עם סימן מים",
+          "detail": "125 נקודות זיכוי חד־פעמיות שאינן מתחדשות, בלי אפשרות לקנות נקודות נוספות. כל סרטון שנוצר בתוכנית החינמית נושא סימן מים של Runway.",
+          "source_ids": [
+            "s2"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "מכסת הנקודות מספיקה לזמן וידאו קצר במודלים המתקדמים",
+          "detail": "625 הנקודות של Standard שוות לכ־52 שניות ב־Gen-4.5, שעולה 60 נקודות ל־5 שניות. Aleph 2.0 עולה 140 נקודות ל־5 שניות.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "נקודות שלא נוצלו נמחקות בתוכניות הזולות",
+          "detail": "ב־Standard וב־Pro הנקודות החודשיות אינן עוברות לחודש הבא. רק ב־Max, ולפי עמוד העזרה גם ב־Team, הן נשמרות עד חודש.",
+          "source_ids": [
+            "s1",
+            "s3"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "יוצרים עצמאיים, מהתנסות ראשונה בווידאו בבינה מלאכותית ועד שימוש אינטנסיבי, וכן צוותים וארגונים.",
+      "pricing": {
+        "verification": "אומת ממקור רשמי",
+        "summary_line": "מ־15 דולר לחודש בחיוב חודשי, או 12 דולר לחודש בחיוב שנתי. יש תוכנית חינמית עם 125 נקודות זיכוי חד־פעמיות.",
+        "model": "מנוי עם נקודות זיכוי",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "125 נקודות זיכוי חד־פעמיות, מבחר מודלים מוגבל ומשתנה, אחסון של 5GB",
+            "notes": "ללא תשלום וללא הגבלת זמן. הנקודות אינן מתחדשות, אי אפשר לקנות נקודות נוספות, והסרטונים נושאים סימן מים.",
+            "source_ids": [
+              "s1",
+              "s2"
+            ]
+          },
+          {
+            "name": "Standard",
+            "price": 15,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "625 נקודות זיכוי בחודש, כל מודלי הווידאו והתמונה, בלי סימן מים, שדרוג ל־4K, 5 יצירות במקביל, עד 3 פרויקטים, אחסון של 20GB",
+            "notes": "הנקודות החודשיות אינן נצברות. סתירה בין מקורות רשמיים: עמוד המחירים מציין שכל המודלים כלולים מ־Standard, ואילו עמוד העזרה לבחירת תוכנית מציין שהגישה לכל המודלים היא מ־Pro ומעלה. מבצע זמני: 25% הנחה על יצירה ב־Kling 4.0 עד 30 בנובמבר.",
+            "source_ids": [
+              "s1",
+              "s3"
+            ]
+          },
+          {
+            "name": "Standard",
+            "price": 12,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "625 נקודות זיכוי בחודש, כל מודלי הווידאו והתמונה, בלי סימן מים, שדרוג ל־4K, 5 יצירות במקביל, עד 3 פרויקטים, אחסון של 20GB",
+            "notes": "מחיר לחודש כשהחיוב שנתי. הנקודות החודשיות אינן נצברות. לגבי היקף המודלים הכלולים, ראו את הסתירה שבהערה לחיוב החודשי.",
+            "source_ids": [
+              "s1",
+              "s3"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 35,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "2,250 נקודות זיכוי בחודש, 15 יצירות במקביל, עד 5 פרויקטים, ערכת מותג אחת, שכפול קול אחד, רכישת נקודות נוספות, Runway MCP, שדרוג וידאו ל־4K ללא הגבלה, אחסון של 100GB",
+            "notes": "הנקודות החודשיות אינן נצברות.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 28,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "2,250 נקודות זיכוי בחודש, 15 יצירות במקביל, עד 5 פרויקטים, ערכת מותג אחת, שכפול קול אחד, רכישת נקודות נוספות, Runway MCP, שדרוג וידאו ל־4K ללא הגבלה, אחסון של 100GB",
+            "notes": "מחיר לחודש כשהחיוב שנתי. הנקודות החודשיות אינן נצברות.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Max",
+            "price": 95,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "9,500 נקודות זיכוי בחודש, גישה מוקדמת למודלים חדשים, 20 יצירות במקביל, עד 10 פרויקטים, עד 3 ערכות מותג, עד 3 שכפולי קול, פלט HDR, ProRes ורצפי תמונות, אחסון של 500GB",
+            "notes": "נקודות שלא נוצלו נשמרות עד חודש. התוכנית מחליפה את Unlimited: מנויי Unlimited הקיימים מתוכננים לעבור אליה ב־30 בנובמבר 2026.",
+            "source_ids": [
+              "s1",
+              "s3"
+            ]
+          },
+          {
+            "name": "Max",
+            "price": 76,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "9,500 נקודות זיכוי בחודש, גישה מוקדמת למודלים חדשים, 20 יצירות במקביל, עד 10 פרויקטים, עד 3 ערכות מותג, עד 3 שכפולי קול, פלט HDR, ProRes ורצפי תמונות, אחסון של 500GB",
+            "notes": "מחיר לחודש כשהחיוב שנתי. נקודות שלא נוצלו נשמרות עד חודש.",
+            "source_ids": [
+              "s1",
+              "s3"
+            ]
+          },
+          {
+            "name": "Team",
+            "price": null,
+            "price_text": "המחיר לא אומת",
+            "currency": "USD",
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "כמה מושבים, הערות משותפות, יותר פרויקטים וערכות מותג",
+            "notes": "המחיר, סוג החיוב ומכסת הנקודות לא הופיעו בעמוד המחירים שנבדק. לפי עמוד העזרה, הוספת שותפים לעבודה מחייבת Team ומעלה.",
+            "source_ids": [
+              "s3"
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "price_text": "לפי הצעת מחיר",
+            "currency": "USD",
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": null,
+            "notes": "מבצע זמני שהוצג בעמוד המחירים: עד חודשיים של שימוש בחינם לארגונים שיחתמו עד 12/31.",
+            "source_ids": [
+              "s1"
+            ]
+          }
+        ],
+        "free_tier": "תוכנית Free קבועה וללא תשלום: 125 נקודות זיכוי חד־פעמיות שאינן פגות ואינן מתחדשות, מבחר מודלים מוגבל ומשתנה ואחסון של 5GB. הסרטונים נושאים סימן מים, ואי אפשר לקנות נקודות נוספות.",
+        "trial": null,
+        "unverified_notes": "לא אומתו: מחיר תוכנית Team ומכסת הנקודות שלה, מחיר Enterprise, מחיר נקודת זיכוי נוספת באתר (ידוע רק שהרכישה המינימלית היא 1,000 נקודות ושנקודות שנרכשו אינן פגות), והאם המחירים הם למשתמש או לחשבון. לא נמצאה תקופת ניסיון לתוכניות בתשלום. קיימת סתירה בין עמוד המחירים לעמוד העזרה בשאלה אם כל המודלים כלולים כבר ב־Standard או רק מ־Pro; העדפנו את עמוד המחירים."
+      },
+      "privacy": {
+        "text": "לא אומת. תנאי השימוש הרשמיים, שעודכנו לאחרונה ב־23 באוקטובר 2026, נטענו, אך סעיף העוסק באימון מודלים לא אותר והטקסט המלא לא נקרא. גם מדיניות הפרטיות לא נבדקה. מנוי בתשלום אינו מבטיח כשלעצמו שהתוכן לא ישמש לאימון.",
+        "training_on_user_data": null,
+        "source_ids": [
+          "s6"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לפי מאמר העזרה של Runway, התוכן שיוצרים שייך למשתמש, אין עליו הגבלות שימוש לא־מסחרי מצד Runway ואין חובה לתת לה קרדיט בפרסום. המאמר אינו מבחין בין תוכניות ומפנה לתנאי השימוש לפרטים. אין בכך הבטחה מפני תביעות זכויות יוצרים של צד שלישי, וסעיפי שיפוי לא נבדקו.",
+        "watermark": "כל סרטון שנוצר בתוכנית Free נושא סימן מים של Runway. מ־Standard ומעלה התוצרים בלי סימן מים.",
+        "source_ids": [
+          "s4",
+          "s2",
+          "s1"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "API מתועד עם פורטל מפתחים. נקודת זיכוי עולה 0.01 דולר ונרכשת בפורטל לכל פרויקט. תעריפים לדוגמה, בנקודות לשניית וידאו: Gen-4.5 עולה 12, Gen-4 Turbo עולה 5 ו־Aleph 2.0 עולה 28; מוצעים גם מודלים של ספקים אחרים. מבצע זמני: 20% הנחה על Kling 4.0 ב־API עד 30 בנובמבר 2026 לפי שעון UTC. המקור אינו מציין אם נקודות ה־API נפרדות מנקודות המנוי באתר.",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      "integrations": {
+        "items": [
+          "Runway MCP (בתוכניות Pro ו־Max)"
+        ],
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "platforms": {
+        "items": [
+          "אתר"
+        ],
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק, הנחיות בעברית, דיבור בעברית או תיאום שפתיים.",
+        "source_ids": []
+      },
+      "company": {
+        "name": "Runway AI, Inc.",
+        "country": null
+      },
+      "student_benefits": {
+        "text": "קיים מאמר עזרה רשמי על הנחות לסטודנטים ולאנשי חינוך, אך תוכנו לא נטען: גובה ההנחה, התוכניות הזכאיות ואופן האימות לא אומתו. עמוד המחירים אינו מציג מחיר לסטודנטים.",
+        "source_ids": [
+          "s7",
+          "s1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://runway.com/pricing",
+          "title": "עמוד המחירים של Runway",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://help.runwayml.com/hc/en-us/articles/50404627334547-Free-plan-details",
+          "title": "מרכז העזרה של Runway: פרטי התוכנית החינמית",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://help.runwayml.com/hc/en-us/articles/21664961171475-Which-plan-is-right-for-me",
+          "title": "מרכז העזרה של Runway: איזו תוכנית מתאימה לי",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://help.runwayml.com/hc/en-us/articles/21668707517587-Can-I-use-the-content-I-made-in-Runway-for-commercial-purposes",
+          "title": "מרכז העזרה של Runway: שימוש מסחרי בתוכן שנוצר",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://docs.dev.runwayml.com/guides/pricing/",
+          "title": "תיעוד המפתחים של Runway: מחירון ה־API",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://runway.com/terms-of-use",
+          "title": "תנאי השימוש של Runway (עודכנו ב־23 באוקטובר 2026; נקראו חלקית)",
+          "official": true,
+          "published": "2026-10-23",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s7",
+          "url": "https://help.runwayml.com/hc/en-us/articles/48154114602259-Student-and-Educator-Discounts",
+          "title": "מרכז העזרה של Runway: הנחות לסטודנטים ולאנשי חינוך (העמוד לא נטען)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18"
+    },
+    {
+      "id": 3,
+      "slug": "kling",
+      "category_id": 6,
+      "name": "Kling AI",
+      "former_name": null,
+      "rename_note": null,
+      "role": "מחולל וידאו ותמונות מטקסט ומתמונות, עם קול מובנה.",
+      "url": "https://kling.ai",
+      "logo": {
+        "file": null,
+        "file_dark": null,
+        "source_url": null,
+        "missing_reason": "לא אותר קובץ לוגו רשמי: דפי האתר לא נקראו בשליפה אוטומטית, ולא נמצא דף עיתונות או ערכת מותג. נדרשת בדיקה ידנית בדפדפן."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": "הכתובות הישנות ב־klingai.com מפנות ל־kling.ai (נצפה ב־18.11.2026). לא נמצאה הודעה רשמית על המעבר ולא תאריך שלו. דף הבית מציג את Kling 4.0 כמודל הנוכחי.",
+        "date_as_written": null,
+        "source_ids": [
+          "s1",
+          "s7"
+        ]
+      },
+      "strengths": [
+        {
+          "lead": "מנויים רשאים להשתמש בתוצרים מסחרית",
+          "detail": "לפי תנאי השירות בתשלום, השימוש המסחרי של מנויים בתוצרים אינו מוגבל, מלבד פיתוח מוצרים מתחרים, ולמנויים יש זכות להסיר את סימן המים של המותג.",
+          "source_ids": [
+            "s3"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "וידאו של עד 30 שניות ב־Kling 4.0",
+          "detail": "דף הבית מציג יצירת וידאו של עד 30 שניות, עד 10 פריימים מרכזיים ועד 15 נכסי ייחוס ב־Omni Reference.",
+          "source_ids": [
+            "s7"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "דיבור מובנה בכמה שפות",
+          "detail": "הודעת ההשקה של Kling 3.0 מפרטת אנגלית, סינית, יפנית, קוריאנית וספרדית, כולל דיאלוג בין דמויות שמדברות שפות שונות. המקור מפברואר 2026 ומתייחס לדור הקודם של המודל.",
+          "source_ids": [
+            "s6"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "התוכן עשוי לשמש לאימון מודלים כברירת מחדל",
+          "detail": "סעיף 4.7.3(f) בתנאי השימוש מתיר ל־Kling להשתמש בקלט ובתוצרים כדי לאמן ולפתח מודלים. אפשר לבטל את ההרשאה לשימוש עתידי בפנייה בדוא\"ל ל־support@kling.ai.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "בלי מנוי אין שימוש מסחרי",
+          "detail": "מי שאינו מנוי אינו רשאי להשתמש בתוצרים מסחרית, וחייב לסמן אותם במותג Kling, אלא אם קיבל אישור בכתב.",
+          "source_ids": [
+            "s1",
+            "s3"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "אין החזרים, ונקודות המנוי פוקעות",
+          "detail": "התשלום אינו מוחזר אחרי הפעלת השירות. נקודות המנוי תקפות חודש מיום החלוקה; נקודות שנרכשו בנפרד תקפות שנתיים.",
+          "source_ids": [
+            "s3"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "יוצרים עצמאיים, צוותים וארגונים, לפי מדרג התוכניות שכולל גם Team ו־Enterprise.",
+      "pricing": {
+        "verification": "אומת חלקית",
+        "summary_line": null,
+        "model": "מנוי חודשי או שנתי עם נקודות זיכוי, מתחדש אוטומטית. אפשר לקנות גם חבילות נקודות: ב־App Store האמריקאית מ־100 נקודות ב־1.49 דולר ועד 3,300 נקודות ב־50 דולר.",
+        "plans": [
+          {
+            "name": "Standard",
+            "price": 10,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": null,
+            "notes": "מחיר רכישה בתוך אפליקציית iOS, לפי ה־App Store האמריקאית. מחיר האתר לא אומת ועשוי להיות שונה. הרשומה בחנות לא מציינת כמה נקודות כלולות.",
+            "source_ids": [
+              "s5"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 37,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": null,
+            "notes": "מחיר רכישה בתוך אפליקציית iOS, לפי ה־App Store האמריקאית. מחיר האתר לא אומת ועשוי להיות שונה. הרשומה בחנות לא מציינת כמה נקודות כלולות.",
+            "source_ids": [
+              "s5"
+            ]
+          },
+          {
+            "name": "Premier",
+            "price": 92,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": null,
+            "notes": "מחיר רכישה בתוך אפליקציית iOS, לפי ה־App Store האמריקאית. מחיר האתר לא אומת ועשוי להיות שונה. תנאי התשלום מונים ארבע דרגות Premier (8k, 18k, 28k ו־38k נקודות); הרשומה בחנות לא מציינת לאיזו דרגה המחיר מתייחס.",
+            "source_ids": [
+              "s5",
+              "s3"
+            ]
+          }
+        ],
+        "free_tier": "משתמשים חדשים מקבלים נקודות חינם בהרשמה, ומשתמשים חוזרים יכולים לקבל הקצאה נוספת בכניסה לחשבון מדי חודש. הכמות והתוקף עשויים להשתנות; הכמות המדויקת לא אומתה.",
+        "trial": "לא נמצאה תקופת ניסיון חינמית לתוכנית בתשלום. באפליקציית iOS נמכר מנוי Standard לשבוע ב־1.19 או ב־1.49 דולר (שתי רשומות בחנות); זה מנוי קצר בתשלום, לא ניסיון חינם.",
+        "unverified_notes": "דף המחירים באתר מפנה לדף הבית למי שאינו מחובר, ולכן מחירי האתר, המחירים השנתיים וכמות הנקודות בכל תוכנית לא אומתו. המחירים שכאן נלקחו רק מרשומת ה־App Store האמריקאית, ולכן לא נקבעה שורת מחיר מסכמת. מחירי Ultra+‏, Team ו־Enterprise לא אומתו; ידוע רק ש־Team מחויבת לפי מושב לחודש. הודעת ההשקה מפברואר 2026 מזכירה מנויי Ultra, ואילו תנאי התשלום מ־2026/10/10 מונים רק Ultra+. הסקה: הדרגה שונתה או הוחלפה בין התאריכים; לא נמצאה הודעה רשמית."
+      },
+      "privacy": {
+        "text": "המשתמש מעניק ל־Kling רישיון לא בלעדי וללא תמלוגים על הקלט והתוצרים, כולל לקידום, לפיתוח מוצרים ולרישוי לצד שלישי. התנאים אינם מבחינים בין תוכניות, ולא נמצא מקור שמראה שמנוי בתשלום מונע שימוש לאימון. לא נמצאה הצהרה רשמית על הטיפול בנתונים ב־Team וב־Enterprise. לפי מדיניות הפרטיות הנתונים נשמרים בשרתים בסינגפור, וצוותים ברחבי העולם וחברות בקבוצה עשויים לגשת אליהם. לפי תווית הפרטיות ב־App Store, מזהים ונתוני שימוש משמשים למעקב.",
+        "training_on_user_data": "תנאי השימוש (סעיף 4.7.3(f)) מתירים להשתמש בקלט ובתוצרים כדי ליצור, לבדוק, לשפר, לאמן ולפתח מודלים. אפשר לבטל את ההרשאה לשימוש עתידי בדוא\"ל ל־support@kling.ai (סעיף 4.7.4).",
+        "source_ids": [
+          "s1",
+          "s2",
+          "s5"
+        ]
+      },
+      "commercial_rights": {
+        "text": "התוכן שייך למשתמש, ו־Kling אינה טוענת לבעלות עליו. מנויים רשאים להשתמש בתוצרים מסחרית בלי הגבלה, מלבד פיתוח או הצעה של מוצרים מתחרים. מי שאינו מנוי זקוק לאישור בכתב לשימוש מסחרי. אסור להשתמש בשירות או בתוצרים כדי לאמן מודלים אחרים. רישיון מסחרי אינו מגן מפני תביעות זכויות יוצרים של צד שלישי.",
+        "watermark": "מי שאינו מנוי חייב לסמן את התוצרים במותג ובלוגו של Kling, או לציין בבירור שנוצרו ב־Kling AI. למנויים יש זכות להסיר את סימן המים. דף השאלות הרשמי מציין שסימני המים משתנים לפי תוכנית, בלי טבלה לפי תוכנית, ולכן לא אומת מאיזו דרגת מנוי אפשר להסיר אותם.",
+        "source_ids": [
+          "s1",
+          "s3",
+          "s4"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "קיימת פלטפורמת מפתחים רשמית, KlingAI Open Platform, עם דף מחירים ותיעוד. הדפים לא נקראו, ולכן מחירי ה־API ורשימת המודלים לא אומתו.",
+        "source_ids": [
+          "s8"
+        ]
+      },
+      "integrations": {
+        "items": [],
+        "source_ids": []
+      },
+      "platforms": {
+        "items": [
+          "אתר",
+          "iOS ו־iPadOS",
+          "Mac עם שבב Apple",
+          "Apple Vision",
+          "Android (לפי תנאי התשלום, שמזכירים מנוי דרך Google Play; דף החנות לא נבדק)"
+        ],
+        "source_ids": [
+          "s5",
+          "s3"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית. שפות הממשק שמוצהרות לאפליקציית iOS: אנגלית, יפנית, קוריאנית, סינית מפושטת וסינית מסורתית. שפות הדיבור שפורטו ל־Kling 3.0: אנגלית, סינית, יפנית, קוריאנית וספרדית. הנחיות בעברית, דיבור בעברית ותצוגה מימין לשמאל לא אומתו.",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      "company": {
+        "name": "Kling AI Pte. Ltd. (חברת האם: Kuaishou Technology)",
+        "country": null
+      },
+      "student_benefits": {
+        "text": null,
+        "source_ids": []
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://kling.ai/docs/user-policy",
+          "title": "תנאי השימוש של Kling AI (הגרסה שבתוקף)",
+          "official": true,
+          "published": "2026-04-21",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s2",
+          "url": "https://kling.ai/docs/privacy-policy",
+          "title": "מדיניות הפרטיות של Kling AI (הגרסה שבתוקף)",
+          "official": true,
+          "published": "2026-04-21",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s3",
+          "url": "https://kling.ai/docs/payment-policy",
+          "title": "תנאי השירות בתשלום של Kling AI",
+          "official": true,
+          "published": "2026-10-10",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://kling.ai/explore/kling_ai_membership_plans_%7C_ai_video_%26_image_generation_pricing",
+          "title": "דף שאלות ותשובות רשמי על תוכניות המנוי",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://apps.apple.com/us/app/kling-ai-ai-image-video-maker/id6738049229",
+          "title": "Kling AI ב־App Store האמריקאית, גרסה 3.9.21",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://www.globenewswire.com/news-release/2026/02/05/3232837/0/en/Kling-AI-Launches-3-0-Model-Ushering-in-an-Era-Where-Everyone-Can-Be-a-Director.html",
+          "title": "הודעה לעיתונות של Kuaishou על השקת Kling 3.0",
+          "official": true,
+          "published": "2026-02-05",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s7",
+          "url": "https://kling.ai",
+          "title": "דף הבית של Kling AI (נבדק בדפדפן, בלי התחברות)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s8",
+          "url": "https://kling.ai/dev/pricing",
+          "title": "דף מחירי ה־API של Kling (התוכן לא נקרא; רק קיום הדף אומת)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18"
+    },
+    {
+      "id": 4,
+      "slug": "hailuo",
+      "category_id": 6,
+      "name": "Hailuo AI",
+      "former_name": null,
+      "rename_note": null,
+      "role": "מחולל וידאו ותמונות מטקסט, מתמונות ומחומרי ייחוס, עם קול מסונכרן.",
+      "url": "https://hailuoai.video",
+      "logo": {
+        "file": null,
+        "file_dark": null,
+        "source_url": null,
+        "missing_reason": "לא אותר קובץ לוגו רשמי: לא נמצא דף עיתונות או ערכת מותג, וקובצי האתר לא נקראו. נדרשת בדיקה ידנית."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": "המודל הנוכחי, MiniMax H3, זמין באתר ובאפליקציה; תאריך ההשקה שלו לא אומת ממקור רשמי. תוכנית Unlimited היא תוכנית ישנה שנמכרה רק עד יוני 2025.",
+        "date_as_written": "only available for purchase before June 18, 2025",
+        "source_ids": [
+          "s3",
+          "s7",
+          "s8"
+        ]
+      },
+      "strengths": [
+        {
+          "lead": "וידאו וקול נוצרים יחד",
+          "detail": "MiniMax H3 מפיק וידאו עם קול סטריאו מסונכרן באותה הרצה, בקליפים של עד 15 שניות וברזולוציה של עד 2K דרך ה־API.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "שליטה רחבה באמצעות חומרי ייחוס",
+          "detail": "גרסת Ref2VA מקבלת עד 9 תמונות, 3 קטעי וידאו ו־3 קטעי קול כייחוס. גרסת FL2VA מאפשרת לקבוע את הפריים הראשון, האחרון או שניהם.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "משקלי המודל פתוחים",
+          "detail": "משקלי H3 זמינים בחינם ברישיון MiniMax H3 Community License, בלי תמלוגים, למחקר ולשימוש מסחרי, ב־Hugging Face, ב־ModelScope וב־GitHub.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "בחינם יש סימן מים, והנקודות פוקעות מהר",
+          "detail": "הורדות של משתמשים חינמיים כוללות סימן מים. נקודות הבונוס למשתמשים חדשים פוקעות אחרי שלושה ימים, נקודות המנוי אינן עוברות לחודש הבא, ואין החזר על תשלום שבוצע. המקור מיולי 2025.",
+          "source_ids": [
+            "s3"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "רישיון רחב ובלתי חוזר על התוכן",
+          "detail": "לפי תנאי השימוש, המשתמש מעניק לחברה רישיון עולמי, לצמיתות, בלתי חוזר וללא תמלוגים על התוכן שהעלה ועל התוצרים.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "המשקלים הפתוחים מוגבלים",
+          "detail": "הם אינם זמינים באיחוד האירופי, בבריטניה, בארצות הברית ובדרום קוריאה. חברות שהכנסתן השנתית מעל 20 מיליון דולר זקוקות לאישור נפרד בכתב, מוצר מסחרי חייב להציג את השם MiniMax H3, והפלט המקורי הוא 768p בצלע הקצרה.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "יוצרים עצמאיים וצוותים קטנים באפליקציה, ומפתחים ועסקים דרך ה־API של MiniMax והמשקלים הפתוחים.",
+      "pricing": {
+        "verification": "אומת חלקית",
+        "summary_line": null,
+        "model": "מנוי עם נקודות זיכוי",
+        "plans": [
+          {
+            "name": "Standard",
+            "price": 9.99,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": null,
+            "price_period": "לחודש",
+            "includes": null,
+            "notes": "לפי פוסט בבלוג הרשמי מ־27 ביולי 2026 (המקור הרשמי העדכני יותר). הפוסט לא מציין אם החיוב חודשי או שנתי ולא כמה נקודות כלולות. סותר את המחיר שבתנאי המנוי מ־14.7.2025.",
+            "source_ids": [
+              "s4"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 34.99,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": null,
+            "price_period": "לחודש",
+            "includes": null,
+            "notes": "לפי פוסט בבלוג הרשמי מ־27 ביולי 2026 (המקור הרשמי העדכני יותר). הפוסט לא מציין אם החיוב חודשי או שנתי ולא כמה נקודות כלולות. סותר את המחיר שבתנאי המנוי מ־14.7.2025.",
+            "source_ids": [
+              "s4"
+            ]
+          },
+          {
+            "name": "Master",
+            "price": 79.99,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": null,
+            "price_period": "לחודש",
+            "includes": null,
+            "notes": "לפי פוסט בבלוג הרשמי מ־27 ביולי 2026 (המקור הרשמי העדכני יותר). הפוסט לא מציין אם החיוב חודשי או שנתי ולא כמה נקודות כלולות. סותר את המחיר שבתנאי המנוי מ־14.7.2025.",
+            "source_ids": [
+              "s4"
+            ]
+          },
+          {
+            "name": "Standard",
+            "price": 14.99,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "1,000 נקודות זיכוי בחודש",
+            "notes": "לפי תנאי המנוי הרשמיים, עודכנו לאחרונה ב־14.7.2025 (מקור ישן). סותר את המחיר שבבלוג הרשמי מ־27 ביולי 2026.",
+            "source_ids": [
+              "s3"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 54.99,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "4,500 נקודות זיכוי בחודש",
+            "notes": "לפי תנאי המנוי הרשמיים, עודכנו לאחרונה ב־14.7.2025 (מקור ישן). סותר את המחיר שבבלוג הרשמי מ־27 ביולי 2026.",
+            "source_ids": [
+              "s3"
+            ]
+          },
+          {
+            "name": "Master",
+            "price": 119.99,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "10,000 נקודות זיכוי בחודש",
+            "notes": "לפי תנאי המנוי הרשמיים, עודכנו לאחרונה ב־14.7.2025 (מקור ישן). סותר את המחיר שבבלוג הרשמי מ־27 ביולי 2026.",
+            "source_ids": [
+              "s3"
+            ]
+          },
+          {
+            "name": "Ultra",
+            "price": 124.99,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "12,000 נקודות זיכוי בחודש, לשימוש עם Hailuo 02",
+            "notes": "לפי תנאי המנוי הרשמיים, עודכנו לאחרונה ב־14.7.2025 (מקור ישן). לא אומת שהתוכנית עדיין קיימת בנובמבר 2026.",
+            "source_ids": [
+              "s3"
+            ]
+          },
+          {
+            "name": "Max",
+            "price": 199.99,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "20,000 נקודות זיכוי בחודש, לשימוש עם Hailuo 01 ו־Hailuo 02",
+            "notes": "לפי תנאי המנוי הרשמיים, עודכנו לאחרונה ב־14.7.2025 (מקור ישן). לא אומת שהתוכנית עדיין קיימת בנובמבר 2026.",
+            "source_ids": [
+              "s3"
+            ]
+          },
+          {
+            "name": "Unlimited",
+            "price": 94.99,
+            "price_text": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "נקודות ללא הגבלה, לשימוש עם Hailuo 01 בלבד",
+            "notes": "תוכנית ישנה: לפי תנאי המנוי (14.7.2025, מקור ישן) אפשר היה לרכוש אותה רק לפני 18 ביוני 2025.",
+            "source_ids": [
+              "s3"
+            ]
+          }
+        ],
+        "free_tier": "יש תוכנית חינמית. לפי תנאי המנוי (14.7.2025, מקור ישן): ההורדות כוללות סימן מים, ואפשר להעמיד עד שלוש משימות בתור. כמות הנקודות החינמיות כיום, וקיומה של הקצאה יומית, לא אומתו.",
+        "trial": "לא נמצאה תקופת ניסיון חינמית לתוכנית בתשלום. נקודות הבונוס למשתמשים חדשים פוקעות שלושה ימים אחרי שניתנו (מקור ישן).",
+        "unverified_notes": "המחיר הנוכחי לא הוכרע. דף המנויים באתר מפנה לדף הבית למי שאינו מחובר, ושני מקורות רשמיים סותרים זה את זה: תנאי המנוי מ־14.7.2025 (14.99, 54.99 ו־119.99 דולר לחודש) ופוסט בבלוג הרשמי מ־27 ביולי 2026 (9.99, 34.99 ו־79.99 דולר לחודש). הסקה: ייתכן שהמחירים הוזלו, וייתכן שהבלוג מצטט מחיר חודשי בחיוב שנתי; אף אחד מהמקורות לא מבהיר זאת. לא אומתו גם מחירים שנתיים, כמות הנקודות בתוכניות הנוכחיות והשאלה אם Ultra ו־Max עדיין נמכרות. יתר התנאים לקוחים מהמקור הישן: נקודות המנוי תקפות חודש ואינן נצברות, נקודות שנרכשו תקפות עד 31 בדצמבר של השנה השנייה שאחרי הרכישה, אפשר לבטל בכל עת החל ממחזור החיוב הבא, ואין החזר על תשלום שבוצע."
+      },
+      "privacy": {
+        "text": "המשתמש מעניק לחברה רישיון עולמי, לצמיתות, בלתי חוזר וללא תמלוגים על התוכן שהעלה ועל התוצרים. מדיניות הפרטיות (דצמבר 2025, מקור ישן) קובעת שבדרך כלל מידע אישי אינו מועבר אל מחוץ לסינגפור, ושתמונות פנים ונתוני פנים שנגזרו מהן נמחקים לצמיתות אחרי יצירת הווידאו. לא נמצא הבדל בין תוכניות, ולא נמצא מקור שמראה שמנוי בתשלום מונע שימוש לאימון. לפי Google Play, האפליקציה עשויה לשתף עם צד שלישי מידע אישי, מידע פיננסי וחמישה סוגי נתונים נוספים.",
+        "training_on_user_data": "המקורות הרשמיים אינם אומרים אם התוכן משמש לאימון מודלים, לא בתנאי השימוש ולא במדיניות הפרטיות. תנאי המנוי מתירים שימוש בתוכן כדי להפעיל, לשפר ולקדם את השירות, ולא מתוארת אפשרות לסרב לאימון.",
+        "source_ids": [
+          "s1",
+          "s2",
+          "s3",
+          "s7"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לפי תנאי המנוי (14.7.2025, מקור ישן), החברה אינה טוענת לבעלות על תוכן שנוצר והורד במסגרת מנוי בתשלום, והמנוי כולל זכות לשימוש מסחרי. במקורות שנקראו לא ניתנה זכות מסחרית לתוצרי התוכנית החינמית. לפי תנאי השימוש (08/19/2026), כל שימוש אישי, עסקי או מסחרי בתוצרים הוא על אחריות המשתמש, ויש לציין שהתוכן נוצר בבינה מלאכותית כשהחוק דורש זאת או כדי למנוע הטעיה. רישיון מסחרי אינו מגן מפני תביעות זכויות יוצרים של צד שלישי.",
+        "watermark": "הורדות בתוכנית החינמית כוללות סימן מים. לפי תנאי המנוי (מקור ישן), מנויי Standard ומעלה מורידים בלי סימן מים. תנאי השימוש אוסרים להסיר, להסתיר או לשנות סימן מים, מטא־דאטה או תווית, אלא באישור בכתב מהחברה או כשהחוק מחייב.",
+        "source_ids": [
+          "s1",
+          "s3"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "ה־API מוצע ב־platform.minimax.io בחבילות וידאו חודשיות: Standard ב־1,000 דולר ל־3,760 נקודות וידאו, Pro ב־2,500 דולר ל־9,920, Scale ב־4,500 דולר ל־18,900, Business ב־6,000 דולר ל־26,780, וכן חבילה בהתאמה אישית. החבילות תומכות במודלי Hailuo 02 ו־Hailuo 2.3, ועדיין לא ב־MiniMax H3. ל־H3 יש API נפרד בתשלום לפי שימוש; מחירי היחידה שלו לא אומתו. משקלי H3 פתוחים להורדה ב־Hugging Face, ב־ModelScope וב־GitHub.",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      "integrations": {
+        "items": [],
+        "source_ids": []
+      },
+      "platforms": {
+        "items": [
+          "אתר",
+          "Android",
+          "iOS (דף ה־App Store לא נטען; לא אומת)"
+        ],
+        "source_ids": [
+          "s7",
+          "s8"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית. דף המודל H3 אינו כולל רשימת שפות ואינו מזכיר סנכרון שפתיים, ורשומת Google Play אינה מפרטת שפות נתמכות. שפת הממשק, הנחיות בעברית, דיבור בעברית ותצוגה מימין לשמאל לא אומתו.",
+        "source_ids": [
+          "s5",
+          "s7"
+        ]
+      },
+      "company": {
+        "name": "Nanonoble Pte. Ltd. (בעלת המותג: MiniMax)",
+        "country": null
+      },
+      "student_benefits": {
+        "text": null,
+        "source_ids": []
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://hailuoai.video/doc/terms-of-service.html",
+          "title": "תנאי השימוש של Hailuo AI",
+          "official": true,
+          "published": "2026-08-19",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://hailuoai.video/doc/privacy-policy.html",
+          "title": "מדיניות הפרטיות של Hailuo AI",
+          "official": true,
+          "published": "2025-12-09",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s3",
+          "url": "https://hailuoai.video/doc/payment-policy.html",
+          "title": "תנאי שירות המנויים של Hailuo AI",
+          "official": true,
+          "published": "2025-07-14",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s4",
+          "url": "https://hailuoai.video/pages/blog/paid-vs-free-ai-video-generators",
+          "title": "פוסט בבלוג הרשמי של Hailuo AI על תוכניות בתשלום מול חינם",
+          "official": true,
+          "published": "2026-07-27",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://design.minimax.io/h3",
+          "title": "הדף הרשמי של המודל MiniMax H3",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://platform.minimax.io/docs/guides/pricing-video",
+          "title": "מחירון הווידאו ב־API של MiniMax",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s7",
+          "url": "https://play.google.com/store/apps/details?id=ai.hailuo.video&hl=en_NZ",
+          "title": "Hailuo AI ב־Google Play",
+          "official": true,
+          "published": "2026-11-13",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s8",
+          "url": "https://hailuoai.video",
+          "title": "דף הבית של Hailuo AI (נבדק בדפדפן, בלי התחברות)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18"
+    },
+    {
+      "id": 5,
+      "slug": "luma",
+      "category_id": 6,
+      "name": "Luma",
+      "former_name": "Dream Machine",
+      "rename_note": "המוצר נמכר כיום בשם Luma, והאפליקציה עצמה נקראת Luma Agents. לפי Luma, Dream Machine פותח ב־2024 והתפתח ל־Luma Agents, שהושק ב־2026 ומחליף אותו כמוצר הראשי לכל המשתמשים, חדשים וקיימים. Dream Machine סגור להרשמות חדשות, לחידוש מנויים ולרכישת נקודות זיכוי; מנויים קיימים עדיין יכולים להתחבר, לנצל את יתרת הנקודות ולנהל או לבטל את החשבון. המקורות אינם נוקבים בתאריך מדויק, לא להשקה ולא לסגירה.",
+      "role": "סביבת יצירה בדפדפן להפקת וידאו, תמונות וקול במודלי Ray.",
+      "url": "https://lumalabs.ai/",
+      "logo": {
+        "file": null,
+        "file_dark": null,
+        "source_url": null,
+        "missing_reason": "עמוד ערכת המדיה הרשמי (lumalabs.ai/media-kit) נחסם לקריאה, ולכן לא אומתה כתובת של קובץ לוגו. הנכס הרשמי היחיד שאומת הוא תמונת שיתוף לרשתות, שאינה לוגו."
+      },
+      "status": {
+        "state": "שינוי שם",
+        "note": "זהו מעבר ממוצר למוצר ולא רק החלפת שם: ל־Dream Machine מערכת חיוב נפרדת, ונקודות זיכוי אינן עוברות בינו לבין Luma Agents. המקור אינו מוסר תאריך לסגירה להרשמות, וגם לא תאריך להפסקה מלאה של Dream Machine. מאמר העזרה הרשמי שמודיע על כך עודכן ב־22 במאי, בלי ציון שנה. לא נמצאה הודעה על רכישה או על סגירת החברה.",
+        "date_as_written": null,
+        "source_ids": [
+          "s7",
+          "s6",
+          "s3"
+        ]
+      },
+      "strengths": [
+        {
+          "lead": "שליטה מדויקת בעזרת פריימי מפתח",
+          "detail": "המודל Ray3.2 תומך בעד 16 פריימי מפתח בקליפ, לשליטה בקצב, בתנועה ובמסלול המצלמה.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "פלט HDR שמתאים לפוסט־פרודקשן",
+          "detail": "Ray3.2 מפיק HDR מקורי ברזולוציית 1080p עם ייצוא EXR ב־16 ביט. גם סקירת צד שלישי, שנכתבה על Ray3, מציינת את היכולת הזאת.",
+          "source_ids": [
+            "s5",
+            "s16"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "שינוי השוט אחרי היצירה",
+          "detail": "הכלי Enhanced Reframe משנה יחס תצוגה, מרחיב את הפריים או מחליף רקע תוך שמירה על התאורה המקורית. מעקב ההופעה קולט תנוחה, מחוות והבעות פנים של עד שמונה פרצופים.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "קליפים קצרים",
+          "detail": "האורך המרבי הרשמי ב־Ray3.2 הוא 20 שניות לקליפ. לפי סקירת צד שלישי, שנכתבה על Ray3, תוכן ארוך יותר מצריך חיבור בכלי חיצוני.",
+          "source_ids": [
+            "s5",
+            "s16"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "נקודות הזיכוי פוקעות, והגדרות גבוהות יקרות",
+          "detail": "נקודות שלא נוצלו פוקעות בסוף מחזור החיוב. לפי טבלת המחירים של ה־API, קליפ של 10 שניות ב־1080p עולה 1,200 נקודות, HDR מכפיל את המחיר ו־HDR עם EXR משלש אותו; תוכנית Plus כוללת 10,000 נקודות.",
+          "source_ids": [
+            "s4",
+            "s11",
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "פרטים עדינים לא תמיד יוצאים טוב",
+          "detail": "לפי סקירת צד שלישי: ידיים ואצבעות לא עקביות, טקסט בתוך הווידאו לא אמין, וקושי בפעולות אנושיות מסוימות ובדיוק מרחבי.",
+          "source_ids": [
+            "s16"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "לפי Luma, המודל פותח יחד עם יוצרים מתחומי הבידור, הפרסום והמשחקים; תוכניות Team ו־Enterprise פונות לצוותי קריאייטיב.",
+      "pricing": {
+        "verification": "אומת ממקור רשמי",
+        "summary_line": "מ־30 דולר לחודש בחיוב חודשי, או 25 דולר לחודש בחיוב שנתי. בעמוד המחירים אין תוכנית חינמית.",
+        "model": "מנוי עם נקודות זיכוי",
+        "plans": [
+          {
+            "name": "Plus",
+            "price": 30,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "10,000 נקודות זיכוי, מודלי תמונה ווידאו של Luma ושל צד שלישי, שימוש מסחרי, הרשאת עריכה לשותפים אורחים",
+            "notes": "הנקודות מתאפסות בכל מחזור חיוב, ויתרה שלא נוצלה פוקעת.",
+            "source_ids": [
+              "s1",
+              "s4"
+            ]
+          },
+          {
+            "name": "Plus",
+            "price": 25,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "10,000 נקודות זיכוי, מודלי תמונה ווידאו של Luma ושל צד שלישי, שימוש מסחרי, הרשאת עריכה לשותפים אורחים",
+            "notes": "300 דולר לשנה.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 90,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "40,000 נקודות זיכוי, פי 4 שימוש ב־Luma Agents, וכל מה שכלול ב־Plus",
+            "notes": null,
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 75,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "40,000 נקודות זיכוי, פי 4 שימוש ב־Luma Agents, וכל מה שכלול ב־Plus",
+            "notes": "900 דולר לשנה.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Ultra",
+            "price": 300,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "150,000 נקודות זיכוי, פי 15 שימוש ב־Luma Agents, וכל מה שכלול ב־Pro",
+            "notes": null,
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Ultra",
+            "price": 250,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "150,000 נקודות זיכוי, פי 15 שימוש ב־Luma Agents, וכל מה שכלול ב־Pro",
+            "notes": "3,000 דולר לשנה.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Team",
+            "price": null,
+            "price_text": "לפי הצעת מחיר",
+            "currency": null,
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "נקודות זיכוי משותפות לצוות, ניתוח שימוש, SSO, ניהול והוספה של חברי צוות",
+            "notes": "המחיר וכמות הנקודות לא מפורסמים. שימוש מסחרי לא מוזכר בשורת התוכנית.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "price_text": "לפי הצעת מחיר",
+            "currency": null,
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "התחייבויות ארגוניות, הדרכה והכשרה ייעודיות, כוונון מודל בהתאמה אישית",
+            "notes": "המחיר לא מפורסם. שימוש מסחרי לא מוזכר בשורת התוכנית.",
+            "source_ids": [
+              "s1"
+            ]
+          }
+        ],
+        "free_tier": "לא אומת. בעמוד המחירים הרשמי אין תוכנית חינמית. בדף הבית ובדף האפליקציה יש כפתור ניסיון חינם בלי פירוט של כמות או מגבלות, ומאמר העזרה הרשמי מזכיר חשבון חינמי שאליו חוזר החשבון אחרי ביטול מנוי. אף מקור רשמי לא מפרט מה כלול בו.",
+        "trial": "לא אומת. דף המידע הרשמי של Luma מציין שנקודות ניסיון חינמיות כלולות בכל התוכניות, בלי לפרט כמה. לפי מאמר העזרה, בכל הרשמה נדרש כרטיס אשראי, גם לחשבון חינמי וגם לחשבון ניסיון.",
+        "unverified_notes": "המחירים של Plus, Pro ו־Ultra אומתו מעמוד המחירים הרשמי, שאינו נושא תאריך, והם חוזרים גם בעמוד התמיכה הרשמי. מה שלא אומת: (1) מה בדיוק ניתן בחינם וכמה נקודות ניסיון מקבלים. סקירת צד שלישי מתארת תוכנית חינמית של כ־5 יצירות ביום ב־720p עם סימן מים ובלי שימוש מסחרי, אבל היא מתייחסת ל־Dream Machine ואף עמוד רשמי עדכני אינו מאשר אותה. (2) אם המחיר למשתמש או לחשבון. (3) מחירי Team ו־Enterprise. (4) קוד המטבע: העמוד מציג את הסימן $ בלי לנקוב במטבע. (5) שיעור ההנחה השנתית: העמוד מבטיח חיסכון של עד 20%, אבל המחירים המפורסמים מסתכמים בכ־17%. (6) מחירי ה־API בדולרים: מפורסמים רק בנקודות זיכוי."
+      },
+      "privacy": {
+        "text": "לפי תנאי השימוש, המשתמש מעניק ל־Luma רישיון עולמי, לא בלעדי ובלתי חוזר על התוכן. לא מתוארת אפשרות לסרב לאימון, ומחיקת חשבון אינה מבטלת רישיונות על תוכן שכבר שולב. מדיניות הפרטיות אינה מבחינה בין תוכניות. ב־API יש התחייבות שלא לאמן על התוכן: בעמוד ה־API היא מופיעה בתוכנית Scale, ולפי תיעוד המפתחים היא חלה על כל תוכניות ה־API (תנאי ה־API עצמם לא נקראו). תנאי האימון בתוכניות Team ו־Enterprise לא אומתו. שני המסמכים ישנים יחסית: תנאי השימוש עודכנו ב־14 במאי 2026, ומדיניות הפרטיות ב־20 באפריל 2026.",
+        "training_on_user_data": "כן, גם אצל מנויים בתשלום. לפי תנאי השימוש, בזמן מנוי בתשלום הרישיון על הקלט כולל את הזכות לאמן ולפתח מודלים, ואותה זכות חלה על התוצרים גם בשימוש חינמי וגם בתשלום. לפי מדיניות הפרטיות, המידע משמש לאימון, לפיתוח ולשיפור של המודלים.",
+        "source_ids": [
+          "s9",
+          "s10",
+          "s11",
+          "s12"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לפי תנאי השימוש, הלקוח הוא הבעלים של התוצרים. שימוש מסחרי מותר רק בתוצרים שנוצרו בזמן מנוי פעיל; על תוצרים שנוצרו מחוץ לתקופת מנוי מקבלת Luma רישיון רחב יותר, שכולל הצגה והפצה לציבור. בעמוד המחירים שימוש מסחרי מופיע בתוכנית Plus, ו־Pro ו־Ultra כוללות את כל מה שמתחתיהן; בשורות של Team ו־Enterprise הוא לא מוזכר.",
+        "watermark": "לא אומת לפי תוכנית. עמוד המחירים אינו מזכיר סימן מים באף תוכנית. לפי תנאי השימוש, Luma רשאית להטמיע בתוצרים סימני מים, אישורי תוכן ומטא־נתוני מקור, ואסור להסיר או לעקוף אותם.",
+        "source_ids": [
+          "s9",
+          "s1"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "ה־API של Luma מציע את Ray3.2 (טקסט לווידאו, תמונה לווידאו, וידאו לווידאו ו־Reframe, ב־1080p, HDR ו־EXR ב־16 ביט) ואת מודל התמונה Uni-1.1, עם ערכות פיתוח ל־Python ול־JavaScript/TypeScript. Ray3.2 נפתח ב־API לראשונה ב־9 ביוני 2026. יש שתי רמות חיוב: Build, תשלום לפי שימוש בלי מינימום, ו־Scale, קיבולת מוקצית דרך צוות המכירות. המחירים מפורסמים בנקודות זיכוי ולא בדולרים, והתיעוד מציין שתעריפי הווידאו עשויים להשתנות. עמוד ה־API מזכיר גם API ישן של Dream Machine, בלי תאריכי מעבר.",
+        "source_ids": [
+          "s11",
+          "s12",
+          "s5",
+          "s8"
+        ]
+      },
+      "integrations": {
+        "items": [
+          "Freepik",
+          "Envato",
+          "Fal",
+          "Comfy",
+          "Flora",
+          "Runware",
+          "Krea",
+          "Lovart",
+          "Weavy"
+        ],
+        "source_ids": [
+          "s11"
+        ]
+      },
+      "platforms": {
+        "items": [
+          "אתר",
+          "iOS (לפי דף המידע של Luma בלבד; קישור לחנות לא אומת)"
+        ],
+        "source_ids": [
+          "s4",
+          "s8"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית. דף האפליקציה מציין שאפשר להתאים סרטונים לכמה שפות עם סנכרון שפתיים, בלי לפרט אילו. ב־2 בספטמבר 2026 הודיעה Luma שערבית תהיה שפת הממשק הראשונה מלבד אנגלית ושהיא תושק בהמשך השנה; ההשקה עצמה לא אומתה, וההודעה אינה מזכירה עברית או תצוגה מימין לשמאל.",
+        "source_ids": [
+          "s4",
+          "s15",
+          "s14"
+        ]
+      },
+      "company": {
+        "name": "Luma AI, Inc.",
+        "country": "ארצות הברית"
+      },
+      "student_benefits": {
+        "text": "לא נמצאה הנחת סטודנטים. יש תוכנית חינוך עם טופס בקשה למחנכים וטופס התעניינות לשגרירי סטודנטים, אבל העמוד לא מציין הנחה, נקודות חינם או מחיר.",
+        "source_ids": [
+          "s13",
+          "s1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://lumalabs.ai/pricing",
+          "title": "עמוד המחירים של Luma",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://lumalabs.ai/learning-hub/dream-machine-support-pricing-information",
+          "title": "עמוד התמיכה של Luma בנושא מחירים",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://lumalabs.ai/",
+          "title": "דף הבית של Luma",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://lumalabs.ai/app",
+          "title": "דף האפליקציה Luma Agents",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://lumalabs.ai/news/introducing-ray-3-2",
+          "title": "ההכרזה על Ray3.2",
+          "official": true,
+          "published": "2026-06-09",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://lumalabs.ai/models/luma-dream-machine-evolved-into-luma-agents",
+          "title": "דף Luma על המעבר מ־Dream Machine ל־Luma Agents",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s7",
+          "url": "https://lumaai-help.freshdesk.com/support/solutions/articles/151000231240-what-is-luma-agents-and-how-is-it-different-from-dream-machine-",
+          "title": "מרכז העזרה של Luma: מהו Luma Agents ובמה הוא שונה מ־Dream Machine (עודכן ב־22 במאי, השנה לא מצוינת)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s8",
+          "url": "https://lumalabs.ai/llm-info",
+          "title": "דף המידע של Luma (עודכן ב־13 ביולי 2026)",
+          "official": true,
+          "published": "2026-07-13",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s9",
+          "url": "https://lumalabs.ai/legal/tos",
+          "title": "תנאי השימוש של Luma (עודכנו ב־14 במאי 2026)",
+          "official": true,
+          "published": "2026-05-14",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s10",
+          "url": "https://lumalabs.ai/legal/privacy",
+          "title": "מדיניות הפרטיות של Luma (עודכנה ב־20 באפריל 2026)",
+          "official": true,
+          "published": "2026-04-20",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s11",
+          "url": "https://lumalabs.ai/api",
+          "title": "עמוד ה־API של Luma",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s12",
+          "url": "https://docs.agents.lumalabs.ai/guides/pricing/",
+          "title": "תיעוד המפתחים של Luma: מחירי ה־API",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s13",
+          "url": "https://lumalabs.ai/education/educator",
+          "title": "תוכנית החינוך של Luma",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s14",
+          "url": "https://lumalabs.ai/news/luma-ai-to-launch-native-arabic-language-interface-for-saudi-and-arabic-speaking-creative-community",
+          "title": "הודעת Luma על ממשק בערבית",
+          "official": true,
+          "published": "2026-09-02",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s15",
+          "url": "https://lumalabs.ai/use-case/ai-multilingual-video-localization-generator",
+          "title": "דף Luma על התאמת סרטונים לשפות",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s16",
+          "url": "https://fast.io/resources/luma-ai-review-2026/",
+          "title": "סקירת צד שלישי מאת Tom Langridge באתר fast.io (עודכנה ב־26 ביוני 2026)",
+          "official": false,
+          "published": "2026-06-26",
+          "checked": "2026-11-18",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18"
+    },
+    {
+      "id": 6,
+      "slug": "pika",
+      "category_id": 6,
+      "name": "Pika",
+      "former_name": null,
+      "rename_note": null,
+      "role": "פלטפורמה ליצירה ולעריכה של סרטונים קצרים, תמונות וקול.",
+      "url": "https://pika.art/",
+      "logo": {
+        "file": null,
+        "file_dark": null,
+        "source_url": "https://pika.art/marketing/models/pika.svg",
+        "missing_reason": "הקובץ לא הורד. הכתובת מובילה לנכס מהאתר הרשמי, שמשמש שם לוגו של מודל Pika ברשימת המודלים, ולא לקובץ מערכת מיתוג; לא נמצא עמוד עיתונות או מיתוג, ואין קובץ לוגו ראשי נפרד."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": "התוכנית החינמית כוללת כיום 0 נקודות זיכוי חודשיות, כך לפי עמוד המחירים הרשמי. את מועד השינוי מוסר רק אתר מעקב של צד שלישי: לפיו הירידה מ־80 נקודות ל־0 נצפתה לראשונה ב־20 בספטמבר 2026. זהו תאריך תצפית ולא תאריך של הודעה רשמית. השמות Basic, Standard, Pro ו־Unlimited הם שמות של תוכניות ישנות, והאתר הקודם old.pika.art עדיין קיים. שם קודם, Pika Labs, לא אומת ממקור רשמי. בעמודים הרשמיים שנבדקו אין הודעה על רכישה, מיזוג, שינוי שם או סגירה.",
+        "date_as_written": null,
+        "source_ids": [
+          "s1",
+          "s8"
+        ]
+      },
+      "strengths": [
+        {
+          "lead": "הרבה מודלים בחשבון אחד",
+          "detail": "חשבון אחד נותן גישה למודלים של Pika עצמה, Pika 2.5 ו־Pika H3 Flex, ולמודלי וידאו, תמונה וקול של חברות אחרות. לפי עמוד המחירים, כל המודלים זמינים בכל תוכנית.",
+          "source_ids": [
+            "s2",
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "בלי סימן מים באף תוכנית",
+          "detail": "עמוד המחירים מציין הורדה בלי סימן מים בכל התוכניות, כולל Free.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "קל ומהיר לקליפים יצירתיים קצרים",
+          "detail": "לפי סקירת צד שלישי מאוגוסט 2026: מהכלים הקלים לשימוש בתחום, עם רינדור מהיר, ערכת אפקטים ויצירת וידאו מתמונה. הסקירה נכתבה לפני המחירון הנוכחי.",
+          "source_ids": [
+            "s9"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "בתוכנית החינמית אי אפשר ליצור בלי לשלם",
+          "detail": "התוכנית Free כוללת 0 נקודות זיכוי חודשיות ואינה כוללת רישיון מסחרי. כדי ליצור צריך לקנות חבילת נקודות או מנוי.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "עקביות חלשה בין שוטים",
+          "detail": "לפי סקירת צד שלישי: פנים, בגדים וצורות של חפצים עלולים להשתנות משוט לשוט, תנועה עלולה לעוות פרטים עדינים, ולוגואים ותוויות דורשים בדיקה פריים אחר פריים.",
+          "source_ids": [
+            "s9"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "אין אפליקציה ל־Android",
+          "detail": "לפי עמוד ההורדה, Pika אינה מפרסמת גרסת Android, ולכן אפליקציה בשם Pika ב־Google Play אינה שלה.",
+          "source_ids": [
+            "s6"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "יוצרי תוכן קצר לרשתות חברתיות, לפי סקירת צד שלישי; מפתחים ובוני סוכנים מקבלים מענה דרך Pika API Club ו־Pika MCP.",
+      "pricing": {
+        "verification": "אומת ממקור רשמי",
+        "summary_line": "מ־10 דולר לחודש בחיוב חודשי, או 8 דולר לחודש בחיוב שנתי. בתוכנית החינמית אין נקודות זיכוי חודשיות.",
+        "model": "מנוי עם נקודות זיכוי, לצד חבילות נקודות חד־פעמיות",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "0 נקודות זיכוי חודשיות (חבילות נקודות בלבד), כל המודלים, 2 סרטונים במקביל, 2 יצירות תמונה או קול במקביל, בלי סימן מים, בלי רישיון מסחרי",
+            "notes": "חבילות נקודות חד־פעמיות נמכרות בכל התוכניות לפי 60 נקודות לדולר. נקודות מחבילה תקפות רק ב־Pika Create (pika.art) וב־MCP, ולא ב־API, באפליקציית iOS או ב־old.pika.art. המעבר ל־0 נקודות חודשיות: המצב הנוכחי מאושר בעמוד הרשמי, והתאריך, 20 בספטמבר 2026, מגיע רק מאתר מעקב של צד שלישי.",
+            "source_ids": [
+              "s1",
+              "s8"
+            ]
+          },
+          {
+            "name": "Starter",
+            "price": 10,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "600 נקודות זיכוי בחודש, 2 סרטונים במקביל, 8 יצירות תמונה או קול במקביל, בלי סימן מים, רישיון מסחרי",
+            "notes": null,
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Starter",
+            "price": 8,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "600 נקודות זיכוי בחודש, 2 סרטונים במקביל, 8 יצירות תמונה או קול במקביל, בלי סימן מים, רישיון מסחרי",
+            "notes": "96 דולר לשנה, בתשלום מראש. הנקודות מתחדשות מדי חודש.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Creator",
+            "price": 35,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "2,600 נקודות זיכוי בחודש, 8 סרטונים במקביל, 32 יצירות תמונה או קול במקביל, בלי סימן מים, רישיון מסחרי",
+            "notes": null,
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Creator",
+            "price": 28,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "2,600 נקודות זיכוי בחודש, 8 סרטונים במקביל, 32 יצירות תמונה או קול במקביל, בלי סימן מים, רישיון מסחרי",
+            "notes": "336 דולר לשנה, בתשלום מראש. הנקודות מתחדשות מדי חודש.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Fancy",
+            "price": 95,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "8,550 נקודות זיכוי בחודש ומעלה, יצירה במקביל בלי הגבלה, תור מועדף, רישיון מסחרי",
+            "notes": "מחיר התחלתי: התוכנית מדורגת, והמחירים של הדרגות הגבוהות לא נאספו במלואם. גישה מוקדמת למודלים חדשים ניתנת רק מדרגת 440 דולר לחודש. שימוש בלי הגבלה ב־Wan 3.0 מוצג כהטבה לזמן מוגבל.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Fancy",
+            "price": 76,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "8,550 נקודות זיכוי בחודש ומעלה, יצירה במקביל בלי הגבלה, תור מועדף, רישיון מסחרי",
+            "notes": "מחיר התחלתי: מ־912 דולר לשנה, בתשלום מראש. התוכנית מדורגת, והמחירים של הדרגות הגבוהות לא נאספו במלואם. שימוש בלי הגבלה ב־Wan 3.0 מוצג כהטבה לזמן מוגבל.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "price_text": "לפי הצעת מחיר",
+            "currency": null,
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "תמיכה ייעודית, גישה מוקדמת למודלים חדשים, בלי סימן מים, רישיון מסחרי",
+            "notes": "מחיר בהתאמה אישית דרך צוות המכירות.",
+            "source_ids": [
+              "s1"
+            ]
+          }
+        ],
+        "free_tier": "התוכנית Free קבועה ועולה 0 דולר, אבל כוללת 0 נקודות זיכוי חודשיות: כדי ליצור צריך לקנות חבילת נקודות או מנוי. היא נותנת גישה לכל המודלים והורדה בלי סימן מים, ואינה כוללת רישיון מסחרי.",
+        "trial": "עמוד המחירים אינו מתאר תקופת ניסיון מוגבלת בזמן.",
+        "unverified_notes": "המחירים אומתו מעמוד המחירים הרשמי, שעודכן ב־28 באוקטובר 2026. מה שלא אומת: (1) אם המחיר למשתמש או לחשבון; העמוד מכנה את התוכניות תוכניות אישיות. (2) המחירים של הדרגות הגבוהות ב־Fancy ושל Enterprise. (3) מועד הירידה של התוכנית החינמית מ־80 נקודות ל־0: התאריך 20 בספטמבר 2026 מגיע רק מאתר מעקב של צד שלישי, כתאריך שבו השינוי נצפה לראשונה. (4) תשובות השאלות הנפוצות, בין השאר על החזרים ועל העברת נקודות בין חודשים: נטענו רק כותרות השאלות. (5) המחירים ברכישה מתוך אפליקציית iOS, שמתבצעת דרך App Store. סתירה שיש לדעת עליה: סקירת צד שלישי מ־17 באוגוסט 2026 עדיין מתארת תוכנית Basic עם 80 נקודות חודשיות ושימוש מסחרי; העמוד הרשמי מאוחר ממנה וגובר עליה."
+      },
+      "privacy": {
+        "text": "אף אחד מהמסמכים אינו מתאר הגדרה כללית שמאפשרת לסרב לאימון, ואין הבחנה בין Free, Starter, Creator ו־Fancy. עם מחיקת חשבון, Pika מתחייבת למאמץ סביר להוציא את התוכן מאימון עתידי, אבל תוכן שכבר שולב במודלים מאומנים עשוי להישאר. מידע אישי שנשלח דרך ה־API ישמש בדרך כלל לשיפור ולאימון של מודלים. בתוכנית Enterprise, אם יש הסכם כתוב נפרד, תנאי האימון שבו הם הקובעים. נתוני AI Self משמשים רק לאימון ה־AI Self של המשתמש ולא לאימון מודלים אחרים. תאריך העדכון של תנאי השימוש כתוב במקור 08/04/2026; מדיניות הפרטיות עודכנה ב־21 באוקטובר 2026.",
+        "training_on_user_data": "כן. לפי תנאי השימוש, Pika רשאית להשתמש בתוכן שעבר אנונימיזציה או צבירה, כולל קלט, תוצרים ואופן השימוש בשירות, כדי לאמן, לשפר ולפתח את המודלים שלה. לפי מדיניות הפרטיות, כשהחוק מתיר או בהסכמה, היא רשאית להשתמש בתוכן שהמשתמש שולח, כולל קלט ותוצרים, לשיפור המודלים.",
+        "source_ids": [
+          "s3",
+          "s4"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לפי תנאי השימוש, Pika אינה טוענת לבעלות על הקלט או על התוצרים, והזכויות בתוצרים נשארות אצל המשתמש; עם זאת, התנאים מציינים שייתכן שהתוצרים לא יזכו להגנת זכויות יוצרים. ברירת המחדל היא שימוש אישי ולא מסחרי, אלא אם התוכנית מתירה במפורש שימוש מסחרי: אין רישיון מסחרי ב־Free, ויש ב־Starter, Creator, Fancy ו־Enterprise. תוצרי ה־API מורשים לשימוש מסחרי לפי הסכם ה־API. המשתמש מעניק ל־Pika רישיון עולמי, לא בלעדי, להשתמש בתוכן לצורך הפעלת השירות, שיפורו וקידומו.",
+        "watermark": "בלי סימן מים בכל התוכניות, כולל Free, לפי עמוד המחירים. תנאי השימוש אינם מזכירים סימני מים.",
+        "source_ids": [
+          "s3",
+          "s1",
+          "s5"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "Pika API Club: חברות ב־10 דולר לחודש, שחוזרת מדי חודש כ־10 דולר בנקודות זיכוי ל־API, ומעבר לכך תשלום לפי שימוש בתעריפי חברים. מפתח אחד נותן גישה ליותר מ־100 מודלים של וידאו, תמונה, קול, מוזיקה, דיבור ומודלי שפה מכמה ספקים. מחירי ההשוואה בעמוד מתוארכים ל־10.24.26 וכוללים עמלת פלטפורמה של 5%. ל־API לארגונים יש תוכניות בהתאמה אישית, עם הנחות התחייבות של עד 70%, קיבולת שמורה ותמיכה ייעודית.",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      "integrations": {
+        "items": [
+          "Pika MCP",
+          "Pika for ChatGPT"
+        ],
+        "source_ids": [
+          "s2"
+        ]
+      },
+      "platforms": {
+        "items": [
+          "אתר",
+          "iOS"
+        ],
+        "source_ids": [
+          "s2",
+          "s6"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית. אף עמוד רשמי שנבדק אינו מפרט שפות ממשק, שפות להנחיות או שפות לסנכרון שפתיים. בדף הבית מופיעים מודלי קול רב־לשוניים, בלי לציין אילו שפות זמינות ב־Pika.",
+        "source_ids": [
+          "s2",
+          "s6",
+          "s7"
+        ]
+      },
+      "company": {
+        "name": "Mellis, Inc.",
+        "country": "ארצות הברית"
+      },
+      "student_benefits": {
+        "text": "לא נמצאה הנחת סטודנטים, לא בעמוד המחירים ולא ברשימת השאלות הנפוצות; התשובות עצמן לא נטענו.",
+        "source_ids": [
+          "s1",
+          "s7"
+        ]
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://pika.art/pricing",
+          "title": "עמוד המחירים של Pika (עודכן ב־28 באוקטובר 2026)",
+          "official": true,
+          "published": "2026-10-28",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://pika.art/",
+          "title": "דף הבית של Pika",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://pika.art/terms-of-service",
+          "title": "תנאי השימוש של Pika (תאריך העדכון כתוב במקור 08/04/2026)",
+          "official": true,
+          "published": "08/04/2026",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://pika.art/privacy-policy",
+          "title": "מדיניות הפרטיות של Pika (עודכנה ב־21 באוקטובר 2026)",
+          "official": true,
+          "published": "2026-10-21",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://dev.pika.art",
+          "title": "Pika API Club (מחירי ההשוואה מתוארכים ל־10.24.26)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://pika.art/download",
+          "title": "עמוד ההורדה של Pika",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s7",
+          "url": "https://pika.art/faq",
+          "title": "שאלות נפוצות של Pika (נטענו רק כותרות השאלות)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s8",
+          "url": "https://www.usagepricing.com/blueprint/activity/pika-labs-2026-09-20-free-tier-zero-credits",
+          "title": "אתר מעקב מחירים של צד שלישי, UsagePricing: התוכנית החינמית של Pika ירדה ל־0 נקודות (נצפה ב־20 בספטמבר 2026)",
+          "official": false,
+          "published": "2026-09-20",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s9",
+          "url": "https://diyai.io/ai-tools/video-generation/reviews/pika-ai-review/",
+          "title": "סקירת צד שלישי מאת Steven Jones באתר DIY AI",
+          "official": false,
+          "published": "2026-08-17",
+          "checked": "2026-11-18",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18"
+    },
+    {
+      "id": 7,
+      "slug": "higgsfield",
+      "category_id": 6,
+      "name": "Higgsfield",
+      "former_name": null,
+      "rename_note": null,
+      "role": "פלטפורמה ליצירת וידאו ותמונות במודלים משלה ובמודלים של חברות אחרות.",
+      "url": "https://higgsfield.ai",
+      "logo": {
+        "file": null,
+        "file_dark": null,
+        "source_url": null,
+        "missing_reason": "לא נמצא קובץ לוגו רשמי: בעמוד האודות אין ערכת עיתונות או ערכת מותג, והלוגואים שמוצגים בו הם של שותפים."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": "תנאי שימוש ומדיניות פרטיות חדשים נכנסו לתוקף בקיץ 2026. לא נמצאה הודעה על סגירה, רכישה או שינוי שם.",
+        "date_as_written": "effective August 27, 2026",
+        "source_ids": [
+          "s6",
+          "s7"
+        ]
+      },
+      "strengths": [
+        {
+          "lead": "הרבה מודלים בחשבון אחד",
+          "detail": "לצד המודלים של Higgsfield עצמה (Soul, Popcorn, Higgsfield DOP) זמינים באותו מקום גם מודלי וידאו של חברות אחרות, בהם Veo, Seedance, Kling, Wan, Grok Imagine ו-MiniMax Hailuo.",
+          "source_ids": [
+            "s9",
+            "s10"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "שכבת צילום קולנועי משלה",
+          "detail": "Higgsfield DOP מתואר כשכבה של החברה עצמה, עם אפקטים חזותיים ותנועות מצלמה מוכנות ליצירת וידאו מתמונה.",
+          "source_ids": [
+            "s9"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "גישה רחבה למפתחים ולסוכנים",
+          "detail": "ממשק API בתשלום לפי שימוש עם ערכות פיתוח ל-Python ול-TypeScript, וחיבורי MCP ו-CLI לסוכנים כמו Claude או Cursor.",
+          "source_ids": [
+            "s8"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "התוכן שלכם עשוי לשמש לאימון מודלים",
+          "detail": "לפי הסיכום הרשמי של התנאים, התוכן עוזר לשפר את המודלים ואין אפשרות כללית לסרב. הדרכים היחידות שצוינו להפסיק זאת הן מחיקת החשבון או הסכם ארגוני, ותוכן שכבר נכנס למודלים מאומנים לא מוסר מהם.",
+          "source_ids": [
+            "s6",
+            "s5"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "התוכנית החינמית בלי נקודות זיכוי חודשיות",
+          "detail": "התוכנית החינמית אינה כוללת הקצאה חודשית או יומית של נקודות זיכוי, והתוצרים שלה עשויים לשאת סימן מים גלוי שנשאר על אותם קבצים גם אחרי שדרוג.",
+          "source_ids": [
+            "s4"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "מגבלות על חבילות נקודות זיכוי",
+          "detail": "נקודות זיכוי מחבילות פגות 90 יום אחרי הרכישה. חבילות ומילוי אוטומטי דורשים מנוי פעיל, ומילוי אוטומטי אינו זמין בתוכנית Starter.",
+          "source_ids": [
+            "s2"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "יוצרי תוכן וצוותים שמפיקים מודעות, תוכן לרשתות חברתיות ועבודות ללקוחות.",
+      "pricing": {
+        "verification": "אומת חלקית",
+        "summary_line": "מ־19 דולר לחודש בחיוב חודשי. יש תוכנית חינמית בלי נקודות זיכוי חודשיות.",
+        "model": "מנוי עם נקודות זיכוי",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "גישה למבחר מצומצם של מודלים, בלי נקודות זיכוי חודשיות, יצירה אחת בכל פעם",
+            "notes": "גם יצירה במודלים של התוכנית החינמית מורידה נקודות זיכוי, ולכן נדרשות נקודות זיכוי או יצירות חינם.",
+            "source_ids": [
+              "s4",
+              "s3",
+              "s1"
+            ]
+          },
+          {
+            "name": "Starter",
+            "price": 19,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "270 נקודות זיכוי בחודש, 2 סרטונים במקביל",
+            "notes": "המחיר נקרא בעמוד התמחור הרשמי. מאמר רשמי מ־24 באוקטובר 2026 נקב ב־15 דולר וב־200 נקודות זיכוי, נתון שאינו תואם את העמוד.",
+            "source_ids": [
+              "s1",
+              "s3"
+            ]
+          },
+          {
+            "name": "Starter",
+            "price": null,
+            "price_text": "המחיר הרגיל לא אומת",
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "270 נקודות זיכוי בחודש",
+            "notes": "מבצע זמני (Black Friday): בעמוד הוצג 19 דולר לחודש בחיוב שנתי. המחיר השנתי הרגיל לא אומת.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Plus",
+            "price": 59,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "1,200 נקודות זיכוי בחודש, 6 סרטונים במקביל",
+            "notes": "מבצע זמני (Black Friday): 47 דולר בחיוב חודשי, והחידוש במחיר הרגיל של 59 דולר.",
+            "source_ids": [
+              "s1",
+              "s3"
+            ]
+          },
+          {
+            "name": "Plus",
+            "price": null,
+            "price_text": "המחיר הרגיל לא אומת",
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "1,200 נקודות זיכוי בחודש",
+            "notes": "מבצע זמני (Black Friday): 33 דולר לחודש בחיוב שנתי. המחיר השנתי הרגיל לא אומת.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Ultra",
+            "price": 129,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "3,000 נקודות זיכוי בחודש (אפשר לבחור גם 6,000 או 9,000), 8 סרטונים במקביל",
+            "notes": "מבצע זמני (Black Friday): 79 דולר בחיוב חודשי, והחידוש במחיר הרגיל של 129 דולר. מחירי האפשרויות של 6,000 ו־9,000 נקודות זיכוי לא נקראו.",
+            "source_ids": [
+              "s1",
+              "s3"
+            ]
+          },
+          {
+            "name": "Ultra",
+            "price": null,
+            "price_text": "המחיר הרגיל לא אומת",
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "3,000 נקודות זיכוי בחודש",
+            "notes": "מבצע זמני (Black Friday): 50 דולר לחודש בחיוב שנתי. המחיר השנתי הרגיל לא אומת.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Team",
+            "price": 79,
+            "price_text": null,
+            "currency": "USD",
+            "per": "למשתמש",
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "1,000 נקודות זיכוי לכל משתמש במאגר משותף, ל־2 עד 9 חברי צוות",
+            "notes": "המחיר מופיע בשני מאמרים רשמיים ולא נקרא בעמוד התמחור עצמו.",
+            "source_ids": [
+              "s2",
+              "s3"
+            ]
+          },
+          {
+            "name": "Scale",
+            "price": 215,
+            "price_text": null,
+            "currency": "USD",
+            "per": "למשתמש",
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "2,500 נקודות זיכוי לכל משתמש במאגר משותף, ל־5 עד 15 חברי צוות, כניסה אחודה בסיסית",
+            "notes": "המחיר מופיע בשני מאמרים רשמיים ולא נקרא בעמוד התמחור עצמו.",
+            "source_ids": [
+              "s2",
+              "s3"
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "price_text": "לפי הצעת מחיר",
+            "currency": "USD",
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "תנאים מותאמים, שיפוי משפטי, והחרגה של קלט ופלט של הלקוח מאימון מודלים",
+            "notes": null,
+            "source_ids": [
+              "s2",
+              "s3"
+            ]
+          }
+        ],
+        "free_tier": "תוכנית חינמית בלי נקודות זיכוי חודשיות או יומיות, עם יצירה אחת בכל פעם ומבחר מצומצם של מודלים. המודלים שסומנו בה, Nano Banana Pro ו-FLUX.2 Pro, הם מודלים של תמונות. במקורות שנקראו לא צוין מודל וידאו חינמי.",
+        "trial": "הצעות ניסיון מותאמות אישית ואינן זמינות בכל חשבון. בנוסף מוצעת גישה חד־פעמית בתשלום של 3 דולר: 40 נקודות זיכוי ויומיים של שימוש ללא הגבלה ב-Higgsfield Soul 2.0.",
+        "unverified_notes": "המחירים החודשיים הרגילים של Starter, Plus ו-Ultra נקראו בעמוד התמחור הרשמי ב־18 בנובמבר 2026. המחירים השנתיים הרגילים לא אומתו: בזמן הבדיקה רץ מבצע Black Friday זמני (עד 45% הנחה בחיוב חודשי ועד 64% בחיוב שנתי), והעמוד הציג רק מחירי מבצע שנתיים. מאמר רשמי מ־24 באוקטובר 2026 נקב במחירים נמוכים יותר (Starter ב־15 דולר, Plus ב־49 דולר); לא נמצאה הודעה רשמית על העלאת מחיר. מחירי Team ו-Scale, מחירי חבילות נקודות הזיכוי ועלות היצירה בכל מודל לא אומתו בעמוד התמחור. המחירים אינם כוללים מע״מ ומיסים מקומיים. ה-API מתומחר בנפרד."
+      },
+      "privacy": {
+        "text": "לפי Higgsfield, מחיקת תוכן או מחיקת החשבון מפסיקה שימוש עתידי לאימון, אבל תוכן שכבר נכנס למודלים מאומנים לא מוסר. תוכן שנמחק ניתן לשחזור במשך 30 יום. רק בתוכנית Enterprise נאמר שקלט ופלט של הלקוח אינם משמשים לאימון; על אף תוכנית אישית בתשלום לא נאמר דבר כזה. הנוסח המלא של התנאים העדכניים לא נקרא, והמידע מבוסס על סיכומים רשמיים שאינם מחייבים ועל גרסה קודמת של התנאים.",
+        "training_on_user_data": "המקור הרשמי אומר שהתוכן עשוי לשמש לאימון ולשיפור המודלים, ולא מתוארת אפשרות כללית לסרב. בהסכם ארגוני הנתונים אינם משמשים לאימון.",
+        "source_ids": [
+          "s5",
+          "s6",
+          "s3",
+          "s7"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לפי Higgsfield, התוצרים בבעלות המשתמש והזכויות נשארות אצלו גם אחרי ביטול המנוי. לגבי התוכנית החינמית יש סתירה בין שני מקורות רשמיים: מאמר עזרה מ־2 באוגוסט 2026 אומר שזכויות השימוש המסחרי זהות לכל המשתמשים, ואילו מאמר התמחור מ־24 באוקטובר 2026 מציין שתוצרי התוכנית החינמית אינם מותרים לשימוש מסחרי. הסתירה לא הוכרעה, כי הנוסח המלא של התנאים העדכניים לא נקרא. שיפוי משפטי ניתן רק בתוכנית Enterprise.",
+        "watermark": "הורדה בלי סימן מים כלולה בתוכניות בתשלום. תוצרי התוכנית החינמית עשויים לשאת סימן מים גלוי, שמוטמע בזמן היצירה ונשאר על אותם קבצים גם אחרי שדרוג.",
+        "source_ids": [
+          "s5",
+          "s6",
+          "s2",
+          "s4"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "ה-API הוא מוצר נפרד מהמנוי באתר: תשלום לפי שימוש מיתרה משולמת מראש בדולרים, עם טעינה מינימלית של 5 דולר. וידאו מחויב לפי שנייה ותמונות לפי תמונה, ומחויבות רק יצירות שהסתיימו בהצלחה. היתרה פגה שנה אחרי הטעינה. מפתח אחד פותח את כל המודלים שבקטלוג ה-API.",
+        "source_ids": [
+          "s8"
+        ]
+      },
+      "integrations": {
+        "items": [
+          "ערכות פיתוח ל-Python ול-TypeScript",
+          "חיבורי MCP ו-CLI לסוכנים כמו Claude ו-Cursor",
+          "ChatGPT Plugin",
+          "Reference Extension לדפדפן Chrome"
+        ],
+        "source_ids": [
+          "s8"
+        ]
+      },
+      "platforms": {
+        "items": [
+          "אתר"
+        ],
+        "source_ids": [
+          "s10"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית. גם שפות ממשק ותצוגה מימין לשמאל אינן מוזכרות במקורות שנקראו.",
+        "source_ids": [
+          "s10",
+          "s9"
+        ]
+      },
+      "company": {
+        "name": "Higgsfield Inc.",
+        "country": "ארצות הברית"
+      },
+      "student_benefits": {
+        "text": null,
+        "source_ids": []
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://higgsfield.ai/pricing",
+          "title": "עמוד התמחור הרשמי של Higgsfield (נקרא בדפדפן)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://higgsfield.ai/blog/higgsfield-pricing-explained",
+          "title": "Higgsfield pricing explained",
+          "official": true,
+          "published": "2026-10-24",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://geo.higgsfield.ai/task/blog/higgsfield-ai-pricing-plans",
+          "title": "Higgsfield AI pricing plans",
+          "official": true,
+          "published": "2026-11-05",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://higgsfield.ai/creator-hub/help-center/plans/what-does-the-free-plan-include",
+          "title": "What does the free plan include",
+          "official": true,
+          "published": "2026-11-11",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://higgsfield.ai/creator-hub/help-center/account-and-privacy/who-owns-my-generations-and-can-i-use-them-commercially",
+          "title": "Who owns my generations and can I use them commercially",
+          "official": true,
+          "published": "2026-08-02",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://higgsfield.ai/blog/terms-of-use-privacy-policy-update",
+          "title": "סיכום רשמי של עדכון תנאי השימוש ומדיניות הפרטיות",
+          "official": true,
+          "published": "2026-07-25",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s7",
+          "url": "https://higgsfield.ai/terms-of-use-agreement-23-07-2026",
+          "title": "תנאי השימוש, גרסה קודמת שהוחלפה",
+          "official": true,
+          "published": "2026-07-23",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s8",
+          "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+          "title": "What is the Higgsfield API",
+          "official": true,
+          "published": "2026-09-16",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s9",
+          "url": "https://higgsfield.ai/creator-hub/help-center/ai-models/which-ai-model-should-i-use",
+          "title": "Which AI model should I use",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s10",
+          "url": "https://higgsfield.ai/about",
+          "title": "עמוד האודות של Higgsfield",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18"
+    },
+    {
+      "id": 8,
+      "slug": "vidu",
+      "category_id": 6,
+      "name": "Vidu",
+      "former_name": null,
+      "rename_note": null,
+      "role": "מחולל וידאו מטקסט, מתמונה ומחומרי ייחוס, על בסיס מודלים משלו.",
+      "url": "https://www.vidu.com",
+      "logo": {
+        "file": null,
+        "file_dark": null,
+        "source_url": null,
+        "missing_reason": "לא נמצא קובץ לוגו רשמי: לא אותרו ערכת עיתונות או עמוד מותג."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": "Vidu Q4 Preview, גרסת תצוגה מקדימה פומבית של מודל הדגל הבא, הוכרז בסתיו 2026 עם מחירי השקה. לא נמצאה הודעה על סגירה, רכישה או שינוי שם.",
+        "date_as_written": "October 7, 2026",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      "strengths": [
+        {
+          "lead": "רזולוציה גבוהה במודל החדש",
+          "detail": "Vidu Q4 Preview מפיק וידאו ב־2K או ב־4K בעומק צבע של 10 ביט, וגם ב־540p, ב־720p וב־1080p.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "שליטה רחבה בעזרת חומרי ייחוס",
+          "detail": "Vidu Q4 Preview מקבל עד 15 תמונות ייחוס ועד 3 קטעי שמע לייחוס.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "קטעים ארוכים יחסית וגישה ב-API",
+          "detail": "לפי מסמכי ה-API, אורך קטע הוא 1 עד 16 שניות במודל viduq3-pro ו־3 עד 16 שניות במודל viduq4-preview.",
+          "source_ids": [
+            "s2"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "אין החזרים כספיים",
+          "detail": "בעמוד התמחור הרשמי נכתב שלא ניתנים החזרים, וביטול מנוי נעשה בפנייה לתמיכה בדואר אלקטרוני.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "נקודות הזיכוי של המנוי פגות מהר",
+          "detail": "נקודות זיכוי שכלולות במנוי תקפות 30 יום בלבד. נקודות זיכוי שנרכשו בנפרד ונקודות בונוס תקפות שנתיים.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "התוצר החינמי מוגבל",
+          "detail": "לפי בלוג רשמי ממאי 2026, התוכנית החינמית מוגבלת ל־720p, כל סרטון נושא סימן מים גלוי בפינה הימנית התחתונה, והסרטונים אינם מותרים לשימוש מסחרי. המקור בן כחצי שנה.",
+          "source_ids": [
+            "s3"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "יוצרים עצמאיים, סטודיואים קטנים וצוותי הפקה.",
+      "pricing": {
+        "verification": "אומת חלקית",
+        "summary_line": null,
+        "model": "מנוי עם נקודות זיכוי",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "שימוש במודל Q4 ב־540p בעלות של 2 נקודות זיכוי לשנייה, 10 חומרי ייחוס בחודש, נקודות בונוס בהתחברות",
+            "notes": "כמות נקודות הזיכוי החינמיות לא צוינה בחלק שנקרא מהעמוד.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Standard",
+            "price": 8.25,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "800 נקודות זיכוי בחודש, סרטונים של 3 עד 16 שניות, עד 4 סרטונים בבת אחת, שימוש מסחרי בתוצרים",
+            "notes": "על הכרטיס מופיע הכיתוב Limited-time offer, ולא ברור אם הוא מתייחס למחיר. לצד המחיר מופיע 10 דולר מחוק.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Standard",
+            "price": null,
+            "price_text": "לא אומת (הסקה: כ־10 דולר)",
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "800 נקודות זיכוי בחודש",
+            "notes": "הסקה: הסכום המחוק שמופיע בתצוגת החיוב השנתי הוא כנראה המחיר בחיוב חודשי. העמוד אינו אומר זאת, ותצוגת החיוב החודשי לא נקראה.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Premium",
+            "price": 35.42,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "3,500 נקודות זיכוי בחודש, מכסת 20 סרטונים ביום בשעות השפל, שימוש מסחרי בתוצרים",
+            "notes": "לצד המחיר מופיע 43 דולר מחוק.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Premium",
+            "price": null,
+            "price_text": "לא אומת (הסקה: כ־43 דולר)",
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "3,500 נקודות זיכוי בחודש",
+            "notes": "הסקה: הסכום המחוק שמופיע בתצוגת החיוב השנתי הוא כנראה המחיר בחיוב חודשי. העמוד אינו אומר זאת, ותצוגת החיוב החודשי לא נקראה.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Ultimate",
+            "price": 95.83,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "מכסת 200 סרטונים ביום בשעות השפל, שימוש מסחרי בתוצרים",
+            "notes": "כמות נקודות הזיכוי אינה ברורה: על הכרטיס נכתב 10,000 בחודש (לצד הצעה לזמן מוגבל עם הנתונים 20,000 ו־10,000), ובטבלת ההשוואה באותו עמוד נכתב 8,000. לצד המחיר מופיע 115 דולר מחוק.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Ultimate",
+            "price": null,
+            "price_text": "לא אומת (הסקה: כ־115 דולר)",
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": null,
+            "notes": "הסקה: הסכום המחוק שמופיע בתצוגת החיוב השנתי הוא כנראה המחיר בחיוב חודשי. העמוד אינו אומר זאת, ותצוגת החיוב החודשי לא נקראה. כמות נקודות הזיכוי שנויה בסתירה באותו עמוד (10,000 מול 8,000).",
+            "source_ids": [
+              "s1"
+            ]
+          }
+        ],
+        "free_tier": "תוכנית חינמית ב־0 דולר: שימוש במודל Q4 ב־540p בעלות של 2 נקודות זיכוי לשנייה ו־10 חומרי ייחוס בחודש. משתמשים חדשים מקבלים נקודות זיכוי לניסיון בהרשמה, והתחברות יומית מזכה בנקודות נוספות; הכמויות לא צוינו. לפי בלוג רשמי ממאי 2026, התוצר החינמי מוגבל ל־720p, נושא סימן מים ואינו מותר לשימוש מסחרי.",
+        "trial": null,
+        "unverified_notes": "נקראה רק תצוגת החיוב השנתי בעמוד התמחור הרשמי, ב־18 בנובמבר 2026. המחירים בחיוב חודשי לא אומתו: הסכומים המחוקים (10, 43 ו־115 דולר) הם כנראה המחירים החודשיים, אבל זו הסקה שהעמוד אינו מאשר. לא נכתבה שורת סיכום, כי על כרטיס Standard מופיע הכיתוב Limited-time offer ולא ברור אם המחיר שלו הוא מחיר מבצע. בתוכנית Ultimate יש סתירה בתוך העמוד בין 10,000 ל־8,000 נקודות זיכוי בחודש. לא צוין אם המחיר למשתמש או לחשבון. בטבלת ההשוואה יש שורות על שימוש מסחרי ועל הורדה בלי סימן מים, אבל הסימון לכל תוכנית לא נקרא. מחירי ה-API מתומחרים בנפרד, הוצגו ביואן סיני ונקראו רק בחלקם."
+      },
+      "privacy": {
+        "text": "לא אומת. מדיניות הפרטיות של פלטפורמת ה-API נטענה רק כתוכן עניינים, עם קטעים על שמירה ומחיקה של מידע, ולא נקרא בה דבר על אימון מודלים. תנאי השימוש ומדיניות הפרטיות של האתר לצרכנים לא אותרו.",
+        "training_on_user_data": null,
+        "source_ids": [
+          "s7"
+        ]
+      },
+      "commercial_rights": {
+        "text": "בכרטיסי התוכניות Standard, Premium ו-Ultimate בעמוד התמחור הרשמי נכתב שמותר להשתמש בתוצרים באופן מסחרי. לפי בלוג רשמי ממאי 2026, סרטוני התוכנית החינמית אינם מותרים לשימוש מסחרי. נוסח תנאי השימוש לא נקרא, ולכן היקף הרישיון לא אומת.",
+        "watermark": "לפי בלוג רשמי ממאי 2026, סרטוני התוכנית החינמית נושאים סימן מים גלוי בפינה הימנית התחתונה, והסרתו קשורה לתוכניות בתשלום. באילו תוכניות בדיוק ניתן להוריד בלי סימן מים לא אומת.",
+        "source_ids": [
+          "s1",
+          "s3",
+          "s6"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "פלטפורמת API רשמית בכתובת platform.vidu.com, עם מודלי Vidu בלבד (Q4 Preview, Q3, Q2, Q1 ו-Vidu 2.0) ועם יכולות נוספות כמו דמות דיגיטלית, שמע ויצירת תמונות. החיוב בנקודות זיכוי לפי שנייה, למשל 78 נקודות לשנייה במודל viduq4-preview ב־4K. המחירים במסמכים הוצגו ביואן סיני ונקראו רק בחלקם.",
+        "source_ids": [
+          "s2",
+          "s5"
+        ]
+      },
+      "integrations": {
+        "items": [],
+        "source_ids": []
+      },
+      "platforms": {
+        "items": [
+          "אתר"
+        ],
+        "source_ids": [
+          "s5",
+          "s3"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית. גם שפות ממשק, שפות לסנכרון שפתיים ותצוגה מימין לשמאל אינן מוזכרות במקורות הרשמיים שנקראו.",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      "company": {
+        "name": "Shengshu Technology",
+        "country": null
+      },
+      "student_benefits": {
+        "text": null,
+        "source_ids": []
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.vidu.com/pricing",
+          "title": "עמוד התמחור הרשמי של Vidu (נקרא בדפדפן, תצוגת חיוב שנתי)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://platform.vidu.com/docs/overview/pricing",
+          "title": "מסמכי התמחור של Vidu API (נקראו בחלקם)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://www.vidu.com/blog/free-ai-animation",
+          "title": "Free AI animation, בלוג רשמי של Vidu",
+          "official": true,
+          "published": "2026-05-26",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s5",
+          "url": "https://www.webull.com/news/15708262392742912",
+          "title": "הודעה לעיתונות של החברה על Vidu Q4 Preview (נקראה בעותק מופץ באתר Webull)",
+          "official": true,
+          "published": "2026-10-07",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://platform.vidu.com/docs/terms-and-policies/terms-of-use",
+          "title": "תנאי השימוש של Vidu API (נטענו כותרות בלבד)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s7",
+          "url": "https://platform.vidu.com/docs/terms-and-policies/privacy-policy",
+          "title": "מדיניות הפרטיות של Vidu API (נטען תוכן עניינים בלבד)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18"
+    },
+    {
+      "id": 9,
+      "slug": "dreamina",
+      "category_id": 6,
+      "name": "Dreamina",
+      "former_name": null,
+      "rename_note": null,
+      "role": "יצירת וידאו מטקסט, מתמונות ומקובצי ייחוס באמצעות מודלי Seedance.",
+      "url": "https://dreamina.capcut.com",
+      "logo": {
+        "file": null,
+        "file_dark": null,
+        "source_url": null,
+        "missing_reason": "לא נמצא קובץ לוגו רשמי; לא אותרו ערכת עיתונות או דף מותג."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": "מערך התוכניות הוחלף: דף המחירים מציג את Pro, Max ו־Standard הקודמות כמחירים היסטוריים, והתוכניות הנוכחיות הן Basic, Standard, Advanced ו־Ultra. ההצעה הנוכחית בתוקף מהתאריך שלהלן. באתר יש גם דף רשמי על Seedance 2.5 (מ־24 באוקטובר 2026), אך מועד ההשקה של המודל והכללתו בתוכניות לא אומתו.",
+        "date_as_written": "2026.10.21",
+        "source_ids": [
+          "s1",
+          "s4"
+        ]
+      },
+      "strengths": [
+        {
+          "lead": "כמה שוטים בסרטון אחד",
+          "detail": "לפי סקירת צד שלישי (Curious Refuge), יצירה של כמה שוטים בתוך סרטון אחד היא אחת היכולות המרכזיות של Seedance 2.0.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "שמע וסנכרון שפתיים יחד עם הווידאו",
+          "detail": "לפי אותה סקירת צד שלישי, השמע וסנכרון השפתיים נוצרים יחד עם הסרטון.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "עד 12 קובצי קלט מסוגים שונים",
+          "detail": "לפי סקירת צד שלישי ישנה (eWeek, פברואר 2026), המודל מקבל עד 12 קבצים: תמונות לסגנון, וידאו לתנועה ושמע לקצב.",
+          "source_ids": [
+            "s6"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "סעיף נגד שימוש מסחרי בתנאים האמריקאיים",
+          "detail": "בתנאי השימוש לארצות הברית המשתמש מתחייב לא להשתמש בשירות או בתוכן שבו למטרות מסחריות, ובמקום אחר נזכר שימוש מסחרי ״אם הותר״ בלי לפרט מתי. הסתירה לא מיושבת בטקסט, ולא נמצא רישיון מסחרי לפי תוכנית.",
+          "source_ids": [
+            "s2"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "המידע עשוי לשמש לאימון מודלים",
+          "detail": "מדיניות הפרטיות לארצות הברית מתירה שימוש במידע לאימון ולשיפור המודלים, ולא מתוארת בה אפשרות לסרב לכך.",
+          "source_ids": [
+            "s3"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "פגמים ועיוותים נראים לעין",
+          "detail": "לפי סקירת צד שלישי (Curious Refuge), בתוצרים נראים פגמים ופרטים מעוותים, ושולי הרקע נראים מלוטשים מדי ופלסטיים.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "לפי דף המחירים הרשמי: תהליכי עבודה מקצועיים ושימושי פרסום.",
+      "pricing": {
+        "verification": "אומת חלקית",
+        "summary_line": "מ־15 דולר לחודש בחיוב חודשי, לפי המחירון בארצות הברית. יש נקודות זיכוי יומיות בחינם.",
+        "model": "מנוי עם נקודות זיכוי. ברזולוציית 720p שנייה עולה 17 נקודות ב־Seedance 2.0 Pro, 8 ב־Fast ו־5 ב־Mini.",
+        "plans": [
+          {
+            "name": "Basic",
+            "price": 15,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "1,575 נקודות זיכוי בחודש (לפי הדף, 19 סרטונים של 10 שניות); הורדה בלי סימן המים של Dreamina",
+            "notes": "מחיר מבצע לחודש הראשון בלבד: 0.29 דולר. מהחודש השני 15 דולר לחודש.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Standard",
+            "price": 36,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "3,885 נקודות זיכוי בחודש (לפי הדף, 48 סרטונים של 10 שניות); הורדה בלי סימן המים של Dreamina",
+            "notes": "מחיר מבצע לחודש הראשון בלבד: 21.60 דולר. מהחודש השני 36 דולר לחודש.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Advanced",
+            "price": 159,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "17,600 נקודות זיכוי בחודש (לפי הדף, 220 סרטונים של 10 שניות); הורדה בלי סימן המים של Dreamina",
+            "notes": "מחיר מבצע לחודש הראשון בלבד: 95.40 דולר. מהחודש השני 159 דולר לחודש.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Ultra",
+            "price": 520,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "59,000 נקודות זיכוי בחודש (לפי הדף, 737 סרטונים של 10 שניות); הורדה בלי סימן המים של Dreamina",
+            "notes": "מחיר מבצע לחודש הראשון בלבד: 312 דולר. מהחודש השני 520 דולר לחודש. התוכנית מופיעה בדף המחירים אך לא בתנאי השימוש האמריקאיים מינואר 2026.",
+            "source_ids": [
+              "s1",
+              "s2"
+            ]
+          }
+        ],
+        "free_tier": "נקודות זיכוי יומיות בחינם לניסוי של Seedance 2.0. הכמות לא מצוינת, ולפי הדף כמות הנקודות, סימני המים והגישה למודלים עשויים להשתנות.",
+        "trial": "המקור לא מתאר תקופת ניסיון. מחירי החודש הראשון הם הנחת היכרות על תוכניות בתשלום, לא ניסיון חינם. לפי התנאים האמריקאיים, המנוי מתחדש אוטומטית, והחזר מלא ניתן בתוך 14 ימים קלנדריים מתחילת המנוי רק אם לא נעשה שום שימוש בשירותי הפרימיום.",
+        "unverified_notes": "אומתו רק המחירים החודשיים בדולרים לארצות הברית. מחירי החיוב השנתי והרבעוני (הדף מציין 40% הנחה) לא הופיעו בטקסט שנטען. הדף מציין שבשווקים אחרים המחירים מקומיים ומשתנים; המחירים בישראל לא נבדקו. המקור לא מציין אם המחיר לחשבון או למשתמש. סתירה בין מקורות רשמיים: תנאי השימוש האמריקאיים (עודכנו ב־22 בינואר 2026) מונים רק את Basic, Standard ו־Advanced."
+      },
+      "privacy": {
+        "text": "נקראה רק מדיניות הפרטיות לארצות הברית (עודכנה ב־30 באפריל 2026), והיא חלה על משתמשים אמריקאים. לפיה תוכן המשתמשים נסרק, מנותח ונבדק, והמידע משותף עם חברות קשורות של TikTok USDS. מקום אחסון המידע לא מצוין. המדיניות שחלה על משתמשים בישראל לא נקראה.",
+        "training_on_user_data": "לפי המדיניות האמריקאית, המידע עשוי לשמש כדי לאמן ולשפר את הטכנולוגיה של החברה, ובכלל זה מודלים של למידת מכונה. לא מתוארת אפשרות לסרב לכך, ולא מצוין הבדל בין תוכניות.",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לא ברור מהתנאים הרשמיים; נקראו רק תנאי השימוש לארצות הברית. לפיהם המשתמש הוא הבעלים של הקלט ושל התוצרים כל עוד הוא עומד בתנאים, והחברה מקבלת רישיון עולמי, לא בלעדי, לצמיתות ובלתי חוזר, לצורך מתן השירות. באותם תנאים המשתמש מתחייב לא להשתמש בשירות או בתוכן למטרות מסחריות, וסעיף אחר מזכיר שימוש מסחרי ״אם הותר״ בלי לפרט מתי. הסתירה לא מיושבת, ולכן אין לקבוע שהשימוש המסחרי מותר או אסור. לא נמצא רישיון מסחרי לפי תוכנית, והתנאים שחלים בישראל לא נקראו. הדף הרשמי על Seedance 2.5 רק ממליץ לבדוק את הזכויות בתוצרים לפני שימוש חיצוני.",
+        "watermark": "בכל ארבע התוכניות בתשלום: הורדה בלי סימן המים של Dreamina. בשימוש החינמי, לפי הדף, סימני המים עשויים להשתנות.",
+        "source_ids": [
+          "s1",
+          "s2",
+          "s4"
+        ]
+      },
+      "developer_access": {
+        "api": "לא אומת",
+        "text": "תנאי השימוש האמריקאיים לא מזכירים ממשק תכנות. לא אומת אם מודלי Seedance מוצעים למפתחים בערוץ רשמי.",
+        "source_ids": [
+          "s2"
+        ]
+      },
+      "integrations": {
+        "items": [],
+        "source_ids": []
+      },
+      "platforms": {
+        "items": [
+          "אתר"
+        ],
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית. לאתר יש גרסאות בשפות אחרות (בהן גרמנית, צרפתית וקוריאנית), וגרסה בעברית לא נראתה; אין בכך ראיה לכאן או לכאן.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "company": {
+        "name": "TikTok USDS Joint Venture LLC (מפעילת הפלטפורמה למשתמשים בארצות הברית, לפי המסמכים האמריקאיים; הגוף המפעיל מחוץ לארצות הברית, כולל בישראל, לא אומת)",
+        "country": "ארצות הברית (כתובת הקשר של הגוף האמריקאי)"
+      },
+      "student_benefits": {
+        "text": null,
+        "source_ids": []
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://dreamina.capcut.com/seedance/seedance-2-0-pricing",
+          "title": "Dreamina: דף המחירים של Seedance 2.0 (ארצות הברית)",
+          "official": true,
+          "published": "2026-10-23",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://dreamina.capcut.com/clause/dreamina-terms-of-service?lang=en",
+          "title": "Dreamina: תנאי השימוש (גרסת ארצות הברית)",
+          "official": true,
+          "published": "2026-01-22",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s3",
+          "url": "https://dreamina.capcut.com/clause/dreamina-privacy-policy",
+          "title": "Dreamina: מדיניות הפרטיות (גרסת ארצות הברית)",
+          "official": true,
+          "published": "2026-04-30",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s4",
+          "url": "https://dreamina.capcut.com/seedance/seedance-2-5-commercial-use",
+          "title": "Dreamina: דף המידע על Seedance 2.5",
+          "official": true,
+          "published": "2026-10-24",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://curiousrefuge.com/blog/best-ai-video-generators-2026",
+          "title": "Curious Refuge: Best AI Video Generators of 2026 (צד שלישי; התאריך במקור 9 ביוני, השנה הוסקה)",
+          "official": false,
+          "published": "2026-06-09",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://www.eweek.com/news/best-ai-video-generators-2026/",
+          "title": "eWeek: סקירת מחוללי וידאו לשנת 2026 (צד שלישי)",
+          "official": false,
+          "published": "2026-02-16",
+          "checked": "2026-11-18",
+          "stale": true
+        }
+      ],
+      "checked_date": "2026-11-18"
+    },
+    {
+      "id": 10,
+      "slug": "wan",
+      "category_id": 6,
+      "name": "Wan",
+      "former_name": null,
+      "rename_note": null,
+      "role": "פלטפורמת יצירה שמפיקה וידאו ותמונות מטקסט ומתמונות, כולל עריכה.",
+      "url": "https://wan.video/",
+      "logo": {
+        "file": null,
+        "file_dark": null,
+        "source_url": "https://g.alicdn.com/sail-web/wan-static-resources/0.0.30/images/favicon.ico",
+        "missing_reason": "לא נמצאו ערכת עיתונות, דף מותג או קובץ SVG. בקוד המקור של wan.video אותרו רק סמל האתר ותמונת שיתוף."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": "דף הבית הרשמי מקדם את Wan3.0. מועד ההשקה של המודל לא אומת ממקור רשמי. תיעוד ה־API שנקרא (עודכן ב־11 באוקטובר 2026) עדיין מתאר את wan2.7, בלי הודעה על הפסקת תמיכה. המוצר לצרכנים נקרא Wan Create.",
+        "date_as_written": null,
+        "source_ids": [
+          "s1",
+          "s2",
+          "s3"
+        ]
+      },
+      "strengths": [
+        {
+          "lead": "וידאו של 30 שניות ועד 20 קובצי ייחוס",
+          "detail": "דף הבית הרשמי מציג ב־Wan3.0 יצירה של 30 שניות ברצף, עד 20 קובצי ייחוס ועריכת וידאו.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "פרטים עדינים, תנועת מצלמה ושמע מובנה",
+          "detail": "לפי סקירת צד שלישי (Curious Refuge) על Wan 2.7: פרטים כמו מרקם עור ותאורה אווירתית, תנועת מצלמה קולנועית ושמע רקע שנוצר עם הסרטון.",
+          "source_ids": [
+            "s4"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "גישה למפתחים בתשלום לפי שנייה",
+          "detail": "המודל wan2.7-t2v זמין דרך Alibaba Cloud Model Studio בתמחור לפי שנייה, כולל רמת 1080P ומגבלה של 300 בקשות בדקה לכל אזור.",
+          "source_ids": [
+            "s3"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "שגיאות פיזיקה ותנועה לא הגיונית",
+          "detail": "לפי סקירת צד שלישי (Curious Refuge) על Wan 2.7, בסרטונים מופיעות שגיאות פיזיקה ותנועה לא הגיונית.",
+          "source_ids": [
+            "s4"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "התקופה הראשונה במנוי אינה ניתנת להחזר",
+          "detail": "לפי דף המחירים, המנוי מתחדש אוטומטית ואפשר לבטל בכל עת, אבל החודש הראשון או השנה הראשונה אינם ניתנים להחזר אחרי ההפעלה.",
+          "source_ids": [
+            "s2"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "ה־API לא תומך בכוונון עדין",
+          "detail": "דף המודל wan2.7-t2v מציין שכוונון עדין, עיבוד באצווה ושמירת הקשר במטמון אינם נתמכים.",
+          "source_ids": [
+            "s3"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "הסקה: יוצרים שעובדים באתר wan.video ומפתחים שמשתמשים במודל דרך Alibaba Cloud Model Studio; המקורות הרשמיים לא מגדירים קהל יעד.",
+      "pricing": {
+        "verification": "אומת ממקור רשמי",
+        "summary_line": "מ־10 דולר לחודש בחיוב חודשי, או 5 דולר לחודש בחיוב שנתי. יש תוכנית חינמית.",
+        "model": "מנוי עם נקודות זיכוי",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "סרטון אחד ותמונה אחת במקביל, 6 סגנונות תמונה, נקודות זיכוי חינם בכניסה יומית",
+            "notes": null,
+            "source_ids": [
+              "s2"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 10,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "300 נקודות זיכוי בחודש (עד 1,200 תמונות או 60 סרטונים), 3 סרטונים במקביל, הורדה בלי סימן מים, וידאו ב־1080p, סרטונים של 10 עד 30 שניות",
+            "notes": null,
+            "source_ids": [
+              "s2"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 5,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "300 נקודות זיכוי בחודש (עד 1,200 תמונות או 60 סרטונים), 3 סרטונים במקביל, הורדה בלי סימן מים, וידאו ב־1080p, סרטונים של 10 עד 30 שניות",
+            "notes": "הדף מציג 5 דולר לחודש בחיוב שנתי (50% הנחה); הסכום השנתי הכולל לא מצוין.",
+            "source_ids": [
+              "s2"
+            ]
+          },
+          {
+            "name": "Premium",
+            "price": 40,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "1,200 נקודות זיכוי בחודש (עד 4,800 תמונות או 240 סרטונים), 8 סרטונים במקביל, הורדה בלי סימן מים, וידאו ב־1080p, סרטונים של 10 עד 30 שניות",
+            "notes": null,
+            "source_ids": [
+              "s2"
+            ]
+          },
+          {
+            "name": "Premium",
+            "price": 20,
+            "price_text": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "1,200 נקודות זיכוי בחודש (עד 4,800 תמונות או 240 סרטונים), 8 סרטונים במקביל, הורדה בלי סימן מים, וידאו ב־1080p, סרטונים של 10 עד 30 שניות",
+            "notes": "הדף מציג 20 דולר לחודש בחיוב שנתי (50% הנחה); הסכום השנתי הכולל לא מצוין.",
+            "source_ids": [
+              "s2"
+            ]
+          }
+        ],
+        "free_tier": "תוכנית Free: סרטון אחד ותמונה אחת במקביל, 6 סגנונות תמונה ונקודות זיכוי חינם בכניסה יומית. כמות הנקודות לא מצוינת.",
+        "trial": null,
+        "unverified_notes": "המחירים נקראו בדף המחירים הרשמי של Wan Create בלי התחברות לחשבון; תאריך הפרסום של הדף לא ידוע. המקור לא מציין אם המחיר לחשבון או למשתמש. לפי הדף, הרכישה תקפה ליצירה באתר create.wan.video בלבד; השימוש ב־API ובמוצרים אחרים נרכש בנפרד."
+      },
+      "privacy": {
+        "text": "לא אומת. באתר יש קישורים למדיניות הפרטיות, לתנאי השימוש, למדיניות השימוש ולמסמך Training Data Summary, אך המסמכים לא נקראו.",
+        "training_on_user_data": null,
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לא אומת. תנאי השימוש לא נקראו, ולא נמצאה הצהרה רשמית על זכויות מסחריות בתוצרים.",
+        "watermark": "בתוכניות Pro ו־Premium: הורדה של תמונות וסרטונים בלי סימן מים. לגבי התוכנית החינמית המקור לא מפרט.",
+        "source_ids": [
+          "s2"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "דרך Alibaba Cloud Model Studio, באזורים סין (בייג׳ינג), סינגפור (בינלאומי) ויפן (טוקיו). המחיר נפרד מהמנוי לצרכנים ונקבע לפי שנייה. מחיר המחירון של wan2.7-t2v, בלי מבצעים: באזור סינגפור 0.10 דולר לשנייה ב־720P ו־0.15 דולר ב־1080P; בבייג׳ינג ובטוקיו 0.086012 דולר ב־720P ו־0.143353 דולר ב־1080P. מכסה חינמית ל־API לא מופיעה בדף המודל. לא אומת אם Wan3.0 זמין ב־API.",
+        "source_ids": [
+          "s3",
+          "s2"
+        ]
+      },
+      "integrations": {
+        "items": [],
+        "source_ids": []
+      },
+      "platforms": {
+        "items": [
+          "אתר",
+          "iOS",
+          "Android"
+        ],
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית. גם דף מודל ה־API לא מציין באילו שפות אפשר לכתוב הנחיות.",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      "company": {
+        "name": "Alibaba Cloud (לפי השורה בתחתית האתר: Powered by Alibaba Cloud; הישות המשפטית המפעילה לא אומתה)",
+        "country": null
+      },
+      "student_benefits": {
+        "text": null,
+        "source_ids": []
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://wan.video/",
+          "title": "Wan: דף הבית הרשמי",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://create.wan.video/pricing",
+          "title": "Wan Create: דף המחירים הרשמי",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://www.alibabacloud.com/help/en/model-studio/wan2-7-t2v",
+          "title": "Alibaba Cloud Model Studio: תיעוד המודל wan2.7-t2v",
+          "official": true,
+          "published": "2026-10-11",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://curiousrefuge.com/blog/best-ai-video-generators-2026",
+          "title": "Curious Refuge: Best AI Video Generators of 2026 (צד שלישי; התאריך במקור 9 ביוני, השנה הוסקה)",
+          "official": false,
+          "published": "2026-06-09",
+          "checked": "2026-11-18",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18"
+    }
+  ]
+}
