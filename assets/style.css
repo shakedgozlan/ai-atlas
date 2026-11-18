@@ -29,9 +29,9 @@
   --ink-faint:light-dark(#5f6570,#9ba1ab);
   --line:light-dark(#d8dde6,#323439);
   --line-strong:light-dark(#727986,#838993);
-  --brand:light-dark(#1d52de,#7fb0ff);
-  --brand-hover:light-dark(#113fbb,#a6c8ff);
-  --brand-tint:light-dark(#dbe6ff,#263a63);
+  --brand:light-dark(#1d52de,#5b8cff);
+  --brand-hover:light-dark(#113fbb,#86a9ff);
+  --brand-tint:light-dark(#dbe6ff,#172247);
   --on-brand:light-dark(#f3f5f9,#151515);
   --focus:var(--brand);
   --stale:var(--ink-soft);
@@ -166,7 +166,7 @@ html:not(.js) .bar-actions{display:none}
   .hero-facts{grid-column:2;grid-row:1 / span 2;flex-direction:column;gap:32px;margin-top:0;padding-top:0;border-top:0;padding-inline-start:clamp(32px,4vw,56px);border-inline-start:1px solid var(--line)}
 }
 .hero-facts div{display:flex;flex-direction:column-reverse;align-items:flex-start;gap:8px;text-align:right}
-.hero-facts dd{margin:0;font-size:clamp(1.75rem,1.3rem + 1.6vw,2.625rem);font-weight:400;line-height:1.1;color:var(--ink-faint);font-variant-numeric:tabular-nums}
+.hero-facts dd{margin:0;font-size:clamp(1.75rem,1.3rem + 1.6vw,2.625rem);font-weight:400;line-height:1.1;color:var(--brand);font-variant-numeric:tabular-nums}
 .hero-facts dt{font-size:var(--t-label);font-weight:500;color:var(--ink)}
 
 /* סינון פעיל ומצב ריק */
