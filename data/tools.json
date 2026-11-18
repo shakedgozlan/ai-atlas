@@ -81,7 +81,8 @@
         "file": null,
         "file_dark": null,
         "source_url": null,
-        "missing_reason": "לא אותר עמוד מותג או ערכת עיתונות רשמית, ולכן קובץ הלוגו לא אומת."
+        "missing_reason": "האתר של Flow נפתח רק אחרי התחברות לחשבון Google, ולכן הלוגו לא נאסף.",
+        "note": null
       },
       "status": {
         "state": "פעיל",
@@ -391,10 +392,11 @@
       "role": "פלטפורמה ליצירת וידאו ותמונות במגוון מודלים, לצד מוזיקה, קול ואפקטים.",
       "url": "https://runway.com",
       "logo": {
-        "file": null,
-        "file_dark": null,
-        "source_url": null,
-        "missing_reason": "לא אותר עמוד מותג או ערכת עיתונות רשמית, ולכן קובץ הלוגו לא אומת."
+        "file": "logos/runway.svg",
+        "file_dark": "logos/runway-dark.svg",
+        "source_url": "https://runway.com/",
+        "missing_reason": null,
+        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
       },
       "status": {
         "state": "פעיל",
@@ -731,10 +733,11 @@
       "role": "מחולל וידאו ותמונות מטקסט ומתמונות, עם קול מובנה.",
       "url": "https://kling.ai",
       "logo": {
-        "file": null,
-        "file_dark": null,
-        "source_url": null,
-        "missing_reason": "לא אותר קובץ לוגו רשמי: דפי האתר לא נקראו בשליפה אוטומטית, ולא נמצא דף עיתונות או ערכת מותג. נדרשת בדיקה ידנית בדפדפן."
+        "file": "logos/kling.svg",
+        "file_dark": "logos/kling-dark.svg",
+        "source_url": "https://kling.ai/",
+        "missing_reason": null,
+        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
       },
       "status": {
         "state": "פעיל",
@@ -995,10 +998,11 @@
       "role": "מחולל וידאו ותמונות מטקסט, מתמונות ומחומרי ייחוס, עם קול מסונכרן.",
       "url": "https://hailuoai.video",
       "logo": {
-        "file": null,
+        "file": "logos/hailuo.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "לא אותר קובץ לוגו רשמי: לא נמצא דף עיתונות או ערכת מותג, וקובצי האתר לא נקראו. נדרשת בדיקה ידנית."
+        "source_url": "https://hailuoai.video/",
+        "missing_reason": null,
+        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. סמל בלבד, בלי שם המותג. לוגו צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
       },
       "status": {
         "state": "פעיל",
@@ -1341,10 +1345,11 @@
       "role": "סביבת יצירה בדפדפן להפקת וידאו, תמונות וקול במודלי Ray.",
       "url": "https://lumalabs.ai/",
       "logo": {
-        "file": null,
-        "file_dark": null,
-        "source_url": null,
-        "missing_reason": "עמוד ערכת המדיה הרשמי (lumalabs.ai/media-kit) נחסם לקריאה, ולכן לא אומתה כתובת של קובץ לוגו. הנכס הרשמי היחיד שאומת הוא תמונת שיתוף לרשתות, שאינה לוגו."
+        "file": "logos/luma.svg",
+        "file_dark": "logos/luma-dark.svg",
+        "source_url": "https://lumalabs.ai/",
+        "missing_reason": null,
+        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
       },
       "status": {
         "state": "שינוי שם",
@@ -1767,10 +1772,11 @@
       "role": "פלטפורמה ליצירה ולעריכה של סרטונים קצרים, תמונות וקול.",
       "url": "https://pika.art/",
       "logo": {
-        "file": null,
-        "file_dark": null,
-        "source_url": "https://pika.art/marketing/models/pika.svg",
-        "missing_reason": "הקובץ לא הורד. הכתובת מובילה לנכס מהאתר הרשמי, שמשמש שם לוגו של מודל Pika ברשימת המודלים, ולא לקובץ מערכת מיתוג; לא נמצא עמוד עיתונות או מיתוג, ואין קובץ לוגו ראשי נפרד."
+        "file": "logos/pika.svg",
+        "file_dark": "logos/pika-dark.svg",
+        "source_url": "https://pika.art/",
+        "missing_reason": null,
+        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
       },
       "status": {
         "state": "פעיל",
@@ -2115,10 +2121,11 @@
       "role": "פלטפורמה ליצירת וידאו ותמונות במודלים משלה ובמודלים של חברות אחרות.",
       "url": "https://higgsfield.ai",
       "logo": {
-        "file": null,
-        "file_dark": null,
-        "source_url": null,
-        "missing_reason": "לא נמצא קובץ לוגו רשמי: בעמוד האודות אין ערכת עיתונות או ערכת מותג, והלוגואים שמוצגים בו הם של שותפים."
+        "file": "logos/higgsfield.svg",
+        "file_dark": "logos/higgsfield-dark.svg",
+        "source_url": "https://higgsfield.ai/",
+        "missing_reason": null,
+        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. סמל בלבד, בלי שם המותג. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
       },
       "status": {
         "state": "פעיל",
@@ -2507,10 +2514,11 @@
       "role": "מחולל וידאו מטקסט, מתמונה ומחומרי ייחוס, על בסיס מודלים משלו.",
       "url": "https://www.vidu.com",
       "logo": {
-        "file": null,
-        "file_dark": null,
-        "source_url": null,
-        "missing_reason": "לא נמצא קובץ לוגו רשמי: לא אותרו ערכת עיתונות או עמוד מותג."
+        "file": "logos/vidu.svg",
+        "file_dark": "logos/vidu-dark.svg",
+        "source_url": "https://www.vidu.com/",
+        "missing_reason": null,
+        "note": "נלקח מכותרת האתר הרשמי ב־18 בנובמבר 2026. הקובץ המקורי שמור בתיקייה logos/original. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
       },
       "status": {
         "state": "פעיל",
@@ -2803,7 +2811,8 @@
         "file": null,
         "file_dark": null,
         "source_url": null,
-        "missing_reason": "לא נמצא קובץ לוגו רשמי; לא אותרו ערכת עיתונות או דף מותג."
+        "missing_reason": "באתר הרשמי הלוגו מוצג כתמונה רגילה ולא כקובץ וקטורי. לא אותר קובץ וקטורי רשמי.",
+        "note": null
       },
       "status": {
         "state": "פעיל",
@@ -3053,8 +3062,9 @@
       "logo": {
         "file": null,
         "file_dark": null,
-        "source_url": "https://g.alicdn.com/sail-web/wan-static-resources/0.0.30/images/favicon.ico",
-        "missing_reason": "לא נמצאו ערכת עיתונות, דף מותג או קובץ SVG. בקוד המקור של wan.video אותרו רק סמל האתר ותמונת שיתוף."
+        "source_url": null,
+        "missing_reason": "באתר הרשמי הלוגו מוצג כתמונה רגילה ולא כקובץ וקטורי. לא אותר קובץ וקטורי רשמי.",
+        "note": null
       },
       "status": {
         "state": "פעיל",
