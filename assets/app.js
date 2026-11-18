@@ -85,110 +85,147 @@
     paintTheme();
   }
 
-  /* ---------- חיפוש וסינון ---------- */
+  /* ---------- חלון החיפוש ---------- */
+  // החיפוש מקומי: הוא מתאים את המילים שנכתבו לשם, לתיאור, ליתרונות ולקהל של כל כלי, ומדרג לפי ההתאמה.
+  // כדי לחבר מודל בהמשך מחליפים רק את rank, שמקבלת טקסט ומחזירה רשימת כלים מדורגת עם נימוק.
   var dialog = $('#finder');
   var openBtn = $('#finder-open');
   var q = $('#q');
-  var catSel = $('#cat-filter');
-  var results = $$('[data-result]');
-  var cards = $$('.card');
-  var sections = $$('[data-cat-section]');
+  var index = [];
+  try { index = JSON.parse($('#search-index').textContent); } catch (e) { index = []; }
+  var rows = {};
+  $$('[data-result]').forEach(function (li) { rows[li.getAttribute('data-result')] = li; });
+  var resultsList = $('#results');
   var finderCount = $('#finder-count');
   var finderEmpty = $('#finder-empty');
-  var resultsList = $('#results');
-  var filterBar = $('#filter-bar');
-  var filterText = $('#filter-text');
-  var pageEmpty = $('#page-empty');
-  var total = cards.length;
+  var finderClear = $('#finder-clear');
+  var shortBtns = $$('[data-short]');
+  var recentBox = $('#finder-recent');
+  var recentList = $('#finder-recent-list');
+  var STOP = ['אני', 'רוצה', 'צריך', 'צריכה', 'מחפש', 'מחפשת', 'כלי', 'כלים', 'של', 'עם', 'את', 'על', 'או', 'גם', 'זה', 'מה', 'איך', 'לי', 'כדי', 'שיהיה', 'משהו', 'הכי', 'טוב', 'יש', 'אפשר', 'לעשות', 'ליצור'];
+  var PREFIX = 'והבלמשכ';
 
   function words(n) { return n === 1 ? 'כלי אחד' : n + ' כלים'; }
-  function matches(el, terms, cat) {
-    if (cat && el.dataset.cat !== cat) return false;
-    var hay = el.dataset.search || '';
-    return terms.every(function (t) { return hay.indexOf(t) !== -1; });
+  function tokens(raw) {
+    return flat(raw.toLowerCase()).replace(/[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/).filter(function (t) { return t.length > 1 && STOP.indexOf(t) === -1; });
   }
-  function applyFilter() {
-    var raw = q ? q.value.trim() : '';
-    var terms = raw.toLowerCase().split(/\s+/).filter(Boolean);
-    var cat = catSel ? catSel.value : '';
-    var active = terms.length > 0 || cat !== '';
-    var shown = 0;
-    results.forEach(function (li) { li.hidden = !matches(li, terms, cat); });
-    cards.forEach(function (card) {
-      var ok = matches(card, terms, cat);
-      card.hidden = !ok;
-      if (ok) shown += 1;
+  // מילה בעברית מגיעה לעיתים עם אות שימוש בתחילתה (״לסרטון״, ״בחינם״), ולכן בודקים גם בלעדיה
+  // וגם ״וידאו״ ו״ווידאו״ הם אותה מילה, ולכן ו״ו כפולה נספרת כאחת
+  function flat(v) { return String(v).replace(/ו+/g, 'ו'); }
+  index.forEach(function (x) {
+    x.name = flat(x.name); x.role = flat(x.role); x.who = flat(x.who);
+    x.pros.forEach(function (p) { p.text = flat(p.text); });
+  });
+  function hit(text, t) {
+    if (text.indexOf(t) !== -1) return true;
+    return t.length > 3 && PREFIX.indexOf(t.charAt(0)) !== -1 && text.indexOf(t.slice(1)) !== -1;
+  }
+  function rank(raw, flags) {
+    var ts = tokens(raw);
+    var out = [];
+    index.forEach(function (x) {
+      if (flags.some(function (f) { return !x[f]; })) return;
+      var score = 0, why = '';
+      ts.forEach(function (t) {
+        var best = 0;
+        if (hit(x.name, t)) best = 6;
+        else if (hit(x.role, t)) best = 3;
+        else if (hit(x.who, t)) best = 2;
+        x.pros.forEach(function (p) { if (hit(p.text, t)) { if (best < 2) best = 2; if (!why) why = p.lead; } });
+        score += best;
+      });
+      if (ts.length === 0 || score > 0) out.push({ id: x.id, score: score, why: why });
     });
-    sections.forEach(function (sec) {
-      sec.hidden = !$$('.card', sec).some(function (c) { return !c.hidden; });
+    out.sort(function (a, b) { return b.score - a.score || a.id - b.id; });
+    return out;
+  }
+  function activeFlags() {
+    return shortBtns.filter(function (b) { return b.getAttribute('aria-pressed') === 'true'; }).map(function (b) { return b.getAttribute('data-short'); });
+  }
+  function readRecent() {
+    try { return JSON.parse(localStorage.getItem('atlas-recent') || '[]').filter(function (x) { return typeof x === 'string'; }).slice(0, 5); } catch (e) { return []; }
+  }
+  function saveRecent(raw) {
+    raw = raw.trim();
+    if (raw.length < 2) return;
+    var list = readRecent().filter(function (x) { return x !== raw; });
+    list.unshift(raw);
+    try { localStorage.setItem('atlas-recent', JSON.stringify(list.slice(0, 5))); } catch (e) { /* בלי שמירה */ }
+  }
+  function paintRecent(show) {
+    if (!recentBox) return;
+    var list = show ? readRecent() : [];
+    recentList.textContent = '';
+    list.forEach(function (text) {
+      var b = doc.createElement('button');
+      b.type = 'button'; b.className = 'btn short'; b.textContent = text;
+      b.addEventListener('click', function () { q.value = text; search(); q.focus(); });
+      recentList.appendChild(b);
     });
-    if (finderCount) finderCount.textContent = shown === 0 ? 'אין תוצאות' : (active ? 'נמצאו ' + words(shown) + ' מתוך ' + total : 'כל ' + total + ' הכלים');
-    if (finderEmpty) finderEmpty.hidden = shown !== 0;
-    if (resultsList) resultsList.hidden = shown === 0;
-    if (pageEmpty) pageEmpty.hidden = shown !== 0;
-    if (filterBar) {
-      filterBar.hidden = !active || shown === 0;
-      if (active && filterText) {
-        var parts = [];
-        if (raw) parts.push('החיפוש ״' + raw + '״');
-        if (cat && catSel) parts.push('הקטגוריה ״' + catSel.options[catSel.selectedIndex].text + '״');
-        filterText.textContent = 'מוצגים ' + words(shown) + ' מתוך ' + total + ', לפי ' + parts.join(' ולפי ') + '.';
-      }
+    recentBox.hidden = list.length === 0;
+  }
+  function search() {
+    var raw = q.value.trim();
+    var flags = activeFlags();
+    var active = raw !== '' || flags.length > 0;
+    finderClear.hidden = raw === '';
+    paintRecent(!active);
+    if (!active) {
+      resultsList.hidden = true; finderEmpty.hidden = true; finderCount.textContent = '';
+      return;
     }
-  }
-  function clearFilter() {
-    if (q) q.value = '';
-    if (catSel) catSel.value = '';
-    applyFilter();
+    var found = rank(raw, flags);
+    Object.keys(rows).forEach(function (id) { rows[id].hidden = true; });
+    found.forEach(function (r) {
+      var li = rows[r.id];
+      if (!li) return;
+      li.hidden = false;
+      var why = $('[data-why]', li);
+      why.textContent = r.why; why.hidden = !r.why;
+      resultsList.appendChild(li);
+    });
+    resultsList.hidden = found.length === 0;
+    finderEmpty.hidden = found.length !== 0;
+    finderCount.textContent = found.length === 0 ? 'אין תוצאות' : 'נמצאו ' + words(found.length);
   }
 
-  if (q) q.addEventListener('input', applyFilter);
-  if (catSel) catSel.addEventListener('change', applyFilter);
-  var form = $('#finder-form');
-  if (form) form.addEventListener('submit', function (e) { e.preventDefault(); });
-  var finderClear = $('#finder-clear');
-  if (finderClear) finderClear.addEventListener('click', function () { clearFilter(); if (q) q.focus(); });
-  var filterClear = $('#filter-clear');
-  if (filterClear) filterClear.addEventListener('click', function () { clearFilter(); if (openBtn) openBtn.focus(); });
-  var pageEmptyClear = $('#page-empty-clear');
-  if (pageEmptyClear) pageEmptyClear.addEventListener('click', function () { clearFilter(); if (openBtn) openBtn.focus(); });
-
-  /* ---------- החלון הקופץ ---------- */
-  if (dialog && openBtn && typeof dialog.showModal === 'function') {
+  if (dialog && openBtn && q && typeof dialog.showModal === 'function') {
+    q.addEventListener('input', search);
+    $('#finder-form').addEventListener('submit', function (e) { e.preventDefault(); saveRecent(q.value); });
+    finderClear.addEventListener('click', function () { q.value = ''; search(); q.focus(); });
+    shortBtns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true'));
+        search();
+      });
+    });
     openBtn.addEventListener('click', function () {
       dialog.showModal();
-      if (q) q.focus();
+      search();
+      q.focus();
     });
     $('#finder-close').addEventListener('click', function () { dialog.close(); });
-    // לחיצה מחוץ לחלון סוגרת אותו. מקש היציאה והחזרת המיקוד לכפתור מטופלים על ידי הדפדפן.
-    dialog.addEventListener('click', function (e) {
-      if (e.target !== dialog) return;
-      var r = dialog.getBoundingClientRect();
-      var inside = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
-      if (!inside) dialog.close();
-    });
+    // כל פתיחה מתחילה נקייה
     dialog.addEventListener('close', function () {
-      if (!dialog.dataset.jump && openBtn) openBtn.focus();
-      delete dialog.dataset.jump;
+      q.value = '';
+      shortBtns.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
     });
-    $$('[data-jump]', dialog).forEach(function (a) {
-      a.addEventListener('click', function (e) {
-        var id = a.getAttribute('href').slice(1);
-        var target = doc.getElementById(id);
-        if (!target) return;
-        e.preventDefault();
-        if (target.hidden || (target.closest('[data-cat-section]') || {}).hidden) clearFilter();
-        dialog.dataset.jump = '1';
+    // לחיצה על הרקע המעומעם סוגרת. מקש היציאה והחזרת המיקוד לכפתור מטופלים על ידי הדפדפן.
+    dialog.addEventListener('click', function (e) { if (e.target === dialog) dialog.close(); });
+    // בחירה בתוצאה סוגרת את החיפוש ופותחת את חלון הפרטים של הכלי
+    $$('[data-open-tool]', dialog).forEach(function (b) {
+      b.addEventListener('click', function () {
+        var id = b.getAttribute('data-open-tool');
+        var opener = $('#tool-' + id + ' [data-sheet-open]');
+        saveRecent(q.value);
         dialog.close();
-        var heading = target.matches('.card') ? $('.name', target) : $('h2', target);
-        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
-        if (heading) heading.focus({ preventScroll: true });
+        if (!opener) return;
+        opener.scrollIntoView({ block: 'center' });
+        opener.focus({ preventScroll: true });
+        opener.click();
       });
     });
   } else if (openBtn) {
     openBtn.hidden = true;
   }
-
-  applyFilter();
 })();

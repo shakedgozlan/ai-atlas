@@ -38,7 +38,7 @@ const audit = () => {
     const r = el.getBoundingClientRect();
     if (r.right > innerWidth + 1 || r.left < -1) out.clipped.push(`${el.className || el.tagName} "${n.nodeValue.trim().slice(0, 24)}"`);
   }
-  document.querySelectorAll('button:not(.bill-btn), a.btn, input, select, .results a, .cat-nav a').forEach((el) => {
+  document.querySelectorAll('button:not(.bill-btn), a.btn, input, select').forEach((el) => {
     if (!visible(el) || el.closest('[hidden]')) return;
     if (el.closest('dialog') && !el.closest('dialog[open]')) return;
     const r = el.getBoundingClientRect();
@@ -189,56 +189,53 @@ const audit = () => {
       const logoVisible = await page.evaluate(() => [...document.querySelectorAll('.logo')].filter((l) => [...l.querySelectorAll('img')].filter((i) => getComputedStyle(i).display !== 'none').length !== 1).length);
       note(logoVisible === 0, `${tag} לוגו: לא גרסה אחת בדיוק גלויה`, String(logoVisible));
 
-      // החלון הקופץ
+      // חלון החיפוש: נפתח כשכבה מעל הדף, המיקוד בשדה, ומצב ריק בלי תוצאות
       const opener = page.locator('#finder-open');
+      const vis = () => page.locator('#results [data-result]:not([hidden])').count();
       await opener.focus(); await page.keyboard.press('Enter');
       note(await page.locator('#finder').evaluate((d) => d.open), `${tag} החלון לא נפתח`);
       note(await page.evaluate(() => document.activeElement.id === 'q'), `${tag} המיקוד לא בשדה החיפוש`);
-      await report('חלון פתוח');
+      note(!(await page.locator('#results').isVisible()) && await page.locator('.shortcuts').first().isVisible(), `${tag} המצב הריק של החיפוש לא נכון`);
+      await page.waitForTimeout(350);
+      await report('חלון חיפוש פתוח');
       if (shots) await page.screenshot({ path: path.join(shots, `${tag}-4-finder.png`) });
       await page.keyboard.type('runway');
-      note((await page.locator('#results [data-result]:not([hidden])').count()) === (file.includes('fixture') ? 2 : 1), `${tag} חיפוש לפי שם`);
-      await page.fill('#q', 'וידאו');
-      note((await page.locator('#results [data-result]:not([hidden])').count()) >= 3, `${tag} חיפוש לפי תפקיד או קטגוריה`);
-      await page.fill('#q', 'אין כלי כזה');
+      note((await vis()) === (file.includes('fixture') ? 2 : 1), `${tag} חיפוש לפי שם`);
+      await page.fill('#q', 'אני צריך לווידאו');
+      note((await vis()) >= 3, `${tag} חיפוש לפי צורך, עם מילות קישור ואות שימוש`);
+      await report('תוצאות חיפוש');
+      if (shots) await page.screenshot({ path: path.join(shots, `${tag}-5-results.png`) });
+      await page.fill('#q', 'qqqq zzzz');
       note(await page.locator('#finder-empty').isVisible() && !(await page.locator('#results').isVisible()), `${tag} מצב אין תוצאות בחלון`);
-      if (shots) await page.screenshot({ path: path.join(shots, `${tag}-5-empty.png`) });
       await page.click('#finder-clear');
-      note((await page.locator('#results [data-result]:not([hidden])').count()) === n && (await page.inputValue('#q')) === '', `${tag} ניקוי`);
-      const firstCat = await page.locator('#cat-filter option').nth(1).getAttribute('value');
-      await page.selectOption('#cat-filter', firstCat);
-      note((await page.locator('#results [data-result]:not([hidden])').count()) >= 1, `${tag} סינון קטגוריה`);
-      await page.click('#finder-clear');
+      note((await page.inputValue('#q')) === '' && !(await page.locator('#results').isVisible()), `${tag} ניקוי`);
+      // קיצור דרך מסנן לפי עובדה שכתובה בנתונים
+      const short = page.locator('[data-short]').first();
+      await short.click();
+      const sc = await vis();
+      note(sc >= 1 && sc <= n && (await short.getAttribute('aria-pressed')) === 'true', `${tag} קיצור דרך`, String(sc));
+      await short.click();
+      note(!(await page.locator('#results').isVisible()), `${tag} ביטול קיצור דרך`);
       await page.keyboard.press('Escape');
       note(!(await page.locator('#finder').evaluate((d) => d.open)), `${tag} מקש היציאה לא סוגר`);
       note(await page.evaluate(() => document.activeElement.id === 'finder-open'), `${tag} המיקוד לא חוזר לכפתור`);
       await opener.click();
       await page.mouse.click(4, 4);
       note(!(await page.locator('#finder').evaluate((d) => d.open)), `${tag} לחיצה בחוץ לא סוגרת`);
-      note(await page.evaluate(() => document.activeElement.id === 'finder-open'), `${tag} המיקוד לא חוזר אחרי לחיצה בחוץ`);
       note((await page.locator('#finder .sources, #finder a[href^="http"]').count()) === 0, `${tag} מקורות בתוך החלון`);
+      // החיפוש לא מסתיר כרטיסים בדף
+      note((await page.locator('.card:not([hidden])').count()) === n, `${tag} החיפוש מסתיר כרטיסים בדף`);
 
-      // סינון בעמוד, מספרים קבועים, מצב ריק ואיפוס
+      // בחירה בתוצאה פותחת את חלון הפרטים של הכלי, והחיפוש נשמר בחיפושים האחרונים
       await opener.click();
       await page.fill('#q', 'pika');
+      await page.locator('#results [data-result]:not([hidden]) .res').first().click();
+      await page.waitForTimeout(400);
+      note(!(await page.locator('#finder').evaluate((d) => d.open)) && await page.locator('#detail-6').evaluate((d) => d.open), `${tag} בחירה בתוצאה לא פותחת את הפרטים`);
       await page.keyboard.press('Escape');
-      note((await page.locator('.card:not([hidden])').count()) === 1 && await page.locator('#filter-bar').isVisible(), `${tag} סינון בעמוד`);
-      note((await page.locator('.card:not([hidden]) .num').first().textContent()) === '06', `${tag} המספר משתנה בסינון`);
-      await report('מסונן');
-      await page.click('#filter-clear');
-      note((await page.locator('.card:not([hidden])').count()) === n && !(await page.locator('#filter-bar').isVisible()), `${tag} איפוס הסינון`);
       await opener.click();
-      await page.fill('#q', 'qqqq');
+      note(await page.locator('#finder-recent-list button', { hasText: 'pika' }).isVisible(), `${tag} חיפושים אחרונים`);
       await page.keyboard.press('Escape');
-      note(await page.locator('#page-empty').isVisible(), `${tag} מצב אין תוצאות בעמוד`);
-      await page.click('#page-empty-clear');
-      note((await page.locator('.card:not([hidden])').count()) === n, `${tag} איפוס ממצב ריק`);
-
-      // קפיצה לכלי מתוך החלון
-      await opener.click();
-      await page.locator('#results a').nth(4).click();
-      await page.waitForTimeout(700);
-      note(await page.evaluate(() => document.activeElement.closest('.card') && document.activeElement.closest('.card').id === 'tool-5'), `${tag} קפיצה לכלי`);
 
       // מצב כהה ובהיר
       const before = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);

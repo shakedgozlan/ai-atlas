@@ -294,28 +294,41 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
 .foot-note{margin-top:24px;max-width:70ch;color:var(--ink-soft)}
 
 /* החלון הקופץ */
-.finder{width:min(680px,100% - 24px);max-width:none;height:fit-content;max-height:calc(100dvh - 24px);margin:auto;padding:0;border:1px solid var(--line-strong);border-radius:var(--r-card);background:var(--surface);color:var(--ink);overflow:hidden}
-.finder[open]{display:flex;flex-direction:column}
-.finder::backdrop{background:var(--scrim)}
-.finder-in{padding:16px clamp(16px,4vw,24px) 24px;display:grid;gap:16px;overflow:auto;overscroll-behavior:contain;min-height:0}
-.finder-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex:none;padding:16px clamp(16px,4vw,24px) 12px;border-bottom:1px solid var(--line)}
-.finder-top h2{font-size:var(--t-cat);font-weight:700;line-height:1.2}
-.finder-form{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;align-items:end}
-@media (min-width:600px){.finder-form{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) auto}}
-.field{display:grid;gap:4px;min-width:0}
-.field label{font-size:var(--t-label);font-weight:600}
-.field input,.field select{width:100%;min-height:44px;padding:8px 12px;border:1.5px solid var(--line-strong);border-radius:var(--r-ctl);background:var(--paper);color:var(--ink)}
-.field input:hover,.field select:hover{border-color:var(--ink)}
-.finder-count{font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
+/* חלון החיפוש: שכבה מעל הדף, כמו חלון הפרטים. שדה אחד גדול, ומתחתיו קיצורי דרך או תוצאות. */
+.finder{--pad:clamp(20px,3.4vw,40px);position:fixed;inset:0;inset-block:clamp(10px,8vh,96px) auto;width:min(760px,100vw - 32px);max-width:none;height:auto;max-height:calc(100dvh - 2 * clamp(10px,8vh,96px));margin:0 auto;padding:0;border:1px solid var(--line-strong);border-radius:var(--r-card);background:var(--paper);color:var(--ink);overflow:clip;box-shadow:0 24px 64px -16px oklch(20% 0.03 200 / 0.45)}
+.finder[open]{display:flex;flex-direction:column;animation:sheet-in .22s cubic-bezier(.2,.8,.2,1)}
+.finder::backdrop{background:var(--scrim);animation:scrim-in .22s ease-out}
+.finder-top{display:flex;align-items:end;gap:12px;flex:none;padding:clamp(20px,3vw,32px) var(--pad) clamp(16px,2.4vw,24px);border-bottom:1px solid var(--line)}
+.finder-form{flex:1;min-width:0;display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.finder-form label{font-size:var(--t-label);font-weight:600;color:var(--ink-faint)}
+.finder-field{display:flex;align-items:center;gap:8px;min-height:56px;padding-inline:14px 6px;border:1.5px solid var(--line-strong);border-radius:var(--r-inner);background:var(--surface)}
+.finder-field:focus-within{border-color:var(--brand);outline:2px solid var(--brand);outline-offset:2px}
+.finder-field>.ico{flex:none;color:var(--ink-faint)}
+.finder-field input{flex:1;min-width:0;min-height:44px;border:0;background:transparent;color:var(--ink);font:inherit;font-size:1.125rem}
+.finder-field input:focus{outline:none}
+.finder-field input::placeholder{color:var(--ink-faint);opacity:1}
+.finder-top .btn-icon{min-height:56px}
+.finder-in{padding:clamp(16px,2.4vw,24px) var(--pad) var(--pad);display:grid;gap:clamp(16px,2.4vw,24px);overflow:auto;overscroll-behavior:contain;min-height:0}
+.finder-group{display:grid;gap:10px}
+.finder-group h3{font-size:var(--t-label);font-weight:600;color:var(--ink-faint)}
+.shortcuts{display:flex;flex-wrap:wrap;gap:8px}
+.short{font-size:var(--t-label);font-weight:500;color:var(--ink-soft);border-color:var(--line);background:transparent;border-radius:999px}
+.short:hover{color:var(--ink);border-color:var(--line-strong)}
+.short[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.finder-count{font-size:var(--t-label);font-weight:500;color:var(--ink-faint)}
+.finder-count:empty{display:none}
 .results{display:grid}
-.results a{display:grid;grid-template-columns:2.2em minmax(0,1fr);gap:8px;align-items:baseline;padding:12px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
-.results a:hover{background:var(--inner)}
-.results a:active{background:var(--brand-tint)}
-.res-text{display:grid;gap:1px;min-width:0}
-.res-name{font-weight:700;font-size:1.0625rem}
-.res-role{color:var(--ink)}
-.res-cat{font-size:var(--t-label);color:var(--ink-soft)}
-.finder-empty{padding:16px;background:var(--inner);border-radius:var(--r-inner)}
+.res{display:grid;grid-template-columns:2.2em minmax(0,1fr) auto;gap:4px 12px;align-items:baseline;width:100%;min-height:44px;padding:12px 8px;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;text-align:start;cursor:pointer;border-radius:0}
+.res:hover{background:var(--inner)}
+.res:active{background:var(--brand-tint)}
+.res-text{display:grid;gap:2px;min-width:0}
+.res-name{font-weight:600;font-size:1.0625rem;text-align:right}
+.res-role{color:var(--ink-soft);font-size:var(--t-label);line-height:1.45}
+.res-why{font-size:var(--t-label);font-weight:500;color:var(--ink)}
+.res-cat{font-size:var(--t-tech);color:var(--ink-faint);white-space:nowrap}
+html:not(.js) #finder-open{display:none}
+.finder-empty{padding:16px;background:var(--inner);border-radius:var(--r-inner);color:var(--ink-soft)}
+.finder-empty strong{color:var(--ink)}
 .cat-nav h3{font-size:var(--t-group);font-weight:700;margin-bottom:4px}
 .cat-nav li>a{text-decoration:none;color:var(--ink);padding-inline:4px}
 .cat-nav li.pending{padding-inline:4px}
@@ -352,6 +365,10 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
   .card-head{padding:16px 16px 12px}
   .sum{gap:12px}
   .sum-row{grid-template-columns:minmax(0,1fr);row-gap:0}
+  .finder{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
+  .finder-top .btn-icon span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .res-cat{display:none}
+  .res{grid-template-columns:2.2em minmax(0,1fr)}
   .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
   .sheet-head-in{flex-wrap:wrap}

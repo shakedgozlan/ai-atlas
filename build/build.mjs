@@ -22,6 +22,7 @@ const num = (n) => Number(n).toLocaleString('en-US', { maximumFractionDigits: 2 
 
 const ICON = {
   chev: '<svg class="ico chev" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>',
+  search: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>',
   expand: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10"/><path d="M19.5 4.5 13 11"/><path d="M10 19.5H4.5V14"/><path d="M4.5 19.5 11 13"/></svg>',
   price: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12.2V4.5h7.7l9.3 9.3-7.7 7.7-9.3-9.3Z"/><path d="M8 8.9v.2"/></svg>',
   good: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.25"/><path d="m7.75 12.4 2.9 2.9 5.6-6.1"/></svg>',
@@ -304,11 +305,25 @@ const sections = liveCats.map((c) => {
 </section>`;
 }).join('\n');
 
+// חלון החיפוש: שורה מוכנה לכל כלי, ואינדקס שהחיפוש המקומי קורא. אותו אינדקס ישמש גם מודל, כשיחובר.
 const finderResults = data.tools.slice().sort((a, b) => a.id - b.id).map((t) => {
   const cat = catById.get(t.category_id);
-  const search = [t.name, t.former_name, t.role, cat?.name].filter(has).join(' ').toLowerCase();
-  return `<li data-result style="--cat: var(--cat-${t.category_id})" data-cat="${t.category_id}" data-search="${esc(search)}"><a href="#tool-${t.id}" data-jump><span class="num" aria-hidden="true">${pad(t.id)}</span><span class="res-text"><bdi class="res-name">${esc(t.name)}</bdi><span class="res-role">${esc(t.role)}</span><span class="res-cat">${esc(cat?.name)}</span></span></a></li>`;
+  return `<li data-result="${t.id}" style="--cat: var(--cat-${t.category_id})"><button type="button" class="res" data-open-tool="${t.id}"><span class="num" aria-hidden="true">${pad(t.id)}</span><span class="res-text"><bdi class="res-name">${esc(t.name)}</bdi><span class="res-role">${esc(t.role)}</span><span class="res-why" data-why hidden></span></span><span class="res-cat">${esc(cat?.name)}</span></button></li>`;
 }).join('');
+const low = (v) => String(v ?? '').toLowerCase();
+const searchIndex = data.tools.map((t) => ({
+  id: t.id,
+  name: low([t.name, t.former_name].filter(has).join(' ')),
+  role: low([t.role, catById.get(t.category_id)?.name].filter(has).join(' ')),
+  who: low(t.audience),
+  pros: (t.strengths || []).map((x) => ({ lead: x.lead, text: low(`${x.lead} ${x.detail}`) })),
+  // קיצורי הדרך נשענים רק על מה שכתוב בנתונים במפורש
+  free: (t.pricing?.plans || []).some((x) => x.price === 0),
+  student: has(t.student_benefits?.text),
+  api: t.developer_access?.api === 'יש',
+}));
+const SHORTCUTS = [['free', 'יש תוכנית חינמית'], ['student', 'יש מידע על הטבות לסטודנטים'], ['api', 'יש ממשק למפתחים']]
+  .filter(([k]) => searchIndex.some((x) => x[k]));
 
 const catNav = data.categories.map((c) => {
   const n = toolsByCat.get(c.id)?.length || 0;
@@ -350,7 +365,7 @@ const html = `<!doctype html>
     <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">האטלס</span></a>
     <div class="bar-actions">
       <button type="button" class="btn btn-icon" id="theme-toggle">${ICON.moon}${ICON.sun}<span class="theme-label" data-theme-label>מצב כהה</span></button>
-      <button type="button" class="btn btn-primary" id="finder-open" aria-haspopup="dialog">מוצאים כיוון</button>
+      <button type="button" class="btn btn-primary" id="finder-open" aria-haspopup="dialog">${ICON.search}<span>חיפוש</span></button>
     </div>
   </div>
 </header>
@@ -389,35 +404,33 @@ ${sections}
 
 <dialog class="finder" id="finder" aria-labelledby="finder-title">
   <div class="finder-top">
-    <h2 id="finder-title">מוצאים כיוון</h2>
+    <form class="finder-form" id="finder-form" role="search">
+      <label for="q" id="finder-title">מה צריך לעשות?</label>
+      <div class="finder-field">
+        ${ICON.search}
+        <input type="text" id="q" inputmode="search" name="q" autocomplete="off" enterkeyhint="search" dir="auto" placeholder="למשל: סרטון קצר מתמונה אחת">
+        <button type="button" class="btn btn-quiet" id="finder-clear" hidden>ניקוי</button>
+      </div>
+    </form>
     <button type="button" class="btn btn-icon" id="finder-close">${ICON.close}<span>סגירה</span></button>
   </div>
   <div class="finder-in">
-    <form class="finder-form" id="finder-form" role="search">
-      <div class="field">
-        <label for="q">חיפוש לפי שם, תפקיד או קטגוריה</label>
-        <input type="text" id="q" inputmode="search" name="q" autocomplete="off" enterkeyhint="search" dir="auto">
-      </div>
-      <div class="field">
-        <label for="cat-filter">סינון לפי קטגוריה</label>
-        <select id="cat-filter" name="cat">
-          <option value="">כל הקטגוריות</option>
-          ${liveCats.map((c) => `<option value="${c.id}">${esc(c.name)}</option>`).join('')}
-        </select>
-      </div>
-      <button type="button" class="btn btn-quiet" id="finder-clear">ניקוי</button>
-    </form>
-    <p class="finder-count" id="finder-count" role="status" aria-live="polite"></p>
-    <ul class="results" id="results" role="list">${finderResults}</ul>
-    <div class="finder-empty" id="finder-empty" hidden>
-      <p><strong>אין תוצאות.</strong> אפשר לנסות שם אחר, או ללחוץ על ״ניקוי״ כדי לראות את כל הכלים.</p>
+    ${SHORTCUTS.length ? `<div class="finder-group">
+      <h3 id="finder-short-h">קיצורי דרך</h3>
+      <div class="shortcuts" role="group" aria-labelledby="finder-short-h">${SHORTCUTS.map(([k, label]) => `<button type="button" class="btn short" data-short="${k}" aria-pressed="false">${label}</button>`).join('')}</div>
+    </div>` : ''}
+    <div class="finder-group" id="finder-recent" hidden>
+      <h3 id="finder-recent-h">חיפושים אחרונים</h3>
+      <div class="shortcuts" id="finder-recent-list" role="group" aria-labelledby="finder-recent-h"></div>
     </div>
-    <nav class="cat-nav" aria-labelledby="cat-nav-title">
-      <h3 id="cat-nav-title">ניווט בין הקטגוריות</h3>
-      <ol role="list">${catNav}</ol>
-    </nav>
+    <p class="finder-count" id="finder-count" role="status" aria-live="polite"></p>
+    <ul class="results" id="results" role="list" hidden>${finderResults}</ul>
+    <div class="finder-empty" id="finder-empty" hidden>
+      <p><strong>לא נמצא כלי מתאים.</strong> כדאי לנסות מילים אחרות, למשל מה רוצים ליצור או שם של כלי.</p>
+    </div>
   </div>
 </dialog>
+<script type="application/json" id="search-index">${JSON.stringify(searchIndex).replace(/</g, '\\u003c')}</script>
 
 <script src="assets/app.js" defer></script>
 </body>
