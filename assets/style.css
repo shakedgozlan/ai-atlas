@@ -1,0 +1,279 @@
+/* Hallmark · shape: index of plates, a numbered catalogue · genre: editorial · theme: custom · job: visit · idea: "every tool is a numbered plate you can scan closed and open on demand" · vibe: "calm Hebrew reference, turquoise, numbered plates"
+ * paper: oklch(97.5% 0.008 190) · accent: oklch(48% 0.09 190) · display: Rubik · body: Rubik · hero: the atlas title set large, one sentence, three counted facts from the data · nav: sticky bar, title at the start and the finder button at the end · footer: the list of all thirteen categories and their state · imagery: the tools' official logos · signature: the two-digit plate number each tool keeps under every filter
+ * axes: cool-paper/rubik-800/turquoise · posture: index-first · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V3 · weakest: V, one category makes one long uniform grid; the plate numbers and the category numeral carry the rhythm until more categories arrive */
+/* Hallmark · dismissed 58 · the atlas is a reference catalogue: every card ships closed, and the counted words sit inside details the reader opens one card at a time */
+/* Hallmark · dismissed 49 · the long labels are screen-reader text that names the tool; the visible label is one or two words */
+/* Hallmark · answered F3 · text-wrap: balance is set on the page title, the category heads and the tool names */
+/* Owner's brief, kept on purpose: each opened card holds three inner panels on a near-white ground (strengths, limits, audience). The brief asks for exactly this, so it stays although Hallmark's gate 4 advises against a panel inside a card. */
+/* Design read: reference atlas for Hebrew-speaking designers, utilitarian editorial language, dial ENERGY 2 / RHYTHM 1 / MOTION 1.
+   Reasons: turquoise is the owner's base colour; Rubik is the owner's face; cards because each tool is a separate unit to compare; a uniform grid because a catalogue is scanned, not read; plate numbers are the identity motif. */
+
+@font-face{font-family:'Rubik';font-style:normal;font-weight:300 900;font-display:swap;src:url('../fonts/rubik-hebrew.woff2') format('woff2');unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:300 900;font-display:swap;src:url('../fonts/rubik-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:300 900;font-display:swap;src:url('../fonts/rubik-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  color-scheme:light dark;
+  --font:'Rubik',system-ui,-apple-system,'Segoe UI','Arial Hebrew',Arial,sans-serif;
+
+  --paper:light-dark(oklch(97.5% 0.008 190),oklch(19% 0.015 200));
+  --surface:light-dark(oklch(99.3% 0.004 190),oklch(23.5% 0.018 200));
+  --inner:light-dark(oklch(97.2% 0.009 190),oklch(27% 0.018 200));
+  --ink:light-dark(oklch(24% 0.03 200),oklch(94% 0.01 190));
+  --ink-soft:light-dark(oklch(41% 0.025 200),oklch(79% 0.015 195));
+  --line:light-dark(oklch(88% 0.012 195),oklch(35% 0.02 200));
+  --line-strong:light-dark(oklch(58% 0.02 195),oklch(62% 0.02 195));
+  --brand:light-dark(oklch(45% 0.085 190),oklch(80% 0.105 188));
+  --brand-hover:light-dark(oklch(38% 0.075 190),oklch(87% 0.09 188));
+  --brand-tint:light-dark(oklch(93.5% 0.035 188),oklch(31% 0.045 190));
+  --on-brand:light-dark(oklch(99% 0.005 190),oklch(19% 0.02 200));
+  --focus:light-dark(oklch(24% 0.03 200),oklch(94% 0.01 190));
+  --stale:light-dark(oklch(42% 0.02 60),oklch(82% 0.02 60));
+  --scrim:light-dark(oklch(24% 0.03 200 / 0.55),oklch(10% 0.01 200 / 0.7));
+
+  /* צבע הדגשה לכל קטגוריה. בלי ירוק ובלי אדום, כדי שלא יתבלבל עם סימון אימות או שגיאה. */
+  --cat-1:light-dark(oklch(47% 0.13 262),oklch(80% 0.11 262));
+  --cat-2:light-dark(oklch(47% 0.13 300),oklch(80% 0.11 300));
+  --cat-3:light-dark(oklch(47% 0.13 335),oklch(80% 0.11 335));
+  --cat-4:light-dark(oklch(47% 0.13 355),oklch(80% 0.11 355));
+  --cat-5:light-dark(oklch(47% 0.13 240),oklch(80% 0.11 240));
+  --cat-6:light-dark(oklch(47% 0.13 55),oklch(80% 0.11 55));
+  --cat-7:light-dark(oklch(47% 0.13 80),oklch(80% 0.11 80));
+  --cat-8:light-dark(oklch(47% 0.13 285),oklch(80% 0.11 285));
+  --cat-9:light-dark(oklch(47% 0.13 225),oklch(80% 0.11 225));
+  --cat-10:light-dark(oklch(47% 0.13 250),oklch(80% 0.11 250));
+  --cat-11:light-dark(oklch(47% 0.13 318),oklch(80% 0.11 318));
+  --cat-12:light-dark(oklch(47% 0.13 100),oklch(80% 0.11 100));
+  --cat-13:light-dark(oklch(47% 0.13 275),oklch(80% 0.11 275));
+  --cat:var(--brand);
+
+  --t-hero:clamp(2.5rem,1.5rem + 4.4vw,4.5rem);
+  --t-cat:clamp(1.5rem,1.2rem + 1.4vw,2.125rem);
+  --t-name:clamp(1.5rem,1.4rem + 0.4vw,1.75rem);
+  --t-group:1.0625rem;
+  --t-body:1rem;
+  --t-label:0.875rem;
+  --t-tech:0.75rem;
+
+  --r-card:14px;
+  --r-inner:10px;
+  --r-ctl:8px;
+  --gap:20px;
+  --pad:clamp(16px,4vw,24px);
+  --bar-h:60px;
+}
+:root[data-theme="light"]{color-scheme:light}
+:root[data-theme="dark"]{color-scheme:dark}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-padding-top:calc(var(--bar-h) + 16px);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:var(--t-body);line-height:1.6;font-weight:400}
+h1,h2,h3,h4,h5,p,ul,ol,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-underline-offset:0.2em}
+a:hover{color:var(--brand-hover)}
+bdi{unicode-bidi:isolate}
+button,input,select{font:inherit;color:inherit}
+a[href],button,summary,select,label[for]{cursor:pointer}
+button:disabled{cursor:not-allowed}
+:focus{outline:none}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+[hidden]{display:none !important}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.wrap{width:100%;max-width:1180px;margin-inline:auto;padding-inline:var(--pad)}
+
+.skip{position:absolute;inset-inline-start:12px;top:-80px;z-index:30;background:var(--ink);color:var(--paper);padding:12px 16px;border-radius:var(--r-ctl);font-weight:600}
+.skip:focus{top:12px;color:var(--paper)}
+
+.ico{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.ico .fill{fill:currentColor;stroke:none}
+
+/* כפתורים: סגנון ראשי אחד, סגנון שקט אחד */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 16px;border:1.5px solid var(--line-strong);border-radius:var(--r-ctl);background:var(--surface);color:var(--ink);font-size:var(--t-body);font-weight:600;line-height:1.3;text-decoration:none;transition:background-color .12s ease,border-color .12s ease,color .12s ease}
+.btn:hover{border-color:var(--ink);color:var(--ink);background:var(--inner)}
+.btn:active{background:var(--brand-tint)}
+.btn-primary{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.btn-primary:hover{background:var(--brand-hover);border-color:var(--brand-hover);color:var(--on-brand)}
+.btn-primary:active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.btn-quiet{border-color:transparent;background:transparent;color:var(--brand);text-decoration:underline;padding-inline:8px}
+.btn-quiet:hover{border-color:var(--line-strong);background:transparent;color:var(--brand-hover)}
+.btn-icon{padding-inline:12px}
+
+/* פס עליון */
+.bar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+.bar-in{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:var(--bar-h)}
+.brand{font-weight:700;font-size:1.0625rem;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.brand:hover{color:var(--brand)}
+.brand-short{display:none}
+.bar-actions{display:flex;align-items:center;gap:8px}
+.ico-sun{display:none}
+:root[data-theme="dark"] .ico-sun{display:block}
+:root[data-theme="dark"] .ico-moon{display:none}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .ico-sun{display:block}
+  :root:not([data-theme="light"]) .ico-moon{display:none}
+}
+html:not(.js) .bar-actions{display:none}
+
+/* פתיח */
+.hero{padding-block:clamp(24px,4.5vw,48px) clamp(20px,3vw,32px);display:grid;grid-template-columns:minmax(0,1fr);column-gap:clamp(24px,5vw,72px)}
+.hero h1{text-wrap:balance;font-size:var(--t-hero);font-weight:800;line-height:1.02;letter-spacing:-0.015em;overflow-wrap:break-word;min-width:0}
+.hero-lede{margin-top:clamp(12px,2vw,24px);max-width:52ch;font-size:clamp(1.0625rem,1rem + 0.35vw,1.25rem);line-height:1.55;color:var(--ink-soft)}
+.hero-facts{display:flex;flex-wrap:wrap;gap:12px clamp(24px,5vw,56px);margin-top:clamp(20px,3vw,32px);padding-top:clamp(16px,2vw,24px);border-top:1px solid var(--line)}
+@media (min-width:980px){
+  .hero{grid-template-columns:minmax(0,1fr) auto;align-items:end}
+  .hero h1,.hero-lede{grid-column:1}
+  .hero-facts{grid-column:2;grid-row:1 / span 2;flex-direction:column;gap:16px;margin-top:0;padding-top:0;border-top:0;padding-inline-start:clamp(24px,3vw,40px);border-inline-start:1px solid var(--line)}
+  .hero-facts div{flex-direction:row;align-items:baseline;gap:12px}
+  .hero-facts dd{min-width:1.6em}
+}
+.hero-facts div{display:flex;flex-direction:column-reverse;gap:2px}
+.hero-facts dd{font-size:clamp(1.75rem,1.4rem + 1.5vw,2.5rem);font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.hero-facts dt{font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
+
+/* סינון פעיל ומצב ריק */
+.filter-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;margin-bottom:var(--gap);padding:8px 16px;background:var(--brand-tint);border-radius:var(--r-inner);font-weight:500}
+.empty{padding:clamp(32px,6vw,64px) 0;display:grid;gap:12px;justify-items:start}
+.empty h2{font-size:var(--t-cat);font-weight:700}
+.empty p{max-width:48ch;color:var(--ink-soft)}
+
+/* קטגוריה */
+.cat{padding-bottom:clamp(24px,5vw,48px)}
+.cat-head{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:clamp(12px,2vw,20px);padding-block:clamp(16px,3vw,28px) clamp(12px,2vw,20px);border-top:3px solid var(--cat)}
+.cat-num{grid-row:span 2;font-size:clamp(2.5rem,2rem + 2.4vw,4rem);font-weight:800;line-height:0.9;color:var(--cat);font-variant-numeric:tabular-nums;align-self:start}
+.cat-head h2{text-wrap:balance;font-size:var(--t-cat);font-weight:700;line-height:1.2;overflow-wrap:break-word;min-width:0}
+.cat-count{font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
+
+/* רשת הכרטיסים. כל כרטיס תופס שתי שורות של הרשת: ראש וגוף.
+   כך ראשי הכרטיסים באותה שורה שווים בגובה, ופתיחה של כרטיס אחד לא מותחת את השכן. */
+.cards{display:grid;grid-template-columns:minmax(0,1fr);column-gap:var(--gap);row-gap:0}
+.card{display:grid;grid-template-rows:subgrid;grid-row:span 2;margin-bottom:var(--gap);min-width:0}
+@media (min-width:860px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.card-head{display:flex;flex-direction:column;gap:8px;padding:20px 20px 16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);min-width:0}
+.card.is-open .card-head{border-end-start-radius:0;border-end-end-radius:0;border-bottom-color:transparent}
+.card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:32px}
+.num{font-variant-numeric:tabular-nums;font-weight:700;color:var(--cat);font-size:var(--t-body);direction:ltr}
+.logo{display:inline-flex;align-items:center}
+.logo img{height:28px;width:auto;max-width:132px;object-fit:contain}
+.logo-dark{display:none}
+:root[data-theme="dark"] .logo-dark{display:block}
+:root[data-theme="dark"] .logo-light{display:none}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .logo-dark{display:block}
+  :root:not([data-theme="light"]) .logo-light{display:none}
+}
+.name{text-wrap:balance;font-size:var(--t-name);font-weight:700;line-height:1.15;overflow-wrap:break-word;min-width:0}
+.name:focus-visible{outline-offset:6px}
+.former{font-size:var(--t-body);color:var(--ink-soft)}
+.role{font-size:var(--t-body);line-height:1.5;color:var(--ink)}
+.price{margin-top:4px;padding-top:12px;border-top:1px solid var(--line);font-size:var(--t-body);line-height:1.5;display:grid;gap:2px}
+.verify{display:inline-flex;align-items:center;gap:8px;font-size:var(--t-label);font-weight:600;color:var(--ink-soft)}
+.verify-full{color:var(--brand)}
+.price-text{color:var(--ink)}
+.card-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:12px}
+.chev{transition:transform .15s ease}
+[aria-expanded="true"]>.chev{transform:rotate(180deg)}
+
+.card-body{display:grid;gap:12px;align-content:start;padding:4px 20px 20px;background:var(--surface);border:1px solid var(--line);border-top:0;border-end-start-radius:var(--r-card);border-end-end-radius:var(--r-card);min-width:0}
+html:not(.js) .card-head{border-end-start-radius:0;border-end-end-radius:0;border-bottom-color:transparent}
+html:not(.js) [data-toggle]{display:none}
+
+.panel{background:var(--inner);border-radius:var(--r-inner);padding:16px}
+.panel h4{display:flex;align-items:center;gap:8px;font-size:var(--t-group);font-weight:700;line-height:1.3;margin-bottom:8px}
+.points{display:grid;gap:12px}
+.points li{line-height:1.55}
+.lead{font-weight:600}
+.detail{font-weight:400;color:var(--ink)}
+.tag{display:inline-block;font-size:var(--t-tech);font-weight:600;line-height:1.5;padding:0 4px;border:1px solid var(--line-strong);border-radius:4px;color:var(--ink-soft);vertical-align:middle}
+.tag-stale{color:var(--stale);border-color:currentColor}
+
+.btn-full{width:100%;justify-content:space-between;text-align:start;margin-top:4px}
+.full{display:grid;gap:16px;padding-top:8px}
+.fact h5{font-size:var(--t-group);font-weight:700;line-height:1.3;margin-bottom:4px}
+.fact p+p,.fact p+ul,.fact ul+p{margin-top:8px}
+.fact{padding-top:16px;border-top:1px solid var(--line);overflow-wrap:break-word;min-width:0}
+.sub{font-weight:600}
+.plain{display:grid;gap:4px;padding-inline-start:1.1em;list-style:disc}
+.plans{display:grid;gap:8px;margin-top:12px}
+.plan{padding:12px 16px;background:var(--inner);border-radius:var(--r-inner)}
+.plan-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 16px}
+.plan-name{font-weight:700}
+.plan-price{font-weight:600}
+.plan-terms{font-weight:500}
+.plan-inc,.plan-notes{color:var(--ink-soft);margin-top:4px}
+.sources{display:grid;gap:2px;counter-reset:src}
+.sources{font-size:var(--t-tech)}
+.src{line-height:1.5;display:grid;padding-block:4px;border-bottom:1px solid var(--line)}
+.sources a{display:inline-flex;align-items:center;min-height:32px;overflow-wrap:anywhere}
+.src-meta{color:var(--ink-soft)}
+.checked{font-size:var(--t-tech);color:var(--ink-soft)}
+
+/* תחתית */
+.foot{margin-top:clamp(24px,5vw,56px);padding-block:clamp(28px,5vw,56px);border-top:1px solid var(--line);background:var(--surface)}
+.foot h2{font-size:var(--t-cat);font-weight:700;line-height:1.2}
+.foot-lede{color:var(--ink-soft);margin-top:4px}
+.foot-cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:0 var(--gap);margin-top:20px}
+.foot-cats li,.cat-nav li>a,.cat-nav li.pending{display:grid;grid-template-columns:2.2em minmax(0,1fr) auto;align-items:baseline;gap:8px;padding-block:12px;border-bottom:1px solid var(--line)}
+.foot-cats a{display:inline-block;padding-block:2px}
+.pending{color:var(--ink-soft)}
+.pending .num{color:var(--ink-soft)}
+.cat-nav-count{font-size:var(--t-label);font-weight:500;color:var(--ink-soft);white-space:nowrap}
+.foot-note{margin-top:24px;max-width:70ch;color:var(--ink-soft)}
+
+/* החלון הקופץ */
+.finder{width:min(680px,100% - 24px);max-width:none;height:fit-content;max-height:calc(100dvh - 24px);margin:auto;padding:0;border:1px solid var(--line-strong);border-radius:var(--r-card);background:var(--surface);color:var(--ink);overflow:hidden}
+.finder[open]{display:flex;flex-direction:column}
+.finder::backdrop{background:var(--scrim)}
+.finder-in{padding:16px clamp(16px,4vw,24px) 24px;display:grid;gap:16px;overflow:auto;overscroll-behavior:contain;min-height:0}
+.finder-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex:none;padding:16px clamp(16px,4vw,24px) 12px;border-bottom:1px solid var(--line)}
+.finder-top h2{font-size:var(--t-cat);font-weight:700;line-height:1.2}
+.finder-form{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;align-items:end}
+@media (min-width:600px){.finder-form{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) auto}}
+.field{display:grid;gap:4px;min-width:0}
+.field label{font-size:var(--t-label);font-weight:600}
+.field input,.field select{width:100%;min-height:44px;padding:8px 12px;border:1.5px solid var(--line-strong);border-radius:var(--r-ctl);background:var(--paper);color:var(--ink)}
+.field input:hover,.field select:hover{border-color:var(--ink)}
+.finder-count{font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
+.results{display:grid}
+.results a{display:grid;grid-template-columns:2.2em minmax(0,1fr);gap:8px;align-items:baseline;padding:12px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.results a:hover{background:var(--inner)}
+.results a:active{background:var(--brand-tint)}
+.res-text{display:grid;gap:1px;min-width:0}
+.res-name{font-weight:700;font-size:1.0625rem}
+.res-role{color:var(--ink)}
+.res-cat{font-size:var(--t-label);color:var(--ink-soft)}
+.finder-empty{padding:16px;background:var(--inner);border-radius:var(--r-inner)}
+.cat-nav h3{font-size:var(--t-group);font-weight:700;margin-bottom:4px}
+.cat-nav li>a{text-decoration:none;color:var(--ink);padding-inline:4px}
+.cat-nav li.pending{padding-inline:4px}
+.cat-nav li>a:hover{background:var(--inner)}
+.cat-nav li>a:active{background:var(--brand-tint)}
+
+/* מסכים צרים */
+@media (max-width:599px){
+  .brand-long{display:none}
+  .brand-short{display:inline}
+  .theme-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .card-head{padding:16px 16px 12px}
+  .card-body{padding:4px 16px 16px}
+  .panel{padding:12px}
+}
+@media (max-width:359px){
+  .card-actions .btn{flex:1 1 100%}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:0.01ms !important;animation-duration:0.01ms !important;scroll-behavior:auto !important}
+}
+@media (forced-colors:active){
+  .btn,.card-head,.card-body,.panel,.plan{border:1px solid CanvasText}
+}
+@media print{
+  .bar,.finder,.filter-bar,[data-toggle]{display:none !important}
+  .card-body,.full{display:grid !important}
+  .card{break-inside:avoid}
+}
