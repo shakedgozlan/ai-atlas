@@ -104,7 +104,15 @@
       card.hidden = !ok;
       if (ok) shown += 1;
     });
-    catSections.forEach(function (sec) { sec.hidden = !$$('.card', sec).some(function (c) { return !c.hidden; }); });
+    catSections.forEach(function (sec) {
+      var n = $$('.card', sec).filter(function (c) { return !c.hidden; }).length;
+      sec.hidden = n === 0;
+      var label = $('[data-cat-count]', sec);
+      if (label) {
+        var all = Number(label.getAttribute('data-total'));
+        label.textContent = n === all ? countWords(all) : n + ' מתוך ' + countWords(all);
+      }
+    });
     if (pageEmpty) pageEmpty.hidden = shown !== 0;
     if (filterBar) {
       filterBar.hidden = on.length === 0;

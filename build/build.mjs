@@ -310,7 +310,7 @@ const sections = liveCats.map((c) => {
   <header class="cat-head">
     <span class="cat-num" aria-hidden="true">${pad(c.id)}</span>
     <h2 id="cat-title-${c.id}" tabindex="-1">${esc(c.name)}</h2>
-    <p class="cat-count">${countTools(list.length)}</p>
+    <p class="cat-count" data-cat-count data-total="${list.length}">${countTools(list.length)}</p>
   </header>
   <ul class="cards" role="list">${list.map(cardHtml).join('')}
   </ul>
