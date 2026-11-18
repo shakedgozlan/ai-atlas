@@ -29,6 +29,9 @@ const ICON = {
   warn: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6 2.6 19.8h18.8L12 3.6Z"/><path d="M12 10v4.6"/><path d="M12 17.1v.2"/></svg>',
   chevron: '<svg class="ico chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
   close: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+  viewCards: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4.5" width="6.5" height="15" rx="1.5"/><rect x="13.5" y="4.5" width="6.5" height="15" rx="1.5"/></svg>',
+  viewIndex: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15M4.5 12h15M4.5 17.5h15"/></svg>',
+  viewGallery: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="6" height="6" rx="1.2"/><rect x="13.5" y="4.5" width="6" height="6" rx="1.2"/><rect x="4.5" y="13.5" width="6" height="6" rx="1.2"/><rect x="13.5" y="13.5" width="6" height="6" rx="1.2"/></svg>',
   sun: '<svg class="ico ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3 7 7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7"/></svg>',
   moon: '<svg class="ico ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8.3 8.3 0 0 1 9.8 4a8.3 8.3 0 1 0 10.2 10.2Z"/></svg>',
   vFull: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>',
@@ -395,6 +398,7 @@ const html = `<!doctype html>
 
 <header class="bar">
   <div class="wrap bar-in">
+    <div class="views" id="views" role="group" aria-label="תצוגה">${[['cards', 'כרטיסים', ICON.viewCards], ['index', 'אינדקס', ICON.viewIndex], ['gallery', 'גלריה', ICON.viewGallery]].map(([k, l, ic]) => `<button type="button" class="view-btn" data-view-set="${k}" aria-pressed="${k === 'cards'}" title="תצוגת ${l}">${ic}<span class="sr-only">תצוגת ${l}</span></button>`).join('')}</div>
     <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">האטלס</span></a>
     <p class="bar-date"><span class="bar-date-l">תאריך הבדיקה האחרונה</span> <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
     <div class="bar-actions">
@@ -414,11 +418,6 @@ const html = `<!doctype html>
   </section>
 
   <div class="wrap">
-    <div class="controls">
-    <div class="views" id="views" role="group" aria-labelledby="views-h">
-      <h2 class="filters-h" id="views-h">תצוגה</h2>
-      <div class="views-set">${[['cards', 'כרטיסים'], ['index', 'אינדקס'], ['gallery', 'גלריה']].map(([k, l]) => `<button type="button" class="view-btn" data-view-set="${k}" aria-pressed="${k === 'cards'}">${l}</button>`).join('')}</div>
-    </div>
     <div class="filters" id="filters" role="group" aria-labelledby="filters-h">
       <h2 class="filters-h" id="filters-h">סינון</h2>
       <div class="filters-row">
@@ -429,7 +428,6 @@ const html = `<!doctype html>
         <p id="filter-text" role="status" aria-live="polite"></p>
         <button type="button" class="btn btn-quiet" id="filter-clear">ניקוי הסינון</button>
       </div>
-    </div>
     </div>
     <div class="empty" id="page-empty" hidden>
       <h2>אין כלי שמתאים לכל הסננים</h2>

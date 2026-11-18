@@ -14,6 +14,7 @@
 
 <header class="bar">
   <div class="wrap bar-in">
+    <div class="views" id="views" role="group" aria-label="תצוגה"><button type="button" class="view-btn" data-view-set="cards" aria-pressed="true" title="תצוגת כרטיסים"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4.5" width="6.5" height="15" rx="1.5"/><rect x="13.5" y="4.5" width="6.5" height="15" rx="1.5"/></svg><span class="sr-only">תצוגת כרטיסים</span></button><button type="button" class="view-btn" data-view-set="index" aria-pressed="false" title="תצוגת אינדקס"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15M4.5 12h15M4.5 17.5h15"/></svg><span class="sr-only">תצוגת אינדקס</span></button><button type="button" class="view-btn" data-view-set="gallery" aria-pressed="false" title="תצוגת גלריה"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4.5" width="6" height="6" rx="1.2"/><rect x="13.5" y="4.5" width="6" height="6" rx="1.2"/><rect x="4.5" y="13.5" width="6" height="6" rx="1.2"/><rect x="13.5" y="13.5" width="6" height="6" rx="1.2"/></svg><span class="sr-only">תצוגת גלריה</span></button></div>
     <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">האטלס</span></a>
     <p class="bar-date"><span class="bar-date-l">תאריך הבדיקה האחרונה</span> <time datetime="2026-11-18">18.11.2026</time></p>
     <div class="bar-actions">
@@ -35,11 +36,6 @@
   </section>
 
   <div class="wrap">
-    <div class="controls">
-    <div class="views" id="views" role="group" aria-labelledby="views-h">
-      <h2 class="filters-h" id="views-h">תצוגה</h2>
-      <div class="views-set"><button type="button" class="view-btn" data-view-set="cards" aria-pressed="true">כרטיסים</button><button type="button" class="view-btn" data-view-set="index" aria-pressed="false">אינדקס</button><button type="button" class="view-btn" data-view-set="gallery" aria-pressed="false">גלריה</button></div>
-    </div>
     <div class="filters" id="filters" role="group" aria-labelledby="filters-h">
       <h2 class="filters-h" id="filters-h">סינון</h2>
       <div class="filters-row">
@@ -50,7 +46,6 @@
         <p id="filter-text" role="status" aria-live="polite"></p>
         <button type="button" class="btn btn-quiet" id="filter-clear">ניקוי הסינון</button>
       </div>
-    </div>
     </div>
     <div class="empty" id="page-empty" hidden>
       <h2>אין כלי שמתאים לכל הסננים</h2>

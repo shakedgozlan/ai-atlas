@@ -93,16 +93,36 @@ button:disabled{cursor:not-allowed}
 
 /* פס עליון */
 .bar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
-.bar-in{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:var(--bar-h)}
+.bar-in{display:flex;align-items:center;gap:12px;min-height:var(--bar-h)}
 .brand{font-weight:700;font-size:1.0625rem;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
 .brand:hover{color:var(--brand)}
 .brand-short{display:none}
-.bar-actions{display:flex;align-items:center;gap:8px}
+.bar-actions{display:flex;align-items:center;gap:8px;margin-inline-start:auto}
+/* מתג תצוגה: כרטיסים (ברירת המחדל), אינדקס או גלריה, באייקונים בלבד. הבחירה נשמרת בדפדפן.
+   במסך רחב הוא יוצא מרוחב התוכן ונצמד לקצה הימני של הסרגל. */
+.views{display:inline-flex;align-items:center;flex:none;height:44px;padding:0 3px;border:1.5px solid var(--line-strong);border-radius:999px;background:var(--surface)}
+/* אזור הלחיצה בגובה 44, והסימון הכחול מצויר קטן ממנו כדי להיכנס בתוך המסגרת */
+.view-btn{position:relative;display:inline-grid;place-items:center;width:36px;height:44px;padding:0;border:0;background:transparent;color:var(--ink-faint);cursor:pointer;transition:color .12s ease}
+.view-btn::before{content:"";position:absolute;inset:5px 0;border-radius:999px;transition:background-color .12s ease}
+.view-btn .ico{position:relative;width:20px;height:20px}
+.view-btn:hover{color:var(--brand)}
+.view-btn[aria-pressed="true"]{color:var(--on-brand)}
+.view-btn[aria-pressed="true"]::before{background:var(--brand)}
+.view-btn:focus-visible{outline-offset:-3px;border-radius:999px}
+@media (min-width:1440px){
+  .views{position:absolute;inset-inline-start:16px;top:50%;transform:translateY(-50%)}
+}
+@media (max-width:479px){
+  #finder-open{padding-inline:0;width:44px;justify-content:center}
+  #finder-open span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+}
+@media (max-width:359px){.brand{display:none}}
 /* תאריך הבדיקה האחרונה: בסרגל במסך רחב, ובנתוני הפתיח במסך צר שבו אין לו מקום בסרגל */
 .bar-date{display:none;margin-inline-start:auto;font-size:var(--t-label);color:var(--ink-faint);white-space:nowrap}
 .bar-date time{color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
 @media (min-width:760px){
   .bar-date{display:block}
+  .bar-actions{margin-inline-start:0}
   .hero-facts .fact-date{display:none}
 }
 /* מתג יום ולילה: אייקונים בלבד. העיגול יושב על המצב הפעיל. השם לקוראי מסך נמצא בטקסט מוסתר. */
@@ -132,14 +152,7 @@ html:not(.js) .bar-actions{display:none}
 
 /* סינון פעיל ומצב ריק */
 /* סננים בדף הראשי: שורת כפתורים שקטה מעל הכרטיסים. כמה סננים יחד מצמצמים את הרשימה. */
-.controls{display:flex;flex-wrap:wrap-reverse;align-items:flex-start;justify-content:space-between;gap:16px 40px;margin-bottom:clamp(20px,3vw,32px)}
-.filters{display:grid;gap:12px;flex:1 1 320px;min-width:0}
-/* מתג תצוגה: כרטיסים (ברירת המחדל), אינדקס או גלריה. הבחירה נשמרת בדפדפן. */
-.views{display:grid;gap:12px;flex:none}
-.views-set{display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
-.view-btn{min-height:44px;padding:6px 18px;border:0;border-radius:999px;background:transparent;color:var(--ink-soft);font:inherit;font-size:var(--t-label);font-weight:500;cursor:pointer;transition:background-color .12s ease,color .12s ease}
-.view-btn:hover{color:var(--brand)}
-.view-btn[aria-pressed="true"]{background:var(--brand);color:var(--on-brand)}
+.filters{display:grid;gap:12px;margin-bottom:clamp(20px,3vw,32px)}
 html:not(.js) .views{display:none}
 .filters-h{font-size:var(--t-label);font-weight:500;color:var(--ink-faint)}
 .filters-row{display:flex;flex-wrap:wrap;gap:8px 24px}
