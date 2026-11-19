@@ -678,4 +678,21 @@ ${sections}
 `;
 
 writeFileSync(outPath, html);
+
+// מפת אתר ו־robots, לכתובת הקבועה של האתר. נכתבים רק בבנייה הרגילה, לא בבדיקות.
+if (!process.env.ATLAS_OUT) {
+  const site = 'https://kleyai.tech';
+  const day = String(data.snapshot_date).slice(0, 10);
+  writeFileSync(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>${site}/</loc><lastmod>${day}</lastmod></url>
+  <url><loc>${site}/sources.html</loc><lastmod>${day}</lastmod></url>
+</urlset>
+`);
+  writeFileSync(join(root, 'robots.txt'), `User-agent: *
+Allow: /
+
+Sitemap: ${site}/sitemap.xml
+`);
+}
 console.log(`${outPath}: ${total} tools, ${liveCats.length} categories, verified ${vFull}, partial ${vPart}, unverified ${vNone}`);
