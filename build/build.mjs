@@ -181,7 +181,7 @@ function tagsHtml(t, max = CARD_TAGS_MAX, cls = '') {
   const items = toolTags(t).slice(0, max).map(tagPill).join('');
   return items ? `<ul class="card-tags${cls}" role="list" aria-label="תגים">${items}</ul>` : '';
 }
-const legendHtml = `<details class="legend" id="legend"><summary class="btn legend-btn"><span>מקרא</span></summary><ul class="legend-list" role="list">${TAGS.map((x) => `<li><span class="verify tag-${x[0]}">${x[1]}</span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul><h3 class="legend-h">דרגות ״שימו לב״</h3><ul class="legend-list" role="list">${WATCH_LEVELS.map((x) => `<li><span class="watch watch-${x[0]} watch-sample"><span class="watch-k">${x[1]}${watchBars(x[0])}</span></span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul></details>`;
+const legendHtml = `<details class="legend" id="legend"><summary class="btn legend-btn"><span>מקרא</span></summary><div class="legend-cols"><div class="legend-col"><h3 class="legend-h">תגים</h3><ul class="legend-list" role="list">${TAGS.map((x) => `<li><span class="verify tag-${x[0]}">${x[1]}</span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul></div><div class="legend-col"><h3 class="legend-h">דרגות ״שימו לב״</h3><ul class="legend-list" role="list">${WATCH_LEVELS.map((x) => `<li><span class="watch watch-${x[0]} watch-sample"><span class="watch-k">${x[1]}${watchBars(x[0])}</span></span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul></div></div></details>`;
 
 function verifyPill(t) {
   const p = t.pricing || {};

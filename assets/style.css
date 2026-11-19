@@ -266,13 +266,16 @@ html:not(.js) .filters{display:none}
 /* תגי הכרטיס (בקשת שקד): בצד שמאל של השורה העליונה, לכל תג צבע לפי המשמעות. הצבעים האלה שמורים לתגים בלבד. */
 .card-top:has(.card-tags){flex-wrap:nowrap;align-items:flex-start}
 .card-tags{flex:1;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px;margin:0;padding:0;list-style:none;min-width:0}
-.sheet-tags{justify-content:flex-start;margin-top:8px}
+.sheet-tags{justify-content:flex-start;margin-top:16px}
 .legend{margin-bottom:clamp(20px,3vw,32px)}
 .legend-btn{list-style:none;cursor:pointer;width:fit-content;background:var(--surface)}
 .legend-btn::-webkit-details-marker{display:none}
 .legend-btn::after{content:"";width:8px;height:8px;margin-inline-start:4px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .12s ease}
 .legend[open] .legend-btn::after{transform:translateY(2px) rotate(-135deg)}
-.legend-list{display:grid;margin:16px 0 0;padding:0;list-style:none;max-width:560px;border-top:1px solid var(--line)}
+/* שתי עמודות זו לצד זו במסך רחב: התגים מימין, דרגות ״שימו לב״ משמאל, כדי שהמקרא לא יתארך למטה */
+.legend-cols{display:grid;grid-template-columns:minmax(0,1fr);gap:24px clamp(32px,5vw,72px);margin-top:16px}
+@media (min-width:900px){.legend-cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.legend-list{display:grid;margin:10px 0 0;padding:0;list-style:none;max-width:560px;border-top:1px solid var(--line)}
 .legend-list li{display:grid;grid-template-columns:128px minmax(0,1fr);align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
 .legend-list .verify{justify-self:start}
 .legend-text{font-size:var(--t-body);line-height:1.5;color:var(--ink-soft)}
@@ -292,7 +295,7 @@ html:not(.js) .filters{display:none}
 .watch-bars i{width:3px;border-radius:1px;background:color-mix(in oklab,var(--new) 26%,transparent)}
 .watch-bars i:nth-child(1){height:5px}.watch-bars i:nth-child(2){height:8px}.watch-bars i:nth-child(3){height:11px}
 .watch-bars i.on{background:var(--new)}
-.legend-h{margin:24px 0 0;font-size:var(--t-label);font-weight:700;color:var(--ink)}
+.legend-h{margin:0;font-size:var(--t-label);font-weight:700;color:var(--ink)}
 .legend-h+.legend-list{margin-top:10px}
 .watch-sample{margin:0;padding:4px 10px;justify-self:start}
 .watch-k{font-weight:700;color:var(--new);white-space:nowrap}
@@ -391,9 +394,9 @@ html:has(.sheet[open]){overflow:hidden}
 .sheet-head .logo img{width:100%}
 .sheet-id{flex:1;min-width:0}
 .sheet-title{display:flex;align-items:baseline;gap:10px;font-size:clamp(1.375rem,1.2rem + 0.8vw,1.75rem);font-weight:700;line-height:1.15;letter-spacing:-0.02em;overflow-wrap:anywhere}
-.sheet-title:focus-visible{outline-offset:4px}
-.sheet-title .num{font-size:var(--t-label);letter-spacing:0}
-.sheet-role{font-size:var(--t-sheet);line-height:1.4;color:var(--ink-soft);overflow-wrap:anywhere}
+.sheet-title:focus,.sheet-title:focus-visible{outline:none}
+.sheet-title .num{font-size:var(--t-label);letter-spacing:0;flex:none;white-space:nowrap;overflow-wrap:normal}
+.sheet-role{margin-top:3px;font-size:var(--t-sheet);line-height:1.4;color:var(--ink-soft);overflow-wrap:anywhere}
 .sheet-former{color:var(--ink-faint)}
 .sheet-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
 .sheet-scroll:focus{outline:none}
@@ -401,6 +404,8 @@ html:has(.sheet[open]){overflow:hidden}
 .sheet-head{--t-sheet:0.9375rem}
 /* בראש חלון הפרטים שני לחצני אייקון בלבד: קישור חיצוני לאתר הרשמי, ו־X לסגירה. השם נשאר לקורא מסך ובריחוף */
 .sheet-head .btn-close,.sheet-head .btn-site{padding-inline:0;width:44px;min-height:44px;flex:none;justify-content:center}
+/* שני הלחצנים צמודים זה לזה, כדי שייקראו כזוג אחד */
+.sheet-head .btn-site+.btn-close{margin-inline-start:calc(6px - clamp(12px,2vw,20px))}
 .sheet-head .close-t,.sheet-head .site-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .sheet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(12px,min(2.6vw,1.8vh),32px) clamp(24px,3.4vw,48px);align-items:start}
 .sec{min-width:0;overflow-wrap:break-word}
@@ -574,9 +579,21 @@ html:not(.js) #finder-open{display:none}
   .res-cat{display:none}
   .res{grid-template-columns:2.2em minmax(0,1fr)}
   .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
-  .sheet-head-in{flex-wrap:wrap}
-  .sheet-head .btn-site{order:3;flex:1 1 100%;width:auto;gap:8px}
+  .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 64px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
+  /* ראש החלון בפלאפון: לוגו, שם ו־X בשורה אחת, התיאור מתחתם לכל הרוחב, ואז הקישור לאתר */
+  .sheet-head-in{display:grid;grid-template-columns:36px minmax(0,1fr);align-items:center;gap:10px 12px;padding-block-start:32px}
+  .sheet-id{display:contents}
+  .sheet-head .logo{grid-column:1;grid-row:1;width:36px;height:36px}
+  .sheet-title{grid-column:2;grid-row:1}
+  /* בפלאפון סוגרים בגרירה למטה או בנגיעה ברקע; הלחצן נשאר לקורא מסך בלבד */
+  .sheet-head .btn-close{position:absolute;width:1px;min-height:0;height:1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);margin:0}
+  .sheet-role{grid-column:1/-1;grid-row:2;margin-top:0}
+  .sheet-head .btn-site{grid-column:1/-1;grid-row:3;width:auto;gap:8px}
+  /* ידית גרירה: אפשר למשוך את ראש החלון למטה באצבע כדי לסגור */
+  .sheet-head{position:relative;touch-action:none}
+  .sheet-head::before{content:"";position:absolute;inset-block-start:8px;inset-inline-start:50%;width:40px;height:4px;margin-inline-start:-20px;border-radius:2px;background:var(--line-strong)}
+  .sheet.is-dragging{animation:none;transition:none}
+  .sheet.is-settling{animation:none;transition:transform .2s cubic-bezier(.2,.8,.2,1)}
   .sheet-head .site-t{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
   .pt summary{min-height:44px}
   .bill-btn{min-height:38px}
@@ -584,7 +601,8 @@ html:not(.js) #finder-open{display:none}
   .sheet-tags-head{display:none}
   .sheet-tags-body{display:flex;margin-top:0}
   .sheet-body,.sheet-head{--t-sheet:1.0625rem}
-  .sheet-body{gap:24px}
+  .sheet-body{gap:40px}
+  .sheet-row{row-gap:40px}
   .sec h4{font-size:1rem}
   .lead{font-size:1.0625rem}
   .tier-terms,.bill-note{font-size:var(--t-label)}
