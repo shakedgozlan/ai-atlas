@@ -640,8 +640,31 @@ const html = `<!doctype html>
     <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">אטלס כלי AI</span></a>
     <p class="bar-date"><span class="bar-date-l">תאריך הבדיקה האחרונה</span> <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
     <div class="bar-actions">
-      <button type="button" class="btn btn-primary" id="finder-open" aria-haspopup="dialog">${ICON.search}<span>חיפוש</span></button>
+      <form class="sbox" id="finder-form" role="search">
+        <label for="q" class="sr-only" id="finder-title">מה צריך לעשות?</label>
+        ${ICON.search}
+        <input type="text" id="q" inputmode="search" name="q" autocomplete="off" enterkeyhint="search" dir="auto" placeholder="מה צריך לעשות?" aria-controls="finder" aria-expanded="false">
+        <button type="button" class="sbox-clear" id="finder-clear" hidden>${ICON.close}<span class="sr-only">ניקוי</span></button>
+      </form>
+      <button type="button" class="btn btn-quiet sbox-cancel" id="finder-close" hidden>ביטול</button>
     </div>
+  </div>
+  <div class="finder" id="finder" role="region" aria-label="תוצאות חיפוש" hidden>
+  <div class="finder-in">
+    ${SHORTCUTS.length ? `<div class="finder-group">
+      <h3 id="finder-short-h">קיצורי דרך</h3>
+      <div class="shortcuts" role="group" aria-labelledby="finder-short-h">${SHORTCUTS.map(([k, label]) => `<button type="button" class="btn short" data-short="${k}" aria-pressed="false">${label}</button>`).join('')}</div>
+    </div>` : ''}
+    <div class="finder-group" id="finder-recent" hidden>
+      <h3 id="finder-recent-h">חיפושים אחרונים</h3>
+      <div class="shortcuts" id="finder-recent-list" role="group" aria-labelledby="finder-recent-h"></div>
+    </div>
+    <p class="finder-count" id="finder-count" role="status" aria-live="polite"></p>
+    <ul class="results" id="results" role="list" hidden>${finderResults}</ul>
+    <div class="finder-empty" id="finder-empty" hidden>
+      <p><strong>לא נמצא כלי מתאים.</strong> כדאי לנסות מילים אחרות, למשל מה רוצים ליצור או שם של כלי.</p>
+    </div>
+  </div>
   </div>
 </header>
 
@@ -688,34 +711,6 @@ ${sections}
   </div>
 </footer>
 
-<dialog class="finder" id="finder" aria-labelledby="finder-title">
-  <div class="finder-top">
-    <form class="finder-form" id="finder-form" role="search">
-      <label for="q" id="finder-title">מה צריך לעשות?</label>
-      <div class="finder-field">
-        ${ICON.search}
-        <input type="text" id="q" inputmode="search" name="q" autocomplete="off" enterkeyhint="search" dir="auto" placeholder="למשל: סרטון קצר מתמונה אחת">
-        <button type="button" class="btn btn-quiet" id="finder-clear" hidden>ניקוי</button>
-      </div>
-    </form>
-    <button type="button" class="btn btn-icon" id="finder-close">${ICON.close}<span>סגירה</span></button>
-  </div>
-  <div class="finder-in">
-    ${SHORTCUTS.length ? `<div class="finder-group">
-      <h3 id="finder-short-h">קיצורי דרך</h3>
-      <div class="shortcuts" role="group" aria-labelledby="finder-short-h">${SHORTCUTS.map(([k, label]) => `<button type="button" class="btn short" data-short="${k}" aria-pressed="false">${label}</button>`).join('')}</div>
-    </div>` : ''}
-    <div class="finder-group" id="finder-recent" hidden>
-      <h3 id="finder-recent-h">חיפושים אחרונים</h3>
-      <div class="shortcuts" id="finder-recent-list" role="group" aria-labelledby="finder-recent-h"></div>
-    </div>
-    <p class="finder-count" id="finder-count" role="status" aria-live="polite"></p>
-    <ul class="results" id="results" role="list" hidden>${finderResults}</ul>
-    <div class="finder-empty" id="finder-empty" hidden>
-      <p><strong>לא נמצא כלי מתאים.</strong> כדאי לנסות מילים אחרות, למשל מה רוצים ליצור או שם של כלי.</p>
-    </div>
-  </div>
-</dialog>
 <div class="cmp-tray" id="cmp-tray" hidden role="region" aria-label="השוואה בין כלים">
   <ul class="cmp-chips" id="cmp-chips" role="list"></ul>
   <p class="cmp-hint" id="cmp-hint" role="status" aria-live="polite"></p>
