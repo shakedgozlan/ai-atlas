@@ -1,0 +1,297 @@
+{
+ "id": null,
+ "slug": "bolt",
+ "category_id": 11,
+ "name": "Bolt",
+ "former_name": null,
+ "rename_note": null,
+ "role": "בניית אתרים ואפליקציות ווב מלאות מתוך שיחה, עם אחסון ומסד נתונים מובנים.",
+ "url": "https://bolt.new",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "תוכנית חינמית שמתחדשת כל חודש",
+   "detail": "Free כוללת מיליון טוקנים בחודש, עם תקרה של 300 אלף ביום, פרויקטים ציבוריים ופרטיים ואחסון אתר, בלי כרטיס אשראי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "אחסון ומסד נתונים כלולים",
+   "detail": "כל התוכניות כוללות אחסון אתר ו־Unlimited databases, ומ־Pro אפשר גם לבחור ספק מסד נתונים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הפלט שייך למשתמש",
+   "detail": "לפי תנאי השימוש, המשתמש שומר על כל הזכויות בתוכן שלו, ו־StackBlitz מעבירה אליו את זכויותיה בפלט שנוצר, בכפוף לזכויות צד שלישי.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מיתוג Bolt ובלי דומיין מותאם בחינם",
+   "detail": "באתרים שנבנו ב־Free מופיע מיתוג של Bolt, ואין דומיין מותאם. שניהם נפתחים רק מ־Pro.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "התוכן משמש לאימון כברירת מחדל",
+   "detail": "לפי תנאי השימוש, StackBlitz רשאית להשתמש בתוכן לאימון מודלים ולרשות מאגרי נתונים מותממים לצד שלישי, עד שהמשתמש מבטל בהגדרות. הביטול אינו רטרואקטיבי.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תקרה יומית בחינם ובלי העברת יתרה",
+   "detail": "ב־Free אפשר לנצל עד 300 אלף טוקנים ביום, והיתרה אינה עוברת לחודש הבא. העברת יתרה קיימת רק בתוכניות בתשלום.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים, יזמים וסטודנטים שרוצים להפוך רעיון לאתר או לאפליקציית ווב עובדת בלי לכתוב קוד.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־25 דולר לחודש בחיוב חודשי, לפני מסים (Pro). יש תוכנית חינמית עם מיליון טוקנים בחודש.",
+  "model": "מנוי עם טוקנים",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "מיליון טוקנים בחודש, עד 300 אלף ביום, פרויקטים ציבוריים ופרטיים, אחסון אתר, Unlimited databases",
+    "notes": "\"Free forever, no card required\". מיתוג Bolt באתרים, בלי דומיין מותאם ובלי העברת יתרה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 25,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מ־10 מיליון טוקנים בחודש, בלי תקרה יומית, העברת יתרה, דומיין מותאם, בלי מיתוג Bolt, הרחבת מסד הנתונים ובחירת ספק",
+    "notes": "בתוספת מסים. בעמוד יש מתג לחיוב שנתי עם \"Save up to 28%\", אבל המחיר השנתי לא מוצג.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Teams",
+    "price": 30,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מ־10 מיליון טוקנים לחבר צוות בחודש, בלי תקרה יומית, העברת יתרה",
+    "notes": "בתוספת מסים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "חוזה שנתי בהתאמה אישית, בחיוב לפי צריכה",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Free קבועה וללא כרטיס אשראי: מיליון טוקנים בחודש עם תקרה של 300 אלף ביום, פרויקטים ציבוריים ופרטיים, אחסון אתר ומסדי נתונים. האתרים נושאים מיתוג של Bolt, ואין דומיין מותאם.",
+  "trial": null,
+  "unverified_notes": "המחירים בחיוב שנתי לא מוצגים בעמוד המחירים (רק \"Save up to 28%\"). סתירה: עמוד Bolt Lite מתאר את Pro כתוכנית שמחויבת שנתית ב־25 דולר לחודש, ואילו עמוד המחירים כותב \"billed monthly\". המטבע מוצג כ־$ בלי קוד מטבע. מחיר טוקנים נוספים לא נבדק. העמוד לא מזכיר הנחה לסטודנטים.",
+  "superseded_plans": [
+   {
+    "name": "Bolt Lite",
+    "price": 9,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מודלי Bolt Forge, פי 50 שימוש לעומת Free (במצב Standard)",
+    "notes": "הצעה לזמן מוגבל: \"Limited time offer. Join before Oct 14th.\" (השנה לא צוינה). מי שהצטרף ממשיך להתחדש ב־9 דולר לחודש. ביום הבדיקה ההרשמה כבר נסגרה, ולכן התוכנית אינה מחיר ההתחלה.",
+    "source_ids": [
+     "s3"
+    ]
+   }
+  ]
+ },
+ "privacy": {
+  "text": "לפי תנאי השימוש (עודכנו ב־22 בספטמבר 2026), StackBlitz רשאית להשתמש בתוכן כשיר מ־Bolt כדי לאמן, לכוונן ולשפר מודלים שלה או שפותחו עבורה, ולרשות לצד שלישי מאגרי נתונים מותממים, גם בתמורה. אפשר לבטל בכל עת ובחינם בהגדרות החשבון או במייל privacy@stackblitz.com, והביטול אינו רטרואקטיבי. תוכן Forge אינו נכלל בביטול כל עוד Bolt Forge מופעל. חשבונות באזור הכלכלי האירופי, בבריטניה ובשווייץ אינם משמשים למטרות אלה.",
+  "training_on_user_data": "כן, כברירת מחדל, עם אפשרות ביטול. חשבונות באירופה, בבריטניה ובשווייץ מוחרגים.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תנאי השימוש, המשתמש שומר על כל הזכויות בתוכן שלו, ו־StackBlitz מעבירה אליו את זכויותיה, אם יש, בפלט ה־AI שנוצר עבורו, בכפוף לזכויות צד שלישי במודלים ולזכויות משתמשים אחרים. StackBlitz אינה מתחייבת שהפלט מוגן בזכויות יוצרים, ואין בכך הבטחה מפני תביעות.",
+  "watermark": "באתרים שנבנו בתוכנית Free מופיע מיתוג של Bolt. מ־Pro אפשר להסיר אותו.",
+  "source_ids": [
+   "s2",
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא אומת: לא נמצא בעמודים שנבדקו API ציבורי לבניית אפליקציות.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "אחסון אתרים של Bolt",
+   "מסדי נתונים (בחירת ספק מ־Pro)"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של עברית או של כתיבה מימין לשמאל.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "StackBlitz, Inc.",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים: עמוד המחירים אינו מזכיר סטודנטים או הנחה לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://bolt.new/pricing",
+   "title": "עמוד המחירים של Bolt",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://stackblitz.com/terms-of-service",
+   "title": "תנאי השימוש של StackBlitz, החברה שמפעילה את Bolt (עודכנו ב־22 בספטמבר 2026)",
+   "official": true,
+   "published": "2026-09-22",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://bolt.new/bolt-lite",
+   "title": "Bolt Lite: עמוד ההצעה",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "כלי מוביל ותיק שמכוסה ב־6 סיכומים עצמאיים. תאריך גרסה משמעותית אחרונה (Bolt Forge) לא נקרא במקור רשמי.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 6,
+   "evidence": "research/stage4/no-code-apps.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 25,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־25 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "מיליון טוקנים בכל חודש בתוכנית החינמית, עם תקרה של 300 אלף ביום.",
+    "evidence": "research/stage4/no-code-apps.md"
+   }
+  }
+ }
+}

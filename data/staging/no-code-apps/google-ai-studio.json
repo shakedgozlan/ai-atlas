@@ -1,0 +1,309 @@
+{
+ "id": null,
+ "slug": "google-ai-studio",
+ "category_id": 11,
+ "name": "Google AI Studio",
+ "former_name": null,
+ "rename_note": null,
+ "role": "סביבת דפדפן של Google שבה מתארים אפליקציה במילים ומקבלים אפליקציה מלאה מבוססת Gemini, עם אפשרות לפרסם אותה.",
+ "url": "https://aistudio.google.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "שימוש חינמי בלי חשבון חיוב",
+   "detail": "לפי התיעוד, השימוש ב־AI Studio חינמי כל עוד לא מחברים מפתח API בתשלום. ברמת Starter אפשר לפרסם עד 2 אפליקציות full-stack בלי פרויקט Google Cloud ובלי חשבון חיוב.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "היורש של Firebase Studio",
+   "detail": "Google ממליצה על AI Studio כמסלול המעבר לבניית אב טיפוס בדפדפן אחרי סגירת Firebase Studio, ומתארת אותו כ־\"the fastest path from prompt to full-stack production app\".",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "אפליקציות Android מתוך שיחה",
+   "detail": "מ־19 במאי 2026 אפשר לבנות ב־Build אפליקציית Android בקוד Kotlin, לצפות בה באמולטור בדפדפן ולפרסם למסלול הבדיקות הפנימי של Google Play.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "בחינם התוכן משמש לשיפור המוצרים",
+   "detail": "לפי התנאים, בשירותים שאינם בתשלום Google משתמשת בתוכן ובתשובות לשיפור מוצריה, ומבקרים אנושיים עשויים לקרוא אותם. Google מזהירה לא להזין מידע רגיש או אישי.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "גיל 18 ומעלה",
+   "detail": "תנאי ה־API דורשים גיל 18 ומעלה, והשימוש מותר רק באזורים נתמכים.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חיוב מראש שנעצר באפס",
+   "detail": "ברמות בתשלום רוכשים מראש לפחות 5 דולר. כשהיתרה מגיעה לאפס, כל מפתחות ה־API שבחשבון החיוב מפסיקים לעבוד, ונקודות שלא נוצלו פגות אחרי 12 חודשים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים ויוצרים שרוצים לנסות לבנות אפליקציות מבוססות Gemini בחינם, בדפדפן.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "שימוש ב־AI Studio חינמי כל עוד לא מחברים מפתח API בתשלום. ברמות בתשלום משלמים לפי שימוש, ברכישה מראש מ־5 דולר.",
+  "model": "חינמי, עם תשלום לפי שימוש ב־API",
+  "plans": [
+   {
+    "name": "Free Tier",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "גישה למודלים מסוימים ב־Gemini API וב־AI Studio, במגבלות הקצב של הרמה החינמית",
+    "notes": "חשבונות חדשים מתחילים ברמה זו.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Starter",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "פרסום של עד 2 אפליקציות full-stack מ־Build mode בלי פרויקט Google Cloud ובלי חשבון חיוב",
+    "notes": "לחשבונות זכאים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Tier 1",
+    "price": null,
+    "price_text": "לפי שימוש, דרך חשבון חיוב פעיל; תקרת הוצאה 250 דולר",
+    "price_short": "לפי שימוש",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "שדרוג מחייב חשבון חיוב ותשלום מראש של 5 דולר לפחות. ב־Prepay הסכום המרבי לרכישה הוא 5,000 דולר.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Tier 2",
+    "price": null,
+    "price_text": "לפי שימוש; אחרי תשלום של 100 דולר ו־3 ימים; תקרת הוצאה 2,000 דולר",
+    "price_short": "לפי שימוש",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Tier 3",
+    "price": null,
+    "price_text": "לפי שימוש; אחרי תשלום של 1,000 דולר ו־30 ימים; תקרת הוצאה מ־20,000 עד 100,000 דולר ומעלה",
+    "price_short": "לפי שימוש",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "AI Studio, כולל Build mode, חינמי כל עוד לא מחברים מפתח API בתשלום, במגבלות הקצב של הרמה החינמית. חשבונות זכאים ברמת Starter יכולים לפרסם עד 2 אפליקציות full-stack בלי חשבון חיוב, ולפי הבלוג מ־19 במאי 2026 שתי האפליקציות הראשונות נפרסות ל־Google Cloud בחינם, בלי כרטיס אשראי.",
+  "trial": "חשבונות שנפתחו אחרי 2 במרץ 2026 אינם יכולים להשתמש בנקודות Welcome של Google Cloud עבור Gemini API או AI Studio, ומאז מרץ 2026 שימוש ב־Gemini API אינו נכלל בניסיון החינמי של 300 הדולר.",
+  "unverified_notes": "מחירון המודלים לפי טוקנים לא נקרא. מגבלות הקצב המדויקות של הרמה החינמית לא נבדקו. עלות האחסון של אפליקציה שמתפרסמת דרך Google Cloud מעבר לרמת Starter לא נבדקה."
+ },
+ "privacy": {
+  "text": "לפי התנאים הנוספים של Gemini API (בתוקף מ־23 במרץ 2026): בשירותים שאינם בתשלום Google משתמשת בתוכן שנשלח ובתשובות כדי לספק ולשפר את מוצריה וטכנולוגיות הלמידה שלה, ומבקרים אנושיים עשויים לקרוא ולתייג קלט ופלט אחרי ניתוקם מהחשבון. Google מזהירה לא להזין מידע רגיש, סודי או אישי. בשירותים בתשלום Google אינה משתמשת בהנחיות ובתשובות לשיפור מוצריה, ושומרת אותן לזמן קצר לזיהוי הפרות מדיניות. לפי תיעוד החיוב, כשלפחות לפרויקט API אחד יש חיוב פעיל, גם ההנחיות ב־AI Studio כפופות לתנאי השירותים בתשלום.",
+  "training_on_user_data": "כן, בשימוש החינמי (כולל סקירה אנושית). לא, בשירותים בתשלום.",
+  "source_ids": [
+   "s2",
+   "s1"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי התנאים, Google אינה טוענת לבעלות על התוכן שנוצר, והמשתמש אחראי לאופן השימוש בו. אין בכך הבטחה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "AI Studio הוא חלק מפלטפורמת Gemini API, עם מפתחות API, רמות שימוש ותשלום מראש או בדיעבד. מחירון המודלים לא נקרא בבדיקה זו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "פרסום אפליקציות full-stack ל־Google Cloud מתוך Build mode",
+   "Google Workspace (Sheets, Drive)",
+   "Google Play (מסלול בדיקות פנימי)",
+   "ייצוא ל־Google Antigravity"
+  ],
+  "source_ids": [
+   "s1",
+   "s4"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "לא אומת: עמוד השפות הנתמכות של Gemini לא נקרא בבדיקה זו.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Google",
+  "parent": "Alphabet",
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה ייעודית לסטודנטים בעמודים הרשמיים שנבדקו.",
+  "source_ids": []
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://ai.google.dev/gemini-api/docs/billing",
+   "title": "תיעוד Gemini API: חיוב ורמות שימוש (עודכן ב־28 בספטמבר 2026)",
+   "official": true,
+   "published": "2026-09-28",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://aistudio.google.com/docs/terms?hl=en",
+   "title": "תנאי השימוש הנוספים של Gemini API ו־Google AI Studio (בתוקף מ־23 במרץ 2026)",
+   "official": true,
+   "published": "2026-03-23",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://firebase.google.com/docs/studio/migrating-project",
+   "title": "תיעוד Firebase: סגירת Firebase Studio והעברת פרויקטים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-ai-studio-io-2026/",
+   "title": "הבלוג של Google: Google AI Studio at I/O 2026",
+   "official": true,
+   "published": "2026-05-19",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "מוצר מוביל של Google שמופיע ברשימת הווב של a16z. ב־19 במאי 2026 נוספו בניית אפליקציות Android ופרסום של שתי אפליקציות ראשונות בחינם, אבל אף אחד מששת הסיכומים שנספרו אינו מכסה אותו, ולכן הכלל לא מתקיים והוא נכנס כמוצר מוביל ומבוסס.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Google AI Studio at I/O 2026 (Android apps)",
+   "latest_version_date": "May 19, 2026",
+   "latest_version_date_iso": "2026-05-19",
+   "independent_reviews": 0,
+   "evidence": "research/stage4/no-code-apps.md"
+  },
+  "hebrew": {
+   "value": "לא אומת",
+   "label": "עברית לא אומתה",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": "USD",
+   "billing": null,
+   "plan": null,
+   "verified": false,
+   "label": "חינם, ובתשלום לפי שימוש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": [
+    "אפליקציות לנייד"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 0,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מופיע כאחד מאתרי Google ברשימת הווב של a16z, Top 100 Gen AI Consumer Apps, מהדורה 7 (אוקטובר 2026, לפי Similarweb), בלי מקום מפורט בטקסט.",
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/no-code-apps.md"
+   }
+  }
+ }
+}

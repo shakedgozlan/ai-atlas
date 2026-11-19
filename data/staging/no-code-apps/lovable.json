@@ -1,0 +1,310 @@
+{
+ "id": null,
+ "slug": "lovable",
+ "category_id": 11,
+ "name": "Lovable",
+ "former_name": null,
+ "rename_note": null,
+ "role": "בניית אתרים ואפליקציות ווב מלאות מתוך שיחה בשפה טבעית, עם פרסום ואחסון בענן של Lovable.",
+ "url": "https://lovable.dev",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "הנחה לסטודנטים",
+   "detail": "לפי Lovable, סטודנט שמאמת את מעמדו מקבל עד 50% הנחה על Lovable Pro.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית לעבודה משותפת",
+   "detail": "Free כוללת מספר משתתפים לא מוגבל, 5 דומיינים מסוג lovable.app ו־Cloud, בלי כרטיס אשראי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הקוד והאפליקציה שייכים למשתמש",
+   "detail": "לפי תנאי השימוש, המשתמש הוא הבעלים של הפרויקטים שבנה ושל הפלט שנוצר עבורו, בכפוף לזכויות צד שלישי במודלים.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "תוכן בתוכניות Free ו־Pro משמש לאימון כברירת מחדל",
+   "detail": "החל מ־9 בספטמבר 2026 הנחיות, קוד וקבצי פרויקט בתוכניות Free ו־Pro עשויים לשמש לאימון המודלים של Lovable. אפשר לבטל בהגדרות החשבון, והביטול חל מכאן והלאה בלבד.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "דומיין מותאם והסרת התג רק בתשלום",
+   "detail": "דומיין מותאם, הסרת התג של Lovable והעברת נקודות זיכוי לחודש הבא מופיעים בעמוד המחירים רק מ־Pro. ב־Free הפרסום מוגדר כ־Invite-only publishing.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "100 נקודות זיכוי בחודש ב־Pro",
+   "detail": "Pro, ב־25 דולר לחודש, כולל 100 נקודות זיכוי. לפי הדוגמאות בעמוד, דף נחיתה עם תמונות עולה 1.70 נקודות והוספת התחברות 1.20.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים, יזמים וסטודנטים שרוצים להפוך רעיון לאפליקציית ווב עובדת בלי לכתוב קוד.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־25 דולר לחודש בחיוב חודשי (Pro, 100 נקודות זיכוי). יש תוכנית חינמית, וסטודנטים מקבלים עד 50% הנחה על Pro.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "מספר משתתפים לא מוגבל, 5 דומיינים מסוג lovable.app, Invite-only publishing, Cloud, תמיכה בקהילה",
+    "notes": "בלי כרטיס אשראי. מכסת נקודות הזיכוי בתוכנית החינמית לא מוצגת בעמוד המחירים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 25,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "100 נקודות זיכוי בחודש, העברת יתרה, רכישת נקודות נוספות, דומיינים מסוג lovable.app ללא הגבלה, דומיין מותאם, הסרת התג, הרשאות משתמשים, Design systems",
+    "notes": "משתמשים ללא הגבלה. בחיוב שנתי מוצג \"2 months free\", אבל המחיר השנתי לא מוצג.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": 50,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "100 נקודות זיכוי בחודש, סביבת צוות, פרסום בסביבת העבודה, SSO, Security center, תבניות עיצוב",
+    "notes": "משתמשים ללא הגבלה. הנתונים בתוכנית זו מוחרגים מאימון כברירת מחדל.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "דמי פלטפורמה ותמחור לפי היקף, בהצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free ללא תשלום וללא כרטיס אשראי: מספר משתתפים לא מוגבל, 5 דומיינים מסוג lovable.app, Invite-only publishing ו־Cloud. מכסת נקודות הזיכוי בחינם לא מוצגת בעמוד המחירים.",
+  "trial": null,
+  "unverified_notes": "המחירים בחיוב שנתי לא מוצגים (רק \"2 months free\"). מכסת הנקודות בתוכנית החינמית ותדירות חידושה לא מופיעות בעמוד. המטבע מוצג כ־$ בלי קוד מטבע. תשובות ה־FAQ על תוקף נקודות והחזרים ריקות בעמוד."
+ },
+ "privacy": {
+  "text": "לפי התיעוד הרשמי, החל מ־9 בספטמבר 2026 נתוני לקוחות בתוכניות Free ו־Pro, כולל הנחיות, קבצים מצורפים, קוד, קבצי פרויקט ותוצרים, עשויים לשמש לאימון ולשיפור המודלים של Lovable. אפשר לבטל ב־Account settings, Preferences, AI model training. הביטול חל מכאן והלאה ואינו מוציא נתונים ממודלים שכבר אומנו. ב־Business וב־Enterprise הנתונים מוחרגים מאימון כברירת מחדל. נתוני משתמשי הקצה של האפליקציות ופרטי החיוב אינם משמשים לאימון. תנאי השימוש מעניקים ל־Lovable רישיון עולמי ותמידי לשימוש בנתוני הלקוח למטרותיה העסקיות.",
+  "training_on_user_data": "כן, בתוכניות Free ו־Pro כברירת מחדל מ־9 בספטמבר 2026, עם אפשרות ביטול. ב־Business וב־Enterprise מוחרג כברירת מחדל.",
+  "source_ids": [
+   "s2",
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תנאי השימוש (עודכנו ב־28 באוגוסט 2026), המשתמש הוא הבעלים של נתוני הלקוח, של האפליקציות והפרויקטים שבנה ושל הפלט שנוצר עבורו, בכפוף לזכויות צד שלישי במודלים, בנתוני האימון ובפלטים. הרישיון לשירות מאפשר להקים, לפרסם ולהפעיל את האפליקציות ולאפשר למשתמשי קצה להשתמש בהן, למטרות אישיות או עסקיות פנימיות, ואוסר למכור את השירות עצמו הלאה. אין בכך הבטחה מפני תביעות זכויות יוצרים.",
+  "watermark": "עמוד המחירים מציג הסרת תג של Lovable (badge removal) רק מ־Pro, ומכאן שבתוכנית Free מוצג תג. העמוד אינו אומר זאת במפורש.",
+  "source_ids": [
+   "s3",
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "יומן השינויים מזכיר Lovable API (רשומה מ־17 בספטמבר 2026), אוסף Postman ו־Events & Hooks (27 באוקטובר 2026). תיעוד ה־API עצמו ומחירו לא נקראו.",
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Lovable Cloud ומסד נתונים מובנה",
+   "Supabase",
+   "סנכרון עם מאגר Git",
+   "Attio",
+   "Intercom"
+  ],
+  "source_ids": [
+   "s1",
+   "s4"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "iOS",
+   "Android"
+  ],
+  "source_ids": [
+   "s1",
+   "s5"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של עברית או של כתיבה מימין לשמאל.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Lovable Labs Incorporated",
+  "parent": null,
+  "country": null,
+  "note": "תנאי השימוש כפופים לדיני מדינת Delaware, אך מדינת ההתאגדות לא נכתבה במקור שנקרא."
+ },
+ "student_benefits": {
+  "text": "לפי Lovable, סטודנטים שמאמתים את מעמדם מקבלים עד 50% הנחה על Lovable Pro. מוזכרים גם Lovable for campus (דרך צוות המכירות) ו־Lovable for kids בשיתוף imagi. תנאי האימות ומשך ההנחה לא אומתו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://lovable.dev/pricing",
+   "title": "עמוד המחירים של Lovable",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://docs.lovable.dev/features/business/data-opt-out",
+   "title": "תיעוד Lovable: אימון מודלים על נתוני לקוחות והסרה",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://lovable.dev/terms",
+   "title": "תנאי השימוש של Lovable (עודכנו ב־28 באוגוסט 2026)",
+   "official": true,
+   "published": "2026-08-28",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://docs.lovable.dev/changelog",
+   "title": "יומן השינויים של Lovable",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://lovable.dev/blog",
+   "title": "הבלוג של Lovable (רשימת הפוסטים)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "כלי מוביל ותיק. האפליקציה לנייד של Lovable ל־iOS ול־Android הושקה ב־27 באפריל 2026, ו־subagents ב־27 במאי 2026. פוסט \"Two years of Lovable\" פורסם ב־18 בנובמבר 2026.",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "The Lovable mobile app",
+   "latest_version_date": "April 27, 2026",
+   "latest_version_date_iso": "2026-04-27",
+   "independent_reviews": 6,
+   "evidence": "research/stage4/no-code-apps.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 25,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־25 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר",
+    "iOS",
+    "Android"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מופיע ברשימת אתרי הווב של a16z, Top 100 Gen AI Consumer Apps, מהדורה 7 (אוקטובר 2026, לפי Similarweb), בלי מקום מפורט בטקסט.",
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/no-code-apps.md"
+   }
+  }
+ }
+}
