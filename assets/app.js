@@ -273,7 +273,6 @@
   // החיפוש מקומי: הוא מתאים את המילים שנכתבו לשם, לתיאור, ליתרונות ולקהל של כל כלי, ומדרג לפי ההתאמה.
   // כדי לחבר מודל בהמשך מחליפים רק את rank, שמקבלת טקסט ומחזירה רשימת כלים מדורגת עם נימוק.
   var dialog = $('#finder');
-  var openBtn = $('#finder-open');
   var q = $('#q');
   var index = [];
   try { index = JSON.parse($('#search-index').textContent); } catch (e) { index = []; }
@@ -373,8 +372,36 @@
     finderCount.textContent = found.length === 0 ? 'אין תוצאות' : 'נמצאו ' + words(found.length);
   }
 
-  if (dialog && openBtn && q && typeof dialog.showModal === 'function') {
-    q.addEventListener('input', search);
+  // החיפוש הוא תיבה בסרגל העליון. לחיצה עליה פותחת מתחתיה לוח עם קיצורי דרך ותוצאות, בלי שכבה מעל הדף.
+  var cancelBtn = $('#finder-close');
+  var barEl = $('.bar');
+  if (dialog && q && barEl) {
+    var isOpen = false;
+    var openPanel = function () {
+      if (isOpen) return;
+      isOpen = true;
+      dialog.hidden = false;
+      q.setAttribute('aria-expanded', 'true');
+      root.classList.add('search-open');
+      cancelBtn.hidden = false;
+      search();
+    };
+    var closePanel = function () {
+      if (!isOpen) return;
+      isOpen = false;
+      dialog.hidden = true;
+      q.setAttribute('aria-expanded', 'false');
+      root.classList.remove('search-open');
+      cancelBtn.hidden = true;
+    };
+    var resetSearch = function () {
+      q.value = '';
+      shortBtns.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+      search();
+    };
+    q.addEventListener('focus', openPanel);
+    q.addEventListener('click', openPanel);
+    q.addEventListener('input', function () { openPanel(); search(); });
     $('#finder-form').addEventListener('submit', function (e) { e.preventDefault(); saveRecent(q.value); });
     finderClear.addEventListener('click', function () { q.value = ''; search(); q.focus(); });
     shortBtns.forEach(function (b) {
@@ -383,20 +410,34 @@
         search();
       });
     });
-    openBtn.addEventListener('click', function () {
-      dialog.showModal();
-      search();
-      q.focus();
+    // סגירה: מקש היציאה, לחיצה מחוץ לתיבה וללוח, כפתור הביטול בפלאפון, או יציאה מהלוח במקלדת
+    doc.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && isOpen && !doc.querySelector('dialog[open]')) { closePanel(); q.blur(); }
     });
-    $('#finder-close').addEventListener('click', function () { dialog.close(); });
-    // כל פתיחה מתחילה נקייה
-    dialog.addEventListener('close', function () {
-      q.value = '';
-      shortBtns.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+    doc.addEventListener('pointerdown', function (e) {
+      if (isOpen && !barEl.contains(e.target)) closePanel();
     });
-    // לחיצה על הרקע המעומעם סוגרת. מקש היציאה והחזרת המיקוד לכפתור מטופלים על ידי הדפדפן.
-    dialog.addEventListener('click', function (e) { if (e.target === dialog) dialog.close(); });
-    dragToClose(dialog, $('.finder-top', dialog));
+    doc.addEventListener('focusin', function (e) {
+      if (isOpen && !barEl.contains(e.target)) closePanel();
+    });
+    cancelBtn.addEventListener('click', function () { resetSearch(); closePanel(); q.blur(); });
+    // חץ למטה בתיבה עובר לתוצאה הראשונה, וחצים מנווטים בין התוצאות
+    var visibleResults = function () { return $$('[data-open-tool]', dialog).filter(function (b) { return b.offsetParent !== null; }); };
+    q.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowDown') return;
+      var first = visibleResults()[0];
+      if (first) { e.preventDefault(); first.focus(); }
+    });
+    dialog.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+      var list = visibleResults();
+      var i = list.indexOf(doc.activeElement);
+      if (i === -1) return;
+      e.preventDefault();
+      if (e.key === 'ArrowUp' && i === 0) { q.focus(); return; }
+      var n = list[i + (e.key === 'ArrowDown' ? 1 : -1)];
+      if (n) n.focus();
+    });
     // בחירה בתוצאה סוגרת את החיפוש ופותחת את חלון הפרטים של הכלי
     $$('[data-open-tool]', dialog).forEach(function (b) {
       b.addEventListener('click', function () {
@@ -404,7 +445,8 @@
         // בכל כלי יש כפתור פרטים לכל תצוגה. בוחרים את זה שמוצג עכשיו.
         var opener = $$('#tool-' + id + ' [data-sheet-open]').filter(function (b) { return b.offsetParent !== null; })[0] || $('#tool-' + id + ' [data-sheet-open]');
         saveRecent(q.value);
-        dialog.close();
+        resetSearch();
+        closePanel();
         if (!opener) return;
         if (opener.closest('.card').hidden) clearFilters();
         opener.scrollIntoView({ block: 'center' });
@@ -412,8 +454,6 @@
         opener.click();
       });
     });
-  } else if (openBtn) {
-    openBtn.hidden = true;
   }
 })();
 
