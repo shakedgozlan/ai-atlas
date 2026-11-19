@@ -416,3 +416,197 @@
     openBtn.hidden = true;
   }
 })();
+
+/* ---------- השוואה בין 2 עד 3 כלים ---------- */
+// בוחרים כלים בכרטיסים, וסרגל צף מראה מה נבחר. ההשוואה היא רק בין כלים מאותה קטגוריה.
+// הבחירה נשמרת בכתובת (#compare=כלי,כלי), ולכן אפשר לשתף השוואה בקישור.
+(function () {
+  'use strict';
+  var doc = document;
+  var $ = function (sel, el) { return (el || doc).querySelector(sel); };
+  var $$ = function (sel, el) { return Array.prototype.slice.call((el || doc).querySelectorAll(sel)); };
+  var dataEl = doc.getElementById('compare-data');
+  var dlg = doc.getElementById('cmp');
+  var tray = doc.getElementById('cmp-tray');
+  if (!dataEl || !dlg || !tray || typeof dlg.showModal !== 'function') {
+    $$('[data-compare]').forEach(function (b) { b.hidden = true; });
+    return;
+  }
+  var data = JSON.parse(dataEl.textContent);
+  var MAX = 3;
+  var byId = {};
+  data.tools.forEach(function (t) { byId[t.id] = t; });
+  var chips = doc.getElementById('cmp-chips');
+  var hint = doc.getElementById('cmp-hint');
+  var goBtn = doc.getElementById('cmp-go');
+  var diffBtn = doc.getElementById('cmp-diff');
+  var body = doc.getElementById('cmp-body');
+  var sel = [];
+  var diffOnly = false;
+  var UN = /לא (אומת|אומתה|נמצא|נמצאה|מוזכרת|נבדק)/;
+
+  function el(tag, cls, text) {
+    var n = doc.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function logo(t) {
+    if (!t.l) return null;
+    var wrap = el('span', 'logo');
+    var mk = function (src, cls) {
+      var i = doc.createElement('img');
+      i.src = src; i.alt = ''; i.width = 28; i.height = 28; i.decoding = 'async';
+      if (cls) i.className = cls;
+      return i;
+    };
+    if (t.ld) { wrap.appendChild(mk(t.l, 'logo-light')); wrap.appendChild(mk(t.ld, 'logo-dark')); }
+    else wrap.appendChild(mk(t.l));
+    return wrap;
+  }
+  function say(msg) { hint.textContent = msg || ''; }
+
+  function toggle(id) {
+    var i = sel.indexOf(id);
+    if (i !== -1) { sel.splice(i, 1); say(''); paint(); return; }
+    if (sel.length >= MAX) { say('אפשר להשוות עד ' + MAX + ' כלים. כדאי להסיר אחד קודם.'); return; }
+    if (sel.length && byId[sel[0]].cat !== byId[id].cat) { say('משווים רק כלים מאותה קטגוריה.'); return; }
+    sel.push(id); say(''); paint();
+  }
+
+  function paint() {
+    var cat = sel.length ? byId[sel[0]].cat : null;
+    $$('[data-compare]').forEach(function (b) {
+      var id = b.getAttribute('data-compare');
+      var on = sel.indexOf(id) !== -1;
+      var off = !on && ((cat !== null && byId[id].cat !== cat) || sel.length >= MAX);
+      b.setAttribute('aria-pressed', String(on));
+      b.classList.toggle('is-off', off);
+      if (off) b.setAttribute('aria-disabled', 'true'); else b.removeAttribute('aria-disabled');
+    });
+    tray.hidden = sel.length === 0;
+    document.documentElement.classList.toggle('cmp-on', sel.length > 0);
+    chips.textContent = '';
+    sel.forEach(function (id) {
+      var li = el('li', 'cmp-chip');
+      var lg = logo(byId[id]);
+      if (lg) li.appendChild(lg);
+      li.appendChild(el('span', 'cmp-chip-n', byId[id].name));
+      var x = el('button', 'cmp-chip-x', '✕');
+      x.type = 'button';
+      x.setAttribute('aria-label', 'הסרת ' + byId[id].name + ' מההשוואה');
+      x.addEventListener('click', function () { toggle(id); });
+      li.appendChild(x);
+      chips.appendChild(li);
+    });
+    goBtn.disabled = sel.length < 2;
+    if (sel.length === 1 && !hint.textContent) say('בחרו עוד כלי אחד לפחות מאותה קטגוריה.');
+    if (sel.length >= 2 && sel.length < MAX && /^בחרו/.test(hint.textContent)) say('');
+  }
+
+  function same(k, list) {
+    var v = list.map(function (t) { return t.r[k] || 'לא אומת'; });
+    return v.every(function (x) { return x === v[0]; }) || v.every(function (x) { return UN.test(x); });
+  }
+
+  function render() {
+    var list = sel.map(function (id) { return byId[id]; });
+    body.textContent = '';
+    body.style.setProperty('--n', list.length);
+    body.setAttribute('role', 'table');
+    body.setAttribute('aria-label', 'השוואה בין ' + list.map(function (t) { return t.name; }).join(', '));
+    var head = el('div', 'cmp-row cmp-head');
+    head.setAttribute('role', 'row');
+    head.appendChild(el('div', 'cmp-label'));
+    list.forEach(function (t) {
+      var c = el('div', 'cmp-cell cmp-tool');
+      c.setAttribute('role', 'columnheader');
+      var top = el('div', 'cmp-tool-top');
+      var lg = logo(t);
+      if (lg) top.appendChild(lg);
+      var name = el('div', 'cmp-tool-name');
+      name.appendChild(el('span', 'num', t.no));
+      var b = el('bdi', null, t.name);
+      name.appendChild(b);
+      top.appendChild(name);
+      c.appendChild(top);
+      var acts = el('div', 'cmp-acts');
+      var more = el('button', 'btn btn-quiet', 'פרטים נוספים');
+      more.type = 'button';
+      more.addEventListener('click', function () {
+        dlg.close();
+        var open = $('#tool-' + t.id + ' .btn-open');
+        if (open) { open.scrollIntoView({ block: 'center' }); open.click(); }
+      });
+      var rm = el('button', 'btn btn-quiet', 'הסרה');
+      rm.type = 'button';
+      rm.addEventListener('click', function () {
+        toggle(t.id);
+        if (sel.length < 2) dlg.close(); else { setHash(); render(); }
+      });
+      acts.appendChild(more); acts.appendChild(rm);
+      c.appendChild(acts);
+      head.appendChild(c);
+    });
+    body.appendChild(head);
+    var shown = 0;
+    data.rows.forEach(function (r) {
+      var k = r[0], s = same(k, list);
+      if (diffOnly && s) return;
+      shown++;
+      var row = el('div', 'cmp-row' + (s ? '' : ' is-diff'));
+      row.setAttribute('role', 'row');
+      var lab = el('div', 'cmp-label', r[1]);
+      lab.setAttribute('role', 'rowheader');
+      row.appendChild(lab);
+      list.forEach(function (t) {
+        var v = t.r[k] || 'לא אומת';
+        var c = el('div', 'cmp-cell' + (UN.test(v) ? ' is-un' : ''), v);
+        c.setAttribute('role', 'cell');
+        row.appendChild(c);
+      });
+      body.appendChild(row);
+    });
+    if (!shown) body.appendChild(el('p', 'cmp-none', 'אין הבדלים בשדות שנבדקו. הכלים זהים בכל מה שמוצג כאן.'));
+    diffBtn.setAttribute('aria-pressed', String(diffOnly));
+    diffBtn.textContent = diffOnly ? 'הצגת כל השורות' : 'הצגת הבדלים בלבד';
+  }
+
+  function setHash() {
+    try { history.replaceState(null, '', '#compare=' + sel.join(',')); } catch (e) { /* בלי כתובת */ }
+  }
+  function openCompare() {
+    if (sel.length < 2) return;
+    render(); setHash();
+    dlg.showModal();
+    var sc = $('.sheet-scroll', dlg); if (sc) sc.scrollTop = 0;
+    $('#cmp-title').focus({ preventScroll: true });
+  }
+
+  $$('[data-compare]').forEach(function (b) {
+    b.addEventListener('click', function () { toggle(b.getAttribute('data-compare')); });
+  });
+  goBtn.addEventListener('click', openCompare);
+  doc.getElementById('cmp-clear').addEventListener('click', function () { sel = []; say(''); paint(); });
+  diffBtn.addEventListener('click', function () { diffOnly = !diffOnly; render(); });
+  dlg.addEventListener('close', function () {
+    if (/^#compare=/.test(location.hash)) {
+      try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { /* בלי כתובת */ }
+    }
+  });
+
+  // קישור משותף: #compare=כלי,כלי,כלי. מקבלים רק כלים קיימים מאותה קטגוריה, עד שלושה.
+  function fromHash() {
+    var m = /^#compare=([a-z0-9,\-]+)$/i.exec(location.hash);
+    if (!m) return;
+    var ids = m[1].split(',').filter(function (id, i, a) { return byId[id] && a.indexOf(id) === i; }).slice(0, MAX);
+    if (!ids.length) return;
+    var cat = byId[ids[0]].cat;
+    sel = ids.filter(function (id) { return byId[id].cat === cat; });
+    paint();
+    if (sel.length >= 2) openCompare();
+  }
+  paint();
+  fromHash();
+  window.addEventListener('hashchange', fromHash);
+})();
