@@ -285,12 +285,12 @@
    "supported": true
   },
   "starting_price": {
-   "amount": 10,
+   "amount": 18,
    "currency": "USD",
-   "billing": "שנתי",
+   "billing": "חודשי",
    "plan": "Pro",
    "verified": true,
-   "label": "מ־10 דולר לחודש",
+   "label": "מ־18 דולר לחודש",
    "has_free_plan": true
   },
   "platforms": {

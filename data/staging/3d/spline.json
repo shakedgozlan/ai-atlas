@@ -330,12 +330,12 @@
    "supported": null
   },
   "starting_price": {
-   "amount": 12,
+   "amount": 15,
    "currency": "USD",
-   "billing": "שנתי",
+   "billing": "חודשי",
    "plan": "Hobby",
    "verified": true,
-   "label": "מ־12 דולר לחודש",
+   "label": "מ־15 דולר לחודש",
    "has_free_plan": true
   },
   "platforms": {

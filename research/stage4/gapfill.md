@@ -164,3 +164,54 @@ Official pricing pages re-read with plain `curl` (no fetch quota). Each entry: U
 - Changed: Business now has prices ($99 per member per month billed monthly, $79 billed yearly = $948/yr, 6,000 credits a month / 72,000 a year, up to 10 members), replacing "not published". Starter and Pro unchanged.
 - Verification: אומת חלקית → אומת חלקית (first-month promotion still running: Starter $9, Pro $49).
 
+## Beautiful.ai (writing/beautiful-ai.json)
+- Read: https://www.beautiful.ai/pricing, https://www.beautiful.ai/education
+- Changed: Pro monthly price identified ($45, "Everything in Pro plan (billed monthly)"), replacing the separate "single project" record; Team conflict sharpened (card: flat price up to 3 users; FAQ: per user, 2-20 seats); student benefit confirmed on the education page (free annual Pro with a .edu email).
+- Verification: אומת חלקית → אומת ממקור רשמי (individual Pro prices clear; Team conflict noted).
+
+## Napkin AI (writing/napkin-ai.json)
+- Read: https://www.napkin.ai/pricing (price attributes `data-painted-monthly` / `data-painted-yearly`)
+- Changed: Plus $12 monthly / $9 yearly, Pro $30 / $22 per person per month (the $9 and $22 in the record were the yearly figures); plans rewritten as pairs; starting_price $9 yearly, verified. Privacy filled from the page FAQ (anonymized interaction data may train the AI on self-serve accounts, opt-out in settings; not Enterprise). commercial_rights: content remains the user's (FAQ).
+- Verification: אומת חלקית → אומת ממקור רשמי.
+
+## Wordtune (writing/wordtune.json)
+- Read: https://www.wordtune.com/plans (inline script variables `monthly_price_*`, `anually_price_*`, `*_discount_*`)
+- Changed: correction. The record had $6.99 as monthly and $4.89 as yearly; per the page script, $6.99 is Advanced's regular yearly price per month and $4.89 a 30% discount price. Regular prices now recorded: Advanced $13.99 monthly / $6.99 yearly, Unlimited $19.99 / $9.99; quotas filled (Advanced 30 rewrites a day, 15 summaries a month). starting_price $6.99 yearly.
+- Verification: אומת חלקית → אומת חלקית (a 30% "black-friday" discount price is wired into the page; whether it is showing now cannot be told from the HTML).
+
+## Genspark (agents-automation/genspark.json)
+- Read: https://www.genspark.ai/pricing (Cloudflare "Just a moment..." challenge, 403) and https://www.genspark.ai/helpcenter/membership-plans (readable)
+- No change: the help center gives the same plan structure already recorded (Free 100 credits a day; Plus from 10,000 and Pro from 125,000 monthly credits; annual saves ~20%) but no prices or currency.
+- Verification: אומת חלקית → אומת חלקית (unchanged).
+
+## Canva (graphic-design/canva.json)
+- Read: https://www.canva.com/pricing/ and https://www.canva.com/pro/ (both 403 with Canva's bot page "We'll have you designing again soon")
+- No change. Verification: לא אומת → לא אומת (bot wall).
+
+## Looka (graphic-design/looka.json)
+- Read: https://looka.com/pricing and https://looka.com/pricing/ (Cloudflare challenge, 403)
+- No change. Verification: אומת חלקית → אומת חלקית (bot wall).
+
+## Julius AI (meetings-knowledge/julius.json)
+- Read: https://julius.ai/pricing and https://julius.ai/pricing/ (Cloudflare challenge, 403)
+- No change. Verification: אומת חלקית → אומת חלקית (bot wall).
+
+## Gamma (writing/gamma.json)
+- Read: https://gamma.app/pricing and https://gamma.app/pricing/ (Cloudflare challenge, 403)
+- No change. Verification: אומת חלקית → אומת חלקית (bot wall).
+
+## QuillBot (writing/quillbot.json)
+- Read: https://quillbot.com/premium and https://quillbot.com/upgrade (Cloudflare challenge, 403)
+- No change. Verification: אומת חלקית → אומת חלקית (bot wall).
+
+## Note on starting_price
+Where a record now has both billings, `filters.starting_price` follows the pilot convention (cheapest paid individual plan at its monthly-billing price): Spline $15, Kittl $15, Read AI $19.75, Napkin $12, Wordtune $13.99, Fireflies $18, Google Flow Music $8. Records with yearly-only prices keep the yearly figure (LALAL.AI, Base44, Beautiful.ai).
+
+## Summary (41 records)
+- Raised אומת חלקית → אומת ממקור רשמי (16): Spline, Activepieces, Gumloop, Mistral Vibe, Google Flow Music, LALAL.AI, Speechify, Kittl, Fireflies.ai, Read AI, Wispr Flow, Bolt, Emergent, HeyGen, Beautiful.ai, Napkin AI.
+- Stayed אומת חלקית with edits (7): Base44 (monthly prices not on page), UX Pilot (conflicting static prices; free tier filled), Captions (iOS-only prices, no yearly amounts), D-ID (ambiguous script data, running promo), OpusClip (geo-tiered prices), Synthesia (first-month promo; Business price added), Wordtune (corrected prices; possible 30% promo).
+- Stayed אומת חלקית unchanged (13): Microsoft Copilot Studio, Adobe Podcast, Adobe Firefly, Adobe Illustrator, Stable Audio, Granola, tl;dv, Relume, Genspark, Looka, Julius AI, Gamma, QuillBot.
+- Stayed לא אומת (5): Moises (privacy filled), Murf, Canva, Lovart, Stitch.
+- Corrections of earlier figures: Google Flow Music ($6 was the yearly price), Napkin AI ($9 / $22 were yearly), Wordtune ($6.99 / $4.89 were yearly regular / discount).
+- Unreadable: bot walls (Canva, Looka, Julius AI, Gamma, QuillBot, Genspark pricing); script-only shells with no price data (Adobe Firefly, Illustrator and Podcast prices, Murf, Stable Audio, tl;dv, Lovart, Stitch); login wall (Moises).
+- Validator: `build/validate_staging.py` reports only ux-pilot (1 strength, 1 limitation), pre-existing and not touched here.

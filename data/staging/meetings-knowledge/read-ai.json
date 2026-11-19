@@ -316,12 +316,12 @@
    "supported": true
   },
   "starting_price": {
-   "amount": 15,
+   "amount": 19.75,
    "currency": "USD",
-   "billing": "שנתי",
+   "billing": "חודשי",
    "plan": "Pro",
    "verified": true,
-   "label": "מ־15 דולר לחודש בחיוב שנתי",
+   "label": "מ־19.75 דולר לחודש",
    "has_free_plan": true
   },
   "platforms": {
