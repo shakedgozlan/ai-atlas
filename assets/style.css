@@ -338,21 +338,23 @@ html:not(.js) .filters{display:none}
 /* אינדקס: שורה לכל כלי. השם הוא הדבר הגדול והמחיר תמיד באותה עמודה. */
 :root[data-view="index"] .cards{grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
 :root[data-view="index"] .card{margin-bottom:0}
-:root[data-view="index"] .mini{display:grid;grid-template-columns:3rem 32px minmax(9rem,17rem) minmax(0,1fr) 12.5rem 2rem;align-items:center;column-gap:20px;padding:22px 8px;border-bottom:1px solid var(--line);transition:background-color .12s ease}
+:root[data-view="index"] .mini{display:grid;grid-template-columns:3rem 32px minmax(9rem,17rem) minmax(0,1fr) 12.5rem;align-items:center;column-gap:20px;padding:22px 8px;border-bottom:1px solid var(--line);transition:background-color .12s ease}
 :root[data-view="index"] .mini-num{font-size:1.5rem}
 :root[data-view="index"] .mini-logo{width:32px}
+:root[data-view="index"] .mini-open .ico{display:none}
 :root[data-view="index"] .mini-name{font-size:clamp(1.5rem,1.2rem + 1.2vw,2.125rem)}
 @media (hover:hover){
   :root[data-view="index"] .card:hover .mini{background:var(--surface)}
   :root[data-view="index"] .card:hover .mini-num,:root[data-view="index"] .card:hover .mini-name,:root[data-view="index"] .card:hover .mini-open{color:var(--brand)}
 }
 @media (max-width:859px){
-  :root[data-view="index"] .mini{grid-template-columns:2.4rem minmax(0,1fr) 28px;gap:4px 12px;padding:18px 4px}
+  :root[data-view="index"] .mini{grid-template-columns:2.2rem 28px minmax(0,1fr);gap:2px 12px;padding:20px 4px}
   :root[data-view="index"] .mini-num{font-size:1.125rem;grid-column:1;grid-row:1}
-  :root[data-view="index"] .mini-name{grid-column:2;grid-row:1}
-  :root[data-view="index"] .mini-logo{grid-column:3;grid-row:1;width:28px}
-  :root[data-view="index"] .mini-role,:root[data-view="index"] .mini-price{grid-column:2}
-  :root[data-view="index"] .mini-open .ico{display:none}
+  :root[data-view="index"] .mini-logo{grid-column:2;grid-row:1;width:28px}
+  :root[data-view="index"] .mini-name{grid-column:3;grid-row:1}
+  :root[data-view="index"] .mini-role,:root[data-view="index"] .mini-price{grid-column:3}
+  :root[data-view="index"] .mini-role{line-height:1.45}
+  :root[data-view="index"] .mini-price{margin-top:12px}
 }
 
 /* גלריה: אריח לכל כלי, עם סמל גדול, שם ומחיר */
