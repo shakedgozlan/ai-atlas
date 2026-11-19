@@ -266,7 +266,7 @@ html:not(.js) .filters{display:none}
 /* תגי הכרטיס (בקשת שקד): בצד שמאל של השורה העליונה, לכל תג צבע לפי המשמעות. הצבעים האלה שמורים לתגים בלבד. */
 .card-top:has(.card-tags){flex-wrap:nowrap;align-items:flex-start}
 .card-tags{flex:1;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px;margin:0;padding:0;list-style:none;min-width:0}
-.sheet-tags{justify-content:flex-start;margin-top:8px}
+.sheet-tags{justify-content:flex-start;margin-top:16px}
 .legend{margin-bottom:clamp(20px,3vw,32px)}
 .legend-btn{list-style:none;cursor:pointer;width:fit-content;background:var(--surface)}
 .legend-btn::-webkit-details-marker{display:none}
@@ -391,9 +391,9 @@ html:has(.sheet[open]){overflow:hidden}
 .sheet-head .logo img{width:100%}
 .sheet-id{flex:1;min-width:0}
 .sheet-title{display:flex;align-items:baseline;gap:10px;font-size:clamp(1.375rem,1.2rem + 0.8vw,1.75rem);font-weight:700;line-height:1.15;letter-spacing:-0.02em;overflow-wrap:anywhere}
-.sheet-title:focus-visible{outline-offset:4px}
+.sheet-title:focus,.sheet-title:focus-visible{outline:none}
 .sheet-title .num{font-size:var(--t-label);letter-spacing:0;flex:none;white-space:nowrap;overflow-wrap:normal}
-.sheet-role{font-size:var(--t-sheet);line-height:1.4;color:var(--ink-soft);overflow-wrap:anywhere}
+.sheet-role{margin-top:6px;font-size:var(--t-sheet);line-height:1.4;color:var(--ink-soft);overflow-wrap:anywhere}
 .sheet-former{color:var(--ink-faint)}
 .sheet-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
 .sheet-scroll:focus{outline:none}
@@ -578,12 +578,13 @@ html:not(.js) #finder-open{display:none}
   .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
   /* ראש החלון בפלאפון: לוגו, שם ו־X בשורה אחת, התיאור מתחתם לכל הרוחב, ואז הקישור לאתר */
-  .sheet-head-in{display:grid;grid-template-columns:36px minmax(0,1fr) 44px;align-items:center;gap:10px 12px;padding-block-start:22px}
+  .sheet-head-in{display:grid;grid-template-columns:36px minmax(0,1fr);align-items:center;gap:10px 12px;padding-block-start:22px}
   .sheet-id{display:contents}
   .sheet-head .logo{grid-column:1;grid-row:1;width:36px;height:36px}
   .sheet-title{grid-column:2;grid-row:1}
-  .sheet-head .btn-close{grid-column:3;grid-row:1;margin-inline-start:0}
-  .sheet-role{grid-column:1/-1;grid-row:2}
+  /* בפלאפון סוגרים בגרירה למטה או בנגיעה ברקע; הלחצן נשאר לקורא מסך בלבד */
+  .sheet-head .btn-close{position:absolute;width:1px;min-height:0;height:1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);margin:0}
+  .sheet-role{grid-column:1/-1;grid-row:2;margin-top:0}
   .sheet-head .btn-site{grid-column:1/-1;grid-row:3;width:auto;gap:8px}
   /* ידית גרירה: אפשר למשוך את ראש החלון למטה באצבע כדי לסגור */
   .sheet-head{position:relative;touch-action:none}
