@@ -1,0 +1,76 @@
+/* הצבעות הגולשים ולחצן המשוב. נטען רק יחד עם assets/community.js. */
+
+/* התג ״בחירת הגולשים״: מלא בצבע ההדגשה, כי בכרטיס הוא עומד לבדו */
+.tag-pick{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.card-tags[hidden]{display:none}
+
+/* ההצבעה בחלון הפרטים */
+.vote{padding-top:clamp(16px,2.4vh,24px);border-top:1px solid var(--line)}
+.vote-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+.vote-btns{display:flex;flex-wrap:wrap;gap:8px}
+.vote-btn{min-width:120px}
+.vote-btn[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.vote-btn:disabled{opacity:.6;cursor:default}
+.vote-count{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
+.vote-status:empty{display:none}
+.vote-status{margin-top:8px;color:var(--ink)}
+.vote-note{margin-top:12px;max-width:68ch;font-size:var(--t-label);color:var(--ink-faint)}
+.vote-fb{margin-top:4px;margin-inline-start:-8px;font-size:var(--t-label)}
+
+/* לחצן המשוב הקבוע: בפינה הימנית התחתונה */
+.fb-fab{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));z-index:25;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 18px 0 20px;border:1.5px solid var(--line-strong);border-radius:999px;background:var(--surface);color:var(--ink);font:inherit;font-weight:500;line-height:1;cursor:pointer;box-shadow:0 8px 24px rgb(0 0 0 / .16);transition:border-color .12s ease,color .12s ease}
+.fb-fab:hover{border-color:var(--brand);color:var(--brand)}
+.fb-picking .fb-fab{display:none}
+@media (max-width:759px){
+  .fb-fab{right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));width:52px;height:52px;min-height:0;padding:0;justify-content:center}
+  .fb-fab-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .foot{padding-bottom:88px}
+}
+@media print{.fb-fab{display:none}}
+
+/* חלון המשוב */
+.fb{--pad:clamp(20px,3.4vw,32px);position:fixed;inset:0;inset-block:clamp(10px,6vh,72px) auto;width:min(560px,100vw - 32px);max-width:none;height:auto;max-height:calc(100dvh - 2 * clamp(10px,6vh,72px));margin:0 auto;padding:var(--pad);border:1px solid var(--line-strong);border-radius:var(--r-card);background:var(--paper);color:var(--ink);overflow-y:auto;overscroll-behavior:contain;box-shadow:0 24px 64px -16px oklch(20% 0.03 200 / 0.45)}
+.fb::backdrop{background:var(--scrim)}
+.fb-form{display:grid;gap:16px}
+.fb-form[hidden],.fb-done[hidden]{display:none}
+.fb-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.fb h2{font-size:1.375rem;font-weight:700;line-height:1.25}
+.fb h2:focus-visible{outline-offset:4px}
+.fb-lede{margin-top:-8px;color:var(--ink-soft)}
+.fb-kinds{display:flex;flex-wrap:wrap;gap:8px}
+.fb-l{font-size:var(--t-label);font-weight:700;color:var(--ink)}
+.fb label.fb-l{margin-bottom:-8px}
+.fb textarea{width:100%;min-height:128px;padding:12px 14px;border:1.5px solid var(--line-strong);border-radius:var(--r-ctl);background:var(--surface);color:var(--ink);font:inherit;line-height:1.5;resize:vertical}
+.fb textarea:focus-visible{outline-offset:0;border-color:var(--brand)}
+.fb-trap{position:absolute;inset-inline-start:-9999px;width:1px;height:1px;opacity:0}
+.fb-box{display:grid;gap:8px;padding:14px 16px;border-radius:var(--r-inner);background:var(--surface)}
+.fb-pin{color:var(--ink-soft)}
+.fb-acts{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.fb-file{cursor:pointer;position:relative}
+.fb-file:has(:focus-visible){outline:3px solid var(--focus);outline-offset:3px}
+.fb-img{display:block;max-width:100%;max-height:200px;border:1px solid var(--line);border-radius:var(--r-ctl);object-fit:contain;background:var(--inner)}
+.fb-img[hidden]{display:none}
+.fb-status:empty{display:none}
+.fb-status{font-weight:500;color:var(--ink)}
+.fb-send{display:flex;flex-wrap:wrap;gap:8px}
+.fb-send .btn-primary{min-width:128px}
+.fb-note{font-size:var(--t-label);color:var(--ink-faint)}
+.fb-done{display:grid;gap:12px;justify-items:start}
+@media (max-width:599px){
+  .fb{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
+}
+
+/* מצב סימון: בוחרים כרטיס או אזור שההודעה עוסקת בו */
+.fb-pickbar{position:fixed;inset-inline:0;top:0;z-index:40;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 16px;padding:10px 16px;background:var(--ink);color:var(--paper);font-weight:500}
+.fb-pickbar .btn{min-height:40px}
+.fb-picking,.fb-picking *{cursor:crosshair !important}
+.fb-picking .fb-pickbar,.fb-picking .fb-pickbar *{cursor:default !important}
+.fb-picking .fb-pickbar .btn{cursor:pointer !important}
+.fb-hot{outline:3px solid var(--brand) !important;outline-offset:3px;border-radius:var(--r-card)}
+
+/* אגודלים בכרטיס */
+.card-vote{display:flex;gap:8px}
+.card-actions .vote-thumb{width:44px;padding:0;flex:none;border-color:var(--line);background:transparent;color:var(--ink-soft)}
+:root .card-actions .vote-thumb.btn-ico:hover{border-color:var(--brand);color:var(--brand)}
+:root .card-actions .vote-thumb.btn-ico[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.card-actions .vote-thumb:disabled{opacity:.6;cursor:default}

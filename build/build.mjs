@@ -15,6 +15,10 @@ const data = JSON.parse(readFileSync(dataPath, 'utf8'));
 const stamp = (rel) => createHash('sha256').update(readFileSync(new URL(rel, import.meta.url))).digest('hex').slice(0, 10);
 const cssV = stamp('../assets/style.css');
 const jsV = stamp('../assets/app.js');
+// הצבעות ומשוב: פועלים רק כשכתובת השירות כתובה ב־build/community.config.json. כתובת ריקה מכבה אותם לגמרי.
+const communityApi = String(process.env.ATLAS_API ?? JSON.parse(readFileSync(new URL('./community.config.json', import.meta.url), 'utf8')).api ?? '').trim();
+const comCssV = stamp('../assets/community.css');
+const comJsV = stamp('../assets/community.js');
 
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const has = (v) => v !== null && v !== undefined && String(v).trim() !== '';
@@ -476,7 +480,9 @@ function cardHtml(t) {
     ${priceLine(t)}
     <div class="card-actions">
       <button type="button" class="btn btn-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-${t.id}"><span>פרטים נוספים</span><span class="sr-only"> על ${esc(t.name)}</span>${ICON.expand}</button>
-      <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
+      <div class="card-quick">
+        <a class="btn btn-site btn-ico" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer" title="לאתר הרשמי">${ICON.ext}<span class="sr-only">לאתר הרשמי של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
+      </div>
     </div>
   </div>
   ${miniHtml(t, fl.free)}
@@ -556,7 +562,9 @@ const html = `<!doctype html>
 <meta name="description" content="אטלס בעברית של כלי בינה מלאכותית: מה כל כלי עושה, כמה הוא עולה ומה חשוב לדעת עליו. צילום מצב ליום ${dateShort(data.snapshot_date)}.">
 <meta name="color-scheme" content="light dark">
 <script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;var v=localStorage.getItem('atlas-view');if(v==='index'||v==='gallery')document.documentElement.dataset.view=v}catch(e){}document.documentElement.classList.add('js')</script>
-<link rel="stylesheet" href="assets/style.css?v=${cssV}">
+<link rel="stylesheet" href="assets/style.css?v=${cssV}">${communityApi ? `
+<meta name="atlas-api" content="${esc(communityApi)}">
+<link rel="stylesheet" href="assets/community.css?v=${comCssV}">` : ''}
 </head>
 <body>
 <a class="skip" href="#main">דילוג לרשימת הכלים</a>
@@ -650,7 +658,8 @@ ${sections}
 </dialog>
 <script type="application/json" id="search-index">${JSON.stringify(searchIndex).replace(/</g, '\\u003c')}</script>
 
-<script src="assets/app.js?v=${jsV}" defer></script>
+<script src="assets/app.js?v=${jsV}" defer></script>${communityApi ? `
+<script src="assets/community.js?v=${comJsV}" defer></script>` : ''}
 </body>
 </html>
 `;
