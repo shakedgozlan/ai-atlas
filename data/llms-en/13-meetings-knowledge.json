@@ -1,0 +1,290 @@
+{
+  "notion": {
+    "role": "Workspace for documents, databases and projects, with Notion AI, agents and automatic meeting notes.",
+    "audience": "Students and teams who manage notes, tasks and projects in one place and want AI help over the content.",
+    "pros": [
+      "Free Plus for students: the single-user Plus plan is free for students and educators who sign up with an institutional email; per the page, thousands of institution domains qualify, not only .edu.",
+      "Does not train on content: per the help center, by default neither Notion nor its AI providers use customer data to train models.",
+      "Meeting notes without a bot: AI Meeting Notes records system audio and microphone in the desktop app, and summarizes up to 10 hours per day per user."
+    ],
+    "cons": [
+      "Full AI only from Business: Free and Plus have only a limited trial of Notion AI and Meeting Notes. Full access starts at Business, $20 per user per month.",
+      "Limits on the free plan: on Free, file uploads up to 5MB per file and 7-day page history, and teams have a block limit.",
+      "Custom agents cost extra: Custom Agents are free to try, then cost $10 per 1,000 Notion credits per month."
+    ],
+    "price": "Plus at $10 per user per month (billing type not verified). Full Notion AI included from Business at $20. Free plan available.",
+    "model": "Subscription, and credits for custom agents",
+    "free": "Free plan: pages and databases, basic forms and sites, Notion Calendar, file uploads up to 5MB, 7-day history, up to 10 guests and a limited trial of Notion AI.",
+    "trial": "Limited trial of Notion AI, Meeting Notes and Enterprise Search on Free and Plus. The scope of the trial was not stated.",
+    "plans": [
+      "File uploads up to 5MB, 7-day history, up to 10 guests, limited trial of Notion AI and Meeting Notes",
+      "File uploads up to 5GB, limited trial of Notion AI and Meeting Notes",
+      "",
+      "",
+      "1,000 Notion credits per month"
+    ],
+    "privacy": "Per the help center, by default neither Notion nor its AI providers use customer data for model training, and using Notion AI does not give Notion a license to train on the data. On Free, Plus and Business the AI provider keeps data up to 30 days then deletes it. On Enterprise most models have zero retention. Meeting notes are recorded from the device, and a temporary copy of the audio is kept on the device.",
+    "api": "Not verified. The updates page mentions a Developer Portal (\"Your Developer Portal, now in the sidebar\", Aug 19, 2026). API docs were not checked.",
+    "hebrew": "Not verified: the AI Meeting Notes help page contradicts itself. The language list for speaker labels includes Hebrew, but the FAQ language list (\"What language is AI Meeting Notes available for?\") does not.",
+    "students": "The single-user Plus plan is free for students and educators who sign up with an institutional email, with immediate access. Per the pricing page thousands of domains qualify, not only .edu. Eligibility of Israeli institutions was not checked."
+  },
+  "gemini-notebook": {
+    "role": "Google research notebook that answers questions and creates summaries, audio overviews and video from the sources you upload.",
+    "audience": "Students and researchers who work with papers, lectures and documents and want to ask questions about them and get summaries.",
+    "status": "Renamed. NotebookLM is now called Gemini Notebook. Per Google the product stays standalone, and notebooks also sync with the Gemini app.",
+    "pros": [
+      "Generous free use: a free Google account can create up to 100 notebooks with up to 50 sources each. Daily quotas reset every 24 hours.",
+      "Output in Hebrew: Hebrew is in the output language list, and the setting also applies to Audio Overviews and Video Overviews. Google notes different features support different languages.",
+      "Data analysis with code: since July 2026 every notebook can write and run code to analyze data from the sources. Available on Google AI Ultra, rolling out gradually to all Pro subscribers."
+    ],
+    "cons": [
+      "Higher limits are paid: Pro raises the quota to 500 notebooks and 300 sources per notebook, and is included in the Google AI Pro subscription at $19.99/month.",
+      "Watermark on the free plan: removing the watermark is possible only from Pro. In India, South Korea and Vietnam a visible watermark is added automatically."
+    ],
+    "price": "Free with a Google account. Higher quotas via Google AI plans, from $4.99/month (Google AI Plus, on the US plans page).",
+    "model": "Free, with upgrade via Google AI plans",
+    "free": "Free with a Google account: up to 100 notebooks and 50 sources per notebook, chat, Audio and Video Overviews and more. Daily quotas reset every 24 hours.",
+    "plans": [
+      "Up to 100 notebooks, 50 sources per notebook, 500 note-type sources",
+      "Up to 200 notebooks, 100 sources per notebook, 400GB storage",
+      "Up to 500 notebooks, 300 sources per notebook, watermark removal, 5TB storage",
+      "",
+      "Up to 500 notebooks, 500 sources per notebook, the highest limits, 20TB storage",
+      ""
+    ],
+    "privacy": "Per the help page, on personal accounts data is not used to train Gemini Notebook unless you give feedback, in which case the whole interaction may be reviewed. On Workspace and Workspace for Education accounts, uploads, questions and answers are not reviewed by humans and not used for training.",
+    "watermark": "Watermark on generated items until you upgrade to Pro. In India, South Korea and Vietnam a visible watermark is added automatically.",
+    "api": "Not verified. An enterprise version is available via Google Cloud. A public API was not checked.",
+    "hebrew": "Supported per the source as an output language: it is in the browser's output language list, and the setting also applies to Audio and Video Overviews. Google notes that \"Different features may support different languages\", so Hebrew support across all features is not guaranteed.",
+    "students": "The Gemini students page offers a year of Google AI Pro free (then $19.99/month unless cancelled), for US college students aged 18+, redeemable until Dec 31, 2026. Students in Israel are not mentioned as eligible."
+  },
+  "fireflies": {
+    "role": "Meeting assistant that joins calls, transcribes and summarizes them, and lets you search and chat across all meetings.",
+    "audience": "Students and teams who want meeting transcription, summaries and search, including in Hebrew.",
+    "pros": [
+      "Hebrew transcription and summaries: Hebrew is in the official language list, which applies to transcription and summaries. More than 100 languages in total.",
+      "Broad free plan: Free includes unlimited transcription, limited summaries, file uploads, desktop and mobile apps, a Chrome extension and API access.",
+      "Does not train on meeting content: per the help center, Fireflies does not use meeting data to train models, and its AI providers are contractually barred from doing so."
+    ],
+    "cons": [
+      "Small storage quota on free: Free is limited to 400 storage minutes for the whole team, recordings up to two hours, no video recording and no transcript downloads.",
+      "The published price is for yearly billing: Pro costs $10 per seat per month billed yearly. The monthly-billing price was not clearly marked on the page."
+    ],
+    "price": "Pro at $18 per seat per month billed monthly, or $10 billed yearly. Free plan with unlimited transcription and 400 storage minutes per team.",
+    "model": "Subscription",
+    "free": "Permanent Free plan: unlimited transcription in 100+ languages, limited summaries, 400 storage minutes per team, 20 AI credits, recording up to two hours, file uploads, apps.",
+    "plans": [
+      "Unlimited transcription, limited AI summaries, 400 storage minutes per team, 20 AI credits, recording up to two hours, API access",
+      "Unlimited transcription and summaries, 8,000 storage minutes per seat, 20 AI credits, video recording and transcript downloads",
+      "Unlimited transcription and summaries, 8,000 storage minutes per seat, 20 AI credits, video recording and transcript downloads",
+      "",
+      "",
+      ""
+    ],
+    "privacy": "Per the help center, Fireflies does not use meeting data to train models, and its AI providers are contractually barred from doing so. The Fireflies Notetaker bot joins meetings per settings, and does not join if one participant asked it not to. In the desktop app you can record a meeting without the bot joining as a participant. Auto-delete can be configured. The company holds ISO/IEC 42001.",
+    "rights": "Per the help center, the user keeps full ownership of recordings and transcripts.",
+    "api": "Yes. The pricing page states API access already on the Free plan. Docs not checked.",
+    "hebrew": "Supported per the source: it is in the official language list (\"Hebrew | he\"), which applies to meeting transcription and summaries. Right-to-left display support was not checked.",
+    "students": "The pricing page shows no student discount."
+  },
+  "granola": {
+    "role": "Meeting notepad that records computer audio without a bot, and combines your notes with a transcript into a tidy summary.",
+    "audience": "Students and professionals who want tidy meeting notes without a bot joining the call.",
+    "pros": [
+      "Hebrew transcription in the desktop app: Hebrew is among 31 supported languages on Mac and Windows. The summary is written in the majority language of the meeting when language is set to Auto.",
+      "No bot in the call: per the students page, Granola uses the computer's audio to transcribe lectures and meetings.",
+      "Connects to other AI tools: since February 2026 a Granola MCP connects notes to Claude, ChatGPT and Cursor, and in April 2026 chat was rebuilt with citations and Recipes."
+    ],
+    "cons": [
+      "30-day history on free: the Basic plan keeps only 30 days of meeting history, and has no API or connection to Notion, Zapier and HubSpot.",
+      "Hebrew only on desktop: on the iOS and Android apps Hebrew is not among the 17 supported languages.",
+      "Student benefit excludes Israel: 12 free months of Business are given only to students at universities in the US, UK and Canada."
+    ],
+    "price": "Business at $14 per user per month (billing period not stated). Free Basic plan with 30-day meeting history.",
+    "model": "Subscription",
+    "free": "Free Basic: meeting notes with 30-day history, chat over meetings, templates, shared folders, voice typing and Slack.",
+    "plans": [
+      "Meeting notes, 30-day history, chat with automatic model selection, personal MCP for 30 days, shared folders, templates, voice typing in any app, Slack",
+      "",
+      ""
+    ],
+    "privacy": "Per the pricing page, Granola trains on user data after removing identifying details to improve the product, and you can opt out with one click in settings. External providers such as OpenAI and Anthropic may not train on the data. On Enterprise training is off by default.",
+    "api": "Yes. API is included from Business up and not in Basic. Granola MCP launched Feb 4, 2026. Docs not checked.",
+    "hebrew": "Supported per the source in the desktop app (macOS and Windows), not on mobile apps. Summaries are written in English or the meeting's majority language (Auto), and you can ask chat for notes in another language. No live translation. Right-to-left display not checked.",
+    "students": "12 months of Granola Business free for students registered at recognized universities in the US, UK and Canada only, with a student ID upload. You can refer up to 5 friends from the same university. Students in Israel are not included per the source."
+  },
+  "otter": {
+    "role": "Meeting assistant that records and transcribes meetings and lectures in real time, and produces summaries and chat over the content.",
+    "audience": "Students, lecturers and teams who want transcription and summaries of lectures and meetings in English and supported languages.",
+    "pros": [
+      "Free plan renewing monthly: Basic includes 300 recording minutes per month per user, live transcription, speaker identification, iOS and Android apps and 20 chat questions per month.",
+      "Discount for students and teachers: with a .edu address you get 20% off Pro: $13.59/month, or $79.99/year.",
+      "More languages: in November 2026, 13 languages became available, and the company announced 14 more soon, 31 in total. Summaries and chat work in supported languages."
+    ],
+    "cons": [
+      "Hebrew not available yet: in a Nov 10, 2026 announcement Hebrew is in the list of languages coming \"soon\", not among the available ones.",
+      "Hard limits on the free plan: on Basic a transcribed conversation is up to 30 minutes, only 3 file imports for life, and only the last 25 conversations are kept.",
+      "Content is used for training after de-identification: Otter trains its models on user data after an automatic de-identification process. The page describes no opt-out."
+    ],
+    "price": "From $16.99/month billed monthly, or $8.33/month billed yearly. Free plan with 300 minutes per month.",
+    "model": "Subscription",
+    "free": "Permanent Basic plan: 300 recording minutes per month per user, up to 30 minutes per conversation, 3 file imports for life, last 25 conversations and 20 chat questions per month.",
+    "plans": [
+      "300 meeting minutes per month, up to 30 minutes per conversation, 3 file imports for life, last 25 conversations, 20 chat questions per month, mp3 and txt export only",
+      "1,200 minutes per month, up to 90 minutes per conversation, 10 imports per month, unlimited history, 50 chat questions per month",
+      "Same as monthly Pro",
+      "",
+      "",
+      ""
+    ],
+    "privacy": "Per the privacy and security page, Otter removes identifying details from user data before training its own models, recordings and transcripts are not manually reviewed, and data is not used to train third-party providers' models. Recording starts only when a user presses record or invites Otter to a meeting. Otter has a SOC 2 Type 2 report.",
+    "api": "Not verified. The pricing page lists an Otter MCP server already on Basic. A public API was not checked.",
+    "hebrew": "Not currently supported per the source: in the official Nov 10, 2026 announcement Hebrew is among the 14 languages to be added \"soon\", not among those available today. The old help page on supported languages still says English only.",
+    "students": "20% off Pro for students and teachers with a .edu address, personal subscriptions only: $13.59/month billed monthly, or $6.67/month ($79.99/year). The source mentions only .edu addresses."
+  },
+  "fathom": {
+    "role": "Meeting assistant that records, transcribes and summarizes video calls, with a bot in the call or recording without a bot.",
+    "audience": "People who run many video calls in English or European languages and want free recording and summaries.",
+    "status": "Active. Fathom was acquired by Superhuman. Per the official announcement \"Nothing changes today for Fathom users\": the app, login and product stay as they are. An acquisition is not a shutdown.",
+    "pros": [
+      "Unlimited recording and transcription for free: the free plan includes unlimited recordings and transcripts, instant summaries, clips and search across calls.",
+      "Can work without a bot: on the free plan you can choose between recording with a bot and recording without a bot (beta, on Mac). Since April 2026 you can choose per meeting transcription without a bot, audio recording without a bot or full video.",
+      "AI providers do not train on the data: per the help center, Anthropic, OpenAI and Google are contractually barred from using user data."
+    ],
+    "cons": [
+      "Hebrew not in the language list: Fathom lists 38 transcription languages, and Hebrew is not among them. Summary translation exists only for six European languages.",
+      "Some AI tools limited on free: action items and questions across all calls are marked \"Limited use\" on the free plan, with no number.",
+      "Internal model training by default: Fathom uses de-identified customer data to improve its own models. Can be turned off in settings."
+    ],
+    "price": "Premium at $20/month billed monthly, or $16/month billed yearly. Free plan with unlimited recording and transcription.",
+    "model": "Subscription",
+    "free": "Permanent Free plan: unlimited recordings and transcripts, choice of recording with or without a bot (beta, Mac), instant summaries, clips and search. Action items and Ask Fathom have limited use.",
+    "trial": "Premium, Team and Business have a free trial; its length was not stated.",
+    "plans": [
+      "Unlimited recordings and transcripts, recording with or without a bot (beta, Mac), instant summaries, clips, playlists, search",
+      "Personal plan, personalized bot",
+      "Same as monthly Premium",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "privacy": "Per the help center, subprocessors (Anthropic, OpenAI, Google) are contractually barred from using user data. Fathom itself uses de-identified customer data to improve its models; can be turned off in settings, and Team admins can turn it off for the whole organization. Data is stored in the US. The company states SOC 2 Type II, HIPAA and GDPR.",
+    "api": "Yes. Per the platform-update press release there is a public API and MCP integrations, and the CEO describes API and MCP access also on the free plan. Docs not checked.",
+    "hebrew": "Not mentioned in the source: Hebrew is not in the list of 38 transcription languages in the help center. Summary translation exists only for Spanish, Portuguese, German, French, Italian and Dutch.",
+    "students": "The pricing page shows no student discount. It shows benefits for nonprofits (10 free seats) and startups."
+  },
+  "tldv": {
+    "role": "Tool that records and transcribes meetings on Google Meet, Zoom and Teams and produces AI summaries.",
+    "audience": "Students and teams who hold online meetings and want recording and transcription, including in Hebrew.",
+    "pros": [
+      "Hebrew transcription and summaries: an official page offers transcription and summaries of meetings in Hebrew, and the help page lists Hebrew among 30+ transcription languages.",
+      "Unlimited recording and transcription for free: per the help center, the free plan includes unlimited recordings and transcripts.",
+      "Statement that meetings are not used for training: per the help center, \"No customer data is used to train the AI\", and the company works with Anthropic. EU data storage is an option."
+    ],
+    "cons": [
+      "Free AI summaries are a one-time quota: only the first 10 meetings get a full AI summary. After that only the first 10 minutes of each meeting are summarized, and the limit does not renew.",
+      "Free recordings kept 3 months: on the free plan recordings are kept 3 months, and after 3 days they move to an archive and must be released to view.",
+      "Per-meeting language choice limited on some platforms: choosing a transcription language per meeting is not yet supported on Zoom and Teams via the desktop app. It requires the Chrome extension and manual recording."
+    ],
+    "price": "Free plan with unlimited recording and transcription and full AI summaries for 10 meetings. Pro and Business prices not verified.",
+    "model": "Subscription",
+    "free": "Permanent free plan with unlimited recordings and transcripts. Full AI summary for the first 10 meetings, then only for the first 10 minutes of each meeting. Recordings kept 3 months.",
+    "plans": [
+      "Unlimited recordings and transcripts, full AI summary for the first 10 meetings then the first 10 minutes of each meeting, recordings kept for 3 months",
+      "Unlimited AI features",
+      ""
+    ],
+    "privacy": "Per the help center, customer data is not used to train the AI, and the company works with Anthropic. Per the security overview, recordings and meeting data are not used to train models, EU storage is an option, and the company states SOC 2 and GDPR compliance. The Hebrew page adds that recordings and transcripts belong to the user.",
+    "rights": "Per the official Hebrew page, \"Your recordings and transcripts are yours (not ours)\". Terms of use not read.",
+    "api": "Not verified: the official pages checked do not mention an API.",
+    "hebrew": "Per the official page, tl;dv provides transcripts and summaries of meetings in Hebrew (\"30+ languages including Hebrew\"), and the help page lists Hebrew among transcription languages. Right-to-left display not verified.",
+    "students": "No student benefit found. The pricing page was not read."
+  },
+  "julius": {
+    "role": "Natural-language data analysis tool: you upload an Excel or CSV file, ask questions and get tables and charts.",
+    "audience": "Students and researchers who need to analyze tables and surveys without writing code.",
+    "pros": [
+      "Does not train on your files: per the security page, data is not used to train models, neither at Julius nor at its AI providers, who are contractually bound.",
+      "Free plan with notebooks: Free includes notebooks, ingestion of .csv, .xlsx and .sav files and a Google Drive connection."
+    ],
+    "cons": [
+      "Unclear free quota: the pricing page contradicts itself: the free plan card lists no credits, and the comparison table lists 2,000 credits per month.",
+      "No student discount on the page: the pricing page mentions no student discount or trial. Plus costs $20/month."
+    ],
+    "price": "Plus at $20/month, or $16 when the reduced price is shown (billing type not marked). Free plan available.",
+    "model": "Subscription with credits",
+    "free": "Free plan: notebooks, ingestion of csv, xlsx and sav files, Google Drive connection and 2GB RAM. The credit quota is ambiguous (comparison table: 2,000 per month).",
+    "plans": [
+      "Notebooks, ingestion of csv, xlsx and sav, Google Drive connection, 2GB RAM",
+      "2,000 credits per month (24,000 per year), one seat",
+      "5,000 credits per month, one seat, 32GB RAM",
+      "25,000 credits per month",
+      "70,000 credits per month",
+      "",
+      "120,000 credits per month, up to 30 seats"
+    ],
+    "privacy": "Per the security page, Julius does not use data for model training, internal or external, and its AI providers are contractually bound. Processed data is deleted when no longer needed, and uploaded files are stored encrypted in the US. You can request deletion of all data. The company holds SOC 2 Type II. GDPR compliance is marked \"In progress\" on the security page, while the pricing page states compliance.",
+    "hebrew": "Not mentioned in the source: no mention of languages on the pricing and security pages.",
+    "students": "The pricing page does not mention a student discount."
+  },
+  "read-ai": {
+    "role": "Meeting assistant that transcribes and summarizes meetings, and also summarizes emails and messages and lets you search across all of them.",
+    "audience": "Students and teams who use Zoom, Teams or Meet and want summaries of meetings, emails and messages.",
+    "pros": [
+      "Free monthly quota: Free includes 5 transcripts, reports and live notes per month, for meetings up to an hour.",
+      "Hebrew support: in the official March 2026 post about six new languages, Hebrew is in the list of languages Read AI supports, out of more than 25.",
+      "Training only with consent: per the privacy page, participation in model improvement is off by default and can be changed any time."
+    ],
+    "cons": [
+      "Few meetings on the free plan: 5 meetings per month, up to an hour each, no audio and video playback and no file uploads.",
+      "Price not marked by billing type: Pro shows two prices, $15 and $19.75, with no marking of which is yearly."
+    ],
+    "price": "Pro at $19.75 per user per month billed monthly, or $15 billed yearly. Free plan with 5 meetings per month.",
+    "model": "Subscription",
+    "free": "Free plan: 5 transcripts, reports and live notes per month, meetings up to an hour, summaries of meetings, emails and messages, unlimited enterprise search and basic integrations. No audio or video playback.",
+    "plans": [
+      "5 transcripts, reports and live notes per month, meeting up to an hour, unlimited enterprise search, email and message summaries",
+      "Unlimited transcripts, reports and storage, meeting up to 4 hours, 100 upload minutes per month",
+      "Unlimited transcripts, reports and storage, meeting up to 4 hours, 100 upload minutes per month",
+      "",
+      "",
+      "Plan for students and teachers with a .edu address",
+      "",
+      ""
+    ],
+    "privacy": "Per the privacy page, training on customer data is opt-in only and off by default. Read announces itself at the start of every meeting, joins only when a user has configured it, and requires host approval. The company is audited to SOC 2 Type II and offers a HIPAA BAA.",
+    "api": "Not verified: not checked.",
+    "hebrew": "Supported per the source: in the official post of March 4, 2026 on six new languages, Hebrew is in the list of languages Read AI supports (\"Greek, Hebrew, Hindi\"). The post does not specify whether support also covers reports and summaries, and the help page was not fully checked.",
+    "students": "EDU plan for students and teachers with a verified .edu address: $60/year billed yearly (compared with Pro), or EDU + Video at $100/year. Renewable as long as you study or teach at a higher-education institution. The source mentions only .edu addresses."
+  },
+  "wispr-flow": {
+    "role": "Voice dictation in any app that turns speech into edited text, with a Notetaker for meeting summaries.",
+    "audience": "Students and writers who want to write by voice instead of typing, including in Hebrew, and those who also want meeting summaries.",
+    "pros": [
+      "Dictation in Hebrew: Hebrew is a language you can select in settings, among 100+ languages in total. Hebrew must be selected manually, because it is not auto-detected from speech.",
+      "50% student discount: students get 50% off Flow Pro and educators 40%. Pro costs $15/month, or $12 billed yearly.",
+      "Works on all devices: dictation is available on Mac, Windows, iPhone and Android, and the Notetaker, launched August 2026, works in Zoom, Meet, Teams and Slack."
+    ],
+    "cons": [
+      "Unspecified weekly quota on free: the free plan has a weekly word limit and a weekly meeting limit for the Notetaker, but the page gives no numbers.",
+      "Hebrew only by manual selection: per the help center, select only one language at a time that the tool does not detect from speech, such as Hebrew. Notetaker languages are not detailed on this page."
+    ],
+    "price": "Pro at $15/month billed monthly, or $12/month billed yearly. Free plan with a weekly word quota.",
+    "model": "Subscription",
+    "free": "Free, no credit card: dictation in any app in 100+ languages on Mac, Windows, iPhone and Android, with a weekly word quota, and Notetaker with a weekly meeting quota.",
+    "plans": [
+      "Dictation in 100+ languages with a weekly word quota, Notetaker with a weekly meeting quota, dictionary and shortcuts",
+      "Unlimited dictation and Notetaker, subject to abuse limits",
+      "Same as monthly Pro",
+      "Basic admin controls, SSO, model training control for the whole team; unlimited Notetaker as an add-on",
+      "Same as monthly Growth",
+      ""
+    ],
+    "privacy": "Per the pricing page you can opt out of model training at any time and choose what stays on the device. On Growth the admin controls training for the whole team, and on Enterprise training is locked off. The company holds SOC 2 Type II and ISO 27001. Per the announcement the Notetaker joins meetings with one click, and the page does not say whether it is a bot or an on-device recording.",
+    "api": "Not verified. Per the announcement, transcripts and notes can be pulled into Claude, ChatGPT and other agents via MCP. An API was not checked.",
+    "hebrew": "Supported per the source for dictation: the help center lists Hebrew among \"Other selectable languages\", so it must be selected manually. Notetaker Hebrew support and right-to-left display were not checked.",
+    "students": "Per the pricing page, students get 50% off Flow Pro and educators 40%. The verification method was not checked."
+  }
+}

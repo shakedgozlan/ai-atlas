@@ -1,0 +1,217 @@
+{
+  "lovable": {
+    "role": "Builds full websites and web apps from a natural-language conversation, with publishing and hosting on Lovable's cloud.",
+    "audience": "Designers, entrepreneurs and students who want to turn an idea into a working web app without writing code.",
+    "pros": [
+      "Student discount: per Lovable, a student who verifies status gets up to 50% off Lovable Pro.",
+      "Free plan for collaboration: Free includes unlimited collaborators, 5 lovable.app domains and Cloud, no credit card.",
+      "The code and app belong to the user: per the terms, the user owns the projects they built and the output generated for them, subject to third-party rights in the models."
+    ],
+    "cons": [
+      "Content on Free and Pro is used for training by default: from Sept 9, 2026, prompts, code and project files on Free and Pro may be used to train Lovable's models. Can be turned off in account settings; opt-out applies going forward only.",
+      "Custom domain and badge removal only paid: custom domain, removing the Lovable badge and rolling credits over appear only from Pro. On Free, publishing is Invite-only.",
+      "100 credits per month on Pro: Pro, at $25/month, includes 100 credits. Per the page's examples, a landing page with images costs 1.70 credits and adding login costs 1.20."
+    ],
+    "price": "From $25/month billed monthly (Pro, 100 credits). Free plan; students get up to 50% off Pro.",
+    "model": "Subscription with credits",
+    "free": "Free plan, no payment and no credit card: unlimited collaborators, 5 lovable.app domains, Invite-only publishing and Cloud.",
+    "plans": [
+      "Unlimited collaborators, 5 lovable.app domains, Invite-only publishing, Cloud, community support",
+      "100 credits per month, rollover, buy extra credits, unlimited lovable.app domains, custom domain, badge removal, user permissions, Design systems",
+      "",
+      ""
+    ],
+    "privacy": "Per official docs, from Sept 9, 2026 customer data on Free and Pro, including prompts, attachments, code, project files and outputs, may be used to train and improve Lovable's models. Opt out in Account settings, Preferences, AI model training. Opt-out applies going forward and does not remove data from already-trained models.",
+    "rights": "Per the terms (updated Aug 28, 2026), the user owns customer data, the apps and projects they built and the output generated for them, subject to third-party rights in the models.",
+    "watermark": "The pricing page shows Lovable badge removal only from Pro, so Free shows a badge. The page does not say this explicitly.",
+    "api": "Yes. The changelog mentions a Lovable API (Sept 17, 2026 entry), a Postman collection and Events & Hooks (Oct 27, 2026). The API docs and pricing were not read.",
+    "hebrew": "Not mentioned in the source: no mention of Hebrew or right-to-left in the official pages checked.",
+    "students": "Per Lovable, verified students get up to 50% off Lovable Pro. Lovable for campus (via sales) and Lovable for kids with imagi are also mentioned. Verification terms and discount duration not verified."
+  },
+  "replit": {
+    "role": "Browser development environment with an AI agent that builds, runs and publishes web and mobile apps from a description in words.",
+    "audience": "Students and creators who want to build a real web or mobile app and gradually move into code itself.",
+    "pros": [
+      "Web and mobile in one project: per Replit, Agent 4, launched Mar 13, 2026, builds web and mobile apps in one project and converts an existing web app to a mobile app.",
+      "Design canvas for variations: in Agent 4 you can produce several design variants on an infinite canvas, compare them and apply the chosen one to the app.",
+      "Free plan with a published app: free Starter includes a daily AI quota, limited monthly cloud credits and one published app."
+    ],
+    "cons": [
+      "Effort-based cost: paid actions are priced by the complexity of the request, with no fixed published rate. Replit asks for approval before a paid action.",
+      "Core credits do not roll over: on Core, the $20 in credits resets each billing cycle. On Pro balance carries over for two months, and separately purchased credits expire after six months.",
+      "Parallel work only on expensive plans: running tasks in parallel in Agent 4 is available to Pro and Enterprise."
+    ],
+    "price": "From $20/month billed monthly, or $18/month billed yearly (Core, includes $20 in credits). Free plan with one published app.",
+    "model": "Subscription with credits and pay-per-use",
+    "free": "Free Starter: daily Replit AI quota, limited monthly cloud credits, basic build features and one published app. Quota size not published.",
+    "trial": "Per the blog, Core subscribers got temporary access to Agent 4 as a limited-time launch promotion.",
+    "plans": [
+      "Daily Replit AI quota, limited monthly cloud credits, basic build features, one published app",
+      "$20 in credits per month, unlimited published apps, up to 30 chat hours and 60 projects in Free Mode, unlimited workspaces",
+      "$20 in credits per month, unlimited published apps",
+      "$100 in credits per month, more Free Mode usage, priority support, up to 15 collaborators, database restore up to 28 days, parallel tasks in Agent 4",
+      "$100 in credits per month",
+      ""
+    ],
+    "privacy": "Not verified: the terms (updated Aug 3, 2026) do not say whether Replit uses content for model training, and the privacy policy was not read. The terms reserve Replit access to content in private apps for troubleshooting, improvement and security. A paid plan does not by itself guarantee content is not used for training.",
+    "rights": "Per the terms (updated Aug 3, 2026), the user keeps all rights in content they upload or display, and grants Replit a right to copy, display, distribute and modify it as needed to operate the service.",
+    "hebrew": "Not mentioned in the source: no mention of Hebrew or right-to-left in the official pages checked.",
+    "students": "Per pricing docs, Replit has an education program for students and teachers, referring to replit.com/education. Discount amount and eligibility terms not published on the page read. The pricing page does not mention students.",
+    "watch": "Users and reviewers report the agent saying it fixed a problem when it did not, and overage charges."
+  },
+  "base44": {
+    "role": "Builds full apps from a conversation, with built-in user login, database and hosting.",
+    "audience": "Designers, entrepreneurs and students who want to build an app with users and data without dealing with servers.",
+    "status": "Active. Wix acquired Base44 for an initial ~$80 million, plus performance-based payments through 2029. Base44 continues as a separate product, and payment in some regions goes through Wix.",
+    "pros": [
+      "Official docs in Hebrew: the Base44 documentation center, including the changelog, is available in Hebrew.",
+      "Everything included even for free: Free includes up to 5 apps, user login, database and analytics, with 25 message credits and 100 integration credits per month.",
+      "Two-way GitHub sync: per the pricing page, two-way GitHub sync exports the full source code to the user's repository. The integration appears from the Builder plan."
+    ],
+    "cons": [
+      "Custom domain only paid: custom domain appears from Starter, and GitHub and model choice from Builder.",
+      "Small message quota for free: Free includes 25 message credits per month, and credit use varies by action and chosen model.",
+      "Terms allow model training: per a terms update effective June 21, 2026, the license the user grants Base44 also covers use and training of AI models. The update does not specify a default or opt-out."
+    ],
+    "price": "From $16/month billed yearly (Starter, 100 message credits). Free plan with 25 message credits per month.",
+    "model": "Subscription with credits",
+    "free": "Free plan: up to 5 apps, 25 message credits and 100 integration credits per month, user login, database and analytics. The pricing page mentions no badge or limit.",
+    "plans": [
+      "Up to 5 apps, 25 message credits and 100 integration credits per month, core features, user login, database, analytics",
+      "100 message credits and 2,000 integration credits per month, unlimited apps, in-app code editing, custom domain",
+      "250 message credits and 10,000 integration credits per month, unlimited apps, AI model choice, custom domain, GitHub",
+      "500 message credits and 20,000 integration credits per month, everything in Builder, early beta access",
+      "1,200 message credits and 50,000 integration credits per month, everything in Pro, priority support",
+      ""
+    ],
+    "privacy": "Per Base44's terms update effective June 21, 2026, the license terms changed to include \"by using and training AI models\". The update does not specify a default, opt-out or excluded plans. Full terms and privacy policy were not read. A paid plan does not by itself guarantee content is not used for training.",
+    "rights": "Per the pricing page FAQ, \"You own everything you build on Base44\": code, data and users, and two-way GitHub sync exports the full source code to the user's repository.",
+    "api": "Not verified. The changelog has a developers section, and the pricing page mentions two-way GitHub sync. A public API for building apps was not verified.",
+    "hebrew": "Official Base44 docs, including the changelog, are available in Hebrew. The changelog mentions translating the integrations interface for non-English speakers, but does not explicitly mention Hebrew or right-to-left in the interface or apps.",
+    "students": "Per the pricing page FAQ, there is education and nonprofit pricing assessed case by case: sign up with a student email for verification or contact support. Discount amount not published.",
+    "watch": "Users report credits being deducted even when the result is wrong, and a monthly subscription turning into a yearly one."
+  },
+  "google-ai-studio": {
+    "role": "Google browser environment where you describe an app in words and get a full Gemini-based app, with the option to publish it.",
+    "audience": "Students and creators who want to try building Gemini-based apps for free, in the browser.",
+    "pros": [
+      "Free use without a billing account: per the docs, AI Studio is free as long as you do not connect a paid API key. At the Starter tier you can publish up to 2 full-stack apps without a Google Cloud project or billing account.",
+      "Successor to Firebase Studio: Google recommends AI Studio as the path for browser prototyping after Firebase Studio closes, and describes it as \"the fastest path from prompt to full-stack production\".",
+      "Android apps from a conversation: since May 19, 2026, Build can create an Android app in Kotlin, preview it in a browser emulator and publish to Google Play's internal testing track."
+    ],
+    "cons": [
+      "On free, content is used to improve products: per the terms, on unpaid services Google uses content and responses to improve its products, and human reviewers may read them. Google warns not to enter sensitive or personal information.",
+      "Age 18+: the API terms require age 18+, and use is allowed only in supported regions.",
+      "Prepaid billing that stops at zero: on paid tiers you prepay at least $5. When the balance reaches zero, all API keys in the billing account stop working, and unused credits expire after 12 months."
+    ],
+    "price": "Using AI Studio is free as long as you do not connect a paid API key. Paid tiers are pay-per-use, prepaid from $5.",
+    "model": "Free, with pay-per-use API",
+    "free": "AI Studio, including Build mode, is free as long as you do not connect a paid API key, within Free Tier rate limits. Eligible accounts at the Starter tier can publish up to 2 apps.",
+    "trial": "Accounts opened after March 2, 2026 cannot use Google Cloud Welcome credits for the Gemini API or AI Studio.",
+    "plans": [
+      "Access to some models in the Gemini API and AI Studio, within Free Tier rate limits",
+      "Publish up to 2 full-stack apps from Build mode without a Google Cloud project or billing account",
+      "Pay per use via an active billing account; spend cap $250",
+      "Pay per use; after $100 paid and 3 days; spend cap $2,000",
+      "Pay per use; after $1,000 paid and 30 days; spend cap from $20,000 to $100,000 and up"
+    ],
+    "privacy": "Per the Gemini API additional terms (effective Mar 23, 2026): on unpaid services Google uses submitted content and responses to provide and improve its products and machine-learning technologies, and human reviewers may read and label input and output after it is disconnected from the account. Google warns not to enter sensitive, confidential or personal information. On paid services Google does not use prompts for product improvement.",
+    "rights": "Per the terms, Google does not claim ownership of generated content, and the user is responsible for how it is used. This is no guarantee against copyright claims.",
+    "api": "Yes. AI Studio is part of the Gemini API platform, with API keys, usage tiers and prepaid or postpaid billing. The model price list was not read.",
+    "hebrew": "Not verified: the Gemini supported-languages page was not read.",
+    "students": "No dedicated student benefit found in the official pages checked."
+  },
+  "bolt": {
+    "role": "Builds full websites and web apps from a conversation, with built-in hosting and database.",
+    "audience": "Designers, entrepreneurs and students who want to turn an idea into a working site or web app without writing code.",
+    "pros": [
+      "Free plan renewing monthly: Free includes 1 million tokens per month, capped at 300K per day, public and private projects and site hosting, no credit card.",
+      "Hosting and database included: all plans include site hosting and Unlimited databases, and from Pro you can also choose a database provider.",
+      "Output belongs to the user: per the terms, the user keeps all rights in their content, and StackBlitz transfers its rights in the generated output to them, subject to third-party rights."
+    ],
+    "cons": [
+      "Bolt branding and no custom domain on free: sites built on Free show Bolt branding and have no custom domain. Both open only from Pro.",
+      "Content used for training by default: per the terms, StackBlitz may use content for model training and make anonymized datasets available to third parties, until the user opts out in settings. Opt-out is not retroactive.",
+      "Daily cap on free and no rollover: on Free you can use up to 300K tokens per day, and the balance does not carry to next month. Rollover exists only on paid plans."
+    ],
+    "price": "Pro at $25/month billed monthly, or $18/month billed yearly, before taxes. Free plan with 1 million tokens per month.",
+    "model": "Subscription with tokens",
+    "free": "Permanent Free, no credit card: 1 million tokens per month capped at 300K per day, public and private projects, site hosting and databases. Sites carry Bolt branding.",
+    "plans": [
+      "1 million tokens per month, up to 300K per day, public and private projects, site hosting, Unlimited databases",
+      "From 10 million tokens per month, no daily cap, rollover, custom domain, no Bolt branding, database expansion and provider choice",
+      "From 10 million tokens per month, no daily cap, rollover, custom domain, no Bolt branding, database expansion and provider choice",
+      "",
+      "",
+      ""
+    ],
+    "privacy": "Per the terms (updated Sept 22, 2026), StackBlitz may use eligible content from Bolt to train, tune and improve its models or models developed for it, and make anonymized datasets available to third parties, including for payment. You can opt out any time, free, in account settings or by email to privacy@stackblitz.com; opt-out is not retroactive.",
+    "rights": "Per the terms, the user keeps all rights in their content, and StackBlitz transfers its rights, if any, in the AI output generated for them, subject to third-party rights in the models.",
+    "watermark": "Sites built on Free show Bolt branding. From Pro it can be removed.",
+    "api": "Not verified: no public API for building apps was found in the pages checked.",
+    "hebrew": "Not mentioned in the source: no mention of Hebrew or right-to-left in the official pages checked.",
+    "students": "No student benefit found: the pricing page mentions no students or student discount.",
+    "watch": "Users report tokens being burned on attempts that produce no result, and no refunds."
+  },
+  "bubble": {
+    "role": "Long-established platform for building web and mobile apps in a visual editor, with an AI agent that builds and edits from a conversation.",
+    "audience": "People who want to build a complex app with users and data and are willing to learn a visual editor beyond chatting with AI.",
+    "pros": [
+      "Student discount on all plans: per the pricing page, Bubble offers a student discount on all plans, and schools can get a group discount.",
+      "Everything stays visual and hand-editable: per Bubble, all app components, including the server side, are visual and editable by hand, so the app does not depend on AI credits.",
+      "AI agent for web and mobile: Agent 2 left beta on Oct 6, 2026, is available to all users and works on web and mobile apps. Bubble MCP (beta) lets an external agent such as Claude Code connect."
+    ],
+    "cons": [
+      "No live app on free: per the FAQ, publishing a live version and publishing to the App Store or Google Play require a paid plan. Custom domain appears from Starter.",
+      "Relatively high entry price: Starter costs $39/month billed monthly, or $32/month billed yearly, from Oct 20, 2026.",
+      "AI credits limited per app: credits belong to the app and are shared by all collaborators: 500 per month on Free and 1,000 on Starter. Purchased credits are valid six months."
+    ],
+    "price": "From $39/month billed monthly, or $32/month billed yearly (Starter, web). Free plan for development without publishing, and a student discount.",
+    "model": "Subscription with work units and AI credits",
+    "free": "Free plan: 50K work units and 500 AI credits per month, renewed on the 1st. Suited to building and testing, not to publishing a live version or to app stores.",
+    "plans": [
+      "50K work units and 500 AI credits per month, API connector, web dev version, debugger, mobile device testing, unlimited OTA",
+      "175K work units and 1,000 AI credits per month, custom domain, live version",
+      "175K work units and 1,000 AI credits per month, custom domain, live version",
+      "250K work units and 2,000 AI credits per month",
+      "",
+      ""
+    ],
+    "privacy": "Not verified: the help article on data ownership does not address model training, and the full terms and privacy policy were not read. A paid plan does not by itself guarantee content is not used for training.",
+    "rights": "Per an official help article (July 29, 2026) quoting section 7 of the terms: \"You own your content. Bubble does not\". The rest of the section, the scope of Bubble's rights and the ability to export code are not covered.",
+    "api": "Yes. Bubble MCP (beta) lets an external agent, such as Claude Code or Codex, connect directly to Bubble and edit existing apps. It does not read logs, merge branches or publish.",
+    "hebrew": "Not mentioned in the source: no mention of Hebrew or right-to-left in the official pages checked.",
+    "students": "Per the pricing page, Bubble offers a student discount on all plans, and schools can get a group student discount by contacting sales. Discount amount and verification method not published."
+  },
+  "emergent": {
+    "role": "Builds web and mobile apps from a conversation, through publishing to the app stores.",
+    "audience": "Entrepreneurs and students who want to build a mobile or web app without writing code, and are ready to pay to publish it.",
+    "pros": [
+      "Mobile apps through to the stores: per the help center, React Native apps are built and shipped to the App Store and Google Play via Expo Application Services. You need your own Apple and Google developer accounts.",
+      "Data is not used for training: per the official FAQ, user data is not used to train models, referring to section 12.1 of the Data Processing Agreement.",
+      "App ownership is with the user: Emergent says the user keeps full ownership of apps and content they create and can sell them or market them under their own brand, subject to plan terms."
+    ],
+    "cons": [
+      "No production publishing on free: on the free plan you cannot publish apps to production or connect a custom domain. Publishing an app requires at least 50 credits.",
+      "Small credit quota on free: free includes 10 credits, and Standard at $20/month includes 100. Subscription credits do not roll over.",
+      "Code export only via GitHub: there is no download button. Code is exported by pushing to GitHub on paid plans, or by manual copy from the VS Code view."
+    ],
+    "price": "From $20/month billed monthly, or $17/month billed yearly (Standard, 100 credits). Free plan with 10 credits.",
+    "model": "Subscription with credits",
+    "free": "10 credits and the core features. Per the help center, no production publishing and no custom domain, though free users may get one app published for free.",
+    "plans": [
+      "10 credits, all core features, building web and mobile experiences",
+      "100 credits per month, web and mobile apps, private project hosting, GitHub, buy extra credits",
+      "100 credits per month, web and mobile apps, private project hosting, GitHub, buy extra credits",
+      "750 credits per month, 1 million token context window, Ultra thinking, custom agents, system prompt editing, priority support",
+      "750 credits per month, 1 million token context window, Ultra thinking, custom agents, system prompt editing, priority support",
+      "",
+      ""
+    ],
+    "privacy": "Per the official FAQ, user data is not used to train models, referring to section 12.1 of the Data Processing Agreement (app.emergent.sh/dpa), part of the terms. Data is processed and stored in the United States and India, and EU-only storage is not available self-serve. Full terms and privacy policy not read.",
+    "rights": "Per the official FAQ, the user keeps full ownership of apps and content they create in Emergent, and can market them under their own brand or sell them, subject to plan terms.",
+    "api": "Not verified: no public API found in the pages checked. Code is exported by pushing to GitHub on paid plans or copying from the VS Code view on all plans.",
+    "hebrew": "Not mentioned in the source. Per the FAQ, Emergent accepts natural-language prompts \"in multiple languages\", with no language list.",
+    "students": "No student benefit found: the pricing page and FAQ do not mention a student discount."
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "hyper3d-rodin": {
+    "role": "Generates detailed 3D models from images and text, with PBR textures and part splitting.",
+    "audience": "Designers, 3D artists and game developers who need detailed models; students via the Education plan.",
+    "pros": [
+      "Official education discount: the Education plan gives Creator benefits at an education price to verified students and teachers.",
+      "Detailed meshes and PBR textures: per CGWORLD, Gen-2.5 produces models of up to 10 million polygons, with PBR textures generated directly on the model, part splitting and local refinement.",
+      "Connects to 3D software and game engines: per CGWORLD, the DCC Bridge supports Blender, Unreal Engine, Unity, Godot, Cinema 4D, Maya, Omniverse and 3ds Max."
+    ],
+    "cons": [
+      "Free plan exports only from older models: 10 private assets, no API, no advanced models, no unlimited export.",
+      "Limited model count on the base plan: Creator covers about 60 models, Business about 416. Extra points cost $1.50 per point.",
+      "12K textures only on the expensive plan: per CGWORLD, 12K texture generation is in beta and Business-only."
+    ],
+    "price": "From $30/month billed monthly, or $24/month billed yearly (Creator). Limited free plan and an education plan.",
+    "model": "Subscription with credits",
+    "free": "Free plan: basic generation from image and text, export from older models only, 10 private assets, public gallery. No API, no advanced models.",
+    "plans": [
+      "Basic generation from image and text, export from older models, 10 private assets, public gallery posting",
+      "About 60 models, unlimited export, any use",
+      "About 60 models, unlimited export, any use",
+      "",
+      "",
+      "Creator benefits",
+      ""
+    ],
+    "privacy": "Per the terms, Deemos may use prompts and outputs to provide, maintain and improve the services and for research. The terms do not say explicitly whether they are used for model training, and give no explicit opt-out. Privacy policy not checked.",
+    "rights": "Per the terms, Deemos does not restrict use of Rodin outputs, subject to the terms and law, but does not promise they can be copyrighted.",
+    "api": "Yes. The pricing page says the free plan has no API access, so it is available on paid plans. Which plan exactly and the price were not verified.",
+    "hebrew": "Not mentioned in the source. The site is offered in several languages (e.g. /ar/ and /ja/), but Hebrew was not among them.",
+    "students": "Official Education plan: Creator benefits at an education price for students, teachers, classes and programs after verification. The discount amount is not on the page."
+  },
+  "meshy": {
+    "role": "Generates 3D models from text and images, including textures and animation, and exports them to 3D software, game engines and printing.",
+    "audience": "Independent creators, game developers, designers and 3D printing users who need ready-to-use models.",
+    "pros": [
+      "Renewing free plan with commercial license: 100 credits every month with no credit card, reset on the 1st. Free-plan models get CC BY 4.0, which allows commercial use with credit.",
+      "Export to many formats and tools: fbx, obj, usdz, glb, stl, blend and 3mf; plugins for Blender, Unity, Unreal Engine, Godot, Maya, 3ds Max and ZBrush; send to print-prep software.",
+      "Very detailed model on paid plans: Meshy 7.1 (launched Sept 16, 2026) adds Ultra 2K and Ultra 4K modes, with a raw mesh of up to 80 million triangles in Ultra 4K."
+    ],
+    "cons": [
+      "Small download quota on the free plan: 10 downloads per month, Meshy 6 Lite models only, one task at a time, low queue priority.",
+      "New model and detailed modes are paid only: Meshy 7.1 downloads and Ultra modes need a paid plan. Sending models via DCC Bridge requires Pro or higher.",
+      "Data may be used for training: on all plans except Enterprise, Meshy may use anonymized user data to train models. An opt-out can be requested by email to support."
+    ],
+    "price": "From $20/month billed monthly (Pro). Free plan with 100 credits per month.",
+    "model": "Subscription with credits",
+    "free": "Permanent Free plan, no credit card: 100 credits renewed monthly, up to 10 models and 10 Meshy 6 Lite downloads per month. Models under CC BY 4.0.",
+    "plans": [
+      "100 credits/month, up to 10 models/month, 10 Meshy 6 Lite downloads, one task at a time",
+      "1,000 credits/month, up to 100 models/month, private license",
+      "3,000 credits/month, up to 300 models/month, private license",
+      "8,000 credits/month, up to 800 models/month, private license",
+      "5,500 shared credits/month, up to 550 models/month, private license",
+      "250 credits and 20 downloads",
+      ""
+    ],
+    "privacy": "Per the help center, on all plans bought directly on the site (personal or team, not Enterprise orders) Meshy may use anonymized user data to train models. An opt-out can be requested by email to support@meshy.ai. Enterprise customer data is not used for training. The article does not explicitly cover free accounts or text prompts.",
+    "rights": "On the Free plan, models are CC BY 4.0: commercial use allowed with credit to Meshy. On paid plans the user gets full private ownership of the models, provided they were not published in the community.",
+    "api": "Yes. REST API, an MCP server that needs an API key, the meshy-cli command-line tool and plugins for AI agents. Per the help center, Pro is for those who need API access. API pricing not checked.",
+    "hebrew": "Not mentioned in the source. The official pages checked have no interface language list.",
+    "students": "The pricing page links to an Education Program but shows no student price or discount. Program details not verified."
+  },
+  "tripo": {
+    "role": "Generates 3D models from text, an image or several views, with textures, quad mesh, rigging and part splitting.",
+    "audience": "Game developers, 3D artists and developers who need clean meshes, rigging and an API.",
+    "pros": [
+      "Production-ready quad mesh: model P2, added in August 2026, upgrades P1 and adds quad-mesh output, which is easier to edit in 3D software.",
+      "Follow-up tools beyond generation: automatic rigging, applying animations, retopology, UV unwrapping, part splitting, textures up to 8K and format conversion.",
+      "API with visible per-action pricing: an API point costs $0.01 and can be bought from $1. An image-to-model job with standard texture costs about 30 points, about $0.30."
+    ],
+    "cons": [
+      "Quality add-ons raise the price of every model: in the API, HD texture adds 10 points, Ultra adds 20, HD geometry adds 20 and quad mesh adds 5.",
+      "No free API points on the pricing page: points are bought in advance, from $1."
+    ],
+    "price": "API: $0.01 per point (100 points per dollar), bought in advance.",
+    "model": "Subscription with credits, and pay-per-use API",
+    "plans": [
+      "100 points per dollar. Image to 3D: about 20 points without texture, about 30 with standard texture"
+    ],
+    "api": "Yes. Documented on the Tripo Developers site: 100 points per dollar, minimum purchase $1. Text to model about 10 points without texture and about 20 with texture; automatic rigging 25 points; format conversion 5 to 10."
+  },
+  "sloyd": {
+    "role": "Creates 3D models from text or an image, with parametric generators for clean geometry.",
+    "audience": "Students and creators who need 3D models for games, visualization or printing, without modeling experience.",
+    "pros": [
+      "Unlimited generation on paid plans: on Plus and Pro, generation from text or image to 3D, textures, rigging and animation are unlimited. Credits (50 or 350 per month) are needed only for some features.",
+      "Commercial use from Plus: Plus costs $15/month, or $12.50/month billed yearly, and includes commercial use and unlimited export.",
+      "Connects to game engines and 3D tools: plugins for game engines, 3D tools and slicers on paid plans. Guides for Unity, Unreal, Godot and Roblox Studio, and an MCP server."
+    ],
+    "cons": [
+      "Free: one generation per day and no export: the Guest plan has one text or image generation per day, export of community models only, personal-use license only.",
+      "Resale and commercial printing are limited: only Pro allows distributing and selling models in asset stores. Commercial 3D printing needs a custom license from support.",
+      "API is separate from the subscription: it is not in any plan, uses separate prepaid points. Monthly points do not roll over."
+    ],
+    "price": "From $15/month, or $12.50/month billed yearly. Free: one generation per day, personal use only.",
+    "model": "Subscription with credits",
+    "free": "Free Guest plan: one generation per day from text or image, export of community models only (GLB, OBJ), personal-use license only.",
+    "plans": [
+      "One generation per day from text or image to 3D and skybox, export of community models only in GLB and OBJ",
+      "50 credits/month, unlimited generation, textures, rigging and animation, 2 concurrent generations, 1 custom AI style, unlimited export, plugins",
+      "50 credits/month, unlimited generation, textures, rigging and animation, 2 concurrent generations, 1 custom AI style, unlimited export, plugins",
+      "350 credits/month, unlimited generation, 5 concurrent generations, unlimited custom AI styles, priority queue, priority support",
+      "350 credits/month, unlimited generation, 5 concurrent generations, unlimited custom AI styles, priority queue, priority support"
+    ],
+    "rights": "Per the pricing page, Guest gets a personal-use license; Plus and Pro include commercial use with no royalties. Distribution and sale in asset stores only on Pro.",
+    "api": "Yes. API with separate prepaid points, no subscription needed and not included in any plan. Its price list was not read. Also an MCP server for coding tools such as Claude Code, Codex, Cursor and VS Code.",
+    "hebrew": "Not mentioned in the source: the official pages checked do not mention interface languages or Hebrew prompts.",
+    "students": "No student benefit found: the pricing page mentions no offer for students or schools."
+  },
+  "marble": {
+    "role": "Generates whole walkable 3D worlds from text, an image or a panorama, with editing and export tools.",
+    "audience": "Designers, environment artists, game and video creators who want a full 3D environment instead of a single object.",
+    "pros": [
+      "A whole world, not just an object: Marble builds a full environment from text, a single image or a 360 panorama already on the free plan. From Standard you can combine several inputs and edit.",
+      "Export as splat, mesh and video: Gaussian splats in SPZ and PLY, high-quality meshes with vertex color or texture, a choice of OpenGL or OpenCV axes, and recording video from the world.",
+      "API with visible pricing: 1,250 points cost $1. A world on marble-1.1 costs 1,500 points, a draft on marble-1.0-draft costs 150, and high-quality mesh export costs 3,500."
+    ],
+    "cons": [
+      "No commercial rights on the free plan: Free allows up to 4 worlds, World Labs keeps the rights to outputs, and the user gets a personal non-commercial license only.",
+      "Textured mesh export only from Pro: per billing docs, high-quality textured mesh export and world expansion are included from Pro. Standard has regular export.",
+      "Subscription points do not roll over: unused subscription points are lost. Separately purchased points last a year and can only be bought on a paid plan. App points are not valid in the API."
+    ],
+    "price": "From $20/month (Standard). Free plan with up to 4 worlds for non-commercial use.",
+    "model": "Subscription with credits",
+    "free": "Free plan: up to 4 world generations from text, one image or a 360 panorama, for personal non-commercial use. Extra points cannot be bought.",
+    "plans": [
+      "Up to 4 world generations from text, one image or a 360 panorama",
+      "20,000 credits, up to 12 world generations, combined input, editing, export, download of community worlds",
+      "Up to 25 world generations, world expansion, video quality upgrade, textured mesh export, commercial rights",
+      "Up to 75 world generations, for high-volume production",
+      ""
+    ],
+    "privacy": "Per the terms, the user grants World Labs a license to use their content, including for model training. For free users the license is irrevocable. Paid users can revoke it, including from the account page; revocation applies going forward and does not require removal from already-trained models.",
+    "rights": "Per the terms, on a free account World Labs keeps the rights to outputs and the user gets a personal non-commercial license. On a paid account the user holds the rights to outputs.",
+    "api": "Yes. World Labs Platform offers a paid API separate from the app: $1.00 per 1,250 points, minimum purchase $5, points do not expire. A world on marble-1.0 or marble-1.1 costs 1,500 points.",
+    "hebrew": "Not mentioned in the source.",
+    "students": "No official student benefit found in the pages checked."
+  },
+  "spline": {
+    "role": "Browser-based 3D design tool for interactive scenes for websites and apps, with AI model generation from text and images.",
+    "audience": "Web designers, product designers and graphic designers who want interactive 3D without traditional 3D software.",
+    "pros": [
+      "Design, interaction and AI generation in one place: a model generated from text or an image opens straight in the scene editor. Engines to choose from: Hunyuan3D, Hunyuan 3.1 Pro, Trellis 2 and Meshy.",
+      "Free plan for working in the editor: Free includes unlimited file viewing, access to the Spline library and web export (with a watermark), but no AI points.",
+      "Connects to AI agents: Spline MCP lets an agent work in files: 20 calls/day on Free, 100 on Hobby, 200 on Pro, 400 on Max. Omma, a Spline beta tool, builds scenes, sites and games from a text description."
+    ],
+    "cons": [
+      "AI model generation is paid only: Free has no AI points. Generation is included from Hobby, with 2,000 points per seat per month, and it charges points for both the preview image and the mesh.",
+      "Watermark and file limits on free: on Free, web export carries a watermark and personal files are limited. Video export and Apple/Android export only from Pro.",
+      "AI points do not roll over: they renew each billing cycle. Points can be added up to a cap of 10,000 per seat on Hobby and Pro."
+    ],
+    "price": "From $12 per seat per month billed yearly, or $15 billed monthly (Hobby). Free plan with no AI points.",
+    "model": "Subscription with credits",
+    "free": "Permanent Free plan: limited personal files, unlimited viewing, Spline library and 20 MCP calls per day. No AI points, and web export has a watermark.",
+    "plans": [
+      "Limited personal files, unlimited viewing, Spline library, 20 MCP calls/day",
+      "2,000 AI points per seat per month, unlimited files, no watermark, 100 MCP calls/day",
+      "2,000 AI points per seat per month, unlimited files, no watermark, 100 MCP calls/day",
+      "3,000 AI points per seat per month, video export, Apple and Android export, 200 MCP calls/day",
+      "3,000 AI points per seat per month, video export, Apple and Android export, 200 MCP calls/day",
+      "10,000 AI points per seat per month, 5x weekly media generation, 400 MCP calls/day",
+      "10,000 AI points per seat per month, 5x weekly media generation, 400 MCP calls/day",
+      ""
+    ],
+    "privacy": "Per the terms (effective Oct 29, 2026), Spline may create anonymized aggregate data from user content, AI tool usage and usage data, owns it, and may use it to develop, train and evaluate models. This also applies to content created before that date. No opt-out found in the terms.",
+    "rights": "Per the terms, the user keeps ownership of their content. The terms do not explicitly address ownership of AI-generated outputs.",
+    "watermark": "Web export on the Free plan carries a watermark. From Hobby up, no watermark.",
+    "hebrew": "Not mentioned in the source.",
+    "students": "Student and educator discount on paid plans: sign up with an institutional email, apply with verification details, then upgrade. The discount amount is not on the page."
+  },
+  "hunyuan-3d": {
+    "role": "Tencent model and site that generate 3D models from text, an image, multiple views and a sketch, with a Tencent Cloud API.",
+    "audience": "Designers and game developers who want to try model generation for free, and developers integrating 3D generation via Tencent Cloud.",
+    "pros": [
+      "Free daily generation on the global site: per external coverage, up to 20 generations per day free, as a limited-time offer.",
+      "Version 3.1 uses up to 8 views: per CGWORLD, HY 3D 3.1 (Jan 16, 2026) doubles reference images from 4 to 8 for more accurate reconstruction.",
+      "Also available inside other tools: the default model engine in Spline, alongside Hunyuan 3.1 Pro. The Tencent Cloud API also offers Low Poly mesh, automatic rigging, UV unwrapping and part generation."
+    ],
+    "cons": [
+      "Free quota is temporary: per CGWORLD, the 20 daily generations on the global site are a limited-time free trial, and part splitting (PartGen 1.5) exists only in the Chinese version, not the global one.",
+      "API is prepaid: on Tencent Cloud, points are sold in packs of $15 to $1,350, about $0.0135 to $0.015 per point. A standard generation costs 25 points."
+    ],
+    "price": "Consumer site prices not verified. Tencent Cloud API: prepaid point packs from $15.",
+    "model": "Credits, and pay-per-use API",
+    "trial": "Tencent Cloud offered new users 1,000 free points, an offer that ended June 30, 2026 per the source.",
+    "plans": [
+      "Standard generation 25 points, Geometry or Express 15, LowPoly 30, auto rigging 10, UV unwrap 10, format conversion 5"
+    ],
+    "api": "Yes. Hunyuan 3D API available on international Tencent Cloud, English console, paid in points. Output is a GLB file, and there is a format conversion action. A Model parameter selects the engine version.",
+    "hebrew": "Not mentioned in the source. The product page loaded with language tag zh_CN only, and Tencent Cloud pages describe an English console.",
+    "students": "No official student benefit found in the pages checked."
+  }
+}

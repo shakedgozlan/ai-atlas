@@ -1,0 +1,256 @@
+{
+  "manus": {
+    "role": "General-purpose AI agent that carries out long tasks on its own on a cloud computer, from research to presentations, websites and video.",
+    "audience": "People who want to hand over a whole task, such as research, a presentation or a site, and get a finished result without building a workflow themselves.",
+    "status": "Active. Manus announced joining Meta on Dec 29, 2025, and in a Sept 1 post said it is operating independently again, led by the founding team. Per the announcement, some users had to back up and restore data and there was a temporary access interruption. The post does not explain why the deal was cancelled.",
+    "pros": [
+      "Free points renewed daily: the free plan gives 300 points every day, one task at a time and 2 scheduled tasks.",
+      "Carries out whole tasks on its own: Manus 2.0, from Sept 28, 2026, includes a cloud computer, scheduled automations and Manus Studio for creation. A video editor and game building were added in October.",
+      "Also on desktop: a desktop app uses the same points system as the website, and points are charged only while the agent works."
+    ],
+    "cons": [
+      "Task cost is not fixed: per the help center, task complexity determines how many points it uses, so it is hard to know in advance how many tasks will suffice.",
+      "One task at a time on free: Free allows one concurrent task. Pro allows 20 concurrent tasks and 20 scheduled automations.",
+      "Ownership changes this year: the company moved to Meta and returned to independence within under a year, and during the transition some users had to back up and restore data."
+    ],
+    "price": "Pro from $20/month with 4,000 points, 17% off with yearly billing. Free: 300 points per day.",
+    "model": "Subscription with credits",
+    "free": "Free plan with 300 points renewed daily, one concurrent task and 2 scheduled automations.",
+    "plans": [
+      "300 points per day, one concurrent task, 2 scheduled automations",
+      "From 4,000 points per month, 20 concurrent tasks, 20 scheduled automations",
+      "From 8,000 points per month, 20 concurrent tasks, 20 scheduled automations",
+      ""
+    ],
+    "api": "Not verified. Per the blog, Manus Flex (from Sept 29, 2026) lets you use your own API key inside the Manus workspace. A public API was not checked.",
+    "hebrew": "Not mentioned in the source: no mention of languages in the official pages checked.",
+    "students": "No student benefit found: the plans page in the help center mentions no student offer.",
+    "watch": "Users report thousands of points deducted on tasks that were not completed, and refunds not being handled."
+  },
+  "genspark": {
+    "role": "Workspace with AI agents that create presentations, documents, images and code and carry out tasks.",
+    "audience": "People who want one tool that produces presentations, documents and images from a written task, without building workflows.",
+    "pros": [
+      "Free points every day: the free plan includes 100 points per day and 1GB of AI Drive storage, up to a lifetime total cap.",
+      "Many tools in one subscription: Plus includes AI Slides, Genspark Code, meeting summaries, Speakly voice dictation and a cloud computer for agents, with 10,000 points per month.",
+      "Commercial use on paid plans: per the help center, Plus includes commercial use of AI-generated content, guaranteed until Dec 31, 2026."
+    ],
+    "cons": [
+      "Free points are capped for life: the daily 100-point refill stops after a total cap is reached; the cap size was not stated.",
+      "Benefit terms change: benefits are valid until June 30, 2027, and from Jan 1, 2027 AI Chat and AI Image benefits will be set by the plan in force then.",
+      "Refund in a short window: outside the EU, UK, Turkey and Korea, a monthly subscription refund is possible only within 24 hours of purchase."
+    ],
+    "price": "Free plan with 100 points per day. Plus from 10,000 points per month and Pro from 125,000; prices were not shown on the page read.",
+    "model": "Subscription with credits",
+    "free": "Free plan with 100 points per day and 1GB AI Drive. The daily refill stops after a lifetime total cap, whose size was not stated.",
+    "plans": [
+      "100 points per day up to a total cap, 1GB AI Drive",
+      "From 10,000 points per month, 50GB AI Drive, Free Quota, commercial use of AI content, AI Slides, Genspark Code, meeting summaries, Speakly and cloud computer",
+      "Everything in Plus, from 125,000 points per month, 1TB AI Drive, higher AI Chat limit, weekly Free Quota 10x Plus"
+    ],
+    "privacy": "The privacy policy (updated July 24, 2026) does not say whether prompts, files or outputs are used for model training, and describes no opt-out. It mentions using information \"to evaluate and improve our Service\". Vendors named: OpenAI, Anthropic, Google, xAI and ElevenLabs. Data is kept on Microsoft Azure and may be processed in the US.",
+    "rights": "Per the help center, Plus includes commercial use of AI-generated content, guaranteed until Dec 31, 2026; later terms will be published on the plan page.",
+    "api": "Not verified: no public API checked.",
+    "hebrew": "Not mentioned in the source: the help center and privacy policy do not mention languages. A Hebrew-prefixed (he) blog URL appeared in search but was not loaded, so not verified.",
+    "students": "No student benefit found: the plans page in the help center does not mention students."
+  },
+  "n8n": {
+    "role": "Tool for building automation workflows and AI agents in a visual editor, in the cloud or self-hosted.",
+    "audience": "People willing to learn a bit more to build flexible workflows and agents, and those who want control of their data through self-hosting.",
+    "pros": [
+      "Free to install on your own server: the self-hosted Community version is available on GitHub. In the cloud, data is stored in the EU, in Frankfurt.",
+      "Billing per whole workflow run: each workflow run counts as one execution regardless of the number of steps. Starter includes 2,500 executions per month.",
+      "Full developer access: there is an API, a command-line tool, an MCP server that connects agents such as Claude Code, and an SDK for describing workflows as code. The site lists 2,757 integrations."
+    ],
+    "cons": [
+      "No permanent free cloud plan: only a trial with no credit card, with 1,000 executions. The Business plan is available only self-hosted.",
+      "Prices shown for yearly billing only: Starter is shown at €20/month billed yearly. The monthly price is not shown, and there is no prorated refund on cancellation.",
+      "Requires more technical understanding: working with workflows, nodes and APIs, and especially self-hosting, suits people unfamiliar with technical concepts less."
+    ],
+    "price": "Cloud from €20/month billed yearly for 2,500 executions. The self-hosted Community edition is free.",
+    "model": "Subscription per executions",
+    "free": "No permanent free plan in the cloud. The self-hosted Community edition is free and available on GitHub.",
+    "trial": "Cloud trial with no credit card: 1,000 executions, 5 concurrent executions, 800 Assistant credits and 100 AI credits. 14-day Business trial, with a credit card.",
+    "plans": [
+      "Full self-hosted version to run on your own server",
+      "2,500 executions per month, unlimited active workflows, 1,600 Assistant credits per month",
+      "10,000 executions per month, unlimited active workflows, up to 9,600 Assistant credits per month",
+      "",
+      ""
+    ],
+    "privacy": "Per the AI terms (updated July 6, 2026), n8n will not use customer content or output to train models, but may use prompts and usage data in aggregated, anonymized form to improve AI services. When you connect a third-party provider's model, data goes to it under its terms. In the cloud, data is stored in the EU (Frankfurt), and self-hosting is possible.",
+    "rights": "Per the AI terms, the customer owns the output generated in AI features, to the extent the law permits. This is no guarantee against third-party claims.",
+    "api": "Yes. Docs describe the n8n API for management over HTTP, n8n CLI, an MCP server that connects AI agents and MCP clients to the instance, Workflow SDK and building custom nodes. Limits per plan not stated.",
+    "hebrew": "Not mentioned in the source: no mention of interface languages in the official pages checked.",
+    "students": "No student benefit found: the bottom of the pricing page links to an Education page, but the pricing page gives no offer details. The Education page was not read."
+  },
+  "lindy": {
+    "role": "AI assistant that works as a team member in Slack, email and calendar and carries out routine tasks.",
+    "audience": "People who manage lots of emails, meetings and recurring tasks and want an assistant that operates inside Slack and Gmail.",
+    "pros": [
+      "Works inside existing tools: since August 2026 Lindy works as a team member in Slack channels and direct messages, and a Chrome extension drafts replies and tidies the Gmail inbox.",
+      "Learns a task from a screen recording: the Watch and Learn feature, from Oct 12, 2026, learns a task from a screen recording of up to an hour or from a written description of the steps.",
+      "Commitment not to train on data: per the pricing page, data is encrypted, not sold and \"never used to train models\". More than 3,000 integrations and MCP support."
+    ],
+    "cons": [
+      "Short free trial: the free plan includes $50 in credits valid for 7 days only.",
+      "Monthly credits do not roll over: Team includes 3,000 credits per month, which do not carry to next month. Extra costs $10 per 1,000 credits.",
+      "Phone calls only in North America: Lindy gets its own phone number only for US and Canada numbers."
+    ],
+    "price": "Team at $29.99/month with 3,000 credits. Free trial with $50 in credits for 7 days.",
+    "model": "Subscription with credits",
+    "free": "$50 in one-time credits, valid 7 days.",
+    "trial": "The free credits are valid 7 days. A new team member joining via Slack gets a 7-day trial before the seat is billed.",
+    "plans": [
+      "$50 in credits",
+      "",
+      ""
+    ],
+    "privacy": "Per the pricing page, data is encrypted, not sold and \"never used to train models\". Storage location not stated. Privacy policy and terms not read.",
+    "api": "Not verified. Per the changelog, from Aug 24, 2026 you can connect hosted MCP servers and save API keys as credentials. A public Lindy API was not checked.",
+    "hebrew": "Not mentioned in the source: no mention of languages in the official pages checked.",
+    "students": "No student benefit found: the pricing page does not mention students."
+  },
+  "microsoft-copilot-studio": {
+    "role": "Microsoft tool for building AI agents and workflows that connect to Microsoft 365 and other services.",
+    "audience": "Students and teams working in their institution's or organization's Microsoft 365 environment who want to build internal agents.",
+    "pros": [
+      "Official Hebrew support: Hebrew (he-IL) is in the language list for the authoring interface and for generative answers and orchestration, with no Preview label.",
+      "Agents that operate a computer: Computer use, which lets an agent operate apps and websites, has been generally available since May 2026.",
+      "Connects to other AI tools via MCP: in October 2026 you can connect tools such as Visual Studio Code and GitHub Copilot CLI to Copilot Studio MCP, and in preview expose agents as MCP servers."
+    ],
+    "cons": [
+      "No personal or free plan: payment is for organization credit packs ($200/month for 25,000 credits), pay-as-you-go with an Azure subscription, or via a Microsoft 365 Copilot license.",
+      "Some models process data outside the region: per the updates page, using some models may require processing and storing data outside the organization's geographic boundaries.",
+      "Voice and events without Hebrew: Hebrew is not in the voice support table, and event triggers are available in English only."
+    ],
+    "price": "25,000-credit pack at $200/month for an organization, or pay-as-you-go via Azure. No personal plan.",
+    "model": "Credit packs for organizations, or pay-per-use",
+    "trial": "There is a link to a free trial with no defined length. A free Azure account includes a $200 credit that can also be used for building agents.",
+    "plans": [
+      "25,000 Copilot Credits, organization-wide license",
+      "Billed by credit consumption at the end of each month, no commitment",
+      "Prepaid Copilot Credit Commit units",
+      "Copilot Chat and Standard harness in Copilot Studio"
+    ],
+    "privacy": "Not verified: Microsoft's policy on training on Copilot Studio data was not read. The updates page notes that some models may require processing and storing data outside the organization's geographic boundaries.",
+    "api": "Not verified. Per the updates page there is a Visual Studio Code extension (generally available Jan 2026), connecting MCP servers as tools (preview, July 2026) and A2A connection between agents (April 2026).",
+    "hebrew": "Hebrew (he-IL) appears on the language support page as an authoring interface language and as a user language for generative answers and orchestration, with no Preview label. It does not appear in the voice support table, and event triggers are available in English only.",
+    "students": "No student benefit found: the pricing page links only to a Copilot in Education page, with no student price."
+  },
+  "zapier": {
+    "role": "Platform for connecting apps and building automated workflows and AI agents without code.",
+    "audience": "People who want to connect familiar services, such as Gmail, Google Sheets and Slack, and run recurring workflows without writing code.",
+    "status": "Active. The Zapier Agents product became an AI by Zapier step inside the Zap editor. Runs are logged in history and billed as tasks.",
+    "pros": [
+      "A very large number of connected apps: per the pricing page Zapier connects \"9,000+ apps\". An October 2026 blog also says \"10,000+ apps\".",
+      "Free plan renewing monthly: 100 tasks per month, unlimited two-step Zaps, Tables and Forms, and 400 agent actions per month.",
+      "AI agent as a step in a workflow: the AI by Zapier step takes a prompt, tools and approval before acting, and can be combined with fixed steps in the same Zap. Zapier MCP is available on all plans."
+    ],
+    "cons": [
+      "Interface in English only: per the help center \"Zapier is only available in English\".",
+      "Free plan limited to two steps: two-step Zaps only, checked every 15 minutes. Multi-step workflows and Premium apps only from Pro.",
+      "Task-based billing that can climb: the cheapest Pro includes 750 tasks. Overage costs 2.5x the base rate on monthly billing, and each MCP tool call uses 2 tasks."
+    ],
+    "price": "Free plan with 100 tasks per month. Pro from $29.99/month billed monthly, or $19.99/month billed yearly, for 750 tasks.",
+    "model": "Subscription per task quota",
+    "free": "Permanent Free plan: 100 tasks per month, unlimited two-step Zaps, Tables and Forms, one user, 15-minute check, Copilot with a daily limit, basic Agents access.",
+    "trial": "14 days of Pro, no credit card.",
+    "plans": [
+      "100 tasks per month, unlimited two-step Zaps, Tables and Forms, one user, Copilot with a daily limit, 400 agent actions per month",
+      "750 tasks per month, multi-step Zaps, Premium apps, Webhooks and AI by Zapier, one user, 1,500 agent actions per month",
+      "750 tasks per month, multi-step Zaps, Premium apps, Webhooks and AI by Zapier, one user, 1,500 agent actions per month",
+      "",
+      "",
+      ""
+    ],
+    "privacy": "Per the legal info page (July 2, 2026), Enterprise customers are automatically excluded from use of their content for model training. Other customers can opt out any time using a dedicated form. Zapier's subprocessors, such as OpenAI, Anthropic and Google, may not train models on customer content. Data storage location is not stated on the page. A paid plan does not by itself guarantee content is not used for training.",
+    "api": "Not verified. Zapier MCP is available on all plans, with basic access on the free plan; each tool call uses 2 tasks. Webhooks are included from Pro. A public API for managing the account was not checked.",
+    "hebrew": "Per the help center the interface is English-only (\"Zapier is only available in English\"). Whether workflows handle Hebrew text was not checked. Billing can be in shekels.",
+    "students": "No student benefit found. The official discounts page lists only 33% on yearly billing and 15% for nonprofits. The pricing page does not mention students.",
+    "watch": "Users report an annual renewal they did not notice, overage charges and refusal of refunds."
+  },
+  "gumloop": {
+    "role": "Platform for building AI agents and automated workflows for work, which also operate from Slack, Teams and email.",
+    "audience": "Teams and employees who want to build agents for marketing, sales and support processes without writing code.",
+    "pros": [
+      "Agents available where you work: per the homepage you can address an agent in Slack, Microsoft Teams, Gmail and text messages. There are 400 connectors.",
+      "Transparent cost-based pricing: from August 2026 Gumloop passes through token and compute costs at cost, and adds an 8% orchestration fee.",
+      "Limited data retention at model providers: the company has Zero Data Retention agreements with the major model providers, and states SOC 2 Type II and HIPAA. You can use your own API keys."
+    ],
+    "cons": [
+      "No free plan found: the pricing page shows only Pro at $37/month with a 14-day trial, and Enterprise.",
+      "Aimed at companies: the homepage presents Gumloop as an agent builder for teams, and private cloud (VPC) deployment is available for Enterprise.",
+      "Answers about credits not shown: the pricing page has questions about what a credit is, rollover and exceeding 20K credits, but the answers are not in the text."
+    ],
+    "price": "Pro at $37/month with 20K credits and a 14-day trial. No free plan found.",
+    "model": "Subscription with credits and a fee on usage cost",
+    "trial": "14-day trial on Pro.",
+    "plans": [
+      "20K credits per month (7,400 plus 12,600 bonus credits), unlimited agents and seats, one hosted MCP server",
+      ""
+    ],
+    "privacy": "The security page does not address training models on customer data. The company has Zero Data Retention agreements with the major model providers, and you can use your own keys. You can deploy in a private cloud (VPC) in a region of your choice. Privacy policy not read.",
+    "api": "Not verified. The pricing page shows hosting one MCP server on Pro, and Gumloop MCP and MCP Server Proxying with no per-plan detail. A public API was not checked.",
+    "hebrew": "Not mentioned in the source: no mention of languages in the official pages checked.",
+    "students": "No student benefit found. The pricing page mentions Gumloop University as part of support, with no details."
+  },
+  "make": {
+    "role": "Visual platform for building automation scenarios and AI agents that connect apps.",
+    "audience": "People who want to build branching workflows in a visual diagram view, with more control than in simple tools.",
+    "pros": [
+      "Free plan with a monthly quota: the free plan includes 1,000 credits per month, 1MB of data storage and one data store.",
+      "AI agents inside the canvas: in February 2026 the next generation of Make AI Agents launched, agents that can be shared between teams and workflows.",
+      "Connect your own AI provider on any paid plan: since Nov 6, 2025 you can connect an independent AI provider to Make AI Agents and the AI Toolkit on any paid plan, not only from Pro."
+    ],
+    "cons": [
+      "Credits expire: per the FAQ credits expire at the end of the period, and extra credits on a monthly plan expire after a month.",
+      "Extra credits cost more: credits bought beyond the plan cost 25% more than the credits included in it.",
+      "AI actions use more: per the pricing page, actions using Make's AI provider may use more credits."
+    ],
+    "price": "Free plan with 1,000 credits per month. Paid plan prices were not shown on the page read.",
+    "model": "Subscription per credits",
+    "free": "Free plan with 1,000 credits per month, 1MB of data storage and one data store.",
+    "plans": [
+      "1,000 credits per month, 1MB data storage, one data store",
+      "Up to 300,000 credits per month",
+      "Up to 8 million credits per month",
+      "",
+      ""
+    ],
+    "privacy": "Not verified: the privacy notice does not address use of customer data, scenarios or prompts for model training, except a statement that Google Workspace APIs are not used for training. Storage location not stated, and information may transfer outside the European Economic Area. The page contradicts itself on the update date (\"Last Update: April 2025\" versus Feb 5, 2026).",
+    "api": "Yes. Per the pricing page there are over 300 REST API endpoints for managing the platform. The site menu has an \"MCP server\" page, whose content was not read.",
+    "hebrew": "Not mentioned in the source: no mention of interface languages in the official pages checked.",
+    "students": "No student benefit found. The pricing page mentions only support for nonprofits, by direct contact."
+  },
+  "activepieces": {
+    "role": "Open-source platform for automation and AI agents, for building workflows that connect apps.",
+    "audience": "People who want to build automations and agents for free or on a small budget, including those who prefer an open-source tool.",
+    "pros": [
+      "Free plan with a renewing quota: Free includes 1,000 credits, unlimited workflows, up to 5 users and access to MCP and API.",
+      "Flat price, not per user: Plus costs $20/month at a flat price per account and includes 10,000 credits.",
+      "Open source and 770+ integrations: the pricing page says \"Open source at the core\" and \"770+ integrations\". The site also offers running in the cloud in Frankfurt or on your own server."
+    ],
+    "cons": [
+      "Contradiction about free credit renewal: the pricing page shows 1,000 credits per month, but elsewhere on the same page says they reset daily.",
+      "Big price jump to the team plan: after Plus at $20, the next plan is Team at $200/month with 50,000 credits.",
+      "Terms limit use to internal use: per the terms (updated Nov 29, 2023), use of the software is only for the customer's internal needs, and may not be resold."
+    ],
+    "price": "Free plan with 1,000 credits. Paid from $20/month billed monthly, or $16/month billed yearly, at a flat price per account.",
+    "model": "Subscription with credits",
+    "free": "Free plan: 1,000 credits, unlimited workflows, up to 5 users, MCP and API access. The page contradicts itself on whether credits renew daily or monthly.",
+    "plans": [
+      "1,000 credits, unlimited workflows, up to 5 users, MCP and API access",
+      "10,000 credits per month, up to 5 users, connect your own AI keys",
+      "10,000 credits per month, up to 5 users, connect your own AI keys",
+      "",
+      "",
+      "Custom annual credit quota, SCIM, audit logs, dedicated support"
+    ],
+    "privacy": "The privacy policy (updated Jan 19, 2026) does not say whether user or workflow data is used for model training. It only says Google Workspace data is not used to train general models. Per the policy, data is transferred to the United States to provide the service.",
+    "rights": "Per the terms (Nov 29, 2023), the customer keeps all rights in customer content, subject to a limited license to Activepieces to operate and improve the software. Use is allowed only for the customer's internal needs.",
+    "api": "Yes. The pricing page lists API and MCP access already on the free plan, and the core is open source. Technical API docs were not checked.",
+    "hebrew": "Not mentioned in the source: no mention of interface languages in the official pages checked, including the changelog.",
+    "students": "No student benefit found in the official pages checked."
+  }
+}
