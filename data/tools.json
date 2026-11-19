@@ -6357,9 +6357,9 @@
       "logo": {
         "file": "logos/mistral-vibe.svg",
         "file_dark": null,
-        "source_url": "https://mistral.ai/favicon.svg",
+        "source_url": null,
         "missing_reason": null,
-        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי. זה הסמל של Mistral, שמופיע גם בעמוד המוצר Vibe; למוצר אין סמל נפרד באתר."
+        "note": "סמל בלבד, בלי שם המותג. קובץ וקטורי ששקד סיפק ב־19 בנובמבר 2026. צבעוני. זה הסמל של Mistral, החברה; למוצר Vibe אין סמל נפרד, ושקד בחר להשתמש בו לכלי הזה."
       },
       "status": {
         "state": "שינוי שם",
