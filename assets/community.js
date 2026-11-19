@@ -116,7 +116,7 @@
   function thumbSvg(down) {
     return '<svg class="ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"' + (down ? ' style="transform:scaleY(-1)"' : '') + '>' + THUMB + '</svg>';
   }
-  // לחצני אגודל בכל כרטיס, משמאל ללחצן ״לאתר הרשמי״ (בקשת שקד, 19.11.2026)
+  // לחצני אגודל בכל כרטיס, מימין ללחצן ״לאתר הרשמי״ וברווח גדול ממנו פי שלושה מהרווח שביניהם (בקשת שקד, 19.11.2026)
   $$('.card').forEach(function (card) {
     var quick = $('.card-quick', card);
     if (!quick) return;
@@ -140,7 +140,7 @@
       group.appendChild(b);
     });
     group.appendChild(live);
-    quick.appendChild(group);
+    quick.insertBefore(group, quick.firstChild);
     paintCardVote(id);
   });
 
