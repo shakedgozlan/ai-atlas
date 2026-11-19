@@ -20,7 +20,7 @@ for slug, cid in sorted(cats.items(), key=lambda x: x[1]):
         if extra: P.append('extra top keys: %s' % sorted(extra))
         for k in ('logo','status','pricing','privacy','commercial_rights','developer_access','integrations','platforms','hebrew','company','student_benefits','filters'):
             if not isinstance(t.get(k), dict): P.append('%s is not an object' % k); continue
-            m = keys(ex[k]) - keys(t[k]) - {'note'}
+            m = keys(ex[k]) - keys(t[k]) - {'note', 'watch_out'}  # watch_out is added after the merge, by build/community_tags.py
             if m: P.append('%s missing: %s' % (k, sorted(m)))
         if t.get('category_id') != cid: P.append('category_id %r' % t.get('category_id'))
         s = t.get('slug')

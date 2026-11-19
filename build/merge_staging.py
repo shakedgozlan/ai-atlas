@@ -33,6 +33,13 @@ if os.path.exists(fp_path):
     fp = json.load(open(fp_path))
     for t in out:
         if t['slug'] in fp: t['filters']['tags']['free_plan'] = fp[t['slug']]
+ct_path = os.path.join(root, 'data/staging/_community_tags.json')
+if os.path.exists(ct_path):
+    ct = json.load(open(ct_path))
+    for t in out:
+        if t['slug'] in ct:
+            t['filters']['tags']['recommended'] = ct[t['slug']]['recommended']
+            t['filters']['watch_out'] = ct[t['slug']]['watch_out']
 d['tools'] = out
 d['snapshot_date'] = '2026-11-18'
 open(p, 'w').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
