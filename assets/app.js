@@ -25,6 +25,38 @@
     if (closeBtn) closeBtn.addEventListener('click', function () { sheet.close(); });
     // לחיצה על הרקע המעומעם שמסביב לחלון סוגרת אותו
     sheet.addEventListener('click', function (e) { if (e.target === sheet) sheet.close(); });
+    // בפלאפון החלון עולה מלמטה, ואפשר למשוך את ראשו למטה באצבע כדי לסגור אותו
+    var head = $('.sheet-head', sheet);
+    if (head && window.matchMedia) {
+      var narrow = window.matchMedia('(max-width:599px)');
+      var calm = window.matchMedia('(prefers-reduced-motion:reduce)');
+      var y0 = null, dy = 0, t0 = 0;
+      var settle = function (to, done) {
+        sheet.classList.remove('is-dragging');
+        if (calm.matches) { sheet.style.transform = ''; if (done) done(); return; }
+        sheet.classList.add('is-settling');
+        sheet.style.transform = to;
+        setTimeout(function () { sheet.classList.remove('is-settling'); sheet.style.transform = ''; if (done) done(); }, 210);
+      };
+      head.addEventListener('touchstart', function (e) {
+        if (!narrow.matches || e.touches.length !== 1 || e.target.closest('a,button')) return;
+        y0 = e.touches[0].clientY; dy = 0; t0 = Date.now();
+      }, { passive: true });
+      head.addEventListener('touchmove', function (e) {
+        if (y0 === null) return;
+        dy = Math.max(0, e.touches[0].clientY - y0);
+        if (dy > 4) { sheet.classList.add('is-dragging'); sheet.style.transform = 'translateY(' + dy + 'px)'; }
+      }, { passive: true });
+      var end = function () {
+        if (y0 === null) return;
+        var fast = dy > 40 && dy / Math.max(1, Date.now() - t0) > 0.5;
+        y0 = null;
+        if (dy > 120 || fast) settle('translateY(100%)', function () { sheet.close(); });
+        else if (dy > 0) settle('translateY(0)');
+      };
+      head.addEventListener('touchend', end);
+      head.addEventListener('touchcancel', end);
+    }
     // בחירה בין חיוב חודשי לשנתי
     var billBtns = $$('[data-bill-set]', sheet);
     billBtns.forEach(function (b) {

@@ -389,7 +389,7 @@ html:has(.sheet[open]){overflow:hidden}
 .sheet-id{flex:1;min-width:0}
 .sheet-title{display:flex;align-items:baseline;gap:10px;font-size:clamp(1.375rem,1.2rem + 0.8vw,1.75rem);font-weight:700;line-height:1.15;letter-spacing:-0.02em;overflow-wrap:anywhere}
 .sheet-title:focus-visible{outline-offset:4px}
-.sheet-title .num{font-size:var(--t-label);letter-spacing:0}
+.sheet-title .num{font-size:var(--t-label);letter-spacing:0;flex:none;white-space:nowrap;overflow-wrap:normal}
 .sheet-role{font-size:var(--t-sheet);line-height:1.4;color:var(--ink-soft);overflow-wrap:anywhere}
 .sheet-former{color:var(--ink-faint)}
 .sheet-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
@@ -398,6 +398,8 @@ html:has(.sheet[open]){overflow:hidden}
 .sheet-head{--t-sheet:0.9375rem}
 /* בראש חלון הפרטים שני לחצני אייקון בלבד: קישור חיצוני לאתר הרשמי, ו־X לסגירה. השם נשאר לקורא מסך ובריחוף */
 .sheet-head .btn-close,.sheet-head .btn-site{padding-inline:0;width:44px;min-height:44px;flex:none;justify-content:center}
+/* שני הלחצנים צמודים זה לזה, כדי שייקראו כזוג אחד */
+.sheet-head .btn-site+.btn-close{margin-inline-start:calc(6px - clamp(12px,2vw,20px))}
 .sheet-head .close-t,.sheet-head .site-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .sheet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(12px,min(2.6vw,1.8vh),32px) clamp(24px,3.4vw,48px);align-items:start}
 .sec{min-width:0;overflow-wrap:break-word}
@@ -572,8 +574,19 @@ html:not(.js) #finder-open{display:none}
   .res{grid-template-columns:2.2em minmax(0,1fr)}
   .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
-  .sheet-head-in{flex-wrap:wrap}
-  .sheet-head .btn-site{order:3;flex:1 1 100%;width:auto;gap:8px}
+  /* ראש החלון בפלאפון: לוגו, שם ו־X בשורה אחת, התיאור מתחתם לכל הרוחב, ואז הקישור לאתר */
+  .sheet-head-in{display:grid;grid-template-columns:36px minmax(0,1fr) 44px;align-items:center;gap:10px 12px;padding-block-start:22px}
+  .sheet-id{display:contents}
+  .sheet-head .logo{grid-column:1;grid-row:1;width:36px;height:36px}
+  .sheet-title{grid-column:2;grid-row:1}
+  .sheet-head .btn-close{grid-column:3;grid-row:1;margin-inline-start:0}
+  .sheet-role{grid-column:1/-1;grid-row:2}
+  .sheet-head .btn-site{grid-column:1/-1;grid-row:3;width:auto;gap:8px}
+  /* ידית גרירה: אפשר למשוך את ראש החלון למטה באצבע כדי לסגור */
+  .sheet-head{position:relative;touch-action:none}
+  .sheet-head::before{content:"";position:absolute;inset-block-start:8px;inset-inline-start:50%;width:40px;height:4px;margin-inline-start:-20px;border-radius:2px;background:var(--line-strong)}
+  .sheet.is-dragging{animation:none;transition:none}
+  .sheet.is-settling{animation:none;transition:transform .2s cubic-bezier(.2,.8,.2,1)}
   .sheet-head .site-t{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
   .pt summary{min-height:44px}
   .bill-btn{min-height:38px}
