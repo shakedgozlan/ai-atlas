@@ -86,8 +86,9 @@ async function getVotes(db) {
 async function postVote(request, env, cors) {
   const body = await readBody(request, 500);
   const tool = body && toolId(body.tool);
-  const value = body && (body.value === 'up' ? 1 : body.value === 'down' ? -1 : 0);
-  if (!tool || !value) return json({ error: 'bad_request' }, 400, cors);
+  // 'none' מבטל הצבעה קודמת (לחיצה שנייה על אותו אגודל)
+  const value = body && (body.value === 'up' ? 1 : body.value === 'down' ? -1 : body.value === 'none' ? 0 : null);
+  if (!tool || value === null) return json({ error: 'bad_request' }, 400, cors);
   const db = env.DB;
   const voter = await voterHash(request, env);
   const t = now();
@@ -95,7 +96,22 @@ async function postVote(request, env, cors) {
   if (recent.n >= LIMITS.votesPerHour) return json({ error: 'too_many' }, 429, cors);
   const prev = await db.prepare('SELECT value FROM votes WHERE voter = ? AND tool = ?').bind(voter, tool).first();
   const col = value === 1 ? 'up' : 'down';
-  if (!prev) {
+  const had = prev && prev.value ? (prev.value === 1 ? 'up' : 'down') : null;
+  if (value === 0) {
+    // ביטול: השורה נשארת עם ערך 0, כדי שמגבלת הקצב תמשיך לספור את הפעולה, והספירה יורדת באחד
+    if (had) {
+      await db.batch([
+        db.prepare('UPDATE votes SET value = 0, ts = ? WHERE voter = ? AND tool = ?').bind(t, voter, tool),
+        db.prepare(`UPDATE tallies SET ${had} = MAX(${had} - 1, 0) WHERE tool = ?`).bind(tool),
+      ]);
+    }
+  } else if (prev && !had) {
+    // הצבעה חדשה אחרי ביטול
+    await db.batch([
+      db.prepare('UPDATE votes SET value = ?, ts = ? WHERE voter = ? AND tool = ?').bind(value, t, voter, tool),
+      db.prepare(`INSERT INTO tallies (tool, ${col}) VALUES (?, 1) ON CONFLICT(tool) DO UPDATE SET ${col} = ${col} + 1`).bind(tool),
+    ]);
+  } else if (!prev) {
     await db.batch([
       db.prepare('INSERT INTO votes (voter, tool, value, ts) VALUES (?, ?, ?, ?)').bind(voter, tool, value, t),
       db.prepare(`INSERT INTO tallies (tool, ${col}) VALUES (?, 1) ON CONFLICT(tool) DO UPDATE SET ${col} = ${col} + 1`).bind(tool),
@@ -109,7 +125,7 @@ async function postVote(request, env, cors) {
     ]);
   }
   const row = await db.prepare('SELECT up, down FROM tallies WHERE tool = ?').bind(tool).first();
-  return json({ ok: true, tool, mine: value === 1 ? 'up' : 'down', up: row ? row.up : 0, down: row ? row.down : 0, changed: !prev || prev.value !== value }, 200, cors);
+  return json({ ok: true, tool, mine: value === 1 ? 'up' : value === -1 ? 'down' : null, up: row ? row.up : 0, down: row ? row.down : 0, changed: prev ? prev.value !== value : value !== 0 }, 200, cors);
 }
 
 /* ---------- משוב ---------- */

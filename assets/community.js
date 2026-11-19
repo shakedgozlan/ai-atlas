@@ -97,11 +97,14 @@
     paintPick(id);
   }
   function castVote(id, value, say) {
-    if (busy[id] || mine[id] === value) return;
+    if (busy[id]) return;
+    // לחיצה שנייה על אותה בחירה מבטלת את ההצבעה (בקשת שקד, 19.11.2026)
+    if (mine[id] === value) value = 'none';
     busy[id] = true; paintToolVotes(id);
     post('/vote', { tool: Number(id), value: value }).then(function (d) {
       if (d.ok) {
-        mine[id] = d.mine; saveMine();
+        if (d.mine) mine[id] = d.mine; else delete mine[id];
+        saveMine();
         tallies[id] = [d.up, d.down];
         say('');
       } else {
@@ -133,7 +136,7 @@
       b.innerHTML = thumbSvg(x[2]) + '<span class="sr-only">' + x[1] + ' על ' + name + '</span>';
       b.addEventListener('click', function () {
         castVote(id, x[0], function (msg) {
-          live.textContent = msg || 'ההצבעה נשמרה';
+          live.textContent = msg || (mine[id] ? 'ההצבעה נשמרה' : 'ההצבעה בוטלה');
           b.title = msg || x[1];
         });
       });
@@ -161,7 +164,7 @@
       b.addEventListener('click', function () { status.textContent = ''; castVote(id, x[0], function (msg) { status.textContent = msg; }); });
       btns.appendChild(b);
     });
-    var note = el('p', 'vote-note', 'הצבעה אחת לכל כלי מכל מכשיר. כתובת הרשת לא נשמרת: נשמרת רק טביעה מעורבלת שלה, שאי אפשר לשחזר ממנה את הכתובת.');
+    var note = el('p', 'vote-note', 'הצבעה אחת לכל כלי מכל מכשיר. לחיצה נוספת על אותה בחירה מבטלת אותה. כתובת הרשת לא נשמרת: נשמרת רק טביעה מעורבלת שלה, שאי אפשר לשחזר ממנה את הכתובת.');
     var here = el('button', 'btn btn-quiet vote-fb', 'משהו כאן לא מדויק? אפשר לכתוב לנו');
     here.type = 'button';
     here.addEventListener('click', function () { openFeedback({ tool: Number(id), target: 'חלון הפרטים של ' + name, locked: true }); });
