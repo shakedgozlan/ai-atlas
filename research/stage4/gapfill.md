@@ -144,3 +144,8 @@ Official pricing pages re-read with plain `curl` (no fetch quota). Each entry: U
 - Changed: official pricing page added as a source for Max ($24.99/mo, 500 credits, 2 seats) and Frontier ($69.99 / $139.99 / $279.99, seats); notes that prices are iOS-only, in USD, before tax; yearly plans exist without published prices; credits roll over up to 3× (page FAQ). Basic and Lite are not on the pricing page (help article only).
 - Verification: אומת חלקית → אומת חלקית (platform-dependent prices, no yearly amounts).
 
+## D-ID (video-editing/d-id.json)
+- Read: https://www.d-id.com/pricing/studio/ and its own card script https://www.d-id.com/wp-content/themes/airfleet/dist/pricing-page-app.js
+- Changed: unverified_notes only. The script holds several plan sets with minute sliders and an unexplained true/false variant (e.g. Lite lowest tier $5.9 monthly / $4.7 a month yearly, or $10 / $8), plus a running promotion on every card ("Unlimited videos for your first month!"). Too ambiguous to record as plan prices; the $5.90 starting price from the March 2026 release matches Lite's lowest monthly figure. FAQ facts added (minutes renew monthly, no rollover, rounded up to 15 s).
+- Verification: אומת חלקית → אומת חלקית.
+
