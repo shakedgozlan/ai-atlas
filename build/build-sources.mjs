@@ -10,13 +10,16 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dataPath = process.env.ATLAS_DATA || join(root, 'data/tools.json');
 const outPath = process.env.ATLAS_SOURCES_OUT || join(root, 'sources.html');
 const data = JSON.parse(readFileSync(dataPath, 'utf8'));
-// Google Analytics: נטען רק כשיש מזהה מדידה ב־build/analytics.config.json (או במשתנה ATLAS_GA_ID).
+// Google Analytics: נטען רק כשיש מזהה ב־build/analytics.config.json (או במשתנה ATLAS_GA_ID).
 // מזהה ריק משאיר את האתר בלי שום קוד מדידה.
+// מזהה שמתחיל ב־GTM- מקבל את התג בדיוק כפי ש־Google נותנת אותו, ומזהה שמתחיל ב־G- את התג הרגיל.
 const gaId = String(process.env.ATLAS_GA_ID ?? JSON.parse(readFileSync(new URL('./analytics.config.json', import.meta.url), 'utf8')).measurement_id ?? '').trim();
-if (gaId && !/^G-[A-Z0-9]{4,20}$/.test(gaId)) throw new Error('מזהה המדידה של Google Analytics לא תקין: ' + gaId);
-const gaHtml = gaId ? `
+if (gaId && !/^(G|GTM)-[A-Z0-9]{4,20}$/.test(gaId)) throw new Error('המזהה של Google Analytics לא תקין: ' + gaId);
+const gaHtml = !gaId ? '' : gaId.startsWith('GTM-') ? `
+<script async src="https://www.googletagmanager.com/gtm.js?id=${gaId}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date())</script>` : `
 <script async src="https://www.googletagmanager.com/gtag/js?id=${gaId}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${gaId}')</script>` : '';
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${gaId}')</script>`;
 
 const stamp = (rel) => createHash('sha256').update(readFileSync(new URL(rel, import.meta.url))).digest('hex').slice(0, 10);
 const cssV = stamp('../assets/style.css');
