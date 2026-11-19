@@ -66,8 +66,8 @@
  ],
  "audience": "סטודנטים וצוותים שמשתמשים ב־Zoom, Teams או Meet ורוצים סיכום של פגישות, מיילים והודעות.",
  "pricing": {
-  "verification": "אומת חלקית",
-  "summary_line": "Pro ב־15 או 19.75 דולר למשתמש לחודש, לפי סוג החיוב (העמוד לא מסמן איזה מחיר שנתי). יש תוכנית חינמית עם 5 פגישות בחודש.",
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "Pro ב־19.75 דולר למשתמש לחודש בחיוב חודשי, או 15 דולר בחיוב שנתי. יש תוכנית חינמית עם 5 פגישות בחודש.",
   "model": "מנוי",
   "plans": [
    {
@@ -87,30 +87,60 @@
    },
    {
     "name": "Pro",
-    "price": null,
-    "price_text": "15 או 19.75 דולר למשתמש לחודש; העמוד לא מסמן איזה מחיר לחיוב שנתי",
-    "price_short": "15 עד 19.75 דולר",
+    "price": 19.75,
+    "price_text": null,
+    "price_short": null,
     "currency": "USD",
     "per": "למשתמש",
-    "billing": null,
-    "price_period": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
     "includes": "תמלולים, דוחות ואחסון ללא הגבלה, פגישה עד 4 שעות, 100 דקות העלאה בחודש",
-    "notes": "הנחה של 25% בחיוב שנתי.",
+    "notes": "למשתמש, בחיוב חודשי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 15,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "תמלולים, דוחות ואחסון ללא הגבלה, פגישה עד 4 שעות, 100 דקות העלאה בחודש",
+    "notes": "למשתמש, בחיוב שנתי (הנחה של 25%).",
     "source_ids": [
      "s1"
     ]
    },
    {
     "name": "Enterprise",
-    "price": null,
-    "price_text": "22.50 או 29.75 דולר למשתמש לחודש; סוג החיוב לא מסומן",
-    "price_short": "22.50 עד 29.75 דולר",
+    "price": 29.75,
+    "price_text": null,
+    "price_short": null,
     "currency": "USD",
     "per": "למשתמש",
-    "billing": null,
-    "price_period": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
     "includes": "כמו Pro, ובנוסף השמעת אודיו ווידאו ו־200 דקות העלאה בחודש",
-    "notes": null,
+    "notes": "למשתמש, בחיוב חודשי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": 22.5,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "כמו Pro, ובנוסף השמעת אודיו ווידאו ו־200 דקות העלאה בחודש",
+    "notes": "למשתמש, בחיוב שנתי (הנחה של 25%).",
     "source_ids": [
      "s1"
     ]
@@ -132,15 +162,30 @@
    },
    {
     "name": "Enterprise+",
-    "price": null,
-    "price_text": "29.75 או 39.75 דולר למשתמש לחודש; סוג החיוב לא מסומן",
-    "price_short": "29.75 עד 39.75 דולר",
+    "price": 39.75,
+    "price_text": null,
+    "price_short": null,
     "currency": "USD",
     "per": "למשתמש",
-    "billing": null,
-    "price_period": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
     "includes": "HIPAA, SAML/SCIM, מדיניות שמירה, פגישה עד 8 שעות, 300 דקות העלאה",
-    "notes": "מינימום 5 רישיונות.",
+    "notes": "למשתמש, בחיוב חודשי. מינימום 5 רישיונות.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise+",
+    "price": 29.75,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "HIPAA, SAML/SCIM, מדיניות שמירה, פגישה עד 8 שעות, 300 דקות העלאה",
+    "notes": "למשתמש, בחיוב שנתי. מינימום 5 רישיונות.",
     "source_ids": [
      "s1"
     ]
@@ -148,7 +193,7 @@
   ],
   "free_tier": "Free חינמית: 5 תמלולים, דוחות והערות חיות בחודש, פגישות של עד שעה, סיכומי פגישות, מיילים והודעות, חיפוש ארגוני ללא הגבלה ואינטגרציות בסיסיות. בלי השמעת הקלטות ובלי העלאת קבצים.",
   "trial": null,
-  "unverified_notes": "לכל תוכנית בתשלום מוצגים שני מחירים בלי סימון איזה לחיוב שנתי; המחיר הנמוך הוא כנראה השנתי, אך העמוד לא מאשר. המחירון לחינוך בעמוד נפרד לא נקרא."
+  "unverified_notes": "העמוד מסמן במפורש: המחיר הנמוך הוא \"USD. Per user / month when billed annually\" והגבוה הוא חיוב חודשי. אין החזרים; אפשר לבטל לפני מועד החידוש. הנחות כמות לרישיונות שנתיים: 10% מ־100, 15% מ־500 ו־20% מ־1,000. המחירון לחינוך נלקח ממרכז העזרה ולא נבדק שוב."
  },
  "privacy": {
   "text": "לפי עמוד הפרטיות, אימון על נתוני הלקוח הוא בהסכמה בלבד וכבוי כברירת מחדל. Read מכריזה על עצמה בתחילת כל פגישה, מצטרפת רק כשמשתמש הגדיר זאת ודורשת אישור של המארח. החברה מבוקרת לפי SOC 2 Type II ומציעה BAA ל־HIPAA.",
@@ -212,7 +257,7 @@
    "title": "עמוד המחירים של Read AI",
    "official": true,
    "published": null,
-   "checked": "2026-11-18",
+   "checked": "2026-11-19",
    "stale": false
   },
   {
@@ -273,10 +318,10 @@
   "starting_price": {
    "amount": 15,
    "currency": "USD",
-   "billing": null,
+   "billing": "שנתי",
    "plan": "Pro",
-   "verified": false,
-   "label": "מ־15 דולר לחודש",
+   "verified": true,
+   "label": "מ־15 דולר לחודש בחיוב שנתי",
    "has_free_plan": true
   },
   "platforms": {

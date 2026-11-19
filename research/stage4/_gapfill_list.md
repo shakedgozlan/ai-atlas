@@ -1,0 +1,41 @@
+- data/staging/3d/spline.json | Spline | https://spline.design | אומת חלקית
+- data/staging/agents-automation/activepieces.json | Activepieces | https://www.activepieces.com | אומת חלקית
+- data/staging/agents-automation/genspark.json | Genspark | https://www.genspark.ai | אומת חלקית
+- data/staging/agents-automation/gumloop.json | Gumloop | https://www.gumloop.com | אומת חלקית
+- data/staging/agents-automation/microsoft-copilot-studio.json | Microsoft Copilot Studio | https://www.microsoft.com/en-us/copilot/products/copilot-studio | אומת חלקית
+- data/staging/assistants/mistral-vibe.json | Mistral Vibe | https://mistral.ai/products/vibe/ | אומת חלקית
+- data/staging/audio/adobe-podcast.json | Adobe Podcast | https://podcast.adobe.com | אומת חלקית
+- data/staging/audio/google-flow-music.json | Google Flow Music | https://www.flowmusic.app | אומת חלקית
+- data/staging/audio/lalal-ai.json | LALAL.AI | https://www.lalal.ai | אומת חלקית
+- data/staging/audio/moises.json | Moises | https://moises.ai | לא אומת
+- data/staging/audio/murf.json | Murf | https://murf.ai | לא אומת
+- data/staging/audio/speechify.json | Speechify | https://speechify.com | אומת חלקית
+- data/staging/audio/stable-audio.json | Stable Audio | https://stableaudio.com | אומת חלקית
+- data/staging/graphic-design/adobe-illustrator.json | Adobe Illustrator | https://www.adobe.com/products/illustrator.html | אומת חלקית
+- data/staging/graphic-design/canva.json | Canva | https://www.canva.com | לא אומת
+- data/staging/graphic-design/kittl.json | Kittl | https://www.kittl.com | אומת חלקית
+- data/staging/graphic-design/looka.json | Looka | https://looka.com | אומת חלקית
+- data/staging/graphic-design/lovart.json | Lovart | https://www.lovart.ai | לא אומת
+- data/staging/images/adobe-firefly.json | Adobe Firefly | https://www.adobe.com/products/firefly.html | אומת חלקית
+- data/staging/meetings-knowledge/fireflies.json | Fireflies.ai | https://fireflies.ai | אומת חלקית
+- data/staging/meetings-knowledge/granola.json | Granola | https://www.granola.ai | אומת חלקית
+- data/staging/meetings-knowledge/julius.json | Julius AI | https://julius.ai | אומת חלקית
+- data/staging/meetings-knowledge/read-ai.json | Read AI | https://www.read.ai | אומת חלקית
+- data/staging/meetings-knowledge/tldv.json | tl;dv | https://tldv.io | אומת חלקית
+- data/staging/meetings-knowledge/wispr-flow.json | Wispr Flow | https://wisprflow.ai | אומת חלקית
+- data/staging/no-code-apps/base44.json | Base44 | https://base44.com | אומת חלקית
+- data/staging/no-code-apps/bolt.json | Bolt | https://bolt.new | אומת חלקית
+- data/staging/no-code-apps/emergent.json | Emergent | https://emergent.sh | אומת חלקית
+- data/staging/ui-web/google-stitch.json | Stitch | https://stitch.google.com | לא אומת
+- data/staging/ui-web/relume.json | Relume | https://www.relume.ai | אומת חלקית
+- data/staging/ui-web/ux-pilot.json | UX Pilot | https://uxpilot.ai | אומת חלקית
+- data/staging/video-editing/captions.json | Captions | https://captions.ai | אומת חלקית
+- data/staging/video-editing/d-id.json | D-ID | https://www.d-id.com | אומת חלקית
+- data/staging/video-editing/heygen.json | HeyGen | https://www.heygen.com | אומת חלקית
+- data/staging/video-editing/opusclip.json | OpusClip | https://www.opus.pro | אומת חלקית
+- data/staging/video-editing/synthesia.json | Synthesia | https://www.synthesia.io | אומת חלקית
+- data/staging/writing/beautiful-ai.json | Beautiful.ai | https://www.beautiful.ai | אומת חלקית
+- data/staging/writing/gamma.json | Gamma | https://gamma.app | אומת חלקית
+- data/staging/writing/napkin-ai.json | Napkin AI | https://www.napkin.ai | אומת חלקית
+- data/staging/writing/quillbot.json | QuillBot | https://quillbot.com | אומת חלקית
+- data/staging/writing/wordtune.json | Wordtune | https://www.wordtune.com | אומת חלקית
