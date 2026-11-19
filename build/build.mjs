@@ -676,3 +676,7 @@ ${sections}
 
 writeFileSync(outPath, html);
 console.log(`${outPath}: ${total} tools, ${liveCats.length} categories, verified ${vFull}, partial ${vPart}, unverified ${vNone}`);
+
+// קבצים למכונות (atlas.json, llms.txt, llms-full.txt) נבנים מאותו קובץ נתונים, באותה הרצה
+process.env.ATLAS_AI_OUT ??= dirname(outPath);
+await import('./build-ai.mjs');
