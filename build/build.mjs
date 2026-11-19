@@ -17,6 +17,16 @@ const cssV = stamp('../assets/style.css');
 const jsV = stamp('../assets/app.js');
 // הצבעות ומשוב: פועלים רק כשכתובת השירות כתובה ב־build/community.config.json. כתובת ריקה מכבה אותם לגמרי.
 const communityApi = String(process.env.ATLAS_API ?? JSON.parse(readFileSync(new URL('./community.config.json', import.meta.url), 'utf8')).api ?? '').trim();
+// Google Analytics: נטען רק כשיש מזהה ב־build/analytics.config.json (או במשתנה ATLAS_GA_ID).
+// מזהה ריק משאיר את האתר בלי שום קוד מדידה.
+// מזהה שמתחיל ב־GTM- מקבל את התג בדיוק כפי ש־Google נותנת אותו, ומזהה שמתחיל ב־G- את התג הרגיל.
+const gaId = String(process.env.ATLAS_GA_ID ?? JSON.parse(readFileSync(new URL('./analytics.config.json', import.meta.url), 'utf8')).measurement_id ?? '').trim();
+if (gaId && !/^(G|GTM)-[A-Z0-9]{4,20}$/.test(gaId)) throw new Error('המזהה של Google Analytics לא תקין: ' + gaId);
+const gaHtml = !gaId ? '' : gaId.startsWith('GTM-') ? `
+<script async src="https://www.googletagmanager.com/gtm.js?id=${gaId}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date())</script>` : `
+<script async src="https://www.googletagmanager.com/gtag/js?id=${gaId}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${gaId}')</script>`;
 const comCssV = stamp('../assets/community.css');
 const comJsV = stamp('../assets/community.js');
 
@@ -564,7 +574,7 @@ const html = `<!doctype html>
 <script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;var v=localStorage.getItem('atlas-view');if(v==='index'||v==='gallery')document.documentElement.dataset.view=v}catch(e){}document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="assets/style.css?v=${cssV}">${communityApi ? `
 <meta name="atlas-api" content="${esc(communityApi)}">
-<link rel="stylesheet" href="assets/community.css?v=${comCssV}">` : ''}
+<link rel="stylesheet" href="assets/community.css?v=${comCssV}">` : ''}${gaHtml}
 </head>
 <body>
 <a class="skip" href="#main">דילוג לרשימת הכלים</a>
