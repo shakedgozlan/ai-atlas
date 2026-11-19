@@ -1,350 +1,341 @@
 {
- "id": null,
- "slug": "suno",
- "category_id": 8,
- "name": "Suno",
- "former_name": null,
- "rename_note": null,
- "role": "מחולל שירים שיוצר שיר שלם, עם שירה, מילים ולחן, מתיאור טקסטואלי.",
- "url": "https://suno.com",
- "logo": {
-  "file": null,
-  "file_dark": null,
-  "source_url": null,
-  "missing_reason": "ייאסף בשלב הלוגואים",
-  "note": null
- },
- "status": {
-  "state": "פעיל",
-  "note": "לפי פוסט ההשקה של v6, Suno תוציא משימוש את המודלים הקודמים ותעבור כולה לדור v6.",
-  "date_as_written": "September 9, 2026",
-  "source_ids": [
-   "s3"
-  ]
- },
- "strengths": [
-  {
-   "lead": "50 נקודות זיכוי ביום בחינם",
-   "detail": "התוכנית החינמית מעניקה 50 נקודות זיכוי ביום ומשתמשת במודל v6-mini.",
-   "source_ids": [
-    "s1"
-   ],
-   "inference": false
-  },
-  {
-   "lead": "בעלות ושימוש מסחרי בתוכניות בתשלום",
-   "detail": "לפי מרכז העזרה, שיר שנוצר בזמן מנוי Pro או Premier שייך למשתמש, וזכויות השימוש המסחרי נשמרות גם אחרי סיום המנוי.",
-   "source_ids": [
-    "s2"
-   ],
-   "inference": false
-  },
-  {
-   "lead": "משפחת מודלים v6 בשיתוף חברות תקליטים",
-   "detail": "v6 ו־v6-wild יצאו ב־9 בספטמבר 2026 למנויי Pro ו־Premier, ופותחו לפי Suno עם Warner Music Group, BMG ו־Believe. נוספו עריכת קטעים בשפה חופשית, מאשאפים ודגימות.",
-   "source_ids": [
-    "s3"
-   ],
-   "inference": false
-  }
- ],
- "limitations": [
-  {
-   "lead": "בתוכנית החינמית אין הורדות ואין זכויות מסחריות",
-   "detail": "עמוד המחירים מציין \"No monthly song downloads\" ו־\"No commercial rights\" ב־Free. לפי מרכז העזרה Suno שומרת לעצמה את הבעלות על שירים שנוצרו בחינם.",
-   "source_ids": [
-    "s1",
-    "s2"
-   ],
-   "inference": false
-  },
-  {
-   "lead": "מכסת הורדות חודשית גם בתוכניות בתשלום",
-   "detail": "Pro מאפשרת 20 הורדות שירים בחודש, Premier מאפשרת 60 ו־Platinum מאפשרת 120. נקודות שלא נוצלו אינן נצברות.",
-   "source_ids": [
-    "s1"
-   ],
-   "inference": false
-  },
-  {
-   "lead": "המודלים המתקדמים רק למנויים",
-   "detail": "v6 ו־v6-wild זמינים רק בתוכניות בתשלום. התוכנית החינמית מקבלת את v6-mini.",
-   "source_ids": [
-    "s1",
-    "s3"
-   ],
-   "inference": false
-  },
-  {
-   "lead": "התוכן משמש לאימון המודלים",
-   "detail": "לפי מדיניות הפרטיות, Suno עשויה לאמן את המודלים שלה על תוכן שמשתמשים מעלים ויוצרים, ולא מתוארת אפשרות ביטול.",
-   "source_ids": [
-    "s4"
-   ],
-   "inference": false
-  }
- ],
- "audience": "יוצרים, סטודנטים ומוזיקאים חובבים שרוצים ליצור שירים או מוזיקת רקע בלי ידע בהפקה.",
- "pricing": {
-  "verification": "אומת חלקית",
-  "summary_line": "Pro ב־96 דולר לשנה (8 דולר לחודש בחיוב שנתי). יש תוכנית חינמית עם 50 נקודות זיכוי ביום, בלי הורדות ובלי זכויות מסחריות.",
-  "model": "מנוי עם נקודות זיכוי",
-  "plans": [
-   {
-    "name": "Free",
-    "price": 0,
-    "price_text": null,
-    "price_short": null,
-    "currency": "USD",
-    "per": null,
-    "billing": "חודשי",
-    "price_period": "לחודש",
-    "includes": "50 נקודות זיכוי ביום, מודל v6-mini",
-    "notes": "\"Free forever\". אין הורדות שירים חודשיות ואין זכויות מסחריות. Suno שומרת את הבעלות על השירים.",
-    "source_ids": [
-     "s1",
-     "s2"
-    ]
-   },
-   {
-    "name": "Pro",
-    "price": 10,
-    "price_text": null,
-    "price_short": null,
-    "currency": "USD",
-    "per": null,
-    "billing": "חודשי",
-    "price_period": "לחודש",
-    "includes": "2,500 נקודות זיכוי בחודש, 20 הורדות שירים בחודש, מודלים v6 ו־v6-wild, זכויות מסחריות",
-    "notes": "העמוד מציג את 10 דולר לצד 8 דולר בלי לומר במפורש ש־10 הוא המחיר בחיוב חודשי.",
-    "source_ids": [
-     "s1"
-    ]
-   },
-   {
-    "name": "Pro",
-    "price": 96,
-    "price_text": null,
-    "price_short": null,
-    "currency": "USD",
-    "per": null,
-    "billing": "שנתי",
-    "price_period": "לשנה",
-    "includes": "2,500 נקודות זיכוי בחודש, 20 הורדות שירים בחודש, מודלים v6 ו־v6-wild, זכויות מסחריות",
-    "notes": "\"Billed $96/year\", כלומר 8 דולר לחודש.",
-    "source_ids": [
-     "s1"
-    ]
-   },
-   {
-    "name": "Premier",
-    "price": 30,
-    "price_text": null,
-    "price_short": null,
-    "currency": "USD",
-    "per": null,
-    "billing": "חודשי",
-    "price_period": "לחודש",
-    "includes": "10,000 נקודות זיכוי בחודש, 60 הורדות שירים בחודש, מודלים v6 ו־v6-wild, זכויות מסחריות",
-    "notes": "העמוד מציג את 30 דולר לצד 24 דולר בלי לומר במפורש ש־30 הוא המחיר בחיוב חודשי.",
-    "source_ids": [
-     "s1"
-    ]
-   },
-   {
-    "name": "Premier",
-    "price": 288,
-    "price_text": null,
-    "price_short": null,
-    "currency": "USD",
-    "per": null,
-    "billing": "שנתי",
-    "price_period": "לשנה",
-    "includes": "10,000 נקודות זיכוי בחודש, 60 הורדות שירים בחודש, מודלים v6 ו־v6-wild, זכויות מסחריות",
-    "notes": "\"Billed $288/year\", כלומר 24 דולר לחודש.",
-    "source_ids": [
-     "s1"
-    ]
-   },
-   {
-    "name": "Platinum",
-    "price": 120,
-    "price_text": null,
-    "price_short": null,
-    "currency": "USD",
-    "per": null,
-    "billing": "חודשי",
-    "price_period": "לחודש",
-    "includes": "15,000 נקודות זיכוי בחודש ועוד 20,000 נקודות ויזואליות, 120 הורדות שירים בחודש, זכויות מסחריות",
-    "notes": "העמוד מציג את 120 דולר לצד 100 דולר בלי לומר במפורש ש־120 הוא המחיר בחיוב חודשי.",
-    "source_ids": [
-     "s1"
-    ]
-   },
-   {
-    "name": "Platinum",
-    "price": 1200,
-    "price_text": null,
-    "price_short": null,
-    "currency": "USD",
-    "per": null,
-    "billing": "שנתי",
-    "price_period": "לשנה",
-    "includes": "15,000 נקודות זיכוי בחודש ועוד 20,000 נקודות ויזואליות, 120 הורדות שירים בחודש, זכויות מסחריות",
-    "notes": "\"Billed $1,200/year\", כלומר 100 דולר לחודש.",
-    "source_ids": [
-     "s1"
-    ]
-   }
-  ],
-  "free_tier": "תוכנית Free ללא הגבלת זמן: 50 נקודות זיכוי ביום ומודל v6-mini. אין הורדות שירים חודשיות ואין זכויות מסחריות, ו־Suno שומרת את הבעלות על השירים.",
-  "trial": null,
-  "unverified_notes": "בכל תוכנית בתשלום העמוד מציג שני סכומים (למשל 8 ו־10 דולר) בלי לומר במפורש איזה מהם הוא המחיר בחיוב חודשי; המחירים השנתיים (\"Billed $96/year\" וכו') ברורים. המטבע מוצג כסימן $ בלבד. מרכז העזרה מזכיר בעלות ב־Pro וב־Premier ואינו מזכיר את Platinum."
- },
- "privacy": {
-  "text": "לפי מדיניות הפרטיות (שונתה לאחרונה ב־23 ביוני 2026), Suno עשויה להשתמש בתוכן שמשתמשים מעלים ויוצרים, בפעילות שלהם ובשיחות כדי \"to train and enhance the models that power our Services\". גם הקלטות קול לתכונת Voices משמשות לאימון. המדיניות אינה מתארת אפשרות לבטל את האימון ואינה מבחינה בין התוכנית החינמית לתוכניות בתשלום.",
-  "training_on_user_data": "כן לפי מדיניות הפרטיות, בכל התוכניות. לא מתוארת אפשרות ביטול.",
-  "source_ids": [
-   "s4"
-  ]
- },
- "commercial_rights": {
-  "text": "לפי מרכז העזרה (נערך ב־7 בינואר 2026), שיר שנוצר בזמן מנוי Pro או Premier שייך למשתמש, וזכויות השימוש המסחרי נשמרות גם אחרי סיום המנוי. על שירים מהתוכנית החינמית Suno שומרת את הבעלות, והשימוש בהם מותר למטרות לא מסחריות בלבד. הבעלות נקבעת לפי השאלה אם היה מנוי בזמן היצירה. זכויות מסחריות אינן מבטיחות הגנה מפני תביעות זכויות יוצרים.",
-  "watermark": null,
-  "source_ids": [
-   "s1",
-   "s2"
-  ]
- },
- "developer_access": {
-  "api": "לא אומת",
-  "text": "לא נמצא תיעוד API רשמי בעמודים שנקראו.",
-  "source_ids": []
- },
- "integrations": {
-  "items": [],
-  "source_ids": []
- },
- "platforms": {
-  "items": [],
-  "source_ids": []
- },
- "hebrew": {
-  "text": "המקור לא מזכיר עברית: עמוד המחירים ופוסט ההשקה של v6 אינם מציינים שפות.",
-  "source_ids": [
-   "s1",
-   "s3"
-  ]
- },
- "company": {
+  "id": null,
+  "slug": "suno",
+  "category_id": 8,
   "name": "Suno",
-  "parent": null,
-  "country": null,
-  "note": "השם המשפטי לא אומת."
- },
- "student_benefits": {
-  "text": "לא נמצאה הטבה רשמית לסטודנטים. עמוד המחירים אינו מזכיר כזו.",
-  "source_ids": [
-   "s1"
-  ]
- },
- "sources": [
-  {
-   "id": "s1",
-   "url": "https://suno.com/pricing",
-   "title": "עמוד המחירים של Suno",
-   "official": true,
-   "published": null,
-   "checked": "2026-11-18",
-   "stale": false
+  "former_name": null,
+  "rename_note": null,
+  "role": "מחולל שירים שיוצר שיר שלם, עם שירה, מילים ולחן, מתיאור טקסטואלי.",
+  "url": "https://suno.com",
+  "logo": {
+    "file": null,
+    "file_dark": null,
+    "source_url": null,
+    "missing_reason": "ייאסף בשלב הלוגואים",
+    "note": null
   },
-  {
-   "id": "s2",
-   "url": "https://help.suno.com/en/articles/2416769",
-   "title": "מרכז העזרה של Suno: האם Suno הבעלים של המוזיקה שאני יוצר (נערך ב־7 בינואר 2026)",
-   "official": true,
-   "published": "2026-01-07",
-   "checked": "2026-11-18",
-   "stale": false
+  "status": {
+    "state": "פעיל",
+    "note": "לפי פוסט ההשקה של v6, Suno תוציא משימוש את המודלים הקודמים ותעבור כולה לדור v6.",
+    "date_as_written": "September 9, 2026",
+    "source_ids": [
+      "s3"
+    ]
   },
-  {
-   "id": "s3",
-   "url": "https://suno.com/blog/introducing-v6",
-   "title": "הבלוג של Suno: Introducing v6",
-   "official": true,
-   "published": "2026-09-09",
-   "checked": "2026-11-18",
-   "stale": false
+  "strengths": [
+    {
+      "lead": "50 נקודות זיכוי ביום בחינם",
+      "detail": "התוכנית החינמית מעניקה 50 נקודות זיכוי ביום ומשתמשת במודל v6-mini.",
+      "source_ids": [
+        "s1"
+      ],
+      "inference": false
+    },
+    {
+      "lead": "בעלות ושימוש מסחרי בתוכניות בתשלום",
+      "detail": "לפי מרכז העזרה, שיר שנוצר בזמן מנוי Pro או Premier שייך למשתמש, וזכויות השימוש המסחרי נשמרות גם אחרי סיום המנוי.",
+      "source_ids": [
+        "s2"
+      ],
+      "inference": false
+    },
+    {
+      "lead": "משפחת מודלים v6 בשיתוף חברות תקליטים",
+      "detail": "v6 ו־v6-wild יצאו ב־9 בספטמבר 2026 למנויי Pro ו־Premier, ופותחו לפי Suno עם Warner Music Group, BMG ו־Believe. נוספו עריכת קטעים בשפה חופשית, מאשאפים ודגימות.",
+      "source_ids": [
+        "s3"
+      ],
+      "inference": false
+    }
+  ],
+  "limitations": [
+    {
+      "lead": "בתוכנית החינמית אין הורדות ואין זכויות מסחריות",
+      "detail": "עמוד המחירים מציין \"No monthly song downloads\" ו־\"No commercial rights\" ב־Free. לפי מרכז העזרה Suno שומרת לעצמה את הבעלות על שירים שנוצרו בחינם.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ],
+      "inference": false
+    },
+    {
+      "lead": "מכסת הורדות חודשית גם בתוכניות בתשלום",
+      "detail": "Pro מאפשרת 20 הורדות שירים בחודש, Premier מאפשרת 60 ו־Platinum מאפשרת 120. נקודות שלא נוצלו אינן נצברות.",
+      "source_ids": [
+        "s1"
+      ],
+      "inference": false
+    },
+    {
+      "lead": "התוכן משמש לאימון המודלים",
+      "detail": "לפי מדיניות הפרטיות, Suno עשויה לאמן את המודלים שלה על תוכן שמשתמשים מעלים ויוצרים, ולא מתוארת אפשרות ביטול.",
+      "source_ids": [
+        "s4"
+      ],
+      "inference": false
+    }
+  ],
+  "audience": "יוצרים, סטודנטים ומוזיקאים חובבים שרוצים ליצור שירים או מוזיקת רקע בלי ידע בהפקה.",
+  "pricing": {
+    "verification": "אומת חלקית",
+    "summary_line": "Pro ב־96 דולר לשנה (8 דולר לחודש בחיוב שנתי). יש תוכנית חינמית עם 50 נקודות זיכוי ביום, בלי הורדות ובלי זכויות מסחריות.",
+    "model": "מנוי עם נקודות זיכוי",
+    "plans": [
+      {
+        "name": "Free",
+        "price": 0,
+        "price_text": null,
+        "price_short": null,
+        "currency": "USD",
+        "per": null,
+        "billing": "חודשי",
+        "price_period": "לחודש",
+        "includes": "50 נקודות זיכוי ביום, מודל v6-mini",
+        "notes": "\"Free forever\". אין הורדות שירים חודשיות ואין זכויות מסחריות. Suno שומרת את הבעלות על השירים.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": 10,
+        "price_text": null,
+        "price_short": null,
+        "currency": "USD",
+        "per": null,
+        "billing": "חודשי",
+        "price_period": "לחודש",
+        "includes": "2,500 נקודות זיכוי בחודש, 20 הורדות שירים בחודש, מודלים v6 ו־v6-wild, זכויות מסחריות",
+        "notes": "העמוד מציג את 10 דולר לצד 8 דולר בלי לומר במפורש ש־10 הוא המחיר בחיוב חודשי.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": 96,
+        "price_text": null,
+        "price_short": null,
+        "currency": "USD",
+        "per": null,
+        "billing": "שנתי",
+        "price_period": "לשנה",
+        "includes": "2,500 נקודות זיכוי בחודש, 20 הורדות שירים בחודש, מודלים v6 ו־v6-wild, זכויות מסחריות",
+        "notes": "\"Billed $96/year\", כלומר 8 דולר לחודש.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "name": "Premier",
+        "price": 30,
+        "price_text": null,
+        "price_short": null,
+        "currency": "USD",
+        "per": null,
+        "billing": "חודשי",
+        "price_period": "לחודש",
+        "includes": "10,000 נקודות זיכוי בחודש, 60 הורדות שירים בחודש, מודלים v6 ו־v6-wild, זכויות מסחריות",
+        "notes": "העמוד מציג את 30 דולר לצד 24 דולר בלי לומר במפורש ש־30 הוא המחיר בחיוב חודשי.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "name": "Premier",
+        "price": 288,
+        "price_text": null,
+        "price_short": null,
+        "currency": "USD",
+        "per": null,
+        "billing": "שנתי",
+        "price_period": "לשנה",
+        "includes": "10,000 נקודות זיכוי בחודש, 60 הורדות שירים בחודש, מודלים v6 ו־v6-wild, זכויות מסחריות",
+        "notes": "\"Billed $288/year\", כלומר 24 דולר לחודש.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "name": "Platinum",
+        "price": 120,
+        "price_text": null,
+        "price_short": null,
+        "currency": "USD",
+        "per": null,
+        "billing": "חודשי",
+        "price_period": "לחודש",
+        "includes": "15,000 נקודות זיכוי בחודש ועוד 20,000 נקודות ויזואליות, 120 הורדות שירים בחודש, זכויות מסחריות",
+        "notes": "העמוד מציג את 120 דולר לצד 100 דולר בלי לומר במפורש ש־120 הוא המחיר בחיוב חודשי.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "name": "Platinum",
+        "price": 1200,
+        "price_text": null,
+        "price_short": null,
+        "currency": "USD",
+        "per": null,
+        "billing": "שנתי",
+        "price_period": "לשנה",
+        "includes": "15,000 נקודות זיכוי בחודש ועוד 20,000 נקודות ויזואליות, 120 הורדות שירים בחודש, זכויות מסחריות",
+        "notes": "\"Billed $1,200/year\", כלומר 100 דולר לחודש.",
+        "source_ids": [
+          "s1"
+        ]
+      }
+    ],
+    "free_tier": "תוכנית Free ללא הגבלת זמן: 50 נקודות זיכוי ביום ומודל v6-mini. אין הורדות שירים חודשיות ואין זכויות מסחריות, ו־Suno שומרת את הבעלות על השירים.",
+    "trial": null,
+    "unverified_notes": "בכל תוכנית בתשלום העמוד מציג שני סכומים (למשל 8 ו־10 דולר) בלי לומר במפורש איזה מהם הוא המחיר בחיוב חודשי; המחירים השנתיים (\"Billed $96/year\" וכו') ברורים. המטבע מוצג כסימן $ בלבד. מרכז העזרה מזכיר בעלות ב־Pro וב־Premier ואינו מזכיר את Platinum."
   },
-  {
-   "id": "s4",
-   "url": "https://suno.com/privacy",
-   "title": "מדיניות הפרטיות של Suno (שונתה לאחרונה ב־23 ביוני 2026)",
-   "official": true,
-   "published": "2026-06-23",
-   "checked": "2026-11-18",
-   "stale": false
+  "privacy": {
+    "text": "לפי מדיניות הפרטיות (שונתה לאחרונה ב־23 ביוני 2026), Suno עשויה להשתמש בתוכן שמשתמשים מעלים ויוצרים, בפעילות שלהם ובשיחות כדי \"to train and enhance the models that power our Services\". גם הקלטות קול לתכונת Voices משמשות לאימון. המדיניות אינה מתארת אפשרות לבטל את האימון ואינה מבחינה בין התוכנית החינמית לתוכניות בתשלום.",
+    "training_on_user_data": "כן לפי מדיניות הפרטיות, בכל התוכניות. לא מתוארת אפשרות ביטול.",
+    "source_ids": [
+      "s4"
+    ]
   },
-  {
-   "id": "s5",
-   "url": "https://a16z.com/100-gen-ai-apps-7/",
-   "title": "a16z: Top 100 Gen AI Consumer Apps, המהדורה השביעית (5 באוקטובר 2026)",
-   "official": false,
-   "published": "2026-10-05",
-   "checked": "2026-11-18",
-   "stale": false
-  }
- ],
- "checked_date": "2026-11-18",
- "filters": {
-  "new_notable": {
-   "value": true,
-   "basis": "כלי ותיק שקיבל גרסה משמעותית, v6, בספטמבר 2026, ומופיע ב־5 מתוך 6 סקירות עצמאיות.",
-   "launch_date": null,
-   "launched_in_window": false,
-   "latest_version": "v6",
-   "latest_version_date": "September 9, 2026",
-   "latest_version_date_iso": "2026-09-09",
-   "independent_reviews": 5,
-   "evidence": "research/stage4/audio.md"
+  "commercial_rights": {
+    "text": "לפי מרכז העזרה (נערך ב־7 בינואר 2026), שיר שנוצר בזמן מנוי Pro או Premier שייך למשתמש, וזכויות השימוש המסחרי נשמרות גם אחרי סיום המנוי. על שירים מהתוכנית החינמית Suno שומרת את הבעלות, והשימוש בהם מותר למטרות לא מסחריות בלבד. הבעלות נקבעת לפי השאלה אם היה מנוי בזמן היצירה. זכויות מסחריות אינן מבטיחות הגנה מפני תביעות זכויות יוצרים.",
+    "watermark": null,
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
   },
-  "hebrew": {
-   "value": "המקור לא מזכיר עברית",
-   "label": "עברית לא מוזכרת",
-   "supported": null
+  "developer_access": {
+    "api": "לא אומת",
+    "text": "לא נמצא תיעוד API רשמי בעמודים שנקראו.",
+    "source_ids": []
   },
-  "starting_price": {
-   "amount": 8,
-   "currency": "USD",
-   "billing": "שנתי",
-   "plan": "Pro",
-   "verified": false,
-   "label": "מ־8 דולר לחודש",
-   "has_free_plan": true
+  "integrations": {
+    "items": [],
+    "source_ids": []
   },
   "platforms": {
-   "verified": [
-    "אתר"
-   ],
-   "unverified": []
+    "items": [],
+    "source_ids": []
   },
-  "tags": {
-   "review_roundups": {
-    "count": 5,
-    "of": 6,
-    "value": true,
-    "evidence": "research/stage4/audio.md"
-   },
-   "popular": {
-    "value": true,
-    "basis": "מקום 19 בתנועה לאתר במהדורה השביעית של Top 100 Gen AI Consumer Apps של a16z (5 באוקטובר 2026, לפי Similarweb).",
-    "evidence": "research/stage4/audio.md"
-   },
-   "free_renewing": {
-    "value": true,
-    "basis": "50 נקודות זיכוי ביום בתוכנית Free.",
-    "evidence": "research/stage4/audio.md"
-   }
+  "hebrew": {
+    "text": "המקור לא מזכיר עברית: עמוד המחירים ופוסט ההשקה של v6 אינם מציינים שפות.",
+    "source_ids": [
+      "s1",
+      "s3"
+    ]
+  },
+  "company": {
+    "name": "Suno",
+    "parent": null,
+    "country": null,
+    "note": "השם המשפטי לא אומת."
+  },
+  "student_benefits": {
+    "text": "לא נמצאה הטבה רשמית לסטודנטים. עמוד המחירים אינו מזכיר כזו.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://suno.com/pricing",
+      "title": "עמוד המחירים של Suno",
+      "official": true,
+      "published": null,
+      "checked": "2026-11-18",
+      "stale": false
+    },
+    {
+      "id": "s2",
+      "url": "https://help.suno.com/en/articles/2416769",
+      "title": "מרכז העזרה של Suno: האם Suno הבעלים של המוזיקה שאני יוצר (נערך ב־7 בינואר 2026)",
+      "official": true,
+      "published": "2026-01-07",
+      "checked": "2026-11-18",
+      "stale": false
+    },
+    {
+      "id": "s3",
+      "url": "https://suno.com/blog/introducing-v6",
+      "title": "הבלוג של Suno: Introducing v6",
+      "official": true,
+      "published": "2026-09-09",
+      "checked": "2026-11-18",
+      "stale": false
+    },
+    {
+      "id": "s4",
+      "url": "https://suno.com/privacy",
+      "title": "מדיניות הפרטיות של Suno (שונתה לאחרונה ב־23 ביוני 2026)",
+      "official": true,
+      "published": "2026-06-23",
+      "checked": "2026-11-18",
+      "stale": false
+    },
+    {
+      "id": "s5",
+      "url": "https://a16z.com/100-gen-ai-apps-7/",
+      "title": "a16z: Top 100 Gen AI Consumer Apps, המהדורה השביעית (5 באוקטובר 2026)",
+      "official": false,
+      "published": "2026-10-05",
+      "checked": "2026-11-18",
+      "stale": false
+    }
+  ],
+  "checked_date": "2026-11-18",
+  "filters": {
+    "new_notable": {
+      "value": true,
+      "basis": "כלי ותיק שקיבל גרסה משמעותית, v6, בספטמבר 2026, ומופיע ב־5 מתוך 6 סקירות עצמאיות.",
+      "launch_date": null,
+      "launched_in_window": false,
+      "latest_version": "v6",
+      "latest_version_date": "September 9, 2026",
+      "latest_version_date_iso": "2026-09-09",
+      "independent_reviews": 5,
+      "evidence": "research/stage4/audio.md"
+    },
+    "hebrew": {
+      "value": "המקור לא מזכיר עברית",
+      "label": "עברית לא מוזכרת",
+      "supported": null
+    },
+    "starting_price": {
+      "amount": 8,
+      "currency": "USD",
+      "billing": "שנתי",
+      "plan": "Pro",
+      "verified": false,
+      "label": "מ־8 דולר לחודש",
+      "has_free_plan": true
+    },
+    "platforms": {
+      "verified": [
+        "אתר"
+      ],
+      "unverified": []
+    },
+    "tags": {
+      "review_roundups": {
+        "count": 5,
+        "of": 6,
+        "value": true,
+        "evidence": "research/stage4/audio.md"
+      },
+      "popular": {
+        "value": true,
+        "basis": "מקום 19 בתנועה לאתר במהדורה השביעית של Top 100 Gen AI Consumer Apps של a16z (5 באוקטובר 2026, לפי Similarweb).",
+        "evidence": "research/stage4/audio.md"
+      },
+      "free_renewing": {
+        "value": true,
+        "basis": "50 נקודות זיכוי ביום בתוכנית Free.",
+        "evidence": "research/stage4/audio.md"
+      }
+    }
   }
- }
 }

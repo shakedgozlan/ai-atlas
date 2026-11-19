@@ -1,0 +1,338 @@
+{
+  "chatgpt": {
+    "file": "logos/chatgpt.svg",
+    "file_dark": "logos/chatgpt-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "claude": {
+    "file": "logos/claude.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "gemini": {
+    "file": "logos/gemini.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "microsoft-copilot": {
+    "file": "logos/microsoft-copilot.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "perplexity": {
+    "file": "logos/perplexity.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "grok": {
+    "file": "logos/grok.svg",
+    "file_dark": "logos/grok-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "deepseek": {
+    "file": "logos/deepseek.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "meta-ai": {
+    "file": "logos/meta-ai.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "deepl": {
+    "file": "logos/deepl.svg",
+    "file_dark": "logos/deepl-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "grammarly": {
+    "file": "logos/grammarly.svg",
+    "file_dark": "logos/grammarly-dark.svg",
+    "source_url": "https://simpleicons.org",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים Simple Icons (חבילת simple-icons, גרסה 16.38.0, רישיון CC0) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "adobe-firefly": {
+    "file": "logos/adobe-firefly.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "flux": {
+    "file": "logos/flux.svg",
+    "file_dark": "logos/flux-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "ideogram": {
+    "file": "logos/ideogram.svg",
+    "file_dark": "logos/ideogram-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "krea": {
+    "file": "logos/krea.svg",
+    "file_dark": "logos/krea-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "midjourney": {
+    "file": "logos/midjourney.svg",
+    "file_dark": "logos/midjourney-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "stability-ai": {
+    "file": "logos/stability-ai.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "topaz-labs": {
+    "file": "logos/topaz-labs.svg",
+    "file_dark": "logos/topaz-labs-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "recraft": {
+    "file": "logos/recraft.svg",
+    "file_dark": "logos/recraft-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "figma": {
+    "file": "logos/figma.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "framer": {
+    "file": "logos/framer.svg",
+    "file_dark": "logos/framer-dark.svg",
+    "source_url": "https://simpleicons.org",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים Simple Icons (חבילת simple-icons, גרסה 16.38.0, רישיון CC0) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "webflow": {
+    "file": "logos/webflow.svg",
+    "file_dark": "logos/webflow-dark.svg",
+    "source_url": "https://simpleicons.org",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים Simple Icons (חבילת simple-icons, גרסה 16.38.0, רישיון CC0) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "wix": {
+    "file": "logos/wix.svg",
+    "file_dark": "logos/wix-dark.svg",
+    "source_url": "https://simpleicons.org",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים Simple Icons (חבילת simple-icons, גרסה 16.38.0, רישיון CC0) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "v0": {
+    "file": "logos/v0.svg",
+    "file_dark": "logos/v0-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "capcut": {
+    "file": "logos/capcut.svg",
+    "file_dark": "logos/capcut-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "veed": {
+    "file": "logos/veed.svg",
+    "file_dark": "logos/veed-dark.svg",
+    "source_url": "https://simpleicons.org",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים Simple Icons (חבילת simple-icons, גרסה 16.38.0, רישיון CC0) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "elevenlabs": {
+    "file": "logos/elevenlabs.svg",
+    "file_dark": "logos/elevenlabs-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "suno": {
+    "file": "logos/suno.svg",
+    "file_dark": "logos/suno-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "hunyuan-3d": {
+    "file": "logos/hunyuan-3d.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "meshy": {
+    "file": "logos/meshy.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "tripo": {
+    "file": "logos/tripo.svg",
+    "file_dark": "logos/tripo-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "claude-code": {
+    "file": "logos/claude-code.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "cline": {
+    "file": "logos/cline.svg",
+    "file_dark": "logos/cline-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "codex": {
+    "file": "logos/codex.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "cursor": {
+    "file": "logos/cursor.svg",
+    "file_dark": "logos/cursor-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "devin": {
+    "file": "logos/devin.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "github-copilot": {
+    "file": "logos/github-copilot.svg",
+    "file_dark": "logos/github-copilot-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "google-antigravity": {
+    "file": "logos/google-antigravity.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "kiro": {
+    "file": "logos/kiro.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "zed": {
+    "file": "logos/zed.svg",
+    "file_dark": "logos/zed-dark.svg",
+    "source_url": "https://simpleicons.org",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים Simple Icons (חבילת simple-icons, גרסה 16.38.0, רישיון CC0) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "google-ai-studio": {
+    "file": "logos/google-ai-studio.svg",
+    "file_dark": "logos/google-ai-studio-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "lovable": {
+    "file": "logos/lovable.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "replit": {
+    "file": "logos/replit.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "make": {
+    "file": "logos/make.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "manus": {
+    "file": "logos/manus.svg",
+    "file_dark": "logos/manus-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "n8n": {
+    "file": "logos/n8n.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "zapier": {
+    "file": "logos/zapier.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני שמתאים גם לרקע בהיר וגם לרקע כהה."
+  },
+  "notion": {
+    "file": "logos/notion.svg",
+    "file_dark": "logos/notion-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  },
+  "notebooklm": {
+    "file": "logos/notebooklm.svg",
+    "file_dark": "logos/notebooklm-dark.svg",
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. לוגו בצבע אחד: גרסה כהה לרקע בהיר וגרסה לבנה לרקע כהה."
+  }
+}
