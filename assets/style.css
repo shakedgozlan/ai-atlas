@@ -272,7 +272,10 @@ html:not(.js) .filters{display:none}
 .legend-btn::-webkit-details-marker{display:none}
 .legend-btn::after{content:"";width:8px;height:8px;margin-inline-start:4px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .12s ease}
 .legend[open] .legend-btn::after{transform:translateY(2px) rotate(-135deg)}
-.legend-list{display:grid;margin:16px 0 0;padding:0;list-style:none;max-width:560px;border-top:1px solid var(--line)}
+/* שתי עמודות זו לצד זו במסך רחב: התגים מימין, דרגות ״שימו לב״ משמאל, כדי שהמקרא לא יתארך למטה */
+.legend-cols{display:grid;grid-template-columns:minmax(0,1fr);gap:24px clamp(32px,5vw,72px);margin-top:16px}
+@media (min-width:900px){.legend-cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.legend-list{display:grid;margin:10px 0 0;padding:0;list-style:none;max-width:560px;border-top:1px solid var(--line)}
 .legend-list li{display:grid;grid-template-columns:128px minmax(0,1fr);align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
 .legend-list .verify{justify-self:start}
 .legend-text{font-size:var(--t-body);line-height:1.5;color:var(--ink-soft)}
@@ -292,7 +295,7 @@ html:not(.js) .filters{display:none}
 .watch-bars i{width:3px;border-radius:1px;background:color-mix(in oklab,var(--new) 26%,transparent)}
 .watch-bars i:nth-child(1){height:5px}.watch-bars i:nth-child(2){height:8px}.watch-bars i:nth-child(3){height:11px}
 .watch-bars i.on{background:var(--new)}
-.legend-h{margin:24px 0 0;font-size:var(--t-label);font-weight:700;color:var(--ink)}
+.legend-h{margin:0;font-size:var(--t-label);font-weight:700;color:var(--ink)}
 .legend-h+.legend-list{margin-top:10px}
 .watch-sample{margin:0;padding:4px 10px;justify-self:start}
 .watch-k{font-weight:700;color:var(--new);white-space:nowrap}
