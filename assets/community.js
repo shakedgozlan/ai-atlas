@@ -262,6 +262,8 @@
   $('#fb-cancel').addEventListener('click', closeFb);
   $('#fb-done-close').addEventListener('click', function () { closeFb(); text.value = ''; });
   dlg.addEventListener('click', function (e) { if (e.target === dlg) closeFb(); });
+  // בפלאפון: גרירה למטה מהרצועה העליונה של החלון סוגרת אותו, כמו בחלון הפרטים
+  if (window.atlasDragToClose) window.atlasDragToClose(dlg, dlg, function (e) { return dlg.scrollTop === 0 && e.touches[0].clientY - dlg.getBoundingClientRect().top < 72; });
   kindBtns.forEach(function (b) { b.addEventListener('click', function () { state.kind = b.getAttribute('data-kind'); paintFb(); }); });
   unpinBtn.addEventListener('click', function () { state.tool = null; state.target = ''; state.image = ''; paintFb(); });
   noImg.addEventListener('click', function () { state.image = ''; fileIn.value = ''; paintFb(); });
