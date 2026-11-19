@@ -652,6 +652,7 @@ ${sections}
     <ol class="foot-cats" role="list">${footerCats}</ol>
     <p class="foot-note">המידע נכון ליום הבדיקה, ${dateLong(data.snapshot_date)}. מחירים ותנאים משתנים, ולכן כדאי לבדוק באתר הרשמי של כל כלי לפני החלטה. הלוגואים שייכים לחברות ומוצגים לצורך זיהוי בלבד.</p>
     <p class="foot-src"><a href="sources.html">מאיפה המידע מגיע</a></p>
+    <p class="foot-privacy">האתר משתמש ב־Google Analytics כדי לדעת כמה אנשים מבקרים בו ובאילו עמודים. לשם כך Google שומרת קובצי עוגיות (קבצים קטנים) בדפדפן שלך. אפשר לחסום אותם בהגדרות הדפדפן או בתוסף חסימה, והאתר ימשיך לעבוד כרגיל.</p>
     <p class="foot-date">תאריך הבדיקה האחרונה: <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
   </div>
 </footer>

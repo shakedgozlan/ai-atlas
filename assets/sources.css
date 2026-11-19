@@ -68,6 +68,8 @@
 .tag-third{color:var(--new);border-color:currentColor}
 
 .src-note{margin-block:clamp(28px,5vw,48px) clamp(40px,7vw,80px);max-width:70ch;color:var(--ink-soft)}
+.src-note:has(+ .src-privacy){margin-bottom:12px}
+.src-privacy{max-width:70ch;margin-bottom:clamp(40px,7vw,80px);font-size:.8125rem;color:var(--ink-faint)}
 
 @media (max-width:599px){
   .tool-src>summary{grid-template-columns:2.2em minmax(0,1fr) auto}

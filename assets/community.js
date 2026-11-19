@@ -84,9 +84,7 @@
   // הצבעה אחת, משני מקומות: הכרטיס בדף הראשי וחלון הפרטים. שניהם מתעדכנים יחד.
   var busy = {};
   function paintCardVote(id) {
-    var card = doc.getElementById('tool-' + id);
-    if (!card) return;
-    $$('.card-vote [data-vote-set]', card).forEach(function (b) {
+    $$('.card-vote[data-vote="' + id + '"] [data-vote-set]').forEach(function (b) {
       b.setAttribute('aria-pressed', String(mine[id] === b.getAttribute('data-vote-set')));
       b.disabled = !!busy[id];
     });
@@ -151,14 +149,10 @@
   function thumbSvg(down) {
     return '<svg class="ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"' + (down ? ' style="transform:scaleY(-1)"' : '') + '>' + THUMB + '</svg>';
   }
-  // לחצני אגודל בכל כרטיס, מימין ללחצן ״לאתר הרשמי״ וברווח גדול ממנו פי שלושה מהרווח שביניהם (בקשת שקד, 19.11.2026)
-  $$('.card').forEach(function (card) {
-    var quick = $('.card-quick', card);
-    if (!quick) return;
-    var id = card.id.replace('tool-', '');
-    var nm = $('.name bdi', card);
-    var name = nm ? nm.textContent : '';
+  // אגודלי ההצבעה: אותם לחצנים בכרטיס ובראש חלון הפרטים
+  function makeThumbs(id, name) {
     var group = el('div', 'card-vote');
+    group.setAttribute('data-vote', id);
     group.setAttribute('role', 'group'); group.setAttribute('aria-label', 'הצבעה על ' + name);
     var live = el('span', 'sr-only'); live.setAttribute('role', 'status');
     [['up', 'ממליץ', false], ['down', 'לא ממליץ', true]].forEach(function (x) {
@@ -174,6 +168,16 @@
       group.appendChild(b);
     });
     group.appendChild(live);
+    return group;
+  }
+  // לחצני אגודל בכל כרטיס, מימין ללחצן ״לאתר הרשמי״ וברווח גדול ממנו פי שלושה מהרווח שביניהם (בקשת שקד, 19.11.2026)
+  $$('.card').forEach(function (card) {
+    var quick = $('.card-quick', card);
+    if (!quick) return;
+    var id = card.id.replace('tool-', '');
+    var nm = $('.name bdi', card);
+    var name = nm ? nm.textContent : '';
+    var group = makeThumbs(id, name);
     quick.insertBefore(group, quick.firstChild);
     paintCardVote(id);
   });
@@ -185,46 +189,18 @@
     var name = nameEl ? nameEl.textContent : '';
     var box = el('section', 'sec vote');
     box.setAttribute('data-vote', id);
-    var h = el('div', 'sec-h'); h.appendChild(el('h4', '', 'הכלי הזה שווה המלצה?'));
+    var h = el('div', 'sec-h'); h.appendChild(el('h4', '', 'מה חושבים הגולשים'));
     var count = el('p', 'vote-count'); count.hidden = true;
-    var btns = el('div', 'vote-btns'); btns.setAttribute('role', 'group'); btns.setAttribute('aria-label', 'הצבעה על ' + name);
-    var status = el('p', 'vote-status'); status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
-    [['up', 'כן, מומלץ'], ['down', 'לא מומלץ']].forEach(function (x) {
-      var b = el('button', 'btn vote-btn', x[1]);
-      b.type = 'button'; b.setAttribute('data-vote-set', x[0]); b.setAttribute('aria-pressed', 'false');
-      b.addEventListener('click', function () { status.textContent = ''; castVote(id, x[0], function (msg) { status.textContent = msg; }); });
-      btns.appendChild(b);
-    });
-    var note = el('p', 'vote-note', 'הצבעה אחת לכל כלי מכל מכשיר. לחיצה נוספת על אותה בחירה מבטלת אותה. כתובת הרשת לא נשמרת: נשמרת רק טביעה מעורבלת שלה, שאי אפשר לשחזר ממנה את הכתובת.');
+    // ההצבעה עצמה בראש החלון, באותם אגודלים כמו בכרטיס
+    var head = $('.sheet-head-in', sheet), site = head && $('.btn-site', head);
+    if (head && site) { var g = makeThumbs(id, name); g.classList.add('sheet-thumbs'); head.insertBefore(g, site); paintCardVote(id); }
+    var note = el('p', 'vote-note', 'ההצבעה נעשית באגודלים בראש החלון: אחת לכל כלי מכל מכשיר, ולחיצה נוספת על אותה בחירה מבטלת אותה. כתובת הרשת לא נשמרת: נשמרת רק טביעה מעורבלת שלה, שאי אפשר לשחזר ממנה את הכתובת.');
     var here = el('button', 'btn btn-quiet vote-fb', 'משהו כאן לא מדויק? אפשר לכתוב לנו');
     here.type = 'button';
     here.addEventListener('click', function () { openFeedback({ tool: Number(id), target: 'חלון הפרטים של ' + name, locked: true }); });
-    var row = el('div', 'vote-row');
-    row.appendChild(btns); row.appendChild(count);
-    box.appendChild(h); box.appendChild(row); box.appendChild(status); box.appendChild(note); box.appendChild(here);
+    box.appendChild(h); box.appendChild(count); box.appendChild(note); box.appendChild(here);
     $('.sheet-body', sheet).appendChild(box);
     paintVote(box);
-    // במחשב ההצבעה יושבת בראש החלון, ליד הלחצנים, כדי שהחלון ייכנס במסך בלי גלילה (בקשת שקד, 19.11.2026).
-    // בפלאפון נשאר החלק המלא בתחתית. שניהם מתעדכנים יחד, כי לשניהם data-vote.
-    var site = $('.sheet-head .btn-site', sheet);
-    if (site) {
-      var hb = el('div', 'vote vote-head');
-      hb.setAttribute('data-vote', id);
-      var hg = el('div', 'vote-btns'); hg.setAttribute('role', 'group'); hg.setAttribute('aria-label', 'הצבעה על ' + name);
-      hg.title = 'הצבעה אחת לכל כלי מכל מכשיר. לחיצה נוספת על אותה בחירה מבטלת אותה.';
-      [['up', 'כן, מומלץ', false], ['down', 'לא מומלץ', true]].forEach(function (x) {
-        var b = el('button', 'btn btn-ico vote-thumb');
-        b.type = 'button'; b.title = x[1];
-        b.setAttribute('data-vote-set', x[0]); b.setAttribute('aria-pressed', 'false');
-        b.innerHTML = thumbSvg(x[2]) + '<span class="sr-only">' + x[1] + '</span>';
-        b.addEventListener('click', function () { status.textContent = ''; castVote(id, x[0], function (msg) { status.textContent = msg; }); });
-        hg.appendChild(b);
-      });
-      var hc = el('p', 'vote-count'); hc.hidden = true;
-      hb.appendChild(hg); hb.appendChild(hc);
-      site.parentNode.insertBefore(hb, site);
-      paintVote(hb);
-    }
   }
   doc.addEventListener('click', function (e) {
     var b = e.target.closest && e.target.closest('[data-sheet-open]');
@@ -273,9 +249,9 @@
   dlg.innerHTML =
     '<form class="fb-form" id="fb-form" novalidate>' +
       '<div class="fb-top"><h2 id="fb-h" tabindex="-1">משוב על האתר</h2><button type="button" class="btn btn-icon fb-x" id="fb-close"><svg class="ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg><span class="sr-only">סגירה</span></button></div>' +
-      '<p class="fb-lede">מצאתם באג, חסרה תכונה או יש רעיון לשיפור? כותבים כאן. ההודעה אנונימית.</p>' +
+      '<p class="fb-lede">מצאתם באג, חסרה תכונה או יש רעיון לשיפור? כותבים כאן. אפשר לשלוח אנונימית. ואם אתם רוצים לשמוע כשזה טופל, אפשר להשאיר מייל.</p>' +
       '<div class="fb-kinds" role="group" aria-label="סוג ההודעה">' +
-        [['bug', 'באג'], ['feature', 'תכונה שחסרה'], ['idea', 'רעיון לשיפור'], ['other', 'משהו אחר']].map(function (k, i) { return '<button type="button" class="btn short" data-kind="' + k[0] + '" aria-pressed="' + (i === 0) + '">' + k[1] + '</button>'; }).join('') +
+        [['bug', 'באג'], ['feature', 'תכונה שחסרה'], ['idea', 'רעיון לשיפור'], ['report', 'דיווח על כלי'], ['other', 'משהו אחר']].map(function (k, i) { return '<button type="button" class="btn short" data-kind="' + k[0] + '" aria-pressed="' + (i === 0) + '">' + k[1] + '</button>'; }).join('') +
       '</div>' +
       '<label class="fb-l" for="fb-text">מה רציתם לספר?</label>' +
       '<textarea id="fb-text" name="text" rows="5" maxlength="2000" dir="auto" required></textarea>' +
@@ -284,9 +260,10 @@
         '<div class="fb-acts"><button type="button" class="btn" id="fb-pick">סימון חלק בעמוד</button><button type="button" class="btn btn-quiet" id="fb-unpin" hidden>הסרת הסימון</button></div></div>' +
       '<div class="fb-box"><p class="fb-l">תמונה (לא חובה)</p><img class="fb-img" id="fb-img" alt="התמונה שתצורף להודעה" hidden>' +
         '<div class="fb-acts"><label class="btn fb-file"><input type="file" id="fb-file" accept="image/*" class="sr-only"><span id="fb-file-t">צירוף תמונה</span></label><button type="button" class="btn btn-quiet" id="fb-noimg" hidden>הסרת התמונה</button></div></div>' +
+      '<div class="fb-box"><label class="fb-l" for="fb-contact">מייל לעדכון (לא חובה)</label><input type="email" id="fb-contact" name="contact" maxlength="120" dir="ltr" autocomplete="email" inputmode="email"><p class="fb-note">נשתמש בו רק כדי לכתוב לכם כשההודעה טופלה, והוא נמחק מיד אחר כך.</p></div>' +
       '<p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>' +
       '<div class="fb-send"><button type="submit" class="btn btn-primary" id="fb-submit">שליחה</button><button type="button" class="btn" id="fb-cancel">ביטול</button></div>' +
-      '<p class="fb-note">לא נשמרים שם, מייל או כתובת רשת. סוג הדפדפן וגודל המסך מצורפים להודעה, כדי שאפשר יהיה לשחזר תקלות.</p>' +
+      '<p class="fb-note">שם וכתובת רשת לא נשמרים. מייל נשמר רק אם השארתם אותו. סוג הדפדפן וגודל המסך מצורפים להודעה, כדי שאפשר יהיה לשחזר תקלות.</p>' +
     '</form>' +
     '<div class="fb-done" id="fb-done" hidden><h2 tabindex="-1" id="fb-done-h">תודה, ההודעה התקבלה</h2><p>כל הודעה נקראת. אין צורך לשלוח שוב.</p><button type="button" class="btn btn-primary" id="fb-done-close">סגירה</button></div>';
   doc.body.appendChild(dlg);
@@ -462,18 +439,22 @@
     e.preventDefault();
     var body = text.value.trim();
     if (body.length < 3) { say('צריך לכתוב כמה מילים לפני השליחה.', true); text.focus(); return; }
+    var contact = form.elements.contact.value.trim();
+    if (contact && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)) { say('כתובת המייל לא נראית תקינה. אפשר לתקן אותה או להשאיר את השדה ריק.', true); form.elements.contact.focus(); return; }
     var submit = $('#fb-submit');
     submit.disabled = true; say('שולח…');
     post('/feedback', {
-      kind: state.kind, text: body, tool: state.tool, target: state.target, image: state.image,
+      kind: state.kind, text: body, tool: state.tool, target: state.target, image: state.image, contact: contact,
       website: form.elements.website.value,
       context: { w: window.innerWidth, h: window.innerHeight, theme: root.dataset.theme || 'auto', view: root.dataset.view || 'cards', ua: String(navigator.userAgent).slice(0, 200) },
     }).then(function (d) {
       if (d.ok) {
-        form.hidden = true; done.hidden = false; text.value = ''; state.image = ''; say('');
+        form.hidden = true; done.hidden = false; text.value = ''; form.elements.contact.value = ''; state.image = ''; say('');
         $('#fb-done-h').focus();
       } else if (d.httpStatus === 429) {
         say('נשלחו כמה הודעות בזמן קצר. אפשר לשלוח שוב בעוד שעה.', true);
+      } else if (d.error === 'bad_contact') {
+        say('כתובת המייל לא התקבלה. אפשר לתקן אותה או להשאיר את השדה ריק.', true);
       } else if (d.error === 'bad_image') {
         say('התמונה לא התקבלה. אפשר להסיר אותה ולשלוח שוב.', true);
       } else {
