@@ -34,8 +34,6 @@
   --brand-tint:light-dark(#dbe6ff,#172247);
   --new:light-dark(#a8430a,#ffa860);
   --new-tint:light-dark(#fdeadb,#3a2412);
-  --mild:light-dark(#6b5200,#f2d15c);
-  --mild-tint:light-dark(#fbf3c9,#33290a);
   --hot:light-dark(#b3261e,#ff8a80);
   --hot-tint:light-dark(#fde7e4,#3a1614);
   --low:light-dark(#0b6a8a,#6fd0f0);
@@ -285,17 +283,22 @@ html:not(.js) .filters{display:none}
 .watch{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;margin:0;color:var(--ink);font-size:var(--t-label);line-height:1.5}
 /* קופסה בתוך הכרטיס, עם ריווח מהקצוות (בקשת שקד). רדיוס קטן מזה של הכרטיס, כדי שהפינות ייראו מתואמות */
 .watch{margin:0 0 10px;padding:10px 14px;border-radius:8px}
-.watch-loud{background:var(--new-tint)}
-/* דרגה שקטה, לתלונות על חיוב, תמיכה וחשבון: אותה קופסה בצהוב רך */
-.watch-quiet{background:var(--mild-tint)}
-.watch-quiet .watch-k{color:var(--mild)}
-.note-watch.note-quiet{background:var(--mild-tint)}
-.note-watch.note-quiet .note-h{color:var(--mild)}
+/* כתום אחד בשלוש עוצמות: ככל שהאזהרה מהותית יותר, הרקע מלא יותר */
+.watch-3,.note-w3{background:var(--new-tint)}
+.watch-2,.note-w2{background:color-mix(in oklab,var(--new-tint) 58%,var(--surface))}
+.watch-1,.note-w1{background:color-mix(in oklab,var(--new-tint) 26%,var(--surface))}
+.watch-1,.watch-2{box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--new) 14%,transparent)}
+.watch-bars{display:inline-flex;align-items:flex-end;gap:2px;margin-inline-start:6px;vertical-align:baseline}
+.watch-bars i{width:3px;border-radius:1px;background:color-mix(in oklab,var(--new) 26%,transparent)}
+.watch-bars i:nth-child(1){height:5px}.watch-bars i:nth-child(2){height:8px}.watch-bars i:nth-child(3){height:11px}
+.watch-bars i.on{background:var(--new)}
+.legend-h{margin:24px 0 0;font-size:var(--t-label);font-weight:700;color:var(--ink)}
+.legend-h+.legend-list{margin-top:10px}
+.watch-sample{margin:0;padding:4px 10px;justify-self:start}
 .watch-k{font-weight:700;color:var(--new);white-space:nowrap}
 /* בחלון הפרטים: האזהרה והנימוק ל״מומלץ״, כל אחד עם המקורות שלו */
 .sheet-notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:10px;margin-bottom:16px}
 .note{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;padding:10px 14px;border-radius:12px;min-width:0}
-.note-watch{background:var(--new-tint)}
 .note-rec{background:var(--brand-tint)}
 .note-h{font-size:var(--t-label);font-weight:700;margin:0;white-space:nowrap}
 .note-watch .note-h{color:var(--new)}
@@ -335,21 +338,23 @@ html:not(.js) .filters{display:none}
 /* אינדקס: שורה לכל כלי. השם הוא הדבר הגדול והמחיר תמיד באותה עמודה. */
 :root[data-view="index"] .cards{grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
 :root[data-view="index"] .card{margin-bottom:0}
-:root[data-view="index"] .mini{display:grid;grid-template-columns:3rem 32px minmax(9rem,17rem) minmax(0,1fr) 12.5rem 2rem;align-items:center;column-gap:20px;padding:22px 8px;border-bottom:1px solid var(--line);transition:background-color .12s ease}
+:root[data-view="index"] .mini{display:grid;grid-template-columns:3rem 32px minmax(9rem,17rem) minmax(0,1fr) 12.5rem;align-items:center;column-gap:20px;padding:22px 8px;border-bottom:1px solid var(--line);transition:background-color .12s ease}
 :root[data-view="index"] .mini-num{font-size:1.5rem}
 :root[data-view="index"] .mini-logo{width:32px}
+:root[data-view="index"] .mini-open .ico{display:none}
 :root[data-view="index"] .mini-name{font-size:clamp(1.5rem,1.2rem + 1.2vw,2.125rem)}
 @media (hover:hover){
   :root[data-view="index"] .card:hover .mini{background:var(--surface)}
   :root[data-view="index"] .card:hover .mini-num,:root[data-view="index"] .card:hover .mini-name,:root[data-view="index"] .card:hover .mini-open{color:var(--brand)}
 }
 @media (max-width:859px){
-  :root[data-view="index"] .mini{grid-template-columns:2.4rem minmax(0,1fr) 28px;gap:4px 12px;padding:18px 4px}
+  :root[data-view="index"] .mini{grid-template-columns:2.2rem 28px minmax(0,1fr);gap:2px 12px;padding:20px 4px}
   :root[data-view="index"] .mini-num{font-size:1.125rem;grid-column:1;grid-row:1}
-  :root[data-view="index"] .mini-name{grid-column:2;grid-row:1}
-  :root[data-view="index"] .mini-logo{grid-column:3;grid-row:1;width:28px}
-  :root[data-view="index"] .mini-role,:root[data-view="index"] .mini-price{grid-column:2}
-  :root[data-view="index"] .mini-open .ico{display:none}
+  :root[data-view="index"] .mini-logo{grid-column:2;grid-row:1;width:28px}
+  :root[data-view="index"] .mini-name{grid-column:3;grid-row:1}
+  :root[data-view="index"] .mini-role,:root[data-view="index"] .mini-price{grid-column:3}
+  :root[data-view="index"] .mini-role{line-height:1.45}
+  :root[data-view="index"] .mini-price{margin-top:12px}
 }
 
 /* גלריה: אריח לכל כלי, עם סמל גדול, שם ומחיר */
@@ -391,6 +396,9 @@ html:has(.sheet[open]){overflow:hidden}
 .sheet-scroll:focus{outline:none}
 .sheet-body{--t-sheet:0.9375rem;display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(18px,min(3vw,2.8vh),36px);padding:clamp(16px,min(2.6vw,3vh),32px) var(--pad) clamp(20px,3.6vh,56px);font-size:var(--t-sheet);line-height:1.55;color:var(--ink-soft)}
 .sheet-head{--t-sheet:0.9375rem}
+/* בראש חלון הפרטים שני לחצני אייקון בלבד: קישור חיצוני לאתר הרשמי, ו־X לסגירה. השם נשאר לקורא מסך ובריחוף */
+.sheet-head .btn-close,.sheet-head .btn-site{padding-inline:0;width:44px;min-height:44px;flex:none;justify-content:center}
+.sheet-head .close-t,.sheet-head .site-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .sheet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(12px,min(2.6vw,1.8vh),32px) clamp(24px,3.4vw,48px);align-items:start}
 .sec{min-width:0;overflow-wrap:break-word}
 .sec-h{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:24px;margin-bottom:8px}
@@ -565,12 +573,11 @@ html:not(.js) #finder-open{display:none}
   .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
   .sheet-head-in{flex-wrap:wrap}
-  .sheet-head .btn-site{order:3;flex:1 1 100%}
+  .sheet-head .btn-site{order:3;flex:1 1 100%;width:auto;gap:8px}
+  .sheet-head .site-t{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
   .pt summary{min-height:44px}
   .bill-btn{min-height:38px}
   .more-btn{flex:1 1 auto}
-  .btn-close{padding-inline:0;width:44px;flex:none}
-  .btn-close .close-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
   .sheet-tags-head{display:none}
   .sheet-tags-body{display:flex;margin-top:0}
   .sheet-body,.sheet-head{--t-sheet:1.0625rem}

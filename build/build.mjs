@@ -38,6 +38,7 @@ const ICON = {
   good: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.25"/><path d="m7.75 12.4 2.9 2.9 5.6-6.1"/></svg>',
   warn: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6 2.6 19.8h18.8L12 3.6Z"/><path d="M12 10v4.6"/><path d="M12 17.1v.2"/></svg>',
   chevron: '<svg class="ico chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
+  ext: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 4.5h6v6"/><path d="M19.5 4.5 11 13"/><path d="M18.5 14v4a1.5 1.5 0 0 1-1.5 1.5H6A1.5 1.5 0 0 1 4.5 18V7A1.5 1.5 0 0 1 6 5.5h4"/></svg>',
   close: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>',
   viewCards: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4.5" width="6.5" height="15" rx="1.5"/><rect x="13.5" y="4.5" width="6.5" height="15" rx="1.5"/></svg>',
   viewIndex: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15M4.5 12h15M4.5 17.5h15"/></svg>',
@@ -130,12 +131,29 @@ function toolTags(t) {
 // שתי דרגות לאזהרה (החלטת שקד, 19.11.2026): תלונה על חיוב, החזר, תמיכה או חשבון מוצגת בשקט,
 // ותלונה על התוצר עצמו מוצגת כפס בולט. החלוקה לפי סוג התלונה שבקובץ הנתונים.
 const WATCH_QUIET = new Set(['bot_support', 'account_block', 'billing_surprise', 'no_refund']);
-const watchLevel = (t) => (WATCH_QUIET.has(t.filters?.watch_out?.type_id) ? 'quiet' : 'loud');
-function watchHtml(t, level) {
+// שלוש דרגות, כולן מתוך קובץ הנתונים (בקשת שקד, 19.11.2026):
+// 3 = תלונה על התוצר עצמו שהדיווחים עליה נספרו אחד אחד, 2 = תלונה על התוצר לפי סיכום דוח המחקר,
+// 1 = תלונה על חיוב, החזר, תמיכה או חשבון.
+const WATCH_LEVELS = [
+  [3, 'מהותי', 'בעיה בתוצר עצמו, והדיווחים עליה נספרו אחד אחד'],
+  [2, 'בינוני', 'בעיה בתוצר עצמו, לפי סיכום דוח המחקר ובלי ספירה של כל דיווח'],
+  [1, 'קל', 'תלונות על חיוב, החזרים, תמיכה או חשבון, ולא על התוצר'],
+];
+const watchLevel = (t) => {
+  const w = t.filters?.watch_out;
+  if (WATCH_QUIET.has(w?.type_id)) return 1;
+  return w?.evidence?.strength === 'נספר' ? 3 : 2;
+};
+const watchName = (n) => WATCH_LEVELS.find((x) => x[0] === n)[1];
+// שלושה פסים קטנים ליד הכותרת, כדי שהדרגה לא תישען על צבע בלבד
+const watchBars = (n) => `<span class="watch-bars" aria-hidden="true">${[1, 2, 3].map((k) => `<i${k <= n ? ' class="on"' : ''}></i>`).join('')}</span>`;
+function watchHtml(t) {
   const w = String(t.filters?.watch_out?.text || '').trim();
-  if (!w || watchLevel(t) !== level) return '';
-  return `<p class="watch watch-${level}"><span class="watch-k">שימו לב</span><span class="watch-t">${esc(w)}</span></p>`;
+  if (!w) return '';
+  const n = watchLevel(t);
+  return `<p class="watch watch-${n}"><span class="watch-k">שימו לב${watchBars(n)}<span class="sr-only"> (${watchName(n)})</span></span><span class="watch-t">${esc(w)}</span></p>`;
 }
+
 function evidenceLinks(ev) {
   const src = (ev?.sources || []).filter((x) => has(x.url));
   if (!src.length) return '';
@@ -150,7 +168,7 @@ function sheetNotesHtml(t) {
     const strength = w.evidence?.strength === 'נספר'
       ? 'הדיווחים נספרו אחד אחד.'
       : 'לפי סיכום דוח המחקר, בלי ספירה של כל דיווח.';
-    out.push(`<div class="note note-watch note-${watchLevel(t)}"><p class="note-h">שימו לב</p><p class="note-t">${esc(w.text)}</p><p class="note-src">${links ? `מקור: ${links}. ` : ''}${strength}</p></div>`);
+    out.push(`<div class="note note-watch note-w${watchLevel(t)}"><p class="note-h">שימו לב${watchBars(watchLevel(t))}<span class="sr-only"> (${watchName(watchLevel(t))})</span></p><p class="note-t">${esc(w.text)}</p><p class="note-src">${links ? `מקור: ${links}. ` : ''}${strength}</p></div>`);
   }
   if (r?.value === true && has(r.basis)) {
     const links = evidenceLinks(r.evidence);
@@ -163,7 +181,7 @@ function tagsHtml(t, max = CARD_TAGS_MAX, cls = '') {
   const items = toolTags(t).slice(0, max).map(tagPill).join('');
   return items ? `<ul class="card-tags${cls}" role="list" aria-label="תגים">${items}</ul>` : '';
 }
-const legendHtml = `<details class="legend" id="legend"><summary class="btn legend-btn"><span>מקרא התגים</span></summary><ul class="legend-list" role="list">${TAGS.map((x) => `<li><span class="verify tag-${x[0]}">${x[1]}</span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul></details>`;
+const legendHtml = `<details class="legend" id="legend"><summary class="btn legend-btn"><span>מקרא</span></summary><ul class="legend-list" role="list">${TAGS.map((x) => `<li><span class="verify tag-${x[0]}">${x[1]}</span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul><h3 class="legend-h">דרגות ״שימו לב״</h3><ul class="legend-list" role="list">${WATCH_LEVELS.map((x) => `<li><span class="watch watch-${x[0]} watch-sample"><span class="watch-k">${x[1]}${watchBars(x[0])}</span></span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul></details>`;
 
 function verifyPill(t) {
   const p = t.pricing || {};
@@ -250,16 +268,42 @@ function shownPlans(t) {
   }
   return out;
 }
-// כלי בלי מתג: שורה אחת שאומרת איזה סוג חיוב נמצא במקור, כדי שמחיר שלא משתנה לא ייראה כמו טעות
+// מה ידוע על סוג החיוב השני (billing_check, נוסף לנתונים ב־19.11.2026 אחרי בדיקה מול העמודים הרשמיים).
+// כל ניסוח אומר רק את מה שהבדיקה מצאה: ״אין״ רק כשהמקור כותב זאת במפורש, ״לא נבדק״ כשהעמוד לא נקרא.
+const otherBill = (b) => (b === 'חודשי' ? 'שנתי' : 'חודשי');
+function billTerm(p) {
+  const b = p.billing, c = p.billing_check;
+  if (!BILL[b]) return c === 'לא נבדק' ? 'סוג החיוב לא נבדק' : '';
+  const y = otherBill(b);
+  if (c === 'אין') return `חיוב ${b} בלבד`;
+  if (c === 'לא מופיע בעמוד הרשמי') return `חיוב ${b}, אין מחיר ${y} בעמוד הרשמי`;
+  if (c === 'קיים, המחיר לא נבדק') return `חיוב ${b}, יש גם חיוב ${y} שמחירו לא נבדק`;
+  if (c === 'לא נבדק') return `חיוב ${b}, מחיר ${y} לא נבדק`;
+  if (c === 'לא רלוונטי') return `חיוב ${b}`;
+  return '';
+}
+function billSentence(b, c) {
+  if (!BILL[b]) return c === 'לא רלוונטי' ? '' : c === 'לא נבדק' ? 'סוג החיוב, חודשי או שנתי, לא נבדק.' : 'סוג החיוב, חודשי או שנתי, לא צוין במקור.';
+  const y = otherBill(b);
+  if (c === 'אין') return `חיוב ${b} בלבד, לפי המקור הרשמי.`;
+  if (c === 'לא מופיע בעמוד הרשמי') return `המחירים בחיוב ${b}. מחיר ${y} לא מופיע בעמוד הרשמי.`;
+  if (c === 'קיים, המחיר לא נבדק') return `המחירים בחיוב ${b}. יש גם חיוב ${y}, ומחירו לא נבדק.`;
+  if (c === 'לא נבדק') return `המחירים בחיוב ${b}. מחיר ${y} לא נבדק.`;
+  if (c === 'לא רלוונטי') return `המחירים בחיוב ${b}.`;
+  return `המחירים בחיוב ${b}. מחיר ${y} לא נמצא במקור.`;
+}
+const isPaid = (o) => o.p.price !== 0 && o.p.price !== null && o.p.price !== undefined;
+// כלי בלי מתג שכל התוכניות בתשלום שלו באותו מצב: שורה אחת ליד הכותרת, במקום לחזור עליה בכל תוכנית
+function billShared(shown) {
+  const paid = shown.filter(isPaid);
+  if (!paid.length || shown.some((o) => o.bill)) return null;
+  const keys = new Set(paid.map((o) => `${has(o.p.billing) ? o.p.billing : ''}|${o.p.billing_check ?? ''}`));
+  if (keys.size !== 1) return null;
+  const [b, c] = [...keys][0].split('|');
+  return billSentence(b, c);
+}
 function billNote(shown) {
-  const paid = shown.filter((o) => o.p.price !== 0 && o.p.price !== null && o.p.price !== undefined);
-  if (!paid.length || shown.some((o) => o.bill)) return '';
-  const kinds = new Set(paid.map((o) => (has(o.p.billing) ? o.p.billing : '')));
-  if (kinds.size !== 1) return '';
-  const k = [...kinds][0];
-  const text = k === 'שנתי' ? 'המחירים בחיוב שנתי. מחיר חודשי לא נמצא במקור.'
-    : k === 'חודשי' ? 'המחירים בחיוב חודשי. מחיר שנתי לא נמצא במקור.'
-      : k === '' ? 'סוג החיוב, חודשי או שנתי, לא צוין במקור.' : '';
+  const text = billShared(shown);
   return text ? `<p class="bill-note">${text}</p>` : '';
 }
 const billAttr = (o) => (o.bill ? ` data-bill="${o.bill}"` : '');
@@ -272,7 +316,9 @@ function planPrice(o) {
   const priced = p.price !== null && p.price !== undefined;
   const main = priced ? `${num(p.price)}${cur ? ' ' + cur : ''}${has(p.price_period) ? ' ' + p.price_period : ''}` : (has(p.price_short) ? p.price_short : p.price_text);
   const terms = [];
-  if (o.only) terms.push(`חיוב ${p.billing}, מחיר ${p.billing === 'חודשי' ? 'שנתי' : 'חודשי'} לא נמצא`);
+  const detail = !o.bill && !o.shared && isPaid(o) ? billTerm(p) : '';
+  if (detail) terms.push(detail);
+  else if (o.only) terms.push(`חיוב ${p.billing}, מחיר ${otherBill(p.billing)} לא נמצא`);
   else if (has(p.billing) && !o.bill) terms.push(`חיוב ${p.billing}`);
   if (has(p.per)) terms.push(p.per);
   return `<span class="tier-line"${billAttr(o)}><span class="tier-price">${esc(main)}</span>${terms.length ? `<span class="tier-terms">${esc(terms.join(', '))}</span>` : ''}</span>`;
@@ -307,6 +353,7 @@ function sheetHtml(t) {
   ].join('');
 
   const shown = shownPlans(t);
+  if (billShared(shown) !== null) for (const o of shown) o.shared = true;
   const toggle = shown.some((o) => o.bill) ? billToggle(t.name) : '';
   const price = sec('sec-price', 'מחיר', shown.length ? tiersHtml(shown) : '<p>המחיר לא אומת מול מקור רשמי.</p>', '', toggle || billNote(shown));
 
@@ -361,8 +408,8 @@ function sheetHtml(t) {
           <p class="sheet-role">${esc(t.role)}${former}</p>
           ${tagsHtml(t, 9, ' sheet-tags sheet-tags-head')}
         </div>
-        <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
-        <button type="button" class="btn btn-close" data-sheet-close>${ICON.close}<span class="close-t">סגירה</span></button>
+        <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer" title="לאתר הרשמי">${ICON.ext}<span class="site-t">לאתר הרשמי</span><span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
+        <button type="button" class="btn btn-close" data-sheet-close title="סגירה">${ICON.close}<span class="close-t">סגירה</span></button>
       </div>
     </header>
     <div class="sheet-scroll" tabindex="-1">
@@ -420,7 +467,7 @@ function cardHtml(t) {
   return `
 <li class="card" id="tool-${t.id}" data-no="${pad(t.no)}" data-cat="${t.category_id}" data-flags="${flags}" data-search="${esc(search)}">
   <div class="card-head">
-    ${watchHtml(t, 'loud')}${watchHtml(t, 'quiet')}
+    ${watchHtml(t)}
     <div class="card-id${has(t.logo?.file) ? '' : ' no-logo'}">
       ${logoHtml(t)}
       <div class="card-meta">
