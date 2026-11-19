@@ -114,3 +114,33 @@ Official pricing pages re-read with plain `curl` (no fetch quota). Each entry: U
 - Changed: commercial_rights (FAQ: "You own everything you build on Base44"), student_benefits (education pricing case by case, student email verification), unverified_notes.
 - Verification: אומת חלקית → אומת חלקית.
 
+## Bolt (no-code-apps/bolt.json)
+- Read: https://bolt.new/pricing and its own script bundles on bolt.new (`/assets/Pricing-*.js`, `/assets/fetch-*.js`, where the plan table `rateMonthly:{month:25,year:18}` for Pro tier 1 and `{month:30,year:27}` for Teams tier 1 lives)
+- Changed: yearly records added (Pro $18/mo, Teams $27/mo, billed yearly up front); rollover rule (unused tokens kept up to two months) noted; Bolt Lite conflict resolved in favour of the pricing page.
+- Verification: אומת חלקית → אומת ממקור רשמי.
+
+## Emergent (no-code-apps/emergent.json)
+- Read: https://emergent.sh/pricing
+- Changed: re-read confirms the Annual toggle with $20 / $17 and $200 / $167 and the stated savings ($36, $396) that match the difference; no new figures. The free-credit renewal conflict (pricing page vs help center) is unrelated to paid prices and stays noted.
+- Verification: אומת חלקית → אומת ממקור רשמי.
+
+## Stitch (ui-web/google-stitch.json)
+- Read: https://stitch.google.com/ (Stitch has no separate pricing page in the record)
+- No change: the response is an app shell with only the title "Stitch - Design with AI"; no plan, quota or price text.
+- Verification: לא אומת → לא אומת (unreadable).
+
+## Relume (ui-web/relume.json)
+- Read: https://www.relume.ai/pricing
+- No change: same content as the record. Launch hosting is clear ($12/site/mo billed yearly, $16 billed monthly), but the Pro AI workspace is only "from $24 / month" and Site Builder plans "From $18 / $40 / $36" with no billing type, in text or page data.
+- Verification: אומת חלקית → אומת חלקית (unchanged).
+
+## UX Pilot (ui-web/ux-pilot.json)
+- Read: https://uxpilot.ai/pricing (schema.org Offer data and Next.js payload)
+- Changed: free tier now concrete from the page's Offer data (80 daily credits, one project; daily credits do not roll over), free_renewing true. Paid prices NOT recorded: the page's static data conflicts (Offer data: Pro $22/mo, Teams $31/user/mo; embedded comparison copy: Pro $29 monthly or $19 yearly, Teams $39/user; legacy Standard $14/mo, $144/yr; the live cards get prices by script). All listed in unverified_notes.
+- Verification: אומת חלקית → אומת חלקית.
+
+## Captions (video-editing/captions.json)
+- Read: https://captions.ai/pricing
+- Changed: official pricing page added as a source for Max ($24.99/mo, 500 credits, 2 seats) and Frontier ($69.99 / $139.99 / $279.99, seats); notes that prices are iOS-only, in USD, before tax; yearly plans exist without published prices; credits roll over up to 3× (page FAQ). Basic and Lite are not on the pricing page (help article only).
+- Verification: אומת חלקית → אומת חלקית (platform-dependent prices, no yearly amounts).
+

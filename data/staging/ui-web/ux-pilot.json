@@ -55,16 +55,16 @@
     "per": null,
     "billing": null,
     "price_period": "לחודש",
-    "includes": null,
-    "notes": "בלי כרטיס אשראי. מכסת הנקודות ואם היא מתחדשת לא אומתו.",
+    "includes": "80 נקודות זיכוי ביום, פרויקט אחד, כלי העיצוב המרכזיים",
+    "notes": "בלי כרטיס אשראי. לפי נתוני הדף, הנקודות היומיות אינן נצברות ליום הבא.",
     "source_ids": [
      "s1"
     ]
    }
   ],
-  "free_tier": "יש תוכנית חינמית ל־wireframes ולעיצוב בבינה מלאכותית, בלי כרטיס אשראי. המכסה לא אומתה.",
+  "free_tier": "תוכנית Free ללא כרטיס אשראי: 80 נקודות זיכוי ביום ופרויקט אחד, עם כלי העיצוב המרכזיים (wireframes, ממשק מלא, אב־טיפוס, סקירת עיצוב).",
   "trial": null,
-  "unverified_notes": "התוכן של עמוד המחירים נטען בסקריפט ולא נקרא בשני ניסיונות. המחיר היחיד שנמצא הוא בתיאור העמוד: 'flexible paid plans starting at $14/month for individuals and teams', בלי שם תוכנית, סוג חיוב או מכסת נקודות. קוד המטבע לא צוין."
+  "unverified_notes": "כרטיסי התוכניות מקבלים את המחירים בסקריפט בזמן הטעינה, והנתונים הסטטיים בדף סותרים זה את זה: נתוני ה־Offer המובנים מציינים Pro ב־22 דולר לחודש ו־Teams ב־31 דולר למשתמש לחודש; טקסטים של השוואות שמוטמעים באותו דף מציינים Pro ב־29 דולר בחיוב חודשי או 19 דולר בחיוב שנתי, ו־Teams ב־39 דולר למשתמש; תוכנית Standard (ישנה) מופיעה עם \"Yearly price: $144\" ו־\"$14/month\"; Enterprise מופיע גם ב־39 דולר \"Billed custom annually per user\". בגלל הסתירות לא נרשמו מחירים לתוכניות בתשלום. Pro כוללת 750 נקודות בחודש לפי נתוני ה־Offer."
  },
  "privacy": {
   "text": "לא אומת: מדיניות הפרטיות ותנאי השימוש לא נקראו.",
@@ -113,10 +113,10 @@
   {
    "id": "s1",
    "url": "https://uxpilot.ai/pricing",
-   "title": "עמוד המחירים של UX Pilot (נקרא חלקית, התוכן נטען בסקריפט)",
+   "title": "עמוד המחירים של UX Pilot",
    "official": true,
    "published": null,
-   "checked": "2026-11-18",
+   "checked": "2026-11-19",
    "stale": false
   }
  ],
@@ -166,9 +166,9 @@
     "evidence": "research/stage4/ui-web.md"
    },
    "free_renewing": {
-    "value": null,
-    "basis": null,
-    "evidence": "research/stage4/ui-web.md"
+    "value": true,
+    "basis": "80 נקודות זיכוי ביום בתוכנית Free, לפי נתוני עמוד המחירים.",
+    "evidence": "research/stage4/gapfill.md"
    }
   }
  }
