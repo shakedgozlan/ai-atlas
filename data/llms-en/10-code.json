@@ -1,0 +1,271 @@
+{
+  "cursor": {
+    "role": "Code editor with built-in AI: completions, chat and an agent that writes and changes code across a project.",
+    "audience": "Developers and students who want a full code editor with a built-in agent, from free trial to heavy use.",
+    "status": "Active. Cursor was acquired by SpaceX; per the blog, the acquisition completed a process that began in April. Plans for new customers were replaced by The X Subscription; moving from an old plan is optional and final.",
+    "pros": [
+      "Cheap entry in the unified subscription: The X Subscription Plus costs $8/month or $80/year and includes Cursor and Grok.",
+      "Free plan with the core features: Free gives access to Agent, Chat and Tab completions with Cursor models, with limited use.",
+      "Run several agents in parallel: Cursor 3 added an agents window that runs several agents on several repos, and a Design Mode for marking UI elements in the browser."
+    ],
+    "cons": [
+      "Privacy mode is not known to be on by default for a single user: the page says it is on by default only for teams and organizations. An individual must check and enable it in settings.",
+      "Usage pool shared with Grok: in The X Subscription, Grok and Cursor draw from the same weekly pool.",
+      "Switching to the new subscription is irreversible: whoever moves from an old Cursor plan cannot go back, and previous subscriptions are cancelled with a prorated refund."
+    ],
+    "price": "From $8/month or $80/year (The X Subscription Plus). Free plan with limited use.",
+    "model": "Subscription with usage quota",
+    "free": "Free: core Cursor features with limited use, including Agent, Chat and Tab completions with Cursor models (Grok and Composer).",
+    "plans": [
+      "Limited use of core features",
+      "Basic usage, weekly pool shared between Grok and Cursor",
+      "Basic usage, weekly pool shared between Grok and Cursor",
+      "4x Plus, weekly pool shared between Grok and Cursor",
+      "4x Plus, weekly pool shared between Grok and Cursor",
+      "15x Plus, weekly pool shared between Grok and Cursor",
+      "15x Plus, weekly pool shared between Grok and Cursor",
+      "50x Plus, weekly pool shared between Grok and Cursor",
+      "50x Plus, weekly pool shared between Grok and Cursor",
+      "",
+      ""
+    ],
+    "privacy": "Per the help center, with Privacy Mode on, code is not used for training by Cursor or model providers. It is on by default for teams and organizations; for a single user the page does not state a default. Enable at Cursor Settings > General > Privacy Mode. Grok Bot runs on a separate surface with its own data flow, and the editor's Privacy Mode does not apply to it the same way.",
+    "hebrew": "Not mentioned in the source.",
+    "students": "The pricing pages checked mention no student benefit. The Cursor community forum has a thread on student verification, but it was not read and is not an official price source.",
+    "watch": "Users report charges and plan upgrades without approval, no refund, and bot-only support."
+  },
+  "google-antigravity": {
+    "role": "Google development platform where Gemini-based agents write, test and run code, as a desktop app, code editor and command line.",
+    "audience": "Students and developers with a Google account who want to try coding agents for free, and Google AI subscribers.",
+    "status": "Active. Antigravity 2.0 launched as a standalone desktop app alongside a CLI, SDK and API. The original code editor (Antigravity IDE) remains available \"for now\".",
+    "pros": [
+      "Free usage that renews weekly: a personal Google account with no subscription gets a quota that renews weekly, with a weekly rate limit.",
+      "Higher quota with Google AI Pro: Google AI Pro ($19.99/month in the US) raises agent rate limits in Antigravity, with a quota that renews every five hours up to the weekly limit.",
+      "Available on three operating systems: the Antigravity 2.0 app runs on macOS, Linux and Windows."
+    ],
+    "cons": [
+      "Conversations and code are used to improve products: per the terms, Google uses interactions to develop and improve products, and employees and contractors may view them. The preference can be changed in settings.",
+      "Quotas are not published as numbers: the plans page describes quotas in words only and says they may change.",
+      "No benefits for Workspace accounts: per the docs, Google Workspace plans do not include Antigravity plans or higher rate limits."
+    ],
+    "price": "Basic use free with a weekly quota. Higher quotas via Google AI Pro at $19.99/month (US price).",
+    "model": "Subscription with usage quota",
+    "free": "A personal Google account without Pro or Ultra gets a quota that renews weekly, with a weekly rate limit.",
+    "plans": [
+      "Quota renewed weekly, with a weekly rate limit",
+      "Basic agent rate limits in Antigravity, quota renewed every five hours up to a higher weekly limit",
+      "",
+      "Ultra 5x: higher rate limits, access to third-party models",
+      "Ultra 20x: the highest rate limits in Antigravity"
+    ],
+    "privacy": "Per the Antigravity additional terms, Google uses interactions (user and usage data, metadata and feedback) to develop and improve products, and employees and contractors may access them. The preference can be changed in settings, and deletion requested by email to antigravity-support@google.com. Even with telemetry off, Google uses data to provide the service.",
+    "api": "Yes. Per the Antigravity 2.0 launch post, Antigravity CLI, SDK and API launched alongside it. Their docs and pricing were not checked.",
+    "hebrew": "Not mentioned in the source.",
+    "students": "The Google AI plans page links to a For Students page with no details, and the Antigravity plans page does not mention students. The benefit was not checked."
+  },
+  "claude-code": {
+    "role": "Anthropic's coding agent: reads project files, edits them and runs commands. Works in the command line, as an editor extension, in a desktop app and in the browser.",
+    "audience": "Developers and learners who are ready to use a command line and want an agent that carries out whole tasks in a project.",
+    "status": "Active. Claude Code is not sold as a separate subscription: per the pricing page it is included in all paid Claude plans (Pro, Max, Team, Enterprise) and not in Free.",
+    "pros": [
+      "Included in the Claude Pro subscription: Pro ($20/month, or $17/month billed yearly) also gives Claude Code.",
+      "One quota for chat and code: Claude Code shares usage limits with the rest of the plan, in a rolling five-hour window.",
+      "Available in several work environments: the same agent runs in the command line, as a VS Code and JetBrains extension, in the desktop app and browser, and from a phone via the Claude app."
+    ],
+    "cons": [
+      "No access on the free plan: per the comparison table, Claude Code is not included in Free.",
+      "Weekly limits: paid plans also have weekly limits on top of the five-hour window.",
+      "Requires basic terminal familiarity: the recommended install is a terminal command. The desktop app and browser are an alternative, but they also require a paid plan."
+    ],
+    "price": "Included in paid Claude plans: Pro at $20/month, or $17/month billed yearly. Not included in the free plan.",
+    "model": "Subscription with usage quota",
+    "free": "Claude's free plan does not include Claude Code.",
+    "plans": [
+      "Claude Code not included",
+      "Claude Code, at least 5x Free usage per window",
+      "Claude Code, at least 5x Free usage per window",
+      "Claude Code, 5x or 20x Pro usage",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "privacy": "Per the Anthropic privacy center (Mar 16, 2026), on consumer plans (Free, Pro, Max) chats and Claude Code sessions are used to improve Claude if the user chose to allow it, if flagged for safety review, or if they joined a testing program. The page does not state the default of the setting. Thumbs feedback is kept up to 5 years. Commercial products and the API are covered by separate terms.",
+    "api": "Yes. The Agent SDK lets you build custom agents on Claude Code's tools. You can also sign in with an Anthropic Console account and API key. The Enterprise plan includes usage at API rates.",
+    "hebrew": "Not mentioned in the source.",
+    "students": "The pricing page shows an Education plan for institutions, covering the institution's students, faculty and staff, with no single-student offer and no explicit mention of Claude Code."
+  },
+  "devin": {
+    "role": "Autonomous coding agent that works in the cloud on whole tasks, alongside a desktop code editor (Devin Desktop, formerly Windsurf).",
+    "audience": "Developers who want to hand whole tasks to an agent and also work in a code editor, and development teams.",
+    "status": "Renamed. Windsurf became Devin Desktop in an automatic update; per the company the editor, extensions and plans stayed as they were. On April 14, 2026 new Free, Pro, Max and Teams plans were announced for Devin, and the old Core and Team plans are being retired.",
+    "pros": [
+      "Free plan with unlimited completions: Free includes unlimited Tab completions and in-code edits, and a light quota for agent work.",
+      "Cloud agent already at $20: Pro includes cloud agents (Devin Cloud), all models including OpenAI, Claude, Gemini and SpaceXAI, and free use of SWE-2.",
+      "Desktop editor for three operating systems: Devin Desktop is an app for macOS, Windows and Linux."
+    ],
+    "cons": [
+      "Only a light quota for free: on Free the agent quota is light and the model selection limited.",
+      "Quotas are not given in numbers: the pricing page only says the quota renews daily and weekly. Extra usage is billed at API prices.",
+      "Relatively expensive team plan: Teams costs $80/month per team plus $40 per developer seat."
+    ],
+    "price": "From $20/month (Pro). Free plan with a light agent quota and unlimited completions.",
+    "model": "Subscription with usage quota",
+    "free": "Free: light quota for agent work, limited model selection, unlimited edits and Tab completions.",
+    "plans": [
+      "Light quota for agent work, limited model selection, unlimited edits and Tab completions",
+      "Higher quotas, all models (OpenAI, Claude, Gemini, SpaceXAI), free SWE-2, cloud agents (Devin Cloud)",
+      "Everything in Pro, Devin Bots and much higher quotas",
+      "",
+      ""
+    ],
+    "api": "Not verified. The pricing page mentions buying extra usage at API prices, but a public API doc was not checked.",
+    "hebrew": "Not mentioned in the source.",
+    "students": "The pricing page mentions no student benefit, and no official page on it was found."
+  },
+  "github-copilot": {
+    "role": "GitHub coding assistant that completes code, answers in chat and performs tasks as an agent, inside the code editor and the command line.",
+    "audience": "Students and developers who work on GitHub and common code editors, from free trial to professional use.",
+    "pros": [
+      "Free for verified students: the Copilot Student plan is free for students verified in GitHub Education. Eligibility is re-checked monthly.",
+      "A useful free plan: Copilot Free includes 2,000 code completions per month, agent mode, Copilot CLI and limited chat and agent use.",
+      "Relatively cheap subscription: Pro costs $10/month and includes $15/month of AI credits (1,000 base and 500 flex)."
+    ],
+    "cons": [
+      "Conversations are used for training by default: from April 24, 2026, interaction data of Free, Pro and Pro+ users is used to train models, unless turned off in privacy settings.",
+      "Limited model choice on free: Copilot Free and Copilot Student have automatic model selection only. Student does not include third-party agents.",
+      "Completion quota on free: Copilot Free is limited to 2,000 code completions per month."
+    ],
+    "price": "From $10/month (Pro). Free plan with 2,000 completions per month, and free for verified students.",
+    "model": "Subscription with credits",
+    "free": "Copilot Free: 2,000 code completions per month, limited chat and agent use, agent mode and Copilot CLI, with automatic model selection.",
+    "plans": [
+      "2,000 completions/month, limited chat and agent use, agent mode, Copilot CLI, automatic model selection",
+      "Quota not detailed, automatic model selection",
+      "1,500 AI credits per month (1,000 base and 500 flex), choice of models",
+      "7,000 AI credits per month (3,900 base and 3,100 flex), advanced models",
+      "20,000 AI credits per month (10,000 base and 10,000 flex), priority on advanced models",
+      ""
+    ],
+    "privacy": "Per a GitHub announcement of Mar 25, 2026, from April 24 interaction data of Free, Pro and Pro+ users is used to train and improve models, unless disabled at github.com/settings/copilot under Privacy. Those who opted out earlier stay out of training. Copilot Business and Enterprise users and organization-owned repositories are not affected.",
+    "hebrew": "Not mentioned in the source.",
+    "students": "Copilot Student is free for students verified in GitHub Education. Activation is through the student benefits page and may take a few days after verification; eligibility is re-checked monthly. The plan has automatic model selection.",
+    "watch": "Since the move to usage-based billing in June 2026, users report the monthly allowance running out within a day or two."
+  },
+  "codex": {
+    "role": "OpenAI's coding agent that writes and fixes code in a desktop app, command line, editor extension and the cloud. Sold as part of ChatGPT plans.",
+    "audience": "People who already use ChatGPT and want a coding agent, from beginners trying for free to professional developers.",
+    "status": "Active. Codex is not sold as a separate subscription: it is included in ChatGPT plans (Free, Go, Plus, Pro, Business, Enterprise and Edu), and the quota depends on the plan.",
+    "pros": [
+      "Already included in a ChatGPT subscription: ChatGPT Plus ($20) also gives Codex, with a quota per five-hour window.",
+      "Basic access even for free: on Free and Go, GPT-6 Luna is available at standard speed in the desktop app, subject to gradual rollout.",
+      "Extend usage with credits: on Plus and Pro you can buy extra ChatGPT credits when the quota runs out, without upgrading."
+    ],
+    "cons": [
+      "Quotas are not fixed: on Plus the quota is a range of local messages per five hours, e.g. 15 to 160 on GPT-6.1 Sol. Cloud tasks use more, and the page says these are not fixed limits.",
+      "No numbers for Free and Go: quotas for these plans are not published, and access is subject to gradual rollout.",
+      "Training by default on personal plans: OpenAI policy says content on personal ChatGPT plans may be used for training unless the user opts out. The page does not mention Codex explicitly."
+    ],
+    "price": "Included in ChatGPT plans: Go at $8/month, Plus at $20/month. Limited access on the free plan too.",
+    "model": "Subscription with credits",
+    "free": "On the ChatGPT Free plan, GPT-6 Luna is available at standard speed in the Codex desktop app, subject to gradual rollout. Quota not published.",
+    "plans": [
+      "GPT-6 Luna at standard speed in the desktop app, subject to rollout",
+      "GPT-6 Luna at standard speed in the desktop app, subject to rollout",
+      "Local message quota per five hours, e.g. GPT-6 Luna 350 to 3,000 and GPT-6.1 Sol 15 to 160; cloud tasks",
+      "No five-hour limit",
+      "",
+      "",
+      ""
+    ],
+    "privacy": "Per the OpenAI policy page (updated Mar 13, 2026), on personal ChatGPT plans content may be used for training unless the user opts out in the privacy portal (\"do not train on my content\") or in settings. On business plans (Team, Enterprise) and the API there is no training by default. The page does not mention Codex explicitly, so it was not verified that the rules apply to Codex the same way.",
+    "api": "Not verified. The pricing page shows token-based credit rates, e.g. GPT-6.2 Sol at 50 credits per million input tokens and 250 per million output tokens, but API docs were not checked.",
+    "hebrew": "Not mentioned in the source.",
+    "students": "The pricing page links to a community program called Codex for Students with no details. Its content and terms were not checked."
+  },
+  "cline": {
+    "role": "Open-source coding agent installed as an extension in the code editor (VS Code) or in the command line, working with a model the user chooses.",
+    "audience": "People ready to connect their own API key who want a free, flexible coding agent inside the editor or terminal.",
+    "pros": [
+      "Free, no subscription: the open-source version has no subscription or seat fee. You pay only for model usage, at cost or with your own API key.",
+      "Free choice of model: connect API keys from OpenAI, Anthropic, Google and other providers.",
+      "Several work environments: per the Cline 2.0 announcement, the same engine powers Cline in VS Code, JetBrains and the command line."
+    ],
+    "cons": [
+      "Model cost is on the user: there is no free model quota; whoever does not bring their own key pays for usage credits on each request.",
+      "JetBrains extension only for organizations: on the pricing page the JetBrains extension is listed under Enterprise only; the VS Code extension and command line are free.",
+      "Telemetry on by default: Cline collects usage data by default. For requests via Cline and ClinePass providers the data can include the prompt and response. It can be turned off in settings."
+    ],
+    "price": "Free and open source, no subscription. You pay only for model usage, at cost or with your own API key.",
+    "model": "Pay per use",
+    "free": "The open-source version is free: VS Code extension and command line, no subscription. Model usage is paid, via Cline at cost or with a personal API key.",
+    "plans": [
+      "VS Code extension, CLI, MCP Marketplace, model usage bought at cost or with a personal API key",
+      ""
+    ],
+    "privacy": "Per the docs, telemetry is on by default and does not include code, file contents or prompts, except for requests via Cline and ClinePass providers, where it can include the prompt and the model's response. With another provider, prompts go to that provider. Telemetry can be turned off in settings. The docs do not say whether Cline trains models on code, and point to a privacy policy that was not read.",
+    "api": "Yes. Per the Cline 2.0 announcement, the agent engine was released as an SDK named @cline/sdk, and the company says it is open-sourcing it so teams can build on it.",
+    "hebrew": "Not mentioned in the source.",
+    "students": "The pricing page mentions no student benefit. The base version is free for everyone, but model usage is paid."
+  },
+  "kiro": {
+    "role": "Development environment (code editor) from AWS with an AI agent that plans and builds code from a written spec.",
+    "audience": "Developers and students who want an agent that works from specs and tasks, from free trial to daily use.",
+    "pros": [
+      "A free year for students: the Students plan gives 1,000 credits per month for a year from verification, free, via SheerID.",
+      "Permanent free plan: Kiro Free has 50 credits per month, open models and Claude Sonnet 4.5 with limits.",
+      "Clear price tiers: Pro at $20 with 1,000 credits, and above it Pro+, Pro Max and Power. An extra credit costs $0.04."
+    ],
+    "cons": [
+      "Student plan limited to listed institutions: requires age 18+ and verification against a university list. An institution not on the list can only request access. Extra credits cannot be bought on this plan.",
+      "Content may be used to improve the service by default: on the free plan and personal subscriptions, content may be used to improve the service, including model training, unless turned off in settings.",
+      "Monthly billing only: the pricing page shows monthly prices only, with no yearly discount."
+    ],
+    "price": "From $20/month (Pro, 1,000 credits). Free plan with 50 credits per month, and a free year for eligible students.",
+    "model": "Subscription with credits",
+    "free": "Permanent Kiro Free: 50 credits per month, open models and Claude Sonnet 4.5 with limits.",
+    "trial": "On the first upgrade to Pro: the rest of the month free and 500 trial credits valid for 12 months.",
+    "plans": [
+      "50 credits per month, open models and Claude Sonnet 4.5 with limits",
+      "1,000 credits per month, advanced models",
+      "2,000 credits per month, advanced models",
+      "5,000 credits per month, advanced models",
+      "10,000 credits per month, advanced models",
+      "",
+      "1,000 credits per month for one year"
+    ],
+    "privacy": "Per the docs, on the free plan and personal subscriptions content may be used to improve the service, which may include model training. Can be disabled in Settings > User > Application > Telemetry and Content. Enterprise users and Amazon Q Developer Pro subscribers are not used for improvement. On the free plan inputs may be kept up to 60 days to detect abuse.",
+    "api": "Not verified. Whether a public API exists was not checked. The docs state that Kiro runs on Amazon Bedrock.",
+    "hebrew": "Not mentioned in the source.",
+    "students": "Kiro Students: 1,000 credits per month for one year, free. Requires age 18+, study at a listed institution and verification via SheerID with a university email. After the year the account moves to Kiro Free."
+  },
+  "zed": {
+    "role": "Fast code editor with AI features: edit prediction, built-in agents and connection to external agents such as Claude Agent and Codex.",
+    "audience": "Students and developers who want a light, fast code editor with AI by choice.",
+    "pros": [
+      "Zed Pro free for a year for students: verified students at a recognized university, age 18+, get Zed Pro for a year with $10/month in AI credits.",
+      "Free editor forever: Personal is free and includes unlimited use with your own API keys or with external agents. AI features can also be turned off entirely.",
+      "Cheap Pro subscription: Pro costs $10/month and includes unlimited edit prediction and $5 in tokens, with a 14-day trial and no credit card."
+    ],
+    "cons": [
+      "Student plan without the expensive models: it does not include Claude Fable, Claude Opus and GPT Pro models.",
+      "Small token quota on Pro: Pro includes $5 in tokens per month. Use beyond that is billed at API price plus 10%.",
+      "No built-in AI quota on free: on Personal there is no Zed model quota; AI works only with an external key or agent."
+    ],
+    "price": "Free editor forever. Pro at $10/month with $5 in tokens, and a free year for verified students.",
+    "model": "Mixed",
+    "free": "Personal: the full editor free forever, with unlimited use of personal API keys or external agents. No Zed model quota.",
+    "trial": "14-day Pro trial with no credit card, with $5 in GPT-6 Luna usage, until the amount runs out or 14 days pass.",
+    "plans": [
+      "The full editor, unlimited use with personal API keys or external agents",
+      "Unlimited edit prediction, $5 in tokens per month",
+      "All Pro features, $10/month in AI credits, unlimited edit prediction, real-time collaboration",
+      ""
+    ],
+    "privacy": "Not verified. The pricing page and 1.0 blog do not address use of data for training. The privacy policy was not read. On Business, admins can lock members' data-sharing settings.",
+    "api": "Not verified. Zed supports external agents via the Agent Client Protocol and API keys from providers such as Anthropic, OpenAI and Amazon Bedrock. A public Zed API was not checked.",
+    "hebrew": "Not mentioned in the source.",
+    "students": "Zed Pro free for a year for students at a recognized university, age 18+, with $10/month in AI credits. The plan excludes Claude Fable, Claude Opus and GPT Pro. The verification method and whether students outside the list qualify are not detailed."
+  }
+}
