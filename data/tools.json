@@ -7810,11 +7810,11 @@
           },
           "free_plan": {
             "exists": true,
-            "renews": "לא צוין",
+            "renews": "ללא מכסה קבועה",
             "usable_output": true,
-            "enough_for_real_use": null,
-            "worthwhile": null,
-            "basis": "ניסוח מחדש של עד 125 מילים בכל פעם. המקור לא מציין מכסה כוללת או מחזור התחדשות.",
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "ניסוח מחדש של עד 125 מילים בכל פעם, בלי מכסה כוללת מוצהרת.",
             "inference": true
           }
         }
@@ -9235,9 +9235,9 @@
             "exists": true,
             "renews": "יומי",
             "usable_output": true,
-            "enough_for_real_use": null,
-            "worthwhile": null,
-            "basis": "10 ניסוחים מחדש ביום ו־3 סיכומים בחודש: מכסה קטנה.",
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "10 ניסוחים מחדש ביום, מתחת לסף של 20 בקשות ביום.",
             "inference": true
           }
         }
@@ -11460,9 +11460,9 @@
             "exists": true,
             "renews": "יומי",
             "usable_output": true,
-            "enough_for_real_use": true,
-            "worthwhile": true,
-            "basis": "150 Fast Tokens ביום עם רישיון לשימוש מסחרי. התמונות ציבוריות.",
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "150 Fast Tokens ביום עם רישיון מסחרי. המקור לא מפרט כמה תמונות זה מאפשר.",
             "inference": true
           }
         }
@@ -15828,9 +15828,9 @@
             "exists": true,
             "renews": "חודשי",
             "usable_output": null,
-            "enough_for_real_use": null,
+            "enough_for_real_use": true,
             "worthwhile": null,
-            "basis": "500 נקודות בחודש ודומיין של Framer. המקור לא מפרט אם האתר נושא מיתוג.",
+            "basis": "500 נקודות בחודש ופרסום בדומיין של Framer. המקור לא מפרט אם האתר נושא מיתוג.",
             "inference": true
           }
         }
@@ -16822,9 +16822,9 @@
             "exists": true,
             "renews": "יומי",
             "usable_output": true,
-            "enough_for_real_use": null,
-            "worthwhile": null,
-            "basis": "עד 7 הודעות ביום: מכסה קטנה.",
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "עד 7 הודעות ביום, עם פרסום ב־Vercel: עומד בסף של פרויקט אחד שאפשר לפרסם.",
             "inference": true
           }
         }
@@ -17189,9 +17189,9 @@
             "exists": true,
             "renews": "חודשי",
             "usable_output": null,
-            "enough_for_real_use": false,
-            "worthwhile": false,
-            "basis": "שני עמודים סטטיים בלבד בתוכנית האתר החינמית.",
+            "enough_for_real_use": true,
+            "worthwhile": null,
+            "basis": "אתר של שני עמודים בדומיין webflow.io. המקור לא מפרט אם האתר נושא מיתוג.",
             "inference": true
           }
         }
@@ -21764,9 +21764,9 @@
             "exists": true,
             "renews": "ללא מכסה קבועה",
             "usable_output": true,
-            "enough_for_real_use": null,
-            "worthwhile": null,
-            "basis": "הקראה בלי מכסה מוצגת, אבל רק בקולות רובוטיים.",
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "הקראה בלי מכסה מוצגת, רק בקולות רובוטיים.",
             "inference": true
           }
         }
@@ -24285,9 +24285,9 @@
             "exists": true,
             "renews": "חודשי",
             "usable_output": true,
-            "enough_for_real_use": null,
-            "worthwhile": null,
-            "basis": "100 נקודות ועד 10 הורדות בחודש, ברישיון CC BY 4.0.",
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "100 נקודות ועד 10 הורדות בחודש, ברישיון CC BY 4.0: מעל הסף של 5 מודלים בחודש.",
             "inference": true
           }
         }
@@ -29557,9 +29557,9 @@
             "exists": true,
             "renews": "יומי",
             "usable_output": true,
-            "enough_for_real_use": null,
-            "worthwhile": null,
-            "basis": "מכסת AI יומית ואפליקציה מפורסמת אחת. גודל המכסה לא פורסם.",
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "מכסת AI יומית ואפליקציה מפורסמת אחת: עומד בסף של פרויקט אחד שאפשר לפרסם.",
             "inference": true
           }
         }
@@ -29899,9 +29899,9 @@
             "exists": true,
             "renews": "חודשי",
             "usable_output": null,
-            "enough_for_real_use": false,
-            "worthwhile": false,
-            "basis": "25 נקודות הודעה בחודש: מכסה קטנה מאוד לבניית אפליקציה.",
+            "enough_for_real_use": true,
+            "worthwhile": null,
+            "basis": "עד 5 אפליקציות ו־25 נקודות הודעה בחודש. המקור לא מפרט אם האפליקציה נושאת מיתוג.",
             "inference": true
           }
         }
@@ -30882,7 +30882,7 @@
             "exists": true,
             "renews": "חודשי",
             "usable_output": false,
-            "enough_for_real_use": null,
+            "enough_for_real_use": false,
             "worthwhile": false,
             "basis": "מתאימה לבנייה ולבדיקה, לא לפרסום גרסה חיה.",
             "inference": true
@@ -37074,9 +37074,9 @@
             "exists": true,
             "renews": "חודשי",
             "usable_output": true,
-            "enough_for_real_use": false,
-            "worthwhile": false,
-            "basis": "5 תמלולים ודוחות בחודש.",
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "5 פגישות בחודש של עד שעה, עם סיכום: עומד בסף של 5 שעות בחודש. בלי השמעת הקלטות.",
             "inference": true
           }
         }
