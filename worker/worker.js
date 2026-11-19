@@ -33,6 +33,8 @@ let schemaReady = false;
 async function ensureSchema(db) {
   if (schemaReady) return;
   await db.batch(SCHEMA.map((sql) => db.prepare(sql)));
+  // עמודה לא חובה: מייל לעדכון על הטיפול. נמחקת כשההודעה מסומנת כמטופלת. אם העמודה כבר קיימת, השגיאה מתעלמת.
+  try { await db.prepare('ALTER TABLE feedback ADD COLUMN contact TEXT').run(); } catch (e) { /* כבר קיימת */ }
   schemaReady = true;
 }
 
@@ -129,7 +131,7 @@ async function postVote(request, env, cors) {
 }
 
 /* ---------- משוב ---------- */
-const KINDS = ['bug', 'feature', 'idea', 'other'];
+const KINDS = ['bug', 'feature', 'idea', 'report', 'other'];
 const clip = (v, n) => (typeof v === 'string' ? v.slice(0, n) : '');
 async function postFeedback(request, env, cors) {
   const body = await readBody(request, LIMITS.imageMax + 20000);
@@ -139,6 +141,8 @@ async function postFeedback(request, env, cors) {
   const text = clip(body.text, LIMITS.textMax).trim();
   const kind = KINDS.includes(body.kind) ? body.kind : 'other';
   if (text.length < 3) return json({ error: 'empty' }, 400, cors);
+  const contact = clip(body.contact, 120).trim();
+  if (contact && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)) return json({ error: 'bad_contact' }, 400, cors);
   let image = null;
   if (typeof body.image === 'string' && body.image) {
     if (body.image.length > LIMITS.imageMax || !/^data:image\/(jpeg|png);base64,[A-Za-z0-9+/=]+$/.test(body.image)) return json({ error: 'bad_image' }, 400, cors);
@@ -153,8 +157,8 @@ async function postFeedback(request, env, cors) {
   ]);
   if (mine.results[0].n >= LIMITS.feedbackPerHour || all.results[0].n >= LIMITS.feedbackPerDay) return json({ error: 'too_many' }, 429, cors);
   const ctx = body.context && typeof body.context === 'object' ? JSON.stringify(body.context).slice(0, 1000) : null;
-  await db.prepare('INSERT INTO feedback (ts, voter, kind, text, tool, target, context, image) VALUES (?, ?, ?, ?, ?, ?, ?, ?)')
-    .bind(t, voter, kind, text, toolId(body.tool), clip(body.target, 120) || null, ctx, image).run();
+  await db.prepare('INSERT INTO feedback (ts, voter, kind, text, tool, target, context, image, contact) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)')
+    .bind(t, voter, kind, text, toolId(body.tool), clip(body.target, 120) || null, ctx, image, contact || null).run();
   return json({ ok: true }, 200, cors);
 }
 
@@ -171,8 +175,8 @@ async function admin(request, env, url) {
   if (request.method === 'GET' && parts[1] === 'feedback' && parts.length === 2) {
     const status = url.searchParams.get('status') || 'new';
     const q = status === 'all'
-      ? db.prepare('SELECT id, ts, kind, text, tool, target, context, status, note, image IS NOT NULL AS has_image, substr(voter, 1, 8) AS sender FROM feedback ORDER BY id DESC LIMIT 200')
-      : db.prepare('SELECT id, ts, kind, text, tool, target, context, status, note, image IS NOT NULL AS has_image, substr(voter, 1, 8) AS sender FROM feedback WHERE status = ? ORDER BY id LIMIT 200').bind(status);
+      ? db.prepare('SELECT id, ts, kind, text, tool, target, context, status, note, contact, image IS NOT NULL AS has_image, substr(voter, 1, 8) AS sender FROM feedback ORDER BY id DESC LIMIT 200')
+      : db.prepare('SELECT id, ts, kind, text, tool, target, context, status, note, contact, image IS NOT NULL AS has_image, substr(voter, 1, 8) AS sender FROM feedback WHERE status = ? ORDER BY id LIMIT 200').bind(status);
     const { results } = await q.all();
     return json({ items: results });
   }
@@ -187,7 +191,9 @@ async function admin(request, env, url) {
     const body = await readBody(request, 3000);
     const status = body && ['new', 'reported', 'fix', 'wontfix', 'done', 'spam'].includes(body.status) ? body.status : null;
     if (!status) return json({ error: 'bad_request' }, 400);
-    await db.prepare('UPDATE feedback SET status = ?, note = COALESCE(?, note) WHERE id = ?').bind(status, clip(body.note, 500) || null, Number(parts[2])).run();
+    // כשההודעה מטופלת (בוצע, לא מתקנים, ספאם) המייל נמחק
+    const wipe = ['done', 'wontfix', 'spam'].includes(status);
+    await db.prepare('UPDATE feedback SET status = ?, note = COALESCE(?, note)' + (wipe ? ', contact = NULL' : '') + ' WHERE id = ?').bind(status, clip(body.note, 500) || null, Number(parts[2])).run();
     return json({ ok: true });
   }
   if (request.method === 'GET' && parts[1] === 'votes') {

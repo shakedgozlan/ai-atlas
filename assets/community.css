@@ -46,6 +46,8 @@
 .fb label.fb-l{margin-bottom:-8px}
 .fb textarea{width:100%;min-height:128px;padding:12px 14px;border:1.5px solid var(--line-strong);border-radius:var(--r-ctl);background:var(--surface);color:var(--ink);font:inherit;line-height:1.5;resize:vertical}
 .fb textarea:focus-visible{outline-offset:0;border-color:var(--brand)}
+.fb input[type=email]{width:100%;padding:10px 14px;border:1.5px solid var(--line-strong);border-radius:var(--r-ctl);background:var(--surface);color:var(--ink);font:inherit}
+.fb input[type=email]:focus-visible{outline-offset:0;border-color:var(--brand)}
 .fb-trap{position:absolute;inset-inline-start:-9999px;width:1px;height:1px;opacity:0}
 .fb-box{display:grid;gap:8px;padding:14px 16px;border-radius:var(--r-inner);background:var(--surface)}
 .fb-pin{color:var(--ink-soft)}
