@@ -7,6 +7,23 @@
   var $ = function (sel, el) { return (el || doc).querySelector(sel); };
   var $$ = function (sel, el) { return Array.prototype.slice.call((el || doc).querySelectorAll(sel)); };
 
+  /* ---------- מקלדת המסך, בפלאפון ---------- */
+  // כשהמקלדת נפתחת היא מכסה את תחתית המסך, וחלון שעולה מלמטה נעלם מאחוריה.
+  // מודדים כמה מהמסך המקלדת תופסת, והעיצוב מרים את החלונות בדיוק בגובה הזה.
+  if (window.visualViewport) {
+    var vv = window.visualViewport;
+    var setKb = function () {
+      var kb = Math.max(0, Math.round(window.innerHeight - vv.height - vv.offsetTop));
+      var open = kb > 80;
+      root.style.setProperty('--kb', open ? kb + 'px' : '0px');
+      root.style.setProperty('--vvh', Math.round(vv.height) + 'px');
+      root.classList.toggle('kb-open', open);
+    };
+    vv.addEventListener('resize', setKb);
+    vv.addEventListener('scroll', setKb);
+    setKb();
+  }
+
   /* ---------- סגירה בגרירה למטה, בפלאפון ---------- */
   // בפלאפון החלונות עולים מלמטה, ואפשר למשוך את ראשם למטה באצבע כדי לסגור.
   // area הוא האזור שממנו מותר להתחיל גרירה; ok היא בדיקה נוספת (למשל שהתוכן לא גלול).
@@ -379,6 +396,7 @@
     });
     // לחיצה על הרקע המעומעם סוגרת. מקש היציאה והחזרת המיקוד לכפתור מטופלים על ידי הדפדפן.
     dialog.addEventListener('click', function (e) { if (e.target === dialog) dialog.close(); });
+    dragToClose(dialog, $('.finder-top', dialog));
     // בחירה בתוצאה סוגרת את החיפוש ופותחת את חלון הפרטים של הכלי
     $$('[data-open-tool]', dialog).forEach(function (b) {
       b.addEventListener('click', function () {

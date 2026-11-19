@@ -60,9 +60,10 @@
   /* כמו חלון הפרטים: 64 פיקסלים מהדף נשארים גלויים, ידית גרירה בראש, ובלי לחצן סגירה גלוי */
   .fb::before{content:"";display:block;width:40px;height:4px;margin:-20px auto 16px;border-radius:2px;background:var(--line-strong)}
   .fb.is-dragging{animation:none;transition:none}
+  .kb-open .fb{max-height:calc(var(--vvh,100dvh) - 12px) !important}
   .fb.is-settling{animation:none;transition:transform .2s cubic-bezier(.2,.8,.2,1)}
   .fb .fb-x{position:absolute;width:1px;height:1px;min-height:0;padding:0;border:0;overflow:hidden;clip-path:inset(50%)}
-  .fb{inset-block:auto 0;width:100%;max-height:calc(100dvh - 64px);padding-top:32px;border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
+  .fb{inset-block:auto 0;width:100%;bottom:var(--kb,0px);max-height:calc(100dvh - 64px);padding-top:32px;border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
 }
 
 /* מצב סימון: בוחרים כרטיס או אזור שההודעה עוסקת בו */

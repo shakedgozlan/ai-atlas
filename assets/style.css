@@ -574,8 +574,16 @@ html:not(.js) #finder-open{display:none}
   .card-head{--cp:16px;padding:16px 16px 12px}
   .sum{gap:12px}
   .sum-row{grid-template-columns:minmax(0,1fr);row-gap:0}
-  .finder{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
-  .finder-top .btn-icon span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  /* חלון החיפוש בפלאפון: כמו חלון הפרטים, עולה מלמטה עם ידית גרירה ובלי לחצן סגירה גלוי */
+  .finder{inset-block:auto 0;width:100%;max-height:calc(100dvh - 64px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
+  .finder-top{position:relative;padding-block-start:32px;touch-action:none}
+  .finder-top::before{content:"";position:absolute;inset-block-start:8px;inset-inline-start:50%;width:40px;height:4px;margin-inline-start:-20px;border-radius:2px;background:var(--line-strong)}
+  .finder-top .btn-icon{position:absolute;width:1px;min-height:0;height:1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%)}
+  .finder.is-dragging{animation:none;transition:none}
+  .finder.is-settling{animation:none;transition:transform .2s cubic-bezier(.2,.8,.2,1)}
+  /* כשהמקלדת פתוחה החלונות יושבים מעליה, ותופסים את כל הגובה שנשאר */
+  .finder,.sheet{bottom:var(--kb,0px)}
+  .kb-open .finder,.kb-open .sheet{max-height:calc(var(--vvh,100dvh) - 12px)}
   .res-cat{display:none}
   .res{grid-template-columns:2.2em minmax(0,1fr)}
   .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
