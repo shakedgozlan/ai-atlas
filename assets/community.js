@@ -204,6 +204,27 @@
     box.appendChild(h); box.appendChild(row); box.appendChild(status); box.appendChild(note); box.appendChild(here);
     $('.sheet-body', sheet).appendChild(box);
     paintVote(box);
+    // במחשב ההצבעה יושבת בראש החלון, ליד הלחצנים, כדי שהחלון ייכנס במסך בלי גלילה (בקשת שקד, 19.11.2026).
+    // בפלאפון נשאר החלק המלא בתחתית. שניהם מתעדכנים יחד, כי לשניהם data-vote.
+    var site = $('.sheet-head .btn-site', sheet);
+    if (site) {
+      var hb = el('div', 'vote vote-head');
+      hb.setAttribute('data-vote', id);
+      var hg = el('div', 'vote-btns'); hg.setAttribute('role', 'group'); hg.setAttribute('aria-label', 'הצבעה על ' + name);
+      hg.title = 'הצבעה אחת לכל כלי מכל מכשיר. לחיצה נוספת על אותה בחירה מבטלת אותה.';
+      [['up', 'כן, מומלץ', false], ['down', 'לא מומלץ', true]].forEach(function (x) {
+        var b = el('button', 'btn btn-ico vote-thumb');
+        b.type = 'button'; b.title = x[1];
+        b.setAttribute('data-vote-set', x[0]); b.setAttribute('aria-pressed', 'false');
+        b.innerHTML = thumbSvg(x[2]) + '<span class="sr-only">' + x[1] + '</span>';
+        b.addEventListener('click', function () { status.textContent = ''; castVote(id, x[0], function (msg) { status.textContent = msg; }); });
+        hg.appendChild(b);
+      });
+      var hc = el('p', 'vote-count'); hc.hidden = true;
+      hb.appendChild(hg); hb.appendChild(hc);
+      site.parentNode.insertBefore(hb, site);
+      paintVote(hb);
+    }
   }
   doc.addEventListener('click', function (e) {
     var b = e.target.closest && e.target.closest('[data-sheet-open]');

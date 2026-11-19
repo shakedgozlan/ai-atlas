@@ -172,9 +172,7 @@ const audit = (rootSel) => {
           const over = await page.locator(`#detail-${id} .sheet-scroll`).evaluate((el) => el.scrollHeight - el.clientHeight);
           // חלון עם הערות (שימו לב, למה מומלץ) רשאי לגלול עד גובה ההערות, לא יותר
           const notesH = await page.locator(`#detail-${id} .sheet-notes`).evaluateAll((els) => els.length ? Math.ceil(els[0].getBoundingClientRect().height) + 16 : 0);
-          // חלק ההצבעות נוסף לחלון בזמן ריצה (assets/community.js) ומאריך אותו; הגובה שלו מותר בנוסף, והשאלה אם לקצר אותו פתוחה מול שקד
-          const voteH = await page.locator(`#detail-${id} .sec.vote`).evaluateAll((els) => els.length ? Math.ceil(els[0].getBoundingClientRect().height) + 40 : 0);
-          note(over <= notesH + voteH, `${tag} חלון הפרטים של כלי ${id} דורש גלילה`, `${over} / ${notesH + voteH}`);
+          note(over <= notesH, `${tag} חלון הפרטים של כלי ${id} דורש גלילה`, `${over} / ${notesH}`);
         }
         await page.locator(`#detail-${id} .pt`).evaluateAll((els) => els.forEach((e) => { e.open = true; }));
         const mores = await page.locator(`#detail-${id} .more-btn`).evaluateAll((els) => els.map((e) => e.getAttribute('aria-controls')));
