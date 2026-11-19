@@ -238,6 +238,14 @@
   fab.innerHTML = ICON_FB + '<span class="fb-fab-t">משוב</span>';
   fab.title = 'באג, תכונה חסרה או רעיון לשיפור';
   doc.body.appendChild(fab);
+  // במובייל הלחצן נעלם בזמן גלילה וחוזר כשהיא נעצרת, כך שהוא לא מכסה פינה של כרטיס
+  var fabTimer = 0, fabMobile = window.matchMedia('(max-width:759px)');
+  window.addEventListener('scroll', function () {
+    if (!fabMobile.matches) return;
+    fab.classList.add('fb-away');
+    clearTimeout(fabTimer);
+    fabTimer = setTimeout(function () { fab.classList.remove('fb-away'); }, 700);
+  }, { passive: true });
 
   var dlg = el('dialog', 'fb');
   dlg.id = 'fb'; dlg.setAttribute('aria-labelledby', 'fb-h');
@@ -264,6 +272,7 @@
   if (typeof dlg.showModal !== 'function') { fab.hidden = true; return; }
 
   var form = $('#fb-form'), done = $('#fb-done'), text = $('#fb-text'), statusEl = $('#fb-status');
+  function say(t, bad) { statusEl.textContent = t; if (bad) statusEl.setAttribute('data-bad', ''); else statusEl.removeAttribute('data-bad'); statusEl.setAttribute('role', bad ? 'alert' : 'status'); }
   var pinEl = $('#fb-pin'), pickBtn = $('#fb-pick'), unpinBtn = $('#fb-unpin');
   var img = $('#fb-img'), fileIn = $('#fb-file'), noImg = $('#fb-noimg'), fileT = $('#fb-file-t');
   var kindBtns = $$('[data-kind]', dlg);
@@ -283,7 +292,7 @@
     opt = opt || {};
     if (!opt.keep) {
       state.tool = opt.tool || null; state.target = opt.target || ''; state.locked = !!opt.locked; state.image = '';
-      statusEl.textContent = '';
+      say('');
     }
     form.hidden = false; done.hidden = true;
     paintFb();
@@ -328,9 +337,9 @@
   fileIn.addEventListener('change', function () {
     var f = fileIn.files && fileIn.files[0];
     if (!f) return;
-    if (!/^image\//.test(f.type)) { statusEl.textContent = 'אפשר לצרף רק קובץ תמונה.'; fileIn.value = ''; return; }
+    if (!/^image\//.test(f.type)) { say('אפשר לצרף רק קובץ תמונה.', true); fileIn.value = ''; return; }
     var url = URL.createObjectURL(f);
-    shrink(url).then(function (d) { state.image = d; statusEl.textContent = ''; }, function () { statusEl.textContent = 'התמונה לא נקראה. אפשר לנסות תמונה אחרת.'; })
+    shrink(url).then(function (d) { state.image = d; say(''); }, function () { say('התמונה לא נקראה. אפשר לנסות תמונה אחרת.', true); })
       .then(function () { URL.revokeObjectURL(url); paintFb(); });
   });
 
@@ -386,12 +395,12 @@
     stopPick();
     state.tool = t.tool; state.target = t.target; state.image = '';
     openFeedback({ keep: true });
-    statusEl.textContent = 'מצלם את החלק שסומן…';
+    say('מצלם את החלק שסומן…');
     capture(t.node).then(function (d) {
       if (state.target !== t.target) return;
-      state.image = d; statusEl.textContent = 'צילום של החלק שסומן צורף. אפשר להסיר או להחליף אותו.';
+      state.image = d; say('צילום של החלק שסומן צורף. אפשר להסיר או להחליף אותו.');
     }, function () {
-      statusEl.textContent = 'הסימון נשמר. הצילום האוטומטי לא הצליח, אפשר לצרף תמונה ידנית.';
+      say('הסימון נשמר. הצילום האוטומטי לא הצליח, אפשר לצרף תמונה ידנית.');
     }).then(paintFb);
   }
   function onPickKey(e) { if (e.key === 'Escape') { stopPick(); openFeedback({ keep: true }); } }
@@ -431,26 +440,26 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var body = text.value.trim();
-    if (body.length < 3) { statusEl.textContent = 'צריך לכתוב כמה מילים לפני השליחה.'; text.focus(); return; }
+    if (body.length < 3) { say('צריך לכתוב כמה מילים לפני השליחה.', true); text.focus(); return; }
     var submit = $('#fb-submit');
-    submit.disabled = true; statusEl.textContent = 'שולח…';
+    submit.disabled = true; say('שולח…');
     post('/feedback', {
       kind: state.kind, text: body, tool: state.tool, target: state.target, image: state.image,
       website: form.elements.website.value,
       context: { w: window.innerWidth, h: window.innerHeight, theme: root.dataset.theme || 'auto', view: root.dataset.view || 'cards', ua: String(navigator.userAgent).slice(0, 200) },
     }).then(function (d) {
       if (d.ok) {
-        form.hidden = true; done.hidden = false; text.value = ''; state.image = ''; statusEl.textContent = '';
+        form.hidden = true; done.hidden = false; text.value = ''; state.image = ''; say('');
         $('#fb-done-h').focus();
       } else if (d.httpStatus === 429) {
-        statusEl.textContent = 'נשלחו כמה הודעות בזמן קצר. אפשר לשלוח שוב בעוד שעה.';
+        say('נשלחו כמה הודעות בזמן קצר. אפשר לשלוח שוב בעוד שעה.', true);
       } else if (d.error === 'bad_image') {
-        statusEl.textContent = 'התמונה לא התקבלה. אפשר להסיר אותה ולשלוח שוב.';
+        say('התמונה לא התקבלה. אפשר להסיר אותה ולשלוח שוב.', true);
       } else {
-        statusEl.textContent = 'ההודעה לא נשלחה. אפשר לנסות שוב.';
+        say('ההודעה לא נשלחה. אפשר לנסות שוב.', true);
       }
     }).catch(function () {
-      statusEl.textContent = 'אין חיבור לשירות כרגע. הטקסט נשאר כאן, אפשר לנסות שוב.';
+      say('לא הצלחנו להתחבר לשירות, ולכן ההודעה לא נשלחה. הטקסט נשאר כאן, אפשר לנסות שוב בעוד כמה דקות.', true);
     }).then(function () { submit.disabled = false; });
   });
 })();

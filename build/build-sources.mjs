@@ -127,6 +127,9 @@ const html = `<!doctype html>
 <title>מאיפה המידע מגיע · אטלס כלי בינה מלאכותית</title>
 <meta name="description" content="המקורות שמהם נבנה אטלס כלי הבינה המלאכותית: ${nSources(total)}, ${official} מהם רשמיים, נבדקו ב־${dateShort(data.snapshot_date)}.">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="stylesheet" href="assets/style.css?v=${cssV}">
 <link rel="stylesheet" href="assets/sources.css?v=${srcCssV}">${gaHtml}

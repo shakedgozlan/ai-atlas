@@ -49,7 +49,6 @@ const ICON = {
   warn: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6 2.6 19.8h18.8L12 3.6Z"/><path d="M12 10v4.6"/><path d="M12 17.1v.2"/></svg>',
   chevron: '<svg class="ico chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
   ext: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 4.5h6v6"/><path d="M19.5 4.5 11 13"/><path d="M18.5 14v4a1.5 1.5 0 0 1-1.5 1.5H6A1.5 1.5 0 0 1 4.5 18V7A1.5 1.5 0 0 1 6 5.5h4"/></svg>',
-  link: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 18.7l1-1"/></svg>',
   close: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>',
   viewCards: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4.5" width="6.5" height="15" rx="1.5"/><rect x="13.5" y="4.5" width="6.5" height="15" rx="1.5"/></svg>',
   viewIndex: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15M4.5 12h15M4.5 17.5h15"/></svg>',
@@ -410,7 +409,7 @@ function sheetHtml(t) {
 
   const former = has(t.former_name) ? ` <span class="sheet-former">לשעבר <bdi>${esc(t.former_name)}</bdi></span>` : '';
   return `
-  <dialog class="sheet" id="detail-${id}" data-slug="${esc(t.slug)}" aria-labelledby="detail-${id}-h" data-billing="m">
+  <dialog class="sheet" id="detail-${id}" aria-labelledby="detail-${id}-h" data-billing="m">
     <header class="sheet-head">
       <div class="sheet-head-in">
         ${logoHtml(t)}
@@ -419,7 +418,6 @@ function sheetHtml(t) {
           <p class="sheet-role">${esc(t.role)}${former}</p>
           ${tagsHtml(t, 9, ' sheet-tags sheet-tags-head')}
         </div>
-        <button type="button" class="btn btn-share" data-share title="העתקת קישור ישיר לכלי הזה">${ICON.link}<span class="share-t">העתקת קישור</span><span class="sr-only"> ישיר ל${esc(t.name)}</span></button>
         <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer" title="לאתר הרשמי">${ICON.ext}<span class="site-t">לאתר הרשמי</span><span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
         <button type="button" class="btn btn-close" data-sheet-close title="סגירה">${ICON.close}<span class="close-t">סגירה</span></button>
       </div>
@@ -573,6 +571,9 @@ const html = `<!doctype html>
 <title>אטלס כלי בינה מלאכותית</title>
 <meta name="description" content="אטלס בעברית של כלי בינה מלאכותית: מה כל כלי עושה, כמה הוא עולה ומה חשוב לדעת עליו. צילום מצב ליום ${dateShort(data.snapshot_date)}.">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;var v=localStorage.getItem('atlas-view');if(v==='index'||v==='gallery')document.documentElement.dataset.view=v}catch(e){}document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="assets/style.css?v=${cssV}">${communityApi ? `
 <meta name="atlas-api" content="${esc(communityApi)}">

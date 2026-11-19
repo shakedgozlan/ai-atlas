@@ -68,7 +68,6 @@
     if (!sheet || typeof sheet.showModal !== 'function') { btn.hidden = true; return; }
     btn.addEventListener('click', function () {
       sheet.showModal();
-      history.replaceState(null, '', '#' + sheet.getAttribute('data-slug'));
       var scroller = $('.sheet-scroll', sheet);
       if (scroller) scroller.scrollTop = 0;
       var title = $('.sheet-title', sheet);
@@ -109,57 +108,9 @@
         if (panel.getBoundingClientRect().bottom > scroller.getBoundingClientRect().bottom) scroller.scrollTo({ top: Math.max(0, top), behavior: calm ? 'auto' : 'smooth' });
       });
     });
-    // קישור ישיר: כשהחלון נפתח הכתובת משתנה ל־#שם-הכלי, וכשהוא נסגר היא חוזרת לעמוד הרגיל
-    var shareBtn = $('[data-share]', sheet);
-    if (shareBtn) {
-      var shareT = $('.share-t', shareBtn);
-      var shareTxt = shareT ? shareT.textContent : '';
-      shareBtn.addEventListener('click', function () {
-        var url = location.href.split('#')[0] + '#' + sheet.getAttribute('data-slug');
-        var done = function () {
-          if (shareT) shareT.textContent = 'הקישור הועתק';
-          setTimeout(function () { if (shareT) shareT.textContent = shareTxt; }, 2200);
-        };
-        var fallback = function () {
-          var ta = doc.createElement('textarea');
-          ta.value = url; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;opacity:0';
-          sheet.appendChild(ta); ta.select();
-          try { if (doc.execCommand('copy')) done(); } catch (e) {}
-          sheet.removeChild(ta); shareBtn.focus({ preventScroll: true });
-        };
-        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, fallback);
-        else fallback();
-      });
-    }
     sheet.addEventListener('close', function () {
-      if (location.hash === '#' + sheet.getAttribute('data-slug')) history.replaceState(null, '', location.pathname + location.search);
       moreBtns.forEach(function (x) { x.setAttribute('aria-expanded', 'false'); panelOf(x).hidden = true; });
     });
-  });
-
-  /* ---------- פתיחת כלי לפי הכתובת ---------- */
-  // כתובת כמו #runway (או #tool-2 מהקישורים הישנים) פותחת ישר את חלון הפרטים של הכלי, גם בכניסה חדשה לעמוד.
-  function openFromHash() {
-    var h = decodeURIComponent(location.hash.slice(1));
-    if (!h) return;
-    var sheet = null;
-    $$('.sheet').forEach(function (s) {
-      if (s.getAttribute('data-slug') === h || s.id === 'detail-' + h.replace(/^tool-/, '')) sheet = s;
-    });
-    if (!sheet || sheet.open || typeof sheet.showModal !== 'function') return;
-    var card = sheet.closest('.card');
-    if (card) card.scrollIntoView({ block: 'center' });
-    sheet.showModal();
-    var scroller = $('.sheet-scroll', sheet);
-    if (scroller) scroller.scrollTop = 0;
-    var title = $('.sheet-title', sheet);
-    if (title) title.focus({ preventScroll: true });
-  }
-  openFromHash();
-  window.addEventListener('hashchange', function () {
-    var open = $('.sheet[open]');
-    if (open) open.close();
-    openFromHash();
   });
 
   /* ---------- מצב בהיר וכהה ---------- */

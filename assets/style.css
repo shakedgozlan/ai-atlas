@@ -403,10 +403,10 @@ html:has(.sheet[open]){overflow:hidden}
 .sheet-body{--t-sheet:0.9375rem;display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(18px,min(3vw,2.8vh),36px);padding:clamp(16px,min(2.6vw,3vh),32px) var(--pad) clamp(20px,3.6vh,56px);font-size:var(--t-sheet);line-height:1.55;color:var(--ink-soft)}
 .sheet-head{--t-sheet:0.9375rem}
 /* בראש חלון הפרטים שני לחצני אייקון בלבד: קישור חיצוני לאתר הרשמי, ו־X לסגירה. השם נשאר לקורא מסך ובריחוף */
-.sheet-head .btn-close,.sheet-head .btn-site,.sheet-head .btn-share{padding-inline:0;width:44px;min-height:44px;flex:none;justify-content:center}
+.sheet-head .btn-close,.sheet-head .btn-site{padding-inline:0;width:44px;min-height:44px;flex:none;justify-content:center}
 /* שני הלחצנים צמודים זה לזה, כדי שייקראו כזוג אחד */
 .sheet-head .btn-site+.btn-close{margin-inline-start:calc(6px - clamp(12px,2vw,20px))}
-.sheet-head .close-t,.sheet-head .site-t,.sheet-head .share-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.sheet-head .close-t,.sheet-head .site-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .sheet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(12px,min(2.6vw,1.8vh),32px) clamp(24px,3.4vw,48px);align-items:start}
 .sec{min-width:0;overflow-wrap:break-word}
 .sec-h{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:24px;margin-bottom:8px}
@@ -589,7 +589,7 @@ html:not(.js) #finder-open{display:none}
   .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 64px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
   /* ראש החלון בפלאפון: לוגו, שם ו־X בשורה אחת, התיאור מתחתם לכל הרוחב, ואז הקישור לאתר */
-  .sheet-head-in{display:grid;grid-template-columns:36px minmax(0,1fr) 44px;align-items:center;gap:10px 12px;padding-block-start:32px}
+  .sheet-head-in{display:grid;grid-template-columns:36px minmax(0,1fr);align-items:center;gap:10px 12px;padding-block-start:32px}
   .sheet-id{display:contents}
   .sheet-head .logo{grid-column:1;grid-row:1;width:36px;height:36px}
   .sheet-title{grid-column:2;grid-row:1}
@@ -602,7 +602,6 @@ html:not(.js) #finder-open{display:none}
   .sheet-head::before{content:"";position:absolute;inset-block-start:8px;inset-inline-start:50%;width:40px;height:4px;margin-inline-start:-20px;border-radius:2px;background:var(--line-strong)}
   .sheet.is-dragging{animation:none;transition:none}
   .sheet.is-settling{animation:none;transition:transform .2s cubic-bezier(.2,.8,.2,1)}
-  .sheet-head .btn-share{grid-column:3;grid-row:1;margin-block:-4px}
   .sheet-head .site-t{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
   .pt summary{min-height:44px}
   .bill-btn{min-height:38px}
@@ -636,7 +635,7 @@ html:not(.js) #finder-open{display:none}
   .bill-btn[aria-pressed="true"]{background:Highlight;color:HighlightText}
 }
 @media print{
-  .bar,.finder,.filters,.views,.card-actions,.btn-close,.sheet-head .btn-site,.sheet-head .btn-share{display:none !important}
+  .bar,.finder,.filters,.views,.card-actions,.btn-close,.sheet-head .btn-site{display:none !important}
   .sheet{display:block !important;position:static;width:auto;height:auto;max-height:none;overflow:visible;box-shadow:none}
   .more-tabs,.bill{display:none !important}
   .more-panel[hidden]{display:block !important}
