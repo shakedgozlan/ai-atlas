@@ -324,7 +324,7 @@ html:not(.js) .filters{display:none}
 }
 .btn-site{font-weight:500;padding-inline:20px}
 /* בכרטיס: ״לאתר הרשמי״ הוא לחצן סמל, ולידו (משמאל) לחצני ההצבעה כשהם פעילים (בקשת שקד, 19.11.2026) */
-.card-quick{display:flex;align-items:center;gap:8px}
+.card-quick{display:flex;align-items:center;gap:24px}
 .card-actions .btn-ico{width:44px;padding:0;flex:none}
 
 /* ---------- תצוגות האינדקס והגלריה ---------- */
@@ -650,3 +650,8 @@ html:not(.js) #finder-open{display:none}
 /* לחצן הסמל ״לאתר הרשמי״ בכרטיס: מסגרת שקטה, כדי שייראה לחיץ גם בלי טקסט */
 :root[data-card="c"] .card-actions .btn-ico{border-color:var(--line);background:transparent;padding-inline:0;text-decoration:none}
 :root[data-card="c"] .card-actions .btn-ico:hover{border-color:var(--brand);color:var(--brand)}
+/* בפלאפון: ״פרטים נוספים״ מצטמצם מעט, כדי שהאגודלים והקישור יישארו איתו בשורה אחת גם עם הרווח הגדול */
+@media (max-width:480px){.card-actions .btn-open{padding-inline:10px}}
+/* כשהשורה בכל זאת נשברת (מסכים צרים מאוד): האגודלים מימין והקישור בקצה השמאלי */
+.card-quick{flex:1 1 auto;justify-content:flex-end}
+@media (max-width:389px){.card-actions .btn-open{flex:1 1 100%}.card-quick{justify-content:space-between}}
