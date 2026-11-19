@@ -601,7 +601,25 @@ const html = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>אטלס כלי בינה מלאכותית</title>
 <meta name="description" content="אטלס בעברית של כלי בינה מלאכותית: מה כל כלי עושה, כמה הוא עולה ומה חשוב לדעת עליו. צילום מצב ליום ${dateShort(data.snapshot_date)}.">
+<link rel="canonical" href="https://kleyai.tech/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="אטלס כלי בינה מלאכותית">
+<meta property="og:locale" content="he_IL">
+<meta property="og:url" content="https://kleyai.tech/">
+<meta property="og:title" content="אטלס כלי בינה מלאכותית">
+<meta property="og:description" content="רשימה חיה שמתעדכנת: מה חדש ומה מתאים לך. מחיר, יתרונות ומגבלות של כל כלי.">
+<meta property="og:image" content="https://kleyai.tech/assets/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="סמל המצפן של אטלס כלי בינה מלאכותית ליד שם האתר">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="אטלס כלי בינה מלאכותית">
+<meta name="twitter:description" content="רשימה חיה שמתעדכנת: מה חדש ומה מתאים לך. מחיר, יתרונות ומגבלות של כל כלי.">
+<meta name="twitter:image" content="https://kleyai.tech/assets/share.png">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;var v=localStorage.getItem('atlas-view');if(v==='index'||v==='gallery')document.documentElement.dataset.view=v}catch(e){}document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="assets/style.css?v=${cssV}">${communityApi ? `
 <meta name="atlas-api" content="${esc(communityApi)}">
@@ -665,6 +683,7 @@ ${sections}
     <ol class="foot-cats" role="list">${footerCats}</ol>
     <p class="foot-note">המידע נכון ליום הבדיקה, ${dateLong(data.snapshot_date)}. מחירים ותנאים משתנים, ולכן כדאי לבדוק באתר הרשמי של כל כלי לפני החלטה. הלוגואים שייכים לחברות ומוצגים לצורך זיהוי בלבד.</p>
     <p class="foot-src"><a href="sources.html">מאיפה המידע מגיע</a></p>
+    <p class="foot-privacy">האתר משתמש ב־Google Analytics כדי לדעת כמה אנשים מבקרים בו ובאילו עמודים. לשם כך Google שומרת קובצי עוגיות (קבצים קטנים) בדפדפן שלך. אפשר לחסום אותם בהגדרות הדפדפן או בתוסף חסימה, והאתר ימשיך לעבוד כרגיל.</p>
     <p class="foot-date">תאריך הבדיקה האחרונה: <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
   </div>
 </footer>
@@ -724,4 +743,21 @@ ${sections}
 `;
 
 writeFileSync(outPath, html);
+
+// מפת אתר ו־robots, לכתובת הקבועה של האתר. נכתבים רק בבנייה הרגילה, לא בבדיקות.
+if (!process.env.ATLAS_OUT) {
+  const site = 'https://kleyai.tech';
+  const day = String(data.snapshot_date).slice(0, 10);
+  writeFileSync(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>${site}/</loc><lastmod>${day}</lastmod></url>
+  <url><loc>${site}/sources.html</loc><lastmod>${day}</lastmod></url>
+</urlset>
+`);
+  writeFileSync(join(root, 'robots.txt'), `User-agent: *
+Allow: /
+
+Sitemap: ${site}/sitemap.xml
+`);
+}
 console.log(`${outPath}: ${total} tools, ${liveCats.length} categories, verified ${vFull}, partial ${vPart}, unverified ${vNone}`);

@@ -499,6 +499,7 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
 .cat-nav-count{font-size:var(--t-label);font-weight:500;color:var(--ink-soft);white-space:nowrap}
 .foot-note{margin-top:24px;max-width:70ch;color:var(--ink-soft)}
 .foot-src{margin-top:32px;font-size:var(--t-label);font-weight:500}
+.foot-privacy{margin-top:12px;max-width:70ch;font-size:.8125rem;color:var(--ink-faint)}
 .src-all{margin-top:16px;font-size:var(--t-label);font-weight:500}
 .foot-date{margin-top:12px;font-size:.8125rem;color:var(--ink-faint);font-variant-numeric:tabular-nums}
 
