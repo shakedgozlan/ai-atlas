@@ -238,6 +238,14 @@
   fab.innerHTML = ICON_FB + '<span class="fb-fab-t">משוב</span>';
   fab.title = 'באג, תכונה חסרה או רעיון לשיפור';
   doc.body.appendChild(fab);
+  // במובייל הלחצן נעלם בזמן גלילה וחוזר כשהיא נעצרת, כך שהוא לא מכסה פינה של כרטיס
+  var fabTimer = 0, fabMobile = window.matchMedia('(max-width:759px)');
+  window.addEventListener('scroll', function () {
+    if (!fabMobile.matches) return;
+    fab.classList.add('fb-away');
+    clearTimeout(fabTimer);
+    fabTimer = setTimeout(function () { fab.classList.remove('fb-away'); }, 700);
+  }, { passive: true });
 
   var dlg = el('dialog', 'fb');
   dlg.id = 'fb'; dlg.setAttribute('aria-labelledby', 'fb-h');
