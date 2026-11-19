@@ -1,0 +1,230 @@
+{
+ "id": null,
+ "slug": "tripo",
+ "category_id": 9,
+ "name": "Tripo",
+ "former_name": null,
+ "rename_note": null,
+ "role": "יוצר מודלים תלת־ממדיים מטקסט, מתמונה או מכמה זוויות, עם טקסטורות, רשת מרובעת, ריגינג וחלוקה לחלקים.",
+ "url": "https://www.tripo3d.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "רשת מרובעת שמוכנה לעבודה",
+   "detail": "המודל P2, שנוסף באוגוסט 2026, משדרג את P1 ומוסיף פלט של רשת מרובעת (quad mesh), שנוח יותר לעריכה בתוכנות תלת־ממד.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "כלי המשך מעבר ליצירה",
+   "detail": "לצד היצירה יש ריגינג אוטומטי, החלת אנימציות, רטופולוגיה, פריסת UV, חלוקה לחלקים, טקסטורות עד 8K והמרת פורמטים.",
+   "source_ids": [
+    "s2",
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "API עם מחיר גלוי לכל פעולה",
+   "detail": "ב־API נקודה עולה 0.01 דולר ואפשר לקנות מדולר אחד. מודל מתמונה עם טקסטורה רגילה עולה כ־30 נקודות, כלומר כ־0.30 דולר.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "תוספות איכות מייקרות כל מודל",
+   "detail": "ב־API, טקסטורה HD מוסיפה 10 נקודות, Ultra מוסיפה 20, גאומטריה HD מוסיפה 20 ורשת מרובעת מוסיפה 5.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "אין נקודות API חינמיות בעמוד המחירון",
+   "detail": "עמוד מחירון ה־API אינו מזכיר הקצאה חינמית; הנקודות נקנות מראש, מדולר אחד ומעלה.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מפתחי משחקים, אמני תלת־ממד ומפתחים שצריכים מודלים עם רשת נקייה, ריגינג ו־API.",
+ "pricing": {
+  "verification": "לא אומת",
+  "summary_line": null,
+  "model": "מנוי עם נקודות זיכוי, ו־API לפי שימוש",
+  "plans": [
+   {
+    "name": "API",
+    "price": null,
+    "price_text": "0.01 דולר לנקודה",
+    "price_short": "לפי שימוש",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "100 נקודות לדולר. מתמונה ל־3D: כ־20 נקודות בלי טקסטורה, כ־30 עם טקסטורה רגילה",
+    "notes": "רכישה מראש, מינימום דולר אחד. נקודות ה־API נפרדות ממחירי המנוי באתר, שלא אומתו.",
+    "source_ids": [
+     "s2"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": null,
+  "unverified_notes": "עמודי המחירים, העזרה והתיעוד באתר tripo3d.ai החזירו שגיאה בכל ניסיון, ולכן מחירי המנוי, מכסות הנקודות, התוכנית החינמית והרישיון שלה לא אומתו. מאומת רק מחירון ה־API באתר המפתחים."
+ },
+ "privacy": {
+  "text": "לא אומת. קיים מאמר עזרה רשמי על השאלה אם קלטים ותוצרים של משתמשים בתשלום משמשים לאימון, אך הוא לא נטען.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת. עמודי הרישיון והשימוש המסחרי באתר tripo3d.ai לא נטענו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "API מתועד באתר Tripo Developers: 100 נקודות לדולר, רכישה מדולר אחד. מודל מטקסט עולה כ־10 נקודות בלי טקסטורה וכ־20 עם טקסטורה; ריגינג אוטומטי 25 נקודות; המרת פורמט 5 עד 10. גרסת ה־API v3.0 הוצגה באפריל 2026.",
+  "source_ids": [
+   "s2",
+   "s3"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "לא אומת: עמודי האתר הרשמי לא נטענו.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Tripo",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי לא אומת, כי תנאי השימוש לא נטענו."
+ },
+ "student_benefits": {
+  "text": "לא אומת: עמוד המחירים לא נטען.",
+  "source_ids": []
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.tripo3d.ai/pricing",
+   "title": "עמוד המחירים של Tripo (לא נטען)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://developers.tripo3d.ai/en/pricing",
+   "title": "Tripo Developers: מחירון ה־API",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://developers.tripo3d.ai/en/docs/changelog",
+   "title": "Tripo Developers: יומן שינויים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://www.tripo3d.ai/help/privacy-policy/will-paid-users-inputs-and-outputs-be-used-for-ai-training",
+   "title": "מרכז העזרה של Tripo: אימון על נתוני משתמשים בתשלום (לא נטען)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "המודל P2 נוסף באוגוסט 2026 לפי יומן השינויים הרשמי, והכלי מופיע ב־3 סקירות עצמאיות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Tripo P2 (P2-20260801)",
+   "latest_version_date": "2026-08",
+   "latest_version_date_iso": null,
+   "independent_reviews": 3,
+   "evidence": "research/stage4/3d.md"
+  },
+  "hebrew": {
+   "value": "לא אומת",
+   "label": "עברית לא אומתה",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": "USD",
+   "billing": null,
+   "plan": null,
+   "verified": false,
+   "label": null,
+   "has_free_plan": null
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 3,
+    "of": 4,
+    "value": true,
+    "evidence": "research/stage4/3d.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   }
+  }
+ }
+}

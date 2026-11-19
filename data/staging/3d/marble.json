@@ -1,0 +1,313 @@
+{
+ "id": null,
+ "slug": "marble",
+ "category_id": 9,
+ "name": "Marble",
+ "former_name": null,
+ "rename_note": null,
+ "role": "יוצר עולמות תלת־ממדיים שלמים שאפשר להסתובב בהם מטקסט, מתמונה או מפנורמה, עם כלי עריכה וייצוא.",
+ "url": "https://marble.worldlabs.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "עולם שלם ולא רק אובייקט",
+   "detail": "Marble יוצר סביבה שלמה מטקסט, מתמונה אחת או מפנורמת 360 כבר בתוכנית החינמית. מ־Standard אפשר לשלב כמה קלטים ולערוך.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ייצוא כ־splat, כרשת וכווידאו",
+   "detail": "ייצוא Gaussian splats בפורמטים SPZ ו־PLY ורשתות באיכות גבוהה עם צבע קודקודים או טקסטורה, בחירה בין מערכות הצירים OpenGL ו־OpenCV, והקלטת וידאו מתוך העולם עם הגדרות איכות ורזולוציה.",
+   "source_ids": [
+    "s4",
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "API עם מחירון גלוי",
+   "detail": "ב־API, 1,250 נקודות עולות דולר אחד. עולם ב־marble-1.1 עולה 1,500 נקודות, טיוטה ב־marble-1.0-draft עולה 150, וייצוא רשת באיכות גבוהה עולה 3,500.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "בתוכנית החינמית אין זכויות מסחריות",
+   "detail": "ב־Free אפשר ליצור עד 4 עולמות, World Labs שומרת לעצמה את הזכויות בתוצרים, והמשתמש מקבל רישיון לשימוש אישי לא מסחרי בלבד.",
+   "source_ids": [
+    "s1",
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ייצוא רשת עם טקסטורה רק מ־Pro",
+   "detail": "לפי תיעוד החיוב, ייצוא רשתות עם טקסטורה באיכות גבוהה והרחבת עולמות כלולים מ־Pro. ב־Standard יש ייצוא רגיל.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות המנוי אינן נצברות",
+   "detail": "נקודות מנוי שלא נוצלו אינן עוברות לחודש הבא. נקודות שנרכשו בנפרד נשמרות שנה, ואפשר לקנות אותן רק במנוי בתשלום. נקודות האפליקציה אינן תקפות ב־API.",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים, אמני סביבות, יוצרי משחקים ווידאו שרוצים סביבה תלת־ממדית שלמה במקום אובייקט בודד.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־20 דולר לחודש (Standard). יש תוכנית חינמית עם עד 4 עולמות לשימוש לא מסחרי.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "עד 4 יצירות עולם, מטקסט, מתמונה אחת או מפנורמת 360",
+    "notes": "אי אפשר לקנות נקודות נוספות. שימוש אישי לא מסחרי בלבד.",
+    "source_ids": [
+     "s1",
+     "s3"
+    ]
+   },
+   {
+    "name": "Standard",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "20,000 נקודות זיכוי, עד 12 יצירות עולם, קלט משולב, עריכה, ייצוא והורדת עולמות מהקהילה",
+    "notes": "המחיר לקוח מדוגמת שדרוג בתיעוד החיוב, לא מטבלת מחירים. הנקודות אינן נצברות.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 35,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "עד 25 יצירות עולם, הרחבת עולמות, שיפור איכות וידאו, ייצוא רשת עם טקסטורה, זכויות מסחריות",
+    "notes": "המחיר לקוח מדוגמת שדרוג בתיעוד החיוב. מספר הנקודות לא צוין.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Max",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "מחיר לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "עד 75 יצירות עולם, לייצור בהיקף גבוה",
+    "notes": "המחיר לא צוין בתיעוד שנקרא.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free: עד 4 יצירות עולם מטקסט, מתמונה אחת או מפנורמת 360, לשימוש אישי לא מסחרי. אי אפשר לקנות נקודות נוספות.",
+  "trial": null,
+  "unverified_notes": "עמוד המחירים marble.worldlabs.ai/pricing לא נטען (תוכן שמוצג רק בסקריפט). מחירי Standard ו־Pro נלקחו מדוגמת שדרוג בתיעוד החיוב; מחיר Max, מחירים בחיוב שנתי, ומספר הנקודות ב־Pro וב־Max לא אומתו. לא אומת אם 4 העולמות בתוכנית החינמית מתחדשים."
+ },
+ "privacy": {
+  "text": "לפי תנאי השימוש, המשתמש מעניק ל־World Labs רישיון להשתמש בתוכן שלו, כולל לאימון מודלים. אצל משתמשים חינמיים הרישיון בלתי הפיך. משתמשים בתשלום יכולים לבטל אותו, גם דרך עמוד החשבון; הביטול חל מכאן והלאה ואינו מחייב הסרה ממודלים שכבר אומנו.",
+  "training_on_user_data": "כן. בתוכנית החינמית בלי אפשרות ביטול; בתוכניות בתשלום אפשר לבטל דרך עמוד החשבון.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תנאי השימוש, בחשבון חינמי World Labs שומרת את הזכויות בתוצרים והמשתמש מקבל רישיון לשימוש אישי לא מסחרי. בחשבון בתשלום המשתמש מחזיק בזכויות בתוצרים ויכול להשתמש בהם לכל מטרה, כולל מסחרית. תיעוד החיוב מציין זכויות מסחריות במפורש רק בתוכנית Pro. העדפנו את תנאי השימוש. אין בכך הגנה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s3",
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "World Labs Platform מציע API בתשלום נפרד מהאפליקציה: 1.00 דולר ל־1,250 נקודות, רכישה מינימלית של 5 דולר, והנקודות אינן פגות. עולם ב־marble-1.0 או marble-1.1 עולה 1,500 נקודות, ו־marble-1.1-plus בין 1,500 ל־3,000. תוצרי API מותרים לשימוש מסחרי לפי תנאי השימוש.",
+  "source_ids": [
+   "s2",
+   "s3"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "World Labs Technologies, Inc.",
+  "parent": null,
+  "country": null,
+  "note": "לפי תנאי השימוש חלים דיני קליפורניה ובתי המשפט במחוז סן פרנסיסקו. מדינת ההתאגדות לא נכתבה במפורש."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה רשמית לסטודנטים בעמודים שנבדקו.",
+  "source_ids": []
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://docs.worldlabs.ai/marble/support/account-billing",
+   "title": "תיעוד Marble: מנויים וחיוב",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://docs.worldlabs.ai/api/pricing",
+   "title": "תיעוד World Labs: מחירון ה־API",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://www.worldlabs.ai/terms-of-service",
+   "title": "תנאי השימוש של World Labs (עודכנו ב־21 בינואר 2026)",
+   "official": true,
+   "published": "2026-01-21",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://docs.worldlabs.ai/marble/release-notes.md",
+   "title": "תיעוד Marble: הערות גרסה",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://marble.worldlabs.ai/pricing",
+   "title": "עמוד המחירים של Marble (התוכן לא נטען)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "Marble 1.1 יצא ב־2 באפריל 2026, אבל הכלי נמצא רק בסקירה עצמאית אחת מתוך ארבע שנבדקו.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Marble 1.1 ו־Marble 1.1 Plus",
+   "latest_version_date": "April 2, 2026",
+   "latest_version_date_iso": "2026-04-02",
+   "independent_reviews": 1,
+   "evidence": "research/stage4/3d.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 20,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Standard",
+   "verified": true,
+   "label": "מ־20 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 1,
+    "of": 4,
+    "value": false,
+    "evidence": "research/stage4/3d.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   }
+  }
+ }
+}

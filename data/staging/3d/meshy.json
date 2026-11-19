@@ -1,0 +1,405 @@
+{
+ "id": null,
+ "slug": "meshy",
+ "category_id": 9,
+ "name": "Meshy",
+ "former_name": null,
+ "rename_note": null,
+ "role": "יוצר מודלים תלת־ממדיים מטקסט ומתמונות, כולל טקסטורות ואנימציה, ומייצא אותם לתוכנות תלת־ממד, למנועי משחק ולהדפסה.",
+ "url": "https://www.meshy.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "תוכנית חינמית מתחדשת עם רישיון לשימוש מסחרי",
+   "detail": "100 נקודות זיכוי בכל חודש בלי כרטיס אשראי, שמתאפסות ב־1 לחודש. המודלים בתוכנית החינמית מקבלים רישיון CC BY 4.0, שמתיר שימוש מסחרי עם קרדיט.",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ייצוא לפורמטים ולתוכנות רבות",
+   "detail": "הורדה בפורמטים fbx, obj, usdz, glb, stl, blend ו־3mf, ותוספים ל־Blender, Unity, Unreal Engine, Godot, Maya, 3ds Max ו־ZBrush, וכן שליחה לתוכנות הכנה להדפסה.",
+   "source_ids": [
+    "s1",
+    "s6"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מודל מפורט במיוחד בתוכניות בתשלום",
+   "detail": "Meshy 7.1, שהושק ב־16 בספטמבר 2026, מוסיף מצבי Ultra 2K ו־Ultra 4K, עם רשת גולמית של עד 80 מיליון משולשים ב־Ultra 4K.",
+   "source_ids": [
+    "s7"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מכסת הורדות קטנה בתוכנית החינמית",
+   "detail": "התוכנית החינמית מאפשרת 10 הורדות בחודש של מודלים מסוג Meshy 6 Lite בלבד, משימה אחת בכל פעם ועדיפות נמוכה בתור.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "המודל החדש והמצבים המפורטים רק בתשלום",
+   "detail": "הורדת מודלים של Meshy 7.1 ומצבי Ultra 2K ו־Ultra 4K דורשים מנוי בתשלום. גם שליחת מודלים דרך DCC Bridge דורשת Pro ומעלה.",
+   "source_ids": [
+    "s7",
+    "s6"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הנתונים עשויים לשמש לאימון",
+   "detail": "בכל התוכניות מלבד Enterprise, Meshy עשויה להשתמש בנתוני משתמשים אנונימיים לאימון מודלים. אפשר לבקש ביטול במייל לתמיכה.",
+   "source_ids": [
+    "s5"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "יוצרים עצמאיים, מפתחי משחקים, מעצבים ומדפיסי תלת־ממד שצריכים מודלים מוכנים לשימוש.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־20 דולר לחודש בחיוב חודשי (Pro). יש תוכנית חינמית עם 100 נקודות זיכוי בחודש.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "100 נקודות זיכוי בחודש, עד 10 מודלים בחודש, 10 הורדות של Meshy 6 Lite, משימה אחת בכל פעם",
+    "notes": "בלי כרטיס אשראי. הנקודות מתאפסות ב־1 לחודש בשעה 00:00 UTC. רישיון CC BY 4.0. הורדת מודלים מהקהילה לא כלולה.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "1,000 נקודות זיכוי בחודש, עד 100 מודלים בחודש, רישיון פרטי",
+    "notes": "מבצע למנויים חדשים: 50% הנחה על החודש הראשון. 20% הנחה על חבילות נקודות נוספות.",
+    "source_ids": [
+     "s1",
+     "s3"
+    ]
+   },
+   {
+    "name": "Premium",
+    "price": 40,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "3,000 נקודות זיכוי בחודש, עד 300 מודלים בחודש, רישיון פרטי",
+    "notes": "מבצע למנויים חדשים: 50% הנחה על החודש הראשון.",
+    "source_ids": [
+     "s1",
+     "s3"
+    ]
+   },
+   {
+    "name": "Ultra",
+    "price": 100,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "8,000 נקודות זיכוי בחודש, עד 800 מודלים בחודש, רישיון פרטי",
+    "notes": "מבצע למנויים חדשים: 50% הנחה על החודש הראשון.",
+    "source_ids": [
+     "s1",
+     "s3"
+    ]
+   },
+   {
+    "name": "Studio",
+    "price": 70,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "5,500 נקודות זיכוי משותפות בחודש, עד 550 מודלים בחודש, רישיון פרטי",
+    "notes": "תוכנית לצוותים קטנים. לא ברור מהעמוד אם המחיר הוא למושב או לחשבון.",
+    "source_ids": [
+     "s1",
+     "s3"
+    ]
+   },
+   {
+    "name": "Starter",
+    "price": null,
+    "price_text": "המחיר לא פורסם בעמוד שנבדק",
+    "price_short": "מחיר לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "250 נקודות זיכוי ו־20 הורדות",
+    "notes": "מוצעת רק במדינות מתפתחות נבחרות לפי מרכז העזרה. המחיר לא הופיע.",
+    "source_ids": [
+     "s3"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "נפח נקודות מותאם ותמיכה ייעודית",
+    "notes": null,
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free קבועה בלי כרטיס אשראי: 100 נקודות זיכוי שמתחדשות בכל חודש, עד 10 מודלים ו־10 הורדות של Meshy 6 Lite בחודש. המודלים ברישיון CC BY 4.0.",
+  "trial": null,
+  "unverified_notes": "מחיר בחיוב שנתי לא אומת: עמוד המחירים מציג בחיוב שנתי את אותם מחירים כמו בחיוב חודשי, ואילו השאלות הנפוצות באותו עמוד מזכירות 20% הנחה בתוכניות שנתיות. מחיר Starter ומחיר חבילות נקודות נוספות לא אומתו. לא ברור אם Studio מתומחרת למושב."
+ },
+ "privacy": {
+  "text": "לפי מרכז העזרה, בכל התוכניות שנרכשות ישירות באתר (פרטיות או לצוותים, בלי הזמנת Enterprise) Meshy עשויה להשתמש בנתוני משתמשים אנונימיים לאימון מודלים. אפשר לבקש ביטול במייל ל־support@meshy.ai. נתוני לקוחות Enterprise אינם משמשים לאימון. המאמר אינו מתייחס במפורש לחשבונות חינמיים או להנחיות טקסט.",
+  "training_on_user_data": "כן, בנתונים אנונימיים, בכל התוכניות מלבד Enterprise, עם אפשרות לבקש ביטול במייל.",
+  "source_ids": [
+   "s5"
+  ]
+ },
+ "commercial_rights": {
+  "text": "בתוכנית Free המודלים ברישיון CC BY 4.0, שמתיר שימוש מסחרי עם קרדיט ל־Meshy. בתוכניות בתשלום המשתמש מקבל בעלות פרטית מלאה על המודלים, בתנאי שלא פרסם אותם בקהילת Meshy ושלא הפר זכויות של אחרים. אין בכך הגנה מפני תביעות זכויות יוצרים של צד שלישי.",
+  "watermark": null,
+  "source_ids": [
+   "s1",
+   "s2",
+   "s4"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "יש REST API, שרת MCP שדורש מפתח API, כלי שורת פקודה meshy-cli ותוספים לסוכני בינה מלאכותית. לפי מרכז העזרה, Pro מיועדת למי שצריך גישה ל־API. מחירון ה־API לא נבדק.",
+  "source_ids": [
+   "s6",
+   "s3"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Blender",
+   "Unity",
+   "Unreal Engine",
+   "Godot",
+   "Maya",
+   "3ds Max",
+   "ZBrush",
+   "Cascadeur",
+   "ComfyUI",
+   "Omniverse ו־Isaac Sim",
+   "Roblox Studio",
+   "Bambu Studio",
+   "OrcaSlicer",
+   "Ultimaker Cura",
+   "ChatGPT",
+   "Codex",
+   "שרת MCP",
+   "תוסף ל־Chrome"
+  ],
+  "source_ids": [
+   "s6"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "תוסף לדפדפן",
+   "שורת פקודה"
+  ],
+  "source_ids": [
+   "s1",
+   "s6"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית. בעמודים הרשמיים שנבדקו אין רשימת שפות ממשק.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Meshy",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי המלא לא אומת. ההודעה לעיתונות מ־2026 נושאת את שורת המקום Silicon Valley, Calif."
+ },
+ "student_benefits": {
+  "text": "עמוד המחירים מקשר ל־Education Program, אך לא מציג מחיר או הנחה לסטודנטים. פרטי התוכנית לא אומתו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://meshy.ai/pricing",
+   "title": "עמוד המחירים של Meshy",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://docs.meshy.ai/en/webapp/pricing",
+   "title": "תיעוד Meshy: מחירים ונקודות זיכוי באפליקציית הרשת",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://help.meshy.ai/en/articles/12062933-what-are-your-prices-and-plans-offered-and-do-you-have-monthly-annual-plans",
+   "title": "מרכז העזרה של Meshy: מחירים ותוכניות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://help.meshy.ai/en/articles/10137554-what-is-the-ownership-of-the-generated-models",
+   "title": "מרכז העזרה של Meshy: בעלות על המודלים שנוצרו",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://help.meshy.ai/en/articles/15724182-is-meshy-safe-and-private-data-and-training-faq",
+   "title": "מרכז העזרה של Meshy: נתונים ואימון מודלים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s6",
+   "url": "https://www.meshy.ai/integrations",
+   "title": "עמוד השילובים והתוספים של Meshy",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s7",
+   "url": "https://www.webull.com/news/15616957784278016",
+   "title": "הודעה לעיתונות של Meshy (PR Newswire): Meshy 7.1 ו־Mora",
+   "official": true,
+   "published": "2026-09-21",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s8",
+   "url": "https://www.newsfilecorp.com/release/270549",
+   "title": "הודעה לעיתונות של Meshy (Newsfile): Meshy 6 Preview",
+   "official": true,
+   "published": "2025-10-16",
+   "checked": "2026-11-18",
+   "stale": true
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "Meshy 7.1 הושק ב־16 בספטמבר 2026, והכלי מופיע ב־3 סקירות עצמאיות בחלון הזמן.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Meshy 7.1",
+   "latest_version_date": "September 16",
+   "latest_version_date_iso": "2026-09-16",
+   "independent_reviews": 3,
+   "evidence": "research/stage4/3d.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 20,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־20 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר",
+    "תוסף לדפדפן",
+    "שורת פקודה"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 3,
+    "of": 4,
+    "value": true,
+    "evidence": "research/stage4/3d.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "100 נקודות זיכוי שמתחדשות בכל חודש בתוכנית Free.",
+    "evidence": "research/stage4/3d.md"
+   }
+  }
+ }
+}
