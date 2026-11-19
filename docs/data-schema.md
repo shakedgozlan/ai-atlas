@@ -43,10 +43,10 @@
 - `sources`: לכל מקור `id`, `url`, `title`, `official` (אמת או שקר), `published` (אם ידוע), `checked` (תאריך הבדיקה), `stale` (אמת כשהמקור ישן).
 - `filters`: ערכים קצרים לסננים ולחיפוש באתר. כולם נגזרים משאר השדות או ממחקר נפרד, ואינם מחליפים אותם.
   - `new_notable`: `value` (אמת, שקר, או ריק כשלא אומת) לפי ההגדרה בסעיף 4 בקובץ הפרומפט, `basis` (משפט קצר), `launch_date` (כפי שכתוב במקור, או ריק), `launched_in_window` (האם הכלי עצמו הושק ב־18 החודשים שלפני יום הבדיקה; ריק כשלא אומת), `latest_version`, `latest_version_date` (כפי שכתוב במקור), `latest_version_date_iso` (אותו תאריך בתבנית שנה־חודש־יום, או ריק), `independent_reviews` (מספר הסקירות העצמאיות שנמצאו), `evidence` (קובץ המחקר).
-  - `hebrew`: `value` (״נתמכת לפי המקור״, ״המקור לא מזכיר עברית״ או ״לא אומת״), `label` (קצר לתצוגה), `supported` (אמת, שקר או ריק; ריק פירושו שהמקור לא מזכיר עברית, ולא שאין תמיכה).
+  - `hebrew`: `value` (״נתמכת לפי המקור״, ״לא נתמכת לפי המקור״ כשמקור רשמי אומר זאת במפורש, ״המקור לא מזכיר עברית״ או ״לא אומת״), `label` (קצר לתצוגה), `supported` (אמת, שקר או ריק; ריק פירושו שהמקור לא מזכיר עברית, ולא שאין תמיכה).
   - `starting_price`: `amount`, `currency`, `billing`, `plan`, `verified` (אמת רק כשהמחיר הרגיל אומת ממקור רשמי), `label` (קצר לתצוגה), `has_free_plan` (אמת, שקר או ריק).
   - `tags`: ראיות לתגים שבכרטיס, לפי הכללים ב־research/tags.md. `review_roundups` (`count`, `of`, `value`), `popular` (`value`, `basis`), `free_renewing` (`value`, `basis`). התגים ״מודל חדש״ ו״מחיר נמוך״ מחושבים בבנייה מ־`new_notable` ומ־`starting_price`.
-  - `platforms`: `verified` ו־`unverified`, רשימות מתוך ״אתר״, ״iOS״, ״Android״, ״Mac״, ״אפליקציות לנייד״.
+  - `platforms`: `verified` ו־`unverified`, רשימות מתוך ״אתר״, ״iOS״, ״Android״, ״Mac״, ״Windows״, ״אפליקציות לנייד״, ״תוסף לדפדפן״, ״שורת פקודה״, ״תוסף לעורך קוד״.
 - `pricing.superseded_plans`: תוכניות ממחירון רשמי ישן שהוחלף, באותו מבנה של `plans`. לתיעוד בלבד, לא לתצוגה.
 - `plans[].price_short`: מחיר קצר לתצוגה בכרטיס כשאין מחיר מספרי אחד, לצד `price_text` המלא.
 - `checked_date`: תאריך הבדיקה של הכלי.

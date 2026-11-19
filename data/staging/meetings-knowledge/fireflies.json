@@ -1,0 +1,297 @@
+{
+ "id": null,
+ "slug": "fireflies",
+ "category_id": 13,
+ "name": "Fireflies.ai",
+ "former_name": null,
+ "rename_note": null,
+ "role": "עוזר פגישות שמצטרף לשיחות, מתמלל ומסכם אותן, ומאפשר חיפוש וצ'אט על כל הפגישות.",
+ "url": "https://fireflies.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "תמלול וסיכומים בעברית",
+   "detail": "עברית מופיעה ברשימת השפות הרשמית, שחלה על תמלול ועל סיכומים. בסך הכול יותר מ־100 שפות.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית רחבה",
+   "detail": "Free כוללת תמלול ללא הגבלה, סיכומים מוגבלים, העלאת קבצים, אפליקציות למחשב ולנייד, תוסף ל־Chrome וגישה ל־API.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "לא מאמנת על תוכן הפגישות",
+   "detail": "לפי מרכז העזרה, Fireflies לא משתמשת בנתוני הפגישות לאימון מודלים, וספקי הבינה המלאכותית שלה מנועים מכך בחוזה.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מכסת אחסון קטנה בחינם",
+   "detail": "Free מוגבלת ל־400 דקות אחסון לכל הצוות, להקלטה של עד שעתיים, בלי הקלטת וידאו ובלי הורדת תמלולים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "המחיר המפורסם הוא לחיוב שנתי",
+   "detail": "Pro עולה 10 דולר למושב לחודש בחיוב שנתי. המחיר בחיוב חודשי לא סומן בבירור בעמוד.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים וצוותים שרוצים תמלול, סיכום וחיפוש של פגישות, כולל בעברית.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־10 דולר למושב לחודש בחיוב שנתי. יש תוכנית חינמית עם תמלול ללא הגבלה ו־400 דקות אחסון לצוות.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למושב",
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "תמלול ללא הגבלה, סיכומי AI מוגבלים, 400 דקות אחסון לצוות, 20 נקודות AI, הקלטה עד שעתיים, גישה ל־API",
+    "notes": "\"Free forever\". בלי הקלטת וידאו ובלי הורדת תמלולים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 10,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למושב",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "תמלול וסיכומים ללא הגבלה, 8,000 דקות אחסון למושב, 20 נקודות AI, הקלטת וידאו והורדת תמלולים",
+    "notes": "ליד המחיר מופיע מחיר מחוק של 18 דולר, שהעמוד לא מסמן כמחיר החודשי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": 19,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למושב",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "תמלול, סיכומים ואחסון ללא הגבלה, 30 נקודות AI",
+    "notes": "מחיר מחוק של 29 דולר מופיע לצדו.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": 39,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למושב",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "תמלול, סיכומים ואחסון ללא הגבלה, 50 נקודות AI",
+    "notes": "חיוב שנתי בלבד.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Free חינמית ללא הגבלת זמן: תמלול ללא הגבלה ביותר מ־100 שפות, סיכומים מוגבלים, 400 דקות אחסון לצוות, 20 נקודות AI, הקלטה עד שעתיים, העלאת קבצים, אפליקציות ו־API. בלי הקלטת וידאו ובלי הורדת תמלולים.",
+  "trial": null,
+  "unverified_notes": "המחירים בחיוב חודשי לא סומנו בבירור (מוצגים מחירים מחוקים של 18 ו־29 דולר). העמוד מציג את סימן הדולר בלי לציין מטבע. לא אומת אם 20 נקודות ה־AI מתחדשות."
+ },
+ "privacy": {
+  "text": "לפי מרכז העזרה, Fireflies לא משתמשת בנתוני הפגישות לאימון מודלים, וספקי ה־AI שלה מנועים מכך בחוזה. הבוט Fireflies Notetaker מצטרף לפגישות לפי ההגדרות, ואינו מצטרף אם משתתף אחד ביקש זאת. באפליקציית המחשב אפשר לרשום פגישה בלי שהבוט יצטרף כמשתתף. אפשר להגדיר מחיקה אוטומטית. החברה מחזיקה בתקן ISO/IEC 42001.",
+  "training_on_user_data": "לא, לפי מרכז העזרה.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי מרכז העזרה, המשתמש שומר על בעלות מלאה על ההקלטות והתמלולים.",
+  "watermark": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "עמוד המחירים מציין גישה ל־API כבר בתוכנית Free. התיעוד לא נבדק.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Zoom",
+   "Google Meet",
+   "Microsoft Teams"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "מחשב",
+   "iOS",
+   "Android",
+   "תוסף ל־Chrome",
+   "Mac",
+   "Windows"
+  ],
+  "source_ids": [
+   "s1",
+   "s4"
+  ]
+ },
+ "hebrew": {
+  "text": "עברית נתמכת לפי המקור: היא מופיעה ברשימת השפות הרשמית (\"Hebrew | he\"), שחלה על תמלול פגישות ועל סיכומים. תמיכה בתצוגה מימין לשמאל לא נבדקה.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "company": {
+  "name": "Fireflies.ai",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי לא אומת."
+ },
+ "student_benefits": {
+  "text": "עמוד המחירים לא מציג הנחה לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://fireflies.ai/pricing",
+   "title": "עמוד המחירים של Fireflies",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://guide.fireflies.ai/articles/7434774675-responsible-and-secure-meeting-notetaking-with-fireflies",
+   "title": "מרכז העזרה של Fireflies: תיעוד פגישות אחראי ומאובטח",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://guide.fireflies.ai/articles/2973706448-learn-about-fireflies-supported-languages",
+   "title": "מרכז העזרה של Fireflies: שפות נתמכות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://fireflies.ai/blog/introducing-fireflies-talk",
+   "title": "בלוג Fireflies: הכרזה על Fireflies Talk",
+   "official": true,
+   "published": "2026-09-29",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "כלי ותיק שהוסיף ב־29 בספטמבר 2026 הכתבה קולית חינמית (Fireflies Talk), ומופיע ב־3 מתוך 6 סקירות עצמאיות.",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "Fireflies Talk",
+   "latest_version_date": "September 29, 2026",
+   "latest_version_date_iso": "2026-09-29",
+   "evidence": "research/stage4/meetings-knowledge.md",
+   "independent_reviews": 3
+  },
+  "hebrew": {
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
+  },
+  "starting_price": {
+   "amount": 10,
+   "currency": "USD",
+   "billing": "שנתי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־10 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "iOS",
+    "Android",
+    "Mac",
+    "Windows",
+    "תוסף לדפדפן"
+   ],
+   "unverified": [
+    "אתר"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 3,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/meetings-knowledge.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/meetings-knowledge.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": "התמלול בחינם אינו מוגבל, ולא אומת אם נקודות ה־AI מתחדשות.",
+    "evidence": "research/stage4/meetings-knowledge.md"
+   }
+  }
+ }
+}
