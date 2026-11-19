@@ -1,0 +1,44 @@
+{
+  "looka": {
+    "file": "logos/looka.svg",
+    "file_dark": null,
+    "note": "סמל בלבד, בלי שם המותג. קובץ וקטורי ששקד סיפק ב־19 בנובמבר 2026. צבעוני, עם רקע מלא.",
+    "source_url": null,
+    "missing_reason": null
+  },
+  "quillbot": {
+    "file": "logos/quillbot.svg",
+    "file_dark": null,
+    "note": "סמל בלבד, בלי שם המותג. קובץ וקטורי ששקד סיפק ב־19 בנובמבר 2026. צבעוני, עם רקע מלא.",
+    "source_url": null,
+    "missing_reason": null
+  },
+  "microsoft-copilot-studio": {
+    "file": "logos/microsoft-copilot-studio.svg",
+    "file_dark": null,
+    "note": "סמל בלבד, בלי שם המותג. קובץ וקטורי ששקד סיפק ב־19 בנובמבר 2026. צבעוני.",
+    "source_url": null,
+    "missing_reason": null
+  },
+  "adobe-express": {
+    "file": "logos/adobe-express.svg",
+    "file_dark": null,
+    "note": "סמל בלבד, בלי שם המותג. קובץ וקטורי ששקד סיפק ב־19 בנובמבר 2026. צבעוני, עם רקע מלא.",
+    "source_url": null,
+    "missing_reason": null
+  },
+  "marble": {
+    "file": "logos/marble.svg",
+    "file_dark": "logos/marble-dark.svg",
+    "note": "סמל בלבד, בלי שם המותג. קובץ וקטורי ששקד סיפק ב־19 בנובמבר 2026. בצבע אחד, עם גרסה כהה ולבנה. הקובץ שסופק היה לבן; הגרסה הכהה נוצרה ממנו בהחלפת הצבע בלבד.",
+    "source_url": null,
+    "missing_reason": null
+  },
+  "tldv": {
+    "file": "logos/tldv.svg",
+    "file_dark": null,
+    "source_url": null,
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. קובץ וקטורי ששקד סיפק ב־19 בנובמבר 2026. צבעוני, עם רקע מלא."
+  }
+}
