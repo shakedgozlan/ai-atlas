@@ -84,9 +84,7 @@
   // הצבעה אחת, משני מקומות: הכרטיס בדף הראשי וחלון הפרטים. שניהם מתעדכנים יחד.
   var busy = {};
   function paintCardVote(id) {
-    var card = doc.getElementById('tool-' + id);
-    if (!card) return;
-    $$('.card-vote [data-vote-set]', card).forEach(function (b) {
+    $$('.card-vote[data-vote="' + id + '"] [data-vote-set]').forEach(function (b) {
       b.setAttribute('aria-pressed', String(mine[id] === b.getAttribute('data-vote-set')));
       b.disabled = !!busy[id];
     });
@@ -151,14 +149,10 @@
   function thumbSvg(down) {
     return '<svg class="ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"' + (down ? ' style="transform:scaleY(-1)"' : '') + '>' + THUMB + '</svg>';
   }
-  // לחצני אגודל בכל כרטיס, מימין ללחצן ״לאתר הרשמי״ וברווח גדול ממנו פי שלושה מהרווח שביניהם (בקשת שקד, 19.11.2026)
-  $$('.card').forEach(function (card) {
-    var quick = $('.card-quick', card);
-    if (!quick) return;
-    var id = card.id.replace('tool-', '');
-    var nm = $('.name bdi', card);
-    var name = nm ? nm.textContent : '';
+  // אגודלי ההצבעה: אותם לחצנים בכרטיס ובראש חלון הפרטים
+  function makeThumbs(id, name) {
     var group = el('div', 'card-vote');
+    group.setAttribute('data-vote', id);
     group.setAttribute('role', 'group'); group.setAttribute('aria-label', 'הצבעה על ' + name);
     var live = el('span', 'sr-only'); live.setAttribute('role', 'status');
     [['up', 'ממליץ', false], ['down', 'לא ממליץ', true]].forEach(function (x) {
@@ -174,6 +168,16 @@
       group.appendChild(b);
     });
     group.appendChild(live);
+    return group;
+  }
+  // לחצני אגודל בכל כרטיס, מימין ללחצן ״לאתר הרשמי״ וברווח גדול ממנו פי שלושה מהרווח שביניהם (בקשת שקד, 19.11.2026)
+  $$('.card').forEach(function (card) {
+    var quick = $('.card-quick', card);
+    if (!quick) return;
+    var id = card.id.replace('tool-', '');
+    var nm = $('.name bdi', card);
+    var name = nm ? nm.textContent : '';
+    var group = makeThumbs(id, name);
     quick.insertBefore(group, quick.firstChild);
     paintCardVote(id);
   });
@@ -185,23 +189,16 @@
     var name = nameEl ? nameEl.textContent : '';
     var box = el('section', 'sec vote');
     box.setAttribute('data-vote', id);
-    var h = el('div', 'sec-h'); h.appendChild(el('h4', '', 'הכלי הזה שווה המלצה?'));
+    var h = el('div', 'sec-h'); h.appendChild(el('h4', '', 'מה חושבים הגולשים'));
     var count = el('p', 'vote-count'); count.hidden = true;
-    var btns = el('div', 'vote-btns'); btns.setAttribute('role', 'group'); btns.setAttribute('aria-label', 'הצבעה על ' + name);
-    var status = el('p', 'vote-status'); status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
-    [['up', 'כן, מומלץ'], ['down', 'לא מומלץ']].forEach(function (x) {
-      var b = el('button', 'btn vote-btn', x[1]);
-      b.type = 'button'; b.setAttribute('data-vote-set', x[0]); b.setAttribute('aria-pressed', 'false');
-      b.addEventListener('click', function () { status.textContent = ''; castVote(id, x[0], function (msg) { status.textContent = msg; }); });
-      btns.appendChild(b);
-    });
-    var note = el('p', 'vote-note', 'הצבעה אחת לכל כלי מכל מכשיר. לחיצה נוספת על אותה בחירה מבטלת אותה. כתובת הרשת לא נשמרת: נשמרת רק טביעה מעורבלת שלה, שאי אפשר לשחזר ממנה את הכתובת.');
+    // ההצבעה עצמה בראש החלון, באותם אגודלים כמו בכרטיס
+    var head = $('.sheet-head-in', sheet), site = head && $('.btn-site', head);
+    if (head && site) { var g = makeThumbs(id, name); g.classList.add('sheet-thumbs'); head.insertBefore(g, site); paintCardVote(id); }
+    var note = el('p', 'vote-note', 'ההצבעה נעשית באגודלים בראש החלון: אחת לכל כלי מכל מכשיר, ולחיצה נוספת על אותה בחירה מבטלת אותה. כתובת הרשת לא נשמרת: נשמרת רק טביעה מעורבלת שלה, שאי אפשר לשחזר ממנה את הכתובת.');
     var here = el('button', 'btn btn-quiet vote-fb', 'משהו כאן לא מדויק? אפשר לכתוב לנו');
     here.type = 'button';
     here.addEventListener('click', function () { openFeedback({ tool: Number(id), target: 'חלון הפרטים של ' + name, locked: true }); });
-    var row = el('div', 'vote-row');
-    row.appendChild(btns); row.appendChild(count);
-    box.appendChild(h); box.appendChild(row); box.appendChild(status); box.appendChild(note); box.appendChild(here);
+    box.appendChild(h); box.appendChild(count); box.appendChild(note); box.appendChild(here);
     $('.sheet-body', sheet).appendChild(box);
     paintVote(box);
   }
