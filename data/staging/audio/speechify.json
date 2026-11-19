@@ -62,6 +62,14 @@
     "s1"
    ],
    "inference": false
+  },
+  {
+   "lead": "ההקראה אינה לשימוש מסחרי",
+   "detail": "לפי תנאי השימוש, רק קריינות מ־Speechify Voice Over Studio מותרת לשימוש מסחרי. Studio מתומחרת בעמוד נפרד שלא נקרא.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
   }
  ],
  "audience": "סטודנטים וקוראים שרוצים להאזין לחומרי קריאה, ובהם אנשים עם דיסלקציה או קשיי קריאה.",
@@ -118,18 +126,20 @@
   ],
   "free_tier": "תוכנית Free: הקראה עד מהירות 1.5x ו־10 קולות רובוטיים, המרת טקסט לדיבור בלבד.",
   "trial": null,
-  "unverified_notes": "מחירי Speechify Studio וה־API מופיעים בעמודים נפרדים שלא נקראו. מכסות שימוש לא צוינו. המטבע מוצג כסימן $ בלבד. זכויות שימוש מסחרי, פרטיות ורשימת השפות לא נקראו."
+  "unverified_notes": "מחירי Speechify Studio וה־API מופיעים בעמודים נפרדים שלא נקראו. מכסות שימוש לא צוינו. המטבע מוצג כסימן $ בלבד. מדיניות הפרטיות ורשימת השפות לא נקראו."
  },
  "privacy": {
-  "text": "לא אומת.",
+  "text": "לא אומת. תנאי השימוש אינם מזכירים במפורש אימון מודלים, אך מתירים ל־Speechify להשתמש בתוכן המשתמשים \"for our internal business purposes\" ומעניקים לה רישיון רחב לעשות בו שימוש. מדיניות הפרטיות לא נקראה.",
   "training_on_user_data": null,
-  "source_ids": []
+  "source_ids": [
+   "s2"
+  ]
  },
  "commercial_rights": {
-  "text": "לא אומת: עמוד המחירים אינו מתייחס לשימוש מסחרי באודיו.",
+  "text": "לפי תנאי השימוש (עודכנו ב־1 ביולי 2025), השירותים \"are not intended for your commercial use\", למעט Speechify Voice Over Studio, שבו מותר להשתמש בקריינות AI למטרות מסחריות. התנאים אינם מציינים אילו תוכניות של Studio כוללות זאת, ויצירת אודיו להפצה ציבורית בלי הרישיון המסחרי של Studio עלולה להביא להשעיית החשבון. אפליקציית ההקראה (Free ו־Premium) אינה מיועדת לשימוש מסחרי.",
   "watermark": null,
   "source_ids": [
-   "s1"
+   "s2"
   ]
  },
  "developer_access": {
@@ -154,16 +164,17 @@
   "source_ids": []
  },
  "hebrew": {
-  "text": "לא אומת: עמוד המחירים מציין יותר מ־60 שפות בלי רשימה.",
+  "text": "לפי פוסט בבלוג של Speechify מ־2022 (מקור ישן), \"Speechify can assist with your Hebrew TTS needs\", בהקראה באפליקציות לנייד ובתוספי הדפדפן. הפוסט אינו מזכיר עברית ב־Speechify Studio. עמוד המחירים העדכני מציין יותר מ־60 שפות בלי רשימה.",
   "source_ids": [
+   "s4",
    "s1"
   ]
  },
  "company": {
-  "name": "Speechify",
+  "name": "Speechify, Inc.",
   "parent": null,
-  "country": null,
-  "note": "השם המשפטי לא אומת."
+  "country": "ארצות הברית",
+  "note": "לפי תנאי השימוש, הכתובת במיאמי, פלורידה, והתנאים כפופים לדין האמריקאי ולדין מדינת פלורידה."
  },
  "student_benefits": {
   "text": "עמוד המחירים אינו מציין מחיר לסטודנטים. הוא מקשר לעמודי Education ו־Speechify for Enterprise & EDU, שלא נקראו.",
@@ -180,25 +191,52 @@
    "published": null,
    "checked": "2026-11-18",
    "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://speechify.com/terms",
+   "title": "תנאי השימוש של Speechify (עודכנו ב־1 ביולי 2025)",
+   "official": true,
+   "published": "2025-07-01",
+   "checked": "2026-11-18",
+   "stale": true
+  },
+  {
+   "id": "s3",
+   "url": "https://a16z.com/100-gen-ai-apps-7/",
+   "title": "a16z: Top 100 Gen AI Consumer Apps, המהדורה השביעית (5 באוקטובר 2026)",
+   "official": false,
+   "published": "2026-10-05",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://speechify.com/blog/text-to-speech-hebrew/",
+   "title": "הבלוג של Speechify: הקראה בעברית (פורסם ב־2 באוקטובר 2022)",
+   "official": true,
+   "published": "2022-10-02",
+   "checked": "2026-11-18",
+   "stale": true
   }
  ],
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
    "value": null,
-   "basis": null,
+   "basis": "מופיע ב־2 מתוך 6 סקירות עצמאיות, אך תאריך הגרסה האחרונה לא אומת.",
    "launch_date": null,
    "launched_in_window": null,
    "latest_version": null,
    "latest_version_date": null,
    "latest_version_date_iso": null,
-   "independent_reviews": null,
+   "independent_reviews": 2,
    "evidence": "research/stage4/audio.md"
   },
   "hebrew": {
-   "value": "לא אומת",
-   "label": "עברית לא אומתה",
-   "supported": null
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
   },
   "starting_price": {
    "amount": 29,
@@ -218,14 +256,14 @@
   },
   "tags": {
    "review_roundups": {
-    "count": null,
-    "of": 0,
-    "value": null,
+    "count": 2,
+    "of": 6,
+    "value": false,
     "evidence": "research/stage4/audio.md"
    },
    "popular": {
-    "value": false,
-    "basis": null,
+    "value": true,
+    "basis": "מופיעה ברשימת 50 האפליקציות המובילות במהדורה השביעית של a16z (5 באוקטובר 2026, לפי Similarweb ו־Sensor Tower); המקום לא צוין בטקסט.",
     "evidence": "research/stage4/audio.md"
    },
    "free_renewing": {

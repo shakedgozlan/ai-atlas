@@ -22,15 +22,42 @@
  },
  "strengths": [
   {
-   "lead": "תוכנית חינמית עם העלאות חודשיות",
-   "detail": "לפי השאלות הנפוצות, יש שכבה חינמית עם מספר מוגבל של העלאות בכל חודש.",
+   "lead": "הפרדת ערוצים בסיסית גם בחינם",
+   "detail": "לפי מרכז העזרה, חשבון Free מפריד לשירה, תופים, בס ושאר הכלים. התוכנית החינמית מוגבלת במספר ההעלאות בכל חודש.",
    "source_ids": [
+    "s2",
     "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "קבצים ארוכים ב־Premium",
+   "detail": "לפי מרכז העזרה, Premium כוללת העלאות ללא הגבלה בכפוף לתנאי השימוש, והפרדת ערוצים בקבצים של עד 20 דקות.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "כלים מקצועיים ב־Pro",
+   "detail": "Pro מוסיפה ייצוא WAV ב־48kHz/24bit, הפרדה של דיאלוג, אפקטים ופסקול, הפרדת חלקי תופים ו־Voice Studio להחלפת גוון קול.",
+   "source_ids": [
+    "s3"
    ],
    "inference": false
   }
  ],
  "limitations": [
+  {
+   "lead": "מחירים מוצגים רק אחרי התחברות",
+   "detail": "עמוד המחירים הציבורי מפנה לטבלה ב־studio.moises.ai שנפתחת רק אחרי התחברות, ועמודי העזרה על Premium ו־Pro אינם מציינים מחיר.",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3"
+   ],
+   "inference": false
+  },
   {
    "lead": "העלאות ללא הגבלה רק בתשלום",
    "detail": "לפי השאלות הנפוצות, פונקציונליות מלאה והעלאות ללא הגבלה מחייבות מנוי בתשלום.",
@@ -40,10 +67,10 @@
    "inference": false
   },
   {
-   "lead": "טבלת המחירים המלאה דורשת התחברות",
-   "detail": "העמוד הציבורי מפנה לטבלה ב־studio.moises.ai שנפתחת רק אחרי התחברות.",
+   "lead": "חלק מהכלים שמורים ל־Pro",
+   "detail": "לפי מרכז העזרה, הפרדת Multimedia Tracks והפרדת חלקי תופים זמינות רק ב־Pro.",
    "source_ids": [
-    "s1"
+    "s3"
    ],
    "inference": false
   }
@@ -52,21 +79,74 @@
  "pricing": {
   "verification": "לא אומת",
   "summary_line": null,
-  "model": null,
-  "plans": [],
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "מספר מוגבל של העלאות בחודש, הפרדה לשירה, תופים, בס ושאר הכלים",
+    "notes": "מספר ההעלאות לא צוין.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Premium",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "העלאות ללא הגבלה בכפוף לתנאי השימוש, הפרדת ערוצים בקבצים של עד 20 דקות",
+    "notes": "המחיר מוצג רק בטבלה שמחייבת התחברות.",
+    "source_ids": [
+     "s2",
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "ייצוא WAV ב־48kHz/24bit, עדיפות בעיבוד, מודלי Hi-Fi, Multimedia Tracks, הפרדת חלקי תופים, Voice Studio, תוסף VST עם 8 ערוצים",
+    "notes": "המחיר מוצג רק בטבלה שמחייבת התחברות.",
+    "source_ids": [
+     "s3",
+     "s1"
+    ]
+   }
+  ],
   "free_tier": "לפי השאלות הנפוצות בעמוד המחירים: מספר מוגבל של העלאות בכל חודש וגישה למבחר תכונות. הכמות לא צוינה.",
   "trial": null,
-  "unverified_notes": "עמוד המחירים הציבורי אינו מציג תוכניות ומחירים; הטבלה המלאה נמצאת ב־studio.moises.ai/billing/pricing ונפתחת רק אחרי התחברות. זכויות שימוש, פרטיות, עברית והטבות לסטודנטים לא נקראו."
+  "unverified_notes": "המחירים של Premium ו־Pro לא אומתו: הטבלה המלאה נמצאת ב־studio.moises.ai/billing/pricing ונפתחת רק אחרי התחברות, ועמודי העזרה על התוכניות אינם מציינים מחיר. מספר ההעלאות החינמיות בחודש לא צוין. עברית והטבות לסטודנטים לא נבדקו."
  },
  "privacy": {
-  "text": "לא אומת.",
+  "text": "לא אומת. מדיניות הפרטיות (עודכנה ב־8 ביוני 2026) קובעת ש־Moises ניגשת רק לקבצים שהמשתמש בחר להעלות ומונה פיתוח תכונות ושיפורים בין מטרות השימוש, אך אינה מזכירה אימון מודלים ואינה מתארת אפשרות לבטל אותו.",
   "training_on_user_data": null,
-  "source_ids": []
+  "source_ids": [
+   "s5"
+  ]
  },
  "commercial_rights": {
-  "text": "לא אומת.",
+  "text": "לפי מרכז העזרה, Moises אינה טוענת לבעלות על התוצרים, והמשתמש שומר על הבעלות בקבצים שהעלה. מותר להשתמש בתוצרים \"including commercially\", בתנאי שיש למשתמש את הזכויות הנדרשות בכל החומרים בפרויקט. העמוד אינו מבחין בין תוכניות. הפרדת ערוצים משיר של אחרים אינה מקנה זכויות בו.",
   "watermark": null,
-  "source_ids": []
+  "source_ids": [
+   "s4"
+  ]
  },
  "developer_access": {
   "api": "לא אומת",
@@ -86,10 +166,10 @@
   "source_ids": []
  },
  "company": {
-  "name": "Moises",
+  "name": "Moises Systems Inc.",
   "parent": null,
   "country": null,
-  "note": "השם המשפטי לא אומת."
+  "note": "השם המשפטי לפי מדיניות הפרטיות. מדינת הרישום לא צוינה."
  },
  "student_benefits": {
   "text": "לא אומת.",
@@ -104,19 +184,64 @@
    "published": null,
    "checked": "2026-11-18",
    "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://help.moises.ai/hc/en-us/articles/9410960985628",
+   "title": "מרכז העזרה של Moises: סיבות להירשם לתוכנית Premium",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://help.moises.ai/hc/articles/10523828567196-What-is-the-Pro-plan",
+   "title": "מרכז העזרה של Moises: סיבות להירשם לתוכנית Pro",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://help.moises.ai/hc/en-us/articles/23877386138140-Who-owns-the-output-and-music-I-create-with-Moises",
+   "title": "מרכז העזרה של Moises: למי שייכים התוצרים והמוזיקה שאני יוצר",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://help.moises.ai/hc/en-us/articles/360013805640-Privacy-Policy",
+   "title": "מדיניות הפרטיות של Moises (עודכנה ב־8 ביוני 2026)",
+   "official": true,
+   "published": "2026-06-08",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s6",
+   "url": "https://a16z.com/100-gen-ai-apps-7/",
+   "title": "a16z: Top 100 Gen AI Consumer Apps, המהדורה השביעית (5 באוקטובר 2026)",
+   "official": false,
+   "published": "2026-10-05",
+   "checked": "2026-11-18",
+   "stale": false
   }
  ],
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
    "value": null,
-   "basis": null,
+   "basis": "מופיע ב־2 מתוך 6 סקירות עצמאיות, אך תאריך הגרסה האחרונה לא אומת.",
    "launch_date": null,
    "launched_in_window": null,
    "latest_version": null,
    "latest_version_date": null,
    "latest_version_date_iso": null,
-   "independent_reviews": null,
+   "independent_reviews": 2,
    "evidence": "research/stage4/audio.md"
   },
   "hebrew": {
@@ -142,14 +267,14 @@
   },
   "tags": {
    "review_roundups": {
-    "count": null,
-    "of": 0,
-    "value": null,
+    "count": 2,
+    "of": 6,
+    "value": false,
     "evidence": "research/stage4/audio.md"
    },
    "popular": {
-    "value": false,
-    "basis": null,
+    "value": true,
+    "basis": "מופיעה ברשימת 50 האפליקציות המובילות במהדורה השביעית של a16z (5 באוקטובר 2026, לפי Similarweb ו־Sensor Tower); המקום לא צוין בטקסט.",
     "evidence": "research/stage4/audio.md"
    },
    "free_renewing": {

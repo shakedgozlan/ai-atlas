@@ -22,16 +22,24 @@
  },
  "strengths": [
   {
-   "lead": "נקודות שנרכשו אינן פגות",
-   "detail": "לפי מאגר הידע, חבילות נקודות שנרכשו בנפרד \"never expire\".",
+   "lead": "שירים ארוכים עם Stable Audio 3.0",
+   "detail": "לפי Stability AI, היצירות מגיעות עד 6 דקות ו־20 שניות, עם שליטה באורך ברמת השנייה.",
    "source_ids": [
-    "s1"
+    "s3"
    ],
    "inference": false
   },
   {
-   "lead": "מנויים במדרגות",
-   "detail": "ארבע תוכניות מ־660 ועד 14,000 נקודות זיכוי בחודש.",
+   "lead": "בעלות על האודיו ושימוש מסחרי",
+   "detail": "לפי Stability AI, האודיו שנוצר שייך למשתמש ומותר להפיץ אותו ולהרוויח ממנו.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות שנרכשו אינן פגות",
+   "detail": "לפי מאגר הידע, חבילות נקודות שנרכשו בנפרד \"never expire\".",
    "source_ids": [
     "s1"
    ],
@@ -72,7 +80,7 @@
     "billing": "חודשי",
     "price_period": "לחודש",
     "includes": "660 נקודות זיכוי בחודש",
-    "notes": null,
+    "notes": "בעמוד ההסבר של Stability AI התוכנית ב־12 דולר עם 660 נקודות נקראת Solo.",
     "source_ids": [
      "s1"
     ]
@@ -117,7 +125,7 @@
     "billing": "חודשי",
     "price_period": "לחודש",
     "includes": "14,000 נקודות זיכוי בחודש",
-    "notes": null,
+    "notes": "בעמוד ההסבר של Stability AI התוכנית ב־199 דולר עם 14,000 נקודות נקראת Studio.",
     "source_ids": [
      "s1"
     ]
@@ -125,18 +133,21 @@
   ],
   "free_tier": null,
   "trial": "50 נקודות זיכוי חד־פעמיות לכל חשבון חדש, לניסיון.",
-  "unverified_notes": "עמוד המחירים stableaudio.com/pricing לא נטען (רק מטא־נתונים). המחירים נלקחו ממאגר הידע של Stability AI, שאין בו תאריך עדכון. אתרים חיצוניים מדווחים על שינוי מחירים באוגוסט 2026 ועל תוכנית חינמית מאוקטובר 2026 (נראו רק ככותרות בחיפוש, לא נקראו), ולכן ייתכן שהמחירים אינם עדכניים. מחירים שנתיים, אורך קטעים ורישיון לפי תוכנית לא צוינו. המטבע מוצג כסימן $ בלבד."
+  "unverified_notes": "עמוד המחירים stableaudio.com/pricing לא נטען בשני ניסיונות (רק מטא־נתונים). המחירים נלקחו ממאגר הידע של Stability AI, שאין בו תאריך עדכון. סתירה בין מקורות רשמיים: מאגר הידע קורא לתוכנית הזולה Creator (12 דולר, 660 נקודות) ולעליונה Max (199 דולר, 14,000 נקודות), ואילו עמוד ההסבר של Stability AI מ־9 בספטמבר 2026 כותב \"Solo at $12 per month with 660 credits\" ועד \"Studio at $199 per month with 14,000 credits\". אתרים חיצוניים מדווחים על תוכנית חינמית מאוקטובר 2026 (נראו רק ככותרות בחיפוש, לא נקראו). מחירים שנתיים לא צוינו. המטבע מוצג כסימן $ בלבד."
  },
  "privacy": {
-  "text": "לא אומת.",
+  "text": "לא אומת. לפי Stability AI, כל מודלי Stable Audio 3.0 אומנו \"on fully licensed data\". העמודים שנקראו אינם מתייחסים לשימוש בהנחיות או ביצירות של המשתמשים לאימון.",
   "training_on_user_data": null,
-  "source_ids": []
+  "source_ids": [
+   "s5",
+   "s3"
+  ]
  },
  "commercial_rights": {
-  "text": "לא אומת: מאגר הידע אינו מציין רישיון לפי תוכנית.",
+  "text": "לפי Stability AI, \"you own the audio you generate and can distribute and commercialize it\". למודלים בקוד פתוח: רישיון Community חינמי לשימוש מסחרי לארגונים עם הכנסה שנתית מתחת למיליון דולר; מעל זה נדרש רישיון Enterprise, שמוסיף שיפוי משפטי. העמוד אינו מפרט רישיון לפי תוכנית באפליקציה. רישיון מסחרי אינו מבטיח הגנה מפני תביעות זכויות יוצרים.",
   "watermark": null,
   "source_ids": [
-   "s1"
+   "s3"
   ]
  },
  "developer_access": {
@@ -145,12 +156,20 @@
   "source_ids": []
  },
  "integrations": {
-  "items": [],
-  "source_ids": []
+  "items": [
+   "תוסף Stable Audio ל־Logic Pro ול־Ableton Live (AU ו־VST3 ל־macOS, בטא)"
+  ],
+  "source_ids": [
+   "s4"
+  ]
  },
  "platforms": {
-  "items": [],
-  "source_ids": []
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s4"
+  ]
  },
  "hebrew": {
   "text": "המקור לא מזכיר עברית.",
@@ -184,19 +203,46 @@
    "published": null,
    "checked": "2026-11-18",
    "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://stability.ai/explainers/stable-audio-vs-competitors-licensing-export-rights-and-self-hosting-compared",
+   "title": "Stability AI: השוואת Stable Audio למתחרים, רישוי וזכויות (עודכן ב־9 בספטמבר 2026)",
+   "official": true,
+   "published": "2026-09-09",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://stability.ai/news-updates/sharing-a-new-way-to-work-with-stable-audio",
+   "title": "Stability AI: תוסף Stable Audio ל־DAW ואפליקציית אינטרנט משופרת (Aug 18, השנה לא צוינה בכותרת)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://stability.ai/news-updates/meet-stable-audio-3-the-model-family-built-for-artistic-experimentation-with-open-weight-models",
+   "title": "Stability AI: הכרזה על Stable Audio 3.0 (May 20, השנה לא צוינה בגוף ההודעה)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
   }
  ],
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
-   "value": null,
-   "basis": null,
+   "value": false,
+   "basis": "Stable Audio 3.0 יצא ב־20 במאי לפי Stability AI (השנה לא מופיעה בגוף ההודעה), אך הכלי מופיע רק בסקירה עצמאית אחת מתוך 6. נכלל ככלי מוכר של Stability AI.",
    "launch_date": null,
-   "launched_in_window": null,
-   "latest_version": null,
-   "latest_version_date": null,
+   "launched_in_window": false,
+   "latest_version": "Stable Audio 3.0",
+   "latest_version_date": "May 20",
    "latest_version_date_iso": null,
-   "independent_reviews": null,
+   "independent_reviews": 1,
    "evidence": "research/stage4/audio.md"
   },
   "hebrew": {
@@ -214,16 +260,16 @@
    "has_free_plan": false
   },
   "platforms": {
-   "verified": [],
-   "unverified": [
+   "verified": [
     "אתר"
-   ]
+   ],
+   "unverified": []
   },
   "tags": {
    "review_roundups": {
-    "count": null,
-    "of": 0,
-    "value": null,
+    "count": 1,
+    "of": 6,
+    "value": false,
     "evidence": "research/stage4/audio.md"
    },
    "popular": {

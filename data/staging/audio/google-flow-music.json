@@ -16,11 +16,12 @@
  },
  "status": {
   "state": "פעיל",
-  "note": "ProducerAI הצטרפה ל־Google Labs ופועלת כעת בשם Google Flow Music. הבלוג של Google מתאר זאת כהצטרפות ולא משתמש במילה רכישה.",
+  "note": "ProducerAI הצטרפה ל־Google Labs ופועלת כעת בשם Google Flow Music. הבלוג של Google מתאר זאת כהצטרפות ולא משתמש במילה רכישה. זהו מוצר נפרד מ־Google Flow ליצירת וידאו: יש לו אתר ועמוד מחירים משלו בכתובת flowmusic.app.",
   "date_as_written": "February 24, 2026",
   "source_ids": [
    "s2",
-   "s1"
+   "s1",
+   "s3"
   ]
  },
  "strengths": [
@@ -222,14 +223,14 @@
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
-   "value": null,
-   "basis": null,
+   "value": true,
+   "basis": "המוצר הצטרף ל־Google Labs בפברואר 2026 וקיבל את Lyria 3.5 ביולי 2026. נמצאו שתי סקירות עצמאיות בחלון הזמן (Fast.io ו־Kompozy), אך הוא אינו מופיע באף אחת מ־6 סקירות הקטגוריה.",
    "launch_date": null,
    "launched_in_window": null,
    "latest_version": "Lyria 3.5",
    "latest_version_date": "July 29, 2026",
    "latest_version_date_iso": "2026-07-29",
-   "independent_reviews": null,
+   "independent_reviews": 2,
    "evidence": "research/stage4/audio.md"
   },
   "hebrew": {
@@ -250,13 +251,15 @@
    "verified": [
     "אתר"
    ],
-   "unverified": []
+   "unverified": [
+    "iOS"
+   ]
   },
   "tags": {
    "review_roundups": {
-    "count": null,
-    "of": 0,
-    "value": null,
+    "count": 0,
+    "of": 6,
+    "value": false,
     "evidence": "research/stage4/audio.md"
    },
    "popular": {

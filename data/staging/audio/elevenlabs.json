@@ -218,9 +218,10 @@
   "source_ids": []
  },
  "hebrew": {
-  "text": "לפי עמוד השפות, עברית (he) נתמכת בהמרת טקסט לדיבור במודל Eleven v3, שתומך ביותר מ־70 שפות. היא אינה ברשימות של Multilingual v2 ו־Flash v2.5. העמוד אינו מתייחס לתמלול (Scribe), למוזיקה או לדיבוב, ואינו מזכיר את Eleven v4.",
+  "text": "לפי עמוד השפות, עברית (he) נתמכת בהמרת טקסט לדיבור במודל Eleven v3, שתומך ביותר מ־70 שפות. היא אינה ברשימות של Multilingual v2 ו־Flash v2.5. העמוד אינו מתייחס לתמלול (Scribe), למוזיקה או לדיבוב, ואינו מזכיר את Eleven v4. לפי פוסט ההשקה של Eleven v4 מ־28 בספטמבר 2026, v4 ו־v4 Turbo תומכים ביותר מ־90 שפות, אך הפוסט אינו מפרט אם עברית ביניהן.",
   "source_ids": [
-   "s2"
+   "s2",
+   "s4"
   ]
  },
  "company": {
@@ -262,19 +263,37 @@
    "published": null,
    "checked": "2026-11-18",
    "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://elevenlabs.io/blog/eleven-v4",
+   "title": "הבלוג של ElevenLabs: Introducing Eleven v4 (פורסם ב־28 בספטמבר 2026)",
+   "official": true,
+   "published": "2026-09-28",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://a16z.com/100-gen-ai-apps-7/",
+   "title": "a16z: Top 100 Gen AI Consumer Apps, המהדורה השביעית (5 באוקטובר 2026)",
+   "official": false,
+   "published": "2026-10-05",
+   "checked": "2026-11-18",
+   "stale": false
   }
  ],
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
-   "value": null,
-   "basis": "לא אומת.",
+   "value": true,
+   "basis": "כלי ותיק שקיבל גרסה משמעותית, Eleven v4, בספטמבר 2026, ומופיע ב־4 מתוך 6 סקירות עצמאיות.",
    "launch_date": null,
-   "launched_in_window": null,
-   "latest_version": null,
-   "latest_version_date": null,
-   "latest_version_date_iso": null,
-   "independent_reviews": null,
+   "launched_in_window": false,
+   "latest_version": "Eleven v4",
+   "latest_version_date": "Sep 28, 2026",
+   "latest_version_date_iso": "2026-09-28",
+   "independent_reviews": 4,
    "evidence": "research/stage4/audio.md"
   },
   "hebrew": {
@@ -299,14 +318,14 @@
   },
   "tags": {
    "review_roundups": {
-    "count": null,
-    "of": 0,
-    "value": null,
+    "count": 4,
+    "of": 6,
+    "value": false,
     "evidence": "research/stage4/audio.md"
    },
    "popular": {
-    "value": false,
-    "basis": null,
+    "value": true,
+    "basis": "מופיעה במהדורה השביעית של רשימת Top 100 Gen AI Consumer Apps של a16z (5 באוקטובר 2026, לפי Similarweb), בדירוגים 25 ו־10; הטקסט אינו מציין איזה דירוג הוא של תנועה באתר.",
     "evidence": "research/stage4/audio.md"
    },
    "free_renewing": {

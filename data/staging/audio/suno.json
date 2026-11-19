@@ -74,6 +74,14 @@
     "s3"
    ],
    "inference": false
+  },
+  {
+   "lead": "התוכן משמש לאימון המודלים",
+   "detail": "לפי מדיניות הפרטיות, Suno עשויה לאמן את המודלים שלה על תוכן שמשתמשים מעלים ויוצרים, ולא מתוארת אפשרות ביטול.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
   }
  ],
  "audience": "יוצרים, סטודנטים ומוזיקאים חובבים שרוצים ליצור שירים או מוזיקת רקע בלי ידע בהפקה.",
@@ -191,12 +199,14 @@
   ],
   "free_tier": "תוכנית Free ללא הגבלת זמן: 50 נקודות זיכוי ביום ומודל v6-mini. אין הורדות שירים חודשיות ואין זכויות מסחריות, ו־Suno שומרת את הבעלות על השירים.",
   "trial": null,
-  "unverified_notes": "בכל תוכנית בתשלום העמוד מציג שני סכומים (למשל 8 ו־10 דולר) בלי לומר במפורש איזה מהם הוא המחיר בחיוב חודשי; המחירים השנתיים (\"Billed $96/year\" וכו') ברורים. המטבע מוצג כסימן $ בלבד. מרכז העזרה מזכיר בעלות ב־Pro וב־Premier ואינו מזכיר את Platinum. מדיניות האימון על תוכן המשתמשים לא נקראה."
+  "unverified_notes": "בכל תוכנית בתשלום העמוד מציג שני סכומים (למשל 8 ו־10 דולר) בלי לומר במפורש איזה מהם הוא המחיר בחיוב חודשי; המחירים השנתיים (\"Billed $96/year\" וכו') ברורים. המטבע מוצג כסימן $ בלבד. מרכז העזרה מזכיר בעלות ב־Pro וב־Premier ואינו מזכיר את Platinum."
  },
  "privacy": {
-  "text": "לא אומת. מדיניות הפרטיות ותנאי השימוש לא נקראו.",
-  "training_on_user_data": null,
-  "source_ids": []
+  "text": "לפי מדיניות הפרטיות (שונתה לאחרונה ב־23 ביוני 2026), Suno עשויה להשתמש בתוכן שמשתמשים מעלים ויוצרים, בפעילות שלהם ובשיחות כדי \"to train and enhance the models that power our Services\". גם הקלטות קול לתכונת Voices משמשות לאימון. המדיניות אינה מתארת אפשרות לבטל את האימון ואינה מבחינה בין התוכנית החינמית לתוכניות בתשלום.",
+  "training_on_user_data": "כן לפי מדיניות הפרטיות, בכל התוכניות. לא מתוארת אפשרות ביטול.",
+  "source_ids": [
+   "s4"
+  ]
  },
  "commercial_rights": {
   "text": "לפי מרכז העזרה (נערך ב־7 בינואר 2026), שיר שנוצר בזמן מנוי Pro או Premier שייך למשתמש, וזכויות השימוש המסחרי נשמרות גם אחרי סיום המנוי. על שירים מהתוכנית החינמית Suno שומרת את הבעלות, והשימוש בהם מותר למטרות לא מסחריות בלבד. הבעלות נקבעת לפי השאלה אם היה מנוי בזמן היצירה. זכויות מסחריות אינן מבטיחות הגנה מפני תביעות זכויות יוצרים.",
@@ -265,19 +275,37 @@
    "published": "2026-09-09",
    "checked": "2026-11-18",
    "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://suno.com/privacy",
+   "title": "מדיניות הפרטיות של Suno (שונתה לאחרונה ב־23 ביוני 2026)",
+   "official": true,
+   "published": "2026-06-23",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://a16z.com/100-gen-ai-apps-7/",
+   "title": "a16z: Top 100 Gen AI Consumer Apps, המהדורה השביעית (5 באוקטובר 2026)",
+   "official": false,
+   "published": "2026-10-05",
+   "checked": "2026-11-18",
+   "stale": false
   }
  ],
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
-   "value": null,
-   "basis": null,
+   "value": true,
+   "basis": "כלי ותיק שקיבל גרסה משמעותית, v6, בספטמבר 2026, ומופיע ב־5 מתוך 6 סקירות עצמאיות.",
    "launch_date": null,
-   "launched_in_window": null,
+   "launched_in_window": false,
    "latest_version": "v6",
    "latest_version_date": "September 9, 2026",
    "latest_version_date_iso": "2026-09-09",
-   "independent_reviews": null,
+   "independent_reviews": 5,
    "evidence": "research/stage4/audio.md"
   },
   "hebrew": {
@@ -302,14 +330,14 @@
   },
   "tags": {
    "review_roundups": {
-    "count": null,
-    "of": 0,
-    "value": null,
+    "count": 5,
+    "of": 6,
+    "value": true,
     "evidence": "research/stage4/audio.md"
    },
    "popular": {
-    "value": false,
-    "basis": null,
+    "value": true,
+    "basis": "מקום 19 בתנועה לאתר במהדורה השביעית של Top 100 Gen AI Consumer Apps של a16z (5 באוקטובר 2026, לפי Similarweb).",
     "evidence": "research/stage4/audio.md"
    },
    "free_renewing": {

@@ -36,6 +36,14 @@
     "s2"
    ],
    "inference": false
+  },
+  {
+   "lead": "זכויות מסחריות בכל תוכנית בתשלום",
+   "detail": "לפי מרכז העזרה, כל התוכניות בתשלום כוללות זכויות מסחריות בקריינות. זכויות שידור שמורות ל־Enterprise.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
   }
  ],
  "limitations": [
@@ -72,14 +80,19 @@
   "source_ids": []
  },
  "commercial_rights": {
-  "text": "לא אומת.",
+  "text": "לפי מרכז העזרה, כל התוכניות בתשלום כוללות זכויות מסחריות בקריינות שנוצרה ב־Studio. לעסקים וארגונים רשומים מומלץ Business License, וזכויות שידור (broadcasting) שמורות לתוכניות Enterprise. העמוד אינו מתייחס לתוצרים מהניסיון החינמי, שבו ממילא אי אפשר להוריד קבצים. זכויות מסחריות אינן מבטיחות הגנה מפני תביעות זכויות יוצרים.",
   "watermark": null,
-  "source_ids": []
+  "source_ids": [
+   "s4",
+   "s2"
+  ]
  },
  "developer_access": {
-  "api": "לא אומת",
-  "text": "לא נבדק.",
-  "source_ids": []
+  "api": "יש",
+  "text": "לפי עמוד עדכוני המוצר, ה־API של Murf כולל את מודל Falcon בתעריף של 0.01 דולר ל־1,000 תווים (עדכון מ־10 בנובמבר 2025), ומספטמבר 2026 שכפול קול מיידי ללקוחות Enterprise.",
+  "source_ids": [
+   "s5"
+  ]
  },
  "integrations": {
   "items": [],
@@ -90,9 +103,9 @@
   "source_ids": []
  },
  "hebrew": {
-  "text": "לא אומת: מרכז העזרה מציין 33 שפות בלי רשימה.",
+  "text": "המקור לא מזכיר עברית: רשימת השפות והמבטאים במרכז העזרה (42 פריטים, אף שהעמוד מציין 33 שפות) אינה כוללת עברית.",
   "source_ids": [
-   "s2"
+   "s6"
   ]
  },
  "company": {
@@ -134,24 +147,51 @@
    "published": null,
    "checked": "2026-11-18",
    "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://help.murf.ai/do-i-have-commercial-rights-over-the-voice-over-created",
+   "title": "מרכז העזרה של Murf: זכויות מסחריות בקריינות שנוצרה",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://murf.ai/product-updates",
+   "title": "Murf: עדכוני מוצר",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s6",
+   "url": "https://help.murf.ai/languages-and-accents",
+   "title": "מרכז העזרה של Murf: שפות ומבטאים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
   }
  ],
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
-   "value": null,
-   "basis": null,
+   "value": true,
+   "basis": "מודל Falcon הושק ב־10 בנובמבר 2025, והכלי מופיע ב־2 מתוך 6 סקירות עצמאיות.",
    "launch_date": null,
-   "launched_in_window": null,
-   "latest_version": null,
-   "latest_version_date": null,
-   "latest_version_date_iso": null,
-   "independent_reviews": null,
+   "launched_in_window": false,
+   "latest_version": "Falcon",
+   "latest_version_date": "10 November 2025",
+   "latest_version_date_iso": "2025-11-10",
+   "independent_reviews": 2,
    "evidence": "research/stage4/audio.md"
   },
   "hebrew": {
-   "value": "לא אומת",
-   "label": "עברית לא אומתה",
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
    "supported": null
   },
   "starting_price": {
@@ -171,9 +211,9 @@
   },
   "tags": {
    "review_roundups": {
-    "count": null,
-    "of": 0,
-    "value": null,
+    "count": 2,
+    "of": 6,
+    "value": false,
     "evidence": "research/stage4/audio.md"
    },
    "popular": {
@@ -182,8 +222,8 @@
     "evidence": "research/stage4/audio.md"
    },
    "free_renewing": {
-    "value": false,
-    "basis": "רק ניסיון חינמי למשתמשים חדשים, ומרכז העזרה אינו מציין התחדשות.",
+    "value": null,
+    "basis": "יש ניסיון חינמי למשתמשים חדשים, ומרכז העזרה אינו מציין אם הדקות מתחדשות.",
     "evidence": "research/stage4/audio.md"
    }
   }

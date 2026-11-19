@@ -38,10 +38,10 @@
    "inference": false
   },
   {
-   "lead": "פלאגין VST ו־API ב־Pro",
-   "detail": "תוכנית Pro, ב־15 דולר לחודש, כוללת פלאגין VST וגישה ל־API.",
+   "lead": "קבצים לא משמשים לאימון",
+   "detail": "לפי מדיניות הפרטיות, LALAL.AI אינה משתמשת בקבצי המשתמשים לאימון בינה מלאכותית.",
    "source_ids": [
-    "s1"
+    "s3"
    ],
    "inference": false
   }
@@ -171,17 +171,20 @@
   ],
   "free_tier": "תוכנית Starter החינמית: 10 דקות עיבוד בתור הרגיל וקבצים עד 200MB. העמוד אינו מציין אם הדקות מתחדשות.",
   "trial": null,
-  "unverified_notes": "העמוד מציג \"$7.5/mo or $90 billed annually\" ו־\"$15/mo or $180 billed annually\", ולא ברור אם קיים חיוב חודשי במחיר שונה. לא ברור אם 10 הדקות החינמיות מתחדשות. שורות ההורדות והעיבוד באצווה בטבלה לא נקראו בבירור. המטבע מוצג כסימן $ בלבד. זכויות שימוש, פרטיות ושפות לא נקראו."
+  "unverified_notes": "העמוד מציג \"$7.5/mo or $90 billed annually\" ו־\"$15/mo or $180 billed annually\", ולא ברור אם קיים חיוב חודשי במחיר שונה. לא ברור אם 10 הדקות החינמיות מתחדשות. שורות ההורדות והעיבוד באצווה בטבלה לא נקראו בבירור. המטבע מוצג כסימן $ בלבד. תנאי השירות אינם מתייחסים לשימוש מסחרי בתוצרים; שפות הממשק לא נבדקו."
  },
  "privacy": {
-  "text": "לא אומת.",
-  "training_on_user_data": null,
-  "source_ids": []
+  "text": "לפי מדיניות הפרטיות (עודכנה ב־30 ביולי 2026), החברה \"does not use user files for artificial intelligence training or other content\". לא צוינה תקופת שמירה לקבצים שהועלו או עובדו, רק שמידע אישי נשמר כל עוד נדרש ונמחק לפי תקופות השמירה שבחוק. אפשר לבקש מחיקה בדוא״ל לתמיכה.",
+  "training_on_user_data": "לא, לפי מדיניות הפרטיות.",
+  "source_ids": [
+   "s3"
+  ]
  },
  "commercial_rights": {
-  "text": "לא אומת: עמוד המחירים אינו מתייחס לשימוש מסחרי.",
+  "text": "לא אומת. תנאי השירות (עודכנו ב־30 ביולי 2026) אינם קובעים למי שייכים הערוצים המופרדים ואינם מתייחסים לשימוש מסחרי בהם. לפי התנאים, המשתמש \"solely responsible\" לשימוש ולהפצה של הקבצים שהעלה ושל קבצי התוצאה. האיסור על שימוש מסחרי בתנאים חל על השירות עצמו, לא על התוצרים. הפרדת ערוצים משיר של אחרים אינה מקנה זכויות בו.",
   "watermark": null,
   "source_ids": [
+   "s2",
    "s1"
   ]
  },
@@ -209,10 +212,10 @@
   "source_ids": []
  },
  "company": {
-  "name": "LALAL.AI",
+  "name": "OmniSale GMBH",
   "parent": null,
-  "country": null,
-  "note": "השם המשפטי לא אומת."
+  "country": "שווייץ",
+  "note": "השם המשפטי והכתובת (Risch-Rotkreuz) לפי תנאי השירות ומדיניות הפרטיות. שם המותג הוא LALAL.AI."
  },
  "student_benefits": {
   "text": "עמוד המחירים אינו מזכיר הטבה לסטודנטים.",
@@ -229,19 +232,37 @@
    "published": null,
    "checked": "2026-11-18",
    "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.lalal.ai/terms-of-service/",
+   "title": "תנאי השירות של LALAL.AI (עודכנו ב־30 ביולי 2026)",
+   "official": true,
+   "published": "2026-07-30",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://www.lalal.ai/privacy-policy/",
+   "title": "מדיניות הפרטיות של LALAL.AI (עודכנה ב־30 ביולי 2026)",
+   "official": true,
+   "published": "2026-07-30",
+   "checked": "2026-11-18",
+   "stale": false
   }
  ],
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
-   "value": null,
-   "basis": null,
+   "value": false,
+   "basis": "מופיע רק בסקירה עצמאית אחת מתוך 6. נכלל ככלי מוכר להפרדת ערוצים.",
    "launch_date": null,
    "launched_in_window": null,
    "latest_version": null,
    "latest_version_date": null,
    "latest_version_date_iso": null,
-   "independent_reviews": null,
+   "independent_reviews": 1,
    "evidence": "research/stage4/audio.md"
   },
   "hebrew": {
@@ -266,9 +287,9 @@
   },
   "tags": {
    "review_roundups": {
-    "count": null,
-    "of": 0,
-    "value": null,
+    "count": 1,
+    "of": 6,
+    "value": false,
     "evidence": "research/stage4/audio.md"
    },
    "popular": {
