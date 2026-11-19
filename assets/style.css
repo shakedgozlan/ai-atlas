@@ -651,8 +651,8 @@ html:not(.js) #finder-open{display:none}
 /* לחצן הסמל ״לאתר הרשמי״ בכרטיס: מסגרת שקטה, כדי שייראה לחיץ גם בלי טקסט */
 :root[data-card="c"] .card-actions .btn-ico{border-color:var(--line);background:transparent;padding-inline:0;text-decoration:none}
 :root[data-card="c"] .card-actions .btn-ico:hover{border-color:var(--brand);color:var(--brand)}
-/* בפלאפון: ״פרטים נוספים״ מצטמצם מעט, כדי שהאגודלים והקישור יישארו איתו בשורה אחת גם עם הרווח הגדול */
-@media (max-width:480px){.card-actions .btn-open{padding-inline:10px}}
-/* כשהשורה בכל זאת נשברת (מסכים צרים מאוד): האגודלים מימין והקישור בקצה השמאלי */
 .card-quick{flex:1 1 auto;justify-content:flex-end}
-@media (max-width:389px){.card-actions .btn-open{flex:1 1 100%}.card-quick{justify-content:space-between}}
+/* בפלאפון (בקשת שקד, 19.11.2026): האגודלים צמודים יותר זה לזה, והרווח מהם לקישור כפול מהרווח שביניהם */
+@media (max-width:759px){.card-quick{gap:8px}.card-quick .card-vote{gap:4px}}
+@media (max-width:480px){.card-actions .btn-open{padding-inline:10px}}
+@media (max-width:374px){.card-actions .btn-open{flex:1 1 100%}}
