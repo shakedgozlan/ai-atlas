@@ -576,14 +576,14 @@ const html = `<!doctype html>
 <meta property="og:locale" content="he_IL">
 <meta property="og:url" content="https://kleyai.tech/">
 <meta property="og:title" content="אטלס כלי בינה מלאכותית">
-<meta property="og:description" content="מה כל כלי עושה, כמה הוא עולה ומה חשוב לדעת עליו.">
+<meta property="og:description" content="משווים בין הכלים ורואים מה באמת שווה: מחיר, יתרונות ומגבלות של כל מודל.">
 <meta property="og:image" content="https://kleyai.tech/assets/share.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="סמל המצפן של אטלס כלי בינה מלאכותית ליד שם האתר">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="אטלס כלי בינה מלאכותית">
-<meta name="twitter:description" content="מה כל כלי עושה, כמה הוא עולה ומה חשוב לדעת עליו.">
+<meta name="twitter:description" content="משווים בין הכלים ורואים מה באמת שווה: מחיר, יתרונות ומגבלות של כל מודל.">
 <meta name="twitter:image" content="https://kleyai.tech/assets/share.png">
 <meta name="color-scheme" content="light dark">
 <script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;var v=localStorage.getItem('atlas-view');if(v==='index'||v==='gallery')document.documentElement.dataset.view=v}catch(e){}document.documentElement.classList.add('js')</script>
