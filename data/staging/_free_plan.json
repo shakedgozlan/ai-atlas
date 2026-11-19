@@ -1,0 +1,1028 @@
+{
+  "google-flow": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המכסה מתחדשת כל יום, אבל לא ברור מהמקור אם התוצר החינמי נושא סימן מים גלוי וכמה סרטונים המכסה מאפשרת.",
+    "inference": true
+  },
+  "runway": {
+    "exists": true,
+    "renews": "חד־פעמי",
+    "usable_output": false,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "נקודות חד־פעמיות שאינן מתחדשות, והסרטונים נושאים סימן מים.",
+    "inference": true
+  },
+  "kling": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": false,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "מי שאינו מנוי חייב לסמן את התוצרים במותג של Kling. כמות הנקודות לא אומתה.",
+    "inference": true
+  },
+  "hailuo": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": false,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "ההורדות בתוכנית החינמית כוללות סימן מים. המכסה לא אומתה.",
+    "inference": true
+  },
+  "luma": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "לא אומת אם יש תוכנית חינמית ומה כלול בה.",
+    "inference": true
+  },
+  "pika": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": null,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "התוכנית החינמית כוללת אפס נקודות זיכוי: כדי ליצור צריך לשלם.",
+    "inference": true
+  },
+  "higgsfield": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": null,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "בלי נקודות זיכוי חודשיות או יומיות, ולא צוין מודל וידאו חינמי.",
+    "inference": true
+  },
+  "vidu": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": false,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "התוצר החינמי נושא סימן מים גלוי. כמות הנקודות לא צוינה.",
+    "inference": true
+  },
+  "dreamina": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "נקודות יומיות, אבל הכמות וסימני המים לא צוינו ועשויים להשתנות.",
+    "inference": true
+  },
+  "wan": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "נקודות בכניסה יומית, אבל הכמות לא צוינה והמקור לא מפרט אם יש סימן מים.",
+    "inference": true
+  },
+  "chatgpt": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "שיחות טקסט ללא הגבלה בתוכנית החינמית, לצד כלים במכסה מוגבלת.",
+    "inference": true
+  },
+  "claude": {
+    "exists": true,
+    "renews": "שבועי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המכסה מתחדשת בחלון של 5 שעות ובכל שבוע, אבל גודלה לא פורסם.",
+    "inference": true
+  },
+  "gemini": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "גודל המכסה ומחזור ההתחדשות לא צוינו.",
+    "inference": true
+  },
+  "microsoft-copilot": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המכסה ומחזור ההתחדשות לא פורסמו.",
+    "inference": true
+  },
+  "perplexity": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "חיפושים בסיסיים כמעט ללא הגבלה ו־3 חיפושי Pro ביום.",
+    "inference": true
+  },
+  "deepseek": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "לא נמצא מקור רשמי על מכסה חינמית.",
+    "inference": true
+  },
+  "grok": {
+    "exists": true,
+    "renews": "שבועי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המכסה מתחדשת מדי שבוע, אבל גודלה לא פורסם.",
+    "inference": true
+  },
+  "meta-ai": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "חינמי לכולם לפי המקור, בלי פירוט של מכסות.",
+    "inference": true
+  },
+  "mistral-vibe": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "גודל המכסה ומחזור ההתחדשות לא צוינו.",
+    "inference": true
+  },
+  "gamma": {
+    "exists": true,
+    "renews": "חד־פעמי",
+    "usable_output": false,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "400 נקודות חד־פעמיות שאינן מתחדשות, והמצגות נושאות את התווית של Gamma.",
+    "inference": true
+  },
+  "grammarly": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "תיקון טעויות שוטף ו־100 הנחיות AI בחודש.",
+    "inference": true
+  },
+  "quillbot": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "ניסוח מחדש של עד 125 מילים בכל פעם. המקור לא מציין מכסה כוללת או מחזור התחדשות.",
+    "inference": true
+  },
+  "beautiful-ai": {
+    "exists": false,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "אין תוכנית חינמית, רק 14 ימי ניסיון.",
+    "inference": true
+  },
+  "deepl": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "50,000 תווים בחודש. הטקסטים בגרסה החינמית משמשים לאימון.",
+    "inference": true
+  },
+  "jasper": {
+    "exists": false,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "אין תוכנית חינמית, רק 7 ימי ניסיון.",
+    "inference": true
+  },
+  "napkin-ai": {
+    "exists": true,
+    "renews": "שבועי",
+    "usable_output": false,
+    "enough_for_real_use": true,
+    "worthwhile": false,
+    "basis": "500 נקודות בשבוע, אבל הוויזואלים נושאים מיתוג של Napkin.",
+    "inference": true
+  },
+  "wordtune": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "10 ניסוחים מחדש ביום ו־3 סיכומים בחודש: מכסה קטנה.",
+    "inference": true
+  },
+  "midjourney": {
+    "exists": false,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
+    "inference": true
+  },
+  "adobe-firefly": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "יצירות יומיות מוגבלות. הכמות לא צוינה.",
+    "inference": true
+  },
+  "ideogram": {
+    "exists": true,
+    "renews": "שבועי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "נקודות איטיות שבועיות לחשבונות זכאים. הכמות לא צוינה.",
+    "inference": true
+  },
+  "leonardo-ai": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "150 Fast Tokens ביום עם רישיון לשימוש מסחרי. התמונות ציבוריות.",
+    "inference": true
+  },
+  "stability-ai": {
+    "exists": true,
+    "renews": "חד־פעמי",
+    "usable_output": null,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "25 נקודות חד־פעמיות לחשבון API חדש.",
+    "inference": true
+  },
+  "krea": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "100 יחידות חישוב ביום. רישיון מסחרי לא מופיע בתוכנית החינמית.",
+    "inference": true
+  },
+  "topaz-labs": {
+    "exists": false,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
+    "inference": true
+  },
+  "adobe-express": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "יצירות חינמיות יומיות בחלק מהתכונות. הכמות לא צוינה.",
+    "inference": true
+  },
+  "recraft": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": false,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "התמונות בתוכנית החינמית ציבוריות, שייכות ל־Recraft ואינן לשימוש מסחרי.",
+    "inference": true
+  },
+  "kittl": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקור לא מציין אם יש נקודות בינה מלאכותית מתחדשות.",
+    "inference": true
+  },
+  "microsoft-designer": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "נקודות חודשיות שמתחדשות. הכמות לא צוינה.",
+    "inference": true
+  },
+  "lovart": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "יש תוכנית חינמית, אבל המכסות שלה לא נקראו.",
+    "inference": true
+  },
+  "figma": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "500 נקודות זיכוי לבינה מלאכותית בחודש ו־3 פרויקטים.",
+    "inference": true
+  },
+  "framer": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "500 נקודות בחודש ודומיין של Framer. המקור לא מפרט אם האתר נושא מיתוג.",
+    "inference": true
+  },
+  "relume": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": false,
+    "enough_for_real_use": true,
+    "worthwhile": false,
+    "basis": "שימוש חודשי שמספיק לאתר שלם לפי המקור, אבל האתר נושא תג של Relume.",
+    "inference": true
+  },
+  "ux-pilot": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "80 נקודות ביום ופרויקט אחד. לא ברור כמה מסכים זה מאפשר.",
+    "inference": true
+  },
+  "v0": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "עד 7 הודעות ביום: מכסה קטנה.",
+    "inference": true
+  },
+  "webflow": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": null,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "שני עמודים סטטיים בלבד בתוכנית האתר החינמית.",
+    "inference": true
+  },
+  "wix": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": false,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "האתר החינמי נושא מיתוג של Wix. מכסת הבינה המלאכותית לא פורטה.",
+    "inference": true
+  },
+  "capcut": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": null,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "העריכה הבסיסית חינמית, אבל כלי הבינה המלאכותית שמורים ל־Pro.",
+    "inference": true
+  },
+  "descript": {
+    "exists": true,
+    "renews": "חד־פעמי",
+    "usable_output": false,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "נקודות AI חד־פעמיות, והייצוא נושא סימן מים.",
+    "inference": true
+  },
+  "opusclip": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": false,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "הקליפים בתוכנית החינמית נושאים סימן מים.",
+    "inference": true
+  },
+  "heygen": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": false,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "עד 3 סרטונים בחודש, עד דקה, עם סימן מים.",
+    "inference": true
+  },
+  "synthesia": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": false,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "הסרטונים בתוכנית החינמית נושאים סימן מים.",
+    "inference": true
+  },
+  "captions": {
+    "exists": true,
+    "renews": "חד־פעמי",
+    "usable_output": true,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "הנקודות ניתנות לכל חיי החשבון ואינן מתחדשות.",
+    "inference": true
+  },
+  "hedra": {
+    "exists": false,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
+    "inference": true
+  },
+  "suno": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": false,
+    "enough_for_real_use": true,
+    "worthwhile": false,
+    "basis": "50 נקודות ביום, אבל בלי הורדות ובלי זכויות מסחריות.",
+    "inference": true
+  },
+  "elevenlabs": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "10 אלף נקודות בחודש. רישיון מסחרי לא מצוין בתוכנית החינמית.",
+    "inference": true
+  },
+  "moises": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "מספר מוגבל של העלאות בחודש. הכמות לא צוינה.",
+    "inference": true
+  },
+  "speechify": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "הקראה בלי מכסה מוצגת, אבל רק בקולות רובוטיים.",
+    "inference": true
+  },
+  "udio": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "10 נקודות ביום ועוד 100 בחודש. המקור שנקרא לא מפרט זכויות והורדות בחינם.",
+    "inference": true
+  },
+  "murf": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "יש ניסיון חינמי, ולא צוין אם הדקות מתחדשות.",
+    "inference": true
+  },
+  "adobe-podcast": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "שימוש חינמי עם מגבלות יומיות. הכמויות לא צוינו.",
+    "inference": true
+  },
+  "lalal-ai": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": null,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "10 דקות עיבוד, ולא צוין אם הן מתחדשות.",
+    "inference": true
+  },
+  "stable-audio": {
+    "exists": true,
+    "renews": "חד־פעמי",
+    "usable_output": null,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "50 נקודות חד־פעמיות לחשבון חדש.",
+    "inference": true
+  },
+  "google-flow-music": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "נקודות יומיות והורדות כלולות. כמות הנקודות לא צוינה.",
+    "inference": true
+  },
+  "hyper3d-rodin": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": false,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "ייצוא רק ממודלים ישנים, ופרסום בגלריה הציבורית.",
+    "inference": true
+  },
+  "meshy": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "100 נקודות ועד 10 הורדות בחודש, ברישיון CC BY 4.0.",
+    "inference": true
+  },
+  "sloyd": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": false,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "יצירה אחת ביום, וייצוא רק של מודלים מהקהילה.",
+    "inference": true
+  },
+  "marble": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": null,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "עד 4 יצירות עולם, לשימוש אישי בלבד.",
+    "inference": true
+  },
+  "spline": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": false,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "בלי נקודות AI, וייצוא לרשת נושא סימן מים.",
+    "inference": true
+  },
+  "cursor": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "שימוש מוגבל ביכולות הליבה. המכסה לא פורסמה.",
+    "inference": true
+  },
+  "google-antigravity": {
+    "exists": true,
+    "renews": "שבועי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המכסה מתחדשת מדי שבוע, אבל גודלה לא פורסם.",
+    "inference": true
+  },
+  "claude-code": {
+    "exists": false,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "התוכנית החינמית של Claude אינה כוללת את Claude Code.",
+    "inference": true
+  },
+  "devin": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "מכסה קלה לעבודה עם סוכנים. הגודל לא פורסם.",
+    "inference": true
+  },
+  "github-copilot": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "2,000 השלמות קוד בחודש, עם צ׳אט וסוכן בשימוש מוגבל.",
+    "inference": true
+  },
+  "codex": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "זמין בתוכנית Free של ChatGPT. המכסה לא פורסמה.",
+    "inference": true
+  },
+  "cline": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": true,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "הכלי עצמו חינמי, אבל השימוש במודלים בתשלום.",
+    "inference": true
+  },
+  "kiro": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "50 נקודות זיכוי בחודש: מכסה קטנה.",
+    "inference": true
+  },
+  "zed": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": true,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "העורך חינמי, אבל הבינה המלאכותית דורשת מפתח אישי בתשלום.",
+    "inference": true
+  },
+  "lovable": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "מכסת הנקודות בחינם לא מוצגת בעמוד המחירים.",
+    "inference": true
+  },
+  "replit": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "מכסת AI יומית ואפליקציה מפורסמת אחת. גודל המכסה לא פורסם.",
+    "inference": true
+  },
+  "base44": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": null,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "25 נקודות הודעה בחודש: מכסה קטנה מאוד לבניית אפליקציה.",
+    "inference": true
+  },
+  "google-ai-studio": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "חינמי במגבלות הקצב של הרמה החינמית, כולל פרסום של עד 2 אפליקציות לחשבונות זכאים.",
+    "inference": true
+  },
+  "bolt": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": false,
+    "enough_for_real_use": true,
+    "worthwhile": false,
+    "basis": "מיליון טוקנים בחודש, אבל האתרים נושאים מיתוג של Bolt.",
+    "inference": true
+  },
+  "bubble": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": false,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "מתאימה לבנייה ולבדיקה, לא לפרסום גרסה חיה.",
+    "inference": true
+  },
+  "emergent": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": false,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "10 נקודות זיכוי, בלי פרסום לפרודקשן.",
+    "inference": true
+  },
+  "manus": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "300 נקודות ביום. לא ברור כמה משימות זה מאפשר.",
+    "inference": true
+  },
+  "genspark": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "100 נקודות ביום, אבל המילוי נעצר אחרי תקרה כוללת שגובהה לא צוין.",
+    "inference": true
+  },
+  "n8n": {
+    "exists": false,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "אין תוכנית חינמית בענן. גרסת Community לאירוח עצמי חינמית.",
+    "inference": true
+  },
+  "lindy": {
+    "exists": true,
+    "renews": "חד־פעמי",
+    "usable_output": null,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "נקודות חד־פעמיות שתקפות 7 ימים.",
+    "inference": true
+  },
+  "microsoft-copilot-studio": {
+    "exists": false,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "אין תוכנית חינמית, רק ניסיון.",
+    "inference": true
+  },
+  "gumloop": {
+    "exists": false,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": false,
+    "basis": "לא נמצאה תוכנית חינמית, רק ניסיון של 14 יום.",
+    "inference": true
+  },
+  "zapier": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "100 משימות ו־400 פעולות סוכן בחודש.",
+    "inference": true
+  },
+  "make": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "1,000 נקודות זיכוי בחודש.",
+    "inference": true
+  },
+  "activepieces": {
+    "exists": true,
+    "renews": "מתחדש, המחזור לא ברור",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "1,000 נקודות זיכוי שמתחדשות ותהליכים ללא הגבלה. העמוד סותר את עצמו אם החידוש יומי או חודשי.",
+    "inference": true
+  },
+  "notion": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": true,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "העמודים חינמיים, אבל Notion AI ניתן רק בניסיון מוגבל.",
+    "inference": true
+  },
+  "gemini-notebook": {
+    "exists": true,
+    "renews": "יומי",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "עד 100 מחברות ו־50 מקורות במחברת, במכסות יומיות. על פריטים שנוצרים יש סימן מים עד שמשדרגים.",
+    "inference": true
+  },
+  "fireflies": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "תמלול ללא הגבלה, אבל סיכומים מוגבלים ובלי הורדת תמלולים.",
+    "inference": true
+  },
+  "granola": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "הערות פגישה בלי מכסה מוגדרת, עם היסטוריה של 30 יום.",
+    "inference": true
+  },
+  "otter": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "300 דקות הקלטה בחודש, עד 30 דקות לשיחה.",
+    "inference": true
+  },
+  "fathom": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": true,
+    "enough_for_real_use": true,
+    "worthwhile": true,
+    "basis": "הקלטות ותמלולים ללא הגבלה, עם סיכומים מיידיים.",
+    "inference": true
+  },
+  "tldv": {
+    "exists": true,
+    "renews": "ללא מכסה קבועה",
+    "usable_output": true,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "הקלטות ללא הגבלה, אבל סיכום AI מלא רק ל־10 הפגישות הראשונות.",
+    "inference": true
+  },
+  "julius": {
+    "exists": true,
+    "renews": "לא צוין",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "מכסת הנקודות בחינם אינה חד־משמעית במקור.",
+    "inference": true
+  },
+  "read-ai": {
+    "exists": true,
+    "renews": "חודשי",
+    "usable_output": true,
+    "enough_for_real_use": false,
+    "worthwhile": false,
+    "basis": "5 תמלולים ודוחות בחודש.",
+    "inference": true
+  },
+  "wispr-flow": {
+    "exists": true,
+    "renews": "שבועי",
+    "usable_output": true,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "מכסת מילים שבועית. המספרים לא צוינו.",
+    "inference": true
+  },
+  "magnific": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+    "inference": true
+  },
+  "photoroom": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+    "inference": true
+  },
+  "flux": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+    "inference": true
+  },
+  "canva": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+    "inference": true
+  },
+  "looka": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+    "inference": true
+  },
+  "adobe-illustrator": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+    "inference": true
+  },
+  "google-stitch": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+    "inference": true
+  },
+  "veed": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+    "inference": true
+  },
+  "d-id": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+    "inference": true
+  },
+  "tripo": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+    "inference": true
+  },
+  "hunyuan-3d": {
+    "exists": null,
+    "renews": null,
+    "usable_output": null,
+    "enough_for_real_use": null,
+    "worthwhile": null,
+    "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+    "inference": true
+  }
+}

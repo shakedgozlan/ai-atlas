@@ -47,5 +47,19 @@
     "source_url": null,
     "missing_reason": null,
     "note": "סמל בלבד, בלי שם המותג. קובץ וקטורי ששקד סיפק ב־19 בנובמבר 2026. צבעוני. זה הסמל של Mistral, החברה; למוצר Vibe אין סמל נפרד, ושקד בחר להשתמש בו לכלי הזה."
+  },
+  "jasper": {
+    "file": "logos/jasper.svg",
+    "file_dark": null,
+    "source_url": null,
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. קובץ וקטורי ששקד סיפק ב־19 בנובמבר 2026. צבעוני, עם רקע מלא."
+  },
+  "d-id": {
+    "file": "logos/d-id.svg",
+    "file_dark": "logos/d-id-dark.svg",
+    "source_url": "https://www.d-id.com/wp-content/uploads/2023/11/d-id-logo.svg",
+    "missing_reason": null,
+    "note": "נלקח מהאתר הרשמי ב־19 בנובמבר 2026, קובץ וקטורי. אצל D-ID הסמל כולל את שם המותג ואין סמל נפרד; שקד אישר להשתמש בו כך. במקור האותיות לבנות; בגרסה לרקע בהיר הן הוחלפו בצבע כהה."
   }
 }

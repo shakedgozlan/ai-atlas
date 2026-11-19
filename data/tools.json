@@ -435,6 +435,15 @@
             "value": true,
             "basis": "50 נקודות זיכוי ביום בלי מנוי.",
             "evidence": "research/tags.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המכסה מתחדשת כל יום, אבל לא ברור מהמקור אם התוצר החינמי נושא סימן מים גלוי וכמה סרטונים המכסה מאפשרת.",
+            "inference": true
           }
         }
       }
@@ -831,6 +840,15 @@
             "value": false,
             "basis": null,
             "evidence": "research/tags.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חד־פעמי",
+            "usable_output": false,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "נקודות חד־פעמיות שאינן מתחדשות, והסרטונים נושאים סימן מים.",
+            "inference": true
           }
         }
       }
@@ -1153,6 +1171,15 @@
             "value": true,
             "basis": "הקצאת נקודות חינם בכניסה לחשבון מדי חודש. הכמות לא אומתה.",
             "evidence": "research/tags.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": false,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "מי שאינו מנוי חייב לסמן את התוצרים במותג של Kling. כמות הנקודות לא אומתה.",
+            "inference": true
           }
         }
       }
@@ -1558,6 +1585,15 @@
             "value": false,
             "basis": null,
             "evidence": "research/tags.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": false,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "ההורדות בתוכנית החינמית כוללות סימן מים. המכסה לא אומתה.",
+            "inference": true
           }
         }
       }
@@ -2040,6 +2076,15 @@
             "value": false,
             "basis": null,
             "evidence": "research/tags.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "לא אומת אם יש תוכנית חינמית ומה כלול בה.",
+            "inference": true
           }
         }
       }
@@ -2443,6 +2488,15 @@
             "value": false,
             "basis": null,
             "evidence": "research/tags.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": null,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "התוכנית החינמית כוללת אפס נקודות זיכוי: כדי ליצור צריך לשלם.",
+            "inference": true
           }
         }
       }
@@ -2891,6 +2945,15 @@
             "value": false,
             "basis": null,
             "evidence": "research/tags.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": null,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "בלי נקודות זיכוי חודשיות או יומיות, ולא צוין מודל וידאו חינמי.",
+            "inference": true
           }
         }
       }
@@ -3240,6 +3303,15 @@
             "value": true,
             "basis": "נקודות זיכוי בהתחברות יומית. הכמות לא צוינה.",
             "evidence": "research/tags.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": false,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "התוצר החינמי נושא סימן מים גלוי. כמות הנקודות לא צוינה.",
+            "inference": true
           }
         }
       }
@@ -3547,6 +3619,15 @@
             "value": true,
             "basis": "נקודות זיכוי יומיות בחינם. הכמות לא צוינה.",
             "evidence": "research/tags.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "נקודות יומיות, אבל הכמות וסימני המים לא צוינו ועשויים להשתנות.",
+            "inference": true
           }
         }
       }
@@ -3851,6 +3932,15 @@
             "value": true,
             "basis": "נקודות זיכוי חינם בכניסה יומית. הכמות לא צוינה.",
             "evidence": "research/tags.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "נקודות בכניסה יומית, אבל הכמות לא צוינה והמקור לא מפרט אם יש סימן מים.",
+            "inference": true
           }
         }
       }
@@ -4190,6 +4280,15 @@
             "value": null,
             "basis": "המקור מתאר שיחות טקסט ללא הגבלה ומגבלות לכלים, בלי מחזור התחדשות מוצהר.",
             "evidence": "research/stage4/assistants.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "שיחות טקסט ללא הגבלה בתוכנית החינמית, לצד כלים במכסה מוגבלת.",
+            "inference": true
           }
         }
       }
@@ -4599,6 +4698,15 @@
             "value": true,
             "basis": "מכסת Free מתחדשת בחלון של 5 שעות ובכל שבוע.",
             "evidence": "research/stage4/assistants.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "שבועי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המכסה מתחדשת בחלון של 5 שעות ובכל שבוע, אבל גודלה לא פורסם.",
+            "inference": true
           }
         }
       }
@@ -4927,6 +5035,15 @@
             "value": null,
             "basis": "המקור לא מציין מחזור התחדשות למכסה החינמית.",
             "evidence": "research/stage4/assistants.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "גודל המכסה ומחזור ההתחדשות לא צוינו.",
+            "inference": true
           }
         }
       }
@@ -5265,6 +5382,15 @@
             "value": null,
             "basis": "המקור מתאר גרסה חינמית מוגבלת בקיבולת, בלי מחזור התחדשות מוצהר.",
             "evidence": "research/stage4/assistants.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המכסה ומחזור ההתחדשות לא פורסמו.",
+            "inference": true
           }
         }
       }
@@ -5575,6 +5701,15 @@
             "value": true,
             "basis": "3 חיפושי Pro ביום ושאילתת Research אחת בחודש בתוכנית החינמית.",
             "evidence": "research/stage4/assistants.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "חיפושים בסיסיים כמעט ללא הגבלה ו־3 חיפושי Pro ביום.",
+            "inference": true
           }
         }
       }
@@ -5831,6 +5966,15 @@
             "value": null,
             "basis": "לא נמצא מקור רשמי על מכסה חינמית.",
             "evidence": "research/stage4/assistants.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "לא נמצא מקור רשמי על מכסה חינמית.",
+            "inference": true
           }
         }
       }
@@ -6107,6 +6251,15 @@
             "value": true,
             "basis": "לפי עמוד המחירים מכסות השימוש מתחדשות מדי שבוע; העמוד אינו מפרט את גודל המכסה החינמית.",
             "evidence": "research/stage4/assistants.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "שבועי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המכסה מתחדשת מדי שבוע, אבל גודלה לא פורסם.",
+            "inference": true
           }
         }
       }
@@ -6341,6 +6494,15 @@
             "value": null,
             "basis": "המקור לא מציין מכסה או מחזור התחדשות.",
             "evidence": "research/stage4/assistants.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "חינמי לכולם לפי המקור, בלי פירוט של מכסות.",
+            "inference": true
           }
         }
       }
@@ -6656,6 +6818,15 @@
             "value": null,
             "basis": "המקור לא מציין מחזור התחדשות למכסה החינמית.",
             "evidence": "research/stage4/assistants.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "גודל המכסה ומחזור ההתחדשות לא צוינו.",
+            "inference": true
           }
         }
       }
@@ -6978,6 +7149,15 @@
             "value": false,
             "basis": "400 נקודות זיכוי חד־פעמיות שאינן מתחדשות בתוכנית החינמית.",
             "evidence": "research/stage4/writing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חד־פעמי",
+            "usable_output": false,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "400 נקודות חד־פעמיות שאינן מתחדשות, והמצגות נושאות את התווית של Gamma.",
+            "inference": true
           }
         }
       }
@@ -7347,6 +7527,15 @@
             "value": true,
             "basis": "100 הנחיות AI בחודש בתוכנית החינמית.",
             "evidence": "research/stage4/writing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "תיקון טעויות שוטף ו־100 הנחיות AI בחודש.",
+            "inference": true
           }
         }
       }
@@ -7618,6 +7807,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/writing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "ניסוח מחדש של עד 125 מילים בכל פעם. המקור לא מציין מכסה כוללת או מחזור התחדשות.",
+            "inference": true
           }
         }
       }
@@ -7897,6 +8095,15 @@
             "value": false,
             "basis": "אין תוכנית חינמית, רק 14 ימי ניסיון.",
             "evidence": "research/stage4/writing.md"
+          },
+          "free_plan": {
+            "exists": false,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "אין תוכנית חינמית, רק 14 ימי ניסיון.",
+            "inference": true
           }
         }
       }
@@ -8204,6 +8411,15 @@
             "value": true,
             "basis": "50,000 תווים וקובץ אחד בחודש בגרסה החינמית.",
             "evidence": "research/stage4/writing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "50,000 תווים בחודש. הטקסטים בגרסה החינמית משמשים לאימון.",
+            "inference": true
           }
         }
       }
@@ -8218,11 +8434,11 @@
       "role": "פלטפורמת תוכן שיווקי עם סוכני AI שכותבים בקול המותג של החברה.",
       "url": "https://www.jasper.ai",
       "logo": {
-        "file": "logos/jasper.png",
+        "file": "logos/jasper.svg",
         "file_dark": null,
-        "source_url": "https://cdn.prod.website-files.com/6807ee8d73c233fb82842313/681e121b52f97ed0b2098aab_Favicon.png",
+        "source_url": null,
         "missing_reason": null,
-        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה. התמונה קטנה (32 פיקסלים); הגרסה הגדולה באתר כוללת את שם המותג ולכן לא נלקחה."
+        "note": "סמל בלבד, בלי שם המותג. קובץ וקטורי ששקד סיפק ב־19 בנובמבר 2026. צבעוני, עם רקע מלא."
       },
       "status": {
         "state": "פעיל",
@@ -8458,6 +8674,15 @@
             "value": false,
             "basis": "אין תוכנית חינמית, רק 7 ימי ניסיון.",
             "evidence": "research/stage4/writing.md"
+          },
+          "free_plan": {
+            "exists": false,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "אין תוכנית חינמית, רק 7 ימי ניסיון.",
+            "inference": true
           }
         }
       }
@@ -8738,6 +8963,15 @@
             "value": true,
             "basis": "500 נקודות זיכוי בשבוע בתוכנית החינמית.",
             "evidence": "research/stage4/writing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "שבועי",
+            "usable_output": false,
+            "enough_for_real_use": true,
+            "worthwhile": false,
+            "basis": "500 נקודות בשבוע, אבל הוויזואלים נושאים מיתוג של Napkin.",
+            "inference": true
           }
         }
       }
@@ -8996,6 +9230,15 @@
             "value": true,
             "basis": "10 ניסוחים מחדש והצעות AI ביום ו־3 סיכומים בחודש בתוכנית החינמית.",
             "evidence": "research/stage4/writing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "10 ניסוחים מחדש ביום ו־3 סיכומים בחודש: מכסה קטנה.",
+            "inference": true
           }
         }
       }
@@ -9341,6 +9584,15 @@
             "value": false,
             "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
             "evidence": "research/stage4/images.md"
+          },
+          "free_plan": {
+            "exists": false,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
+            "inference": true
           }
         }
       }
@@ -9663,6 +9915,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/images.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -9936,6 +10197,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/images.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -10253,6 +10523,15 @@
             "value": true,
             "basis": "Firefly Free כוללת יצירות יומיות מוגבלות.",
             "evidence": "research/stage4/images.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "יצירות יומיות מוגבלות. הכמות לא צוינה.",
+            "inference": true
           }
         }
       }
@@ -10572,6 +10851,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/images.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -10815,6 +11103,15 @@
             "value": true,
             "basis": "נקודות איטיות שבועיות לחשבונות חינמיים זכאים.",
             "evidence": "research/stage4/images.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "שבועי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "נקודות איטיות שבועיות לחשבונות זכאים. הכמות לא צוינה.",
+            "inference": true
           }
         }
       }
@@ -11158,6 +11455,15 @@
             "value": true,
             "basis": "150 Fast Tokens ביום בתוכנית Free.",
             "evidence": "research/stage4/images.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "150 Fast Tokens ביום עם רישיון לשימוש מסחרי. התמונות ציבוריות.",
+            "inference": true
           }
         }
       }
@@ -11422,6 +11728,15 @@
             "value": false,
             "basis": "25 נקודות חינם חד־פעמיות ב־API.",
             "evidence": "research/stage4/images.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חד־פעמי",
+            "usable_output": null,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "25 נקודות חד־פעמיות לחשבון API חדש.",
+            "inference": true
           }
         }
       }
@@ -11719,6 +12034,15 @@
             "value": true,
             "basis": "100 יחידות חישוב ביום שמתחדשות כל יום.",
             "evidence": "research/stage4/images.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "100 יחידות חישוב ביום. רישיון מסחרי לא מופיע בתוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -12117,6 +12441,15 @@
             "value": false,
             "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
             "evidence": "research/stage4/images.md"
+          },
+          "free_plan": {
+            "exists": false,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
+            "inference": true
           }
         }
       }
@@ -12397,6 +12730,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/graphic-design.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -12705,6 +13047,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/graphic-design.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -13049,6 +13400,15 @@
             "value": true,
             "basis": "תוכנית Free כוללת יצירות חינמיות יומיות בחלק מהתכונות.",
             "evidence": "research/stage4/graphic-design.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "יצירות חינמיות יומיות בחלק מהתכונות. הכמות לא צוינה.",
+            "inference": true
           }
         }
       }
@@ -13518,6 +13878,15 @@
             "value": true,
             "basis": "נקודות התוכנית החינמית מתאפסות מדי יום.",
             "evidence": "research/stage4/graphic-design.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": false,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "התמונות בתוכנית החינמית ציבוריות, שייכות ל־Recraft ואינן לשימוש מסחרי.",
+            "inference": true
           }
         }
       }
@@ -13869,6 +14238,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/graphic-design.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקור לא מציין אם יש נקודות בינה מלאכותית מתחדשות.",
+            "inference": true
           }
         }
       }
@@ -14211,6 +14589,15 @@
             "value": true,
             "basis": "הנקודות החינמיות מתחדשות בתחילת כל חודש.",
             "evidence": "research/stage4/graphic-design.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "נקודות חודשיות שמתחדשות. הכמות לא צוינה.",
+            "inference": true
           }
         }
       }
@@ -14499,6 +14886,15 @@
             "value": false,
             "basis": null,
             "evidence": "research/stage4/graphic-design.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -14806,6 +15202,15 @@
             "value": null,
             "basis": "יש תוכנית חינמית, אבל המקור לא מפרט את המכסה שלה ואם היא מתחדשת.",
             "evidence": "research/stage4/added-tools.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "יש תוכנית חינמית, אבל המכסות שלה לא נקראו.",
+            "inference": true
           }
         }
       }
@@ -15124,6 +15529,15 @@
             "value": true,
             "basis": "500 נקודות זיכוי בחודש למושב Full בתוכנית Starter, עם תקרה של 150 ביום.",
             "evidence": "research/stage4/ui-web.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "500 נקודות זיכוי לבינה מלאכותית בחודש ו־3 פרויקטים.",
+            "inference": true
           }
         }
       }
@@ -15409,6 +15823,15 @@
             "value": true,
             "basis": "500 נקודות זיכוי לבינה מלאכותית בחודש בתוכנית החינמית.",
             "evidence": "research/stage4/ui-web.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "500 נקודות בחודש ודומיין של Framer. המקור לא מפרט אם האתר נושא מיתוג.",
+            "inference": true
           }
         }
       }
@@ -15719,6 +16142,15 @@
             "value": true,
             "basis": "התוכנית החינמית כוללת שימוש חודשי בבינה מלאכותית; הכמות לא פורסמה.",
             "evidence": "research/stage4/ui-web.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": false,
+            "enough_for_real_use": true,
+            "worthwhile": false,
+            "basis": "שימוש חודשי שמספיק לאתר שלם לפי המקור, אבל האתר נושא תג של Relume.",
+            "inference": true
           }
         }
       }
@@ -15920,6 +16352,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/ui-web.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -16095,6 +16536,15 @@
             "value": true,
             "basis": "80 נקודות זיכוי ביום בתוכנית Free, לפי נתוני עמוד המחירים.",
             "evidence": "research/stage4/gapfill.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "80 נקודות ביום ופרויקט אחד. לא ברור כמה מסכים זה מאפשר.",
+            "inference": true
           }
         }
       }
@@ -16367,6 +16817,15 @@
             "value": true,
             "basis": "עד 7 הודעות ביום בתוכנית החינמית.",
             "evidence": "research/stage4/ui-web.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "עד 7 הודעות ביום: מכסה קטנה.",
+            "inference": true
           }
         }
       }
@@ -16725,6 +17184,15 @@
             "value": true,
             "basis": "200 נקודות זיכוי לבינה מלאכותית בחודש בסביבת העבודה החינמית.",
             "evidence": "research/stage4/ui-web.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": null,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "שני עמודים סטטיים בלבד בתוכנית האתר החינמית.",
+            "inference": true
           }
         }
       }
@@ -17038,6 +17506,15 @@
             "value": null,
             "basis": "התוכנית החינמית לא כוללת מכסת בינה מלאכותית מפורטת במקור.",
             "evidence": "research/stage4/ui-web.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": false,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "האתר החינמי נושא מיתוג של Wix. מכסת הבינה המלאכותית לא פורטה.",
+            "inference": true
           }
         }
       }
@@ -17346,6 +17823,15 @@
             "value": null,
             "basis": "הגרסה החינמית אינה מבוססת נקודות לפי המקור, ולכן התג אינו רלוונטי או לא אומת.",
             "evidence": "research/stage4/video-editing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": null,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "העריכה הבסיסית חינמית, אבל כלי הבינה המלאכותית שמורים ל־Pro.",
+            "inference": true
           }
         }
       }
@@ -17643,6 +18129,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/video-editing.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -18003,6 +18498,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/video-editing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חד־פעמי",
+            "usable_output": false,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "נקודות AI חד־פעמיות, והייצוא נושא סימן מים.",
+            "inference": true
           }
         }
       }
@@ -18314,6 +18818,15 @@
             "value": true,
             "basis": "60 נקודות זיכוי בחודש בתוכנית Free, לפי עמוד המחירים.",
             "evidence": "research/stage4/video-editing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": false,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "הקליפים בתוכנית החינמית נושאים סימן מים.",
+            "inference": true
           }
         }
       }
@@ -18677,6 +19190,15 @@
             "value": true,
             "basis": "עד 3 סרטונים בחודש בתוכנית Free, לפי עמוד המחירים.",
             "evidence": "research/stage4/video-editing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": false,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "עד 3 סרטונים בחודש, עד דקה, עם סימן מים.",
+            "inference": true
           }
         }
       }
@@ -19036,6 +19558,15 @@
             "value": true,
             "basis": "500 נקודות זיכוי ו־10 דקות וידאו בחודש בתוכנית Basic, לפי עמוד המחירים.",
             "evidence": "research/stage4/video-editing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": false,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "הסרטונים בתוכנית החינמית נושאים סימן מים.",
+            "inference": true
           }
         }
       }
@@ -19343,6 +19874,15 @@
             "value": false,
             "basis": null,
             "evidence": "research/stage4/video-editing.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חד־פעמי",
+            "usable_output": true,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "הנקודות ניתנות לכל חיי החשבון ואינן מתחדשות.",
+            "inference": true
           }
         }
       }
@@ -19357,11 +19897,11 @@
       "role": "פלטפורמה ליצירת סרטונים עם אווטרים ודמויות מדברות מתוך תמונה ותסריט, ב־Studio וב־API.",
       "url": "https://www.d-id.com",
       "logo": {
-        "file": "logos/d-id.png",
-        "file_dark": "logos/d-id-dark.png",
-        "source_url": "https://www.d-id.com/wp-content/uploads/2024/10/D-ID-logo-350x350-1-300x300.png",
+        "file": "logos/d-id.svg",
+        "file_dark": "logos/d-id-dark.svg",
+        "source_url": "https://www.d-id.com/wp-content/uploads/2023/11/d-id-logo.svg",
         "missing_reason": null,
-        "note": "נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה. יש גרסה נפרדת לרקע כהה. אצל D-ID הסמל הוא שם המותג עצמו, ואין סמל נפרד. בגרסה לרקע כהה האותיות השחורות הוחלפו בלבן."
+        "note": "נלקח מהאתר הרשמי ב־19 בנובמבר 2026, קובץ וקטורי. אצל D-ID הסמל כולל את שם המותג ואין סמל נפרד; שקד אישר להשתמש בו כך. במקור האותיות לבנות; בגרסה לרקע בהיר הן הוחלפו בצבע כהה."
       },
       "status": {
         "state": "פעיל",
@@ -19606,6 +20146,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/video-editing.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -19931,6 +20480,15 @@
             "value": false,
             "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
             "evidence": "research/stage4/added-tools.md"
+          },
+          "free_plan": {
+            "exists": false,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
+            "inference": true
           }
         }
       }
@@ -20272,6 +20830,15 @@
             "value": true,
             "basis": "50 נקודות זיכוי ביום בתוכנית Free.",
             "evidence": "research/stage4/audio.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": false,
+            "enough_for_real_use": true,
+            "worthwhile": false,
+            "basis": "50 נקודות ביום, אבל בלי הורדות ובלי זכויות מסחריות.",
+            "inference": true
           }
         }
       }
@@ -20610,6 +21177,15 @@
             "value": true,
             "basis": "10 אלף נקודות זיכוי בחודש בתוכנית Free.",
             "evidence": "research/stage4/audio.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "10 אלף נקודות בחודש. רישיון מסחרי לא מצוין בתוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -20898,6 +21474,15 @@
             "value": true,
             "basis": "מספר מוגבל של העלאות בכל חודש, לפי השאלות הנפוצות.",
             "evidence": "research/stage4/audio.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "מספר מוגבל של העלאות בחודש. הכמות לא צוינה.",
+            "inference": true
           }
         }
       }
@@ -21174,6 +21759,15 @@
             "value": null,
             "basis": "בתוכנית החינמית לא מוצגת מכסה.",
             "evidence": "research/stage4/audio.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "הקראה בלי מכסה מוצגת, אבל רק בקולות רובוטיים.",
+            "inference": true
           }
         }
       }
@@ -21476,6 +22070,15 @@
             "value": true,
             "basis": "10 נקודות זיכוי ביום ומכסה של 100 נקודות בחודש, שמתאפסות בתחילת כל חודש.",
             "evidence": "research/stage4/added-tools.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "10 נקודות ביום ועוד 100 בחודש. המקור שנקרא לא מפרט זכויות והורדות בחינם.",
+            "inference": true
           }
         }
       }
@@ -21707,6 +22310,15 @@
             "value": null,
             "basis": "יש ניסיון חינמי למשתמשים חדשים, ומרכז העזרה אינו מציין אם הדקות מתחדשות.",
             "evidence": "research/stage4/audio.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "יש ניסיון חינמי, ולא צוין אם הדקות מתחדשות.",
+            "inference": true
           }
         }
       }
@@ -21966,6 +22578,15 @@
             "value": true,
             "basis": "לפי השאלות הנפוצות, לשימוש החינמי יש מגבלות יומיות.",
             "evidence": "research/stage4/audio.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "שימוש חינמי עם מגבלות יומיות. הכמויות לא צוינו.",
+            "inference": true
           }
         }
       }
@@ -22275,6 +22896,15 @@
             "value": null,
             "basis": "העמוד אינו מציין אם 10 הדקות החינמיות מתחדשות.",
             "evidence": "research/stage4/audio.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": null,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "10 דקות עיבוד, ולא צוין אם הן מתחדשות.",
+            "inference": true
           }
         }
       }
@@ -22562,6 +23192,15 @@
             "value": false,
             "basis": "50 נקודות זיכוי חד־פעמיות לחשבון חדש.",
             "evidence": "research/stage4/audio.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חד־פעמי",
+            "usable_output": null,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "50 נקודות חד־פעמיות לחשבון חדש.",
+            "inference": true
           }
         }
       }
@@ -22885,6 +23524,15 @@
             "value": true,
             "basis": "נקודות זיכוי יומיות בתוכנית Free.",
             "evidence": "research/stage4/audio.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "נקודות יומיות והורדות כלולות. כמות הנקודות לא צוינה.",
+            "inference": true
           }
         }
       }
@@ -23218,6 +23866,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/3d.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": false,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "ייצוא רק ממודלים ישנים, ופרסום בגלריה הציבורית.",
+            "inference": true
           }
         }
       }
@@ -23623,6 +24280,15 @@
             "value": true,
             "basis": "100 נקודות זיכוי שמתחדשות בכל חודש בתוכנית Free.",
             "evidence": "research/stage4/3d.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "100 נקודות ועד 10 הורדות בחודש, ברישיון CC BY 4.0.",
+            "inference": true
           }
         }
       }
@@ -23853,6 +24519,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/3d.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -24169,6 +24844,15 @@
             "value": true,
             "basis": "בתוכנית Guest יצירה אחת ביום מטקסט או מתמונה.",
             "evidence": "research/stage4/added-tools.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": false,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "יצירה אחת ביום, וייצוא רק של מודלים מהקהילה.",
+            "inference": true
           }
         }
       }
@@ -24482,6 +25166,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/3d.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": null,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "עד 4 יצירות עולם, לשימוש אישי בלבד.",
+            "inference": true
           }
         }
       }
@@ -24848,6 +25541,15 @@
             "value": false,
             "basis": null,
             "evidence": "research/stage4/3d.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": false,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "בלי נקודות AI, וייצוא לרשת נושא סימן מים.",
+            "inference": true
           }
         }
       }
@@ -25105,6 +25807,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/3d.md"
+          },
+          "free_plan": {
+            "exists": null,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
+            "inference": true
           }
         }
       }
@@ -25569,6 +26280,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/code.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "שימוש מוגבל ביכולות הליבה. המכסה לא פורסמה.",
+            "inference": true
           }
         }
       }
@@ -25867,6 +26587,15 @@
             "value": true,
             "basis": "מכסה חינמית שמתחדשת מדי שבוע לחשבון Google אישי.",
             "evidence": "research/stage4/code.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "שבועי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "המכסה מתחדשת מדי שבוע, אבל גודלה לא פורסם.",
+            "inference": true
           }
         }
       }
@@ -26248,6 +26977,15 @@
             "value": false,
             "basis": null,
             "evidence": "research/stage4/code.md"
+          },
+          "free_plan": {
+            "exists": false,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "התוכנית החינמית של Claude אינה כוללת את Claude Code.",
+            "inference": true
           }
         }
       }
@@ -26544,6 +27282,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/code.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "מכסה קלה לעבודה עם סוכנים. הגודל לא פורסם.",
+            "inference": true
           }
         }
       }
@@ -26893,6 +27640,15 @@
             "value": true,
             "basis": "מכסת Copilot Free של 2,000 השלמות מוגדרת לחודש.",
             "evidence": "research/stage4/code.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "2,000 השלמות קוד בחודש, עם צ׳אט וסוכן בשימוש מוגבל.",
+            "inference": true
           }
         }
       }
@@ -27224,6 +27980,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/code.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "זמין בתוכנית Free של ChatGPT. המכסה לא פורסמה.",
+            "inference": true
           }
         }
       }
@@ -27484,6 +28249,15 @@
             "value": false,
             "basis": "אין מכסה חינמית מתחדשת: השימוש במודלים בתשלום.",
             "evidence": "research/stage4/code.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": true,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "הכלי עצמו חינמי, אבל השימוש במודלים בתשלום.",
+            "inference": true
           }
         }
       }
@@ -27817,6 +28591,15 @@
             "value": true,
             "basis": "מכסת Kiro Free של 50 נקודות מתחדשת בכל חודש.",
             "evidence": "research/stage4/code.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "50 נקודות זיכוי בחודש: מכסה קטנה.",
+            "inference": true
           }
         }
       }
@@ -28104,6 +28887,15 @@
             "value": false,
             "basis": "בתוכנית החינמית אין מכסת מודלים מתחדשת; הבינה המלאכותית פועלת עם מפתח אישי.",
             "evidence": "research/stage4/code.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": true,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "העורך חינמי, אבל הבינה המלאכותית דורשת מפתח אישי בתשלום.",
+            "inference": true
           }
         }
       }
@@ -28414,6 +29206,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/no-code-apps.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "מכסת הנקודות בחינם לא מוצגת בעמוד המחירים.",
+            "inference": true
           }
         }
       }
@@ -28751,6 +29552,15 @@
             "value": true,
             "basis": "מכסת Replit AI יומית ונקודות ענן חודשיות בתוכנית Starter החינמית.",
             "evidence": "research/stage4/no-code-apps.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "מכסת AI יומית ואפליקציה מפורסמת אחת. גודל המכסה לא פורסם.",
+            "inference": true
           }
         }
       }
@@ -29084,6 +29894,15 @@
             "value": true,
             "basis": "25 נקודות הודעה ו־100 נקודות אינטגרציה בכל חודש בתוכנית החינמית.",
             "evidence": "research/stage4/no-code-apps.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": null,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "25 נקודות הודעה בחודש: מכסה קטנה מאוד לבניית אפליקציה.",
+            "inference": true
           }
         }
       }
@@ -29393,6 +30212,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/no-code-apps.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "חינמי במגבלות הקצב של הרמה החינמית, כולל פרסום של עד 2 אפליקציות לחשבונות זכאים.",
+            "inference": true
           }
         }
       }
@@ -29720,6 +30548,15 @@
             "value": true,
             "basis": "מיליון טוקנים בכל חודש בתוכנית החינמית, עם תקרה של 300 אלף ביום.",
             "evidence": "research/stage4/no-code-apps.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": false,
+            "enough_for_real_use": true,
+            "worthwhile": false,
+            "basis": "מיליון טוקנים בחודש, אבל האתרים נושאים מיתוג של Bolt.",
+            "inference": true
           }
         }
       }
@@ -30040,6 +30877,15 @@
             "value": true,
             "basis": "500 נקודות AI ו־50K יחידות עבודה שמתחדשות בראשון לכל חודש בתוכנית Free.",
             "evidence": "research/stage4/no-code-apps.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": false,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "מתאימה לבנייה ולבדיקה, לא לפרסום גרסה חיה.",
+            "inference": true
           }
         }
       }
@@ -30406,6 +31252,15 @@
             "value": null,
             "basis": null,
             "evidence": "research/stage4/no-code-apps.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": false,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "10 נקודות זיכוי, בלי פרסום לפרודקשן.",
+            "inference": true
           }
         }
       }
@@ -30738,6 +31593,15 @@
             "value": true,
             "basis": "300 נקודות שמתחדשות בכל יום בתוכנית החינמית.",
             "evidence": "research/stage4/agents-automation.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "300 נקודות ביום. לא ברור כמה משימות זה מאפשר.",
+            "inference": true
           }
         }
       }
@@ -31008,6 +31872,15 @@
             "value": null,
             "basis": "100 נקודות ביום, אבל המילוי נעצר אחרי תקרה כוללת לכל החיים.",
             "evidence": "research/stage4/agents-automation.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "100 נקודות ביום, אבל המילוי נעצר אחרי תקרה כוללת שגובהה לא צוין.",
+            "inference": true
           }
         }
       }
@@ -31328,6 +32201,15 @@
             "value": false,
             "basis": "בענן יש רק תקופת ניסיון. גרסת Community לאירוח עצמי חינמית, בלי מכסה מתחדשת.",
             "evidence": "research/stage4/agents-automation.md"
+          },
+          "free_plan": {
+            "exists": false,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "אין תוכנית חינמית בענן. גרסת Community לאירוח עצמי חינמית.",
+            "inference": true
           }
         }
       }
@@ -31592,6 +32474,15 @@
             "value": false,
             "basis": "50 דולר בנקודות חד־פעמיות, תקפות 7 ימים.",
             "evidence": "research/stage4/agents-automation.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חד־פעמי",
+            "usable_output": null,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "נקודות חד־פעמיות שתקפות 7 ימים.",
+            "inference": true
           }
         }
       }
@@ -31878,6 +32769,15 @@
             "value": false,
             "basis": "אין תוכנית חינמית, רק ניסיון.",
             "evidence": "research/stage4/agents-automation.md"
+          },
+          "free_plan": {
+            "exists": false,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "אין תוכנית חינמית, רק ניסיון.",
+            "inference": true
           }
         }
       }
@@ -32218,6 +33118,15 @@
             "value": true,
             "basis": "100 משימות ו־400 פעולות סוכן בכל חודש בתוכנית החינמית.",
             "evidence": "research/stage4/agents-automation.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "100 משימות ו־400 פעולות סוכן בחודש.",
+            "inference": true
           }
         }
       }
@@ -32485,6 +33394,15 @@
             "value": false,
             "basis": "לא נמצאה תוכנית חינמית, רק ניסיון של 14 יום.",
             "evidence": "research/stage4/agents-automation.md"
+          },
+          "free_plan": {
+            "exists": false,
+            "renews": null,
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": false,
+            "basis": "לא נמצאה תוכנית חינמית, רק ניסיון של 14 יום.",
+            "inference": true
           }
         }
       }
@@ -32788,6 +33706,15 @@
             "value": true,
             "basis": "1,000 נקודות זיכוי בכל חודש בתוכנית החינמית.",
             "evidence": "research/stage4/agents-automation.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "1,000 נקודות זיכוי בחודש.",
+            "inference": true
           }
         }
       }
@@ -33111,6 +34038,15 @@
             "value": true,
             "basis": "1,000 נקודות זיכוי שמתחדשות. העמוד סותר את עצמו אם החידוש יומי או חודשי, אבל בשני המקרים המכסה מתחדשת.",
             "evidence": "research/stage4/added-tools.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "מתחדש, המחזור לא ברור",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "1,000 נקודות זיכוי שמתחדשות ותהליכים ללא הגבלה. העמוד סותר את עצמו אם החידוש יומי או חודשי.",
+            "inference": true
           }
         }
       }
@@ -33438,6 +34374,15 @@
             "value": null,
             "basis": "התוכנית החינמית אינה מבוססת מכסה מתחדשת שצוינה.",
             "evidence": "research/stage4/meetings-knowledge.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": true,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "העמודים חינמיים, אבל Notion AI ניתן רק בניסיון מוגבל.",
+            "inference": true
           }
         }
       }
@@ -33769,6 +34714,15 @@
             "value": true,
             "basis": "מכסות יומיות שמתאפסות כל 24 שעות, לפי עמוד העזרה.",
             "evidence": "research/stage4/meetings-knowledge.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "יומי",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "עד 100 מחברות ו־50 מקורות במחברת, במכסות יומיות. על פריטים שנוצרים יש סימן מים עד שמשדרגים.",
+            "inference": true
           }
         }
       }
@@ -34096,6 +35050,15 @@
             "value": null,
             "basis": "התמלול בחינם אינו מוגבל, ולא אומת אם נקודות ה־AI מתחדשות.",
             "evidence": "research/stage4/meetings-knowledge.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": null,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "תמלול ללא הגבלה, אבל סיכומים מוגבלים ובלי הורדת תמלולים.",
+            "inference": true
           }
         }
       }
@@ -34384,6 +35347,15 @@
             "value": null,
             "basis": "ב־Basic אין מכסה מוגדרת שמתחדשת; ההגבלה היא היסטוריה של 30 יום.",
             "evidence": "research/stage4/meetings-knowledge.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "הערות פגישה בלי מכסה מוגדרת, עם היסטוריה של 30 יום.",
+            "inference": true
           }
         }
       }
@@ -34716,6 +35688,15 @@
             "value": true,
             "basis": "300 דקות הקלטה בחודש למשתמש בתוכנית Basic.",
             "evidence": "research/stage4/meetings-knowledge.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "300 דקות הקלטה בחודש, עד 30 דקות לשיחה.",
+            "inference": true
           }
         }
       }
@@ -35092,6 +36073,15 @@
             "value": null,
             "basis": "ההקלטה בחינם אינה מוגבלת, ולתכונות המוגבלות לא צוינה מכסה מתחדשת.",
             "evidence": "research/stage4/meetings-knowledge.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": true,
+            "enough_for_real_use": true,
+            "worthwhile": true,
+            "basis": "הקלטות ותמלולים ללא הגבלה, עם סיכומים מיידיים.",
+            "inference": true
           }
         }
       }
@@ -35407,6 +36397,15 @@
             "value": false,
             "basis": "ההקלטה והתמלול ללא הגבלה, אבל מכסת סיכומי ה־AI היא לכל חיי החשבון ואינה מתחדשת.",
             "evidence": "research/stage4/added-tools.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "ללא מכסה קבועה",
+            "usable_output": true,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "הקלטות ללא הגבלה, אבל סיכום AI מלא רק ל־10 הפגישות הראשונות.",
+            "inference": true
           }
         }
       }
@@ -35704,6 +36703,15 @@
             "value": null,
             "basis": "מכסת הנקודות בחינם סותרת בין כרטיס התוכנית לטבלת ההשוואה.",
             "evidence": "research/stage4/meetings-knowledge.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "לא צוין",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "מכסת הנקודות בחינם אינה חד־משמעית במקור.",
+            "inference": true
           }
         }
       }
@@ -36061,6 +37069,15 @@
             "value": true,
             "basis": "5 תמלולים ודוחות בחודש בתוכנית Free.",
             "evidence": "research/stage4/meetings-knowledge.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "חודשי",
+            "usable_output": true,
+            "enough_for_real_use": false,
+            "worthwhile": false,
+            "basis": "5 תמלולים ודוחות בחודש.",
+            "inference": true
           }
         }
       }
@@ -36377,6 +37394,15 @@
             "value": true,
             "basis": "מכסת מילים שבועית ומכסת פגישות שבועית בתוכנית Free; המספרים לא צוינו.",
             "evidence": "research/stage4/meetings-knowledge.md"
+          },
+          "free_plan": {
+            "exists": true,
+            "renews": "שבועי",
+            "usable_output": true,
+            "enough_for_real_use": null,
+            "worthwhile": null,
+            "basis": "מכסת מילים שבועית. המספרים לא צוינו.",
+            "inference": true
           }
         }
       }

@@ -28,6 +28,11 @@ out = pilot + new
 for i, t in enumerate(new, start=len(pilot) + 1): t['id'] = i
 order = list(pilot[0].keys())
 out = [{**{k: t[k] for k in order if k in t}, **{k: v for k, v in t.items() if k not in order}} for t in out]
+fp_path = os.path.join(root, 'data/staging/_free_plan.json')
+if os.path.exists(fp_path):
+    fp = json.load(open(fp_path))
+    for t in out:
+        if t['slug'] in fp: t['filters']['tags']['free_plan'] = fp[t['slug']]
 d['tools'] = out
 d['snapshot_date'] = '2026-11-18'
 open(p, 'w').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
