@@ -1,0 +1,296 @@
+{
+ "id": null,
+ "slug": "devin",
+ "category_id": 10,
+ "name": "Devin",
+ "former_name": "Windsurf",
+ "rename_note": "Windsurf, עורך הקוד של Cognition, נקרא מ־2 ביוני 2026 Devin Desktop ומאוחד תחת המותג Devin. לפי החברה זה אותו עורך עם אותן יכולות, והתוכניות והמחירים לא השתנו בעקבות השינוי. כאן מוצגים יחד סוכן הענן Devin ועורך הקוד Devin Desktop.",
+ "role": "סוכן תכנות אוטונומי שעובד בענן על משימות שלמות, לצד עורך קוד שולחני (Devin Desktop, לשעבר Windsurf).",
+ "url": "https://devin.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "שינוי שם",
+  "note": "Windsurf עבר לשם Devin Desktop בעדכון אוטומטי, ולפי החברה העורך, ההרחבות והתוכניות נשארו כפי שהיו. ב־14 באפריל 2026 הוכרזו תוכניות Free, Pro, Max ו־Teams חדשות ל־Devin, ותוכניות Core ו־Team הישנות יוצאות משימוש.",
+  "date_as_written": "On June 2, 2026, Windsurf is becoming Devin Desktop.",
+  "source_ids": [
+   "s2",
+   "s3"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "תוכנית חינמית עם השלמות ללא הגבלה",
+   "detail": "Free כוללת השלמות Tab ועריכות בתוך הקוד ללא הגבלה, ומכסה קלה לעבודה עם סוכנים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "סוכן ענן כבר במנוי של 20 דולר",
+   "detail": "Pro כולל גישה לסוכני הענן (Devin Cloud), כל המודלים, בהם של OpenAI, Claude, Gemini ו־SpaceXAI, ושימוש חופשי ב־SWE-2.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "עורך שולחני לשלוש מערכות הפעלה",
+   "detail": "Devin Desktop מופיע כאפליקציה ל־macOS, ל־Windows ול־Linux.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מכסה קלה בלבד בחינם",
+   "detail": "בתוכנית Free המכסה לעבודה עם סוכנים קלה ומבחר המודלים מוגבל.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "המכסות אינן מפורטות במספרים",
+   "detail": "עמוד המחירים מציין רק שהמכסה מתחדשת מדי יום ומדי שבוע. שימוש נוסף מחויב לפי מחירי API.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית צוות יקרה יחסית",
+   "detail": "Teams עולה 80 דולר לחודש לצוות ועוד 40 דולר לכל מושב מפתח.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מפתחים שרוצים להעביר משימות שלמות לסוכן ולעבוד גם בעורך קוד, וצוותי פיתוח.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־20 דולר לחודש (Pro). יש תוכנית חינמית עם מכסה קלה לסוכנים והשלמות ללא הגבלה.",
+  "model": "מנוי עם מכסת שימוש",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מכסה קלה לעבודה עם סוכנים, מבחר מודלים מוגבל, עריכות והשלמות Tab ללא הגבלה",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מכסות גבוהות יותר, כל המודלים (OpenAI, Claude, Gemini, SpaceXAI), SWE-2 חופשי, סוכני ענן (Devin Cloud)",
+    "notes": "המכסה מתחדשת מדי יום ומדי שבוע. אפשר לקנות שימוש נוסף לפי מחירי API.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Max",
+    "price": 200,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "כל מה שב־Pro, Devin Bots ומכסות גבוהות בהרבה",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Teams",
+    "price": null,
+    "price_text": "80 דולר לחודש לצוות ועוד 40 דולר לכל מושב מפתח",
+    "price_short": "80 דולר + 40 למושב",
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "כל מה שב־Pro, Devin Bots, עד 100 משתמשים, SSO, חיוב מרוכז",
+    "notes": "לפי עמוד המחירים: 80 דולר לחודש לצוות ועוד 40 דולר לחודש לכל מושב מפתח. בהודעה מאפריל 2026 התוכנית תוארה כמבוססת שימוש עם הוצאה מינימלית של 80 דולר לחודש; העדפנו את עמוד המחירים.",
+    "source_ids": [
+     "s1",
+     "s3"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "מחיר לפי פנייה.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Free: מכסה קלה לעבודה עם סוכנים, מבחר מודלים מוגבל, עריכות והשלמות Tab ללא הגבלה.",
+  "trial": null,
+  "unverified_notes": "עמוד המחירים משתמש בסימן $ בלי קוד מטבע ואינו מציג חיוב שנתי. גודל המכסות לא מפורט. העמוד מציג שורה בשם Devin Desktop בטבלת ההשוואה אך לא ברור מאיזו תוכנית הוא כלול. לפי עמוד השאלות הנפוצות, מנויי Windsurf הקיימים נשארו באותה תוכנית ובאותו מחיר."
+ },
+ "privacy": {
+  "text": "לא אומת: מדיניות הפרטיות ותנאי השימוש לא נקראו, ולכן לא ידוע אם הקוד משמש לאימון.",
+  "training_on_user_data": null,
+  "source_ids": []
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "עמוד המחירים מזכיר רכישת שימוש נוסף לפי מחירי API, אך תיעוד API ציבורי לא נבדק.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "Devin Desktop ל־macOS, ל־Windows ול־Linux",
+   "סוכני ענן (Devin Cloud)"
+  ],
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Cognition",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "עמוד המחירים אינו מזכיר הטבה לסטודנטים, ולא נמצא עמוד רשמי על כך.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://devin.ai/pricing",
+   "title": "עמוד המחירים של Devin",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://docs.devin.ai/desktop/devin-desktop-faq",
+   "title": "תיעוד Devin: שאלות נפוצות על Devin Desktop (לשעבר Windsurf)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://cognition.com/blog/new-self-serve-plans-for-devin",
+   "title": "בלוג Cognition: New self-serve plans for Devin",
+   "official": true,
+   "published": "2026-04-14",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "מופיע בשש הסקירות (רובן דרך Windsurf / Devin Desktop). שינוי השם ב־2 ביוני 2026 אינו גרסה חדשה לפי החברה, ותאריך גרסה משמעותית לא אומת.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 6,
+   "evidence": "research/stage4/code.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 20,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־20 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "Mac",
+    "Windows"
+   ],
+   "unverified": [
+    "אתר"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/code.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/code.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/code.md"
+   }
+  }
+ }
+}

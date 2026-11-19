@@ -1,0 +1,287 @@
+{
+ "id": null,
+ "slug": "zed",
+ "category_id": 10,
+ "name": "Zed",
+ "former_name": null,
+ "rename_note": null,
+ "role": "עורך קוד מהיר עם יכולות בינה מלאכותית: חיזוי עריכות, סוכנים מובנים וחיבור לסוכנים חיצוניים כמו Claude Agent ו־Codex.",
+ "url": "https://zed.dev",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "Zed Pro חינם לשנה לסטודנטים",
+   "detail": "סטודנטים מאומתים באוניברסיטה מוכרת, מגיל 18, מקבלים Zed Pro לשנה עם 10 דולר בחודש בנקודות לבינה מלאכותית.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "עורך חינמי לתמיד",
+   "detail": "Personal חינמית וכוללת שימוש ללא הגבלה עם מפתחות API משלכם או עם סוכנים חיצוניים. אפשר גם לכבות את יכולות הבינה המלאכותית לגמרי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מנוי Pro זול",
+   "detail": "Pro עולה 10 דולר לחודש וכולל חיזוי עריכות ללא הגבלה ו־5 דולר בטוקנים, עם תקופת ניסיון של 14 יום בלי כרטיס אשראי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מסלול הסטודנטים בלי המודלים היקרים",
+   "detail": "תוכנית הסטודנטים אינה כוללת את Claude Fable, Claude Opus ומודלי GPT Pro.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מכסת טוקנים קטנה ב־Pro",
+   "detail": "Pro כוללת 5 דולר בטוקנים בחודש. שימוש מעבר לכך מחויב לפי מחיר ה־API ועוד 10%.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "בלי יכולות AI מובנות בחינם",
+   "detail": "בתוכנית Personal אין מכסת מודלים של Zed: הבינה המלאכותית פועלת רק עם מפתח או סוכן חיצוני.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים ומפתחים שרוצים עורך קוד קל ומהיר, עם בינה מלאכותית לפי בחירה.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "עורך חינמי לתמיד. Pro ב־10 דולר לחודש עם 5 דולר בטוקנים, ושנה חינם לסטודנטים מאומתים.",
+  "model": "שילוב",
+  "plans": [
+   {
+    "name": "Personal",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "העורך המלא, שימוש ללא הגבלה עם מפתחות API אישיים או סוכנים חיצוניים",
+    "notes": "\"Free forever\".",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 10,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "חיזוי עריכות ללא הגבלה, 5 דולר בטוקנים בחודש",
+    "notes": "מעבר ל־5 דולר מחויב לפי מחיר API ועוד 10%. ניסיון של 14 יום בלי כרטיס אשראי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Student",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "כל יכולות Pro, 10 דולר בחודש בנקודות לבינה מלאכותית, חיזוי עריכות ללא הגבלה, עבודה משותפת בזמן אמת",
+    "notes": "לשנה אחת, לסטודנטים מאומתים מגיל 18. ללא Claude Fable, Claude Opus ו־GPT Pro.",
+    "source_ids": [
+     "s2"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": 30,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מדיניות מודלים ארגונית, בקרות מידע, ניהול הרשאות",
+    "notes": "טופס הזמנה מ־25 מושבים. אין ניסיון חינם.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Personal: העורך המלא בחינם לתמיד, עם שימוש ללא הגבלה במפתחות API אישיים או בסוכנים חיצוניים. בלי מכסת מודלים של Zed.",
+  "trial": "ניסיון ל־Pro של 14 יום בלי כרטיס אשראי, עם 5 דולר בשימוש ב־GPT-6 Luna, עד שנגמר הסכום או 14 הימים.",
+  "unverified_notes": "המחירים מוצגים בסימן $ בלי קוד מטבע, ובלי חיוב שנתי."
+ },
+ "privacy": {
+  "text": "לא אומת: עמוד המחירים ובלוג 1.0 אינם מתייחסים לשימוש במידע לאימון. מדיניות הפרטיות לא נקראה. ב־Business מנהלים יכולים לנעול את הגדרות שיתוף המידע של החברים.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "Zed תומך בסוכנים חיצוניים דרך Agent Client Protocol ובמפתחות API של ספקים כמו Anthropic, OpenAI ו־Amazon Bedrock. API ציבורי של Zed לא נבדק.",
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Agent Client Protocol (Claude Agent, Codex, OpenCode, Cursor)",
+   "Git",
+   "Anthropic",
+   "OpenAI",
+   "Amazon Bedrock"
+  ],
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "macOS",
+   "Windows",
+   "Linux"
+  ],
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Zed Industries",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "Zed Pro חינם לשנה לסטודנטים שלומדים באוניברסיטה מוכרת ובני 18 ומעלה, עם 10 דולר בחודש בנקודות לבינה מלאכותית. התוכנית אינה כוללת את Claude Fable, Claude Opus ו־GPT Pro. אופן האימות ואם סטודנטים מחוץ לארה״ב זכאים לא נקראו בעמוד.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://zed.dev/pricing",
+   "title": "עמוד המחירים של Zed",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://zed.dev/education",
+   "title": "Zed לסטודנטים: Zed Pro חינם לשנה",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://zed.dev/blog/zed-1-0",
+   "title": "בלוג Zed: Zed is 1.0",
+   "official": true,
+   "published": "2026-04-29",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "Zed 1.0 יצא באפריל 2026, והעורך מופיע ב־3 מתוך 6 סקירות עצמאיות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Zed 1.0",
+   "latest_version_date": "April 29th, 2026",
+   "latest_version_date_iso": "2026-04-29",
+   "independent_reviews": 3,
+   "evidence": "research/stage4/code.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 10,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־10 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "Mac",
+    "Windows"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 3,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/code.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/code.md"
+   },
+   "free_renewing": {
+    "value": false,
+    "basis": "בתוכנית החינמית אין מכסת מודלים מתחדשת; הבינה המלאכותית פועלת עם מפתח אישי.",
+    "evidence": "research/stage4/code.md"
+   }
+  }
+ }
+}

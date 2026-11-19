@@ -1,0 +1,464 @@
+{
+ "id": null,
+ "slug": "cursor",
+ "category_id": 10,
+ "name": "Cursor",
+ "former_name": null,
+ "rename_note": "מאז הצטרפות Cursor ל־SpaceX, מצטרפים חדשים קונים את Cursor דרך The X Subscription, מנוי אחד שמאגד את Grok, את Cursor ואת X. מנויי Cursor הוותיקים ממשיכים כרגיל אלא אם בוחרים לעבור.",
+ "role": "עורך קוד עם בינה מלאכותית מובנית: השלמות, צ׳אט וסוכן שכותב ומשנה קוד בפרויקט.",
+ "url": "https://cursor.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": "Cursor נרכשה על ידי SpaceX. לפי הבלוג, הרכישה השלימה תהליך שהחל באפריל. התוכניות למצטרפים חדשים הוחלפו ב־The X Subscription; המעבר מתוכנית ותיקה אופציונלי וסופי.",
+  "date_as_written": "Aug 14, 2026",
+  "source_ids": [
+   "s3",
+   "s1",
+   "s2"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "כניסה זולה במנוי המאוחד",
+   "detail": "Plus של The X Subscription עולה 8 דולר לחודש או 80 דולר לשנה, וכולל שימוש ב־Cursor וב־Grok.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית עם יכולות הליבה",
+   "detail": "Free נותנת גישה ל־Agent, ל־Chat ולהשלמות Tab עם מודלי Cursor, בשימוש מוגבל.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הרצת כמה סוכנים במקביל",
+   "detail": "Cursor 3 הוסיף חלון סוכנים שמריץ כמה סוכנים במקביל על כמה מאגרים, ומצב Design Mode לסימון רכיבי ממשק בדפדפן.",
+   "source_ids": [
+    "s5"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מצב הפרטיות אינו מוגדר כברירת מחדל ידועה למשתמש יחיד",
+   "detail": "העמוד מציין שהמצב פעיל כברירת מחדל רק בצוותים ובארגונים. משתמש יחיד צריך לבדוק ולהפעיל אותו בהגדרות.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מכסה משותפת עם Grok",
+   "detail": "ב־The X Subscription השימוש ב־Grok וב־Cursor נלקח מאותו מאגר שבועי.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "המעבר למנוי החדש אינו הפיך",
+   "detail": "מי שעובר מתוכנית Cursor ותיקה ל־The X Subscription אינו יכול לחזור, והמנויים הקודמים מבוטלים בהחזר יחסי.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מפתחים וסטודנטים שרוצים עורך קוד שלם עם סוכן מובנה, מהתנסות חינמית ועד שימוש אינטנסיבי.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "מ־8 דולר לחודש או 80 דולר לשנה (Plus של The X Subscription). יש תוכנית חינמית עם שימוש מוגבל.",
+  "model": "מנוי עם מכסת שימוש",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "שימוש מוגבל ביכולות הליבה",
+    "notes": "תוכנית Hobby הוותיקה פועלת באותו אופן: Agent, Chat והשלמות Tab עם מודלי Cursor (Grok ו־Composer).",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Plus",
+    "price": 8,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "שימוש בסיסי, במאגר שבועי משותף ל־Grok ול־Cursor",
+    "notes": "תוכנית של The X Subscription למצטרפים חדשים. המחיר אינו כולל מס.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Plus",
+    "price": 80,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "שימוש בסיסי, במאגר שבועי משותף ל־Grok ול־Cursor",
+    "notes": "מחיר לשנה. תוכנית של The X Subscription למצטרפים חדשים. המחיר אינו כולל מס.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Premium",
+    "price": 30,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "פי 4 מ־Plus, במאגר שבועי משותף ל־Grok ול־Cursor",
+    "notes": "תוכנית של The X Subscription למצטרפים חדשים. המחיר אינו כולל מס.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Premium",
+    "price": 300,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "פי 4 מ־Plus, במאגר שבועי משותף ל־Grok ול־Cursor",
+    "notes": "מחיר לשנה. תוכנית של The X Subscription למצטרפים חדשים. המחיר אינו כולל מס.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Super",
+    "price": 100,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "פי 15 מ־Plus, במאגר שבועי משותף ל־Grok ול־Cursor",
+    "notes": "תוכנית של The X Subscription למצטרפים חדשים. המחיר אינו כולל מס.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Super",
+    "price": 1000,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "פי 15 מ־Plus, במאגר שבועי משותף ל־Grok ול־Cursor",
+    "notes": "מחיר לשנה. תוכנית של The X Subscription למצטרפים חדשים. המחיר אינו כולל מס.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Ultra",
+    "price": 200,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "פי 50 מ־Plus, במאגר שבועי משותף ל־Grok ול־Cursor",
+    "notes": "תוכנית של The X Subscription למצטרפים חדשים. המחיר אינו כולל מס.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Ultra",
+    "price": 2000,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "פי 50 מ־Plus, במאגר שבועי משותף ל־Grok ול־Cursor",
+    "notes": "מחיר לשנה. תוכנית של The X Subscription למצטרפים חדשים. המחיר אינו כולל מס.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Teams",
+    "price": null,
+    "price_text": "30, 100 או 200 דולר למושב לחודש",
+    "price_short": "מ־30 דולר למושב",
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "שימוש לפי דרגת המושב",
+    "notes": "30, 100 או 200 דולר למושב לחודש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "מחיר לפי פנייה.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "superseded_plans": [
+   {
+    "name": "Pro (legacy)",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "שני מאגרי שימוש חודשיים ושימוש לפי דרישה",
+    "notes": "תוכנית ותיקה שאינה מוצעת עוד למצטרפים חדשים; מקבילה ל־Premium.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro+ (legacy)",
+    "price": 60,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "תוכנית ותיקה; מקבילה ל־Super.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Ultra (legacy)",
+    "price": 200,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "תוכנית ותיקה; מקבילה ל־Ultra.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Free: יכולות הליבה של Cursor בשימוש מוגבל, כולל Agent, Chat והשלמות Tab עם מודלי Cursor (Grok ו־Composer).",
+  "trial": null,
+  "unverified_notes": "המחירים מוצגים בסימן $ בלי קוד מטבע, ואינם כוללים מס. גודל המכסות במספרים לא פורסם. מחיר Enterprise לפי פנייה. תוכנית Start (הודו בלבד) הוותיקה עלתה 649 רופי לחודש."
+ },
+ "privacy": {
+  "text": "לפי מרכז העזרה, כש־Privacy Mode פעיל הקוד אינו משמש לאימון על ידי Cursor או ספקי המודלים. המצב פעיל כברירת מחדל בצוותים ובארגונים; לגבי משתמש יחיד העמוד אינו מציין ברירת מחדל. הפעלה: Cursor Settings > General > Privacy Mode. Grok Bot פועל במשטח נפרד עם זרימת מידע משלו, ו־Privacy Mode של העורך אינו חל עליו באותו אופן.",
+  "training_on_user_data": "לא כש־Privacy Mode פעיל. ברירת המחדל למשתמש יחיד לא צוינה.",
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק תיעוד API.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "Grok ו־X דרך The X Subscription"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "עורך קוד שולחני",
+   "חלון סוכנים (Agents Window)",
+   "סוכנים בענן"
+  ],
+  "source_ids": [
+   "s4",
+   "s5"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Cursor",
+  "parent": "SpaceX",
+  "country": null,
+  "note": "לפי הבלוג הרשמי מ־14 באוגוסט 2026, Cursor נרכשה על ידי SpaceX. שם הישות המשפטית לא נבדק."
+ },
+ "student_benefits": {
+  "text": "עמודי המחירים שנבדקו אינם מזכירים הטבה לסטודנטים. בפורום הקהילה של Cursor יש שרשור על אימות סטודנטים, אך הוא לא נקרא ואינו מקור רשמי למחיר.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://cursor.com/help/account-and-billing/pricing",
+   "title": "מרכז העזרה של Cursor: מחירים ותוכניות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://cursor.com/help/the-x-subscription/overview",
+   "title": "מרכז העזרה של Cursor: מהו The X Subscription",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://cursor.com/blog/joining-spacex",
+   "title": "בלוג Cursor: Cursor is now a part of SpaceX",
+   "official": true,
+   "published": "2026-08-14",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://cursor.com/help/security-and-privacy/privacy",
+   "title": "מרכז העזרה של Cursor: פרטיות ומידע",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://cursor.com/changelog/3-0",
+   "title": "Cursor changelog: Cursor 3 (New Cursor Interface)",
+   "official": true,
+   "published": "2026-04-02",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "כלי מוביל שקיבל את Cursor 3, ממשק חדש שמבוסס על סוכנים, באפריל 2026, ומופיע בכל שש הסקירות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Cursor 3",
+   "latest_version_date": "Apr 2, 2026",
+   "latest_version_date_iso": "2026-04-02",
+   "independent_reviews": 6,
+   "evidence": "research/stage4/code.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 8,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Plus (The X Subscription)",
+   "verified": true,
+   "label": "מ־8 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "Mac",
+    "Windows"
+   ],
+   "unverified": [
+    "שורת פקודה"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/code.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מקום 35 ברשימת אתרי הבינה המלאכותית של a16z, מהדורה 7 (אוקטובר 2026, לפי Similarweb לאוגוסט 2026), עלייה ממקום 41.",
+    "evidence": "research/stage4/code.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/code.md"
+   }
+  }
+ }
+}
