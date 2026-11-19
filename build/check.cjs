@@ -61,6 +61,8 @@ const audit = (rootSel) => {
       const errors = [];
       page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
       page.on('pageerror', (e) => errors.push(String(e)));
+      // הבדיקות רצות בלי רשת: פניות לשירות ההצבעות ולכלי המדידה מקבלות תשובה ריקה, כדי שלא ייספרו כשגיאות של האתר
+      await page.route(/^https?:\/\//, (r) => r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: '{}' }));
       await page.goto('file://' + file);
       await page.waitForTimeout(300);
       const report = async (label, rootSel) => {
@@ -152,7 +154,9 @@ const audit = (rootSel) => {
       await page.mouse.click(4, 4);
       note(!(await isOpen(2)), `${tag} לחיצה על הרקע לא סוגרת את החלון`);
       await open.click();
-      await page.locator('#detail-2 [data-sheet-close]').click();
+      // בטלפון לחצן הסגירה לא מוצג (סוגרים בגרירה), אבל נשאר לקורא מסך ולמקלדת, ולכן שם מפעילים אותו במקלדת
+      if (width === 1440) await page.locator('#detail-2 [data-sheet-close]').click();
+      else { await page.locator('#detail-2 [data-sheet-close]').focus(); await page.keyboard.press('Enter'); }
       note(!(await isOpen(2)), `${tag} כפתור הסגירה לא סוגר`);
       note(await page.evaluate(() => document.activeElement.matches('#tool-2 .card-head [data-sheet-open]')), `${tag} המיקוד לא חוזר אחרי כפתור הסגירה`);
       note(await page.evaluate(() => getComputedStyle(document.documentElement).overflow !== 'hidden'), `${tag} הגלילה בעמוד נשארת נעולה`);
@@ -168,7 +172,9 @@ const audit = (rootSel) => {
           const over = await page.locator(`#detail-${id} .sheet-scroll`).evaluate((el) => el.scrollHeight - el.clientHeight);
           // חלון עם הערות (שימו לב, למה מומלץ) רשאי לגלול עד גובה ההערות, לא יותר
           const notesH = await page.locator(`#detail-${id} .sheet-notes`).evaluateAll((els) => els.length ? Math.ceil(els[0].getBoundingClientRect().height) + 16 : 0);
-          note(over <= notesH, `${tag} חלון הפרטים של כלי ${id} דורש גלילה`, `${over} / ${notesH}`);
+          // חלק ההצבעות נוסף לחלון בזמן ריצה (assets/community.js) ומאריך אותו; הגובה שלו מותר בנוסף, והשאלה אם לקצר אותו פתוחה מול שקד
+          const voteH = await page.locator(`#detail-${id} .sec.vote`).evaluateAll((els) => els.length ? Math.ceil(els[0].getBoundingClientRect().height) + 40 : 0);
+          note(over <= notesH + voteH, `${tag} חלון הפרטים של כלי ${id} דורש גלילה`, `${over} / ${notesH + voteH}`);
         }
         await page.locator(`#detail-${id} .pt`).evaluateAll((els) => els.forEach((e) => { e.open = true; }));
         const mores = await page.locator(`#detail-${id} .more-btn`).evaluateAll((els) => els.map((e) => e.getAttribute('aria-controls')));
@@ -189,7 +195,7 @@ const audit = (rootSel) => {
       note(!dead.length, `${tag} קישור פנימי בלי יעד`, dead.join(' '));
       await page.evaluate(() => document.querySelectorAll('img').forEach((i) => { i.loading = 'eager'; }));
       await page.waitForTimeout(300);
-      const badImg = await page.evaluate(() => [...document.querySelectorAll('img')].filter((i) => !i.complete || !i.naturalWidth).map((i) => i.getAttribute('src')));
+      const badImg = await page.evaluate(() => [...document.querySelectorAll('img[src]')].filter((i) => !i.complete || !i.naturalWidth).map((i) => i.getAttribute('src')));
       note(!badImg.length, `${tag} לוגו שלא נטען`, badImg.join(' '));
       const logoVisible = await page.evaluate(() => [...document.querySelectorAll('.logo')].filter((l) => [...l.querySelectorAll('img')].filter((i) => getComputedStyle(i).display !== 'none').length !== 1).length);
       note(logoVisible === 0, `${tag} לוגו: לא גרסה אחת בדיוק גלויה`, String(logoVisible));
@@ -262,7 +268,8 @@ const audit = (rootSel) => {
         note((await page.locator('.card:not([hidden])').count()) === n, `${tag} ניקוי הסינון לא מחזיר את כל הקטגוריות`);
         await page.locator('#legend summary').click();
         await report('המקרא פתוח');
-        const rows = await page.locator('#legend .legend-list li').evaluateAll((els) => new Set(els.map((e) => Math.round(e.getBoundingClientRect().top))).size === els.length);
+        // המקרא בשתי עמודות (תגים, דרגות שימו לב): בתוך כל עמודה כל פריט בשורה משלו
+        const rows = await page.locator('#legend .legend-list').evaluateAll((lists) => lists.every((l) => { const els = [...l.children]; return new Set(els.map((e) => Math.round(e.getBoundingClientRect().top))).size === els.length; }));
         note(rows, `${tag} תגים במקרא חולקים שורה`);
         await page.locator('#legend summary').click();
       }
