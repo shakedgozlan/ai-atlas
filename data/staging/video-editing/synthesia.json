@@ -1,0 +1,335 @@
+{
+ "id": null,
+ "slug": "synthesia",
+ "category_id": 7,
+ "name": "Synthesia",
+ "former_name": null,
+ "rename_note": null,
+ "role": "פלטפורמה ליצירת סרטוני הדרכה והסבר עם אווטרים מדברים מתוך תסריט, כולל דיבוב לשפות אחרות.",
+ "url": "https://www.synthesia.io",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "תוכנית חינמית עם מכסה חודשית",
+   "detail": "Basic כוללת 10 דקות וידאו ו־10 דקות דיבוב בחודש, 9 אווטרים ויותר מ־140 שפות וקולות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "לא מאמנת מודלים על תוכן הלקוחות",
+   "detail": "לפי Synthesia, היא אינה משתמשת בנתוני לקוחות, כולל קלט ופלט, לאימון מקדים של רכיבי הבינה המלאכותית.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "דיבוב ליותר מ־70 שפות",
+   "detail": "כל התוכניות כוללות דיבוב ליותר מ־70 שפות יעד, במכסת דקות שגדלה עם התוכנית. מאז Synthesia 3.0 (אוקטובר 2025) אפשר ליצור אווטר אישי מתמונה אחת.",
+   "source_ids": [
+    "s1",
+    "s4"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "סימן מים בתוכנית החינמית",
+   "detail": "סרטונים בתוכנית Basic נושאים סימן מים של Synthesia.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מכסת דקות מצומצמת בתוכנית הזולה",
+   "detail": "Starter מוסיפה רק כ־12 דקות וידאו בחודש מעבר להקצאה החינמית.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מחיר מבצע בחודש הראשון בלבד",
+   "detail": "Starter עולה 9 דולר בחודש הראשון ו־19 דולר אחר כך; Pro עולה 49 דולר בחודש הראשון ו־89 דולר אחר כך.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "צוותי הדרכה, שיווק ותקשורת פנים־ארגונית, וגם יוצרים עצמאיים שצריכים סרטון הסבר עם מגיש בלי צילום.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־19 דולר לחודש בחיוב חודשי (9 דולר בחודש הראשון במבצע), או 14 דולר לחודש בחיוב שנתי. יש תוכנית חינמית עם 10 דקות וידאו בחודש וסימן מים.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Basic",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "500 נקודות זיכוי בחודש, 10 דקות וידאו בחודש, 10 דקות דיבוב בחודש, 9 אווטרים, יותר מ־140 שפות וקולות",
+    "notes": "הסרטונים נושאים סימן מים של Synthesia.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Starter",
+    "price": 19,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "1,250 נקודות זיכוי בחודש, עד כ־12 דקות וידאו ועד 16 דקות דיבוב בחודש מעבר להקצאה החינמית, יותר מ־125 אווטרים, 3 אווטרים אישיים, הסרת הלוגו",
+    "notes": "מבצע שהוצג: 9 דולר בחודש הראשון, ואחר כך 19 דולר לחודש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Starter",
+    "price": 14,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "15,000 נקודות זיכוי בשנה, עד כ־150 דקות וידאו ו־197 דקות דיבוב בשנה, יותר מ־125 אווטרים, 3 אווטרים אישיים, הסרת הלוגו",
+    "notes": "מחיר לחודש בחיוב שנתי: 168 דולר לשנה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 89,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "6,000 נקודות זיכוי בחודש, עד כ־60 דקות וידאו ועד 78 דקות דיבוב בחודש, יותר מ־180 אווטרים, 5 אווטרים אישיים, הסרת הלוגו",
+    "notes": "מבצע שהוצג: 49 דולר בחודש הראשון, ואחר כך 89 דולר לחודש. במטא־נתונים של העמוד התוכנית נקראת Creator.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 59,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "72,000 נקודות זיכוי בשנה, עד כ־720 דקות וידאו ו־947 דקות דיבוב בשנה, יותר מ־180 אווטרים, 5 אווטרים אישיים, הסרת הלוגו",
+    "notes": "מחיר לחודש בחיוב שנתי: 708 דולר לשנה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": null,
+    "price_text": "המחיר לא פורסם בעמוד",
+    "price_short": "המחיר לא פורסם",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "העמוד מזכיר את התוכנית בלי מחיר ובלי מכסות.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Basic ללא תשלום: 500 נקודות זיכוי בחודש, 10 דקות וידאו ו־10 דקות דיבוב בחודש, 9 אווטרים, עם סימן מים.",
+  "trial": null,
+  "unverified_notes": "בעמוד רץ מבצע לחודש הראשון בחיוב חודשי, ולכן האימות חלקי. מחירי Business ו־Enterprise לא פורסמו. העמוד משתמש בסימן $ בלי קוד מטבע. גישת API לפי תוכנית לא צוינה; מחירי ה־API בעמוד נפרד שלא נקרא."
+ },
+ "privacy": {
+  "text": "לפי מסגרת הממשל של Synthesia, החברה אינה משתמשת בנתוני לקוחות, כולל קלט ופלט, לאימון מקדים של רכיבי הבינה המלאכותית. כוונון של רכיבים נעשה לפי הוראות בכתב של הלקוח. יצירת אווטרים וקולות אישיים כפופה למנגנוני הסכמה, והתוכן נבדק כבר בשלב היצירה.",
+  "training_on_user_data": "לא לאימון מקדים, לפי המקור",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי Synthesia, הלקוח שומר על הבעלות בסרטונים, והפרטים כפופים לתנאי השירות ללקוחות, שלא נקראו. שימוש מסחרי לפי תוכנית לא פורט בעמוד המחירים.",
+  "watermark": "בתוכנית Basic הסרטונים נושאים סימן מים. Starter ו־Pro כוללות הסרת לוגו.",
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "עמוד המחירים מקשר למידע נפרד על מחירי API (\"Explore API pricing\"), שלא נקרא. אילו תוכניות כוללות גישת API לא צוין.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: שאלות השפות במרכז העזרה מציינות יותר מ־120 שפות בלי לפרט, ועמוד המחירים מציין יותר מ־140 שפות וקולות. עמוד שיווקי של קול בעברית נראה בתוצאות חיפוש אך לא נקרא.",
+  "source_ids": [
+   "s3",
+   "s1"
+  ]
+ },
+ "company": {
+  "name": "Synthesia Limited",
+  "parent": null,
+  "country": "בריטניה",
+  "note": null
+ },
+ "student_benefits": {
+  "text": "עמוד המחירים אינו מזכיר הנחה לסטודנטים או לאנשי חינוך. לא נמצא עמוד רשמי של הטבה לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.synthesia.io/pricing",
+   "title": "עמוד המחירים של Synthesia",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.synthesia.io/ai-governance",
+   "title": "Synthesia: מסגרת הממשל של הבינה המלאכותית",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://help.synthesia.io/en/articles/8369851-languages-faqs",
+   "title": "מרכז העזרה של Synthesia: שאלות נפוצות על שפות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://synthesia.io/post/synthesia-3-0-the-next-era-of-video",
+   "title": "הבלוג של Synthesia: Synthesia 3.0",
+   "official": true,
+   "published": "2025-10-01",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": "NN",
+   "basis": "BASIS",
+   "launch_date": "launched in 2017",
+   "launched_in_window": false,
+   "latest_version": "Synthesia 3.0",
+   "latest_version_date": "October 1, 2025",
+   "latest_version_date_iso": "2025-10-01",
+   "independent_reviews": null,
+   "evidence": "research/stage4/video-editing.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 19,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Starter",
+   "verified": true,
+   "label": "מ־19 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 0,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "500 נקודות זיכוי ו־10 דקות וידאו בחודש בתוכנית Basic, לפי עמוד המחירים.",
+    "evidence": "research/stage4/video-editing.md"
+   }
+  }
+ }
+}

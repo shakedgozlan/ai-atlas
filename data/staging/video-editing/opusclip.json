@@ -1,0 +1,311 @@
+{
+ "id": null,
+ "slug": "opusclip",
+ "category_id": 7,
+ "name": "OpusClip",
+ "former_name": null,
+ "rename_note": null,
+ "role": "כלי שחותך סרטונים ארוכים לקליפים קצרים לרשתות, עם כתוביות, B-roll ועריכה אוטומטית של סרטוני דיבור.",
+ "url": "https://www.opus.pro",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "קליפים קצרים מתוך סרטון ארוך",
+   "detail": "מעלים סרטון או מדביקים קישור, והכלי מפיק ממנו קליפים קצרים. מאז OpusClip 4.0 יש גם עריכה אוטומטית של סרטוני דיבור עם ניקוי דיבור, כתוביות ו־B-roll.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית שמתחדשת",
+   "detail": "Free כוללת 60 נקודות זיכוי בחודש וקליפים עד 1080p.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מתכונים וחיבור לעוזרי AI",
+   "detail": "אפשר לשמור הגדרות עריכה כ־Recipe, ו־AI Producer מאפשר לערוך מתוך ChatGPT או Claude דרך תוסף.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "אין תמיכה בשפות מימין לשמאל",
+   "detail": "לפי מרכז העזרה, OpusClip אינה תומכת בשפות שנקראות מימין לשמאל, כולל עברית, ערבית ופרסית.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "סימן מים ושימוש לא מסחרי בחינם",
+   "detail": "בתוכנית Free הקליפים נושאים סימן מים, ולפי תנאי השימוש רישיון לשימוש מסחרי ניתן רק למשתמשים בשירותים בתשלום.",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "Starter בחיוב חודשי בלבד",
+   "detail": "Starter עולה 15 דולר לחודש עם 150 נקודות, ואין לה חיוב שנתי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "יוצרי תוכן, פודקאסטרים ומשווקים שרוצים להפיק קליפים לטיקטוק, לרילס ולשורטס מתוך סרטונים ארוכים.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־15 דולר לחודש (Starter, חיוב חודשי בלבד), או Pro ב־14.5 דולר לחודש בחיוב שנתי. יש תוכנית חינמית עם 60 נקודות בחודש וסימן מים.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "60 נקודות זיכוי בחודש, קליפים עד 1080p",
+    "notes": "הקליפים נושאים סימן מים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Starter",
+    "price": 15,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "150 נקודות זיכוי בחודש, בלי סימן מים, ייצוא ברזולוציה הגבוהה ביותר",
+    "notes": "זמינה בחיוב חודשי בלבד.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 29,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "בלי סימן מים, גישה מוגבלת ל־API",
+    "notes": "מכסת הנקודות בחיוב חודשי לא הופיעה בחלק שנקרא.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 14.5,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "3,600 נקודות זיכוי ל־12 חודשים, בלי סימן מים, גישה מוגבלת ל־API",
+    "notes": "מחיר לחודש בחיוב שנתי: 174 דולר לשנה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "נקודות בהתאמה, API ואינטגרציות מותאמות",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free ללא תשלום: 60 נקודות זיכוי בחודש, קליפים עד 1080p עם סימן מים.",
+  "trial": null,
+  "unverified_notes": "טקסט עמוד המחירים נקטע אחרי 100,000 תווים, ולכן לא נקראו כל פרטי ההשוואה. מכסת הנקודות של Pro בחיוב חודשי לא הופיעה. מחיר Business לפי הצעה."
+ },
+ "privacy": {
+  "text": "לפי תנאי השימוש, המשתמש מעניק לחברה רישיון עולמי, לא בלעדי וללא תמלוגים לתוכן שלו כדי לספק ולשפר את השירות, לפקח על עמידה בתנאים ולצרכים משפטיים. התנאים אינם מזכירים במפורש אימון מודלים. ספקי AI חיצוניים עשויים לעבד נתונים לפי התנאים שלהם. מדיניות הפרטיות לא נקראה.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תנאי השימוש, המשתמש שומר על כל הזכויות בקלט ובפלט, והחברה אינה טוענת לבעלות עליהם. השירות מיועד לשימוש אישי ולא מסחרי, אבל משתמשים בשירותים בתשלום מקבלים רישיון לשימוש מסחרי. החברה אינה מתחייבת שהפלט ייחודי או זכאי להגנת קניין רוחני. בתנאים מופיעים שני תאריכי תוקף שונים (8 באוגוסט 2025 ו־15 בנובמבר 2024).",
+  "watermark": "בתוכנית Free הקליפים נושאים סימן מים. מ־Starter ומעלה אפשר להסיר אותו.",
+  "source_ids": [
+   "s2",
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "לפי עמוד המחירים, Pro כוללת \"Limited API Access\" ו־Business כוללת API ואינטגרציות מותאמות. תיעוד ה־API ומחיריו לא נקראו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "ChatGPT (תוסף AI Producer)",
+   "Claude (תוסף AI Producer)"
+  ],
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "לפי מרכז העזרה: \"we do not support any languages that read right to left, including Hebrew\". כלומר אין תמיכה בעברית.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "company": {
+  "name": "Opusclip Inc.",
+  "parent": null,
+  "country": "ארצות הברית",
+  "note": "התאגדה בדלאוור, עם כתובת במאונטן ויו, קליפורניה, לפי תנאי השימוש."
+ },
+ "student_benefits": {
+  "text": "הטקסט שנקרא מעמוד המחירים אינו מזכיר הנחה לסטודנטים. לא נמצא עמוד רשמי של הטבה לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.opus.pro/pricing",
+   "title": "עמוד המחירים של OpusClip (נקרא חלקית, הטקסט נקטע)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.opus.pro/agent-opus/terms-of-service",
+   "title": "תנאי השימוש של OpusClip",
+   "official": true,
+   "published": "2025-08-08",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://help.opus.pro/docs/article/does-opusclip-support-languages-right-left.md",
+   "title": "מרכז העזרה של OpusClip: תמיכה בשפות מימין לשמאל",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://www.opus.pro/blog/opusclip-4-0",
+   "title": "הבלוג של OpusClip: OpusClip 4.0",
+   "official": true,
+   "published": "2026-11-02",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "BASIS",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "OpusClip 4.0",
+   "latest_version_date": "November 2, 2026",
+   "latest_version_date_iso": "2026-11-02",
+   "independent_reviews": null,
+   "evidence": "research/stage4/video-editing.md"
+  },
+  "hebrew": {
+   "value": "לא נתמכת לפי המקור",
+   "label": "עברית לא נתמכת",
+   "supported": false
+  },
+  "starting_price": {
+   "amount": 15,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Starter",
+   "verified": true,
+   "label": "מ־15 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": [
+    "אפליקציות לנייד"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 0,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "60 נקודות זיכוי בחודש בתוכנית Free, לפי עמוד המחירים.",
+    "evidence": "research/stage4/video-editing.md"
+   }
+  }
+ }
+}

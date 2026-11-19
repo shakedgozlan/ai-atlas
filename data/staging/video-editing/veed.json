@@ -1,0 +1,265 @@
+{
+ "id": null,
+ "slug": "veed",
+ "category_id": 7,
+ "name": "VEED",
+ "former_name": null,
+ "rename_note": null,
+ "role": "עורך וידאו בדפדפן עם כתוביות אוטומטיות, תרגום ודיבוב, אווטרים וכלי AI להקלטה ועריכה.",
+ "url": "https://www.veed.io",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "כתוביות כמעט ללא הגבלה בתוכניות בתשלום",
+   "detail": "כל התוכניות בתשלום כוללות יצירת כתוביות ללא הגבלה, במגבלת שימוש הוגן של 50 שעות בחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכניות למוסדות לימוד",
+   "detail": "VEED מציעה תוכניות חינוך מותאמות לשימוש של פקולטה שלמה, לפי הצעת מחיר.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "זכויות בתמונות AI",
+   "detail": "לפי תנאי כלי ה־AI, המשתמש הוא הבעלים של תמונות ה־AI שיצר ורשאי להשתמש בהן לכל מטרה חוקית.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "תמחור לפי מושב",
+   "detail": "המחיר מוכפל במספר העורכים בסביבת העבודה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות ודקות לא נצברות",
+   "detail": "נקודות AI ודקות תרגום שלא נוצלו אינן עוברות לתקופה הבאה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הגבלות על אווטרים והקראה",
+   "detail": "אסור להתחזות לאדם באמצעות אווטרים או הקראה, ואסור להשתמש בהם לאמירות על נושאים רגישים כמו דת, פוליטיקה, גזע או מגדר.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "יוצרים, משווקים וצוותים שעורכים בדפדפן ורוצים כתוביות ותרגום מהירים לרשתות.",
+ "pricing": {
+  "verification": "לא אומת",
+  "summary_line": null,
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "העמוד מציין \"Start for free\" בלי לפרט מה כלול.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "תוכניות בתשלום",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "כתוביות ללא הגבלה במגבלת שימוש הוגן של 50 שעות בחודש, נקודות AI חודשיות או שנתיות, דקות תרגום לפי התוכנית",
+    "notes": "התמחור הוא לפי מושב. נקודות ודקות תרגום שלא נוצלו אינן עוברות לתקופה הבאה. שמות התוכניות ומחיריהן לא הופיעו בטקסט שנקרא.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Education",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "תוכניות מותאמות לשימוש של פקולטה שלמה",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "ניסיון חינם לארגונים, מינימום 3 משתמשים",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": "ניסיון חינם לארגונים בלבד, במינימום 3 משתמשים.",
+  "unverified_notes": "עמוד המחירים נקרא פעמיים, אך שמות התוכניות, המחירים, המכסות, הרזולוציה וסימן המים בתוכנית החינמית לא הופיעו בטקסט (כנראה מוצגים בסקריפט). לפי העמוד המחירים מוצגים במטבע מקומי כשאפשר, אחרת בדולר ארה\"ב."
+ },
+ "privacy": {
+  "text": "תנאי כלי ה־AI של VEED אינם מזכירים שימוש בתוכן משתמשים, בפנים או בקול לאימון מודלים, של VEED או של צד שלישי. מדיניות הפרטיות לא נקראה.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תנאי כלי ה־AI, במידה שהחוק מתיר, המשתמש הוא הבעלים של תמונות ה־AI ורשאי להשתמש בהן לכל מטרה חוקית, ו־Veed Limited לא תטען לבעלות עליהן. החברה אינה אחראית לשימושים שהמשתמש עושה בהן. העמוד עוסק בתמונות AI, ולא נבדק אם אותם כללים חלים על סרטונים.",
+  "watermark": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": null,
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "לא אומת: עמודי כלים של VEED לכתוביות, לתמלול ולדיבוב בעברית, וגרסת אתר בכתובת veed.io/he-IL, נראו בתוצאות חיפוש בלבד ולא נקראו.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Veed Limited",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "עמוד המחירים מציין \"bespoke education plans for faculty wide use\" דרך פנייה למכירות. הנחה אישית לסטודנט לא הוזכרה.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.veed.io/pricing",
+   "title": "עמוד המחירים של VEED (נקראו רק השאלות הנפוצות)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.veed.io/terms-of-use/ai-tools",
+   "title": "VEED: תנאי שימוש בכלי AI",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "BASIS",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": null,
+   "evidence": "research/stage4/video-editing.md"
+  },
+  "hebrew": {
+   "value": "לא אומת",
+   "label": "עברית לא אומתה",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": null,
+   "billing": null,
+   "plan": null,
+   "verified": false,
+   "label": null,
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 0,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/video-editing.md"
+   }
+  }
+ }
+}

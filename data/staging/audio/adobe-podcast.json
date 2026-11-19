@@ -1,0 +1,200 @@
+{
+ "id": null,
+ "slug": "adobe-podcast",
+ "category_id": 8,
+ "name": "Adobe Podcast",
+ "former_name": null,
+ "rename_note": null,
+ "role": "כלי דפדפן לניקוי והשבחת הקלטות דיבור, הקלטה מרחוק ועריכת פודקאסטים.",
+ "url": "https://podcast.adobe.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": "לפי עמוד התוכניות, Adobe Podcast Premium מוצעת כחלק מתוכנית Adobe Firefly Pro. תאריך השינוי לא אומת.",
+  "date_as_written": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "ניקוי דיבור עד 4 שעות ביום בתוכנית בתשלום",
+   "detail": "Enhance Speech בתוכנית הפרימיום מעבד עד 4 שעות ביום, קבצים עד 1GB, גם וידאו MP4 ו־MOV, עם העלאה בכמות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "כוונון נפרד של דיבור, מוזיקה ורקע",
+   "detail": "בגרסת הפרימיום אפשר לכוונן כל אחד מהם בנפרד כדי שהתוצאה תישמע טבעית.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "כלול ב־Firefly Pro",
+   "detail": "עמוד התוכניות מציג את Adobe Podcast Premium כחלק מ־Firefly Pro, שכוללת גם 4,000 נקודות יצירה בחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "הגישה לפרימיום עברה ל־Firefly Pro",
+   "detail": "עמוד התוכניות מציג את Adobe Podcast Premium רק כחלק מ־Firefly Pro. המחיר לא הופיע בעמוד.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "יוצרי פודקאסטים, סטודנטים ויוצרי וידאו שמקליטים דיבור בתנאים לא אידיאליים.",
+ "pricing": {
+  "verification": "לא אומת",
+  "summary_line": null,
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Adobe Firefly Pro (כולל Adobe Podcast Premium)",
+    "price": null,
+    "price_text": "המחיר לא הופיע בעמוד",
+    "price_short": "המחיר לא אומת",
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "Enhance Speech עד 4 שעות ביום וקבצים עד 1GB, הורדות ללא הגבלה ב־Studio, הורדת הקלטות מקוריות לפי דובר, 4,000 נקודות יצירה בחודש ב־Firefly",
+    "notes": "המחיר ומשך תקופת הניסיון לא הופיעו בעמוד.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": "בעמוד יש כפתור \"Start free trial\" בלי פירוט משך הניסיון או המחיר שאחריו.",
+  "unverified_notes": "עמוד התוכניות לא הציג מחירים ולא את מגבלות התוכנית החינמית. שאלות ותשובות רשמיות על שינוי התוכנית (helpx.adobe.com/podcast/adobe-podcast-premium-plan-change-faq.html) חסומות לקריאה אוטומטית. זכויות שימוש, פרטיות, עברית והטבות לסטודנטים לא נקראו."
+ },
+ "privacy": {
+  "text": "לא אומת.",
+  "training_on_user_data": null,
+  "source_ids": []
+ },
+ "commercial_rights": {
+  "text": "לא אומת.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "Adobe Firefly"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "platforms": {
+  "items": [],
+  "source_ids": []
+ },
+ "hebrew": {
+  "text": "לא אומת.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Adobe",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לא אומת.",
+  "source_ids": []
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://podcast.adobe.com/en/plans",
+   "title": "עמוד התוכניות של Adobe Podcast",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://helpx.adobe.com/podcast/adobe-podcast-premium-plan-change-faq.html",
+   "title": "Adobe: שאלות נפוצות על שינוי תוכנית Adobe Podcast Premium (חסום, לא נקרא)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": null,
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": null,
+   "evidence": "research/stage4/audio.md"
+  },
+  "hebrew": {
+   "value": "לא אומת",
+   "label": "עברית לא אומתה",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": null,
+   "billing": null,
+   "plan": null,
+   "verified": false,
+   "label": null,
+   "has_free_plan": null
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": null,
+    "of": 0,
+    "value": null,
+    "evidence": "research/stage4/audio.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/audio.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": "התוכנית החינמית לא נקראה.",
+    "evidence": "research/stage4/audio.md"
+   }
+  }
+ }
+}
