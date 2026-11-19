@@ -96,6 +96,35 @@
     $$('.vote[data-vote="' + id + '"]').forEach(paintVote);
     paintPick(id);
   }
+  // הודעה קצרה שעולה מלמטה אחרי כל הצבעה (בקשת שקד, 19.11.2026). היא מוצגת גם מעל חלון הפרטים הפתוח.
+  var toast = null, toastTimer = 0;
+  function showToast(text, bad) {
+    if (!toast) {
+      toast = el('div', 'toast');
+      toast.setAttribute('role', 'status'); toast.setAttribute('aria-live', 'polite');
+      if ('popover' in toast) toast.setAttribute('popover', 'manual');
+      doc.body.appendChild(toast);
+    }
+    clearTimeout(toastTimer);
+    toast.classList.toggle('toast-bad', !!bad);
+    toast.innerHTML = '';
+    if (!bad) {
+      var ic = el('span', 'toast-ico');
+      ic.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.500 4.500L19 7.500"/></svg>';
+      toast.appendChild(ic);
+    }
+    toast.appendChild(el('span', '', text));
+    // מוציאים ומחזירים לשכבה העליונה, כדי שההודעה תהיה מעל חלון שנפתח אחריה
+    try { if (toast.hidePopover && toast.matches(':popover-open')) toast.hidePopover(); if (toast.showPopover) toast.showPopover(); } catch (e) { /* בלי שכבה עליונה ההודעה עדיין מוצגת */ }
+    toast.classList.remove('is-on');
+    void toast.offsetWidth;
+    toast.classList.add('is-on');
+    toastTimer = setTimeout(function () {
+      toast.classList.remove('is-on');
+      setTimeout(function () { try { if (!toast.classList.contains('is-on') && toast.hidePopover && toast.matches(':popover-open')) toast.hidePopover(); } catch (e) { /* כנ״ל */ } }, 260);
+    }, bad ? 4500 : 2600);
+  }
+
   function castVote(id, value, say) {
     if (busy[id]) return;
     // לחיצה שנייה על אותה בחירה מבטלת את ההצבעה (בקשת שקד, 19.11.2026)
@@ -107,11 +136,14 @@
         saveMine();
         tallies[id] = [d.up, d.down];
         say('');
+        showToast(d.mine === 'up' ? 'ההמלצה נשמרה. תודה!' : d.mine === 'down' ? 'ההצבעה נשמרה. תודה!' : 'ההצבעה בוטלה');
       } else {
-        say(d.httpStatus === 429 ? 'נשלחו יותר מדי הצבעות בזמן קצר. אפשר לנסות שוב בעוד שעה.' : 'ההצבעה לא נשמרה. אפשר לנסות שוב.');
+        var m = d.httpStatus === 429 ? 'נשלחו יותר מדי הצבעות בזמן קצר. אפשר לנסות שוב בעוד שעה.' : 'ההצבעה לא נשמרה. אפשר לנסות שוב.';
+        say(m); showToast(m, true);
       }
     }).catch(function () {
-      say('אין חיבור לשירות ההצבעות כרגע. אפשר לנסות שוב מאוחר יותר.');
+      var m = 'אין חיבור לשירות ההצבעות כרגע. אפשר לנסות שוב מאוחר יותר.';
+      say(m); showToast(m, true);
     }).then(function () { busy[id] = false; paintToolVotes(id); });
   }
 
@@ -136,7 +168,6 @@
       b.innerHTML = thumbSvg(x[2]) + '<span class="sr-only">' + x[1] + ' על ' + name + '</span>';
       b.addEventListener('click', function () {
         castVote(id, x[0], function (msg) {
-          live.textContent = msg || (mine[id] ? 'ההצבעה נשמרה' : 'ההצבעה בוטלה');
           b.title = msg || x[1];
         });
       });
