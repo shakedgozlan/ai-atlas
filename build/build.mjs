@@ -416,7 +416,7 @@ function cardHtml(t) {
   return `
 <li class="card" id="tool-${t.id}" data-no="${pad(t.no)}" data-cat="${t.category_id}" data-flags="${flags}" data-search="${esc(search)}">
   <div class="card-head">
-    ${watchHtml(t, 'loud')}
+    ${watchHtml(t, 'loud')}${watchHtml(t, 'quiet')}
     <div class="card-id${has(t.logo?.file) ? '' : ' no-logo'}">
       ${logoHtml(t)}
       <div class="card-meta">
@@ -424,7 +424,6 @@ function cardHtml(t) {
         <h3 class="name" tabindex="-1"><span class="sr-only">כלי מספר ${t.no}: </span><bdi>${esc(t.name)}</bdi></h3>
         ${former}
         <p class="role">${esc(t.role)}</p>
-        ${watchHtml(t, 'quiet')}
       </div>
     </div>
     ${priceLine(t)}

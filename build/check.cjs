@@ -269,7 +269,7 @@ const audit = (rootSel) => {
 
       // פס ״שימו לב״: נפרש על כל רוחב הכרטיס, ובחלון הפרטים יש לו מקור
       if (await page.locator('.card .watch').count()) {
-        const wOk = await page.locator('.card:not([hidden]) .watch-loud').evaluateAll((els) => els.every((e) => { const c = e.closest('.card-head').getBoundingClientRect(); const r = e.getBoundingClientRect(); return r.width === 0 || r.width > c.width - 60; }));
+        const wOk = await page.locator('.card:not([hidden]) .watch').evaluateAll((els) => els.every((e) => { const c = e.closest('.card-head').getBoundingClientRect(); const r = e.getBoundingClientRect(); return r.width === 0 || r.width > c.width - 60; }));
         note(wOk, `${tag} פס שימו לב לא נפרש על רוחב הכרטיס`);
         const noSrc = await page.locator('.sheet .note').evaluateAll((els) => els.filter((e) => !e.querySelector('.note-src')).length);
         note(true, `${tag} הערה בלי מקור`, String(noSrc));
