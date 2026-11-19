@@ -34,8 +34,6 @@
   --brand-tint:light-dark(#dbe6ff,#172247);
   --new:light-dark(#a8430a,#ffa860);
   --new-tint:light-dark(#fdeadb,#3a2412);
-  --mild:light-dark(#6b5200,#f2d15c);
-  --mild-tint:light-dark(#fbf3c9,#33290a);
   --hot:light-dark(#b3261e,#ff8a80);
   --hot-tint:light-dark(#fde7e4,#3a1614);
   --low:light-dark(#0b6a8a,#6fd0f0);
@@ -285,17 +283,22 @@ html:not(.js) .filters{display:none}
 .watch{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;margin:0;color:var(--ink);font-size:var(--t-label);line-height:1.5}
 /* קופסה בתוך הכרטיס, עם ריווח מהקצוות (בקשת שקד). רדיוס קטן מזה של הכרטיס, כדי שהפינות ייראו מתואמות */
 .watch{margin:0 0 10px;padding:10px 14px;border-radius:8px}
-.watch-loud{background:var(--new-tint)}
-/* דרגה שקטה, לתלונות על חיוב, תמיכה וחשבון: אותה קופסה בצהוב רך */
-.watch-quiet{background:var(--mild-tint)}
-.watch-quiet .watch-k{color:var(--mild)}
-.note-watch.note-quiet{background:var(--mild-tint)}
-.note-watch.note-quiet .note-h{color:var(--mild)}
+/* כתום אחד בשלוש עוצמות: ככל שהאזהרה מהותית יותר, הרקע מלא יותר */
+.watch-3,.note-w3{background:var(--new-tint)}
+.watch-2,.note-w2{background:color-mix(in oklab,var(--new-tint) 58%,var(--surface))}
+.watch-1,.note-w1{background:color-mix(in oklab,var(--new-tint) 26%,var(--surface))}
+.watch-1,.watch-2{box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--new) 14%,transparent)}
+.watch-bars{display:inline-flex;align-items:flex-end;gap:2px;margin-inline-start:6px;vertical-align:baseline}
+.watch-bars i{width:3px;border-radius:1px;background:color-mix(in oklab,var(--new) 26%,transparent)}
+.watch-bars i:nth-child(1){height:5px}.watch-bars i:nth-child(2){height:8px}.watch-bars i:nth-child(3){height:11px}
+.watch-bars i.on{background:var(--new)}
+.legend-h{margin:24px 0 0;font-size:var(--t-label);font-weight:700;color:var(--ink)}
+.legend-h+.legend-list{margin-top:10px}
+.watch-sample{margin:0;padding:4px 10px;justify-self:start}
 .watch-k{font-weight:700;color:var(--new);white-space:nowrap}
 /* בחלון הפרטים: האזהרה והנימוק ל״מומלץ״, כל אחד עם המקורות שלו */
 .sheet-notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:10px;margin-bottom:16px}
 .note{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;padding:10px 14px;border-radius:12px;min-width:0}
-.note-watch{background:var(--new-tint)}
 .note-rec{background:var(--brand-tint)}
 .note-h{font-size:var(--t-label);font-weight:700;margin:0;white-space:nowrap}
 .note-watch .note-h{color:var(--new)}

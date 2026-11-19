@@ -126,12 +126,29 @@ function toolTags(t) {
 // שתי דרגות לאזהרה (החלטת שקד, 19.11.2026): תלונה על חיוב, החזר, תמיכה או חשבון מוצגת בשקט,
 // ותלונה על התוצר עצמו מוצגת כפס בולט. החלוקה לפי סוג התלונה שבקובץ הנתונים.
 const WATCH_QUIET = new Set(['bot_support', 'account_block', 'billing_surprise', 'no_refund']);
-const watchLevel = (t) => (WATCH_QUIET.has(t.filters?.watch_out?.type_id) ? 'quiet' : 'loud');
-function watchHtml(t, level) {
+// שלוש דרגות, כולן מתוך קובץ הנתונים (בקשת שקד, 19.11.2026):
+// 3 = תלונה על התוצר עצמו שהדיווחים עליה נספרו אחד אחד, 2 = תלונה על התוצר לפי סיכום דוח המחקר,
+// 1 = תלונה על חיוב, החזר, תמיכה או חשבון.
+const WATCH_LEVELS = [
+  [3, 'מהותי', 'בעיה בתוצר עצמו, והדיווחים עליה נספרו אחד אחד'],
+  [2, 'בינוני', 'בעיה בתוצר עצמו, לפי סיכום דוח המחקר ובלי ספירה של כל דיווח'],
+  [1, 'קל', 'תלונות על חיוב, החזרים, תמיכה או חשבון, ולא על התוצר'],
+];
+const watchLevel = (t) => {
+  const w = t.filters?.watch_out;
+  if (WATCH_QUIET.has(w?.type_id)) return 1;
+  return w?.evidence?.strength === 'נספר' ? 3 : 2;
+};
+const watchName = (n) => WATCH_LEVELS.find((x) => x[0] === n)[1];
+// שלושה פסים קטנים ליד הכותרת, כדי שהדרגה לא תישען על צבע בלבד
+const watchBars = (n) => `<span class="watch-bars" aria-hidden="true">${[1, 2, 3].map((k) => `<i${k <= n ? ' class="on"' : ''}></i>`).join('')}</span>`;
+function watchHtml(t) {
   const w = String(t.filters?.watch_out?.text || '').trim();
-  if (!w || watchLevel(t) !== level) return '';
-  return `<p class="watch watch-${level}"><span class="watch-k">שימו לב</span><span class="watch-t">${esc(w)}</span></p>`;
+  if (!w) return '';
+  const n = watchLevel(t);
+  return `<p class="watch watch-${n}"><span class="watch-k">שימו לב${watchBars(n)}<span class="sr-only"> (${watchName(n)})</span></span><span class="watch-t">${esc(w)}</span></p>`;
 }
+
 function evidenceLinks(ev) {
   const src = (ev?.sources || []).filter((x) => has(x.url));
   if (!src.length) return '';
@@ -146,7 +163,7 @@ function sheetNotesHtml(t) {
     const strength = w.evidence?.strength === 'נספר'
       ? 'הדיווחים נספרו אחד אחד.'
       : 'לפי סיכום דוח המחקר, בלי ספירה של כל דיווח.';
-    out.push(`<div class="note note-watch note-${watchLevel(t)}"><p class="note-h">שימו לב</p><p class="note-t">${esc(w.text)}</p><p class="note-src">${links ? `מקור: ${links}. ` : ''}${strength}</p></div>`);
+    out.push(`<div class="note note-watch note-w${watchLevel(t)}"><p class="note-h">שימו לב${watchBars(watchLevel(t))}<span class="sr-only"> (${watchName(watchLevel(t))})</span></p><p class="note-t">${esc(w.text)}</p><p class="note-src">${links ? `מקור: ${links}. ` : ''}${strength}</p></div>`);
   }
   if (r?.value === true && has(r.basis)) {
     const links = evidenceLinks(r.evidence);
@@ -159,7 +176,7 @@ function tagsHtml(t, max = CARD_TAGS_MAX, cls = '') {
   const items = toolTags(t).slice(0, max).map(tagPill).join('');
   return items ? `<ul class="card-tags${cls}" role="list" aria-label="תגים">${items}</ul>` : '';
 }
-const legendHtml = `<details class="legend" id="legend"><summary class="btn legend-btn"><span>מקרא התגים</span></summary><ul class="legend-list" role="list">${TAGS.map((x) => `<li><span class="verify tag-${x[0]}">${x[1]}</span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul></details>`;
+const legendHtml = `<details class="legend" id="legend"><summary class="btn legend-btn"><span>מקרא</span></summary><ul class="legend-list" role="list">${TAGS.map((x) => `<li><span class="verify tag-${x[0]}">${x[1]}</span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul><h3 class="legend-h">דרגות ״שימו לב״</h3><ul class="legend-list" role="list">${WATCH_LEVELS.map((x) => `<li><span class="watch watch-${x[0]} watch-sample"><span class="watch-k">${x[1]}${watchBars(x[0])}</span></span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul></details>`;
 
 function verifyPill(t) {
   const p = t.pricing || {};
@@ -416,7 +433,7 @@ function cardHtml(t) {
   return `
 <li class="card" id="tool-${t.id}" data-no="${pad(t.no)}" data-cat="${t.category_id}" data-flags="${flags}" data-search="${esc(search)}">
   <div class="card-head">
-    ${watchHtml(t, 'loud')}${watchHtml(t, 'quiet')}
+    ${watchHtml(t)}
     <div class="card-id${has(t.logo?.file) ? '' : ' no-logo'}">
       ${logoHtml(t)}
       <div class="card-meta">
