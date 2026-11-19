@@ -7,7 +7,7 @@
 //   READ_KEY  סוד: מפתח קריאה. רק מי שמחזיק בו יכול לקרוא את המשוב.
 //   ALLOWED_ORIGINS  (לא חובה) כתובות האתר שמותר להן לפנות לשירות, מופרדות בפסיק.
 
-const DEFAULT_ORIGINS = 'https://shakedgozlan.github.io';
+const DEFAULT_ORIGINS = 'https://kleyai.tech,https://www.kleyai.tech,https://shakedgozlan.github.io';
 
 // ספים שקל לשנות
 const LIMITS = {
