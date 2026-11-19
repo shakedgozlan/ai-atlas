@@ -126,6 +126,21 @@ const html = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>מאיפה המידע מגיע · אטלס כלי בינה מלאכותית</title>
 <meta name="description" content="המקורות שמהם נבנה אטלס כלי הבינה המלאכותית: ${nSources(total)}, ${official} מהם רשמיים, נבדקו ב־${dateShort(data.snapshot_date)}.">
+<link rel="canonical" href="https://kleyai.tech/sources.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="אטלס כלי בינה מלאכותית">
+<meta property="og:locale" content="he_IL">
+<meta property="og:url" content="https://kleyai.tech/sources.html">
+<meta property="og:title" content="מאיפה המידע מגיע · אטלס כלי בינה מלאכותית">
+<meta property="og:description" content="המקורות שמהם נבנה האטלס, וכמה מהם רשמיים.">
+<meta property="og:image" content="https://kleyai.tech/assets/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="סמל המצפן של אטלס כלי בינה מלאכותית ליד שם האתר">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="מאיפה המידע מגיע · אטלס כלי בינה מלאכותית">
+<meta name="twitter:description" content="המקורות שמהם נבנה האטלס, וכמה מהם רשמיים.">
+<meta name="twitter:image" content="https://kleyai.tech/assets/share.png">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
