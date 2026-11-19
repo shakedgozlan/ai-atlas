@@ -9,10 +9,3 @@
 .nf-hero h1{margin-top:clamp(12px,2vw,20px);font-size:var(--t-hero);font-weight:700;line-height:1.1;text-wrap:balance}
 .nf-hero .hero-lede{margin-top:clamp(12px,1.6vw,20px);max-width:52ch}
 .nf-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(24px,4vw,36px)}
-.nf-cats h2{font-size:var(--t-cat);font-weight:700;line-height:1.2}
-.nf-cats p{margin-top:4px;color:var(--ink-soft)}
-.nf-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:0 var(--gap);margin-top:16px}
-.nf-list li a{display:grid;grid-template-columns:2.2em minmax(0,1fr);align-items:baseline;gap:8px;min-height:44px;padding-block:12px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
-.nf-list li a:hover{color:var(--brand)}
-.nf-list .num{color:var(--brand);font-variant-numeric:tabular-nums}
-.nf-foot{margin-top:clamp(32px,6vw,72px);padding-block:24px;border-top:1px solid var(--line);color:var(--ink-soft);font-size:.9375rem}
