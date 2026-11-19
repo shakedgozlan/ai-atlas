@@ -149,3 +149,18 @@ Official pricing pages re-read with plain `curl` (no fetch quota). Each entry: U
 - Changed: unverified_notes only. The script holds several plan sets with minute sliders and an unexplained true/false variant (e.g. Lite lowest tier $5.9 monthly / $4.7 a month yearly, or $10 / $8), plus a running promotion on every card ("Unlimited videos for your first month!"). Too ambiguous to record as plan prices; the $5.90 starting price from the March 2026 release matches Lite's lowest monthly figure. FAQ facts added (minutes renew monthly, no rollover, rounded up to 15 s).
 - Verification: אומת חלקית → אומת חלקית.
 
+## HeyGen (video-editing/heygen.json)
+- Read: https://www.heygen.com/pricing (Next.js payload `creditTiers`: priceMonthly / priceYearly / yearlyBilledTotal)
+- Changed: yearly prices added for Pro ($41/mo, $488/yr) and Business ($119/mo, $1,428/yr); Creator yearly total $288 noted; Pro credit tiers summarised (2,000 credits $99 … 100,000 credits $4,300 monthly).
+- Verification: אומת חלקית → אומת ממקור רשמי.
+
+## OpusClip (video-editing/opusclip.json)
+- Read: https://www.opus.pro/pricing (page text plus its inline pricing script)
+- Changed: Pro monthly credits filled (300 per pack per month, up to 15 packs; rollover 1 month monthly, 2 months yearly); unverified_notes now records the three geo price tiers in the page script (tier 1 = global list price Pro $29 / $14.5, Starter $15; tier 3 incl. BR, MX, IN: Pro $19 / $9.5, Starter $9) and a "cyber-month" style flag on the pack selector.
+- Verification: אומת חלקית → אומת חלקית (region-dependent prices).
+
+## Synthesia (video-editing/synthesia.json)
+- Read: https://www.synthesia.io/pricing
+- Changed: Business now has prices ($99 per member per month billed monthly, $79 billed yearly = $948/yr, 6,000 credits a month / 72,000 a year, up to 10 members), replacing "not published". Starter and Pro unchanged.
+- Verification: אומת חלקית → אומת חלקית (first-month promotion still running: Starter $9, Pro $49).
+
