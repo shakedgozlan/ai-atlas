@@ -34,6 +34,7 @@ const ICON = {
   good: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.25"/><path d="m7.75 12.4 2.9 2.9 5.6-6.1"/></svg>',
   warn: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6 2.6 19.8h18.8L12 3.6Z"/><path d="M12 10v4.6"/><path d="M12 17.1v.2"/></svg>',
   chevron: '<svg class="ico chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
+  ext: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 4.5h6v6"/><path d="M19.5 4.5 11 13"/><path d="M18.5 14v4a1.5 1.5 0 0 1-1.5 1.5H6A1.5 1.5 0 0 1 4.5 18V7A1.5 1.5 0 0 1 6 5.5h4"/></svg>',
   close: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>',
   viewCards: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4.5" width="6.5" height="15" rx="1.5"/><rect x="13.5" y="4.5" width="6.5" height="15" rx="1.5"/></svg>',
   viewIndex: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15M4.5 12h15M4.5 17.5h15"/></svg>',
@@ -403,8 +404,8 @@ function sheetHtml(t) {
           <p class="sheet-role">${esc(t.role)}${former}</p>
           ${tagsHtml(t, 9, ' sheet-tags sheet-tags-head')}
         </div>
-        <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
-        <button type="button" class="btn btn-close" data-sheet-close>${ICON.close}<span class="close-t">סגירה</span></button>
+        <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer" title="לאתר הרשמי">${ICON.ext}<span class="site-t">לאתר הרשמי</span><span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
+        <button type="button" class="btn btn-close" data-sheet-close title="סגירה">${ICON.close}<span class="close-t">סגירה</span></button>
       </div>
     </header>
     <div class="sheet-scroll" tabindex="-1">

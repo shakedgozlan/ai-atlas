@@ -396,6 +396,9 @@ html:has(.sheet[open]){overflow:hidden}
 .sheet-scroll:focus{outline:none}
 .sheet-body{--t-sheet:0.9375rem;display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(18px,min(3vw,2.8vh),36px);padding:clamp(16px,min(2.6vw,3vh),32px) var(--pad) clamp(20px,3.6vh,56px);font-size:var(--t-sheet);line-height:1.55;color:var(--ink-soft)}
 .sheet-head{--t-sheet:0.9375rem}
+/* בראש חלון הפרטים שני לחצני אייקון בלבד: קישור חיצוני לאתר הרשמי, ו־X לסגירה. השם נשאר לקורא מסך ובריחוף */
+.sheet-head .btn-close,.sheet-head .btn-site{padding-inline:0;width:44px;min-height:44px;flex:none;justify-content:center}
+.sheet-head .close-t,.sheet-head .site-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .sheet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(12px,min(2.6vw,1.8vh),32px) clamp(24px,3.4vw,48px);align-items:start}
 .sec{min-width:0;overflow-wrap:break-word}
 .sec-h{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:24px;margin-bottom:8px}
@@ -570,12 +573,11 @@ html:not(.js) #finder-open{display:none}
   .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
   .sheet-head-in{flex-wrap:wrap}
-  .sheet-head .btn-site{order:3;flex:1 1 100%}
+  .sheet-head .btn-site{order:3;flex:1 1 100%;width:auto;gap:8px}
+  .sheet-head .site-t{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
   .pt summary{min-height:44px}
   .bill-btn{min-height:38px}
   .more-btn{flex:1 1 auto}
-  .btn-close{padding-inline:0;width:44px;flex:none}
-  .btn-close .close-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
   .sheet-tags-head{display:none}
   .sheet-tags-body{display:flex;margin-top:0}
   .sheet-body,.sheet-head{--t-sheet:1.0625rem}
