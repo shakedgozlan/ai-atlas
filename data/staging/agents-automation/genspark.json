@@ -1,0 +1,270 @@
+{
+ "id": null,
+ "slug": "genspark",
+ "category_id": 12,
+ "name": "Genspark",
+ "former_name": null,
+ "rename_note": null,
+ "role": "סביבת עבודה עם סוכני AI שיוצרים מצגות, מסמכים, תמונות וקוד ומבצעים משימות.",
+ "url": "https://www.genspark.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "נקודות חינמיות כל יום",
+   "detail": "התוכנית החינמית כוללת 100 נקודות ביום ו־1GB באחסון AI Drive, עד תקרה כוללת לכל החיים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "כלים רבים במנוי אחד",
+   "detail": "Plus כוללת AI Slides, Genspark Code, סיכומי פגישות, הכתבה קולית ב־Speakly ומחשב ענן לסוכנים, עם 10,000 נקודות בחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "שימוש מסחרי בתוכניות בתשלום",
+   "detail": "לפי מרכז העזרה, Plus כוללת שימוש מסחרי בתוכן שנוצר ב־AI, והזכות מובטחת עד 31 בדצמבר 2026.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "הנקודות החינמיות מוגבלות לכל החיים",
+   "detail": "המילוי היומי של 100 נקודות נעצר אחרי שמגיעים לתקרה כוללת, שגובהה לא צוין.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תנאי ההטבות משתנים",
+   "detail": "ההטבות תקפות עד 30 ביוני 2027, ומ־1 בינואר 2027 ההטבות של AI Chat ו־AI Image ייקבעו לפי התוכנית שתהיה בתוקף אז.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "החזר כספי בחלון קצר",
+   "detail": "מחוץ לאיחוד האירופי, לבריטניה, לטורקיה ולקוריאה, החזר על מנוי חודשי אפשרי רק בתוך 24 שעות מהרכישה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מי שרוצה כלי אחד שמפיק מצגות, מסמכים ותמונות ממשימה כתובה, בלי לבנות תהליכים.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "תוכנית חינמית עם 100 נקודות ביום. Plus מ־10,000 נקודות בחודש ו־Pro מ־125,000; המחירים לא הוצגו בעמוד שנקרא.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "100 נקודות ביום עד תקרה כוללת, 1GB באחסון AI Drive",
+    "notes": "המילוי היומי נעצר אחרי התקרה הכוללת.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Plus",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "מ־10,000 נקודות בחודש, 50GB באחסון AI Drive, Free Quota, שימוש מסחרי בתוכן AI, AI Slides, Genspark Code, סיכומי פגישות, Speakly ומחשב ענן",
+    "notes": "חיוב שנתי חוסך כ־20%, והנקודות ניתנות מדי חודש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "כל מה שב־Plus, מ־125,000 נקודות בחודש, 1TB באחסון AI Drive, מגבלת AI Chat גבוהה יותר, Free Quota שבועית פי 10 מ־Plus",
+    "notes": "חיוב שנתי חוסך כ־20%.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free עם 100 נקודות ביום ו־1GB באחסון AI Drive. המילוי היומי נעצר אחרי תקרה כוללת לכל החיים, שגובהה לא צוין.",
+  "trial": null,
+  "unverified_notes": "עמודי המחירים (membership-benefits-lp ו־team_pricing) לא נטענו בשני ניסיונות, ומרכז העזרה אינו מציג מחירים ומטבע. לא אומתו: מחירי Plus ו־Pro בחיוב חודשי ושנתי, גובה Free Quota ותקרת הנקודות החינמיות. מנויים שהצטרפו לפני 18 בספטמבר 2026 שומרים על הטבות AI Chat ו־AI Image עד 31 בדצמבר 2026."
+ },
+ "privacy": {
+  "text": "מדיניות הפרטיות (עודכנה ב־24 ביולי 2026) אינה אומרת אם הנחיות, קבצים או תוצרים משמשים לאימון מודלים, ואינה מתארת אפשרות ביטול. היא מציינת שימוש במידע \"to evaluate and improve our Service\". הספקים המוזכרים: OpenAI, Anthropic, Google, xAI ו־ElevenLabs. הנתונים נשמרים ב־Microsoft Azure ועשויים להיות מעובדים בארה״ב.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי מרכז העזרה, Plus כוללת שימוש מסחרי בתוכן שנוצר ב־AI, והזכות מובטחת עד 31 בדצמבר 2026; התנאים אחרי כן יפורסמו בעמוד התוכנית. העמוד אינו מציין זכות כזו בתוכנית החינמית. אין בכך הבטחה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק API ציבורי.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: מרכז העזרה ומדיניות הפרטיות אינם מזכירים שפות. בחיפוש הופיעה גרסה של הבלוג בכתובת עם קידומת he, אבל היא לא נטענה ולכן לא אומתה.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Genspark Inc.",
+  "parent": null,
+  "country": null,
+  "note": "מדיניות הפרטיות מזכירה גם את MainFunc Inc. מדינת הרישום לא צוינה."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים: עמוד התוכניות במרכז העזרה אינו מזכיר סטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.genspark.ai/helpcenter/membership-plans",
+   "title": "מרכז העזרה של Genspark: תוכניות מנוי",
+   "official": true,
+   "published": "2026-11-16",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.genspark.ai/privacy",
+   "title": "מדיניות הפרטיות של Genspark",
+   "official": true,
+   "published": "2026-07-24",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://www.genspark.ai/membership-benefits-lp",
+   "title": "Genspark: עמוד הטבות המנוי (לא נטען)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://a16z.com/100-gen-ai-apps-7/",
+   "title": "a16z: The Top 100 Gen AI Consumer Apps, מהדורה 7",
+   "official": false,
+   "published": "2026-10-05",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "מופיע רק בסיכום עצמאי אחד מ־5, ולכן אינו עומד בכלל. נכלל ככלי מוביל, ברשימת 50 אתרי ה־AI המובילים של a16z. תאריך הגרסה האחרונה לא נקרא במקור רשמי.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 1,
+   "evidence": "research/stage4/agents-automation.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": "USD",
+   "billing": null,
+   "plan": "Plus",
+   "verified": false,
+   "label": "המחיר לא אומת",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": [
+    "אפליקציות לנייד"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 1,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מופיע ברשימת 50 אתרי ה־AI המובילים בתנועה במהדורה השביעית של a16z (5 באוקטובר 2026, לפי Similarweb), בלי מקום מפורט בטקסט.",
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": "100 נקודות ביום, אבל המילוי נעצר אחרי תקרה כוללת לכל החיים.",
+    "evidence": "research/stage4/agents-automation.md"
+   }
+  }
+ }
+}

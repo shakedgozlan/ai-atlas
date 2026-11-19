@@ -1,0 +1,264 @@
+{
+ "id": null,
+ "slug": "lindy",
+ "category_id": 12,
+ "name": "Lindy",
+ "former_name": null,
+ "rename_note": null,
+ "role": "עוזר AI שעובד כחבר צוות ב־Slack, במייל וביומן ומבצע משימות שגרתיות.",
+ "url": "https://www.lindy.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "עובד בתוך הכלים הקיימים",
+   "detail": "מאוגוסט 2026 Lindy עובד כחבר צוות בערוצי Slack ובהודעות פרטיות, ותוסף Chrome מנסח תשובות ומסדר את תיבת Gmail.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "לומד משימה מהקלטת מסך",
+   "detail": "התכונה Watch and Learn, מ־12 באוקטובר 2026, לומדת משימה מהקלטת מסך של עד שעה או מתיאור כתוב של השלבים.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "התחייבות שלא מאמנים על הנתונים",
+   "detail": "לפי עמוד המחירים הנתונים מוצפנים, לא נמכרים ו־\"never used to train models\". יש יותר מ־3,000 אינטגרציות ותמיכה ב־MCP.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "הניסיון החינמי קצר",
+   "detail": "התוכנית החינמית כוללת 50 דולר בנקודות זיכוי שתקפות 7 ימים בלבד.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות חודשיות לא נצברות",
+   "detail": "Team כוללת 3,000 נקודות בחודש, שאינן עוברות לחודש הבא. תוספת עולה 10 דולר ל־1,000 נקודות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "שיחות טלפון רק בצפון אמריקה",
+   "detail": "Lindy מקבל מספר טלפון משלו רק במספרים בארה״ב ובקנדה.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מי שמנהל הרבה מיילים, פגישות ומשימות חוזרות ורוצה עוזר שפועל בתוך Slack ו־Gmail.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "Team ב־29.99 דולר לחודש עם 3,000 נקודות. ניסיון חינמי עם 50 דולר בנקודות ל־7 ימים.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "50 דולר בנקודות זיכוי",
+    "notes": "הנקודות החינמיות תקפות 7 ימים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team",
+    "price": 29.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "3,000 נקודות בחודש",
+    "notes": "תוספת: 10 דולר ל־1,000 נקודות, שאינן פגות עד שמנצלים אותן. הנקודות החודשיות אינן עוברות לחודש הבא. חבר צוות שמצטרף דרך Slack מקבל 7 ימי ניסיון לפני חיוב המושב.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "נקודות וחיוב מותאמים",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "50 דולר בנקודות זיכוי חד־פעמיות, תקפות 7 ימים.",
+  "trial": "הנקודות החינמיות תקפות 7 ימים. חבר צוות חדש שמצטרף דרך Slack מקבל 7 ימי ניסיון לפני חיוב המושב.",
+  "unverified_notes": "העמוד מציג \"$\" בלי קוד מטבע. חיוב שנתי לא מוצג. לא ברור מהעמוד אם מחיר Team הוא למושב."
+ },
+ "privacy": {
+  "text": "לפי עמוד המחירים הנתונים מוצפנים, לא נמכרים ו־\"never used to train models\". מקום האחסון לא צוין. מדיניות הפרטיות ותנאי השימוש לא נקראו.",
+  "training_on_user_data": "לא, לפי עמוד המחירים (\"never used to train models\").",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לפי ה־Changelog, מ־24 באוגוסט 2026 אפשר לחבר שרתי MCP מתארחים ולשמור מפתחות API כפרטי גישה. API ציבורי של Lindy לא נבדק.",
+  "source_ids": [
+   "s2",
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "יותר מ־3,000 אינטגרציות לפי עמוד המחירים",
+   "MCP",
+   "Slack",
+   "Gmail ו־Outlook",
+   "יומני Google ו־Outlook"
+  ],
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "Slack",
+   "תוסף Chrome",
+   "טלפון והודעות טקסט (מספרים בארה״ב ובקנדה)"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Lindy",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי לא אומת."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים: עמוד המחירים אינו מזכיר סטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.lindy.ai/pricing",
+   "title": "עמוד המחירים של Lindy",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://lindy.ai/changelog",
+   "title": "Lindy: מה חדש (Changelog)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "Lindy הפך לחבר צוות ב־Slack ב־10 באוגוסט 2026 והוסיף מאז תכונות רבות. מופיע ב־3 מ־5 סיכומים עצמאיים.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Lindy in Slack ו־Skills",
+   "latest_version_date": "August 10, 2026",
+   "latest_version_date_iso": "2026-08-10",
+   "independent_reviews": 3,
+   "evidence": "research/stage4/agents-automation.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 29.99,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Team",
+   "verified": true,
+   "label": "מ־29.99 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר",
+    "תוסף לדפדפן"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 3,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "free_renewing": {
+    "value": false,
+    "basis": "50 דולר בנקודות חד־פעמיות, תקפות 7 ימים.",
+    "evidence": "research/stage4/agents-automation.md"
+   }
+  }
+ }
+}

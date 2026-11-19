@@ -1,0 +1,286 @@
+{
+ "id": null,
+ "slug": "microsoft-copilot-studio",
+ "category_id": 12,
+ "name": "Microsoft Copilot Studio",
+ "former_name": null,
+ "rename_note": null,
+ "role": "כלי של Microsoft לבניית סוכני AI ותהליכים שמתחברים ל־Microsoft 365 ולשירותים אחרים.",
+ "url": "https://www.microsoft.com/en-us/copilot/products/copilot-studio",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "תמיכה רשמית בעברית",
+   "detail": "עברית (he-IL) מופיעה ברשימת השפות של ממשק הבנייה ושל תשובות גנרטיביות ותזמור, בלי סימון Preview.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "סוכנים שמפעילים מחשב",
+   "detail": "שימוש במחשב (Computer use), שמאפשר לסוכן להפעיל אפליקציות ואתרים, זמין לכלל המשתמשים מאז מאי 2026.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חיבור לכלי AI אחרים דרך MCP",
+   "detail": "באוקטובר 2026 נוספה אפשרות לחבר כלים כמו Visual Studio Code ו־GitHub Copilot CLI ל־Copilot Studio MCP, ובתצוגה מקדימה לחשוף סוכנים כשרתי MCP.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "אין תוכנית אישית או חינמית",
+   "detail": "התשלום הוא לחבילות נקודות לארגון (200 דולר לחודש ל־25,000 נקודות), לפי שימוש עם מנוי Azure, או דרך רישיון Microsoft 365 Copilot.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חלק מהמודלים מעבדים נתונים מחוץ לאזור",
+   "detail": "לפי עמוד העדכונים, שימוש בחלק מהמודלים עשוי לדרוש עיבוד ואחסון של נתונים מחוץ לגבולות הגאוגרפיים של הארגון.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "קול ואירועים בלי עברית",
+   "detail": "עברית לא מופיעה בטבלת התמיכה בקול, וטריגרים של אירועים זמינים באנגלית בלבד.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים וצוותים שעובדים בסביבת Microsoft 365 של המוסד או הארגון ורוצים לבנות סוכנים פנימיים.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "חבילת 25,000 נקודות ב־200 דולר לחודש לארגון, או תשלום לפי שימוש דרך Azure. אין תוכנית אישית.",
+  "model": "חבילות נקודות לארגון או לפי שימוש",
+  "plans": [
+   {
+    "name": "Copilot Credit capacity pack",
+    "price": 200,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לחשבון",
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "25,000 נקודות Copilot Credits, רישיון לכל הארגון",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pay-as-you-go",
+    "price": null,
+    "price_text": "לפי שימוש",
+    "price_short": "לפי שימוש",
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": null,
+    "includes": "חיוב לפי צריכת נקודות בסוף כל חודש, בלי התחייבות",
+    "notes": "דורש מנוי Azure.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pre-purchase plan",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "יחידות Copilot Credit Commit ששולמו מראש",
+    "notes": "עד 20% חיסכון בתשלום מראש. דורש מנוי Azure.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Copilot",
+    "price": 30,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "Copilot Chat ו־Standard harness ב־Copilot Studio",
+    "notes": "תוספת לתוכנית Microsoft 365 עסקית או ארגונית, למשתמש. בניית סוכנים פנימיים בלי עלות נוספת.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": "יש קישור לניסיון חינמי, בלי משך מוגדר. חשבון Azure חינמי כולל זיכוי של 200 דולר שאפשר לנצל גם לבניית סוכנים.",
+  "unverified_notes": "המטבע מוצג כ־\"$\" בלבד. מחיר Pre-purchase ותעריף הנקודה בתשלום לפי שימוש לא הופיעו בעמוד. Copilot Studio Lite מוזכר רק בהערת שוליים, בלי מחיר ותנאי גישה. לא נבדק מה כלול ברישיונות Microsoft 365 של מוסדות לימוד."
+ },
+ "privacy": {
+  "text": "לא אומת: לא נקראה מדיניות של Microsoft לגבי אימון על נתוני Copilot Studio. עמוד העדכונים מציין שחלק מהמודלים עשויים לדרוש עיבוד ואחסון נתונים מחוץ לגבולות הגאוגרפיים של הארגון.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "יש תוסף ל־Visual Studio Code (זמין לכלל מינואר 2026), חיבור שרתי MCP ככלים (תצוגה מקדימה, יולי 2026) וחיבור A2A בין סוכנים (אפריל 2026), לפי עמוד העדכונים.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "מחברי Power Platform מובנים, Premium ומותאמים",
+   "MCP",
+   "A2A",
+   "Microsoft 365"
+  ],
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "תוסף ל־Visual Studio Code"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "עברית (he-IL) מופיעה בעמוד התמיכה בשפות כשפת ממשק הבנייה וכשפת משתמש לתשובות גנרטיביות ולתזמור, בלי סימון Preview. היא לא מופיעה בטבלת התמיכה בקול, וטריגרים של אירועים זמינים באנגלית בלבד. העמוד אינו מתייחס לתצוגה מימין לשמאל.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "company": {
+  "name": "Microsoft",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים: עמוד המחירים מקשר רק לעמוד Copilot in Education, בלי מחיר לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.microsoft.com/en-us/copilot/pricing/copilot-studio",
+   "title": "Microsoft: תוכניות ומחירים של Copilot Studio",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
+   "title": "Microsoft Learn: מה חדש ב־Copilot Studio",
+   "official": true,
+   "published": "2026-11-12",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-language-support",
+   "title": "Microsoft Learn: תמיכה בשפות ב־Copilot Studio",
+   "official": true,
+   "published": "2026-06-29",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "שימוש במחשב זמין לכלל מאז מאי 2026, והכלי מופיע ב־3 מ־5 סיכומים עצמאיים.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Computer use (זמין לכלל)",
+   "latest_version_date": "May 2026",
+   "latest_version_date_iso": null,
+   "independent_reviews": 3,
+   "evidence": "research/stage4/agents-automation.md"
+  },
+  "hebrew": {
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": "USD",
+   "billing": null,
+   "plan": null,
+   "verified": false,
+   "label": "לארגונים, לפי שימוש",
+   "has_free_plan": false
+  },
+  "platforms": {
+   "verified": [
+    "אתר",
+    "תוסף לעורך קוד"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 3,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "free_renewing": {
+    "value": false,
+    "basis": "אין תוכנית חינמית, רק ניסיון.",
+    "evidence": "research/stage4/agents-automation.md"
+   }
+  }
+ }
+}

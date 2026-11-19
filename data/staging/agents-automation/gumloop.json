@@ -1,0 +1,268 @@
+{
+ "id": null,
+ "slug": "gumloop",
+ "category_id": 12,
+ "name": "Gumloop",
+ "former_name": null,
+ "rename_note": null,
+ "role": "פלטפורמה לבניית סוכני AI ותהליכים אוטומטיים לעבודה, שפועלים גם מתוך Slack, Teams ומייל.",
+ "url": "https://www.gumloop.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "סוכנים שזמינים במקום העבודה",
+   "detail": "לפי דף הבית אפשר לפנות לסוכן ב־Slack, ב־Microsoft Teams, ב־Gmail ובהודעות טקסט. יש 400 מחברים.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תמחור שקוף לפי עלות",
+   "detail": "מאוגוסט 2026 Gumloop מעבירה את עלות הטוקנים והמחשוב במחיר העלות, ומוסיפה עמלת תזמור של 8%.",
+   "source_ids": [
+    "s2",
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "שמירת נתונים מוגבלת אצל ספקי המודלים",
+   "detail": "לחברה הסכמי Zero Data Retention עם ספקי המודלים הגדולים, והיא מציינת SOC 2 Type II ו־HIPAA. אפשר להשתמש במפתחות API משלך.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "לא נמצאה תוכנית חינמית",
+   "detail": "עמוד המחירים מציג רק Pro ב־37 דולר לחודש עם ניסיון של 14 יום, ו־Enterprise.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מכוון לחברות",
+   "detail": "דף הבית מציג את Gumloop כבונה סוכנים לצוותים, ופריסה בענן פרטי (VPC) זמינה ל־Enterprise.",
+   "source_ids": [
+    "s4",
+    "s3"
+   ],
+   "inference": true
+  },
+  {
+   "lead": "תשובות לשאלות על הנקודות לא מוצגות",
+   "detail": "בעמוד המחירים מופיעות שאלות על מה היא נקודה, על העברת יתרה ועל חריגה מ־20 אלף נקודות, אבל בלי תשובות בטקסט.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "צוותים ועובדים שרוצים לבנות סוכנים לתהליכי שיווק, מכירות ותמיכה בלי לכתוב קוד.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "Pro ב־37 דולר לחודש עם 20 אלף נקודות וניסיון של 14 יום. לא נמצאה תוכנית חינמית.",
+  "model": "מנוי עם נקודות זיכוי ועמלה על עלות השימוש",
+  "plans": [
+   {
+    "name": "Pro",
+    "price": 37,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "20 אלף נקודות בחודש, אירוח שרת MCP אחד",
+    "notes": "עמלת תזמור של 8%. ניסיון של 14 יום.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "נקודות מותאמות, VPC ומומחה צמוד כאופציה",
+    "notes": "הנחות על עמלת התזמור.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": "ניסיון של 14 יום ב־Pro.",
+  "unverified_notes": "המטבע מוצג כ־\"$\" בלבד. חיוב שנתי לא מוצג. תשובות השאלות הנפוצות (העברת יתרה, חריגה, עלות נקודה) לא הופיעו בטקסט. עמוד המחירים אינו מזכיר תוכנית חינמית, אבל לא נמצאה הודעה רשמית שהיא בוטלה."
+ },
+ "privacy": {
+  "text": "בעמוד האבטחה אין התייחסות לאימון מודלים על נתוני לקוחות. לחברה הסכמי Zero Data Retention עם ספקי המודלים הגדולים, ואפשר להשתמש במפתחות משלך. אפשר לפרוס בענן פרטי (VPC) באזור לבחירה. מדיניות הפרטיות לא נקראה.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "עמוד המחירים מציג אירוח שרת MCP אחד ב־Pro, ו־Gumloop MCP ו־MCP Server Proxying בלי פירוט לפי תוכנית. API ציבורי לא נבדק.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "400 מחברים לפי דף הבית",
+   "Slack",
+   "Microsoft Teams",
+   "Gmail",
+   "iMessage, RCS ו־SMS",
+   "MCP"
+  ],
+  "source_ids": [
+   "s4",
+   "s1"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "Slack",
+   "Microsoft Teams"
+  ],
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "AgentHub Inc.",
+  "parent": null,
+  "country": null,
+  "note": "השם לפי שורת זכויות היוצרים בדף הבית של Gumloop."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים. בעמוד המחירים מוזכרת Gumloop University כחלק מהתמיכה, בלי פרטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://gumloop.com/pricing",
+   "title": "עמוד המחירים של Gumloop",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.gumloop.com/blog/transparent-pricing",
+   "title": "הבלוג של Gumloop: A simple, transparent pricing model",
+   "official": true,
+   "published": "2026-08-05",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://www.gumloop.com/solutions/security",
+   "title": "Gumloop: אבטחה ואמון",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://www.gumloop.com/home",
+   "title": "דף הבית של Gumloop",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "מופיע ב־2 מ־5 סיכומים עצמאיים. מודל התמחור התחלף באוגוסט 2026, אבל לא נקראה במקור רשמי גרסה משמעותית של המוצר.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 2,
+   "evidence": "research/stage4/agents-automation.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 37,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־37 דולר לחודש",
+   "has_free_plan": false
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 2,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "free_renewing": {
+    "value": false,
+    "basis": "לא נמצאה תוכנית חינמית, רק ניסיון של 14 יום.",
+    "evidence": "research/stage4/agents-automation.md"
+   }
+  }
+ }
+}
