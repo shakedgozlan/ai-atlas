@@ -263,16 +263,42 @@ function shownPlans(t) {
   }
   return out;
 }
-// כלי בלי מתג: שורה אחת שאומרת איזה סוג חיוב נמצא במקור, כדי שמחיר שלא משתנה לא ייראה כמו טעות
+// מה ידוע על סוג החיוב השני (billing_check, נוסף לנתונים ב־19.11.2026 אחרי בדיקה מול העמודים הרשמיים).
+// כל ניסוח אומר רק את מה שהבדיקה מצאה: ״אין״ רק כשהמקור כותב זאת במפורש, ״לא נבדק״ כשהעמוד לא נקרא.
+const otherBill = (b) => (b === 'חודשי' ? 'שנתי' : 'חודשי');
+function billTerm(p) {
+  const b = p.billing, c = p.billing_check;
+  if (!BILL[b]) return c === 'לא נבדק' ? 'סוג החיוב לא נבדק' : '';
+  const y = otherBill(b);
+  if (c === 'אין') return `חיוב ${b} בלבד`;
+  if (c === 'לא מופיע בעמוד הרשמי') return `חיוב ${b}, אין מחיר ${y} בעמוד הרשמי`;
+  if (c === 'קיים, המחיר לא נבדק') return `חיוב ${b}, יש גם חיוב ${y} שמחירו לא נבדק`;
+  if (c === 'לא נבדק') return `חיוב ${b}, מחיר ${y} לא נבדק`;
+  if (c === 'לא רלוונטי') return `חיוב ${b}`;
+  return '';
+}
+function billSentence(b, c) {
+  if (!BILL[b]) return c === 'לא רלוונטי' ? '' : c === 'לא נבדק' ? 'סוג החיוב, חודשי או שנתי, לא נבדק.' : 'סוג החיוב, חודשי או שנתי, לא צוין במקור.';
+  const y = otherBill(b);
+  if (c === 'אין') return `חיוב ${b} בלבד, לפי המקור הרשמי.`;
+  if (c === 'לא מופיע בעמוד הרשמי') return `המחירים בחיוב ${b}. מחיר ${y} לא מופיע בעמוד הרשמי.`;
+  if (c === 'קיים, המחיר לא נבדק') return `המחירים בחיוב ${b}. יש גם חיוב ${y}, ומחירו לא נבדק.`;
+  if (c === 'לא נבדק') return `המחירים בחיוב ${b}. מחיר ${y} לא נבדק.`;
+  if (c === 'לא רלוונטי') return `המחירים בחיוב ${b}.`;
+  return `המחירים בחיוב ${b}. מחיר ${y} לא נמצא במקור.`;
+}
+const isPaid = (o) => o.p.price !== 0 && o.p.price !== null && o.p.price !== undefined;
+// כלי בלי מתג שכל התוכניות בתשלום שלו באותו מצב: שורה אחת ליד הכותרת, במקום לחזור עליה בכל תוכנית
+function billShared(shown) {
+  const paid = shown.filter(isPaid);
+  if (!paid.length || shown.some((o) => o.bill)) return null;
+  const keys = new Set(paid.map((o) => `${has(o.p.billing) ? o.p.billing : ''}|${o.p.billing_check ?? ''}`));
+  if (keys.size !== 1) return null;
+  const [b, c] = [...keys][0].split('|');
+  return billSentence(b, c);
+}
 function billNote(shown) {
-  const paid = shown.filter((o) => o.p.price !== 0 && o.p.price !== null && o.p.price !== undefined);
-  if (!paid.length || shown.some((o) => o.bill)) return '';
-  const kinds = new Set(paid.map((o) => (has(o.p.billing) ? o.p.billing : '')));
-  if (kinds.size !== 1) return '';
-  const k = [...kinds][0];
-  const text = k === 'שנתי' ? 'המחירים בחיוב שנתי. מחיר חודשי לא נמצא במקור.'
-    : k === 'חודשי' ? 'המחירים בחיוב חודשי. מחיר שנתי לא נמצא במקור.'
-      : k === '' ? 'סוג החיוב, חודשי או שנתי, לא צוין במקור.' : '';
+  const text = billShared(shown);
   return text ? `<p class="bill-note">${text}</p>` : '';
 }
 const billAttr = (o) => (o.bill ? ` data-bill="${o.bill}"` : '');
@@ -285,7 +311,9 @@ function planPrice(o) {
   const priced = p.price !== null && p.price !== undefined;
   const main = priced ? `${num(p.price)}${cur ? ' ' + cur : ''}${has(p.price_period) ? ' ' + p.price_period : ''}` : (has(p.price_short) ? p.price_short : p.price_text);
   const terms = [];
-  if (o.only) terms.push(`חיוב ${p.billing}, מחיר ${p.billing === 'חודשי' ? 'שנתי' : 'חודשי'} לא נמצא`);
+  const detail = !o.bill && !o.shared && isPaid(o) ? billTerm(p) : '';
+  if (detail) terms.push(detail);
+  else if (o.only) terms.push(`חיוב ${p.billing}, מחיר ${otherBill(p.billing)} לא נמצא`);
   else if (has(p.billing) && !o.bill) terms.push(`חיוב ${p.billing}`);
   if (has(p.per)) terms.push(p.per);
   return `<span class="tier-line"${billAttr(o)}><span class="tier-price">${esc(main)}</span>${terms.length ? `<span class="tier-terms">${esc(terms.join(', '))}</span>` : ''}</span>`;
@@ -320,6 +348,7 @@ function sheetHtml(t) {
   ].join('');
 
   const shown = shownPlans(t);
+  if (billShared(shown) !== null) for (const o of shown) o.shared = true;
   const toggle = shown.some((o) => o.bill) ? billToggle(t.name) : '';
   const price = sec('sec-price', 'מחיר', shown.length ? tiersHtml(shown) : '<p>המחיר לא אומת מול מקור רשמי.</p>', '', toggle || billNote(shown));
 
