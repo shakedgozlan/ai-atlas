@@ -6355,11 +6355,11 @@
       "role": "עוזר השיחה של Mistral AI, לשעבר Le Chat, לשיחה, חיפוש, עבודה עם מסמכים וקוד.",
       "url": "https://mistral.ai/products/vibe/",
       "logo": {
-        "file": null,
+        "file": "logos/mistral-vibe.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://mistral.ai/favicon.svg",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי. זה הסמל של Mistral, שמופיע גם בעמוד המוצר Vibe; למוצר אין סמל נפרד באתר."
       },
       "status": {
         "state": "שינוי שם",
@@ -6670,11 +6670,11 @@
       "role": "יוצר מצגות, מסמכים ואתרים פשוטים מתוך הנחיה כתובה או מקובץ קיים.",
       "url": "https://gamma.app",
       "logo": {
-        "file": null,
+        "file": "logos/gamma.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://static.gamma.app/favicons/favicon_dark.svg",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
       },
       "status": {
         "state": "פעיל",
@@ -7364,7 +7364,7 @@
         "file": null,
         "file_dark": null,
         "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
+        "missing_reason": "האתר הרשמי חוסם הורדה אוטומטית, והסמל לא נמצא בספריות הסמלים.",
         "note": null
       },
       "status": {
@@ -7632,11 +7632,11 @@
       "role": "כלי לבניית מצגות שמסדר את העיצוב אוטומטית בתבניות שקופיות חכמות ויוצר תוכן ב־AI.",
       "url": "https://www.beautiful.ai",
       "logo": {
-        "file": null,
+        "file": "logos/beautiful-ai.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/59deb588800ae30001ec19c9/691b4ae4a724e6c686bfb035_BAI%20symbol%3Dfull%20color%20black.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -8208,11 +8208,11 @@
       "role": "פלטפורמת תוכן שיווקי עם סוכני AI שכותבים בקול המותג של החברה.",
       "url": "https://www.jasper.ai",
       "logo": {
-        "file": null,
+        "file": "logos/jasper.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/6807ee8d73c233fb82842313/681e121b52f97ed0b2098aab_Favicon.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה. התמונה קטנה (32 פיקסלים); הגרסה הגדולה באתר כוללת את שם המותג ולכן לא נלקחה."
       },
       "status": {
         "state": "פעיל",
@@ -8462,11 +8462,11 @@
       "role": "הופך טקסט לתרשימים, אינפוגרפיקות ואיורים עסקיים שאפשר לערוך ולייצא.",
       "url": "https://www.napkin.ai",
       "logo": {
-        "file": null,
+        "file": "logos/napkin-ai.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://www.napkin.ai/apple-touch-icon.png?v=2",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -8710,11 +8710,11 @@
       "role": "עוזר כתיבה שמציע ניסוחים חלופיים, מתקן איות ודקדוק ומסכם טקסטים.",
       "url": "https://www.wordtune.com",
       "logo": {
-        "file": null,
+        "file": "logos/wordtune.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/5f7e0f9d75fee6f6f546df46/6672cdfc1b7a70cf85686651_256x256.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -12089,11 +12089,11 @@
       "role": "פלטפורמת עיצוב מקוונת עם תבניות, עורך גרפי וכלי בינה מלאכותית ליצירה ולעריכה.",
       "url": "https://www.canva.com",
       "logo": {
-        "file": null,
+        "file": "logos/canva.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://www.canva.com/favicon.ico",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה. התמונה קטנה (32 פיקסלים), כי האתר חוסם הורדה של גרסה גדולה יותר."
       },
       "status": {
         "state": "פעיל",
@@ -12372,7 +12372,7 @@
         "file": null,
         "file_dark": null,
         "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
+        "missing_reason": "האתר הרשמי חוסם הורדה אוטומטית, והסמל לא נמצא בספריות הסמלים.",
         "note": null
       },
       "status": {
@@ -12680,7 +12680,7 @@
         "file": null,
         "file_dark": null,
         "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
+        "missing_reason": "בעמוד המוצר מופיע רק הסמל הכללי של Adobe, ולא סמל של Adobe Express.",
         "note": null
       },
       "status": {
@@ -13490,11 +13490,11 @@
       "role": "עורך גרפי מקוון עם תבניות, טיפוגרפיה ויצירת תמונות ווקטורים בבינה מלאכותית, בעיקר לחולצות, מוצרים ושיווק.",
       "url": "https://www.kittl.com",
       "logo": {
-        "file": null,
+        "file": "logos/kittl.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://www.kittl.com/apple-icon.png?apple-icon.3l5nqt4zrix42.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -13799,11 +13799,11 @@
       "role": "אפליקציית עיצוב חינמית של Microsoft ליצירת פוסטים, הזמנות, כרטיסים ותמונות בבינה מלאכותית.",
       "url": "https://designer.microsoft.com",
       "logo": {
-        "file": null,
+        "file": "logos/microsoft-designer.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://res.public.onecdn.static.microsoft/designer/client/prod/static/media/designer-logo-192.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -14421,6 +14421,313 @@
     },
     {
       "id": 45,
+      "slug": "lovart",
+      "category_id": 4,
+      "name": "Lovart",
+      "former_name": null,
+      "rename_note": null,
+      "role": "סוכן עיצוב מבוסס בינה מלאכותית שיוצר עיצובים על קנבס לפי בקשה בשפה חופשית.",
+      "url": "https://www.lovart.ai",
+      "logo": {
+        "file": "logos/lovart.png",
+        "file_dark": null,
+        "source_url": "https://www.lovart.ai/favicon.ico",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": null,
+        "date_as_written": null,
+        "source_ids": []
+      },
+      "strengths": [
+        {
+          "lead": "אפשר להתחיל בחינם",
+          "detail": "עמוד המחירים מציע תוכנית חינמית (\"Get started for free\"). הפרטים שלה לא מופיעים בטקסט העמוד.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "נקודות שנרכשו בנפרד תקפות לשנה",
+          "detail": "נקודות זיכוי שנקנות כתוספת תקפות 366 יום מיום הרכישה.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "יצירה איטית ללא הגבלה בחלק מהתוכניות",
+          "detail": "בתוכניות מסוימות יש Unlimited Relax Generation, תור איטי שלא צורך נקודות, לתקופה קבועה כמו 31 או 180 יום.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "נקודות חודשיות לא נצברות",
+          "detail": "בתוכניות חודשיות ושנתיות כאחד, הנקודות מתאפסות כל חודש ונקודות שלא נוצלו אובדות.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "היצירה החופשית היא הטבה חד־פעמית",
+          "detail": "Unlimited Relax Generation ניתנת פעם אחת לחשבון, לתקופה קבועה, ורק בתוכניות מסוימות.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "מגבלת חיבורים לחשבון",
+          "detail": "עד 2 חיבורים מדפדפן במחשב וחיבור אחד מדפדפן בנייד לכל חשבון. לעבודה של כמה משתמשים צריך את תוכנית Team.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "מעצבים ויוצרים שרוצים לנסות סוכן עיצוב שמפיק חומרים גרפיים מתיאור, לצד עבודה בכלים הרגילים.",
+      "pricing": {
+        "verification": "לא אומת",
+        "summary_line": null,
+        "model": "מנוי עם נקודות זיכוי",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "price_text": null,
+            "price_short": null,
+            "currency": null,
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": null,
+            "notes": "העמוד מציע \"Get started for free\" בלי לפרט מה כלול.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Basic",
+            "price": null,
+            "price_text": "המחיר לא אומת",
+            "price_short": "המחיר לא אומת",
+            "currency": null,
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": null,
+            "notes": "השם מופיע רק בשאלות הנפוצות על תור ה־Relax.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": null,
+            "price_text": "המחיר לא אומת",
+            "price_short": "המחיר לא אומת",
+            "currency": null,
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "לפי תיאור העמוד: יכולות מתקדמות, נפח גדול יותר ופרויקטים מסחריים",
+            "notes": null,
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Ultimate",
+            "price": null,
+            "price_text": "המחיר לא אומת",
+            "price_short": "המחיר לא אומת",
+            "currency": null,
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": null,
+            "notes": "השם מופיע רק בשאלות הנפוצות על תור ה־Relax.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Team",
+            "price": null,
+            "price_text": "המחיר לא אומת",
+            "price_short": "המחיר לא אומת",
+            "currency": null,
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "שימוש של כמה משתמשים",
+            "notes": null,
+            "source_ids": [
+              "s1"
+            ]
+          }
+        ],
+        "free_tier": "יש תוכנית חינמית, אבל המכסות שלה לא מופיעות בטקסט של עמוד המחירים.",
+        "trial": null,
+        "unverified_notes": "עמוד המחירים מוצג בסקריפט. בשתי קריאות (אחת בשלב המחקר הראשון ואחת עכשיו) הופיעו רק שמות תוכניות, מתג חודשי/שנתי וכללי נקודות, בלי מחירים, מטבע או כמויות נקודות. מחירונים של צד שלישי לא שימשו."
+      },
+      "privacy": {
+        "text": "מדיניות הפרטיות (23 ביולי 2025) אינה מתייחסת לאימון מודלים על תוכן המשתמשים.",
+        "training_on_user_data": null,
+        "source_ids": [
+          "s3"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לפי תיאור עמוד המחירים, Pro מיועדת בין השאר ל\"commercial projects\". זכויות השימוש בכל תוכנית לא אומתו מתנאי השימוש. אין בכך הבטחה מפני תביעות זכויות יוצרים.",
+        "watermark": null,
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "developer_access": {
+        "api": "לא אומת",
+        "text": "בעמודים הרשמיים שנבדקו אין אזכור של API.",
+        "source_ids": []
+      },
+      "integrations": {
+        "items": [],
+        "source_ids": []
+      },
+      "platforms": {
+        "items": [
+          "אתר (דפדפן במחשב ובנייד)"
+        ],
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק או של טקסט בעברית בעיצובים.",
+        "source_ids": []
+      },
+      "company": {
+        "name": "Resonate International INC.",
+        "parent": null,
+        "country": "ארצות הברית",
+        "note": "לפי תנאי השימוש, המפעילה היא Resonate International INC., חברה מדלאוור."
+      },
+      "student_benefits": {
+        "text": "לא נמצאה הטבה לסטודנטים בעמודים הרשמיים שנבדקו.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.lovart.ai/pricing",
+          "title": "עמוד המחירים של Lovart (בלי מחירים בטקסט)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://lovart.ai/statement/terms-of-use",
+          "title": "תנאי השימוש של Lovart (עודכנו ב־9 ביולי 2026)",
+          "official": true,
+          "published": "2026-07-09",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://lovart.ai/statement/67819415bf39427eac98fdea77510a9d",
+          "title": "מדיניות הפרטיות של Lovart",
+          "official": true,
+          "published": "2025-07-23",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s4",
+          "url": "https://www.newsfilecorp.com/release/259781",
+          "title": "הודעה לעיתונות של Lovart על ההשקה העולמית (Newsfile)",
+          "official": true,
+          "published": "2025-07-23",
+          "checked": "2026-11-18",
+          "stale": true
+        },
+        {
+          "id": "s5",
+          "url": "https://www.lovart.ai/zh/changelog",
+          "title": "יומן השינויים של Lovart (בסינית)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": false,
+          "basis": "יצא מגרסת בטא להשקה עולמית ב־23 ביולי 2025, בתוך חלון הזמן. לא נמצאה אף סקירה עצמאית: כל הסקירות שנמצאו נכתבו בידי Lovart, בידי מתחרים, או היו תוכן ממומן.",
+          "launch_date": "July 23, 2025",
+          "launched_in_window": true,
+          "latest_version": null,
+          "latest_version_date": "May 6, 2026",
+          "latest_version_date_iso": "2026-05-06",
+          "independent_reviews": 0,
+          "evidence": "research/stage4/added-tools.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": null,
+          "currency": null,
+          "billing": null,
+          "plan": null,
+          "verified": false,
+          "label": null,
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר"
+          ],
+          "unverified": []
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 0,
+            "of": 5,
+            "value": false,
+            "evidence": "research/stage4/graphic-design.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/stage4/added-tools.md"
+          },
+          "free_renewing": {
+            "value": null,
+            "basis": "יש תוכנית חינמית, אבל המקור לא מפרט את המכסה שלה ואם היא מתחדשת.",
+            "evidence": "research/stage4/added-tools.md"
+          }
+        }
+      }
+    },
+    {
+      "id": 46,
       "slug": "figma",
       "category_id": 5,
       "name": "Figma",
@@ -14738,7 +15045,7 @@
       }
     },
     {
-      "id": 46,
+      "id": 47,
       "slug": "framer",
       "category_id": 5,
       "name": "Framer",
@@ -15023,7 +15330,7 @@
       }
     },
     {
-      "id": 47,
+      "id": 48,
       "slug": "relume",
       "category_id": 5,
       "name": "Relume",
@@ -15032,11 +15339,11 @@
       "role": "סביבת עבודה בבינה מלאכותית שמתכננת מפת אתר ו־wireframes ובונה מהם אתר, עם ספריית רכיבים ל־Webflow ול־Figma ואחסון אתרים.",
       "url": "https://www.relume.ai",
       "logo": {
-        "file": null,
+        "file": "logos/relume.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/6177739448baa66404ce1d9c/6a86639aa87a4f5a28e25042_Favicon-Relume%20(512px).png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -15333,7 +15640,7 @@
       }
     },
     {
-      "id": 48,
+      "id": 49,
       "slug": "google-stitch",
       "category_id": 5,
       "name": "Stitch",
@@ -15342,11 +15649,11 @@
       "role": "כלי של Google Labs שיוצר עיצובי ממשק לאפליקציות ואתרים מהנחיה, על קנבס אינסופי עם סוכן עיצוב ואבות טיפוס אינטראקטיביים.",
       "url": "https://stitch.google.com",
       "logo": {
-        "file": null,
+        "file": "logos/google-stitch.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://www.gstatic.com/labs-code/stitch/favicon-512x512.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -15534,7 +15841,7 @@
       }
     },
     {
-      "id": 49,
+      "id": 50,
       "slug": "ux-pilot",
       "category_id": 5,
       "name": "UX Pilot",
@@ -15543,11 +15850,11 @@
       "role": "כלי בינה מלאכותית ליצירת wireframes ועיצובי ממשק מהנחיה.",
       "url": "https://uxpilot.ai",
       "logo": {
-        "file": null,
+        "file": "logos/ux-pilot.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://uxpilot.ai/logo192.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -15709,7 +16016,7 @@
       }
     },
     {
-      "id": 50,
+      "id": 51,
       "slug": "v0",
       "category_id": 5,
       "name": "v0",
@@ -15981,7 +16288,7 @@
       }
     },
     {
-      "id": 51,
+      "id": 52,
       "slug": "webflow",
       "category_id": 5,
       "name": "Webflow",
@@ -16339,7 +16646,7 @@
       }
     },
     {
-      "id": 52,
+      "id": 53,
       "slug": "wix",
       "category_id": 5,
       "name": "Wix",
@@ -16652,7 +16959,7 @@
       }
     },
     {
-      "id": 53,
+      "id": 54,
       "slug": "capcut",
       "category_id": 7,
       "name": "CapCut",
@@ -16960,7 +17267,7 @@
       }
     },
     {
-      "id": 54,
+      "id": 55,
       "slug": "veed",
       "category_id": 7,
       "name": "VEED",
@@ -17257,7 +17564,7 @@
       }
     },
     {
-      "id": 55,
+      "id": 56,
       "slug": "descript",
       "category_id": 7,
       "name": "Descript",
@@ -17617,7 +17924,7 @@
       }
     },
     {
-      "id": 56,
+      "id": 57,
       "slug": "opusclip",
       "category_id": 7,
       "name": "OpusClip",
@@ -17626,11 +17933,11 @@
       "role": "כלי שחותך סרטונים ארוכים לקליפים קצרים לרשתות, עם כתוביות, B-roll ועריכה אוטומטית של סרטוני דיבור.",
       "url": "https://www.opus.pro",
       "logo": {
-        "file": null,
+        "file": "logos/opusclip.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/6388604483b03a9ecb34d695/6435197bfb1d6e486e04c37b_webclip.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -17928,7 +18235,7 @@
       }
     },
     {
-      "id": 57,
+      "id": 58,
       "slug": "heygen",
       "category_id": 7,
       "name": "HeyGen",
@@ -17937,11 +18244,11 @@
       "role": "פלטפורמה ליצירת סרטונים עם אווטרים מדברים, שכפול קול ותרגום וידאו לשפות אחרות עם סנכרון שפתיים.",
       "url": "https://www.heygen.com",
       "logo": {
-        "file": null,
+        "file": "logos/heygen.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://www.heygen.com/favicon.ico?favicon.2m321y0geyyfh.ico",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -18261,7 +18568,7 @@
       }
     },
     {
-      "id": 58,
+      "id": 59,
       "slug": "synthesia",
       "category_id": 7,
       "name": "Synthesia",
@@ -18270,11 +18577,11 @@
       "role": "פלטפורמה ליצירת סרטוני הדרכה והסבר עם אווטרים מדברים מתוך תסריט, כולל דיבוב לשפות אחרות.",
       "url": "https://www.synthesia.io",
       "logo": {
-        "file": null,
+        "file": "logos/synthesia.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/65e89895c5a4b8d764c0d710/6618fd69d436784c0bba5e9e_webclip.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -18605,7 +18912,7 @@
       }
     },
     {
-      "id": 59,
+      "id": 60,
       "slug": "captions",
       "category_id": 7,
       "name": "Captions",
@@ -18614,11 +18921,11 @@
       "role": "אפליקציה לעריכת סרטוני דיבור לרשתות, עם כתוביות אוטומטיות, אווטרים, קריינות ותרגום.",
       "url": "https://captions.ai",
       "logo": {
-        "file": null,
-        "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "file": "logos/captions.svg",
+        "file_dark": "logos/captions-dark.svg",
+        "source_url": "https://captions.ai/mrkt-static/favicon.svg",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי. יש גרסה נפרדת לרקע כהה."
       },
       "status": {
         "state": "פעיל",
@@ -18901,7 +19208,7 @@
       }
     },
     {
-      "id": 60,
+      "id": 61,
       "slug": "d-id",
       "category_id": 7,
       "name": "D-ID",
@@ -18910,11 +19217,11 @@
       "role": "פלטפורמה ליצירת סרטונים עם אווטרים ודמויות מדברות מתוך תמונה ותסריט, ב־Studio וב־API.",
       "url": "https://www.d-id.com",
       "logo": {
-        "file": null,
-        "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "file": "logos/d-id.png",
+        "file_dark": "logos/d-id-dark.png",
+        "source_url": "https://www.d-id.com/wp-content/uploads/2024/10/D-ID-logo-350x350-1-300x300.png",
+        "missing_reason": null,
+        "note": "נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה. יש גרסה נפרדת לרקע כהה. אצל D-ID הסמל הוא שם המותג עצמו, ואין סמל נפרד. בגרסה לרקע כהה האותיות השחורות הוחלפו בלבן."
       },
       "status": {
         "state": "פעיל",
@@ -19164,7 +19471,332 @@
       }
     },
     {
-      "id": 61,
+      "id": 62,
+      "slug": "hedra",
+      "category_id": 7,
+      "name": "Hedra",
+      "former_name": null,
+      "rename_note": null,
+      "role": "פלטפורמה ליצירת סרטוני דמויות מדברות מתמונה, טקסט וקול, עם סנכרון שפתיים.",
+      "url": "https://www.hedra.com",
+      "logo": {
+        "file": "logos/hedra.png",
+        "file_dark": null,
+        "source_url": "https://www.hedra.com/favicon.ico",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": null,
+        "date_as_written": null,
+        "source_ids": []
+      },
+      "strengths": [
+        {
+          "lead": "דמות מדברת מתמונה אחת",
+          "detail": "המודל Character 3 משלב תמונה, טקסט וקול לסרטון עם סנכרון שפתיים ואנימציה, באורך של עד 10 דקות.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "שימוש מסחרי בכל התוכניות",
+          "detail": "עמוד המחירים מציין שימוש מסחרי בכל התוכניות, מ־Basic ב־20 דולר לחודש עם 2,000 נקודות זיכוי.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "API עם מחיר לשנייה",
+          "detail": "Character 3 זמין גם ב־API: 2.5 סנט לשנייה ב־540p, 5 סנט ב־720p ו־6.25 סנט ב־1080p. התשלום מארנק דולרים נפרד מנקודות המנוי.",
+          "source_ids": [
+            "s5",
+            "s1"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "אין תוכנית חינמית בעמוד המחירים",
+          "detail": "כל התוכניות בתשלום, בחיוב חודשי בלבד. אחרי ביטול נשארות רק יצירות מוגבלות עם סימן מים.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "נקודות חודשיות לא נצברות",
+          "detail": "הנקודות מתאפסות בכל מחזור חיוב. רק נקודות מחבילות שנקנו בנפרד אינן פגות.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "התוכן עשוי לשמש לאימון בצורה מותממת",
+          "detail": "לפי מדיניות הפרטיות (4 בספטמבר 2026), Hedra רשאית לאמן מודלים על נתונים מצטברים או מותממים שנגזרו גם מתוכן המשתמשים. לא מתוארת אפשרות סירוב.",
+          "source_ids": [
+            "s4"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "יוצרים שרוצים להנפיש דמות או דיוקן כדי שידברו בסרטון, לפרסום, לסיפור או להסבר.",
+      "pricing": {
+        "verification": "אומת ממקור רשמי",
+        "summary_line": "מ־20 דולר לחודש ל־2,000 נקודות זיכוי, בחיוב חודשי. אין תוכנית חינמית בעמוד המחירים.",
+        "model": "מנוי עם נקודות זיכוי",
+        "plans": [
+          {
+            "name": "Basic",
+            "price": 20,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "2,000 נקודות זיכוי בחודש, יצירה איטית יותר, שימוש מסחרי",
+            "notes": "הנקודות החודשיות אינן נצברות.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 50,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "7,200 נקודות זיכוי בחודש, יצירה מהירה יותר, שימוש מסחרי",
+            "notes": null,
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Ultra",
+            "price": null,
+            "price_text": "החל מ־100 דולר לחודש",
+            "price_short": "מ־100 דולר",
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "18,000 נקודות זיכוי בחודש (ועד 57,600 בדרגות גבוהות), היצירה המהירה ביותר, שימוש מסחרי, גישה לתוכנית Teams",
+            "notes": null,
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Teams",
+            "price": 75,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "14,400 נקודות זיכוי בחודש, היצירה המהירה ביותר, שימוש מסחרי",
+            "notes": "המקור אינו מציין אם המחיר למשתמש או לחשבון.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "price_text": "לפי הצעת מחיר",
+            "price_short": "לפי הצעת מחיר",
+            "currency": "USD",
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "תמיכה ייעודית, פריסה פרטית, SSO, ניהול צוותים, בדיקה משפטית ואבטחתית",
+            "notes": null,
+            "source_ids": [
+              "s1"
+            ]
+          }
+        ],
+        "free_tier": null,
+        "trial": null,
+        "unverified_notes": "המחירים מוצגים ב־$ בלי קוד מטבע. עמוד המחירים אינו מציג תוכנית חינמית או חיוב שנתי, ואינו מציין מחיר לחבילות נקודות נוספות. לא נבדק אם יש מכסת התנסות חינמית בהרשמה. עמוד המחירים הכללי (hedra.com/pricing) עוסק בשירותי Model Factory ובמחשוב GPU לארגונים."
+      },
+      "privacy": {
+        "text": "לפי מדיניות הפרטיות (בתוקף מ־4 בספטמבר 2026), Hedra רשאית ליצור נתונים מצטברים, לא מזוהים או מותממים מהמידע האישי, כולל תוכן המשתמשים, ולהשתמש בהם כדי \"train our AI models\". המדיניות אינה אומרת במפורש שתמונות, קול או סרטונים גולמיים משמשים לאימון, ואינה מתארת אפשרות סירוב לאימון. מנוי בתשלום אינו מבטיח כשלעצמו שהתוכן לא ישמש לאימון.",
+        "training_on_user_data": "אפשרי, בנתונים מצטברים או מותממים שנגזרו מתוכן המשתמשים. לא מתוארת אפשרות סירוב.",
+        "source_ids": [
+          "s4"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לפי תנאי השימוש (4 בספטמבר 2026), Hedra אינה תובעת בעלות על הקלט והפלט, אבל המשתמש מעניק לה רישיון רחב, תמידי ובלתי חוזר להפעלת השירות. עמוד המחירים מציין שימוש מסחרי בכל התוכניות. התנאים מגבילים את רישיון האפליקציה ל\"personal or internal business purposes\" ואוסרים למכור או לנצל מסחרית את השירות עצמו. אין בכך הבטחה מפני תביעות זכויות יוצרים.",
+        "watermark": "אחרי ביטול המנוי נשארות רק \"limited watermarked generations\". המקור אינו מזכיר סימן מים בתוכניות בתשלום.",
+        "source_ids": [
+          "s3",
+          "s1"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "Character 3 זמין ב־API בפלטפורמת המפתחים של Hedra: 2.5 סנט לשנייה ב־540p, 5 סנט ב־720p ו־6.25 סנט ב־1080p. קריאות API משולמות מארנק דולרים מראש, נפרד מנקודות המנוי. לארגונים יש גם שירותי מחשוב GPU ו־Model Factory לפי הצעת מחיר.",
+        "source_ids": [
+          "s5",
+          "s1",
+          "s2"
+        ]
+      },
+      "integrations": {
+        "items": [],
+        "source_ids": []
+      },
+      "platforms": {
+        "items": [
+          "אתר"
+        ],
+        "source_ids": [
+          "s1",
+          "s5"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית: עמוד המודל Character 3 מציין \"full multi-language support\" בלי רשימת שפות, ועברית לא מוזכרת.",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      "company": {
+        "name": "Hedra, Inc.",
+        "parent": null,
+        "country": "ארצות הברית",
+        "note": null
+      },
+      "student_benefits": {
+        "text": "לא נמצאה הטבה לסטודנטים: עמוד המחירים לא מזכיר הצעה לסטודנטים.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.hedra.com/play/pricing",
+          "title": "עמוד המחירים של Hedra Play",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://www.hedra.com/pricing",
+          "title": "Hedra: מחירי Model Factory ומחשוב GPU",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://hedra.com/terms",
+          "title": "תנאי השימוש של Hedra (עודכנו ב־4 בספטמבר 2026)",
+          "official": true,
+          "published": "2026-09-04",
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://www.hedra.com/privacy",
+          "title": "מדיניות הפרטיות של Hedra",
+          "official": true,
+          "published": "2026-09-04",
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://www.hedra.com/video-models/hedra-character-3",
+          "title": "Hedra: עמוד המודל Character 3",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://www.hedra.com/blog/hedra-omnia-frontier-ai-video-model",
+          "title": "הבלוג של Hedra: Hedra Omnia",
+          "official": true,
+          "published": "2026-02-05",
+          "checked": "2026-11-19",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": false,
+          "basis": "Character 3 יצא במרץ 2025. מודל הבסיס Omnia פורסם בבלוג בפברואר 2026, לפי המטא־נתונים של העמוד, ומיועד לשותפים. הכלי מופיע רק ב־1 מתוך 6 סקירות עצמאיות.",
+          "launch_date": null,
+          "launched_in_window": null,
+          "latest_version": "Hedra Omnia",
+          "latest_version_date": "2026-02-05T00:00:00.000Z",
+          "latest_version_date_iso": "2026-02-05",
+          "independent_reviews": 1,
+          "evidence": "research/stage4/added-tools.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 20,
+          "currency": "USD",
+          "billing": "חודשי",
+          "plan": "Basic",
+          "verified": true,
+          "label": "מ־20 דולר לחודש",
+          "has_free_plan": false
+        },
+        "platforms": {
+          "verified": [
+            "אתר"
+          ],
+          "unverified": []
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 1,
+            "of": 6,
+            "value": false,
+            "evidence": "research/stage4/video-editing.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/stage4/video-editing.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
+            "evidence": "research/stage4/added-tools.md"
+          }
+        }
+      }
+    },
+    {
+      "id": 63,
       "slug": "suno",
       "category_id": 8,
       "name": "Suno",
@@ -19505,7 +20137,7 @@
       }
     },
     {
-      "id": 62,
+      "id": 64,
       "slug": "elevenlabs",
       "category_id": 8,
       "name": "ElevenLabs",
@@ -19843,7 +20475,7 @@
       }
     },
     {
-      "id": 63,
+      "id": 65,
       "slug": "moises",
       "category_id": 8,
       "name": "Moises",
@@ -19852,11 +20484,11 @@
       "role": "אפליקציה למוזיקאים להפרדת ערוצים, זיהוי אקורדים ותמלול מילים לצורך תרגול.",
       "url": "https://moises.ai",
       "logo": {
-        "file": null,
+        "file": "logos/moises.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://storage.googleapis.com/moises-cms-site/favicon_03fefcef56/favicon_03fefcef56.svg",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
       },
       "status": {
         "state": "פעיל",
@@ -20130,7 +20762,7 @@
       }
     },
     {
-      "id": 64,
+      "id": 66,
       "slug": "speechify",
       "category_id": 8,
       "name": "Speechify",
@@ -20139,11 +20771,11 @@
       "role": "אפליקציה שמקריאה בקול טקסטים, מסמכים ודפי אינטרנט בקולות סינתטיים.",
       "url": "https://speechify.com",
       "logo": {
-        "file": null,
+        "file": "logos/speechify.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://speechify.com/apple-icon.png?apple-icon.0ek7crgmoxfjk.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -20406,7 +21038,309 @@
       }
     },
     {
-      "id": 65,
+      "id": 67,
+      "slug": "udio",
+      "category_id": 8,
+      "name": "Udio",
+      "former_name": null,
+      "rename_note": null,
+      "role": "כלי ליצירת שירים ומוזיקה מתיאור טקסט, שפועל כעת לפי תנאי מעבר זמניים.",
+      "url": "https://www.udio.com",
+      "logo": {
+        "file": "logos/udio.svg",
+        "file_dark": null,
+        "source_url": "https://lobehub.com/icons",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": "לפי הבלוג הרשמי (19 בנובמבר 2025), Udio פועלת לפי תנאי שימוש זמניים (transition ToS) שנכנסו לתוקף ב־12 בנובמבר, בזמן שהיא בונה פלטפורמה חדשה בשיתוף חברות התקליטים. לא פורסם מועד להשקת הפלטפורמה החדשה. לפי הבלוג, חברות התקליטים לא רכשו את Udio. לפי מרכז העזרה, הורדה של אודיו, וידאו ו־stems מושבתת. בבלוג הרשמי אין פוסט חדש יותר מ־19 בנובמבר 2025.",
+        "date_as_written": "12 November",
+        "source_ids": [
+          "s3",
+          "s4",
+          "s2"
+        ]
+      },
+      "strengths": [
+        {
+          "lead": "נקודות זיכוי חינמיות שמתחדשות",
+          "detail": "בחשבון חינמי יש 10 נקודות זיכוי ביום, ואחריהן מכסה חודשית נוספת של 100 נקודות. המכסות מתאפסות בתחילת כל חודש.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "מכסות גבוהות יותר בתוכניות בתשלום",
+          "detail": "Standard מאפשרת עד 2,400 נקודות בחודש ו־Pro עד 6,000. נקודות שנקנו בנפרד אינן פגות.",
+          "source_ids": [
+            "s1",
+            "s2"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "המודלים הקיימים נשארים זמינים בתקופת המעבר",
+          "detail": "לפי הבלוג, המודלים v1, v1.5 ו־v1.5 Allegro ממשיכים לפעול בזמן המעבר לפלטפורמה החדשה.",
+          "source_ids": [
+            "s3"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "אי אפשר להוריד את השירים",
+          "detail": "לפי מרכז העזרה, הורדה של אודיו, וידאו ו־stems הושבתה. המקור לא מציין אם זה קבוע.",
+          "source_ids": [
+            "s2"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "השירות פועל לפי תנאי מעבר זמניים",
+          "detail": "תנאי המעבר חלים מאז 12 בנובמבר, והפלטפורמה החדשה שהוכרזה עדיין בלי מועד. התנאים עצמם לא נקראו.",
+          "source_ids": [
+            "s3",
+            "s7"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "נקודות חודשיות לא נצברות",
+          "detail": "נקודות שלא נוצלו אינן עוברות לחודש הבא. בביטול המנוי החשבון חוזר למכסות החינמיות.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "מי שרוצה לנסות יצירת שירים בבינה מלאכותית ולהאזין להם באתר, כל עוד ההורדה מושבתת.",
+      "pricing": {
+        "verification": "אומת חלקית",
+        "summary_line": "יש תוכנית חינמית עם 10 נקודות זיכוי ביום ועוד 100 בחודש. המחירים של Standard ו־Pro לא אומתו.",
+        "model": "מנוי עם נקודות זיכוי",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "10 נקודות זיכוי ביום, ועוד מכסה חודשית של 100 נקודות",
+            "notes": "המכסות מתאפסות בתחילת כל חודש. נקודות לא נצברות. המטבע לא צוין במקור.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Standard",
+            "price": null,
+            "price_text": "המחיר לא אומת",
+            "price_short": "המחיר לא אומת",
+            "currency": "USD",
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "עד 2,400 נקודות זיכוי בחודש",
+            "notes": "המכסה הוכפלה מ־1,200 ל־2,400 אחרי השותפות עם UMG. כל המנויים קיבלו מענק חד־פעמי של 1,000 נקודות שאינן פגות. המטבע לא אומת.",
+            "source_ids": [
+              "s1",
+              "s2"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": null,
+            "price_text": "המחיר לא אומת",
+            "price_short": "המחיר לא אומת",
+            "currency": "USD",
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "עד 6,000 נקודות זיכוי בחודש, חמש סדרות שירים במקביל",
+            "notes": "המכסה עלתה מ־4,800 ל־6,000 אחרי השותפות עם UMG. המטבע לא אומת.",
+            "source_ids": [
+              "s1",
+              "s2"
+            ]
+          }
+        ],
+        "free_tier": "חשבון חינמי עם 10 נקודות זיכוי ביום ומכסה חודשית נוספת של 100 נקודות, שמתאפסות בתחילת כל חודש.",
+        "trial": "מרכז העזרה מזכיר תקופת ניסיון שאינה מגדילה את המכסות ומוגבלת ל־3 שירים ביום. משך הניסיון לא צוין.",
+        "unverified_notes": "עמוד המחירים נקרא פעמיים והחזיר רק מטא־נתונים, בלי שמות תוכניות או מחירים. לא אומתו: מחירי Standard ו־Pro, חיוב חודשי או שנתי, המטבע, ומחיר נקודות שנקנות בנפרד. מאמר הנקודות עודכן ב־29 באוקטובר 2025, ומאמר השינויים מציג את התאריך 17 בפברואר 2026."
+      },
+      "privacy": {
+        "text": "לא אומת. תנאי השימוש ותנאי המעבר לא נקראו (העמוד החזיר רק מטא־נתונים), ומדיניות הפרטיות לא נבדקה.",
+        "training_on_user_data": null,
+        "source_ids": [
+          "s7"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לפי מאמר עזרה מ־26 במרץ 2025, Udio לא תובעת בעלות על התוכן והמשתמש הוא הבעלים של הפלט. משתמשים חינמיים חייבים לציין ש־Udio יצרה את השיר, ומנויים בתשלום בזמן היצירה פטורים מכך. המאמר אינו מתייחס ישירות לשימוש מסחרי ומפנה לתנאי השימוש. המאמר קודם לתנאי המעבר, ולכן ייתכן שאינו מעודכן. אין בכך הבטחה מפני תביעות זכויות יוצרים.",
+        "watermark": null,
+        "source_ids": [
+          "s5",
+          "s3"
+        ]
+      },
+      "developer_access": {
+        "api": "לא אומת",
+        "text": "בעמודים הרשמיים שנבדקו אין אזכור של API.",
+        "source_ids": []
+      },
+      "integrations": {
+        "items": [],
+        "source_ids": []
+      },
+      "platforms": {
+        "items": [
+          "אתר"
+        ],
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק או שפות שירה.",
+        "source_ids": []
+      },
+      "company": {
+        "name": "Udio",
+        "parent": null,
+        "country": null,
+        "note": "השם המשפטי של החברה לא אומת, כי תנאי השימוש לא נקראו."
+      },
+      "student_benefits": {
+        "text": "לא נמצאה הטבה לסטודנטים בעמודים הרשמיים שנבדקו. עמוד המחירים לא נקרא.",
+        "source_ids": []
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://help.udio.com/en/articles/10739134-credits-and-credit-limits",
+          "title": "מרכז העזרה של Udio: נקודות זיכוי ומגבלות",
+          "official": true,
+          "published": "2025-10-29",
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://help.udio.com/en/articles/12683565-changes-associated-with-the-universal-music-group-umg-partnership",
+          "title": "מרכז העזרה של Udio: שינויים בעקבות השותפות עם UMG",
+          "official": true,
+          "published": "2026-02-17",
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://www.udio.com/blog/udio-warner",
+          "title": "הבלוג של Udio: Udio with Warner Music Group",
+          "official": true,
+          "published": "2025-11-19",
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://www.udio.com/blog",
+          "title": "הבלוג של Udio: רשימת הפוסטים",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://help.udio.com/en/articles/10739216-answers-to-common-usage-questions",
+          "title": "מרכז העזרה של Udio: תשובות לשאלות שימוש נפוצות",
+          "official": true,
+          "published": "2025-03-26",
+          "checked": "2026-11-19",
+          "stale": true
+        },
+        {
+          "id": "s6",
+          "url": "https://www.udio.com/pricing",
+          "title": "עמוד המחירים של Udio (נטענו רק מטא־נתונים)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s7",
+          "url": "https://www.udio.com/terms-of-service",
+          "title": "תנאי השימוש של Udio (נטענו רק מטא־נתונים)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": null,
+          "basis": "הכלי מופיע ב־5 מתוך 6 סקירות עצמאיות, אבל לא אומתה גרסה משמעותית בחלון הזמן. השותפויות עם UMG ו־WMG אינן גרסה של המוצר.",
+          "launch_date": null,
+          "launched_in_window": null,
+          "latest_version": null,
+          "latest_version_date": null,
+          "latest_version_date_iso": null,
+          "independent_reviews": 5,
+          "evidence": "research/stage4/added-tools.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": null,
+          "currency": null,
+          "billing": null,
+          "plan": null,
+          "verified": false,
+          "label": null,
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר"
+          ],
+          "unverified": []
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 5,
+            "of": 6,
+            "value": true,
+            "evidence": "research/stage4/audio.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/stage4/audio.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "10 נקודות זיכוי ביום ומכסה של 100 נקודות בחודש, שמתאפסות בתחילת כל חודש.",
+            "evidence": "research/stage4/added-tools.md"
+          }
+        }
+      }
+    },
+    {
+      "id": 68,
       "slug": "murf",
       "category_id": 8,
       "name": "Murf",
@@ -20415,11 +21349,11 @@
       "role": "מחולל קריינות שממיר טקסט לדיבור בקולות AI, לסרטונים, מצגות והדרכות.",
       "url": "https://murf.ai",
       "logo": {
-        "file": null,
+        "file": "logos/murf.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/66b3765153a8a0c399c70981/67065c22d34646f3bb23b232_android-chrome-256x256.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -20637,7 +21571,7 @@
       }
     },
     {
-      "id": 66,
+      "id": 69,
       "slug": "adobe-podcast",
       "category_id": 8,
       "name": "Adobe Podcast",
@@ -20646,11 +21580,11 @@
       "role": "כלי דפדפן לניקוי והשבחת הקלטות דיבור, הקלטה מרחוק ועריכת פודקאסטים.",
       "url": "https://podcast.adobe.com",
       "logo": {
-        "file": null,
+        "file": "logos/adobe-podcast.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://podcast.adobe.com/adobe-podcast-favicon.svg",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
       },
       "status": {
         "state": "פעיל",
@@ -20896,7 +21830,7 @@
       }
     },
     {
-      "id": 67,
+      "id": 70,
       "slug": "lalal-ai",
       "category_id": 8,
       "name": "LALAL.AI",
@@ -20905,11 +21839,11 @@
       "role": "כלי להפרדת שירה, כלים ורעשים מקובצי אודיו ווידאו לערוצים נפרדים (stems).",
       "url": "https://www.lalal.ai",
       "logo": {
-        "file": null,
+        "file": "logos/lalal-ai.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://s.lalal.ai/icons/favicon.svg",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
       },
       "status": {
         "state": "פעיל",
@@ -21203,7 +22137,7 @@
       }
     },
     {
-      "id": 68,
+      "id": 71,
       "slug": "stable-audio",
       "category_id": 8,
       "name": "Stable Audio",
@@ -21212,11 +22146,11 @@
       "role": "מחולל מוזיקה ואפקטים קוליים מטקסט ומאודיו של Stability AI.",
       "url": "https://stableaudio.com",
       "logo": {
-        "file": null,
+        "file": "logos/stable-audio.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://stableaudio.com/st-1/favicon.svg",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
       },
       "status": {
         "state": "פעיל",
@@ -21490,7 +22424,7 @@
       }
     },
     {
-      "id": 69,
+      "id": 72,
       "slug": "google-flow-music",
       "category_id": 8,
       "name": "Google Flow Music",
@@ -21499,11 +22433,11 @@
       "role": "סטודיו ליצירת מוזיקה ושירים בעזרת סוכן AI של Google, המבוסס על מודל Lyria.",
       "url": "https://www.flowmusic.app",
       "logo": {
-        "file": null,
+        "file": "logos/google-flow-music.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://www.flowmusic.app/apple-touch-icon.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -21767,7 +22701,7 @@
       }
     },
     {
-      "id": 70,
+      "id": 73,
       "slug": "hyper3d-rodin",
       "category_id": 9,
       "name": "Hyper3D Rodin",
@@ -22100,7 +23034,7 @@
       }
     },
     {
-      "id": 71,
+      "id": 74,
       "slug": "meshy",
       "category_id": 9,
       "name": "Meshy",
@@ -22505,7 +23439,7 @@
       }
     },
     {
-      "id": 72,
+      "id": 75,
       "slug": "tripo",
       "category_id": 9,
       "name": "Tripo",
@@ -22735,7 +23669,323 @@
       }
     },
     {
-      "id": 73,
+      "id": 76,
+      "slug": "sloyd",
+      "category_id": 9,
+      "name": "Sloyd",
+      "former_name": null,
+      "rename_note": null,
+      "role": "כלי ליצירת מודלים בתלת־ממד מטקסט או מתמונה, עם מחוללים פרמטריים לגאומטריה נקייה.",
+      "url": "https://www.sloyd.ai",
+      "logo": {
+        "file": "logos/sloyd.png",
+        "file_dark": null,
+        "source_url": "https://www.sloyd.ai/apple-icon.png?6d165b2a1d5024c7",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": null,
+        "date_as_written": null,
+        "source_ids": []
+      },
+      "strengths": [
+        {
+          "lead": "יצירה ללא הגבלה בתוכניות בתשלום",
+          "detail": "ב־Plus וב־Pro יצירה מטקסט או מתמונה לתלת־ממד, טקסטורות, ריגינג ואנימציה הן ללא הגבלה. נקודות הזיכוי (50 או 350 בחודש) נדרשות רק לתכונות מסוימות.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "שימוש מסחרי מתוכנית Plus",
+          "detail": "Plus עולה 15 דולר לחודש, או 12.50 דולר לחודש בחיוב שנתי, וכוללת שימוש מסחרי וייצוא ללא הגבלה.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "חיבור למנועי משחק ולכלי תלת־ממד",
+          "detail": "תוספים למנועי משחק, לכלי תלת־ממד ולתוכנות הדפסה (slicers) בתוכניות בתשלום. יש מדריכים ל־Unity, Unreal, Godot ו־Roblox Studio, ושרת MCP.",
+          "source_ids": [
+            "s1",
+            "s3"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "בחינם יצירה אחת ביום ובלי ייצוא",
+          "detail": "תוכנית Guest כוללת יצירה אחת ביום מטקסט או מתמונה, ייצוא רק של מודלים מהקהילה ורישיון לשימוש אישי בלבד.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "מכירה חוזרת והדפסה מסחרית מוגבלות",
+          "detail": "רק Pro מתירה הפצה ומכירה של מודלים בחנויות נכסים. הדפסת תלת־ממד מסחרית דורשת רישיון מותאם מהתמיכה.",
+          "source_ids": [
+            "s1",
+            "s2"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "ה־API נפרד מהמנוי",
+          "detail": "ה־API אינו כלול באף תוכנית ומשתמש בנקודות מראש נפרדות. נקודות חודשיות לא נצברות.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "סטודנטים ויוצרים שצריכים מודלים בתלת־ממד למשחקים, להדמיות או להדפסה, בלי ניסיון במידול.",
+      "pricing": {
+        "verification": "אומת ממקור רשמי",
+        "summary_line": "מ־15 דולר לחודש, או 12.50 דולר לחודש בחיוב שנתי. בחינם יצירה אחת ביום, לשימוש אישי בלבד.",
+        "model": "מנוי עם נקודות זיכוי",
+        "plans": [
+          {
+            "name": "Guest",
+            "price": 0,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": null,
+            "billing": null,
+            "price_period": "לחודש",
+            "includes": "יצירה אחת ביום מטקסט או מתמונה לתלת־ממד ול־skybox, ייצוא רק של מודלים מהקהילה ב־GLB ו־OBJ",
+            "notes": "רישיון לשימוש אישי בלבד. אין נקודות זיכוי, טקסטורות, ריגינג או תוספים. תמיכה דרך הקהילה ב־Discord.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Plus",
+            "price": 15,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "50 נקודות זיכוי בחודש, יצירה, טקסטורות, ריגינג ואנימציה ללא הגבלה, 2 יצירות במקביל, סגנון AI מותאם אחד, ייצוא ללא הגבלה, תוספים",
+            "notes": "כולל שימוש מסחרי. אין הפצה או מכירה חוזרת בחנויות נכסים.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Plus",
+            "price": 12.5,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "50 נקודות זיכוי בחודש, יצירה, טקסטורות, ריגינג ואנימציה ללא הגבלה, 2 יצירות במקביל, סגנון AI מותאם אחד, ייצוא ללא הגבלה, תוספים",
+            "notes": "מחיר לחודש בחיוב שנתי, 150 דולר בתשלום אחד. הנקודות ניתנות מדי חודש.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 50,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "חודשי",
+            "price_period": "לחודש",
+            "includes": "350 נקודות זיכוי בחודש, יצירה ללא הגבלה, 5 יצירות במקביל, סגנונות AI מותאמים ללא הגבלה, תור מועדף, תמיכה מועדפת",
+            "notes": "כולל שימוש מסחרי, הפצה ומכירה בחנויות נכסים.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 41.67,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": null,
+            "billing": "שנתי",
+            "price_period": "לחודש",
+            "includes": "350 נקודות זיכוי בחודש, יצירה ללא הגבלה, 5 יצירות במקביל, סגנונות AI מותאמים ללא הגבלה, תור מועדף, תמיכה מועדפת",
+            "notes": "מחיר לחודש בחיוב שנתי, 500 דולר בתשלום אחד.",
+            "source_ids": [
+              "s1"
+            ]
+          }
+        ],
+        "free_tier": "תוכנית Guest ללא תשלום: יצירה אחת ביום מטקסט או מתמונה, ייצוא רק של מודלים מהקהילה (GLB, OBJ), ורישיון לשימוש אישי בלבד.",
+        "trial": null,
+        "unverified_notes": "המטבע מוצג כ־$ בלי קוד מטבע. המתג השנתי מציין \"save 20%\", אבל המחירים השנתיים שווים לכ־17% הנחה. נקודות נוספות עולות 12 דולר ל־100 ועוברות לחודש הבא. מחירי ה־API (sloyd.ai/api/pricing) לא נקראו."
+      },
+      "privacy": {
+        "text": "לא אומת. תנאי השימוש (16 בפברואר 2026) אינם עוסקים באימון מודלים על תוכן המשתמשים ומפנים למדיניות הפרטיות, שלא נקראה. עמוד המחירים אוסר על המשתמשים לאמן מודלי AI על המודלים שיצרו (ב־Pro בתיאום).",
+        "training_on_user_data": null,
+        "source_ids": [
+          "s2",
+          "s1"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לפי עמוד המחירים, Guest מקבלת רישיון לשימוש אישי בלבד, ו־Plus ו־Pro כוללות שימוש מסחרי בלי תמלוגים. הפצה ומכירה בחנויות נכסים מותרות רק ב־Pro. תנאי השימוש מעניקים זכות שימוש לא בלעדית ותמידית במודלים, אינם קובעים מי הבעלים שלהם, ומחייבים רישיון מותאם להדפסה מסחרית. התנאים כותבים באופן כללי שגם שימוש מסחרי מותר, בסתירה לרישיון האישי ב־Guest; הועדף עמוד המחירים.",
+        "watermark": null,
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "יש API עם נקודות מראש נפרדות, שאינו דורש מנוי ואינו כלול באף תוכנית. המחירון שלו לא נקרא. יש גם שרת MCP לכלי קוד כמו Claude Code, Codex, Cursor ו־VS Code.",
+        "source_ids": [
+          "s1",
+          "s3"
+        ]
+      },
+      "integrations": {
+        "items": [
+          "Unity",
+          "Unreal",
+          "Godot",
+          "Roblox Studio",
+          "תוסף לכלי תלת־ממד ולתוכנות הדפסה (slicers)",
+          "שרת MCP"
+        ],
+        "source_ids": [
+          "s1",
+          "s3"
+        ]
+      },
+      "platforms": {
+        "items": [
+          "אתר"
+        ],
+        "source_ids": [
+          "s3",
+          "s4"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק או של הנחיות בעברית.",
+        "source_ids": []
+      },
+      "company": {
+        "name": "Sloyd Inc.",
+        "parent": null,
+        "country": "ארצות הברית",
+        "note": "לפי תנאי השימוש החברה רשומה בארצות הברית בשם Sloyd Inc. בקובץ llms.txt הרשמי מופיע השם Sloyd AS."
+      },
+      "student_benefits": {
+        "text": "לא נמצאה הטבה לסטודנטים: עמוד המחירים לא מזכיר הצעה לסטודנטים או למוסדות חינוך.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.sloyd.ai/pricing",
+          "title": "עמוד המחירים של Sloyd",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://sloyd.ai/terms-of-use",
+          "title": "תנאי השימוש של Sloyd (עודכנו ב־16 בפברואר 2026)",
+          "official": true,
+          "published": "2026-02-16",
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://sloyd.ai/llms.txt",
+          "title": "Sloyd: קובץ llms.txt הרשמי",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://sloyd.ai/blog/introducing-sloyd-2-0",
+          "title": "הבלוג של Sloyd: Sloyd 2.0",
+          "official": true,
+          "published": "2025-03-25",
+          "checked": "2026-11-19",
+          "stale": true
+        }
+      ],
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": null,
+          "basis": "הגרסה המתוארכת האחרונה שנמצאה, Sloyd 2.0, יצאה ב־25 במרץ 2025, לפני חלון הזמן. בעמוד המחירים יש תכונות חדשות יותר (וידאו, אנימציה מטקסט) בלי תאריך. הכלי מופיע ב־2 מתוך 4 סקירות עצמאיות.",
+          "launch_date": null,
+          "launched_in_window": false,
+          "latest_version": "Sloyd 2.0",
+          "latest_version_date": "March 25, 2025",
+          "latest_version_date_iso": "2025-03-25",
+          "independent_reviews": 2,
+          "evidence": "research/stage4/added-tools.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 15,
+          "currency": "USD",
+          "billing": "חודשי",
+          "plan": "Plus",
+          "verified": true,
+          "label": "מ־15 דולר לחודש",
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר"
+          ],
+          "unverified": []
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 2,
+            "of": 4,
+            "value": false,
+            "evidence": "research/stage4/3d.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/stage4/3d.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "בתוכנית Guest יצירה אחת ביום מטקסט או מתמונה.",
+            "evidence": "research/stage4/added-tools.md"
+          }
+        }
+      }
+    },
+    {
+      "id": 77,
       "slug": "marble",
       "category_id": 9,
       "name": "Marble",
@@ -22747,7 +23997,7 @@
         "file": null,
         "file_dark": null,
         "source_url": null,
-        "missing_reason": "באתר של Marble אין סמל נפרד למוצר: גם סמל האתר (favicon) וגם הסמל בכותרת הם הסמל של חברת האם World Labs.",
+        "missing_reason": "לכלי אין סמל נפרד: באתר מופיע רק הסמל של World Labs, החברה שמפעילה אותו.",
         "note": null
       },
       "status": {
@@ -23048,7 +24298,7 @@
       }
     },
     {
-      "id": 74,
+      "id": 78,
       "slug": "spline",
       "category_id": 9,
       "name": "Spline",
@@ -23057,11 +24307,11 @@
       "role": "כלי עיצוב תלת־ממד בדפדפן ליצירת סצנות אינטראקטיביות לאתרים ולאפליקציות, עם יצירת מודלים בבינה מלאכותית מטקסט ומתמונה.",
       "url": "https://spline.design",
       "logo": {
-        "file": null,
+        "file": "logos/spline.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://spline.design/images/icon_favicon32x32.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -23405,7 +24655,7 @@
       }
     },
     {
-      "id": 75,
+      "id": 79,
       "slug": "hunyuan-3d",
       "category_id": 9,
       "name": "Tencent Hunyuan 3D",
@@ -23662,7 +24912,7 @@
       }
     },
     {
-      "id": 76,
+      "id": 80,
       "slug": "cursor",
       "category_id": 10,
       "name": "Cursor",
@@ -24126,7 +25376,7 @@
       }
     },
     {
-      "id": 77,
+      "id": 81,
       "slug": "google-antigravity",
       "category_id": 10,
       "name": "Google Antigravity",
@@ -24424,7 +25674,7 @@
       }
     },
     {
-      "id": 78,
+      "id": 82,
       "slug": "claude-code",
       "category_id": 10,
       "name": "Claude Code",
@@ -24805,7 +26055,7 @@
       }
     },
     {
-      "id": 79,
+      "id": 83,
       "slug": "devin",
       "category_id": 10,
       "name": "Devin",
@@ -25101,7 +26351,7 @@
       }
     },
     {
-      "id": 80,
+      "id": 84,
       "slug": "github-copilot",
       "category_id": 10,
       "name": "GitHub Copilot",
@@ -25450,7 +26700,7 @@
       }
     },
     {
-      "id": 81,
+      "id": 85,
       "slug": "codex",
       "category_id": 10,
       "name": "Codex",
@@ -25781,7 +27031,7 @@
       }
     },
     {
-      "id": 82,
+      "id": 86,
       "slug": "cline",
       "category_id": 10,
       "name": "Cline",
@@ -26041,7 +27291,7 @@
       }
     },
     {
-      "id": 83,
+      "id": 87,
       "slug": "kiro",
       "category_id": 10,
       "name": "Kiro",
@@ -26374,7 +27624,7 @@
       }
     },
     {
-      "id": 84,
+      "id": 88,
       "slug": "zed",
       "category_id": 10,
       "name": "Zed",
@@ -26661,7 +27911,7 @@
       }
     },
     {
-      "id": 85,
+      "id": 89,
       "slug": "lovable",
       "category_id": 11,
       "name": "Lovable",
@@ -26971,7 +28221,7 @@
       }
     },
     {
-      "id": 86,
+      "id": 90,
       "slug": "replit",
       "category_id": 11,
       "name": "Replit",
@@ -27308,7 +28558,7 @@
       }
     },
     {
-      "id": 87,
+      "id": 91,
       "slug": "base44",
       "category_id": 11,
       "name": "Base44",
@@ -27317,11 +28567,11 @@
       "role": "בניית אפליקציות מלאות מתוך שיחה, עם התחברות משתמשים, מסד נתונים ואחסון מובנים.",
       "url": "https://base44.com",
       "logo": {
-        "file": null,
+        "file": "logos/base44.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://media.base44.com/images/public/marketing-site-assets/branded/favicon-branded-v2.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -27641,7 +28891,7 @@
       }
     },
     {
-      "id": 88,
+      "id": 92,
       "slug": "google-ai-studio",
       "category_id": 11,
       "name": "Google AI Studio",
@@ -27950,7 +29200,7 @@
       }
     },
     {
-      "id": 89,
+      "id": 93,
       "slug": "bolt",
       "category_id": 11,
       "name": "Bolt",
@@ -27959,11 +29209,11 @@
       "role": "בניית אתרים ואפליקציות ווב מלאות מתוך שיחה, עם אחסון ומסד נתונים מובנים.",
       "url": "https://bolt.new",
       "logo": {
-        "file": null,
+        "file": "logos/bolt.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://bolt.new/static/favicon.svg",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
       },
       "status": {
         "state": "פעיל",
@@ -28247,7 +29497,7 @@
       }
     },
     {
-      "id": 90,
+      "id": 94,
       "slug": "bubble",
       "category_id": 11,
       "name": "Bubble",
@@ -28567,7 +29817,7 @@
       }
     },
     {
-      "id": 91,
+      "id": 95,
       "slug": "emergent",
       "category_id": 11,
       "name": "Emergent",
@@ -28576,11 +29826,11 @@
       "role": "בניית אפליקציות ווב ואפליקציות לנייד מתוך שיחה, עד פרסום בחנויות האפליקציות.",
       "url": "https://emergent.sh",
       "logo": {
-        "file": null,
+        "file": "logos/emergent.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/6a0edf12ef1a8562ed56d806/6a16a2349f51334d1700e015_emergent.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -28933,7 +30183,7 @@
       }
     },
     {
-      "id": 92,
+      "id": 96,
       "slug": "manus",
       "category_id": 12,
       "name": "Manus",
@@ -29265,7 +30515,7 @@
       }
     },
     {
-      "id": 93,
+      "id": 97,
       "slug": "genspark",
       "category_id": 12,
       "name": "Genspark",
@@ -29274,11 +30524,11 @@
       "role": "סביבת עבודה עם סוכני AI שיוצרים מצגות, מסמכים, תמונות וקוד ומבצעים משימות.",
       "url": "https://www.genspark.ai",
       "logo": {
-        "file": null,
+        "file": "logos/genspark.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://www.genspark.ai/apple-touch-icon.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -29535,7 +30785,7 @@
       }
     },
     {
-      "id": 94,
+      "id": 98,
       "slug": "n8n",
       "category_id": 12,
       "name": "n8n",
@@ -29855,7 +31105,7 @@
       }
     },
     {
-      "id": 95,
+      "id": 99,
       "slug": "lindy",
       "category_id": 12,
       "name": "Lindy",
@@ -29864,11 +31114,11 @@
       "role": "עוזר AI שעובד כחבר צוות ב־Slack, במייל וביומן ומבצע משימות שגרתיות.",
       "url": "https://www.lindy.ai",
       "logo": {
-        "file": null,
+        "file": "logos/lindy.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://www.lindy.ai/_sherpa/assets/static/lindy/69f7b166e16ce668638e689d_lindy-avatar-favicon.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -30119,7 +31369,7 @@
       }
     },
     {
-      "id": 96,
+      "id": 100,
       "slug": "microsoft-copilot-studio",
       "category_id": 12,
       "name": "Microsoft Copilot Studio",
@@ -30131,7 +31381,7 @@
         "file": null,
         "file_dark": null,
         "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
+        "missing_reason": "בעמוד המוצר מופיע רק הסמל הכללי של Microsoft, ולא סמל של Copilot Studio.",
         "note": null
       },
       "status": {
@@ -30405,7 +31655,7 @@
       }
     },
     {
-      "id": 97,
+      "id": 101,
       "slug": "zapier",
       "category_id": 12,
       "name": "Zapier",
@@ -30745,7 +31995,7 @@
       }
     },
     {
-      "id": 98,
+      "id": 102,
       "slug": "gumloop",
       "category_id": 12,
       "name": "Gumloop",
@@ -30754,11 +32004,11 @@
       "role": "פלטפורמה לבניית סוכני AI ותהליכים אוטומטיים לעבודה, שפועלים גם מתוך Slack, Teams ומייל.",
       "url": "https://www.gumloop.com",
       "logo": {
-        "file": null,
+        "file": "logos/gumloop.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://www.gumloop.com/favicon.ico",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -31013,7 +32263,7 @@
       }
     },
     {
-      "id": 99,
+      "id": 103,
       "slug": "make",
       "category_id": 12,
       "name": "Make",
@@ -31316,7 +32566,285 @@
       }
     },
     {
-      "id": 100,
+      "id": 104,
+      "slug": "activepieces",
+      "category_id": 12,
+      "name": "Activepieces",
+      "former_name": null,
+      "rename_note": null,
+      "role": "פלטפורמת אוטומציה וסוכני AI בקוד פתוח, לבניית תהליכים שמחברים בין אפליקציות.",
+      "url": "https://www.activepieces.com",
+      "logo": {
+        "file": "logos/activepieces.svg",
+        "file_dark": "logos/activepieces-dark.svg",
+        "source_url": "https://www.activepieces.com/favicon.svg",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי. יש גרסה נפרדת לרקע כהה."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": null,
+        "date_as_written": null,
+        "source_ids": []
+      },
+      "strengths": [
+        {
+          "lead": "תוכנית חינמית עם מכסה מתחדשת",
+          "detail": "Free כוללת 1,000 נקודות זיכוי, תהליכים ללא הגבלה, עד 5 משתמשים וגישה ל־MCP ול־API.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "מחיר קבוע שאינו לפי משתמש",
+          "detail": "Plus עולה 20 דולר לחודש במחיר קבוע לחשבון וכוללת 10,000 נקודות זיכוי.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "קוד פתוח ויותר מ־770 אינטגרציות",
+          "detail": "עמוד המחירים מציין \"Open source at the core\" ו־\"770+ integrations\". באתר מוצעת גם הרצה בענן בפרנקפורט או על שרת משלך.",
+          "source_ids": [
+            "s1",
+            "s3"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "סתירה לגבי חידוש הנקודות החינמיות",
+          "detail": "עמוד המחירים מציג 1,000 נקודות בחודש, אבל במקום אחר באותו עמוד כתוב שהן מתאפסות מדי יום.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "קפיצת מחיר גדולה לתוכנית הצוות",
+          "detail": "אחרי Plus ב־20 דולר, התוכנית הבאה היא Team ב־200 דולר לחודש עם 50,000 נקודות.",
+          "source_ids": [
+            "s1"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "תנאי השימוש מגבילים לשימוש פנימי",
+          "detail": "לפי תנאי השימוש (עודכנו ב־29 בנובמבר 2023), השימוש בתוכנה מותר רק לצרכים הפנימיים של הלקוח, ואסור למכור אותה הלאה.",
+          "source_ids": [
+            "s2"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "מי שרוצה לבנות אוטומציות וסוכנים בחינם או בתקציב קטן, כולל מי שמעדיף כלי בקוד פתוח.",
+      "pricing": {
+        "verification": "אומת חלקית",
+        "summary_line": "תוכנית חינמית עם 1,000 נקודות זיכוי. בתשלום מ־20 דולר לחודש במחיר קבוע לחשבון.",
+        "model": "מנוי עם נקודות זיכוי",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": null,
+            "price_period": "לחודש",
+            "includes": "1,000 נקודות זיכוי, תהליכים ללא הגבלה, עד 5 משתמשים, MCP וגישה ל־API",
+            "notes": "העמוד סותר את עצמו: פעם \"1,000 credits a month\" ופעם \"reset daily\".",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Plus",
+            "price": 20,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": null,
+            "price_period": "לחודש",
+            "includes": "10,000 נקודות זיכוי בחודש",
+            "notes": "מחיר קבוע לחשבון (\"flat\"). אם קיים חיוב שנתי, לא נרשם.",
+            "source_ids": [
+              "s1"
+            ]
+          },
+          {
+            "name": "Team",
+            "price": 200,
+            "price_text": null,
+            "price_short": null,
+            "currency": "USD",
+            "per": "לחשבון",
+            "billing": null,
+            "price_period": "לחודש",
+            "includes": "50,000 נקודות זיכוי בחודש",
+            "notes": null,
+            "source_ids": [
+              "s1"
+            ]
+          }
+        ],
+        "free_tier": "תוכנית Free ללא תשלום: 1,000 נקודות זיכוי, תהליכים ללא הגבלה, עד 5 משתמשים, MCP וגישה ל־API. העמוד סותר את עצמו בשאלה אם הנקודות מתחדשות כל יום או כל חודש.",
+        "trial": null,
+        "unverified_notes": "עמוד המחירים נקרא בשלב המחקר הראשון ולא נפתח שוב. לא אומתו: אם יש חיוב שנתי והנחה עליו, תוכנית Enterprise, מחיר נקודות נוספות, וקצב החידוש של הנקודות החינמיות (יומי או חודשי, בגלל סתירה בעמוד)."
+      },
+      "privacy": {
+        "text": "מדיניות הפרטיות (עודכנה ב־19 בינואר 2026) אינה אומרת אם נתוני משתמשים או תהליכים משמשים לאימון מודלים. היא קובעת רק שנתוני Google Workspace לא משמשים לאימון מודלים כלליים. לפי המדיניות, נתונים מועברים לארצות הברית לצורך מתן השירות.",
+        "training_on_user_data": null,
+        "source_ids": [
+          "s3"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לפי תנאי השימוש (29 בנובמבר 2023), הלקוח שומר על כל הזכויות בתוכן הלקוח, בכפוף לרישיון מוגבל ל־Activepieces להפעלת התוכנה ולשיפורה. השימוש מותר רק לצרכים הפנימיים של הלקוח, ואסור למכור את התוכנה הלאה. התנאים ישנים ואולי הוחלפו.",
+        "watermark": null,
+        "source_ids": [
+          "s2"
+        ]
+      },
+      "developer_access": {
+        "api": "יש",
+        "text": "עמוד המחירים מציין גישה ל־API ול־MCP כבר בתוכנית החינמית, והליבה בקוד פתוח. התיעוד הטכני של ה־API לא נבדק.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "integrations": {
+        "items": [
+          "יותר מ־770 אינטגרציות",
+          "MCP"
+        ],
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "platforms": {
+        "items": [
+          "אתר",
+          "התקנה עצמית על שרת"
+        ],
+        "source_ids": [
+          "s1",
+          "s3"
+        ]
+      },
+      "hebrew": {
+        "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו, כולל יומן השינויים, אין אזכור של שפות ממשק.",
+        "source_ids": []
+      },
+      "company": {
+        "name": "Activepieces Inc.",
+        "parent": null,
+        "country": "ארצות הברית",
+        "note": null
+      },
+      "student_benefits": {
+        "text": "לא נמצאה הטבה לסטודנטים בעמודים הרשמיים שנבדקו.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://activepieces.com/pricing/",
+          "title": "עמוד המחירים של Activepieces",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://activepieces.com/terms",
+          "title": "תנאי השימוש של Activepieces (עודכנו ב־29 בנובמבר 2023)",
+          "official": true,
+          "published": "2023-11-29",
+          "checked": "2026-11-19",
+          "stale": true
+        },
+        {
+          "id": "s3",
+          "url": "https://activepieces.com/privacy",
+          "title": "מדיניות הפרטיות של Activepieces",
+          "official": true,
+          "published": "2026-01-19",
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://www.activepieces.com/docs/about/changelog.md",
+          "title": "התיעוד של Activepieces: יומן שינויים",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": false,
+          "basis": "ביומן השינויים מופיעים סוכנים שנוצרים מתיאור בשפה פשוטה (ספטמבר 2026), אבל הכלי מופיע רק ב־1 מתוך 5 סקירות עצמאיות.",
+          "launch_date": null,
+          "launched_in_window": null,
+          "latest_version": "Agents (יצירה מתיאור בשפה פשוטה)",
+          "latest_version_date": "September 2026",
+          "latest_version_date_iso": null,
+          "independent_reviews": 1,
+          "evidence": "research/stage4/added-tools.md"
+        },
+        "hebrew": {
+          "value": "המקור לא מזכיר עברית",
+          "label": "עברית לא מוזכרת",
+          "supported": null
+        },
+        "starting_price": {
+          "amount": 20,
+          "currency": "USD",
+          "billing": "חודשי",
+          "plan": "Plus",
+          "verified": true,
+          "label": "מ־20 דולר לחודש",
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "אתר"
+          ],
+          "unverified": []
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 1,
+            "of": 5,
+            "value": false,
+            "evidence": "research/stage4/agents-automation.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/stage4/agents-automation.md"
+          },
+          "free_renewing": {
+            "value": true,
+            "basis": "1,000 נקודות זיכוי שמתחדשות. העמוד סותר את עצמו אם החידוש יומי או חודשי, אבל בשני המקרים המכסה מתחדשת.",
+            "evidence": "research/stage4/added-tools.md"
+          }
+        }
+      }
+    },
+    {
+      "id": 105,
       "slug": "notion",
       "category_id": 13,
       "name": "Notion",
@@ -31643,7 +33171,7 @@
       }
     },
     {
-      "id": 101,
+      "id": 106,
       "slug": "gemini-notebook",
       "category_id": 13,
       "name": "Gemini Notebook",
@@ -31652,11 +33180,11 @@
       "role": "מחברת מחקר של Google שעונה על שאלות ויוצרת סיכומים, סקירות קוליות ווידאו מתוך המקורות שהעלית.",
       "url": "https://notebooklm.google",
       "logo": {
-        "file": null,
+        "file": "logos/gemini-notebook.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://notebook.google/_/static/branding/v6/light_mode/favicon/favicon.svg",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
       },
       "status": {
         "state": "שינוי שם",
@@ -31974,7 +33502,7 @@
       }
     },
     {
-      "id": 102,
+      "id": 107,
       "slug": "fireflies",
       "category_id": 13,
       "name": "Fireflies.ai",
@@ -31983,11 +33511,11 @@
       "role": "עוזר פגישות שמצטרף לשיחות, מתמלל ומסכם אותן, ומאפשר חיפוש וצ'אט על כל הפגישות.",
       "url": "https://fireflies.ai",
       "logo": {
-        "file": null,
+        "file": "logos/fireflies.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://fireflies.ai/apple-icon.png?apple-icon.0zim7nfg3coaw.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -32271,7 +33799,7 @@
       }
     },
     {
-      "id": 103,
+      "id": 108,
       "slug": "granola",
       "category_id": 13,
       "name": "Granola",
@@ -32280,11 +33808,11 @@
       "role": "פנקס הערות לפגישות שמקליט את השמע מהמחשב בלי בוט, ומשלב את ההערות שלך עם תמלול לסיכום מסודר.",
       "url": "https://www.granola.ai",
       "logo": {
-        "file": null,
+        "file": "logos/granola.svg",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://www.granola.ai/favicon/favicon.svg",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
       },
       "status": {
         "state": "פעיל",
@@ -32559,7 +34087,7 @@
       }
     },
     {
-      "id": 104,
+      "id": 109,
       "slug": "otter",
       "category_id": 13,
       "name": "Otter.ai",
@@ -32568,11 +34096,11 @@
       "role": "עוזר פגישות שמקליט ומתמלל פגישות והרצאות בזמן אמת, ומפיק סיכומים וצ'אט על התוכן.",
       "url": "https://otter.ai",
       "logo": {
-        "file": null,
+        "file": "logos/otter.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/618e9316785b3582a5178502/618e943a80919a98b5e9bf69_apple-icon.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -32891,7 +34419,7 @@
       }
     },
     {
-      "id": 105,
+      "id": 110,
       "slug": "fathom",
       "category_id": 13,
       "name": "Fathom",
@@ -32900,11 +34428,11 @@
       "role": "עוזר פגישות שמקליט, מתמלל ומסכם שיחות וידאו, עם בוט בשיחה או הקלטה בלי בוט.",
       "url": "https://www.fathom.ai",
       "logo": {
-        "file": null,
+        "file": "logos/fathom.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/6899da9beccbdbe92be49b5d/6a4282cf896cae98018bfa8c_fathom_favicon.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -33267,7 +34795,322 @@
       }
     },
     {
-      "id": 106,
+      "id": 111,
+      "slug": "tldv",
+      "category_id": 13,
+      "name": "tl;dv",
+      "former_name": null,
+      "rename_note": null,
+      "role": "כלי שמקליט ומתמלל פגישות ב־Google Meet, ב־Zoom וב־Teams ומפיק מהן סיכומי AI.",
+      "url": "https://tldv.io",
+      "logo": {
+        "file": "logos/tldv.png",
+        "file_dark": null,
+        "source_url": "https://tldv.io/favicon.ico",
+        "missing_reason": null,
+        "note": "נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה. אצל tl;dv הסמל הוא שם המותג עצמו, ואין סמל נפרד."
+      },
+      "status": {
+        "state": "פעיל",
+        "note": null,
+        "date_as_written": null,
+        "source_ids": []
+      },
+      "strengths": [
+        {
+          "lead": "תמלול וסיכום בעברית",
+          "detail": "עמוד רשמי מציע תמלול וסיכום של פגישות בעברית, ועמוד העזרה מונה את העברית בין יותר מ־30 שפות תמלול.",
+          "source_ids": [
+            "s4",
+            "s5"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "הקלטה ותמלול ללא הגבלה בחינם",
+          "detail": "לפי מרכז העזרה, התוכנית החינמית כוללת הקלטות ותמלולים ללא הגבלה.",
+          "source_ids": [
+            "s2"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "הצהרה שהפגישות לא משמשות לאימון",
+          "detail": "לפי מרכז העזרה, \"No customer data is used to train the AI\", והחברה עובדת עם Anthropic. יש אפשרות לאחסון נתונים באיחוד האירופי.",
+          "source_ids": [
+            "s6",
+            "s7"
+          ],
+          "inference": false
+        }
+      ],
+      "limitations": [
+        {
+          "lead": "סיכומי ה־AI בחינם הם מכסה חד־פעמית",
+          "detail": "רק 10 הפגישות הראשונות מקבלות סיכום AI מלא. אחר כך מסוכמות רק 10 הדקות הראשונות של כל פגישה, והמגבלה אינה מתחדשת.",
+          "source_ids": [
+            "s3"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "הקלטות בחינם נשמרות 3 חודשים",
+          "detail": "בתוכנית החינמית הקלטות נשמרות 3 חודשים, ואחרי 3 ימים הן עוברות לארכיון וצריך לשחרר אותן כדי לצפות.",
+          "source_ids": [
+            "s3"
+          ],
+          "inference": false
+        },
+        {
+          "lead": "בחירת שפה לפגישה מוגבלת בחלק מהפלטפורמות",
+          "detail": "בחירת שפת תמלול לכל פגישה עדיין לא נתמכת ב־Zoom וב־Teams דרך אפליקציית המחשב. היא דורשת את תוסף Chrome והקלטה ידנית.",
+          "source_ids": [
+            "s5"
+          ],
+          "inference": false
+        }
+      ],
+      "audience": "סטודנטים וצוותים שמקיימים פגישות מקוונות ורוצים הקלטה ותמלול, גם בעברית.",
+      "pricing": {
+        "verification": "אומת חלקית",
+        "summary_line": "תוכנית חינמית עם הקלטה ותמלול ללא הגבלה וסיכומי AI מלאים ל־10 פגישות. מחירי Pro ו־Business לא אומתו.",
+        "model": "מנוי",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "price_text": null,
+            "price_short": null,
+            "currency": null,
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "הקלטות ותמלולים ללא הגבלה, סיכום AI מלא ל־10 הפגישות הראשונות ואחר כך ל־10 הדקות הראשונות בכל פגישה, שמירת הקלטות ל־3 חודשים",
+            "notes": "מגבלות ה־AI הן לכל חיי החשבון ואינן מתחדשות כל חודש.",
+            "source_ids": [
+              "s2",
+              "s3"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": null,
+            "price_text": "המחיר לא אומת",
+            "price_short": "המחיר לא אומת",
+            "currency": null,
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "תכונות AI ללא הגבלה",
+            "notes": "חיוב חודשי או שנתי. לפי תיאור עמוד המחירים, \"40% off on every annual plan!\".",
+            "source_ids": [
+              "s2",
+              "s1"
+            ]
+          },
+          {
+            "name": "Business",
+            "price": null,
+            "price_text": "המחיר לא אומת",
+            "price_short": "המחיר לא אומת",
+            "currency": null,
+            "per": null,
+            "billing": null,
+            "price_period": null,
+            "includes": "תכונות AI ללא הגבלה, אינטגרציות CRM, אימון מכירות ותובנות על דוברים",
+            "notes": "חיוב חודשי או שנתי.",
+            "source_ids": [
+              "s2"
+            ]
+          }
+        ],
+        "free_tier": "תוכנית חינמית קבועה עם הקלטות ותמלולים ללא הגבלה. סיכום AI מלא ל־10 הפגישות הראשונות, ואחר כך רק ל־10 הדקות הראשונות של כל פגישה. ההקלטות נשמרות 3 חודשים ועוברות לארכיון אחרי 3 ימים.",
+        "trial": null,
+        "unverified_notes": "עמוד המחירים נקרא פעמיים (tldv.io/pricing ו־tldv.io/app/pricing) והחזיר רק מטא־נתונים. לא אומתו: מחירי Pro ו־Business, המטבע, אם המחיר למשתמש, וגובה ההנחה בחיוב שנתי מעבר לתיאור \"40% off\". מחירונים של צד שלישי לא שימשו."
+      },
+      "privacy": {
+        "text": "לפי מרכז העזרה, נתוני לקוחות אינם משמשים לאימון ה־AI, והחברה עובדת עם Anthropic. לפי סקירת האבטחה, הקלטות ונתוני פגישות אינם משמשים לאימון מודלים, יש אחסון באיחוד האירופי כאפשרות, והחברה מצהירה על עמידה ב־SOC 2 וב־GDPR. העמוד בעברית מוסיף שההקלטות והתמלולים שייכים למשתמש.",
+        "training_on_user_data": "לא, לפי מרכז העזרה וסקירת האבטחה.",
+        "source_ids": [
+          "s6",
+          "s7",
+          "s4"
+        ]
+      },
+      "commercial_rights": {
+        "text": "לפי העמוד הרשמי בעברית, \"Your recordings and transcripts are yours (not ours)\". תנאי השימוש לא נקראו.",
+        "watermark": null,
+        "source_ids": [
+          "s4"
+        ]
+      },
+      "developer_access": {
+        "api": "לא אומת",
+        "text": "בעמודים הרשמיים שנבדקו אין אזכור של API.",
+        "source_ids": []
+      },
+      "integrations": {
+        "items": [
+          "Google Meet",
+          "Zoom",
+          "Microsoft Teams",
+          "אינטגרציות CRM (בתוכניות בתשלום)"
+        ],
+        "source_ids": [
+          "s4",
+          "s2"
+        ]
+      },
+      "platforms": {
+        "items": [
+          "תוסף Chrome",
+          "אפליקציה למחשב (מערכות ההפעלה לא צוינו)"
+        ],
+        "source_ids": [
+          "s5"
+        ]
+      },
+      "hebrew": {
+        "text": "לפי העמוד הרשמי, tl;dv מספקת תמלולים וסיכומים של פגישות בעברית (\"30+ languages including Hebrew\"), ועמוד העזרה מונה את העברית ברשימת שפות התמלול. התצוגה מימין לשמאל לא אומתה.",
+        "source_ids": [
+          "s4",
+          "s5"
+        ]
+      },
+      "company": {
+        "name": "tl;dv",
+        "parent": null,
+        "country": null,
+        "note": "השם המשפטי והמדינה לא אומתו בעמודים שנבדקו."
+      },
+      "student_benefits": {
+        "text": "לא נמצאה הטבה לסטודנטים. עמוד המחירים לא נקרא.",
+        "source_ids": []
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://tldv.io/pricing/",
+          "title": "עמוד המחירים של tl;dv (נטענו רק מטא־נתונים)",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s2",
+          "url": "https://intercom.help/tldv/en/articles/6082483-what-is-tl-dv-s-pricing",
+          "title": "מרכז העזרה של tl;dv: מה המחירים",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s3",
+          "url": "https://intercom.help/tldv/en/articles/8919450-what-are-the-limits-of-the-free-plan",
+          "title": "מרכז העזרה של tl;dv: מגבלות התוכנית החינמית",
+          "official": true,
+          "published": "2025-11-24",
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s4",
+          "url": "https://tldv.io/summarize-meetings-in-hebrew/",
+          "title": "tl;dv: סיכום פגישות בעברית",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://intercom.help/tldv/en/articles/6231678-how-to-change-transcript-language",
+          "title": "מרכז העזרה של tl;dv: שינוי שפת התמלול",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://intercom.help/tldv/en/articles/9970056-are-the-meetings-conversations-had-used-to-train-tl-dv-transcription-and-summary-models",
+          "title": "מרכז העזרה של tl;dv: האם הפגישות משמשות לאימון מודלים",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        },
+        {
+          "id": "s7",
+          "url": "https://intercom.help/tldv/en/articles/15416969-security-overview",
+          "title": "מרכז העזרה של tl;dv: סקירת אבטחה",
+          "official": true,
+          "published": null,
+          "checked": "2026-11-19",
+          "stale": false
+        }
+      ],
+      "checked_date": "2026-11-18",
+      "filters": {
+        "new_notable": {
+          "value": null,
+          "basis": "הכלי מופיע ב־2 מתוך 6 סקירות עצמאיות, אבל לא אומתה גרסה משמעותית בחלון הזמן.",
+          "launch_date": null,
+          "launched_in_window": null,
+          "latest_version": null,
+          "latest_version_date": null,
+          "latest_version_date_iso": null,
+          "independent_reviews": 2,
+          "evidence": "research/stage4/added-tools.md"
+        },
+        "hebrew": {
+          "value": "נתמכת לפי המקור",
+          "label": "עברית נתמכת",
+          "supported": true
+        },
+        "starting_price": {
+          "amount": null,
+          "currency": null,
+          "billing": null,
+          "plan": null,
+          "verified": false,
+          "label": null,
+          "has_free_plan": true
+        },
+        "platforms": {
+          "verified": [
+            "תוסף לדפדפן"
+          ],
+          "unverified": [
+            "אתר",
+            "Mac",
+            "Windows"
+          ]
+        },
+        "tags": {
+          "review_roundups": {
+            "count": 2,
+            "of": 6,
+            "value": false,
+            "evidence": "research/stage4/meetings-knowledge.md"
+          },
+          "popular": {
+            "value": false,
+            "basis": null,
+            "evidence": "research/stage4/meetings-knowledge.md"
+          },
+          "free_renewing": {
+            "value": false,
+            "basis": "ההקלטה והתמלול ללא הגבלה, אבל מכסת סיכומי ה־AI היא לכל חיי החשבון ואינה מתחדשת.",
+            "evidence": "research/stage4/added-tools.md"
+          }
+        }
+      }
+    },
+    {
+      "id": 112,
       "slug": "julius",
       "category_id": 13,
       "name": "Julius AI",
@@ -33276,11 +35119,11 @@
       "role": "כלי לניתוח נתונים בשפה טבעית: מעלים קובץ Excel או CSV, שואלים שאלות ומקבלים טבלאות וגרפים.",
       "url": "https://julius.ai",
       "logo": {
-        "file": null,
+        "file": "logos/julius.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://julius.ai/favicon.ico?23f30d1c0141030b",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -33564,7 +35407,7 @@
       }
     },
     {
-      "id": 107,
+      "id": 113,
       "slug": "read-ai",
       "category_id": 13,
       "name": "Read AI",
@@ -33573,11 +35416,11 @@
       "role": "עוזר פגישות שמתמלל ומסכם פגישות, וגם מסכם מיילים והודעות ומאפשר חיפוש בכולם.",
       "url": "https://www.read.ai",
       "logo": {
-        "file": null,
+        "file": "logos/read-ai.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/614e5e239ea0f25fe5b6a797/615f71de842b191ea061fda6_ReadLogomark_256x256.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",
@@ -33876,7 +35719,7 @@
       }
     },
     {
-      "id": 108,
+      "id": 114,
       "slug": "wispr-flow",
       "category_id": 13,
       "name": "Wispr Flow",
@@ -33885,11 +35728,11 @@
       "role": "הכתבה קולית בכל אפליקציה, שהופכת דיבור לטקסט ערוך, ולצדה Notetaker לסיכום פגישות.",
       "url": "https://wisprflow.ai",
       "logo": {
-        "file": null,
+        "file": "logos/wispr-flow.png",
         "file_dark": null,
-        "source_url": null,
-        "missing_reason": "הסמל עדיין לא נאסף מהאתר הרשמי",
-        "note": null
+        "source_url": "https://cdn.prod.website-files.com/682f84b3838c89f8ff7667db/68d27d1a8a10f417b5644527_flow-wc-v2.png",
+        "missing_reason": null,
+        "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
       },
       "status": {
         "state": "פעיל",

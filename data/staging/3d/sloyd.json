@@ -1,0 +1,316 @@
+{
+ "id": null,
+ "slug": "sloyd",
+ "category_id": 9,
+ "name": "Sloyd",
+ "former_name": null,
+ "rename_note": null,
+ "role": "כלי ליצירת מודלים בתלת־ממד מטקסט או מתמונה, עם מחוללים פרמטריים לגאומטריה נקייה.",
+ "url": "https://www.sloyd.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "יצירה ללא הגבלה בתוכניות בתשלום",
+   "detail": "ב־Plus וב־Pro יצירה מטקסט או מתמונה לתלת־ממד, טקסטורות, ריגינג ואנימציה הן ללא הגבלה. נקודות הזיכוי (50 או 350 בחודש) נדרשות רק לתכונות מסוימות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "שימוש מסחרי מתוכנית Plus",
+   "detail": "Plus עולה 15 דולר לחודש, או 12.50 דולר לחודש בחיוב שנתי, וכוללת שימוש מסחרי וייצוא ללא הגבלה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חיבור למנועי משחק ולכלי תלת־ממד",
+   "detail": "תוספים למנועי משחק, לכלי תלת־ממד ולתוכנות הדפסה (slicers) בתוכניות בתשלום. יש מדריכים ל־Unity, Unreal, Godot ו־Roblox Studio, ושרת MCP.",
+   "source_ids": [
+    "s1",
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "בחינם יצירה אחת ביום ובלי ייצוא",
+   "detail": "תוכנית Guest כוללת יצירה אחת ביום מטקסט או מתמונה, ייצוא רק של מודלים מהקהילה ורישיון לשימוש אישי בלבד.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מכירה חוזרת והדפסה מסחרית מוגבלות",
+   "detail": "רק Pro מתירה הפצה ומכירה של מודלים בחנויות נכסים. הדפסת תלת־ממד מסחרית דורשת רישיון מותאם מהתמיכה.",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ה־API נפרד מהמנוי",
+   "detail": "ה־API אינו כלול באף תוכנית ומשתמש בנקודות מראש נפרדות. נקודות חודשיות לא נצברות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים ויוצרים שצריכים מודלים בתלת־ממד למשחקים, להדמיות או להדפסה, בלי ניסיון במידול.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "מ־15 דולר לחודש, או 12.50 דולר לחודש בחיוב שנתי. בחינם יצירה אחת ביום, לשימוש אישי בלבד.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Guest",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "יצירה אחת ביום מטקסט או מתמונה לתלת־ממד ול־skybox, ייצוא רק של מודלים מהקהילה ב־GLB ו־OBJ",
+    "notes": "רישיון לשימוש אישי בלבד. אין נקודות זיכוי, טקסטורות, ריגינג או תוספים. תמיכה דרך הקהילה ב־Discord.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Plus",
+    "price": 15,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "50 נקודות זיכוי בחודש, יצירה, טקסטורות, ריגינג ואנימציה ללא הגבלה, 2 יצירות במקביל, סגנון AI מותאם אחד, ייצוא ללא הגבלה, תוספים",
+    "notes": "כולל שימוש מסחרי. אין הפצה או מכירה חוזרת בחנויות נכסים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Plus",
+    "price": 12.5,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "50 נקודות זיכוי בחודש, יצירה, טקסטורות, ריגינג ואנימציה ללא הגבלה, 2 יצירות במקביל, סגנון AI מותאם אחד, ייצוא ללא הגבלה, תוספים",
+    "notes": "מחיר לחודש בחיוב שנתי, 150 דולר בתשלום אחד. הנקודות ניתנות מדי חודש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 50,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "350 נקודות זיכוי בחודש, יצירה ללא הגבלה, 5 יצירות במקביל, סגנונות AI מותאמים ללא הגבלה, תור מועדף, תמיכה מועדפת",
+    "notes": "כולל שימוש מסחרי, הפצה ומכירה בחנויות נכסים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 41.67,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "350 נקודות זיכוי בחודש, יצירה ללא הגבלה, 5 יצירות במקביל, סגנונות AI מותאמים ללא הגבלה, תור מועדף, תמיכה מועדפת",
+    "notes": "מחיר לחודש בחיוב שנתי, 500 דולר בתשלום אחד.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Guest ללא תשלום: יצירה אחת ביום מטקסט או מתמונה, ייצוא רק של מודלים מהקהילה (GLB, OBJ), ורישיון לשימוש אישי בלבד.",
+  "trial": null,
+  "unverified_notes": "המטבע מוצג כ־$ בלי קוד מטבע. המתג השנתי מציין \"save 20%\", אבל המחירים השנתיים שווים לכ־17% הנחה. נקודות נוספות עולות 12 דולר ל־100 ועוברות לחודש הבא. מחירי ה־API (sloyd.ai/api/pricing) לא נקראו."
+ },
+ "privacy": {
+  "text": "לא אומת. תנאי השימוש (16 בפברואר 2026) אינם עוסקים באימון מודלים על תוכן המשתמשים ומפנים למדיניות הפרטיות, שלא נקראה. עמוד המחירים אוסר על המשתמשים לאמן מודלי AI על המודלים שיצרו (ב־Pro בתיאום).",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s2",
+   "s1"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי עמוד המחירים, Guest מקבלת רישיון לשימוש אישי בלבד, ו־Plus ו־Pro כוללות שימוש מסחרי בלי תמלוגים. הפצה ומכירה בחנויות נכסים מותרות רק ב־Pro. תנאי השימוש מעניקים זכות שימוש לא בלעדית ותמידית במודלים, אינם קובעים מי הבעלים שלהם, ומחייבים רישיון מותאם להדפסה מסחרית. התנאים כותבים באופן כללי שגם שימוש מסחרי מותר, בסתירה לרישיון האישי ב־Guest; הועדף עמוד המחירים.",
+  "watermark": null,
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "יש API עם נקודות מראש נפרדות, שאינו דורש מנוי ואינו כלול באף תוכנית. המחירון שלו לא נקרא. יש גם שרת MCP לכלי קוד כמו Claude Code, Codex, Cursor ו־VS Code.",
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Unity",
+   "Unreal",
+   "Godot",
+   "Roblox Studio",
+   "תוסף לכלי תלת־ממד ולתוכנות הדפסה (slicers)",
+   "שרת MCP"
+  ],
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s3",
+   "s4"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק או של הנחיות בעברית.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Sloyd Inc.",
+  "parent": null,
+  "country": "ארצות הברית",
+  "note": "לפי תנאי השימוש החברה רשומה בארצות הברית בשם Sloyd Inc. בקובץ llms.txt הרשמי מופיע השם Sloyd AS."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים: עמוד המחירים לא מזכיר הצעה לסטודנטים או למוסדות חינוך.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.sloyd.ai/pricing",
+   "title": "עמוד המחירים של Sloyd",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-19",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://sloyd.ai/terms-of-use",
+   "title": "תנאי השימוש של Sloyd (עודכנו ב־16 בפברואר 2026)",
+   "official": true,
+   "published": "2026-02-16",
+   "checked": "2026-11-19",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://sloyd.ai/llms.txt",
+   "title": "Sloyd: קובץ llms.txt הרשמי",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-19",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://sloyd.ai/blog/introducing-sloyd-2-0",
+   "title": "הבלוג של Sloyd: Sloyd 2.0",
+   "official": true,
+   "published": "2025-03-25",
+   "checked": "2026-11-19",
+   "stale": true
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "הגרסה המתוארכת האחרונה שנמצאה, Sloyd 2.0, יצאה ב־25 במרץ 2025, לפני חלון הזמן. בעמוד המחירים יש תכונות חדשות יותר (וידאו, אנימציה מטקסט) בלי תאריך. הכלי מופיע ב־2 מתוך 4 סקירות עצמאיות.",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "Sloyd 2.0",
+   "latest_version_date": "March 25, 2025",
+   "latest_version_date_iso": "2025-03-25",
+   "independent_reviews": 2,
+   "evidence": "research/stage4/added-tools.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 15,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Plus",
+   "verified": true,
+   "label": "מ־15 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 2,
+    "of": 4,
+    "value": false,
+    "evidence": "research/stage4/3d.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "בתוכנית Guest יצירה אחת ביום מטקסט או מתמונה.",
+    "evidence": "research/stage4/added-tools.md"
+   }
+  }
+ }
+}

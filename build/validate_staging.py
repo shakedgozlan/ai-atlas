@@ -7,7 +7,7 @@ ex = d['tools'][1]
 cats = {c['slug']: c['id'] for c in d['categories']}
 VER = {"אומת ממקור רשמי", "אומת חלקית", "לא אומת"}
 def keys(o): return set(o.keys()) if isinstance(o, dict) else set()
-problems = collections.defaultdict(list); summary = collections.OrderedDict(); slugs = {t['slug'] for t in d['tools']}; names = {}
+problems = collections.defaultdict(list); summary = collections.OrderedDict(); slugs = {t['slug'] for t in d['tools'] if t['category_id'] == 6}; names = {}
 for slug, cid in sorted(cats.items(), key=lambda x: x[1]):
     files = sorted(glob.glob(os.path.join(root, 'data/staging', slug, '*.json')))
     if not files: continue

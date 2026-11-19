@@ -1,0 +1,315 @@
+{
+ "id": null,
+ "slug": "tldv",
+ "category_id": 13,
+ "name": "tl;dv",
+ "former_name": null,
+ "rename_note": null,
+ "role": "כלי שמקליט ומתמלל פגישות ב־Google Meet, ב־Zoom וב־Teams ומפיק מהן סיכומי AI.",
+ "url": "https://tldv.io",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "תמלול וסיכום בעברית",
+   "detail": "עמוד רשמי מציע תמלול וסיכום של פגישות בעברית, ועמוד העזרה מונה את העברית בין יותר מ־30 שפות תמלול.",
+   "source_ids": [
+    "s4",
+    "s5"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הקלטה ותמלול ללא הגבלה בחינם",
+   "detail": "לפי מרכז העזרה, התוכנית החינמית כוללת הקלטות ותמלולים ללא הגבלה.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הצהרה שהפגישות לא משמשות לאימון",
+   "detail": "לפי מרכז העזרה, \"No customer data is used to train the AI\", והחברה עובדת עם Anthropic. יש אפשרות לאחסון נתונים באיחוד האירופי.",
+   "source_ids": [
+    "s6",
+    "s7"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "סיכומי ה־AI בחינם הם מכסה חד־פעמית",
+   "detail": "רק 10 הפגישות הראשונות מקבלות סיכום AI מלא. אחר כך מסוכמות רק 10 הדקות הראשונות של כל פגישה, והמגבלה אינה מתחדשת.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הקלטות בחינם נשמרות 3 חודשים",
+   "detail": "בתוכנית החינמית הקלטות נשמרות 3 חודשים, ואחרי 3 ימים הן עוברות לארכיון וצריך לשחרר אותן כדי לצפות.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "בחירת שפה לפגישה מוגבלת בחלק מהפלטפורמות",
+   "detail": "בחירת שפת תמלול לכל פגישה עדיין לא נתמכת ב־Zoom וב־Teams דרך אפליקציית המחשב. היא דורשת את תוסף Chrome והקלטה ידנית.",
+   "source_ids": [
+    "s5"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים וצוותים שמקיימים פגישות מקוונות ורוצים הקלטה ותמלול, גם בעברית.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "תוכנית חינמית עם הקלטה ותמלול ללא הגבלה וסיכומי AI מלאים ל־10 פגישות. מחירי Pro ו־Business לא אומתו.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "הקלטות ותמלולים ללא הגבלה, סיכום AI מלא ל־10 הפגישות הראשונות ואחר כך ל־10 הדקות הראשונות בכל פגישה, שמירת הקלטות ל־3 חודשים",
+    "notes": "מגבלות ה־AI הן לכל חיי החשבון ואינן מתחדשות כל חודש.",
+    "source_ids": [
+     "s2",
+     "s3"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "תכונות AI ללא הגבלה",
+    "notes": "חיוב חודשי או שנתי. לפי תיאור עמוד המחירים, \"40% off on every annual plan!\".",
+    "source_ids": [
+     "s2",
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "תכונות AI ללא הגבלה, אינטגרציות CRM, אימון מכירות ותובנות על דוברים",
+    "notes": "חיוב חודשי או שנתי.",
+    "source_ids": [
+     "s2"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית חינמית קבועה עם הקלטות ותמלולים ללא הגבלה. סיכום AI מלא ל־10 הפגישות הראשונות, ואחר כך רק ל־10 הדקות הראשונות של כל פגישה. ההקלטות נשמרות 3 חודשים ועוברות לארכיון אחרי 3 ימים.",
+  "trial": null,
+  "unverified_notes": "עמוד המחירים נקרא פעמיים (tldv.io/pricing ו־tldv.io/app/pricing) והחזיר רק מטא־נתונים. לא אומתו: מחירי Pro ו־Business, המטבע, אם המחיר למשתמש, וגובה ההנחה בחיוב שנתי מעבר לתיאור \"40% off\". מחירונים של צד שלישי לא שימשו."
+ },
+ "privacy": {
+  "text": "לפי מרכז העזרה, נתוני לקוחות אינם משמשים לאימון ה־AI, והחברה עובדת עם Anthropic. לפי סקירת האבטחה, הקלטות ונתוני פגישות אינם משמשים לאימון מודלים, יש אחסון באיחוד האירופי כאפשרות, והחברה מצהירה על עמידה ב־SOC 2 וב־GDPR. העמוד בעברית מוסיף שההקלטות והתמלולים שייכים למשתמש.",
+  "training_on_user_data": "לא, לפי מרכז העזרה וסקירת האבטחה.",
+  "source_ids": [
+   "s6",
+   "s7",
+   "s4"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי העמוד הרשמי בעברית, \"Your recordings and transcripts are yours (not ours)\". תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "בעמודים הרשמיים שנבדקו אין אזכור של API.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "Google Meet",
+   "Zoom",
+   "Microsoft Teams",
+   "אינטגרציות CRM (בתוכניות בתשלום)"
+  ],
+  "source_ids": [
+   "s4",
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "תוסף Chrome",
+   "אפליקציה למחשב (מערכות ההפעלה לא צוינו)"
+  ],
+  "source_ids": [
+   "s5"
+  ]
+ },
+ "hebrew": {
+  "text": "לפי העמוד הרשמי, tl;dv מספקת תמלולים וסיכומים של פגישות בעברית (\"30+ languages including Hebrew\"), ועמוד העזרה מונה את העברית ברשימת שפות התמלול. התצוגה מימין לשמאל לא אומתה.",
+  "source_ids": [
+   "s4",
+   "s5"
+  ]
+ },
+ "company": {
+  "name": "tl;dv",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי והמדינה לא אומתו בעמודים שנבדקו."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים. עמוד המחירים לא נקרא.",
+  "source_ids": []
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://tldv.io/pricing/",
+   "title": "עמוד המחירים של tl;dv (נטענו רק מטא־נתונים)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-19",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://intercom.help/tldv/en/articles/6082483-what-is-tl-dv-s-pricing",
+   "title": "מרכז העזרה של tl;dv: מה המחירים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-19",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://intercom.help/tldv/en/articles/8919450-what-are-the-limits-of-the-free-plan",
+   "title": "מרכז העזרה של tl;dv: מגבלות התוכנית החינמית",
+   "official": true,
+   "published": "2025-11-24",
+   "checked": "2026-11-19",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://tldv.io/summarize-meetings-in-hebrew/",
+   "title": "tl;dv: סיכום פגישות בעברית",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-19",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://intercom.help/tldv/en/articles/6231678-how-to-change-transcript-language",
+   "title": "מרכז העזרה של tl;dv: שינוי שפת התמלול",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-19",
+   "stale": false
+  },
+  {
+   "id": "s6",
+   "url": "https://intercom.help/tldv/en/articles/9970056-are-the-meetings-conversations-had-used-to-train-tl-dv-transcription-and-summary-models",
+   "title": "מרכז העזרה של tl;dv: האם הפגישות משמשות לאימון מודלים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-19",
+   "stale": false
+  },
+  {
+   "id": "s7",
+   "url": "https://intercom.help/tldv/en/articles/15416969-security-overview",
+   "title": "מרכז העזרה של tl;dv: סקירת אבטחה",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-19",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "הכלי מופיע ב־2 מתוך 6 סקירות עצמאיות, אבל לא אומתה גרסה משמעותית בחלון הזמן.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 2,
+   "evidence": "research/stage4/added-tools.md"
+  },
+  "hebrew": {
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": null,
+   "billing": null,
+   "plan": null,
+   "verified": false,
+   "label": null,
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "תוסף לדפדפן"
+   ],
+   "unverified": [
+    "אתר",
+    "Mac",
+    "Windows"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 2,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/meetings-knowledge.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/meetings-knowledge.md"
+   },
+   "free_renewing": {
+    "value": false,
+    "basis": "ההקלטה והתמלול ללא הגבלה, אבל מכסת סיכומי ה־AI היא לכל חיי החשבון ואינה מתחדשת.",
+    "evidence": "research/stage4/added-tools.md"
+   }
+  }
+ }
+}

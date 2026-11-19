@@ -1,0 +1,352 @@
+{
+  "activepieces": {
+    "file": "logos/activepieces.svg",
+    "file_dark": "logos/activepieces-dark.svg",
+    "source_url": "https://www.activepieces.com/favicon.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי. יש גרסה נפרדת לרקע כהה."
+  },
+  "adobe-podcast": {
+    "file": "logos/adobe-podcast.svg",
+    "file_dark": null,
+    "source_url": "https://podcast.adobe.com/adobe-podcast-favicon.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
+  },
+  "base44": {
+    "file": "logos/base44.png",
+    "file_dark": null,
+    "source_url": "https://media.base44.com/images/public/marketing-site-assets/branded/favicon-branded-v2.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "beautiful-ai": {
+    "file": "logos/beautiful-ai.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/59deb588800ae30001ec19c9/691b4ae4a724e6c686bfb035_BAI%20symbol%3Dfull%20color%20black.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "bolt": {
+    "file": "logos/bolt.svg",
+    "file_dark": null,
+    "source_url": "https://bolt.new/static/favicon.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
+  },
+  "canva": {
+    "file": "logos/canva.png",
+    "file_dark": null,
+    "source_url": "https://www.canva.com/favicon.ico",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה. התמונה קטנה (32 פיקסלים), כי האתר חוסם הורדה של גרסה גדולה יותר."
+  },
+  "captions": {
+    "file": "logos/captions.svg",
+    "file_dark": "logos/captions-dark.svg",
+    "source_url": "https://captions.ai/mrkt-static/favicon.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי. יש גרסה נפרדת לרקע כהה."
+  },
+  "d-id": {
+    "file": "logos/d-id.png",
+    "file_dark": "logos/d-id-dark.png",
+    "source_url": "https://www.d-id.com/wp-content/uploads/2024/10/D-ID-logo-350x350-1-300x300.png",
+    "missing_reason": null,
+    "note": "נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה. יש גרסה נפרדת לרקע כהה. אצל D-ID הסמל הוא שם המותג עצמו, ואין סמל נפרד. בגרסה לרקע כהה האותיות השחורות הוחלפו בלבן."
+  },
+  "emergent": {
+    "file": "logos/emergent.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/6a0edf12ef1a8562ed56d806/6a16a2349f51334d1700e015_emergent.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "fathom": {
+    "file": "logos/fathom.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/6899da9beccbdbe92be49b5d/6a4282cf896cae98018bfa8c_fathom_favicon.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "fireflies": {
+    "file": "logos/fireflies.png",
+    "file_dark": null,
+    "source_url": "https://fireflies.ai/apple-icon.png?apple-icon.0zim7nfg3coaw.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "gamma": {
+    "file": "logos/gamma.svg",
+    "file_dark": null,
+    "source_url": "https://static.gamma.app/favicons/favicon_dark.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
+  },
+  "gemini-notebook": {
+    "file": "logos/gemini-notebook.svg",
+    "file_dark": null,
+    "source_url": "https://notebook.google/_/static/branding/v6/light_mode/favicon/favicon.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
+  },
+  "genspark": {
+    "file": "logos/genspark.png",
+    "file_dark": null,
+    "source_url": "https://www.genspark.ai/apple-touch-icon.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "google-flow-music": {
+    "file": "logos/google-flow-music.png",
+    "file_dark": null,
+    "source_url": "https://www.flowmusic.app/apple-touch-icon.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "google-stitch": {
+    "file": "logos/google-stitch.png",
+    "file_dark": null,
+    "source_url": "https://www.gstatic.com/labs-code/stitch/favicon-512x512.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "granola": {
+    "file": "logos/granola.svg",
+    "file_dark": null,
+    "source_url": "https://www.granola.ai/favicon/favicon.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
+  },
+  "gumloop": {
+    "file": "logos/gumloop.png",
+    "file_dark": null,
+    "source_url": "https://www.gumloop.com/favicon.ico",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "hedra": {
+    "file": "logos/hedra.png",
+    "file_dark": null,
+    "source_url": "https://www.hedra.com/favicon.ico",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "heygen": {
+    "file": "logos/heygen.png",
+    "file_dark": null,
+    "source_url": "https://www.heygen.com/favicon.ico?favicon.2m321y0geyyfh.ico",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "jasper": {
+    "file": "logos/jasper.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/6807ee8d73c233fb82842313/681e121b52f97ed0b2098aab_Favicon.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה. התמונה קטנה (32 פיקסלים); הגרסה הגדולה באתר כוללת את שם המותג ולכן לא נלקחה."
+  },
+  "julius": {
+    "file": "logos/julius.png",
+    "file_dark": null,
+    "source_url": "https://julius.ai/favicon.ico?23f30d1c0141030b",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "kittl": {
+    "file": "logos/kittl.png",
+    "file_dark": null,
+    "source_url": "https://www.kittl.com/apple-icon.png?apple-icon.3l5nqt4zrix42.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "lalal-ai": {
+    "file": "logos/lalal-ai.svg",
+    "file_dark": null,
+    "source_url": "https://s.lalal.ai/icons/favicon.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
+  },
+  "lindy": {
+    "file": "logos/lindy.png",
+    "file_dark": null,
+    "source_url": "https://www.lindy.ai/_sherpa/assets/static/lindy/69f7b166e16ce668638e689d_lindy-avatar-favicon.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "lovart": {
+    "file": "logos/lovart.png",
+    "file_dark": null,
+    "source_url": "https://www.lovart.ai/favicon.ico",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "microsoft-designer": {
+    "file": "logos/microsoft-designer.png",
+    "file_dark": null,
+    "source_url": "https://res.public.onecdn.static.microsoft/designer/client/prod/static/media/designer-logo-192.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "mistral-vibe": {
+    "file": "logos/mistral-vibe.svg",
+    "file_dark": null,
+    "source_url": "https://mistral.ai/favicon.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי. זה הסמל של Mistral, שמופיע גם בעמוד המוצר Vibe; למוצר אין סמל נפרד באתר."
+  },
+  "moises": {
+    "file": "logos/moises.svg",
+    "file_dark": null,
+    "source_url": "https://storage.googleapis.com/moises-cms-site/favicon_03fefcef56/favicon_03fefcef56.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
+  },
+  "murf": {
+    "file": "logos/murf.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/66b3765153a8a0c399c70981/67065c22d34646f3bb23b232_android-chrome-256x256.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "napkin-ai": {
+    "file": "logos/napkin-ai.png",
+    "file_dark": null,
+    "source_url": "https://www.napkin.ai/apple-touch-icon.png?v=2",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "opusclip": {
+    "file": "logos/opusclip.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/6388604483b03a9ecb34d695/6435197bfb1d6e486e04c37b_webclip.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "otter": {
+    "file": "logos/otter.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/618e9316785b3582a5178502/618e943a80919a98b5e9bf69_apple-icon.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "read-ai": {
+    "file": "logos/read-ai.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/614e5e239ea0f25fe5b6a797/615f71de842b191ea061fda6_ReadLogomark_256x256.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "relume": {
+    "file": "logos/relume.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/6177739448baa66404ce1d9c/6a86639aa87a4f5a28e25042_Favicon-Relume%20(512px).png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "sloyd": {
+    "file": "logos/sloyd.png",
+    "file_dark": null,
+    "source_url": "https://www.sloyd.ai/apple-icon.png?6d165b2a1d5024c7",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "speechify": {
+    "file": "logos/speechify.png",
+    "file_dark": null,
+    "source_url": "https://speechify.com/apple-icon.png?apple-icon.0ek7crgmoxfjk.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "spline": {
+    "file": "logos/spline.png",
+    "file_dark": null,
+    "source_url": "https://spline.design/images/icon_favicon32x32.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "stable-audio": {
+    "file": "logos/stable-audio.svg",
+    "file_dark": null,
+    "source_url": "https://stableaudio.com/st-1/favicon.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, קובץ וקטורי."
+  },
+  "synthesia": {
+    "file": "logos/synthesia.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/65e89895c5a4b8d764c0d710/6618fd69d436784c0bba5e9e_webclip.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "tldv": {
+    "file": "logos/tldv.png",
+    "file_dark": null,
+    "source_url": "https://tldv.io/favicon.ico",
+    "missing_reason": null,
+    "note": "נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה. אצל tl;dv הסמל הוא שם המותג עצמו, ואין סמל נפרד."
+  },
+  "ux-pilot": {
+    "file": "logos/ux-pilot.png",
+    "file_dark": null,
+    "source_url": "https://uxpilot.ai/logo192.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "wispr-flow": {
+    "file": "logos/wispr-flow.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/682f84b3838c89f8ff7667db/68d27d1a8a10f417b5644527_flow-wc-v2.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "wordtune": {
+    "file": "logos/wordtune.png",
+    "file_dark": null,
+    "source_url": "https://cdn.prod.website-files.com/5f7e0f9d75fee6f6f546df46/6672cdfc1b7a70cf85686651_256x256.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026, תמונה."
+  },
+  "udio": {
+    "file": "logos/udio.svg",
+    "file_dark": null,
+    "source_url": "https://lobehub.com/icons",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הסמלים של LobeHub (חבילת ‎@lobehub/icons-static-svg‏, גרסה 1.104.0, רישיון MIT) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני."
+  },
+  "marble": {
+    "file": null,
+    "file_dark": null,
+    "source_url": null,
+    "missing_reason": "לכלי אין סמל נפרד: באתר מופיע רק הסמל של World Labs, החברה שמפעילה אותו.",
+    "note": null
+  },
+  "adobe-express": {
+    "file": null,
+    "file_dark": null,
+    "source_url": null,
+    "missing_reason": "בעמוד המוצר מופיע רק הסמל הכללי של Adobe, ולא סמל של Adobe Express.",
+    "note": null
+  },
+  "microsoft-copilot-studio": {
+    "file": null,
+    "file_dark": null,
+    "source_url": null,
+    "missing_reason": "בעמוד המוצר מופיע רק הסמל הכללי של Microsoft, ולא סמל של Copilot Studio.",
+    "note": null
+  },
+  "quillbot": {
+    "file": null,
+    "file_dark": null,
+    "source_url": null,
+    "missing_reason": "האתר הרשמי חוסם הורדה אוטומטית, והסמל לא נמצא בספריות הסמלים.",
+    "note": null
+  },
+  "looka": {
+    "file": null,
+    "file_dark": null,
+    "source_url": null,
+    "missing_reason": "האתר הרשמי חוסם הורדה אוטומטית, והסמל לא נמצא בספריות הסמלים.",
+    "note": null
+  }
+}

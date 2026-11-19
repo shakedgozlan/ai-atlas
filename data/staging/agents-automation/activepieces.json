@@ -1,0 +1,278 @@
+{
+ "id": null,
+ "slug": "activepieces",
+ "category_id": 12,
+ "name": "Activepieces",
+ "former_name": null,
+ "rename_note": null,
+ "role": "פלטפורמת אוטומציה וסוכני AI בקוד פתוח, לבניית תהליכים שמחברים בין אפליקציות.",
+ "url": "https://www.activepieces.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "תוכנית חינמית עם מכסה מתחדשת",
+   "detail": "Free כוללת 1,000 נקודות זיכוי, תהליכים ללא הגבלה, עד 5 משתמשים וגישה ל־MCP ול־API.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מחיר קבוע שאינו לפי משתמש",
+   "detail": "Plus עולה 20 דולר לחודש במחיר קבוע לחשבון וכוללת 10,000 נקודות זיכוי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "קוד פתוח ויותר מ־770 אינטגרציות",
+   "detail": "עמוד המחירים מציין \"Open source at the core\" ו־\"770+ integrations\". באתר מוצעת גם הרצה בענן בפרנקפורט או על שרת משלך.",
+   "source_ids": [
+    "s1",
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "סתירה לגבי חידוש הנקודות החינמיות",
+   "detail": "עמוד המחירים מציג 1,000 נקודות בחודש, אבל במקום אחר באותו עמוד כתוב שהן מתאפסות מדי יום.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "קפיצת מחיר גדולה לתוכנית הצוות",
+   "detail": "אחרי Plus ב־20 דולר, התוכנית הבאה היא Team ב־200 דולר לחודש עם 50,000 נקודות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תנאי השימוש מגבילים לשימוש פנימי",
+   "detail": "לפי תנאי השימוש (עודכנו ב־29 בנובמבר 2023), השימוש בתוכנה מותר רק לצרכים הפנימיים של הלקוח, ואסור למכור אותה הלאה.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מי שרוצה לבנות אוטומציות וסוכנים בחינם או בתקציב קטן, כולל מי שמעדיף כלי בקוד פתוח.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "תוכנית חינמית עם 1,000 נקודות זיכוי. בתשלום מ־20 דולר לחודש במחיר קבוע לחשבון.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לחשבון",
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "1,000 נקודות זיכוי, תהליכים ללא הגבלה, עד 5 משתמשים, MCP וגישה ל־API",
+    "notes": "העמוד סותר את עצמו: פעם \"1,000 credits a month\" ופעם \"reset daily\".",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Plus",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לחשבון",
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "10,000 נקודות זיכוי בחודש",
+    "notes": "מחיר קבוע לחשבון (\"flat\"). אם קיים חיוב שנתי, לא נרשם.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team",
+    "price": 200,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לחשבון",
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "50,000 נקודות זיכוי בחודש",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free ללא תשלום: 1,000 נקודות זיכוי, תהליכים ללא הגבלה, עד 5 משתמשים, MCP וגישה ל־API. העמוד סותר את עצמו בשאלה אם הנקודות מתחדשות כל יום או כל חודש.",
+  "trial": null,
+  "unverified_notes": "עמוד המחירים נקרא בשלב המחקר הראשון ולא נפתח שוב. לא אומתו: אם יש חיוב שנתי והנחה עליו, תוכנית Enterprise, מחיר נקודות נוספות, וקצב החידוש של הנקודות החינמיות (יומי או חודשי, בגלל סתירה בעמוד)."
+ },
+ "privacy": {
+  "text": "מדיניות הפרטיות (עודכנה ב־19 בינואר 2026) אינה אומרת אם נתוני משתמשים או תהליכים משמשים לאימון מודלים. היא קובעת רק שנתוני Google Workspace לא משמשים לאימון מודלים כלליים. לפי המדיניות, נתונים מועברים לארצות הברית לצורך מתן השירות.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תנאי השימוש (29 בנובמבר 2023), הלקוח שומר על כל הזכויות בתוכן הלקוח, בכפוף לרישיון מוגבל ל־Activepieces להפעלת התוכנה ולשיפורה. השימוש מותר רק לצרכים הפנימיים של הלקוח, ואסור למכור את התוכנה הלאה. התנאים ישנים ואולי הוחלפו.",
+  "watermark": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "עמוד המחירים מציין גישה ל־API ול־MCP כבר בתוכנית החינמית, והליבה בקוד פתוח. התיעוד הטכני של ה־API לא נבדק.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "יותר מ־770 אינטגרציות",
+   "MCP"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "התקנה עצמית על שרת"
+  ],
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו, כולל יומן השינויים, אין אזכור של שפות ממשק.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Activepieces Inc.",
+  "parent": null,
+  "country": "ארצות הברית",
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים בעמודים הרשמיים שנבדקו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://activepieces.com/pricing/",
+   "title": "עמוד המחירים של Activepieces",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://activepieces.com/terms",
+   "title": "תנאי השימוש של Activepieces (עודכנו ב־29 בנובמבר 2023)",
+   "official": true,
+   "published": "2023-11-29",
+   "checked": "2026-11-19",
+   "stale": true
+  },
+  {
+   "id": "s3",
+   "url": "https://activepieces.com/privacy",
+   "title": "מדיניות הפרטיות של Activepieces",
+   "official": true,
+   "published": "2026-01-19",
+   "checked": "2026-11-19",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://www.activepieces.com/docs/about/changelog.md",
+   "title": "התיעוד של Activepieces: יומן שינויים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-19",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "ביומן השינויים מופיעים סוכנים שנוצרים מתיאור בשפה פשוטה (ספטמבר 2026), אבל הכלי מופיע רק ב־1 מתוך 5 סקירות עצמאיות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Agents (יצירה מתיאור בשפה פשוטה)",
+   "latest_version_date": "September 2026",
+   "latest_version_date_iso": null,
+   "independent_reviews": 1,
+   "evidence": "research/stage4/added-tools.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 20,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Plus",
+   "verified": true,
+   "label": "מ־20 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 1,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "1,000 נקודות זיכוי שמתחדשות. העמוד סותר את עצמו אם החידוש יומי או חודשי, אבל בשני המקרים המכסה מתחדשת.",
+    "evidence": "research/stage4/added-tools.md"
+   }
+  }
+ }
+}
