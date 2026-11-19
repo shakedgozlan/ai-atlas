@@ -61,6 +61,8 @@ const audit = (rootSel) => {
       const errors = [];
       page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
       page.on('pageerror', (e) => errors.push(String(e)));
+      // הבדיקות רצות בלי רשת: פניות לשירות ההצבעות ולכלי המדידה מקבלות תשובה ריקה, כדי שלא ייספרו כשגיאות של האתר
+      await page.route(/^https?:\/\//, (r) => r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: '{}' }));
       await page.goto('file://' + file);
       await page.waitForTimeout(300);
       const report = async (label, rootSel) => {
@@ -142,7 +144,7 @@ const audit = (rootSel) => {
       await page.locator('#detail-2 [aria-controls="d2-src"]').click();
       note(!(await page.locator('#detail-2 .sources').isVisible()), `${tag} לחיצה שנייה לא סוגרת את החלק`);
       // המיקוד נשאר בתוך החלון
-      const trapped = await page.evaluate(async () => { const d = document.querySelector('#detail-2'); return d.matches(':modal') && !document.querySelector('#finder-open').closest('dialog'); });
+      const trapped = await page.evaluate(async () => { const d = document.querySelector('#detail-2'); return d.matches(':modal') && !document.querySelector('#q').closest('dialog'); });
       note(trapped, `${tag} החלון לא נפתח כחלון חוסם`);
       await page.keyboard.press('Escape');
       note(!(await isOpen(2)), `${tag} מקש היציאה לא סוגר את חלון הפרטים`);
@@ -152,7 +154,9 @@ const audit = (rootSel) => {
       await page.mouse.click(4, 4);
       note(!(await isOpen(2)), `${tag} לחיצה על הרקע לא סוגרת את החלון`);
       await open.click();
-      await page.locator('#detail-2 [data-sheet-close]').click();
+      // בטלפון לחצן הסגירה לא מוצג (סוגרים בגרירה), אבל נשאר לקורא מסך ולמקלדת, ולכן שם מפעילים אותו במקלדת
+      if (width === 1440) await page.locator('#detail-2 [data-sheet-close]').click();
+      else { await page.locator('#detail-2 [data-sheet-close]').focus(); await page.keyboard.press('Enter'); }
       note(!(await isOpen(2)), `${tag} כפתור הסגירה לא סוגר`);
       note(await page.evaluate(() => document.activeElement.matches('#tool-2 .card-head [data-sheet-open]')), `${tag} המיקוד לא חוזר אחרי כפתור הסגירה`);
       note(await page.evaluate(() => getComputedStyle(document.documentElement).overflow !== 'hidden'), `${tag} הגלילה בעמוד נשארת נעולה`);
@@ -189,16 +193,17 @@ const audit = (rootSel) => {
       note(!dead.length, `${tag} קישור פנימי בלי יעד`, dead.join(' '));
       await page.evaluate(() => document.querySelectorAll('img').forEach((i) => { i.loading = 'eager'; }));
       await page.waitForTimeout(300);
-      const badImg = await page.evaluate(() => [...document.querySelectorAll('img')].filter((i) => !i.complete || !i.naturalWidth).map((i) => i.getAttribute('src')));
+      const badImg = await page.evaluate(() => [...document.querySelectorAll('img[src]')].filter((i) => !i.complete || !i.naturalWidth).map((i) => i.getAttribute('src')));
       note(!badImg.length, `${tag} לוגו שלא נטען`, badImg.join(' '));
       const logoVisible = await page.evaluate(() => [...document.querySelectorAll('.logo')].filter((l) => [...l.querySelectorAll('img')].filter((i) => getComputedStyle(i).display !== 'none').length !== 1).length);
       note(logoVisible === 0, `${tag} לוגו: לא גרסה אחת בדיוק גלויה`, String(logoVisible));
 
-      // חלון החיפוש: נפתח כשכבה מעל הדף, המיקוד בשדה, ומצב ריק בלי תוצאות
-      const opener = page.locator('#finder-open');
+      // תיבת החיפוש בסרגל: לחיצה פותחת לוח מתחתיה, המיקוד בשדה, ומצב ריק בלי תוצאות
+      const opener = page.locator('#q');
+      const panelOpen = () => page.locator('#finder').evaluate((d) => !d.hidden);
       const vis = () => page.locator('#results [data-result]:not([hidden])').count();
-      await opener.focus(); await page.keyboard.press('Enter');
-      note(await page.locator('#finder').evaluate((d) => d.open), `${tag} החלון לא נפתח`);
+      await opener.click();
+      note(await panelOpen(), `${tag} הלוח לא נפתח`);
       note(await page.evaluate(() => document.activeElement.id === 'q'), `${tag} המיקוד לא בשדה החיפוש`);
       note(!(await page.locator('#results').isVisible()) && await page.locator('.shortcuts').first().isVisible(), `${tag} המצב הריק של החיפוש לא נכון`);
       await page.waitForTimeout(350);
@@ -222,11 +227,10 @@ const audit = (rootSel) => {
       await short.click();
       note(!(await page.locator('#results').isVisible()), `${tag} ביטול קיצור דרך`);
       await page.keyboard.press('Escape');
-      note(!(await page.locator('#finder').evaluate((d) => d.open)), `${tag} מקש היציאה לא סוגר`);
-      note(await page.evaluate(() => document.activeElement.id === 'finder-open'), `${tag} המיקוד לא חוזר לכפתור`);
+      note(!(await panelOpen()), `${tag} מקש היציאה לא סוגר`);
       await opener.click();
       await page.mouse.click(4, 4);
-      note(!(await page.locator('#finder').evaluate((d) => d.open)), `${tag} לחיצה בחוץ לא סוגרת`);
+      note(!(await panelOpen()), `${tag} לחיצה בחוץ לא סוגרת`);
       note((await page.locator('#finder .sources, #finder a[href^="http"]').count()) === 0, `${tag} מקורות בתוך החלון`);
       // החיפוש לא מסתיר כרטיסים בדף
       note((await page.locator('.card:not([hidden])').count()) === n, `${tag} החיפוש מסתיר כרטיסים בדף`);
@@ -236,8 +240,9 @@ const audit = (rootSel) => {
       await page.fill('#q', 'pika');
       await page.locator('#results [data-result]:not([hidden]) .res').first().click();
       await page.waitForTimeout(400);
-      note(!(await page.locator('#finder').evaluate((d) => d.open)) && await page.locator('#detail-6').evaluate((d) => d.open), `${tag} בחירה בתוצאה לא פותחת את הפרטים`);
+      note(!(await panelOpen()) && await page.locator('#detail-6').evaluate((d) => d.open), `${tag} בחירה בתוצאה לא פותחת את הפרטים`);
       await page.keyboard.press('Escape');
+      await page.mouse.click(4, 4);
       await opener.click();
       note(await page.locator('#finder-recent-list button', { hasText: 'pika' }).isVisible(), `${tag} חיפושים אחרונים`);
       await page.keyboard.press('Escape');
@@ -262,7 +267,8 @@ const audit = (rootSel) => {
         note((await page.locator('.card:not([hidden])').count()) === n, `${tag} ניקוי הסינון לא מחזיר את כל הקטגוריות`);
         await page.locator('#legend summary').click();
         await report('המקרא פתוח');
-        const rows = await page.locator('#legend .legend-list li').evaluateAll((els) => new Set(els.map((e) => Math.round(e.getBoundingClientRect().top))).size === els.length);
+        // המקרא בשתי עמודות (תגים, דרגות שימו לב): בתוך כל עמודה כל פריט בשורה משלו
+        const rows = await page.locator('#legend .legend-list').evaluateAll((lists) => lists.every((l) => { const els = [...l.children]; return new Set(els.map((e) => Math.round(e.getBoundingClientRect().top))).size === els.length; }));
         note(rows, `${tag} תגים במקרא חולקים שורה`);
         await page.locator('#legend summary').click();
       }

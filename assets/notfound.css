@@ -1,0 +1,11 @@
+/* עמוד 404. משתמש בצבעים ובגופן של האתר, ומתאים לבהיר ולכהה. */
+.nf-top{border-bottom:1px solid var(--line);background:var(--paper)}
+.nf-top-in{display:flex;align-items:center;min-height:var(--bar-h)}
+.nf-brand{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-weight:700;color:var(--ink);text-decoration:none}
+.nf-brand:hover{color:var(--brand)}
+.nf-brand img{width:28px;height:28px}
+.nf-hero{padding-block:clamp(48px,9vw,112px) clamp(32px,5vw,56px)}
+.nf-code{font-size:clamp(4.5rem,3rem + 8vw,9rem);font-weight:400;line-height:1;color:var(--brand);font-variant-numeric:tabular-nums;letter-spacing:-0.02em}
+.nf-hero h1{margin-top:clamp(12px,2vw,20px);font-size:var(--t-hero);font-weight:700;line-height:1.1;text-wrap:balance}
+.nf-hero .hero-lede{margin-top:clamp(12px,1.6vw,20px);max-width:52ch}
+.nf-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(24px,4vw,36px)}

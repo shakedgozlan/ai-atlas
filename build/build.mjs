@@ -468,6 +468,36 @@ function miniHtml(t, free) {
   </div>`;
 }
 
+// נתוני ההשוואה בין כלים: ערכים קצרים לכל שדה, מאותו קובץ נתונים. מה שלא אומת מסומן כך ולא מושמט.
+const firstSentence = (v, max = 120) => {
+  const x = String(v ?? '').replace(/\s+/g, ' ').trim();
+  if (!x) return '';
+  const cut = x.search(/[.!?](\s|$)/);
+  const one = cut === -1 ? x : x.slice(0, cut + 1);
+  return one.length > max ? `${one.slice(0, max - 1).trimEnd()}…` : one;
+};
+function compareRow(t) {
+  const fl = toolFlags(t);
+  const api = t.developer_access?.api;
+  return {
+    price: startPrice(t)[0],
+    free: fl.free ? 'יש' : 'לא נמצאה',
+    adv: (t.strengths || [])[0]?.lead || '',
+    lim: (t.limitations || [])[0]?.lead || '',
+    aud: firstSentence(t.audience, 110),
+    plat: (t.platforms?.items || []).join(', '),
+    heb: t.filters?.hebrew?.label || '',
+    stud: firstSentence(t.student_benefits?.text, 110),
+    api: has(api) ? api : 'לא אומת',
+    com: firstSentence(t.commercial_rights?.text, 110),
+  };
+}
+const COMPARE_ROWS = [['price', 'מחיר התחלתי'], ['free', 'תוכנית חינמית'], ['adv', 'יתרון בולט'], ['lim', 'חשוב לדעת'], ['aud', 'למי מתאים'], ['plat', 'פלטפורמות'], ['heb', 'עברית'], ['stud', 'סטודנטים'], ['api', 'ממשק למפתחים'], ['com', 'שימוש מסחרי']];
+const compareData = data.tools.map((t) => ({
+  id: t.id, no: pad(t.no), cat: t.category_id, name: t.name, url: t.url,
+  l: t.logo?.file || '', ld: t.logo?.file_dark || '', r: compareRow(t),
+}));
+
 function cardHtml(t) {
   const fl = toolFlags(t);
   const flags = FLAGS.map(([k]) => k).filter((k) => fl[k]).join(' ');
@@ -490,6 +520,7 @@ function cardHtml(t) {
     ${priceLine(t)}
     <div class="card-actions">
       <button type="button" class="btn btn-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-${t.id}"><span>פרטים נוספים</span><span class="sr-only"> על ${esc(t.name)}</span>${ICON.expand}</button>
+      <button type="button" class="btn btn-cmp" data-compare="${t.id}" aria-pressed="false"><span class="cmp-box" aria-hidden="true"></span><span>השוואה</span><span class="sr-only"> ${esc(t.name)} עם כלים אחרים</span></button>
       <div class="card-quick">
         <a class="btn btn-site btn-ico" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer" title="לאתר הרשמי">${ICON.ext}<span class="sr-only">לאתר הרשמי של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
       </div>
@@ -570,7 +601,25 @@ const html = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>אטלס כלי בינה מלאכותית</title>
 <meta name="description" content="אטלס בעברית של כלי בינה מלאכותית: מה כל כלי עושה, כמה הוא עולה ומה חשוב לדעת עליו. צילום מצב ליום ${dateShort(data.snapshot_date)}.">
+<link rel="canonical" href="https://kleyai.tech/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="אטלס כלי בינה מלאכותית">
+<meta property="og:locale" content="he_IL">
+<meta property="og:url" content="https://kleyai.tech/">
+<meta property="og:title" content="אטלס כלי בינה מלאכותית">
+<meta property="og:description" content="רשימה חיה שמתעדכנת: מה חדש ומה מתאים לך. מחיר, יתרונות ומגבלות של כל כלי.">
+<meta property="og:image" content="https://kleyai.tech/assets/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="סמל המצפן של אטלס כלי בינה מלאכותית ליד שם האתר">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="אטלס כלי בינה מלאכותית">
+<meta name="twitter:description" content="רשימה חיה שמתעדכנת: מה חדש ומה מתאים לך. מחיר, יתרונות ומגבלות של כל כלי.">
+<meta name="twitter:image" content="https://kleyai.tech/assets/share.png">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;var v=localStorage.getItem('atlas-view');if(v==='index'||v==='gallery')document.documentElement.dataset.view=v}catch(e){}document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="assets/style.css?v=${cssV}">${communityApi ? `
 <meta name="atlas-api" content="${esc(communityApi)}">
@@ -591,8 +640,31 @@ const html = `<!doctype html>
     <a class="brand" href="#top"><span class="brand-long">אטלס כלי בינה מלאכותית</span><span class="brand-short" aria-hidden="true">אטלס כלי AI</span></a>
     <p class="bar-date"><span class="bar-date-l">תאריך הבדיקה האחרונה</span> <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
     <div class="bar-actions">
-      <button type="button" class="btn btn-primary" id="finder-open" aria-haspopup="dialog">${ICON.search}<span>חיפוש</span></button>
+      <form class="sbox" id="finder-form" role="search">
+        <label for="q" class="sr-only" id="finder-title">מה צריך לעשות?</label>
+        ${ICON.search}
+        <input type="text" id="q" inputmode="search" name="q" autocomplete="off" enterkeyhint="search" dir="auto" placeholder="מה צריך לעשות?" aria-controls="finder" aria-expanded="false">
+        <button type="button" class="sbox-clear" id="finder-clear" hidden>${ICON.close}<span class="sr-only">ניקוי</span></button>
+      </form>
+      <button type="button" class="btn btn-quiet sbox-cancel" id="finder-close" hidden>ביטול</button>
     </div>
+  </div>
+  <div class="finder" id="finder" role="region" aria-label="תוצאות חיפוש" hidden>
+  <div class="finder-in">
+    ${SHORTCUTS.length ? `<div class="finder-group">
+      <h3 id="finder-short-h">קיצורי דרך</h3>
+      <div class="shortcuts" role="group" aria-labelledby="finder-short-h">${SHORTCUTS.map(([k, label]) => `<button type="button" class="btn short" data-short="${k}" aria-pressed="false">${label}</button>`).join('')}</div>
+    </div>` : ''}
+    <div class="finder-group" id="finder-recent" hidden>
+      <h3 id="finder-recent-h">חיפושים אחרונים</h3>
+      <div class="shortcuts" id="finder-recent-list" role="group" aria-labelledby="finder-recent-h"></div>
+    </div>
+    <p class="finder-count" id="finder-count" role="status" aria-live="polite"></p>
+    <ul class="results" id="results" role="list" hidden>${finderResults}</ul>
+    <div class="finder-empty" id="finder-empty" hidden>
+      <p><strong>לא נמצא כלי מתאים.</strong> כדאי לנסות מילים אחרות, למשל מה רוצים ליצור או שם של כלי.</p>
+    </div>
+  </div>
   </div>
 </header>
 
@@ -634,38 +706,29 @@ ${sections}
     <ol class="foot-cats" role="list">${footerCats}</ol>
     <p class="foot-note">המידע נכון ליום הבדיקה, ${dateLong(data.snapshot_date)}. מחירים ותנאים משתנים, ולכן כדאי לבדוק באתר הרשמי של כל כלי לפני החלטה. הלוגואים שייכים לחברות ומוצגים לצורך זיהוי בלבד.</p>
     <p class="foot-src"><a href="sources.html">מאיפה המידע מגיע</a></p>
+    <p class="foot-privacy">האתר משתמש ב־Google Analytics כדי לדעת כמה אנשים מבקרים בו ובאילו עמודים. לשם כך Google שומרת קובצי עוגיות (קבצים קטנים) בדפדפן שלך. אפשר לחסום אותם בהגדרות הדפדפן או בתוסף חסימה, והאתר ימשיך לעבוד כרגיל.</p>
     <p class="foot-date">תאריך הבדיקה האחרונה: <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
   </div>
 </footer>
 
-<dialog class="finder" id="finder" aria-labelledby="finder-title">
-  <div class="finder-top">
-    <form class="finder-form" id="finder-form" role="search">
-      <label for="q" id="finder-title">מה צריך לעשות?</label>
-      <div class="finder-field">
-        ${ICON.search}
-        <input type="text" id="q" inputmode="search" name="q" autocomplete="off" enterkeyhint="search" dir="auto" placeholder="למשל: סרטון קצר מתמונה אחת">
-        <button type="button" class="btn btn-quiet" id="finder-clear" hidden>ניקוי</button>
-      </div>
-    </form>
-    <button type="button" class="btn btn-icon" id="finder-close">${ICON.close}<span>סגירה</span></button>
-  </div>
-  <div class="finder-in">
-    ${SHORTCUTS.length ? `<div class="finder-group">
-      <h3 id="finder-short-h">קיצורי דרך</h3>
-      <div class="shortcuts" role="group" aria-labelledby="finder-short-h">${SHORTCUTS.map(([k, label]) => `<button type="button" class="btn short" data-short="${k}" aria-pressed="false">${label}</button>`).join('')}</div>
-    </div>` : ''}
-    <div class="finder-group" id="finder-recent" hidden>
-      <h3 id="finder-recent-h">חיפושים אחרונים</h3>
-      <div class="shortcuts" id="finder-recent-list" role="group" aria-labelledby="finder-recent-h"></div>
+<div class="cmp-tray" id="cmp-tray" hidden role="region" aria-label="השוואה בין כלים">
+  <ul class="cmp-chips" id="cmp-chips" role="list"></ul>
+  <p class="cmp-hint" id="cmp-hint" role="status" aria-live="polite"></p>
+  <button type="button" class="btn btn-primary" id="cmp-go">השוואה</button>
+  <button type="button" class="btn btn-quiet" id="cmp-clear">ניקוי</button>
+</div>
+
+<dialog class="sheet cmp" id="cmp" aria-labelledby="cmp-title">
+  <header class="sheet-head">
+    <div class="sheet-head-in">
+      <div class="sheet-id"><h3 class="sheet-title" id="cmp-title" tabindex="-1">השוואה בין כלים</h3><p class="sheet-role">מה שלא אומת במחקר מסומן באפור.</p></div>
+      <button type="button" class="btn btn-quiet cmp-diff" id="cmp-diff" aria-pressed="false">הצגת הבדלים בלבד</button>
+      <button type="button" class="btn btn-close" data-sheet-close title="סגירה">${ICON.close}<span class="close-t">סגירה</span></button>
     </div>
-    <p class="finder-count" id="finder-count" role="status" aria-live="polite"></p>
-    <ul class="results" id="results" role="list" hidden>${finderResults}</ul>
-    <div class="finder-empty" id="finder-empty" hidden>
-      <p><strong>לא נמצא כלי מתאים.</strong> כדאי לנסות מילים אחרות, למשל מה רוצים ליצור או שם של כלי.</p>
-    </div>
-  </div>
+  </header>
+  <div class="sheet-scroll" tabindex="-1"><div class="cmp-wrap" id="cmp-body"></div></div>
 </dialog>
+<script type="application/json" id="compare-data">${JSON.stringify({ rows: COMPARE_ROWS, tools: compareData }).replace(/</g, '\\u003c')}</script>
 <script type="application/json" id="search-index">${JSON.stringify(searchIndex).replace(/</g, '\\u003c')}</script>
 
 <script src="assets/app.js?v=${jsV}" defer></script>${communityApi ? `
@@ -675,6 +738,23 @@ ${sections}
 `;
 
 writeFileSync(outPath, html);
+
+// מפת אתר ו־robots, לכתובת הקבועה של האתר. נכתבים רק בבנייה הרגילה, לא בבדיקות.
+if (!process.env.ATLAS_OUT) {
+  const site = 'https://kleyai.tech';
+  const day = String(data.snapshot_date).slice(0, 10);
+  writeFileSync(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>${site}/</loc><lastmod>${day}</lastmod></url>
+  <url><loc>${site}/sources.html</loc><lastmod>${day}</lastmod></url>
+</urlset>
+`);
+  writeFileSync(join(root, 'robots.txt'), `User-agent: *
+Allow: /
+
+Sitemap: ${site}/sitemap.xml
+`);
+}
 console.log(`${outPath}: ${total} tools, ${liveCats.length} categories, verified ${vFull}, partial ${vPart}, unverified ${vNone}`);
 
 // קבצים למכונות (atlas.json, llms.txt) נבנים מאותו קובץ נתונים, באותה הרצה
