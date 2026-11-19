@@ -67,3 +67,10 @@
 .fb-picking .fb-pickbar,.fb-picking .fb-pickbar *{cursor:default !important}
 .fb-picking .fb-pickbar .btn{cursor:pointer !important}
 .fb-hot{outline:3px solid var(--brand) !important;outline-offset:3px;border-radius:var(--r-card)}
+
+/* אגודלים בכרטיס */
+.card-vote{display:flex;gap:8px}
+.card-actions .vote-thumb{width:44px;padding:0;flex:none;border-color:var(--line);background:transparent;color:var(--ink-soft)}
+:root .card-actions .vote-thumb.btn-ico:hover{border-color:var(--brand);color:var(--brand)}
+:root .card-actions .vote-thumb.btn-ico[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.card-actions .vote-thumb:disabled{opacity:.6;cursor:default}

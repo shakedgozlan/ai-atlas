@@ -81,6 +81,69 @@
     var text = countText(id);
     c.textContent = text; c.hidden = !text;
   }
+  // הצבעה אחת, משני מקומות: הכרטיס בדף הראשי וחלון הפרטים. שניהם מתעדכנים יחד.
+  var busy = {};
+  function paintCardVote(id) {
+    var card = doc.getElementById('tool-' + id);
+    if (!card) return;
+    $$('.card-vote [data-vote-set]', card).forEach(function (b) {
+      b.setAttribute('aria-pressed', String(mine[id] === b.getAttribute('data-vote-set')));
+      b.disabled = !!busy[id];
+    });
+  }
+  function paintToolVotes(id) {
+    paintCardVote(id);
+    $$('.vote[data-vote="' + id + '"]').forEach(paintVote);
+    paintPick(id);
+  }
+  function castVote(id, value, say) {
+    if (busy[id] || mine[id] === value) return;
+    busy[id] = true; paintToolVotes(id);
+    post('/vote', { tool: Number(id), value: value }).then(function (d) {
+      if (d.ok) {
+        mine[id] = d.mine; saveMine();
+        tallies[id] = [d.up, d.down];
+        say('');
+      } else {
+        say(d.httpStatus === 429 ? 'נשלחו יותר מדי הצבעות בזמן קצר. אפשר לנסות שוב בעוד שעה.' : 'ההצבעה לא נשמרה. אפשר לנסות שוב.');
+      }
+    }).catch(function () {
+      say('אין חיבור לשירות ההצבעות כרגע. אפשר לנסות שוב מאוחר יותר.');
+    }).then(function () { busy[id] = false; paintToolVotes(id); });
+  }
+
+  var THUMB = '<path d="M7.5 10.5v9h-3v-9z"/><path d="M7.5 10.5 11.2 4.3a1.6 1.6 0 0 1 2.9 1.1L13.3 9h5.2a1.8 1.8 0 0 1 1.8 2.1l-1.2 6.8a1.8 1.8 0 0 1-1.8 1.5H7.5"/>';
+  function thumbSvg(down) {
+    return '<svg class="ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"' + (down ? ' style="transform:scaleY(-1)"' : '') + '>' + THUMB + '</svg>';
+  }
+  // לחצני אגודל בכל כרטיס, משמאל ללחצן ״לאתר הרשמי״ (בקשת שקד, 19.11.2026)
+  $$('.card').forEach(function (card) {
+    var quick = $('.card-quick', card);
+    if (!quick) return;
+    var id = card.id.replace('tool-', '');
+    var nm = $('.name bdi', card);
+    var name = nm ? nm.textContent : '';
+    var group = el('div', 'card-vote');
+    group.setAttribute('role', 'group'); group.setAttribute('aria-label', 'הצבעה על ' + name);
+    var live = el('span', 'sr-only'); live.setAttribute('role', 'status');
+    [['up', 'ממליץ', false], ['down', 'לא ממליץ', true]].forEach(function (x) {
+      var b = el('button', 'btn btn-ico vote-thumb');
+      b.type = 'button'; b.title = x[1];
+      b.setAttribute('data-vote-set', x[0]); b.setAttribute('aria-pressed', 'false');
+      b.innerHTML = thumbSvg(x[2]) + '<span class="sr-only">' + x[1] + ' על ' + name + '</span>';
+      b.addEventListener('click', function () {
+        castVote(id, x[0], function (msg) {
+          live.textContent = msg || 'ההצבעה נשמרה';
+          b.title = msg || x[1];
+        });
+      });
+      group.appendChild(b);
+    });
+    group.appendChild(live);
+    quick.appendChild(group);
+    paintCardVote(id);
+  });
+
   function buildVote(sheet) {
     if ($('.vote', sheet)) return;
     var id = sheet.id.replace('detail-', '');
@@ -95,25 +158,7 @@
     [['up', 'כן, מומלץ'], ['down', 'לא מומלץ']].forEach(function (x) {
       var b = el('button', 'btn vote-btn', x[1]);
       b.type = 'button'; b.setAttribute('data-vote-set', x[0]); b.setAttribute('aria-pressed', 'false');
-      b.addEventListener('click', function () {
-        if (mine[id] === x[0]) return;
-        $$('.vote-btn', box).forEach(function (v) { v.disabled = true; });
-        status.textContent = '';
-        post('/vote', { tool: Number(id), value: x[0] }).then(function (d) {
-          if (d.ok) {
-            mine[id] = d.mine; saveMine();
-            tallies[id] = [d.up, d.down];
-            paintPick(id);
-          } else {
-            status.textContent = d.httpStatus === 429 ? 'נשלחו יותר מדי הצבעות בזמן קצר. אפשר לנסות שוב בעוד שעה.' : 'ההצבעה לא נשמרה. אפשר לנסות שוב.';
-          }
-        }).catch(function () {
-          status.textContent = 'אין חיבור לשירות ההצבעות כרגע. אפשר לנסות שוב מאוחר יותר.';
-        }).then(function () {
-          $$('.vote-btn', box).forEach(function (v) { v.disabled = false; });
-          paintVote(box);
-        });
-      });
+      b.addEventListener('click', function () { status.textContent = ''; castVote(id, x[0], function (msg) { status.textContent = msg; }); });
       btns.appendChild(b);
     });
     var note = el('p', 'vote-note', 'הצבעה אחת לכל כלי מכל מכשיר. כתובת הרשת לא נשמרת: נשמרת רק טביעה מעורבלת שלה, שאי אפשר לשחזר ממנה את הכתובת.');

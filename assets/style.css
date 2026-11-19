@@ -320,6 +320,9 @@ html:not(.js) .filters{display:none}
   .card:hover .card-head{border-color:var(--brand)}
 }
 .btn-site{font-weight:500;padding-inline:20px}
+/* בכרטיס: ״לאתר הרשמי״ הוא לחצן סמל, ולידו (משמאל) לחצני ההצבעה כשהם פעילים (בקשת שקד, 19.11.2026) */
+.card-quick{display:flex;align-items:center;gap:8px}
+.card-actions .btn-ico{width:44px;padding:0;flex:none}
 
 /* ---------- תצוגות האינדקס והגלריה ---------- */
 .mini{display:none;position:relative;min-width:0}
@@ -588,7 +591,7 @@ html:not(.js) #finder-open{display:none}
   .note-src{font-size:var(--t-label)}
 }
 @media (max-width:359px){
-  .card-actions .btn{flex:1 1 100%}
+  .card-actions .btn-open{flex:1 1 100%}
   .logo{width:44px;padding:2px}
   .verify{padding-inline:8px}
 }
@@ -622,3 +625,6 @@ html:not(.js) #finder-open{display:none}
 @media (hover:hover){
   :root[data-card="c"] .card-actions .btn-site:hover{border-color:var(--line-strong);text-decoration:none}
 }
+/* לחצן הסמל ״לאתר הרשמי״ בכרטיס: מסגרת שקטה, כדי שייראה לחיץ גם בלי טקסט */
+:root[data-card="c"] .card-actions .btn-ico{border-color:var(--line);background:transparent;padding-inline:0;text-decoration:none}
+:root[data-card="c"] .card-actions .btn-ico:hover{border-color:var(--brand);color:var(--brand)}

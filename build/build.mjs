@@ -480,7 +480,9 @@ function cardHtml(t) {
     ${priceLine(t)}
     <div class="card-actions">
       <button type="button" class="btn btn-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-${t.id}"><span>פרטים נוספים</span><span class="sr-only"> על ${esc(t.name)}</span>${ICON.expand}</button>
-      <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
+      <div class="card-quick">
+        <a class="btn btn-site btn-ico" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer" title="לאתר הרשמי">${ICON.ext}<span class="sr-only">לאתר הרשמי של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
+      </div>
     </div>
   </div>
   ${miniHtml(t, fl.free)}
