@@ -16,7 +16,7 @@
  },
  "status": {
   "state": "פעיל",
-  "note": "מסמכי המדיניות והתנאים מתפרסמים תחת Mirage. דיווח של TechCrunch מ־4 בספטמבר 2025 על מיתוג החברה מחדש כ־Mirage נראה בתוצאות חיפוש בלבד.",
+  "note": "מסמכי המדיניות והתנאים מתפרסמים תחת Mirage, ומדיניות הפרטיות לאירופה בתוקף מ־4 בספטמבר 2025. תאריך ההודעה על שינוי שם החברה לא אומת ממקור שנקרא.",
   "date_as_written": "Effective September 4, 2025",
   "source_ids": [
    "s2",
@@ -178,7 +178,7 @@
  },
  "developer_access": {
   "api": "לא אומת",
-  "text": "קיים עמוד בשם mirage.app/legal/api (נראה בתוצאות חיפוש בלבד), אך תיעוד API לא נקרא.",
+  "text": null,
   "source_ids": []
  },
  "integrations": {
@@ -241,14 +241,14 @@
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
-   "value": null,
-   "basis": "BASIS",
+   "value": false,
+   "basis": "הכלי מופיע רק בסקירה עצמאית אחת מתוך 6, כך שהתנאי של שתי סקירות לא מתקיים. נכלל ככלי ותיק לעריכת סרטוני דיבור בנייד.",
    "launch_date": null,
    "launched_in_window": false,
    "latest_version": null,
    "latest_version_date": null,
    "latest_version_date_iso": null,
-   "independent_reviews": null,
+   "independent_reviews": 1,
    "evidence": "research/stage4/video-editing.md"
   },
   "hebrew": {
@@ -276,7 +276,7 @@
   },
   "tags": {
    "review_roundups": {
-    "count": 0,
+    "count": 1,
     "of": 6,
     "value": false,
     "evidence": "research/stage4/video-editing.md"

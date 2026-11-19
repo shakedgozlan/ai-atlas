@@ -224,10 +224,10 @@
   ]
  },
  "hebrew": {
-  "text": "המקור לא מזכיר עברית: שאלות השפות במרכז העזרה מציינות יותר מ־120 שפות בלי לפרט, ועמוד המחירים מציין יותר מ־140 שפות וקולות. עמוד שיווקי של קול בעברית נראה בתוצאות חיפוש אך לא נקרא.",
+  "text": "לפי עמוד תכונה רשמי, Synthesia מפיקה הקראה בעברית מטקסט (\"Turn any text into natural-sounding Hebrew speech in seconds\"). שכפול קול אישי בעברית דורש תוכנית Enterprise לפי העמוד. העמוד לא אומר במפורש שהאווטרים מדברים עברית עם סנכרון שפתיים, ולא עוסק בהקלדה מימין לשמאל או בכתוביות בעברית. שאלות השפות במרכז העזרה לא מזכירות עברית.",
   "source_ids": [
-   "s3",
-   "s1"
+   "s5",
+   "s3"
   ]
  },
  "company": {
@@ -278,25 +278,34 @@
    "published": "2025-10-01",
    "checked": "2026-11-18",
    "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://www.synthesia.io/features/ai-voice-generator/hebrew",
+   "title": "Synthesia: מחולל קול בעברית (עמוד תכונה רשמי)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
   }
  ],
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
-   "value": "NN",
-   "basis": "BASIS",
-   "launch_date": "launched in 2017",
+   "value": true,
+   "basis": "Synthesia 3.0 פורסמה ב־1 באוקטובר 2025, והכלי מופיע ב־2 מתוך 6 סקירות עצמאיות.",
+   "launch_date": null,
    "launched_in_window": false,
    "latest_version": "Synthesia 3.0",
    "latest_version_date": "October 1, 2025",
    "latest_version_date_iso": "2025-10-01",
-   "independent_reviews": null,
+   "independent_reviews": 2,
    "evidence": "research/stage4/video-editing.md"
   },
   "hebrew": {
-   "value": "המקור לא מזכיר עברית",
-   "label": "עברית לא מוזכרת",
-   "supported": null
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
   },
   "starting_price": {
    "amount": 19,
@@ -315,7 +324,7 @@
   },
   "tags": {
    "review_roundups": {
-    "count": 0,
+    "count": 2,
     "of": 6,
     "value": false,
     "evidence": "research/stage4/video-editing.md"

@@ -25,17 +25,17 @@
  "strengths": [
   {
    "lead": "עורך אחד בנייד, במחשב ובדפדפן",
-   "detail": "תנאי השימוש חלים על האפליקציה לנייד, על גרסת המחשב ועל גרסת הדפדפן של CapCut.",
+   "detail": "לפי מרכז העזרה, זיהוי כתוביות אוטומטי זמין באתר, במחשב (Windows ו־macOS) ובנייד (iOS ו־Android).",
    "source_ids": [
-    "s2"
+    "s5"
    ],
    "inference": false
   },
   {
-   "lead": "מנוי Pro עם אחסון בענן",
-   "detail": "CapCut Pro פותחת את כל התכונות בתשלום, כמו תבניות טקסט, אפקטים ופילטרים, וכוללת 100GB אחסון בענן, בחיוב חודשי או שנתי.",
+   "lead": "גרסה חינמית מלאה לעריכה בסיסית",
+   "detail": "Standard חינמית וכוללת חיתוך, פילטרים, מעברים, טקסט ומוזיקה. Pro עולה 19.99 דולר לחודש לפי מאמר רשמי, והמחיר משתנה לפי אזור.",
    "source_ids": [
-    "s1"
+    "s4"
    ],
    "inference": false
   },
@@ -66,75 +66,93 @@
    "inference": false
   },
   {
-   "lead": "מחירים לא פורסמו במאמר העזרה",
-   "detail": "מאמר העזרה על המנויים מתאר תוכנית חודשית ושנתית בלי מחירים, ועמוד המחירים לא נטען.",
+   "lead": "כלי ה־AI העיקריים בתשלום",
+   "detail": "לפי CapCut, כתוביות אוטומטיות, מעקב תנועה והסרת רקע שמורים ל־Pro, וגרסת Standard החינמית כוללת עריכה בסיסית בלבד.",
    "source_ids": [
-    "s1",
-    "s3"
+    "s4"
    ],
    "inference": false
   }
  ],
  "audience": "יוצרים לרשתות, סטודנטים ומתחילים שרוצים עורך חינמי ונגיש בטלפון ובמחשב.",
  "pricing": {
-  "verification": "לא אומת",
-  "summary_line": null,
+  "verification": "אומת חלקית",
+  "summary_line": "Pro מ־19.99 דולר לחודש, או 179.99 דולר לשנה, לפי מאמר רשמי שמציין שהמחיר משתנה לפי אזור ופלטפורמה. הגרסה הבסיסית Standard חינמית.",
   "model": "מנוי",
   "plans": [
    {
     "name": "CapCut Pro",
-    "price": null,
-    "price_text": "המחיר לא אומת",
-    "price_short": "המחיר לא אומת",
+    "price": 19.99,
+    "price_text": null,
+    "price_short": null,
     "currency": "USD",
-    "per": null,
+    "per": "למשתמש",
     "billing": "חודשי",
-    "price_period": null,
-    "includes": "כל התכונות בתשלום, כולל תבניות טקסט, אפקטים לווידאו ולגוף ופילטרים, ו־100GB אחסון בענן",
-    "notes": "המחיר לא הופיע במאמר העזרה, ועמוד המחירים לא נטען.",
+    "price_period": "לחודש",
+    "includes": "כל התכונות בתשלום, כולל כלי AI כמו כתוביות אוטומטיות, הסרת רקע ומעקב תנועה, תבניות, אפקטים וגופנים פרימיום",
+    "notes": "\"$19.99 per month for individual users\" לפי מאמר המשאבים, שמציין שהמחיר משתנה לפי אזור, פלטפורמה, מסים ומבצעים. נפח האחסון בענן סותר בין המקורות: 100GB לפי מאמר העזרה (מרץ 2026), \"approximately 1024 GB\" לפי מאמר המשאבים (נובמבר 2026).",
     "source_ids": [
-     "s1"
+     "s1",
+     "s4"
     ]
    },
    {
     "name": "CapCut Pro",
+    "price": 179.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "כל התכונות בתשלום, כמו בחיוב החודשי",
+    "notes": "\"$179.99 per year\" לפי מאמר המשאבים. המחיר משתנה לפי אזור ופלטפורמה.",
+    "source_ids": [
+     "s1",
+     "s4"
+    ]
+   },
+   {
+    "name": "Team",
     "price": null,
-    "price_text": "המחיר לא אומת",
-    "price_short": "המחיר לא אומת",
+    "price_text": "\"Starts at around $24.99 per month\"",
+    "price_short": "מכ־24.99 דולר לחודש",
     "currency": "USD",
     "per": null,
-    "billing": "שנתי",
-    "price_period": null,
-    "includes": "כל התכונות בתשלום ו־100GB אחסון בענן",
-    "notes": "המחיר לא הופיע במאמר העזרה, ועמוד המחירים לא נטען.",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "עבודה משותפת בצוות",
+    "notes": "המחיר מנוסח כהערכה (\"around\") במאמר המשאבים.",
     "source_ids": [
-     "s1"
+     "s4"
     ]
    },
    {
     "name": "CapCut Standard",
-    "price": null,
-    "price_text": "המחיר לא אומת",
-    "price_short": "המחיר לא אומת",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
     "currency": "USD",
     "per": null,
     "billing": null,
-    "price_period": null,
-    "includes": null,
-    "notes": "מוזכרת בתנאי השימוש לארה\"ב כ\"CapCut Standard (where applicable)\" בלי פירוט.",
+    "price_period": "לחודש",
+    "includes": "עריכה בסיסית, פילטרים, מעברים ואפקטים חינמיים, טקסט ומדבקות, ספריית מוזיקה מוגבלת",
+    "notes": "לפי מאמר המשאבים, Standard היא הגרסה החינמית. כלי AI כמו כתוביות אוטומטיות ומעקב תנועה שמורים ל־Pro. מאז אוגוסט 2024 אין אחסון חינמי בענן.",
     "source_ids": [
-     "s2"
+     "s2",
+     "s4"
     ]
    }
   ],
-  "free_tier": null,
+  "free_tier": "CapCut Standard חינמית: עריכה בסיסית, פילטרים, מעברים ואפקטים חינמיים וספריית מוזיקה מוגבלת. כלי AI כמו כתוביות אוטומטיות שמורים ל־Pro, ואין אחסון חינמי בענן מאז אוגוסט 2024.",
   "trial": null,
-  "unverified_notes": "עמוד המחירים capcut.com/pricing לא נטען (פעם אחת בגלל מכסת הבקשות ופעם בשגיאת שרת). מאמר העזרה הרשמי מתאר תוכנית חודשית ושנתית של CapCut Pro עם 100GB אחסון, בלי מחירים. היקף התוכנית החינמית, סימן מים בייצוא חינמי, נקודות AI ומחירי Standard לא אומתו."
+  "unverified_notes": "עמוד המחירים capcut.com/pricing לא נטען (פעם אחת בגלל מכסת הבקשות ופעם בשגיאת שרת). המחירים נלקחו ממאמר משאבים רשמי מ־12 בנובמבר 2026, שמשתמש בסימן $ בלי קוד מטבע ומזהיר שהמחיר משתנה לפי אזור, פלטפורמה, מסים ומבצעים, ולכן האימות חלקי. מחיר Team מנוסח כהערכה. נפח האחסון ב־Pro סותר בין מאמר העזרה (100GB) למאמר המשאבים (כ־1024GB). סימן מים בגרסה החינמית לא הוזכר. מחיר מאמר העזרה החלופי capcut.com/help/how-much-does-capcut-pro-cost לא נקרא בגלל מכסת הבקשות."
  },
  "privacy": {
-  "text": "תנאי השימוש לארה\"ב (עודכנו ב־15 באפריל 2026) אינם מזכירים במפורש אימון מודלי בינה מלאכותית. הרישיון שהמשתמש נותן חל על הפעלה, פיתוח ואספקה של השירותים. מדיניות הפרטיות לא נקראה, ולכן השאלה אם התוכן, כולל פנים וקול, משמש לאימון לא אומתה.",
-  "training_on_user_data": null,
+  "text": "לפי מדיניות הפרטיות לארה\"ב (עודכנה ב־15 באפריל 2026), אחת המטרות של עיבוד המידע היא \"train, test, and improve technology, such as machine learning models and algorithms\". המדיניות לא אומרת במפורש אם הסרטונים, התמונות או הקול שהמשתמש מעלה משמשים לאימון, ולא מתארת אפשרות ביטול ייעודית לאימון. מידע על פנים וגוף שמשמש לאפקט נמחק אחרי שהאפקט הוחל. המדיניות לישראל לא נבדקה.",
+  "training_on_user_data": "המדיניות מציינת אימון מודלים כמטרת עיבוד, בלי לפרט אם תוכן המשתמש עצמו נכלל ובלי אפשרות ביטול ייעודית",
   "source_ids": [
+   "s6",
    "s2"
   ]
  },
@@ -156,17 +174,22 @@
  },
  "platforms": {
   "items": [
-   "אפליקציה לנייד",
-   "גרסת מחשב",
-   "גרסת דפדפן"
+   "אתר",
+   "Windows",
+   "Mac",
+   "iOS",
+   "Android"
   ],
   "source_ids": [
+   "s5",
    "s2"
   ]
  },
  "hebrew": {
-  "text": "לא אומת: העמודים הרשמיים שנקראו אינם עוסקים בשפות, ורשימת שפות רשמית לכתוביות לא נקראה.",
-  "source_ids": []
+  "text": "לא אומת: מאמר העזרה על זיהוי כתוביות לא מפרט שפות, ורשימת שפות רשמית לא נקראה.",
+  "source_ids": [
+   "s5"
+  ]
  },
  "company": {
   "name": "TikTok USDS Joint Venture LLC",
@@ -198,11 +221,29 @@
    "stale": false
   },
   {
-   "id": "s3",
-   "url": "https://www.capcut.com/pricing",
-   "title": "עמוד המחירים של CapCut (לא נטען)",
+   "id": "s4",
+   "url": "https://www.capcut.com/resource/capcut-standard-vs-pro",
+   "title": "CapCut: השוואה בין Standard ל־Pro (מאמר משאבים רשמי)",
    "official": true,
-   "published": null,
+   "published": "2026-11-12",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://www.capcut.com/help/how-to-recognise-subtitles",
+   "title": "מרכז העזרה של CapCut: זיהוי כתוביות",
+   "official": true,
+   "published": "2026-01-30",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s6",
+   "url": "https://capcut.com/clause/privacy-policy",
+   "title": "מדיניות הפרטיות של CapCut לארה\"ב (עודכנה ב־15 באפריל 2026)",
+   "official": true,
+   "published": "2026-04-15",
    "checked": "2026-11-18",
    "stale": false
   }
@@ -211,13 +252,13 @@
  "filters": {
   "new_notable": {
    "value": null,
-   "basis": "BASIS",
+   "basis": "הכלי מופיע ב־3 מתוך 6 סקירות עצמאיות, אבל תאריך גרסה אחרונה לא אומת. נכלל ככלי מוביל וותיק, במקום 17 ברשימת האתרים של a16z.",
    "launch_date": null,
    "launched_in_window": false,
    "latest_version": null,
    "latest_version_date": null,
    "latest_version_date_iso": null,
-   "independent_reviews": null,
+   "independent_reviews": 3,
    "evidence": "research/stage4/video-editing.md"
   },
   "hebrew": {
@@ -226,41 +267,40 @@
    "supported": null
   },
   "starting_price": {
-   "amount": null,
-   "currency": null,
-   "billing": null,
-   "plan": null,
+   "amount": 19.99,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "CapCut Pro",
    "verified": false,
-   "label": null,
-   "has_free_plan": null
+   "label": "מ־19.99 דולר לחודש",
+   "has_free_plan": true
   },
   "platforms": {
    "verified": [
-    "אפליקציות לנייד",
-    "אתר"
-   ],
-   "unverified": [
-    "Mac",
+    "אתר",
     "Windows",
+    "Mac",
     "iOS",
-    "Android"
-   ]
+    "Android",
+    "אפליקציות לנייד"
+   ],
+   "unverified": []
   },
   "tags": {
    "review_roundups": {
-    "count": 0,
+    "count": 3,
     "of": 6,
     "value": false,
     "evidence": "research/stage4/video-editing.md"
    },
    "popular": {
-    "value": false,
-    "basis": null,
+    "value": true,
+    "basis": "a16z Top 100 Gen AI Consumer Apps, מהדורה 6 (מרץ 2026, נתוני Similarweb ו־Sensor Tower לינואר 2026): מקום 17 ברשימת האתרים ומקום 2 ברשימת האפליקציות לנייד.",
     "evidence": "research/stage4/video-editing.md"
    },
    "free_renewing": {
     "value": null,
-    "basis": null,
+    "basis": "הגרסה החינמית אינה מבוססת נקודות לפי המקור, ולכן התג אינו רלוונטי או לא אומת.",
     "evidence": "research/stage4/video-editing.md"
    }
   }

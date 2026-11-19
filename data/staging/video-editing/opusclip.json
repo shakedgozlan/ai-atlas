@@ -257,14 +257,14 @@
  "checked_date": "2026-11-18",
  "filters": {
   "new_notable": {
-   "value": null,
-   "basis": "BASIS",
+   "value": true,
+   "basis": "OpusClip 4.0 פורסמה ב־2 בנובמבר 2026, והכלי מופיע ב־4 מתוך 6 סקירות עצמאיות.",
    "launch_date": null,
    "launched_in_window": false,
    "latest_version": "OpusClip 4.0",
    "latest_version_date": "November 2, 2026",
    "latest_version_date_iso": "2026-11-02",
-   "independent_reviews": null,
+   "independent_reviews": 4,
    "evidence": "research/stage4/video-editing.md"
   },
   "hebrew": {
@@ -291,7 +291,7 @@
   },
   "tags": {
    "review_roundups": {
-    "count": 0,
+    "count": 4,
     "of": 6,
     "value": false,
     "evidence": "research/stage4/video-editing.md"
