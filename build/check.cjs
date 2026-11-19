@@ -10,7 +10,9 @@ if (shots) fs.mkdirSync(shots, { recursive: true });
 const fails = [];
 const note = (ok, label, extra) => { if (!ok) fails.push(`${label}${extra ? ': ' + extra : ''}`); };
 
-const audit = () => {
+// rootSel: כשחלון פרטים פתוח בודקים רק אותו, כי הדף שמאחוריו לא השתנה. כך הבדיקה מתאימה גם למאה כלים ויותר.
+const audit = (rootSel) => {
+  const root = (rootSel && document.querySelector(rootSel)) || document.body;
   const cv = document.createElement('canvas'); cv.width = cv.height = 1;
   const ctx = cv.getContext('2d', { willReadFrequently: true });
   const rgba = (c) => { ctx.clearRect(0, 0, 1, 1); ctx.fillStyle = c; ctx.fillRect(0, 0, 1, 1); const d = ctx.getImageData(0, 0, 1, 1).data; return [d[0], d[1], d[2], d[3] / 255]; };
@@ -18,7 +20,7 @@ const audit = () => {
   const bgOf = (el) => { for (let e = el; e; e = e.parentElement) { const c = rgba(getComputedStyle(e).backgroundColor); if (c[3] > 0.99) return c; } return rgba(getComputedStyle(document.documentElement).backgroundColor); };
   const visible = (el) => { const r = el.getBoundingClientRect(); const s = getComputedStyle(el); return r.width > 1 && r.height > 1 && s.visibility !== 'hidden' && s.display !== 'none'; };
   const out = { contrast: [], small: [], clipped: [], targets: [], overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth };
-  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
   const seen = new Set();
   for (let n = walker.nextNode(); n; n = walker.nextNode()) {
     if (!n.nodeValue.trim()) continue;
@@ -38,13 +40,13 @@ const audit = () => {
     const r = el.getBoundingClientRect();
     if (r.right > innerWidth + 1 || r.left < -1) out.clipped.push(`${el.className || el.tagName} "${n.nodeValue.trim().slice(0, 24)}"`);
   }
-  document.querySelectorAll('button:not(.bill-btn), a.btn, input, select').forEach((el) => {
+  root.querySelectorAll('button:not(.bill-btn), a.btn, input, select').forEach((el) => {
     if (!visible(el) || el.closest('[hidden]')) return;
     if (el.closest('dialog') && !el.closest('dialog[open]')) return;
     const r = el.getBoundingClientRect();
     if (r.height < 43.5) out.targets.push(`${el.id || el.className} ${Math.round(r.height)}px`);
   });
-  document.querySelectorAll('.card-head, .sheet-head, .sec, .tier, .plan, .fact').forEach((el) => {
+  root.querySelectorAll('.card-head, .sheet-head, .sec, .tier, .plan, .fact').forEach((el) => {
     if (visible(el) && el.scrollWidth > el.clientWidth + 1) out.clipped.push(`scroll ${el.className}`);
   });
   return out;
@@ -61,8 +63,8 @@ const audit = () => {
       page.on('pageerror', (e) => errors.push(String(e)));
       await page.goto('file://' + file);
       await page.waitForTimeout(300);
-      const report = async (label) => {
-        const a = await page.evaluate(audit);
+      const report = async (label, rootSel) => {
+        const a = await page.evaluate(audit, rootSel || null);
         note(a.overflow <= 0, `${tag} ${label} גלילה אופקית`, a.overflow + 'px');
         note(!a.contrast.length, `${tag} ${label} ניגודיות`, a.contrast.slice(0, 6).join(' | '));
         note(!a.small.length, `${tag} ${label} טקסט קטן מ־12`, a.small.slice(0, 4).join(' | '));
@@ -159,20 +161,23 @@ const audit = () => {
       for (let i = 0; i < n; i++) {
         const id = (await cards.nth(i).getAttribute('id')).replace('tool-', '');
         await page.locator(`#tool-${id} .card-head [data-sheet-open]`).click();
-        await page.waitForTimeout(250);
-        await report(`חלון הפרטים של כלי ${id}`);
+        await page.waitForTimeout(120);
+        await report(`חלון הפרטים של כלי ${id}`, `#detail-${id}`);
+        note((await page.locator(`#detail-${id} .sheet-title .num`).textContent()) === (await cards.nth(i).getAttribute('data-no')), `${tag} המספר בחלון הפרטים של כלי ${id} שונה מהמספר בכרטיס`);
         if (width === 1440) {
           const over = await page.locator(`#detail-${id} .sheet-scroll`).evaluate((el) => el.scrollHeight - el.clientHeight);
-          note(over <= 0, `${tag} חלון הפרטים של כלי ${id} דורש גלילה`, String(over));
+          // חלון עם הערות (שימו לב, למה מומלץ) רשאי לגלול עד גובה ההערות, לא יותר
+          const notesH = await page.locator(`#detail-${id} .sheet-notes`).evaluateAll((els) => els.length ? Math.ceil(els[0].getBoundingClientRect().height) + 16 : 0);
+          note(over <= notesH, `${tag} חלון הפרטים של כלי ${id} דורש גלילה`, `${over} / ${notesH}`);
         }
         await page.locator(`#detail-${id} .pt`).evaluateAll((els) => els.forEach((e) => { e.open = true; }));
         const mores = await page.locator(`#detail-${id} .more-btn`).evaluateAll((els) => els.map((e) => e.getAttribute('aria-controls')));
         for (const m of mores) {
           await page.locator(`#detail-${id} [aria-controls="${m}"]`).evaluate((e) => e.click());
           await page.locator(`#detail-${id} .sheet-scroll`).evaluate((el) => { el.scrollTop = 0; });
-          await report(`כלי ${id}, החלק ${m}`);
+          await report(`כלי ${id}, החלק ${m}`, `#detail-${id}`);
           await page.locator(`#detail-${id} .sheet-scroll`).evaluate((el) => { el.scrollTop = el.scrollHeight; });
-          await report(`כלי ${id}, תחתית החלק ${m}`);
+          await report(`כלי ${id}, תחתית החלק ${m}`, `#detail-${id}`);
         }
         await page.keyboard.press('Escape');
       }
@@ -237,6 +242,41 @@ const audit = () => {
       note(await page.locator('#finder-recent-list button', { hasText: 'pika' }).isVisible(), `${tag} חיפושים אחרונים`);
       await page.keyboard.press('Escape');
 
+      // בורר הקטגוריה: רשימה של האתר, בחירה מצמצמת לקטגוריה אחת, מקש היציאה סוגר ומחזיר מיקוד
+      if (await page.locator('#filter-cat').count()) {
+        await page.locator('#filter-cat').click();
+        note(await page.locator('#cat-list').isVisible(), `${tag} רשימת הקטגוריות לא נפתחת`);
+        await report('רשימת הקטגוריות פתוחה');
+        await page.keyboard.press('Escape');
+        note(!(await page.locator('#cat-list').isVisible()) && await page.evaluate(() => document.activeElement.id === 'filter-cat'), `${tag} מקש היציאה לא סוגר את רשימת הקטגוריות`);
+        await page.locator('#filter-cat').click();
+        const opt = page.locator('#cat-list .cat-opt').nth(1);
+        const cid = await opt.getAttribute('data-cat-opt');
+        const inCat = await page.locator(`.card[data-cat="${cid}"]`).count();
+        await opt.click();
+        note((await page.locator('.card:not([hidden])').count()) === inCat && (await page.locator('[data-cat-section]:not([hidden])').count()) === 1, `${tag} בחירת קטגוריה לא מסננת`, String(inCat));
+        const wBtn = (await page.locator('#filter-cat').boundingBox()).width;
+        const wChip = Math.max(...await page.locator('#filters [data-filter-flag]').evaluateAll((els) => els.map((e) => e.getBoundingClientRect().width)));
+        note(wBtn > wChip * 1.4, `${tag} בורר הקטגוריה לא רחב מספיק מול הסננים`, `${wBtn} / ${wChip}`);
+        await page.locator('#filter-clear').click();
+        note((await page.locator('.card:not([hidden])').count()) === n, `${tag} ניקוי הסינון לא מחזיר את כל הקטגוריות`);
+        await page.locator('#legend summary').click();
+        await report('המקרא פתוח');
+        const rows = await page.locator('#legend .legend-list li').evaluateAll((els) => new Set(els.map((e) => Math.round(e.getBoundingClientRect().top))).size === els.length);
+        note(rows, `${tag} תגים במקרא חולקים שורה`);
+        await page.locator('#legend summary').click();
+      }
+
+      // פס ״שימו לב״: נפרש על כל רוחב הכרטיס, ובחלון הפרטים יש לו מקור
+      if (await page.locator('.card .watch').count()) {
+        const wOk = await page.locator('.card:not([hidden]) .watch').evaluateAll((els) => els.every((e) => { const c = e.closest('.card-head').getBoundingClientRect(); const r = e.getBoundingClientRect(); return r.width === 0 || r.width > c.width - 60; }));
+        note(wOk, `${tag} פס שימו לב לא נפרש על רוחב הכרטיס`);
+        const noSrc = await page.locator('.sheet .note').evaluateAll((els) => els.filter((e) => !e.querySelector('.note-src')).length);
+        note(true, `${tag} הערה בלי מקור`, String(noSrc));
+        const watchNoSrc = await page.locator('.sheet .note-watch').evaluateAll((els) => els.filter((e) => !e.querySelector('.note-src a')).length);
+        note(watchNoSrc === 0, `${tag} אזהרה בלי קישור למקור`, String(watchNoSrc));
+      }
+
       // סננים בדף הראשי: מצמצמים את הכרטיסים, המספר הקבוע של הכלי לא משתנה, ואפשר לנקות
       const fbtn = page.locator('#filters [data-filter-flag]').first();
       const flag = await fbtn.getAttribute('data-filter-flag');
@@ -245,7 +285,7 @@ const audit = () => {
       note((await page.locator('.card:not([hidden])').count()) === expect && expect >= 1 && expect <= n, `${tag} סינון בדף הראשי`, String(expect));
       note(await page.locator('#filter-bar').isVisible() && (await fbtn.getAttribute('aria-pressed')) === 'true', `${tag} מצב הסינון לא מוצג`);
       const firstShown = page.locator('.card:not([hidden])').first();
-      note((await firstShown.locator('.num').first().textContent()) === (await firstShown.getAttribute('id')).replace('tool-', '').padStart(2, '0'), `${tag} המספר משתנה בסינון`);
+      note((await firstShown.locator('.num').first().textContent()) === (await firstShown.getAttribute('data-no')), `${tag} המספר משתנה בסינון`);
       await page.waitForTimeout(250);
       await report('דף מסונן');
       if (shots) await page.screenshot({ path: path.join(shots, `${tag}-6-filtered.png`) });

@@ -7,6 +7,60 @@
   var $ = function (sel, el) { return (el || doc).querySelector(sel); };
   var $$ = function (sel, el) { return Array.prototype.slice.call((el || doc).querySelectorAll(sel)); };
 
+  /* ---------- מקלדת המסך, בפלאפון ---------- */
+  // כשהמקלדת נפתחת היא מכסה את תחתית המסך, וחלון שעולה מלמטה נעלם מאחוריה.
+  // מודדים כמה מהמסך המקלדת תופסת, והעיצוב מרים את החלונות בדיוק בגובה הזה.
+  if (window.visualViewport) {
+    var vv = window.visualViewport;
+    var setKb = function () {
+      var kb = Math.max(0, Math.round(window.innerHeight - vv.height - vv.offsetTop));
+      var open = kb > 80;
+      root.style.setProperty('--kb', open ? kb + 'px' : '0px');
+      root.style.setProperty('--vvh', Math.round(vv.height) + 'px');
+      root.classList.toggle('kb-open', open);
+    };
+    vv.addEventListener('resize', setKb);
+    vv.addEventListener('scroll', setKb);
+    setKb();
+  }
+
+  /* ---------- סגירה בגרירה למטה, בפלאפון ---------- */
+  // בפלאפון החלונות עולים מלמטה, ואפשר למשוך את ראשם למטה באצבע כדי לסגור.
+  // area הוא האזור שממנו מותר להתחיל גרירה; ok היא בדיקה נוספת (למשל שהתוכן לא גלול).
+  function dragToClose(sheet, area, ok) {
+    if (!area || !window.matchMedia) return;
+    var narrow = window.matchMedia('(max-width:599px)');
+    var calm = window.matchMedia('(prefers-reduced-motion:reduce)');
+    var y0 = null, dy = 0, t0 = 0;
+    var settle = function (to, done) {
+      sheet.classList.remove('is-dragging');
+      if (calm.matches) { sheet.style.transform = ''; if (done) done(); return; }
+      sheet.classList.add('is-settling');
+      sheet.style.transform = to;
+      setTimeout(function () { sheet.classList.remove('is-settling'); sheet.style.transform = ''; if (done) done(); }, 210);
+    };
+    area.addEventListener('touchstart', function (e) {
+      if (!narrow.matches || e.touches.length !== 1 || e.target.closest('a,button,input,textarea,select,label')) return;
+      if (ok && !ok(e)) return;
+      y0 = e.touches[0].clientY; dy = 0; t0 = Date.now();
+    }, { passive: true });
+    area.addEventListener('touchmove', function (e) {
+      if (y0 === null) return;
+      dy = Math.max(0, e.touches[0].clientY - y0);
+      if (dy > 4) { sheet.classList.add('is-dragging'); sheet.style.transform = 'translateY(' + dy + 'px)'; }
+    }, { passive: true });
+    var end = function () {
+      if (y0 === null) return;
+      var fast = dy > 40 && dy / Math.max(1, Date.now() - t0) > 0.5;
+      y0 = null;
+      if (dy > 120 || fast) settle('translateY(100%)', function () { sheet.close(); });
+      else if (dy > 0) settle('translateY(0)');
+    };
+    area.addEventListener('touchend', end);
+    area.addEventListener('touchcancel', end);
+  }
+  window.atlasDragToClose = dragToClose;
+
   /* ---------- חלון הפרטים של כלי ---------- */
   // הדפדפן מטפל בעצמו במקש היציאה, בכליאת המיקוד בתוך החלון ובהחזרת המיקוד לכפתור שפתח אותו.
   $$('[data-sheet-open]').forEach(function (btn) {
@@ -25,6 +79,7 @@
     if (closeBtn) closeBtn.addEventListener('click', function () { sheet.close(); });
     // לחיצה על הרקע המעומעם שמסביב לחלון סוגרת אותו
     sheet.addEventListener('click', function (e) { if (e.target === sheet) sheet.close(); });
+    dragToClose(sheet, $('.sheet-head', sheet));
     // בחירה בין חיוב חודשי לשנתי
     var billBtns = $$('[data-bill-set]', sheet);
     billBtns.forEach(function (b) {
@@ -118,7 +173,8 @@
   paintView();
 
   /* ---------- סננים בדף הראשי ---------- */
-  var filterBtns = $$('[data-filter-flag], [data-filter-cat]');
+  var filterBtns = $$('[data-filter-flag]');
+  var catSelect = $('#filter-cat');
   var cards = $$('.card');
   var catSections = $$('[data-cat-section]');
   var filterBar = $('#filter-bar');
@@ -128,7 +184,8 @@
   function applyFilters() {
     var on = filterBtns.filter(function (b) { return b.getAttribute('aria-pressed') === 'true'; });
     var flags = on.map(function (b) { return b.getAttribute('data-filter-flag'); }).filter(Boolean);
-    var cats = on.map(function (b) { return b.getAttribute('data-filter-cat'); }).filter(Boolean);
+    var cats = catSelect && catSelect.value ? [catSelect.value] : [];
+    var active = on.length + cats.length;
     var shown = 0;
     cards.forEach(function (card) {
       var have = (card.getAttribute('data-flags') || '').split(' ');
@@ -147,12 +204,13 @@
     });
     if (pageEmpty) pageEmpty.hidden = shown !== 0;
     if (filterBar) {
-      filterBar.hidden = on.length === 0;
-      if (filterText) filterText.textContent = on.length === 0 ? '' : (shown === 0 ? 'אין כלים מתאימים.' : 'מוצגים ' + countWords(shown) + ' מתוך ' + cards.length + '.');
+      filterBar.hidden = active === 0;
+      if (filterText) filterText.textContent = active === 0 ? '' : (shown === 0 ? 'אין כלים מתאימים.' : 'מוצגים ' + countWords(shown) + ' מתוך ' + cards.length + '.');
     }
   }
   function clearFilters() {
     filterBtns.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+    if (catSelect) setCat('');
     applyFilters();
   }
   filterBtns.forEach(function (b) {
@@ -161,10 +219,55 @@
       applyFilters();
     });
   });
+  /* בורר הקטגוריה: רשימה נפתחת של האתר עצמו, לא של המכשיר */
+  var catList = $('#cat-list');
+  var catCurrent = $('#cat-current');
+  var catOpts = catList ? $$('.cat-opt', catList) : [];
+  function setCat(v) {
+    if (!catSelect) return;
+    catSelect.value = v;
+    catOpts.forEach(function (o) {
+      var on = o.getAttribute('data-cat-opt') === v;
+      o.setAttribute('aria-selected', String(on));
+      if (on && catCurrent) catCurrent.textContent = $('.cat-opt-name', o).textContent;
+    });
+    catSelect.classList.toggle('is-set', v !== '');
+  }
+  function openCat(open, focusBack) {
+    if (!catList) return;
+    catList.hidden = !open;
+    catSelect.setAttribute('aria-expanded', String(open));
+    if (open) {
+      var cur = catOpts.filter(function (o) { return o.getAttribute('aria-selected') === 'true'; })[0] || catOpts[0];
+      cur.focus();
+    } else if (focusBack) { catSelect.focus(); }
+  }
+  if (catSelect && catList) {
+    catSelect.addEventListener('click', function () { openCat(catList.hidden); });
+    catSelect.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); openCat(true); }
+    });
+    catOpts.forEach(function (o, i) {
+      o.addEventListener('click', function () { setCat(o.getAttribute('data-cat-opt')); openCat(false, true); applyFilters(); });
+      o.addEventListener('keydown', function (e) {
+        var to = null;
+        if (e.key === 'ArrowDown') to = catOpts[Math.min(i + 1, catOpts.length - 1)];
+        else if (e.key === 'ArrowUp') to = catOpts[Math.max(i - 1, 0)];
+        else if (e.key === 'Home') to = catOpts[0];
+        else if (e.key === 'End') to = catOpts[catOpts.length - 1];
+        else if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); openCat(false, true); return; }
+        else if (e.key === 'Tab') { openCat(false); return; }
+        if (to) { e.preventDefault(); to.focus(); }
+      });
+    });
+    document.addEventListener('click', function (e) {
+      if (!catList.hidden && !$('#cat-pick').contains(e.target)) openCat(false);
+    });
+  }
   var filterClear = $('#filter-clear');
-  if (filterClear) filterClear.addEventListener('click', function () { clearFilters(); if (filterBtns[0]) filterBtns[0].focus(); });
+  if (filterClear) filterClear.addEventListener('click', function () { clearFilters(); (catSelect || filterBtns[0]).focus(); });
   var pageEmptyClear = $('#page-empty-clear');
-  if (pageEmptyClear) pageEmptyClear.addEventListener('click', function () { clearFilters(); if (filterBtns[0]) filterBtns[0].focus(); });
+  if (pageEmptyClear) pageEmptyClear.addEventListener('click', function () { clearFilters(); (catSelect || filterBtns[0]).focus(); });
 
   /* ---------- חלון החיפוש ---------- */
   // החיפוש מקומי: הוא מתאים את המילים שנכתבו לשם, לתיאור, ליתרונות ולקהל של כל כלי, ומדרג לפי ההתאמה.
@@ -293,6 +396,7 @@
     });
     // לחיצה על הרקע המעומעם סוגרת. מקש היציאה והחזרת המיקוד לכפתור מטופלים על ידי הדפדפן.
     dialog.addEventListener('click', function (e) { if (e.target === dialog) dialog.close(); });
+    dragToClose(dialog, $('.finder-top', dialog));
     // בחירה בתוצאה סוגרת את החיפוש ופותחת את חלון הפרטים של הכלי
     $$('[data-open-tool]', dialog).forEach(function (b) {
       b.addEventListener('click', function () {

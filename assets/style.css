@@ -193,11 +193,29 @@ html:not(.js) .bar-actions{display:none}
 .filters{display:grid;gap:12px;margin-bottom:clamp(20px,3vw,32px)}
 html:not(.js) .views{display:none}
 .filters-h{font-size:var(--t-label);font-weight:500;color:var(--ink-faint)}
-.filters-row{display:flex;flex-wrap:wrap;gap:8px 24px}
-.filters-set{display:flex;flex-wrap:wrap;gap:8px}
+.filters-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 8px}
+.filters-set{display:contents}
 .filters .short{background:var(--surface)}
 .filters .short[aria-pressed="true"]{background:var(--brand)}
 html:not(.js) .filters{display:none}
+/* בורר הקטגוריה: חלק משורת הסינון. ברירת המחדל היא כל הקטגוריות.
+   הבורר ממלא את מה שנשאר מהשורה, כך שהוא תמיד רחב בהרבה מהסננים הקטנים. הרשימה שנפתחת היא של האתר. */
+.cat-pick{position:relative;flex:1 1 340px;min-width:min(100%,340px)}
+.cat-btn{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:44px;padding:8px 16px;border:1.5px solid var(--line-strong);border-radius:var(--r-ctl);background:var(--surface);color:var(--ink);font-size:var(--t-body);font-weight:500;line-height:1.3;text-align:start;transition:border-color .12s ease,color .12s ease}
+.cat-btn:hover,.cat-btn[aria-expanded="true"]{border-color:var(--brand)}
+.cat-btn.is-set{border-color:var(--brand);color:var(--brand)}
+.cat-btn::after{content:"";flex:none;width:8px;height:8px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .12s ease}
+.cat-btn[aria-expanded="true"]::after{transform:translateY(2px) rotate(-135deg)}
+.cat-current{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cat-list{position:absolute;z-index:30;inset-inline:0;top:calc(100% + 8px);display:grid;max-height:min(60vh,520px);overflow-y:auto;overscroll-behavior:contain;padding:8px;border:1.5px solid var(--line-strong);border-radius:var(--r-ctl);background:var(--surface);box-shadow:0 12px 32px rgb(0 0 0 / .14)}
+.cat-list[hidden]{display:none}
+.cat-opt{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:16px;min-height:44px;padding:10px 12px;border:0;border-radius:8px;background:transparent;color:var(--ink);font-size:var(--t-body);line-height:1.4;text-align:start}
+.cat-opt+.cat-opt{margin-top:2px}
+.cat-opt:hover,.cat-opt:focus-visible{background:var(--inner)}
+.cat-opt-n{font-size:var(--t-label);color:var(--ink-soft);white-space:nowrap;font-variant-numeric:tabular-nums}
+.cat-opt[aria-selected="true"]{background:var(--brand-tint);color:var(--brand);font-weight:500}
+.cat-opt[aria-selected="true"] .cat-opt-n{color:var(--brand)}
+
 .filter-bar{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;font-size:var(--t-label);font-weight:500;color:var(--ink-soft)}
 .filter-bar .btn{min-height:44px}
 .empty{padding:clamp(32px,6vw,64px) 0;display:grid;gap:12px;justify-items:start}
@@ -248,12 +266,50 @@ html:not(.js) .filters{display:none}
 /* תגי הכרטיס (בקשת שקד): בצד שמאל של השורה העליונה, לכל תג צבע לפי המשמעות. הצבעים האלה שמורים לתגים בלבד. */
 .card-top:has(.card-tags){flex-wrap:nowrap;align-items:flex-start}
 .card-tags{flex:1;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px;margin:0;padding:0;list-style:none;min-width:0}
-.sheet-tags{justify-content:flex-start;margin-top:8px}
-.legend{display:grid;gap:12px;margin-bottom:clamp(20px,3vw,32px)}
-.legend-list{display:flex;flex-wrap:wrap;gap:10px 28px;margin:0;padding:0;list-style:none}
-.legend-list li{display:flex;align-items:center;gap:8px;min-width:0}
-.legend-text{font-size:var(--t-label);color:var(--ink-soft)}
-.tag-reviews{color:var(--new);border-color:currentColor;background:var(--new-tint)}
+.sheet-tags{justify-content:flex-start;margin-top:16px}
+.legend{margin-bottom:clamp(20px,3vw,32px)}
+.legend-btn{list-style:none;cursor:pointer;width:fit-content;background:var(--surface)}
+.legend-btn::-webkit-details-marker{display:none}
+.legend-btn::after{content:"";width:8px;height:8px;margin-inline-start:4px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .12s ease}
+.legend[open] .legend-btn::after{transform:translateY(2px) rotate(-135deg)}
+/* שתי עמודות זו לצד זו במסך רחב: התגים מימין, דרגות ״שימו לב״ משמאל, כדי שהמקרא לא יתארך למטה */
+.legend-cols{display:grid;grid-template-columns:minmax(0,1fr);gap:24px clamp(32px,5vw,72px);margin-top:16px}
+@media (min-width:900px){.legend-cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.legend-list{display:grid;margin:10px 0 0;padding:0;list-style:none;max-width:560px;border-top:1px solid var(--line)}
+.legend-list li{display:grid;grid-template-columns:128px minmax(0,1fr);align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.legend-list .verify{justify-self:start}
+.legend-text{font-size:var(--t-body);line-height:1.5;color:var(--ink-soft)}
+@media (max-width:420px){.legend-list li{grid-template-columns:minmax(0,1fr);gap:8px;justify-items:start}}
+.tag-recommended{color:var(--brand);border-color:currentColor;background:var(--brand-tint)}
+/* פס ״שים לב״: אזהרה אחת לכל רוחב הכרטיס, בגוון רך ולא באדום, כדי לא לגנוב את תשומת הלב משם הכלי */
+.card-head{--cp:20px}
+.watch{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;margin:0;color:var(--ink);font-size:var(--t-label);line-height:1.5}
+/* קופסה בתוך הכרטיס, עם ריווח מהקצוות (בקשת שקד). רדיוס קטן מזה של הכרטיס, כדי שהפינות ייראו מתואמות */
+.watch{margin:0 0 10px;padding:10px 14px;border-radius:8px}
+/* כתום אחד בשלוש עוצמות: ככל שהאזהרה מהותית יותר, הרקע מלא יותר */
+.watch-3,.note-w3{background:var(--new-tint)}
+.watch-2,.note-w2{background:color-mix(in oklab,var(--new-tint) 58%,var(--surface))}
+.watch-1,.note-w1{background:color-mix(in oklab,var(--new-tint) 26%,var(--surface))}
+.watch-1,.watch-2{box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--new) 14%,transparent)}
+.watch-bars{display:inline-flex;align-items:flex-end;gap:2px;margin-inline-start:6px;vertical-align:baseline}
+.watch-bars i{width:3px;border-radius:1px;background:color-mix(in oklab,var(--new) 26%,transparent)}
+.watch-bars i:nth-child(1){height:5px}.watch-bars i:nth-child(2){height:8px}.watch-bars i:nth-child(3){height:11px}
+.watch-bars i.on{background:var(--new)}
+.legend-h{margin:0;font-size:var(--t-label);font-weight:700;color:var(--ink)}
+.legend-h+.legend-list{margin-top:10px}
+.watch-sample{margin:0;padding:4px 10px;justify-self:start}
+.watch-k{font-weight:700;color:var(--new);white-space:nowrap}
+/* בחלון הפרטים: האזהרה והנימוק ל״מומלץ״, כל אחד עם המקורות שלו */
+.sheet-notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:10px;margin-bottom:16px}
+.note{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;padding:10px 14px;border-radius:12px;min-width:0}
+.note-rec{background:var(--brand-tint)}
+.note-h{font-size:var(--t-label);font-weight:700;margin:0;white-space:nowrap}
+.note-watch .note-h{color:var(--new)}
+.note-rec .note-h{color:var(--brand)}
+.note-t{margin:0;line-height:1.5;flex:1 1 14em;min-width:0}
+.note-src{flex-basis:100%;margin:2px 0 0;font-size:var(--t-label);line-height:1.6;color:var(--ink)}
+.note-src a{color:inherit;overflow-wrap:anywhere}
+.watch-t{min-width:0;flex:1 1 12em}
 .tag-popular{color:var(--hot);border-color:currentColor;background:var(--hot-tint)}
 .tag-low{color:var(--low);border-color:currentColor;background:var(--low-tint)}
 .tag-free{color:var(--free);border-color:currentColor;background:var(--free-tint)}
@@ -267,6 +323,9 @@ html:not(.js) .filters{display:none}
   .card:hover .card-head{border-color:var(--brand)}
 }
 .btn-site{font-weight:500;padding-inline:20px}
+/* בכרטיס: ״לאתר הרשמי״ הוא לחצן סמל, ולידו (משמאל) לחצני ההצבעה כשהם פעילים (בקשת שקד, 19.11.2026) */
+.card-quick{display:flex;align-items:center;gap:24px}
+.card-actions .btn-ico{width:44px;padding:0;flex:none}
 
 /* ---------- תצוגות האינדקס והגלריה ---------- */
 .mini{display:none;position:relative;min-width:0}
@@ -285,21 +344,23 @@ html:not(.js) .filters{display:none}
 /* אינדקס: שורה לכל כלי. השם הוא הדבר הגדול והמחיר תמיד באותה עמודה. */
 :root[data-view="index"] .cards{grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
 :root[data-view="index"] .card{margin-bottom:0}
-:root[data-view="index"] .mini{display:grid;grid-template-columns:3rem 32px minmax(9rem,17rem) minmax(0,1fr) 12.5rem 2rem;align-items:center;column-gap:20px;padding:22px 8px;border-bottom:1px solid var(--line);transition:background-color .12s ease}
+:root[data-view="index"] .mini{display:grid;grid-template-columns:3rem 32px minmax(9rem,17rem) minmax(0,1fr) 12.5rem;align-items:center;column-gap:20px;padding:22px 8px;border-bottom:1px solid var(--line);transition:background-color .12s ease}
 :root[data-view="index"] .mini-num{font-size:1.5rem}
 :root[data-view="index"] .mini-logo{width:32px}
+:root[data-view="index"] .mini-open .ico{display:none}
 :root[data-view="index"] .mini-name{font-size:clamp(1.5rem,1.2rem + 1.2vw,2.125rem)}
 @media (hover:hover){
   :root[data-view="index"] .card:hover .mini{background:var(--surface)}
   :root[data-view="index"] .card:hover .mini-num,:root[data-view="index"] .card:hover .mini-name,:root[data-view="index"] .card:hover .mini-open{color:var(--brand)}
 }
 @media (max-width:859px){
-  :root[data-view="index"] .mini{grid-template-columns:2.4rem minmax(0,1fr) 28px;gap:4px 12px;padding:18px 4px}
+  :root[data-view="index"] .mini{grid-template-columns:2.2rem 28px minmax(0,1fr);gap:2px 12px;padding:20px 4px}
   :root[data-view="index"] .mini-num{font-size:1.125rem;grid-column:1;grid-row:1}
-  :root[data-view="index"] .mini-name{grid-column:2;grid-row:1}
-  :root[data-view="index"] .mini-logo{grid-column:3;grid-row:1;width:28px}
-  :root[data-view="index"] .mini-role,:root[data-view="index"] .mini-price{grid-column:2}
-  :root[data-view="index"] .mini-open .ico{display:none}
+  :root[data-view="index"] .mini-logo{grid-column:2;grid-row:1;width:28px}
+  :root[data-view="index"] .mini-name{grid-column:3;grid-row:1}
+  :root[data-view="index"] .mini-role,:root[data-view="index"] .mini-price{grid-column:3}
+  :root[data-view="index"] .mini-role{line-height:1.45}
+  :root[data-view="index"] .mini-price{margin-top:12px}
 }
 
 /* גלריה: אריח לכל כלי, עם סמל גדול, שם ומחיר */
@@ -333,18 +394,32 @@ html:has(.sheet[open]){overflow:hidden}
 .sheet-head .logo img{width:100%}
 .sheet-id{flex:1;min-width:0}
 .sheet-title{display:flex;align-items:baseline;gap:10px;font-size:clamp(1.375rem,1.2rem + 0.8vw,1.75rem);font-weight:700;line-height:1.15;letter-spacing:-0.02em;overflow-wrap:anywhere}
-.sheet-title:focus-visible{outline-offset:4px}
-.sheet-title .num{font-size:var(--t-label);letter-spacing:0}
-.sheet-role{font-size:var(--t-sheet);line-height:1.4;color:var(--ink-soft);overflow-wrap:anywhere}
+.sheet-title:focus,.sheet-title:focus-visible{outline:none}
+.sheet-title .num{font-size:var(--t-label);letter-spacing:0;flex:none;white-space:nowrap;overflow-wrap:normal}
+.sheet-role{margin-top:3px;font-size:var(--t-sheet);line-height:1.4;color:var(--ink-soft);overflow-wrap:anywhere}
 .sheet-former{color:var(--ink-faint)}
 .sheet-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
 .sheet-scroll:focus{outline:none}
-.sheet-body{--t-sheet:0.9375rem;display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(12px,min(2.6vw,1.8vh),32px);padding:clamp(16px,min(2.6vw,3vh),32px) var(--pad) clamp(20px,3.6vh,56px);font-size:var(--t-sheet);line-height:1.55;color:var(--ink-soft)}
+.sheet-body{--t-sheet:0.9375rem;display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(18px,min(3vw,2.8vh),36px);padding:clamp(16px,min(2.6vw,3vh),32px) var(--pad) clamp(20px,3.6vh,56px);font-size:var(--t-sheet);line-height:1.55;color:var(--ink-soft)}
 .sheet-head{--t-sheet:0.9375rem}
+/* בראש חלון הפרטים שני לחצני אייקון בלבד: קישור חיצוני לאתר הרשמי, ו־X לסגירה. השם נשאר לקורא מסך ובריחוף */
+.sheet-head .btn-close,.sheet-head .btn-site{padding-inline:0;width:44px;min-height:44px;flex:none;justify-content:center}
+/* שני הלחצנים צמודים זה לזה, כדי שייקראו כזוג אחד */
+.sheet-head .btn-site+.btn-close{margin-inline-start:calc(6px - clamp(12px,2vw,20px))}
+.sheet-head .close-t,.sheet-head .site-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .sheet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(12px,min(2.6vw,1.8vh),32px) clamp(24px,3.4vw,48px);align-items:start}
-.sec{min-width:0;overflow-wrap:break-word;padding-top:12px;border-top:1px solid var(--line)}
+.sec{min-width:0;overflow-wrap:break-word}
 .sec-h{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:24px;margin-bottom:8px}
-.sec h4{display:flex;align-items:center;gap:6px;font-size:var(--t-label);font-weight:500;line-height:1.3;color:var(--ink-faint)}
+.sec h4{display:flex;align-items:center;gap:6px;font-size:var(--t-label);font-weight:700;line-height:1.3;color:var(--ink)}
+.sec h4 .ico{color:var(--ink-faint)}
+.sec-n{font-weight:500;color:var(--ink-faint);font-variant-numeric:tabular-nums}
+.sec-h{flex-wrap:wrap}
+.bill-note{margin:0;font-size:var(--t-label);color:var(--ink-soft)}
+/* סימן קטן לפני כל נקודה, כדי שהעין תספור יתרונות ומגבלות בלי לקרוא */
+.sec-pro .pt summary::before{content:"+" / ""}
+.sec-con .pt summary::before{content:"\2212" / ""}
+.pt summary::before{flex:none;width:1em;font-weight:700;color:var(--ink-faint);text-align:center}
+.sheet-tags-body{display:none}
 .sec h4 .ico{width:16px;height:16px}
 .sec>p+p{margin-top:6px}
 .sec-meta{color:var(--ink-soft);margin-bottom:12px}
@@ -352,7 +427,7 @@ html:has(.sheet[open]){overflow:hidden}
 
 .pt summary{display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;list-style:none;min-height:34px;padding:4px 0;padding-inline-end:4px}
 .pt summary::-webkit-details-marker{display:none}
-.pt summary:hover .lead{text-decoration:underline;text-underline-offset:3px}
+@media (hover:hover){.pt summary:hover .lead{text-decoration:underline;text-underline-offset:3px}}
 .lead{flex:1;min-width:0;font-weight:500;color:var(--ink)}
 .chev{flex:none;color:var(--ink-faint);transition:transform .15s ease}
 details[open]>summary .chev{transform:rotate(180deg)}
@@ -370,7 +445,7 @@ html.js .sheet[data-billing="m"] [data-bill="y"],html.js .sheet[data-billing="y"
 .tier-line{display:block;line-height:1.35}
 .tier-price{display:block;font-size:1.125rem;font-weight:700;color:var(--ink);letter-spacing:-0.01em}
 .tier-terms{display:block;font-size:var(--t-tech);color:var(--ink-faint)}
-.sheet-more{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;padding-top:clamp(14px,min(2vw,2.2vh),24px);border-top:1px solid var(--line)}
+.sheet-more{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
 .more-tabs{display:flex;flex-wrap:wrap;gap:8px}
 .more-btn{font-size:var(--t-label);font-weight:500;color:var(--ink-soft);border-color:var(--line);background:transparent}
 .more-btn:hover{color:var(--brand);border-color:var(--brand)}
@@ -393,7 +468,7 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px clamp(20px,3vw,40px);align-items:start}
 .fact h5{font-size:var(--t-label);font-weight:700;line-height:1.3;margin-bottom:4px}
 .fact p+p,.fact p+ul,.fact ul+p{margin-top:8px}
-.fact{padding-top:10px;border-top:1px solid var(--line);overflow-wrap:break-word;min-width:0}
+.fact{overflow-wrap:break-word;min-width:0}
 .sub{font-weight:700;color:var(--ink)}
 .plain{display:grid;gap:4px;padding-inline-start:1.1em;list-style:disc}
 /* כל הקופסאות באותו גובה, לפי הגבוהה ביותר */
@@ -407,10 +482,10 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
 .plan-inc,.plan-notes{color:var(--ink-soft);margin-top:4px}
 .sources{display:grid;gap:2px;counter-reset:src}
 .sources{font-size:var(--t-tech)}
-.src{line-height:1.5;display:grid;padding-block:4px;border-bottom:1px solid var(--line)}
+.src{line-height:1.5;display:grid;padding-block:6px}
 .sources a{display:inline-flex;align-items:center;min-height:32px;overflow-wrap:anywhere}
 .src-meta{color:var(--ink-soft)}
-.checked{font-size:var(--t-tech);color:var(--ink-soft)}
+.checked{margin-top:12px;font-size:var(--t-tech);color:var(--ink-soft)}
 
 /* תחתית */
 .foot{margin-top:clamp(24px,5vw,56px);padding-block:clamp(28px,5vw,56px);border-top:1px solid var(--line);background:var(--surface)}
@@ -423,7 +498,9 @@ html:not(.js) [data-sheet-open],html:not(.js) [data-sheet-close],html:not(.js) .
 .pending .num{color:var(--ink-soft)}
 .cat-nav-count{font-size:var(--t-label);font-weight:500;color:var(--ink-soft);white-space:nowrap}
 .foot-note{margin-top:24px;max-width:70ch;color:var(--ink-soft)}
-.foot-date{margin-top:32px;font-size:.8125rem;color:var(--ink-faint);font-variant-numeric:tabular-nums}
+.foot-src{margin-top:32px;font-size:var(--t-label);font-weight:500}
+.src-all{margin-top:16px;font-size:var(--t-label);font-weight:500}
+.foot-date{margin-top:12px;font-size:.8125rem;color:var(--ink-faint);font-variant-numeric:tabular-nums}
 
 /* החלון הקופץ */
 /* חלון החיפוש: שכבה מעל הדף, כמו חלון הפרטים. שדה אחד גדול, ומתחתיו קיצורי דרך או תוצאות. */
@@ -486,9 +563,7 @@ html:not(.js) #finder-open{display:none}
   .sheet-row{row-gap:14px}
   .pt summary{min-height:30px;padding-block:2px}
   .tier{padding:10px 14px}
-  .sheet-more{padding-top:14px}
   .sec-h{margin-bottom:4px}
-  .sec{padding-top:8px}
 }
 @media (min-width:600px) and (max-width:1023px){
   .tiers{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
@@ -496,24 +571,58 @@ html:not(.js) #finder-open{display:none}
 @media (max-width:599px){
   .brand-long{display:none}
   .brand-short{display:inline}
-  .card-head{padding:16px 16px 12px}
+  .card-head{--cp:16px;padding:16px 16px 12px}
   .sum{gap:12px}
   .sum-row{grid-template-columns:minmax(0,1fr);row-gap:0}
-  .finder{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
-  .finder-top .btn-icon span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  /* חלון החיפוש בפלאפון: כמו חלון הפרטים, עולה מלמטה עם ידית גרירה ובלי לחצן סגירה גלוי */
+  .finder{inset-block:auto 0;width:100%;max-height:calc(100dvh - 64px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
+  .finder-top{position:relative;padding-block-start:32px;touch-action:none}
+  .finder-top::before{content:"";position:absolute;inset-block-start:8px;inset-inline-start:50%;width:40px;height:4px;margin-inline-start:-20px;border-radius:2px;background:var(--line-strong)}
+  .finder-top .btn-icon{position:absolute;width:1px;min-height:0;height:1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%)}
+  .finder.is-dragging{animation:none;transition:none}
+  .finder.is-settling{animation:none;transition:transform .2s cubic-bezier(.2,.8,.2,1)}
+  /* כשהמקלדת פתוחה החלונות יושבים מעליה, ותופסים את כל הגובה שנשאר */
+  .finder,.sheet{bottom:var(--kb,0px)}
+  .kb-open .finder,.kb-open .sheet{max-height:calc(var(--vvh,100dvh) - 12px)}
   .res-cat{display:none}
   .res{grid-template-columns:2.2em minmax(0,1fr)}
   .tiers{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 20px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
-  .sheet-head-in{flex-wrap:wrap}
-  .sheet-head .btn-site{order:3;flex:1 1 100%}
+  .sheet{inset-block:auto 0;width:100%;max-height:calc(100dvh - 64px);border-radius:var(--r-card) var(--r-card) 0 0;border-inline:0;border-bottom:0}
+  /* ראש החלון בפלאפון: לוגו, שם ו־X בשורה אחת, התיאור מתחתם לכל הרוחב, ואז הקישור לאתר */
+  .sheet-head-in{display:grid;grid-template-columns:36px minmax(0,1fr);align-items:center;gap:10px 12px;padding-block-start:32px}
+  .sheet-id{display:contents}
+  .sheet-head .logo{grid-column:1;grid-row:1;width:36px;height:36px}
+  .sheet-title{grid-column:2;grid-row:1}
+  /* בפלאפון סוגרים בגרירה למטה או בנגיעה ברקע; הלחצן נשאר לקורא מסך בלבד */
+  .sheet-head .btn-close{position:absolute;width:1px;min-height:0;height:1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);margin:0}
+  .sheet-role{grid-column:1/-1;grid-row:2;margin-top:0}
+  .sheet-head .btn-site{grid-column:1/-1;grid-row:3;width:auto;gap:8px}
+  /* ידית גרירה: אפשר למשוך את ראש החלון למטה באצבע כדי לסגור */
+  .sheet-head{position:relative;touch-action:none}
+  .sheet-head::before{content:"";position:absolute;inset-block-start:8px;inset-inline-start:50%;width:40px;height:4px;margin-inline-start:-20px;border-radius:2px;background:var(--line-strong)}
+  .sheet.is-dragging{animation:none;transition:none}
+  .sheet.is-settling{animation:none;transition:transform .2s cubic-bezier(.2,.8,.2,1)}
+  .sheet-head .site-t{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
   .pt summary{min-height:44px}
   .bill-btn{min-height:38px}
   .more-btn{flex:1 1 auto}
-  .btn-close{padding-inline:12px}
+  .sheet-tags-head{display:none}
+  .sheet-tags-body{display:flex;margin-top:0}
+  .sheet-body,.sheet-head{--t-sheet:1.0625rem}
+  .sheet-body{gap:40px}
+  .sheet-notes{margin-bottom:0}
+  .sec-n{display:none}
+  /* קו דק מתחת לכל נקודה, בפלאפון בלבד, כדי שכל אחת תיקרא כפריט נפרד */
+  .points>li{border-bottom:1px solid var(--line)}
+  .sheet-notes+.sheet-tags-body{margin-top:-26px}
+  .sheet-row{row-gap:40px}
+  .sec h4{font-size:1rem}
+  .lead{font-size:1.0625rem}
+  .tier-terms,.bill-note{font-size:var(--t-label)}
+  .note-src{font-size:var(--t-label)}
 }
 @media (max-width:359px){
-  .card-actions .btn{flex:1 1 100%}
+  .card-actions .btn-open{flex:1 1 100%}
   .logo{width:44px;padding:2px}
   .verify{padding-inline:8px}
 }
@@ -535,3 +644,23 @@ html:not(.js) #finder-open{display:none}
   .sheet-scroll{overflow:visible}
   .card{break-inside:avoid}
 }
+
+/* ---------- חלופות לכרטיס (להשוואה): ב = בלי קו מתאר, ג = גם הכפתורים בלי קו ---------- */
+:root[data-card="b"] .card-head,:root[data-card="c"] .card-head{border-color:transparent}
+@media (hover:hover){
+  :root[data-card="b"] .card:hover .card-head,:root[data-card="c"] .card:hover .card-head{border-color:var(--brand)}
+}
+:root[data-card="b"] .card:focus-within .card-head,:root[data-card="c"] .card:focus-within .card-head{border-color:var(--line-strong)}
+:root[data-card="c"] .card-actions .btn{border-color:transparent}
+:root[data-card="c"] .card-actions .btn-site{background:transparent;padding-inline:8px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+@media (hover:hover){
+  :root[data-card="c"] .card-actions .btn-site:hover{border-color:var(--line-strong);text-decoration:none}
+}
+/* לחצן הסמל ״לאתר הרשמי״ בכרטיס: מסגרת שקטה, כדי שייראה לחיץ גם בלי טקסט */
+:root[data-card="c"] .card-actions .btn-ico{border-color:var(--line);background:transparent;padding-inline:0;text-decoration:none}
+:root[data-card="c"] .card-actions .btn-ico:hover{border-color:var(--brand);color:var(--brand)}
+.card-quick{flex:1 1 auto;justify-content:flex-end}
+/* בפלאפון (בקשת שקד, 19.11.2026): האגודלים צמודים יותר זה לזה, והרווח מהם לקישור כפול מהרווח שביניהם */
+@media (max-width:759px){.card-quick{gap:8px}.card-quick .card-vote{gap:4px}}
+@media (max-width:480px){.card-actions .btn-open{padding-inline:10px}}
+@media (max-width:374px){.card-actions .btn-open{flex:1 1 100%}}
