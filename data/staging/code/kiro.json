@@ -1,0 +1,333 @@
+{
+ "id": null,
+ "slug": "kiro",
+ "category_id": 10,
+ "name": "Kiro",
+ "former_name": null,
+ "rename_note": null,
+ "role": "סביבת פיתוח (עורך קוד) עם סוכן בינה מלאכותית שמתכנן ובונה קוד לפי מפרט כתוב, מבית AWS.",
+ "url": "https://kiro.dev",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "שנה חינם לסטודנטים",
+   "detail": "מסלול Students נותן 1,000 נקודות זיכוי בחודש במשך שנה מיום האימות, ללא תשלום, דרך SheerID.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית קבועה",
+   "detail": "Kiro Free כוללת 50 נקודות זיכוי בחודש, מודלים פתוחים ו־Claude Sonnet 4.5 במגבלות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מדרגות מחיר ברורות",
+   "detail": "Pro ב־20 דולר עם 1,000 נקודות, ומעליה Pro+, Pro Max ו־Power. נקודה נוספת עולה 0.04 דולר.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מסלול הסטודנטים מוגבל למוסדות ברשימה",
+   "detail": "נדרש גיל 18 ומעלה ואימות מול רשימת אוניברסיטאות. מוסד שאינו ברשימה יכול רק לבקש גישה. אי אפשר לקנות נקודות נוספות במסלול זה.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "התוכן עשוי לשמש לשיפור השירות כברירת מחדל",
+   "detail": "במסלול החינמי ובמנויים האישיים התוכן עשוי לשמש לשיפור השירות, כולל אימון מודלים, אלא אם מכבים זאת בהגדרות.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חיוב חודשי בלבד",
+   "detail": "עמוד המחירים מציג מחירים חודשיים בלבד, בלי הנחה על חיוב שנתי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מפתחים וסטודנטים שרוצים סוכן שעובד לפי מפרט ומשימות, מהתנסות חינמית ועד שימוש יומיומי.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "מ־20 דולר לחודש (Pro, 1,000 נקודות זיכוי). יש תוכנית חינמית עם 50 נקודות בחודש, ושנה חינם לסטודנטים זכאים.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Kiro Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "50 נקודות זיכוי בחודש, מודלים פתוחים ו־Claude Sonnet 4.5 במגבלות",
+    "notes": "לא זמין ל־Kiro Enterprise ולאזורי AWS GovCloud.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Kiro Pro",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "1,000 נקודות זיכוי בחודש, מודלים מתקדמים",
+    "notes": "נקודות נוספות ב־0.04 דולר לנקודה. בשדרוג הראשון: שאר החודש חינם ו־500 נקודות ניסיון לשימוש תוך 12 חודשים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Kiro Pro+",
+    "price": 40,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "2,000 נקודות זיכוי בחודש, מודלים מתקדמים",
+    "notes": "נקודות נוספות ב־0.04 דולר לנקודה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Kiro Pro Max",
+    "price": 100,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "5,000 נקודות זיכוי בחודש, מודלים מתקדמים",
+    "notes": "נקודות נוספות ב־0.04 דולר לנקודה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Kiro Power",
+    "price": 200,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "10,000 נקודות זיכוי בחודש, מודלים מתקדמים",
+    "notes": "נקודות נוספות ב־0.04 דולר לנקודה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Teams (credit pooling)",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "500 נקודות זיכוי לכל מושב בחודש, במאגר משותף",
+    "notes": "מ־2 מושבים. נקודה נוספת ב־0.04 דולר.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Kiro Students",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "1,000 נקודות זיכוי בחודש למשך שנה",
+    "notes": "לסטודנטים מאומתים מגיל 18 במוסדות ברשימה. אין נקודות נוספות ואין העברה לחודש הבא. בתום השנה החשבון עובר ל־Kiro Free.",
+    "source_ids": [
+     "s3"
+    ]
+   }
+  ],
+  "free_tier": "Kiro Free קבועה: 50 נקודות זיכוי בחודש, מודלים פתוחים ו־Claude Sonnet 4.5 במגבלות.",
+  "trial": "בשדרוג הראשון ל־Pro: שאר החודש חינם ו־500 נקודות ניסיון שתקפות 12 חודשים.",
+  "unverified_notes": "המטבע מוצג בסימן $ בלי קוד מטבע. המחירים אינם כוללים מסים. לא נמצא מחיר בחיוב שנתי. מחיר Enterprise לא נבדק."
+ },
+ "privacy": {
+  "text": "לפי התיעוד, במסלול החינמי ובמנויים האישיים התוכן עשוי לשמש לשיפור השירות, וזה עשוי לכלול אימון מודלים. אפשר לבטל בהגדרות: Settings > User > Application > Telemetry and Content. משתמשי Enterprise ומנויי Amazon Q Developer Pro אינם משמשים לשיפור השירות. במסלול החינמי קלטים עשויים להישמר עד 60 יום לזיהוי שימוש לרעה, גם אחרי ביטול.",
+  "training_on_user_data": "כן כברירת מחדל במסלול החינמי ובמנויים אישיים, עם אפשרות ביטול. לא במסלול Enterprise.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק אם יש API ציבורי. התיעוד מציין ש־Kiro פועל על Amazon Bedrock.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "Kiro IDE ל־Windows (x64 ו־ARM64)",
+   "Kiro IDE ל־Linux (חבילת ‎.deb‏)"
+  ],
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "AWS",
+  "parent": null,
+  "country": null,
+  "note": "תיעוד Kiro מציין שמודל האחריות המשותפת של AWS חל על השירות ושהוא פועל על Amazon Bedrock. הישות המשפטית המדויקת לא נבדקה."
+ },
+ "student_benefits": {
+  "text": "מסלול Kiro Students: 1,000 נקודות זיכוי בחודש במשך שנה, ללא תשלום. נדרשים גיל 18 ומעלה, לימודים במוסד מהרשימה ואימות דרך SheerID עם כתובת דוא״ל של האוניברסיטה. בתום השנה החשבון עובר ל־Kiro Free. העמוד אינו מציין רשימת מדינות, ולא נבדק אם מוסדות בישראל ברשימה.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://kiro.dev/pricing/",
+   "title": "עמוד המחירים של Kiro",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://kiro.dev/docs/privacy-and-security/data-protection/",
+   "title": "תיעוד Kiro: הגנה על מידע",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://kiro.dev/students/",
+   "title": "Kiro לסטודנטים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://kiro.dev/changelog/ide/",
+   "title": "Kiro: IDE changelog",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "Kiro IDE 1.4 יצא באוקטובר 2026, עם עדכונים עד 16 בנובמבר 2026. מופיע ב־3 מתוך 6 סקירות עצמאיות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Kiro IDE 1.4.0",
+   "latest_version_date": "Oct 19, 2026",
+   "latest_version_date_iso": "2026-10-19",
+   "independent_reviews": 3,
+   "evidence": "research/stage4/code.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 20,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Kiro Pro",
+   "verified": true,
+   "label": "מ־20 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "Windows"
+   ],
+   "unverified": [
+    "Mac",
+    "שורת פקודה",
+    "אתר"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 3,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/code.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/code.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "מכסת Kiro Free של 50 נקודות מתחדשת בכל חודש.",
+    "evidence": "research/stage4/code.md"
+   }
+  }
+ }
+}

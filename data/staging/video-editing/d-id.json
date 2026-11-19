@@ -1,0 +1,263 @@
+{
+ "id": null,
+ "slug": "d-id",
+ "category_id": 7,
+ "name": "D-ID",
+ "former_name": null,
+ "rename_note": null,
+ "role": "פלטפורמה ליצירת סרטונים עם אווטרים ודמויות מדברות מתוך תמונה ותסריט, ב־Studio וב־API.",
+ "url": "https://www.d-id.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "גם סטודיו וגם API",
+   "detail": "D-ID מפרסמת מחירון נפרד ל־Studio ומחירון נפרד ל־API.",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חיוב לפי אורך הסרטון",
+   "detail": "אורך כל סרטון מעוגל כלפי מעלה ל־15 השניות הקרובות, והדקות מתחדשות כל חודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מודל V4 בכל התוכניות",
+   "detail": "לפי הודעה של D-ID ממרץ 2026, דמויות V4 לשיחה בזמן אמת עם מודל שפה זמינות בכל התוכניות.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "סימן מים בניסיון וב־Lite",
+   "detail": "בתוכניות Trial ו־Lite הסרטונים נושאים סימן מים של D-ID, ובניסיון הוא מופיע על כל המסך.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "דקות לא נצברות",
+   "detail": "דקות שלא נוצלו פוקעות בסוף החודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "משווקים, אנשי הדרכה ומפתחים שצריכים דמות מדברת מתוך תמונה, בסטודיו או דרך API.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "לפי הודעה לעיתונות של D-ID ממרץ 2026, התוכניות מתחילות מ־5.90 דולר לחודש. שמות התוכניות והמכסות לא אומתו.",
+  "model": "מנוי עם דקות וידאו",
+  "plans": [
+   {
+    "name": "Trial",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "סרטוני ניסיון נושאים סימן מים על כל המסך.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "התוכנית הזולה ביותר",
+    "price": 5.9,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "גישה למודל V4, לפי ההודעה לעיתונות",
+    "notes": "\"available to users on all D-ID plans, starting at $5.90 a month\". שם התוכנית וסוג החיוב לא צוינו. ייתכן שזו Lite, אבל זה לא אומת.",
+    "source_ids": [
+     "s4"
+    ]
+   },
+   {
+    "name": "Lite",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "הסרטונים נושאים סימן מים של D-ID.",
+    "source_ids": [
+     "s1",
+     "s3"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": "קיימת תוכנית Trial שהסרטונים בה נושאים סימן מים על כל המסך. היקף הניסיון לא אומת.",
+  "unverified_notes": "עמוד המחירים של Studio נקרא פעמיים, אך שמות התוכניות (מלבד Trial ו־Lite), המחירים, המטבע ומכסות הדקות לא הופיעו בטקסט (כנראה מוצגים בסקריפט). המחיר היחיד שאומת הוא \"starting at $5.90 a month\" מהודעה לעיתונות של D-ID מ־16 במרץ 2026, בלי שם תוכנית ובלי סוג חיוב. הודעה רשמית מ־13 בדצמבר 2022 נתנה מחירים אחרים (Lite ב־5.99 דולר לחודש, Advanced ב־299 דולר לחודש), אבל היא ישנה מדי ולא שימשה כמחיר נוכחי. עמוד מחירי ה־API ותנאי השימוש לא נקראו."
+ },
+ "privacy": {
+  "text": "לא אומת: תנאי השימוש ומדיניות הפרטיות של D-ID לא נקראו.",
+  "training_on_user_data": null,
+  "source_ids": []
+ },
+ "commercial_rights": {
+  "text": "לא אומת: שימוש מסחרי לפי תוכנית לא הופיע בעמוד המחירים, ותנאי השימוש לא נקראו.",
+  "watermark": "בתוכניות Trial ו־Lite הסרטונים נושאים סימן מים; בניסיון הוא על כל המסך.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "עמוד המחירים מקשר למחירון API נפרד, שלא נקרא.",
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "לא אומת: רשימת השפות הרשמית של D-ID לא נקראה.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "D-ID",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי והמטה לא צוינו בעמודים שנקראו. לפי ההודעה לעיתונות ממרץ 2026, D-ID רכשה את simpleshow מברלין; מועד הרכישה לא נבדק."
+ },
+ "student_benefits": {
+  "text": "עמוד המחירים אינו מזכיר הנחה לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.d-id.com/pricing/studio/",
+   "title": "עמוד המחירים של D-ID Studio (המחירים לא הופיעו בטקסט)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.d-id.com/pricing/api/",
+   "title": "עמוד מחירי ה־API של D-ID (מקושר מעמוד המחירים, לא נקרא)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://news.studio.d-id.com/publications/a-studio-plan-for-every-budget",
+   "title": "D-ID Studio: הודעה על תוכניות (13 בדצמבר 2022, ישנה)",
+   "official": true,
+   "published": "2022-12-13",
+   "checked": "2026-11-18",
+   "stale": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.prnewswire.com/il/news-releases/d-id-launches-v4-expressive-visual-agents-for-real-time-llm-connected-interaction-at-enterprise-scale-302714463.html",
+   "title": "הודעה לעיתונות של D-ID: השקת V4 Expressive Visual Agents",
+   "official": true,
+   "published": "2026-03-16",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "V4 הושקה ב־16 במרץ 2026, אבל הכלי מופיע רק בסקירה עצמאית אחת מתוך 6, כך שהתנאי של שתי סקירות לא מתקיים. נכלל ככלי ותיק לדמויות מדברות.",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "V4 Expressive Visual Agents",
+   "latest_version_date": "March 16, 2026",
+   "latest_version_date_iso": "2026-03-16",
+   "independent_reviews": 1,
+   "evidence": "research/stage4/video-editing.md"
+  },
+  "hebrew": {
+   "value": "לא אומת",
+   "label": "עברית לא אומתה",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 5.9,
+   "currency": "USD",
+   "billing": null,
+   "plan": null,
+   "verified": false,
+   "label": "מ־5.90 דולר לחודש",
+   "has_free_plan": null
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 1,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/video-editing.md"
+   }
+  }
+ }
+}

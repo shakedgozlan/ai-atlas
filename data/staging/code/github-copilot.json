@@ -1,0 +1,349 @@
+{
+ "id": null,
+ "slug": "github-copilot",
+ "category_id": 10,
+ "name": "GitHub Copilot",
+ "former_name": null,
+ "rename_note": null,
+ "role": "עוזר תכנות של GitHub שמשלים קוד, עונה בצ׳אט ומבצע משימות כסוכן, בתוך עורך הקוד ובשורת הפקודה.",
+ "url": "https://github.com/features/copilot",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "חינם לסטודנטים מאומתים",
+   "detail": "תוכנית Copilot Student ניתנת בחינם לסטודנטים שאומתו ב־GitHub Education. הזכאות נבדקת מחדש בכל חודש.",
+   "source_ids": [
+    "s2",
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית שימושית",
+   "detail": "Copilot Free כוללת 2,000 השלמות קוד בחודש, מצב סוכן, Copilot CLI ושימוש מוגבל בצ׳אט ובסוכן.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מנוי זול יחסית",
+   "detail": "Pro עולה 10 דולר לחודש וכולל נקודות AI בשווי 15 דולר בחודש (1,000 בסיס ו־500 גמישות).",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "שיחות משמשות לאימון כברירת מחדל",
+   "detail": "מ־24 באפריל 2026 נתוני אינטראקציה של משתמשי Free, Pro ו־Pro+ משמשים לאימון מודלים, אלא אם מכבים זאת בהגדרות הפרטיות.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "בחירת מודל מוגבלת בחינם",
+   "detail": "ב־Copilot Free וב־Copilot Student יש בחירת מודל אוטומטית בלבד. Student אינה כוללת סוכנים של צד שלישי.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מכסת השלמות בחינם",
+   "detail": "Copilot Free מוגבלת ל־2,000 השלמות קוד בחודש.",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים ומפתחים שעובדים ב־GitHub ובעורכי קוד נפוצים, מהתנסות חינמית ועד שימוש מקצועי.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "מ־10 דולר לחודש (Pro). יש תוכנית חינמית עם 2,000 השלמות בחודש, וחינם לסטודנטים מאומתים.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Copilot Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "2,000 השלמות בחודש, שימוש מוגבל בצ׳אט ובסוכן, מצב סוכן, Copilot CLI, בחירת מודל אוטומטית",
+    "notes": "למפתחים יחידים שאינם מקבלים Copilot דרך ארגון.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Copilot Student",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מכסה שלא פורטה, בחירת מודל אוטומטית",
+    "notes": "לסטודנטים מאומתים. אינה כוללת סוכנים של צד שלישי.",
+    "source_ids": [
+     "s2",
+     "s4"
+    ]
+   },
+   {
+    "name": "Copilot Pro",
+    "price": 10,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "1,500 נקודות AI בחודש (1,000 בסיס ו־500 גמישות), מבחר מודלים",
+    "notes": "לפי התיעוד, מורים מאומתים ומתחזקים של פרויקטי קוד פתוח פופולריים עשויים לקבל אותה בחינם.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Copilot Pro+",
+    "price": 39,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "7,000 נקודות AI בחודש (3,900 בסיס ו־3,100 גמישות), מודלים מתקדמים",
+    "notes": null,
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Copilot Max",
+    "price": 100,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "20,000 נקודות AI בחודש (10,000 בסיס ו־10,000 גמישות), עדיפות במודלים מתקדמים",
+    "notes": null,
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Business / Enterprise",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "מחירי הארגונים לא נקראו.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Copilot Free: 2,000 השלמות קוד בחודש, שימוש מוגבל בצ׳אט ובסוכן, מצב סוכן ו־Copilot CLI, עם בחירת מודל אוטומטית.",
+  "trial": null,
+  "unverified_notes": "שני העמודים הרשמיים אינם מציגים מחיר בחיוב שנתי לתוכניות האישיות. מחירי Business ו־Enterprise לא נקראו. גודל המכסה של Free ו־Student בנקודות AI לא פורט."
+ },
+ "privacy": {
+  "text": "לפי הודעת GitHub מ־25 במרץ 2026, החל מ־24 באפריל נתוני אינטראקציה של משתמשי Free, Pro ו־Pro+ משמשים לאימון ולשיפור המודלים, אלא אם מבטלים זאת ב־github.com/settings/copilot תחת Privacy. מי שביטל קודם נשאר מחוץ לאימון. משתמשי Copilot Business ו־Enterprise ומאגרים בבעלות ארגונית אינם מושפעים. ההודעה אינה מזכירה את תוכנית הסטודנטים.",
+  "training_on_user_data": "כן כברירת מחדל ב־Free, Pro ו־Pro+, עם אפשרות ביטול. לא ב־Business ו־Enterprise.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק תיעוד API או SDK רשמי.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "Copilot CLI",
+   "VS Code",
+   "JetBrains IDEs",
+   "Azure DevOps (תצוגה מקדימה)",
+   "GitHub Enterprise Server"
+  ],
+  "source_ids": [
+   "s1",
+   "s5"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "שורת פקודה (Copilot CLI)",
+   "VS Code",
+   "JetBrains IDEs",
+   "אפליקציית GitHub Copilot",
+   "תוסף ל־Chrome (שימוש בדפדפן, בתצוגה מקדימה)"
+  ],
+  "source_ids": [
+   "s1",
+   "s5"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "GitHub",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "Copilot Student ניתנת בחינם לסטודנטים מאומתים ב־GitHub Education. ההפעלה נעשית דרך עמוד ההטבות לסטודנטים ועשויה להימשך כמה ימים אחרי האימות, והזכאות נבדקת מחדש בכל חודש. התוכנית כוללת בחירת מודל אוטומטית בלבד ואינה כוללת סוכנים של צד שלישי.",
+  "source_ids": [
+   "s2",
+   "s4"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://github.com/features/copilot/plans",
+   "title": "GitHub: התוכניות והמחירים של Copilot",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://docs.github.com/en/copilot/concepts/billing/individual-plans",
+   "title": "GitHub Docs: תוכניות אישיות של Copilot",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/",
+   "title": "GitHub Blog: עדכון למדיניות השימוש בנתוני האינטראקציה של Copilot",
+   "official": true,
+   "published": "2026-03-25",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://docs.github.com/copilot/how-tos/manage-your-account/free-access-with-copilot-student",
+   "title": "GitHub Docs: גישה חינמית ל־Copilot לסטודנטים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases/",
+   "title": "GitHub Changelog: GitHub Copilot app, Microsoft Ignite releases",
+   "official": true,
+   "published": "2026-11-17",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "כלי מוביל ותיק. אפליקציית GitHub Copilot קיבלה עדכון בנובמבר 2026 (גרסה 1.2.0 ומעלה), והכלי מופיע בכל שש הסקירות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "GitHub Copilot app, Ignite releases (1.2.0)",
+   "latest_version_date": "November 17, 2026",
+   "latest_version_date_iso": "2026-11-17",
+   "independent_reviews": 6,
+   "evidence": "research/stage4/code.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 10,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Copilot Pro",
+   "verified": true,
+   "label": "מ־10 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "שורת פקודה",
+    "תוסף לעורך קוד",
+    "תוסף לדפדפן"
+   ],
+   "unverified": [
+    "Mac",
+    "Windows",
+    "אתר"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/code.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/code.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "מכסת Copilot Free של 2,000 השלמות מוגדרת לחודש.",
+    "evidence": "research/stage4/code.md"
+   }
+  }
+ }
+}

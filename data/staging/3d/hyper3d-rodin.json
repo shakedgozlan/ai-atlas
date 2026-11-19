@@ -1,0 +1,333 @@
+{
+ "id": null,
+ "slug": "hyper3d-rodin",
+ "category_id": 9,
+ "name": "Hyper3D Rodin",
+ "former_name": null,
+ "rename_note": null,
+ "role": "יוצר מודלים תלת־ממדיים מפורטים מתמונות ומטקסט, עם טקסטורות PBR וחלוקה לחלקים.",
+ "url": "https://hyper3d.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "הנחה רשמית לחינוך",
+   "detail": "עמוד המחירים מציע תוכנית Education עם ההטבות של Creator במחיר לחינוך, לסטודנטים ולמורים אחרי אימות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "רשתות מפורטות וטקסטורות PBR",
+   "detail": "לפי CGWORLD, Gen-2.5 מייצר מודלים של עד 10 מיליון פוליגונים, עם טקסטורות PBR שנוצרות ישירות על המודל וכלים לפיצול לחלקים ולשיפור מקומי.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חיבור לתוכנות תלת־ממד ולמנועי משחק",
+   "detail": "לפי CGWORLD, ה־DCC Bridge תומך ב־Blender, Unreal Engine, Unity, Godot, Cinema 4D, Maya, Omniverse ו־3ds Max.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "התוכנית החינמית מוגבלת לייצוא ממודלים ישנים",
+   "detail": "ב־Free אפשר לייצא רק ממודלים ותיקים, לשמור 10 נכסים פרטיים, ואין גישה ל־API, למודלים המתקדמים או לייצוא ללא הגבלה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "כמות מודלים מוגבלת במנוי הבסיסי",
+   "detail": "לפי עמוד המחירים, Creator מספיקה לכ־60 מודלים, ו־Business לכ־416. נקודות נוספות עולות 1.5 דולר לנקודה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "טקסטורות 12K רק בתוכנית היקרה",
+   "detail": "לפי CGWORLD, יצירת טקסטורות ב־12K נמצאת בבטא וזמינה רק למנויי Business.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים, אמני תלת־ממד ומפתחי משחקים שצריכים מודלים מפורטים, וסטודנטים דרך תוכנית החינוך.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "מ־30 דולר לחודש בחיוב חודשי, או 24 דולר לחודש בחיוב שנתי (Creator). יש תוכנית חינמית מוגבלת ותוכנית לחינוך.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "יצירה בסיסית מתמונה ומטקסט, ייצוא ממודלים ישנים, 10 נכסים פרטיים, פרסום בגלריה הציבורית",
+    "notes": "בלי גישה ל־API, בלי ייצוא ללא הגבלה ובלי מודלים מתקדמים. העמוד מתאר תשלום לפי תוצאה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Creator",
+    "price": 30,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "בערך 60 מודלים, ייצוא ללא הגבלה וכל שימוש",
+    "notes": "הנקודות מתחדשות בכל מחזור חיוב.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Creator",
+    "price": 24,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "בערך 60 מודלים, ייצוא ללא הגבלה וכל שימוש",
+    "notes": "288 דולר בתשלום אחד לשנה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": 120,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "בערך 416 מודלים, ייצוא ללא הגבלה וכל שימוש, רישיון מסחרי ל־ChatAvatar",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": 96,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "בערך 416 מודלים, ייצוא ללא הגבלה וכל שימוש, רישיון מסחרי ל־ChatAvatar",
+    "notes": "1,152 דולר בתשלום אחד לשנה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Education",
+    "price": null,
+    "price_text": "מחיר לחינוך, לא פורסם",
+    "price_short": "הנחה לחינוך",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "ההטבות של Creator",
+    "notes": "לסטודנטים, למורים, לכיתות ולתוכניות לימוד אחרי אימות. גובה ההנחה לא מופיע.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "הסכמים שנתיים מותאמים.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free ללא תשלום: יצירה בסיסית מתמונה ומטקסט, ייצוא ממודלים ישנים בלבד, 10 נכסים פרטיים ופרסום בגלריה הציבורית. אין API ואין מודלים מתקדמים.",
+  "trial": null,
+  "unverified_notes": "מספר הנקודות בכל תוכנית לא מופיע, רק הערכה של מספר מודלים. מחיר תוכנית Education לא פורסם. לא אומת אם התוכנית החינמית מחדשת מכסה כלשהי."
+ },
+ "privacy": {
+  "text": "לפי תנאי השימוש, Deemos רשאית להשתמש בהנחיות ובתוצרים כדי לספק, לתחזק ולשפר את השירותים ולערוך מחקר. התנאים לא אומרים במפורש אם הם משמשים לאימון מודלים, ואין בהם אפשרות ביטול מפורשת. מדיניות הפרטיות לא נבדקה.",
+  "training_on_user_data": "לא נאמר במפורש. התנאים מתירים שימוש בהנחיות ובתוצרים לשיפור השירותים ולמחקר.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תנאי השימוש, Deemos לא מגבילה את השימוש בתוצרים של Rodin, בכפוף לתנאים ולחוק, אך אינה מתחייבת שאפשר להגן עליהם בזכויות יוצרים. לפי עמוד המחירים, ייצוא ללא הגבלה וכל שימוש כלולים מ־Creator ומעלה, ולא בתוכנית Free. אפשר לסמן תוצרים כפרטיים.",
+  "watermark": null,
+  "source_ids": [
+   "s2",
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "עמוד המחירים מציין שהתוכנית החינמית אינה כוללת גישה ל־API, ומכאן שהגישה ניתנת בתוכניות בתשלום. באיזו תוכנית בדיוק ומה המחיר לא אומת.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Blender",
+   "Unreal Engine",
+   "Unity",
+   "Godot",
+   "Cinema 4D",
+   "Maya",
+   "Omniverse",
+   "3ds Max"
+  ],
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית. האתר מוצע בכמה שפות (לפי כתובות שנמצאו בחיפוש, כמו ‎/ar/‎ ו־‎/ja/‎), אבל עברית לא נראתה ביניהן.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Deemos Corporation",
+  "parent": null,
+  "country": null,
+  "note": "לפי תנאי השימוש הכתובת הרשומה בדלאוור, ארצות הברית, והדין החל הוא של דלאוור; סעיף אחר מפנה לבתי המשפט בהונג קונג. מדינת הפעילות לא אומתה."
+ },
+ "student_benefits": {
+  "text": "יש תוכנית Education רשמית: ההטבות של Creator במחיר לחינוך, לסטודנטים, למורים, לכיתות ולתוכניות לימוד אחרי אימות. גובה ההנחה לא מופיע בעמוד.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://hyper3d.ai/pricing?lang=en",
+   "title": "עמוד המחירים של Hyper3D",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://hyper3d.ai/legal/terms",
+   "title": "תנאי השימוש של Deemos (ChatAvatar ו־Rodin)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://cgworld.jp/flashnews/01-202606-RodinGen-2.5.html",
+   "title": "CGWORLD: השקת Rodin Gen-2.5",
+   "official": false,
+   "published": "2026-06-08",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "Rodin Gen-2.5 יצא ב־19 במאי 2026 לפי CGWORLD, והכלי מופיע ב־4 סקירות עצמאיות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Rodin Gen-2.5",
+   "latest_version_date": "May 19, 2026",
+   "latest_version_date_iso": "2026-05-19",
+   "independent_reviews": 4,
+   "evidence": "research/stage4/3d.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 30,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Creator",
+   "verified": true,
+   "label": "מ־30 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 4,
+    "of": 4,
+    "value": true,
+    "evidence": "research/stage4/3d.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   }
+  }
+ }
+}

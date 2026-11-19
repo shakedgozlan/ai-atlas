@@ -1,0 +1,333 @@
+{
+ "id": null,
+ "slug": "heygen",
+ "category_id": 7,
+ "name": "HeyGen",
+ "former_name": null,
+ "rename_note": null,
+ "role": "פלטפורמה ליצירת סרטונים עם אווטרים מדברים, שכפול קול ותרגום וידאו לשפות אחרות עם סנכרון שפתיים.",
+ "url": "https://www.heygen.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "תרגום וידאו עם סנכרון שפתיים, כולל עברית",
+   "detail": "רשימת השפות לתרגום קול ולסנכרון שפתיים כוללת \"Hebrew (Israel)\", מתוך 85 רשומות (עודכן ב־20 באוגוסט 2026).",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית לניסיון",
+   "detail": "עד 3 סרטונים בחודש באורך של עד דקה, בלי תשלום.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "אווטר אישי מהקלטה קצרה",
+   "detail": "לפי HeyGen, מודל Avatar V בונה דמות דיגיטלית עקבית של אדם מהקלטה של 15 שניות. Pro מוסיפה ייצוא 4K ושכפול קול מקצועי.",
+   "source_ids": [
+    "s5",
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "התוכנית החינמית לשימוש אישי בלבד",
+   "detail": "לפי תנאי השימוש, תוצרים מהתוכנית החינמית מותרים לשימוש אישי, לא מסחרי ולהערכה פנימית בלבד, ואסור למכור אותם או להרוויח מהם.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "סימן מים ומגבלת אורך בחינם",
+   "detail": "בתוכנית Free הסרטונים נושאים סימן מים ואורכם עד דקה, ועד 3 סרטונים בחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכן של משתמשים פרטיים עשוי לשמש לאימון",
+   "detail": "לפי HeyGen, נתונים של לקוחות שאינם Enterprise עשויים לשמש לאימון המודלים, עם אפשרות ביטול לפי מדיניות הפרטיות. גם הרישיון בתנאי השימוש כולל אימון מודלים.",
+   "source_ids": [
+    "s2",
+    "s4"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "יוצרים, משווקים ואנשי הדרכה שרוצים סרטון עם דמות מדברת או גרסה של סרטון בשפה אחרת בלי לצלם מחדש.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־29 דולר לחודש בחיוב חודשי, או 24 דולר לחודש בחיוב שנתי. יש תוכנית חינמית עם סימן מים, עד 3 סרטונים בחודש.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "עד 3 סרטונים בחודש, עד דקה לסרטון",
+    "notes": "הסרטונים נושאים סימן מים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Creator",
+    "price": 29,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "600 נקודות זיכוי בחודש, סרטון עד 30 דקות, ייצוא עד 1080p, עד 10 שעות הקראה, הסרת המיתוג של HeyGen",
+    "notes": "נקודות שלא נוצלו בחיוב חודשי עוברות לחודש אחד בלבד.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Creator",
+    "price": 24,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "600 נקודות זיכוי בחודש, סרטון עד 30 דקות, ייצוא עד 1080p, הסרת המיתוג של HeyGen",
+    "notes": "מחיר לחודש בחיוב שנתי, לפי השאלות הנפוצות בעמוד המחירים. בחיוב שנתי הנקודות נצברות עד מועד החידוש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 49,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "1,000 נקודות זיכוי בחודש, סרטון עד 30 דקות, ייצוא עד 4K, יותר מ־16 שעות הקראה, שכפול קול מקצועי",
+    "notes": "יש מדרגות של נקודות עד 100,000 נקודות ב־4,300 דולר; המדרגות שבאמצע לא פורסמו בטקסט שנקרא. מחיר בחיוב שנתי לא הופיע.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": 149,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "1,500 נקודות זיכוי בחודש, סרטון עד 60 דקות, ייצוא 4K עם שדרוג, 5 אווטרים מותאמים אישית",
+    "notes": "מושב נוסף: 20 דולר למושב לחודש. מחיר בחיוב שנתי לא הופיע.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "נקודות לפי היקף שימוש, אורך סרטון ללא הגבלה, תנאים מסחריים מותאמים",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free ללא תשלום: עד 3 סרטונים בחודש, באורך של עד דקה, עם סימן מים.",
+  "trial": null,
+  "unverified_notes": "המחירים בחיוב שנתי של Pro ו־Business לא הופיעו בטקסט שנקרא (העמוד מציין רק \"2 months free\"). מכסת הנקודות של התוכנית החינמית ומדרגות הביניים של Pro לא פורסמו בטקסט. העמוד משתמש בסימן $ בלי קוד מטבע. מחירי ה־API נמצאים בעמוד נפרד שלא נקרא."
+ },
+ "privacy": {
+  "text": "לפי עמוד האמון והבטיחות, נתוני לקוחות Enterprise אינם משמשים לאימון. נתונים של לקוחות אחרים עשויים לשמש לאימון ושיפור המודלים, ואפשר לבטל זאת לפי מדיניות הפרטיות. לפי תנאי השימוש (עודכנו ב־16 באוקטובר 2026), הרישיון שהמשתמש בתוכנית בתשלום נותן ל־HeyGen כולל שימוש בתוכן \"to train or otherwise improve or modify our artificial intelligence and machine learning models\". ל־HeyGen יש הסכמים עם ספקי הבינה המלאכותית שלה שאוסרים עליהם להתאמן על נתוני הלקוחות. תקופת שמירת הנתונים לא צוינה.",
+  "training_on_user_data": "כן, ללקוחות שאינם Enterprise, עם אפשרות ביטול",
+  "source_ids": [
+   "s2",
+   "s4"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תנאי השימוש (עודכנו ב־16 באוקטובר 2026), בתוכניות Creator, Pro ו־Business המשתמש הוא הבעלים של הקלט והתוצרים, ו־HeyGen אינה מגבילה שימוש מסחרי בהם. בתוכנית החינמית המשתמש מקבל רק רישיון מוגבל וניתן לביטול, לשימוש אישי, לא מסחרי ולהערכה פנימית. על המשתמש לוודא שיש לו זכויות והסכמה מפורשת של כל אדם שדמותו משמשת. אין בכך הבטחה מפני תביעות זכויות יוצרים, ו־HeyGen מתנערת מאחריות לשימוש המסחרי.",
+  "watermark": "בתוכנית Free הסרטונים נושאים סימן מים. מ־Creator ומעלה אפשר להסיר את המיתוג של HeyGen.",
+  "source_ids": [
+   "s4",
+   "s2",
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "עמוד המחירים מקשר לעמוד מחירי API נפרד (\"Explore API pricing\"), שלא נקרא. התנאים והמחירים לא אומתו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "רשימת השפות הנתמכות בתרגום קולי ובסנכרון שפתיים כוללת \"Hebrew (Israel)\". המאמר לא עוסק בשפות הקול ובכתוביות, ולא נבדק אם הכתוביות מוצגות מימין לשמאל.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "company": {
+  "name": "HeyGen Technology, Inc.",
+  "parent": null,
+  "country": "ארצות הברית",
+  "note": "הכתובת בתנאי השימוש היא בלוס אנג'לס, והתנאים כפופים לדין של קליפורניה. מדינת ההתאגדות לא צוינה."
+ },
+ "student_benefits": {
+  "text": "עמוד המחירים אינו מזכיר הנחה לסטודנטים או לאנשי חינוך. לא נמצא עמוד רשמי של הטבה לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.heygen.com/pricing",
+   "title": "עמוד המחירים של HeyGen",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.heygen.com/trust-and-safety",
+   "title": "HeyGen: אמון ובטיחות (כולל שאלות נפוצות על אימון מודלים)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://help.heygen.com/en/articles/11391941-video-translation-languages-we-support",
+   "title": "מרכז העזרה של HeyGen: שפות נתמכות בתרגום וידאו",
+   "official": true,
+   "published": "2026-08-20",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://www.heygen.com/de-de/terms",
+   "title": "תנאי השימוש של HeyGen (עודכנו ב־16 באוקטובר 2026)",
+   "official": true,
+   "published": "2026-10-16",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://www.heygen.com/blog/announcing-avatar-v",
+   "title": "הבלוג של HeyGen: הכרזה על Avatar V (מוצג רק תאריך עדכון, 20 באוקטובר 2026)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "הכלי מופיע ב־2 מתוך 6 סקירות עצמאיות. עמוד ההכרזה על Avatar V מציג רק תאריך עדכון (20 באוקטובר 2026) ולא תאריך פרסום, ולכן מועד הגרסה לא אומת. נכלל ככלי מוביל וותיק.",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "Avatar V",
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 2,
+   "evidence": "research/stage4/video-editing.md"
+  },
+  "hebrew": {
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
+  },
+  "starting_price": {
+   "amount": 29,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Creator",
+   "verified": true,
+   "label": "מ־29 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": [
+    "אפליקציות לנייד"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 2,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "עד 3 סרטונים בחודש בתוכנית Free, לפי עמוד המחירים.",
+    "evidence": "research/stage4/video-editing.md"
+   }
+  }
+ }
+}

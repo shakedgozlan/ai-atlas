@@ -1,0 +1,332 @@
+{
+ "id": null,
+ "slug": "manus",
+ "category_id": 12,
+ "name": "Manus",
+ "former_name": null,
+ "rename_note": null,
+ "role": "סוכן AI כללי שמבצע משימות ארוכות בעצמו במחשב ענן, ממחקר ועד מצגות, אתרים ווידאו.",
+ "url": "https://manus.im",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": "Manus הודיעה ב־29 בדצמבר 2025 על הצטרפות ל־Meta, ובפוסט מ־1 בספטמבר הודיעה שחזרה לפעול באופן עצמאי, בהובלת צוות המייסדים. לפי ההודעה, חלק מהמשתמשים נדרשו לגבות ולשחזר נתונים והייתה הפסקת גישה זמנית. הפוסט עצמו אינו מסביר את סיבת הביטול.",
+  "date_as_written": "Tuesday, September 01",
+  "source_ids": [
+   "s3",
+   "s4"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "נקודות חינמיות שמתחדשות כל יום",
+   "detail": "בתוכנית החינמית מקבלים 300 נקודות בכל יום, משימה אחת בכל פעם ו־2 משימות מתוזמנות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מבצע משימות שלמות בעצמו",
+   "detail": "Manus 2.0, מ־28 בספטמבר 2026, כולל מחשב ענן, אוטומציות מתוזמנות ו־Manus Studio ליצירה. באוקטובר נוספו עורך וידאו ובניית משחקים.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "גם בדסקטופ",
+   "detail": "יש אפליקציית דסקטופ שמשתמשת באותה מערכת נקודות כמו האתר, ונקודות נגבות רק בזמן שהסוכן עובד.",
+   "source_ids": [
+    "s5"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "עלות המשימה לא קבועה",
+   "detail": "לפי מרכז העזרה, מורכבות המשימה קובעת את מספר הנקודות שהיא צורכת, כך שקשה לדעת מראש כמה משימות יספיקו.",
+   "source_ids": [
+    "s5"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "משימה אחת בכל פעם בחינם",
+   "detail": "התוכנית החינמית מאפשרת משימה אחת במקביל. Pro מאפשרת 20 משימות במקביל ו־20 אוטומציות מתוזמנות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "שינויי בעלות השנה",
+   "detail": "החברה עברה ל־Meta וחזרה לעצמאות בתוך פחות משנה, ובמעבר חלק מהמשתמשים נדרשו לגבות ולשחזר נתונים.",
+   "source_ids": [
+    "s3",
+    "s4"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מי שרוצה למסור משימה שלמה, כמו מחקר, מצגת או אתר, ולקבל תוצר מוכן בלי לבנות תהליך בעצמו.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "Pro מ־20 דולר לחודש עם 4,000 נקודות, 17% הנחה בחיוב שנתי. בחינם 300 נקודות ביום.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "300 נקודות ביום, משימה אחת במקביל, 2 אוטומציות מתוזמנות",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מ־4,000 נקודות בחודש, 20 משימות במקביל, 20 אוטומציות מתוזמנות",
+    "notes": "\"Starting from\". 17% הנחה בחיוב שנתי; הסכום השנתי לא הוצג.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 40,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מ־8,000 נקודות בחודש, 20 משימות במקביל, 20 אוטומציות מתוזמנות",
+    "notes": "מדרגה שנייה של Pro. 17% הנחה בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "כל מה שב־Pro, מאגר נקודות משותף לצוות",
+    "notes": "\"Starting from $20 per seat/month\". מכסת הנקודות לא צוינה.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free עם 300 נקודות שמתחדשות מדי יום, משימה אחת במקביל ו־2 אוטומציות מתוזמנות.",
+  "trial": null,
+  "unverified_notes": "טבלאות המחירים בעמוד העזרה הן תמונות: המחיר השנתי המדויק לא אומת, ידוע רק שיש 17% הנחה. המטבע מוצג כ־\"$\" בלבד. חבילות נקודות נוספות \"never expire\", אבל מחירן לא אומת. מחיר Enterprise לא פורסם."
+ },
+ "privacy": {
+  "text": "לא אומת: עמודי תנאי השימוש ומדיניות הפרטיות נטענים בסקריפט ותוכנם לא נקרא, ולכן לא ידוע אם Manus משתמשת בתוכן לאימון מודלים. התיאור הקצר של מדיניות הפרטיות מזכיר עיבוד נתונים ב־Manus AI, ב־Monica AI ובשירותים קשורים.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s6",
+   "s7"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נטענו.",
+  "watermark": null,
+  "source_ids": [
+   "s6"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לפי הבלוג, Manus Flex (מ־29 בספטמבר 2026) מאפשר להשתמש במפתח API משלך בתוך סביבת העבודה של Manus. API ציבורי לא נבדק.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "אפליקציית דסקטופ"
+  ],
+  "source_ids": [
+   "s5"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Manus AI",
+  "parent": null,
+  "country": null,
+  "note": "השם לפי תחתית הבלוג. לפי הבלוג החברה חזרה לפעול באופן עצמאי, ולכן אין חברת אם. מדינת הרישום לא אומתה."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים: עמוד התוכניות במרכז העזרה אינו מזכיר הצעה לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://help.manus.im/en/articles/11711111",
+   "title": "מרכז העזרה של Manus: תוכניות ומחירים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://manus.im/docs/introduction/plans.md",
+   "title": "התיעוד של Manus: תוכניות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://www.manus.im/blog",
+   "title": "הבלוג של Manus (רשימת פוסטים)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://manus.im/blog/manus-resumes-independent-operations",
+   "title": "הבלוג של Manus: Manus Resumes Independent Operations",
+   "official": true,
+   "published": "2026-09-01",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://help.manus.im/en/articles/14134826-understanding-credit-consumption-in-the-manus-desktop-app",
+   "title": "מרכז העזרה של Manus: צריכת נקודות באפליקציית הדסקטופ",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s6",
+   "url": "https://manus.im/terms",
+   "title": "תנאי השימוש של Manus (התוכן לא נטען)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s7",
+   "url": "https://manus.im/privacy",
+   "title": "מדיניות הפרטיות של Manus (התוכן לא נטען)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s8",
+   "url": "https://a16z.com/100-gen-ai-apps-7/",
+   "title": "a16z: The Top 100 Gen AI Consumer Apps, מהדורה 7",
+   "official": false,
+   "published": "2026-10-05",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "Manus 2.0 יצא ב־28 בספטמבר 2026, והכלי מופיע ב־3 מ־5 סיכומים עצמאיים. תאריך ההשקה הראשונה לא נקרא במקור רשמי.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Manus 2.0",
+   "latest_version_date": "September 28, 2026",
+   "latest_version_date_iso": "2026-09-28",
+   "independent_reviews": 3,
+   "evidence": "research/stage4/agents-automation.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 20,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־20 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": [
+    "Mac",
+    "Windows",
+    "אפליקציות לנייד"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 3,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מופיע ברשימת 50 אתרי ה־AI המובילים בתנועה במהדורה השביעית של a16z (5 באוקטובר 2026, לפי Similarweb), בלי מקום מפורט בטקסט.",
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "300 נקודות שמתחדשות בכל יום בתוכנית החינמית.",
+    "evidence": "research/stage4/agents-automation.md"
+   }
+  }
+ }
+}

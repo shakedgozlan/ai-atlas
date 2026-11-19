@@ -1,0 +1,272 @@
+{
+ "id": null,
+ "slug": "v0",
+ "category_id": 5,
+ "name": "v0",
+ "former_name": null,
+ "rename_note": null,
+ "role": "סוכן של Vercel שבונה ממשקים, אתרים ואפליקציות ווב מהנחיה בטקסט, עם עריכה חזותית ופרסום ב־Vercel.",
+ "url": "https://v0.app",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "מהנחיה לאתר מפורסם",
+   "detail": "גם התוכנית החינמית כוללת פרסום ב־Vercel, עריכה חזותית ב־Design Mode וסנכרון עם GitHub.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות זיכוי יומיות בתוכניות בתשלום",
+   "detail": "Plus ו־Business כוללות 30 דולר בנקודות זיכוי בחודש לכל משתמש, ועוד 2 דולר בנקודות זיכוי חינם בכל יום שנכנסים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "עבודה על קוד קיים",
+   "detail": "מאז הגרסה החדשה מ־3 בפברואר 2026, v0 יכול לייבא מאגר GitHub קיים, ליצור ענף לכל שיחה ולפתוח PR שמתפרסם במיזוג.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מגבלה יומית בתוכנית החינמית",
+   "detail": "בתוכנית Free אפשר לשלוח עד 7 הודעות ביום.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "אימון על הנתונים כברירת מחדל בחינם",
+   "detail": "משתמשי v0 בחינם עם חשבון Hobby של Vercel נכללים כברירת מחדל באימון מודלים, ואפשר לבטל בהגדרות הצוות.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מפתחים, מעצבים ויזמים שרוצים להפוך רעיון לממשק או לאפליקציית ווב עובדת.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־30 דולר למשתמש לחודש (Plus). יש תוכנית חינמית עם עד 7 הודעות ביום.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "גישה ל־v0, פרסום ב־Vercel, Design Mode, סנכרון עם GitHub, עד 7 הודעות ביום",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Plus",
+    "price": 30,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "30 דולר בנקודות זיכוי בחודש לכל משתמש, ועוד 2 דולר בנקודות זיכוי ביום בכניסה",
+    "notes": "בעמוד מוצג לצד המחיר הסכום 90 דולר מחוק, בלי הסבר.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": 100,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "30 דולר בנקודות זיכוי בחודש לכל משתמש, ועוד 2 דולר בנקודות זיכוי ביום בכניסה",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free: גישה ל־v0, פרסום ב־Vercel, Design Mode וסנכרון עם GitHub, עם מגבלה של 7 הודעות ביום.",
+  "trial": null,
+  "unverified_notes": "העמוד מציג רק מחירים חודשיים ולא מזכיר חיוב שנתי. לצד 30 הדולר של Plus מוצג 90 דולר מחוק בלי הסבר, ולכן לא ברור אם זה מחיר מבצע. המחירים לפני מסים. עמוד ה־changelog של Vercel ממרץ 2026 מזכיר תוכניות בשם Free ו־Premium, ואילו עמוד המחירים הנוכחי מציג Free, Plus ו־Business."
+ },
+ "privacy": {
+  "text": "לפי עדכון תנאי השימוש של Vercel מ־17 במרץ 2026, משתמשי v0 בתוכניות Free או Premium שיש להם חשבון Hobby של Vercel נכללים כברירת מחדל באימון מודלים; משתמשי v0 אחרים מוחרגים כברירת מחדל. אפשר לבטל ב־Team Settings תחת Data Preferences. נתונים ששותפו לפני הביטול לא יוחזרו.",
+  "training_on_user_data": "כן כברירת מחדל למשתמשים בחינם עם חשבון Hobby, עם אפשרות ביטול. בתוכניות בתשלום של Vercel ההחרגה היא ברירת המחדל.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי הבעלות על הפלט לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "תיעוד API של v0 לא נבדק.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "Vercel",
+   "GitHub",
+   "Snowflake",
+   "AWS"
+  ],
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "לא אומת: לא נקרא עמוד רשמי על שפות או על תמיכה בימין־לשמאל.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Vercel",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי לא נקרא במקור שנפתח."
+ },
+ "student_benefits": {
+  "text": "בעמוד המחירים יש קישור 'v0 for Students' ושאלה נפוצה על הנחות לסטודנטים, אך התשובה ריקה. תנאי ההטבה לא אומתו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://v0.app/pricing",
+   "title": "עמוד המחירים של v0",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://vercel.com/changelog/updates-to-terms-of-service-march-2026",
+   "title": "Vercel changelog: עדכון תנאי השימוש, מרץ 2026",
+   "official": true,
+   "published": "2026-03-17",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://vercel.com/blog/introducing-the-new-v0",
+   "title": "הבלוג של Vercel: Introducing the new v0",
+   "official": true,
+   "published": "2026-02-03",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "גרסה חדשה של v0 לעבודת פרודקשן הוכרזה ב־3 בפברואר 2026, ו־2 סקירות עצמאיות מהשנה האחרונה מכסות את v0. לפי Vercel, v0 הפך לזמין לכלל ב־2024.",
+   "launch_date": "generally available in 2024",
+   "launched_in_window": false,
+   "latest_version": "The new v0",
+   "latest_version_date": "3 Feb 2026",
+   "latest_version_date_iso": "2026-02-03",
+   "independent_reviews": 2,
+   "evidence": "research/stage4/ui-web.md"
+  },
+  "hebrew": {
+   "value": "לא אומת",
+   "label": "עברית לא אומתה",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 30,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Plus",
+   "verified": false,
+   "label": "מ־30 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 2,
+    "of": 4,
+    "value": false,
+    "evidence": "research/stage4/ui-web.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/ui-web.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "עד 7 הודעות ביום בתוכנית החינמית.",
+    "evidence": "research/stage4/ui-web.md"
+   }
+  }
+ }
+}

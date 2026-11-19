@@ -1,0 +1,316 @@
+{
+ "id": null,
+ "slug": "wispr-flow",
+ "category_id": 13,
+ "name": "Wispr Flow",
+ "former_name": null,
+ "rename_note": null,
+ "role": "הכתבה קולית בכל אפליקציה, שהופכת דיבור לטקסט ערוך, ולצדה Notetaker לסיכום פגישות.",
+ "url": "https://wisprflow.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "הכתבה בעברית",
+   "detail": "עברית היא שפה שאפשר לבחור בהגדרות, ובסך הכול יש יותר מ־100 שפות. את העברית צריך לבחור ידנית, כי היא לא מזוהה אוטומטית מהדיבור.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "50% הנחה לסטודנטים",
+   "detail": "סטודנטים מקבלים 50% הנחה על Flow Pro ואנשי חינוך 40%. Pro עולה 15 דולר לחודש, או 12 דולר בחיוב שנתי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "עובד בכל המכשירים",
+   "detail": "ההכתבה זמינה ב־Mac, ב־Windows, ב־iPhone וב־Android, וה־Notetaker שהושק באוגוסט 2026 עובד ב־Zoom, Meet, Teams ו־Slack.",
+   "source_ids": [
+    "s1",
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מכסה שבועית לא מפורטת בחינם",
+   "detail": "בתוכנית החינמית יש מגבלת מילים בשבוע ומגבלת פגישות שבועית ל־Notetaker, אבל העמוד לא מציין את המספרים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "עברית רק בבחירה ידנית",
+   "detail": "לפי מרכז העזרה, כדאי לבחור בכל פעם רק שפה אחת שהכלי לא מזהה מהדיבור, כמו עברית. השפות של ה־Notetaker לא פורטו בעמוד זה.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים וכותבים שרוצים לכתוב בקול במקום להקליד, כולל בעברית, ומי שרוצה גם סיכום פגישות.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "Pro ב־15 דולר לחודש בחיוב חודשי, או 12 דולר לחודש בחיוב שנתי. יש תוכנית חינמית עם מכסת מילים שבועית.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "הכתבה ביותר מ־100 שפות במכסת מילים שבועית, Notetaker במכסת פגישות שבועית, מילון וקיצורים",
+    "notes": "המספרים של המכסות לא צוינו. הקלטות קצרות מ־5 דקות לא נספרות.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 15,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "הכתבה ו־Notetaker ללא הגבלה, בכפוף למגבלות שימוש לרעה",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 12,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "כמו Pro בחיוב חודשי",
+    "notes": "הנחה של 20% בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Growth",
+    "price": 23,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "בקרות ניהול בסיסיות, שליטה באימון המודל לכל הצוות, Notetaker כתוספת",
+    "notes": "בעמוד מופיע גם מחיר של 33 דולר בלי הסבר.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Growth",
+    "price": 18,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "כמו Growth בחיוב חודשי",
+    "notes": "בעמוד מופיע גם מחיר של 26 דולר בלי הסבר.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "אימון המודל נעול במצב כבוי",
+    "notes": "חיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Free חינמית ללא כרטיס אשראי: הכתבה בכל אפליקציה ביותר מ־100 שפות ב־Mac, Windows, iPhone ו־Android, במכסת מילים שבועית, ו־Notetaker במכסת פגישות שבועית. המספרים לא צוינו.",
+  "trial": null,
+  "unverified_notes": "גודל המכסות השבועיות בחינם לא צוין. ל־Growth מוצגים שני זוגות מחירים בלי הסבר. מבצע זמני: Notetaker בגישה מלאה עד 30 בנובמבר לצוותים שבחרו Dictation בלבד. סימן דולר בלי מטבע."
+ },
+ "privacy": {
+  "text": "לפי עמוד המחירים אפשר לבטל את ההשתתפות באימון המודל בכל עת ולבחור מה נשאר במכשיר. ב־Growth המנהל שולט באימון לכל הצוות, וב־Enterprise האימון נעול במצב כבוי. החברה מחזיקה ב־SOC 2 Type II וב־ISO 27001. לפי ההכרזה, ה־Notetaker מצטרף לפגישות בלחיצה אחת, והעמוד אינו מציין אם זה בוט או הקלטה במכשיר.",
+  "training_on_user_data": "אפשרי: המקור מציין אפשרות לבטל השתתפות באימון, כלומר ייתכן שהאימון פעיל כברירת מחדל. ברירת המחדל לא נכתבה במפורש.",
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לפי ההכרזה, את התמלולים וההערות אפשר למשוך ל־Claude, ל־ChatGPT ולסוכנים אחרים דרך MCP. API לא נבדק.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Zoom",
+   "Google Meet",
+   "Microsoft Teams",
+   "Slack huddles",
+   "MCP (Claude, ChatGPT)"
+  ],
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "Mac",
+   "Windows",
+   "iPhone",
+   "Android"
+  ],
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "עברית נתמכת לפי המקור בהכתבה: מרכז העזרה מונה את עברית בין \"Other selectable languages\", כלומר צריך לבחור אותה ידנית. תמיכה של ה־Notetaker בעברית ותצוגה מימין לשמאל לא נבדקו.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "company": {
+  "name": "Wispr",
+  "parent": null,
+  "country": null,
+  "note": "כך נקראת החברה בהכרזה הרשמית. השם המשפטי לא אומת."
+ },
+ "student_benefits": {
+  "text": "לפי עמוד המחירים, סטודנטים מקבלים 50% הנחה על Flow Pro ואנשי חינוך 40%. אופן האימות לא נבדק.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://wisprflow.ai/pricing",
+   "title": "עמוד המחירים של Wispr Flow",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://docs.wisprflow.ai/articles/3191899797-use-flow-with-multiple-languages",
+   "title": "מרכז העזרה של Wispr Flow: שימוש בכמה שפות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://wisprflow.ai/post/wispr-flow-notetaker",
+   "title": "בלוג Wispr: הכרזה על Wispr Notetaker",
+   "official": true,
+   "published": "2026-08-05",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "ה־Notetaker הושק ב־5 באוגוסט 2026, אבל נמצאה רק סקירה עצמאית אחת בחלון הזמן. נכלל ככלי מוביל להכתבה.",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "Wispr Notetaker",
+   "latest_version_date": "Aug 5, 2026",
+   "latest_version_date_iso": "2026-08-05",
+   "evidence": "research/stage4/meetings-knowledge.md",
+   "independent_reviews": 1
+  },
+  "hebrew": {
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
+  },
+  "starting_price": {
+   "amount": 15,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־15 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "Mac",
+    "Windows",
+    "iOS",
+    "Android"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 1,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/meetings-knowledge.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/meetings-knowledge.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "מכסת מילים שבועית ומכסת פגישות שבועית בתוכנית Free; המספרים לא צוינו.",
+    "evidence": "research/stage4/meetings-knowledge.md"
+   }
+  }
+ }
+}

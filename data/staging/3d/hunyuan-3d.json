@@ -1,0 +1,257 @@
+{
+ "id": null,
+ "slug": "hunyuan-3d",
+ "category_id": 9,
+ "name": "Tencent Hunyuan 3D",
+ "former_name": null,
+ "rename_note": "הכתובת 3d.hunyuanglobal.com מפנה כעת אל hy3d.tencent.ai. סיקור חיצוני משתמש בשם Tencent HY 3D; לא נבדקה הודעה רשמית על שינוי שם.",
+ "role": "מודל ואתר של Tencent ליצירת מודלים תלת־ממדיים מטקסט, מתמונה, מכמה זוויות ומסקיצה, עם API בענן של Tencent.",
+ "url": "https://3d.hunyuanglobal.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "יצירה חינמית יומית באתר הגלובלי",
+   "detail": "לפי סיקור חיצוני, האתר הגלובלי מציע עד 20 יצירות ביום בחינם, כהצעה לזמן מוגבל.",
+   "source_ids": [
+    "s4",
+    "s5"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הגרסה 3.1 משתמשת בעד 8 זוויות",
+   "detail": "לפי CGWORLD, HY 3D 3.1 (16 בינואר 2026) מכפילה את מספר תמונות הייחוס מ־4 ל־8 לשחזור מדויק יותר.",
+   "source_ids": [
+    "s5"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "זמין גם בתוך כלים אחרים",
+   "detail": "המודל משמש כמנוע ברירת המחדל ליצירת מודלים ב־Spline, לצד Hunyuan 3.1 Pro. ב־API של Tencent Cloud יש גם רשת Low Poly, ריגינג אוטומטי, פריסת UV ויצירת חלקים.",
+   "source_ids": [
+    "s6",
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "המכסה החינמית מוגדרת זמנית",
+   "detail": "לפי CGWORLD, 20 היצירות ביום באתר הגלובלי הן ניסיון חינם לזמן מוגבל, ופיצול לחלקים (PartGen 1.5) קיים רק בגרסה הסינית ולא בגלובלית.",
+   "source_ids": [
+    "s5"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ה־API בתשלום מראש",
+   "detail": "ב־Tencent Cloud הנקודות נמכרות בחבילות של 15 עד 1,350 דולר, כ־0.0135 עד 0.015 דולר לנקודה. יצירה רגילה עולה 25 נקודות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים ומפתחי משחקים שרוצים להתנסות ביצירת מודלים בחינם, ומפתחים שמשלבים יצירת 3D דרך ענן Tencent.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "באתר הצרכני המחירים לא אומתו. ב־API של Tencent Cloud חבילות נקודות מראש מ־15 דולר.",
+  "model": "נקודות זיכוי, ו־API לפי שימוש",
+  "plans": [
+   {
+    "name": "Tencent Cloud API",
+    "price": null,
+    "price_text": "מ־15 דולר לחבילת נקודות",
+    "price_short": "לפי שימוש",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "יצירה רגילה 25 נקודות, Geometry או Express 15, LowPoly 30, ריגינג אוטומטי 10, פריסת UV 10, המרת פורמט 5",
+    "notes": "חבילות מראש מ־15 עד 1,350 דולר, כ־0.0135 עד 0.015 דולר לנקודה לפי החבילה, או תשלום לפי שימוש. פעולות שנכשלו אינן מחויבות. למשתמשים חדשים הוצעו 1,000 נקודות חינם עד 30 ביוני 2026.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": "ב־Tencent Cloud הוצעו למשתמשים חדשים 1,000 נקודות חינם, בהצעה שהסתיימה ב־30 ביוני 2026 לפי המקור.",
+  "unverified_notes": "תוכניות האתר הצרכני לא אומתו: לפי סיקור חיצוני (CGWORLD) יש תוכנית Basic חינמית עם 200 נקודות בחודש ותוכנית Plus ב־19.9 דולר לחודש עם 2,000 נקודות, ולפי Auganix יש 20 יצירות חינם ביום. לא נמצא עמוד מחירים רשמי שנטען. מטבע ה־API מוצג עם הסימן $ בלבד."
+ },
+ "privacy": {
+  "text": "לא אומת. תנאי השימוש ומדיניות הפרטיות של האתר לא נקראו.",
+  "training_on_user_data": null,
+  "source_ids": []
+ },
+ "commercial_rights": {
+  "text": "לא אומת. עמודי Tencent Cloud שנקראו אינם עוסקים בשימוש מסחרי, ותנאי האתר לא נקראו.",
+  "watermark": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "API של Hunyuan 3D זמין ב־Tencent Cloud הבינלאומי, עם קונסולה באנגלית ותשלום בנקודות. התוצר מתקבל כקובץ GLB, ויש פעולת המרת פורמט. פרמטר Model מאפשר לבחור גרסת מנוע.",
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Spline"
+  ],
+  "source_ids": [
+   "s6"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית. עמוד המוצר נטען עם תגית שפה zh_CN בלבד, ועמודי Tencent Cloud מתארים קונסולה באנגלית.",
+  "source_ids": [
+   "s3",
+   "s2"
+  ]
+ },
+ "company": {
+  "name": "Tencent",
+  "parent": null,
+  "country": "סין",
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה רשמית לסטודנטים בעמודים שנבדקו.",
+  "source_ids": []
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.tencentcloud.com/techpedia/148275?lang=en",
+   "title": "Tencent Cloud: תמחור נקודות ב־Hunyuan 3D",
+   "official": true,
+   "published": "2026-09-01",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.tencentcloud.com/techpedia/148295?lang=en",
+   "title": "Tencent Cloud: מדריך לגרסה הבינלאומית של Hunyuan 3D",
+   "official": true,
+   "published": "2026-09-01",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://hy3d.tencent.ai/",
+   "title": "Tencent Hunyuan 3D, אתר המוצר (התוכן נטען חלקית)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://www.auganix.org/?p=17899",
+   "title": "Auganix: השקה עולמית של Hunyuan 3D Engine",
+   "official": false,
+   "published": "2025-11-27",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://cgworld.jp/flashnews/01-202602-TencentHY3D.html",
+   "title": "CGWORLD: Tencent HY 3D 3.1 בפלטפורמה הגלובלית",
+   "official": false,
+   "published": "2026-02-02",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s6",
+   "url": "https://docs.spline.design/generate/ai-3d-generation",
+   "title": "תיעוד Spline: AI 3D Generation",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "HY 3D 3.1 יצא ב־16 בינואר 2026 לפי CGWORLD, אבל הכלי נמצא רק בסקירה עצמאית אחת.",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "HY 3D 3.1",
+   "latest_version_date": "January 16, 2026",
+   "latest_version_date_iso": "2026-01-16",
+   "independent_reviews": 1,
+   "evidence": "research/stage4/3d.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": "USD",
+   "billing": null,
+   "plan": null,
+   "verified": false,
+   "label": null,
+   "has_free_plan": null
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 1,
+    "of": 4,
+    "value": false,
+    "evidence": "research/stage4/3d.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   }
+  }
+ }
+}

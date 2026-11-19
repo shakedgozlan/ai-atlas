@@ -1,0 +1,298 @@
+{
+ "id": null,
+ "slug": "google-antigravity",
+ "category_id": 10,
+ "name": "Google Antigravity",
+ "former_name": null,
+ "rename_note": null,
+ "role": "פלטפורמת פיתוח של Google שבה סוכנים מבוססי Gemini כותבים, בודקים ומריצים קוד, באפליקציה שולחנית, בעורך קוד ובשורת הפקודה.",
+ "url": "https://antigravity.google",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": "Antigravity 2.0 הושקה כאפליקציה שולחנית עצמאית לצד CLI, SDK ו־API. עורך הקוד המקורי (Antigravity IDE) נשאר זמין \"for now\".",
+  "date_as_written": "May 19, 2026",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "שימוש חינמי שמתחדש כל שבוע",
+   "detail": "חשבון Google אישי בלי מנוי מקבל מכסה שמתחדשת מדי שבוע, עם מגבלת קצב שבועית.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מכסה גבוהה יותר במנוי Google AI Pro",
+   "detail": "Google AI Pro (19.99 דולר לחודש בארה״ב) מעלה את מגבלות הקצב לסוכן ב־Antigravity, עם מכסה שמתחדשת כל חמש שעות עד לגבול השבועי.",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "זמין בשלוש מערכות הפעלה",
+   "detail": "אפליקציית Antigravity 2.0 זמינה ל־macOS, ל־Linux ול־Windows.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "השיחות והקוד משמשים לשיפור מוצרים",
+   "detail": "לפי התנאים, Google משתמשת באינטראקציות לפיתוח ולשיפור מוצרים, ועובדים וקבלנים עשויים לצפות בהן. אפשר לשנות את ההעדפה בהגדרות.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "המכסות אינן מפורסמות במספרים",
+   "detail": "עמוד התוכניות מתאר את המכסות במילים בלבד ומציין שהן עשויות להשתנות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חשבונות Workspace בלי הטבות",
+   "detail": "לפי התיעוד, תוכניות Google Workspace אינן כוללות תוכניות Antigravity או מגבלות קצב גבוהות יותר.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים ומפתחים עם חשבון Google שרוצים לנסות סוכני תכנות בחינם, ומנויי Google AI.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "שימוש בסיסי בחינם עם מכסה שבועית. מכסות גבוהות יותר דרך Google AI Pro ב־19.99 דולר לחודש (מחיר בארה״ב).",
+  "model": "מנוי עם מכסת שימוש",
+  "plans": [
+   {
+    "name": "חשבון Google ללא מנוי",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מכסה שמתחדשת מדי שבוע, עם מגבלת קצב שבועית",
+    "notes": null,
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Google AI Pro",
+    "price": 19.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מגבלות קצב בסיסיות לסוכן ב־Antigravity, מכסה שמתחדשת כל חמש שעות עד לגבול שבועי גבוה יותר",
+    "notes": "מנוי Google AI כללי, לא מנוי ייעודי ל־Antigravity. מחיר בתצוגת ארה״ב. אפשר להמשיך בנקודות AI שנרכשו.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Google AI Ultra",
+    "price": 99.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "Ultra 5x: מגבלות קצב גבוהות יותר, גישה למודלים של צד שלישי",
+    "notes": "קיימת גם מדרגה של 199.99 דולר לחודש (Ultra 20x) עם מגבלות הקצב הגבוהות ביותר.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Google AI Ultra",
+    "price": 199.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "Ultra 20x: מגבלות הקצב הגבוהות ביותר ב־Antigravity",
+    "notes": null,
+    "source_ids": [
+     "s2"
+    ]
+   }
+  ],
+  "free_tier": "חשבון Google אישי בלי Pro או Ultra מקבל מכסה שמתחדשת מדי שבוע, עם מגבלת קצב שבועית.",
+  "trial": null,
+  "unverified_notes": "המחירים נלקחו מעמוד מנויי Google AI בתצוגת ארה״ב, בסימן $ בלי קוד מטבע ובלי מחיר שנתי; מחירים במדינות אחרות לא נבדקו. Google AI Plus (4.99 דולר) אינה מזכירה את Antigravity. מחיר נקודות AI לחריגה לא נבדק. המכסות לא פורסמו במספרים."
+ },
+ "privacy": {
+  "text": "לפי התנאים הנוספים של Antigravity, Google משתמשת באינטראקציות (נתוני משתמש ושימוש, מטא־דאטה ומשוב) לפיתוח ולשיפור מוצרים, ועובדים וקבלנים עשויים לגשת אליהן. אפשר לשנות את ההעדפה בהגדרות, ולבקש מחיקה בדוא״ל antigravity-support@google.com. גם כשהטלמטריה כבויה, Google משתמשת במידע לצורך מתן השירות.",
+  "training_on_user_data": "כן כברירת מחדל לחשבונות אישיים, עם אפשרות לשנות בהגדרות. המונח אימון אינו מופיע במפורש; התנאים מדברים על פיתוח ושיפור מוצרים.",
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: התנאים הנוספים של Antigravity אינם עוסקים בבעלות על הפלט או בשימוש מסחרי. המשתמש אחראי בלעדית לפעולות הסוכן.",
+  "watermark": null,
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "לפי הודעת ההשקה של Antigravity 2.0, הושקו לצדה Antigravity CLI, Antigravity SDK ו־API. התיעוד והתמחור שלהם לא נבדקו.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אפליקציה שולחנית ל־macOS, ל־Linux ול־Windows",
+   "Antigravity IDE",
+   "Antigravity CLI"
+  ],
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Google",
+  "parent": "Alphabet",
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "עמוד מנויי Google AI מקשר לעמוד For Students בלי פרטים, ועמוד התוכניות של Antigravity אינו מזכיר סטודנטים. ההטבה לא נבדקה.",
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://antigravity.google/docs/plans/",
+   "title": "תיעוד Google Antigravity: תוכניות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://gemini.google/subscriptions/",
+   "title": "Google: מנויי Google AI (תצוגת ארה״ב)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://antigravity.google/blog/introducing-google-antigravity-2/",
+   "title": "בלוג Google Antigravity: Introducing Google Antigravity 2.0",
+   "official": true,
+   "published": "2026-05-19",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://antigravity.google/terms/",
+   "title": "Google Antigravity Additional Terms of Service",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "הושק בנובמבר 2025, וגרסה 2.0 יצאה ב־19 במאי 2026. מופיע ב־4 מתוך 6 סקירות עצמאיות.",
+   "launch_date": "November 2025",
+   "launched_in_window": true,
+   "latest_version": "Google Antigravity 2.0",
+   "latest_version_date": "May 19, 2026",
+   "latest_version_date_iso": "2026-05-19",
+   "independent_reviews": 4,
+   "evidence": "research/stage4/code.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 19.99,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Google AI Pro",
+   "verified": true,
+   "label": "מ־19.99 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "Mac",
+    "Windows",
+    "שורת פקודה"
+   ],
+   "unverified": [
+    "תוסף לעורך קוד"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 4,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/code.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מופיע ברשימת אתרי הבינה המלאכותית של a16z, מהדורה 7 (אוקטובר 2026, לפי Similarweb לאוגוסט 2026), בלי מספר מקום בטקסט.",
+    "evidence": "research/stage4/code.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "מכסה חינמית שמתחדשת מדי שבוע לחשבון Google אישי.",
+    "evidence": "research/stage4/code.md"
+   }
+  }
+ }
+}

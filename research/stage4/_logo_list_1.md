@@ -1,0 +1,20 @@
+- hyper3d-rodin | Hyper3D Rodin | https://hyper3d.ai
+- marble | Marble | https://marble.worldlabs.ai
+- spline | Spline | https://spline.design
+- genspark | Genspark | https://www.genspark.ai
+- gumloop | Gumloop | https://www.gumloop.com
+- lindy | Lindy | https://www.lindy.ai
+- microsoft-copilot-studio | Microsoft Copilot Studio | https://www.microsoft.com/en-us/copilot/products/copilot-studio
+- mistral-vibe | Mistral Vibe | https://mistral.ai/products/vibe/
+- adobe-podcast | Adobe Podcast | https://podcast.adobe.com
+- google-flow-music | Google Flow Music | https://www.flowmusic.app
+- lalal-ai | LALAL.AI | https://www.lalal.ai
+- moises | Moises | https://moises.ai
+- murf | Murf | https://murf.ai
+- speechify | Speechify | https://speechify.com
+- stable-audio | Stable Audio | https://stableaudio.com
+- adobe-express | Adobe Express | https://www.adobe.com/express/
+- canva | Canva | https://www.canva.com
+- kittl | Kittl | https://www.kittl.com
+- looka | Looka | https://looka.com
+- microsoft-designer | Microsoft Designer | https://designer.microsoft.com

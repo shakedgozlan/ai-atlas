@@ -1,0 +1,297 @@
+{
+ "id": null,
+ "slug": "veed",
+ "category_id": 7,
+ "name": "VEED",
+ "former_name": null,
+ "rename_note": null,
+ "role": "עורך וידאו בדפדפן עם כתוביות אוטומטיות, תרגום ודיבוב, אווטרים וכלי AI להקלטה ועריכה.",
+ "url": "https://www.veed.io",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": "ביומן השינויים מופיעה רשומה על VEED AI, עורך וידאו אוטונומי, בתאריך 19 בנובמבר 2026, יום אחרי יום הבדיקה.",
+  "date_as_written": "November 19, 2026",
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "כתוביות כמעט ללא הגבלה בתוכניות בתשלום",
+   "detail": "כל התוכניות בתשלום כוללות יצירת כתוביות ללא הגבלה, במגבלת שימוש הוגן של 50 שעות בחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "כתוביות אוטומטיות בעברית",
+   "detail": "לפי VEED, אפשר ליצור כתוביות אוטומטיות בעברית בחינם. הורדה כקובץ SRT או VTT ותרגום דורשים מנוי בתשלום.",
+   "source_ids": [
+    "s5"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "זכויות בתמונות AI",
+   "detail": "לפי תנאי כלי ה־AI, המשתמש הוא הבעלים של תמונות ה־AI שיצר ורשאי להשתמש בהן לכל מטרה חוקית.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "תמחור לפי מושב",
+   "detail": "המחיר מוכפל במספר העורכים בסביבת העבודה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות ודקות לא נצברות",
+   "detail": "נקודות AI ודקות תרגום שלא נוצלו אינן עוברות לתקופה הבאה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכן חינמי משמש לאימון",
+   "detail": "לפי מדיניות הפרטיות, תוכן שמשתמשי Free מעלים לאתר משמש לאימון מודלים. מי שמתנגד צריך למחוק את החשבון או לשדרג.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "יוצרים, משווקים וצוותים שעורכים בדפדפן ורוצים כתוביות ותרגום מהירים לרשתות.",
+ "pricing": {
+  "verification": "לא אומת",
+  "summary_line": null,
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "העמוד מציין \"Start for free\" בלי לפרט מה כלול.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "תוכניות בתשלום",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "כתוביות ללא הגבלה במגבלת שימוש הוגן של 50 שעות בחודש, נקודות AI חודשיות או שנתיות, דקות תרגום לפי התוכנית",
+    "notes": "התמחור הוא לפי מושב. נקודות ודקות תרגום שלא נוצלו אינן עוברות לתקופה הבאה. שמות התוכניות ומחיריהן לא הופיעו בטקסט שנקרא.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Education",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "תוכניות מותאמות לשימוש של פקולטה שלמה",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "ניסיון חינם לארגונים, מינימום 3 משתמשים",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": "ניסיון חינם לארגונים בלבד, במינימום 3 משתמשים.",
+  "unverified_notes": "עמוד המחירים נקרא פעמיים, אך שמות התוכניות, המחירים, המכסות, הרזולוציה וסימן המים בתוכנית החינמית לא הופיעו בטקסט (כנראה מוצגים בסקריפט). לפי העמוד המחירים מוצגים במטבע מקומי כשאפשר, אחרת בדולר ארה\"ב."
+ },
+ "privacy": {
+  "text": "לפי מדיניות הפרטיות (עודכנה בנובמבר 2026), תוכן שמשתמשי Free מעלים לאתר משמש לאימון ולפיתוח מודלי בינה מלאכותית. הסעיף לא חל על תוכן שהועלה דרך האפליקציות לנייד. משתמש Free יכול להתנגד, אבל אז עליו למחוק את החשבון או לשדרג לתוכנית בתשלום. הסעיף לא מתייחס לתוכן של תוכניות בתשלום. ספקי השירות של VEED אינם רשאים להשתמש במידע אישי לצרכיהם, אבל לא נאמר במפורש אם הם רשאים לאמן מודלים על תוכן משתמשים.",
+  "training_on_user_data": "כן, בתוכן של משתמשי Free באתר; לגבי תוכניות בתשלום המקור לא אומר",
+  "source_ids": [
+   "s3",
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תנאי כלי ה־AI, במידה שהחוק מתיר, המשתמש הוא הבעלים של תמונות ה־AI ורשאי להשתמש בהן לכל מטרה חוקית, ו־Veed Limited לא תטען לבעלות עליהן. החברה אינה אחראית לשימושים שהמשתמש עושה בהן. העמוד עוסק בתמונות AI, ולא נבדק אם אותם כללים חלים על סרטונים.",
+  "watermark": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": null,
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "לפי עמוד כלי רשמי של VEED, אפשר להוסיף כתוביות אוטומטיות בעברית בחינם (\"Add auto-subtitles in the Hebrew language to your video content for free\"), והכלי מתמלל את השמע. הורדת הכתוביות כקובץ SRT או VTT ותרגום זמינים במנוי בתשלום. העמוד לא עוסק בתצוגה מימין לשמאל. נתון הדיוק שבעמוד (95%) הוא טענה של החברה.",
+  "source_ids": [
+   "s5"
+  ]
+ },
+ "company": {
+  "name": "Veed Limited",
+  "parent": null,
+  "country": "בריטניה",
+  "note": "המדינה נגזרת מהכתובת בלונדון ומההפניה לרשות הפיקוח הבריטית ICO במדיניות הפרטיות; המדיניות לא מציינת אותה במפורש."
+ },
+ "student_benefits": {
+  "text": "עמוד המחירים מציין \"bespoke education plans for faculty wide use\" דרך פנייה למכירות. הנחה אישית לסטודנט לא הוזכרה.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.veed.io/pricing",
+   "title": "עמוד המחירים של VEED (נקראו רק השאלות הנפוצות)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.veed.io/terms-of-use/ai-tools",
+   "title": "VEED: תנאי שימוש בכלי AI",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://veed.io/privacy",
+   "title": "מדיניות הפרטיות של VEED (עודכנה בנובמבר 2026)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://changelog.veed.io",
+   "title": "יומן השינויים של VEED",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://www.veed.io/tools/auto-subtitle-generator-online/hebrew-subtitles",
+   "title": "VEED: כתוביות אוטומטיות בעברית (עמוד כלי רשמי)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "ביומן השינויים מופיעים OpenEdit (3 באוגוסט 2026) ו־Lipsync 2.0 (14 ביולי 2026), והכלי מופיע ב־3 מתוך 6 סקירות עצמאיות. רשומה על VEED AI מתוארכת ל־19 בנובמבר 2026, אחרי יום הבדיקה, ולא נספרה.",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "OpenEdit",
+   "latest_version_date": "August 03, 2026",
+   "latest_version_date_iso": "2026-08-03",
+   "independent_reviews": 3,
+   "evidence": "research/stage4/video-editing.md"
+  },
+  "hebrew": {
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": null,
+   "billing": null,
+   "plan": null,
+   "verified": false,
+   "label": null,
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 3,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "a16z Top 100 Gen AI Consumer Apps, מהדורה 6 (מרץ 2026, נתוני Similarweb לינואר 2026): מקום 46 ברשימת האתרים.",
+    "evidence": "research/stage4/video-editing.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/video-editing.md"
+   }
+  }
+ }
+}

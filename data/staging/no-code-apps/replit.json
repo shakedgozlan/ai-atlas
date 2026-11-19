@@ -1,0 +1,337 @@
+{
+ "id": null,
+ "slug": "replit",
+ "category_id": 11,
+ "name": "Replit",
+ "former_name": null,
+ "rename_note": null,
+ "role": "סביבת פיתוח בדפדפן עם סוכן AI שבונה, מריץ ומפרסם אפליקציות ווב ומובייל מתוך תיאור במילים.",
+ "url": "https://replit.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "ווב ומובייל באותו פרויקט",
+   "detail": "לפי Replit, Agent 4, שהושק ב־13 במרץ 2026, בונה אפליקציות ווב ומובייל באותו פרויקט וממיר אפליקציית ווב קיימת לאפליקציה לנייד.",
+   "source_ids": [
+    "s4",
+    "s5"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "קנבס עיצוב לגרסאות",
+   "detail": "ב־Agent 4 אפשר לייצר כמה גרסאות עיצוב על קנבס אינסופי, להשוות ביניהן ולהחיל את הנבחרת על האפליקציה.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית עם אפליקציה מפורסמת",
+   "detail": "Starter החינמית כוללת מכסת AI יומית, נקודות ענן חודשיות מוגבלות ואפליקציה מפורסמת אחת.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "עלות לפי מאמץ",
+   "detail": "הפעולות בתשלום מתומחרות לפי מורכבות הבקשה (effort-based pricing), בלי תעריף קבוע שמפורסם מראש. Replit מבקשת אישור לפני פעולה בתשלום.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות Core לא עוברות לחודש הבא",
+   "detail": "ב־Core, 20 הדולר בנקודות מתאפסים בכל מחזור חיוב. ב־Pro יתרה עוברת לחודשיים, ונקודות שנרכשו בנפרד פגות אחרי שישה חודשים.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "עבודה מקבילית רק בתוכניות היקרות",
+   "detail": "הרצת משימות במקביל ב־Agent 4 זמינה למנויי Pro ו־Enterprise.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים ויוצרים שרוצים לבנות אפליקציה אמיתית, ווב או נייד, ולהתקדם בהדרגה גם לקוד עצמו.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־20 דולר לחודש בחיוב חודשי, או 18 דולר לחודש בחיוב שנתי (Core, כולל 20 דולר בנקודות). יש תוכנית חינמית עם אפליקציה מפורסמת אחת.",
+  "model": "מנוי עם נקודות זיכוי ותשלום לפי שימוש",
+  "plans": [
+   {
+    "name": "Starter",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "מכסת Replit AI יומית, נקודות ענן חודשיות מוגבלות, יכולות בנייה בסיסיות, אפליקציה מפורסמת אחת",
+    "notes": null,
+    "source_ids": [
+     "s2"
+    ]
+   },
+   {
+    "name": "Core",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "20 דולר בנקודות בחודש, אפליקציות מפורסמות ללא הגבלה, עד 30 שעות צ'אט ועד 60 פרויקטים ב־Free Mode, סביבות עבודה ללא הגבלה",
+    "notes": "הנקודות מתאפסות בכל מחזור חיוב. מחירים לפני מס לפי מיקום.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Core",
+    "price": 18,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "20 דולר בנקודות בחודש, אפליקציות מפורסמות ללא הגבלה",
+    "notes": "מחיר לחודש בחיוב שנתי לפי עמוד המחירים. סתירה: תיעוד התמחור כותב \"$204/year\", כלומר 17 דולר לחודש.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 100,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "100 דולר בנקודות בחודש, יותר שימוש ב־Free Mode, תמיכה מועדפת, עד 15 משתפי פעולה, שחזור מסד נתונים עד 28 ימים, משימות מקבילות ב־Agent 4",
+    "notes": "יתרה עוברת לחודשיים. בעמוד מוצגים גם הסכומים 215, 425, 825 ו־2,000 דולר לחודש בלי הסבר ברור.",
+    "source_ids": [
+     "s1",
+     "s2",
+     "s4"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 90,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "100 דולר בנקודות בחודש",
+    "notes": "מחיר לחודש בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "SSO, SCIM, יומני ביקורת, בקרות פרטיות מתקדמות",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Starter החינמית: מכסת Replit AI יומית, נקודות ענן חודשיות מוגבלות, יכולות בנייה בסיסיות ואפליקציה מפורסמת אחת. גודל המכסה לא פורסם.",
+  "trial": "לפי הבלוג, מנויי Core קיבלו גישה זמנית ל־Agent 4 כמבצע השקה לזמן מוגבל.",
+  "unverified_notes": "סתירה במחיר השנתי של Core: 18 דולר לחודש בעמוד המחירים מול 204 דולר לשנה בתיעוד. הסכומים הנוספים שמוצגים תחת Pro (215 עד 2,000 דולר) לא הוסברו. גודל המכסה היומית של Starter ותעריפי effort-based pricing לא פורסמו. המטבע מוצג כ־$ בלי קוד מטבע."
+ },
+ "privacy": {
+  "text": "לא אומת: תנאי השימוש (עודכנו ב־3 באוגוסט 2026) אינם אומרים אם Replit משתמשת בתוכן לאימון מודלים, ומדיניות הפרטיות לא נקראה. התנאים שומרים ל־Replit גישה לתוכן באפליקציות פרטיות לצורך תקלות, שיפור ואבטחה. מנוי בתשלום אינו מבטיח כשלעצמו שהתוכן לא ישמש לאימון.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תנאי השימוש (עודכנו ב־3 באוגוסט 2026), המשתמש שומר על כל זכויותיו בתוכן שהוא מעלה או מציג, ומעניק ל־Replit זכות להעתיק, להציג, להפיץ ולשנות אותו ככל שנדרש להפעלת השירות, כולל רישוי משנה לספקים. התנאים אינם מתייחסים בנפרד לתוצרי ה־AI, ואין בכך הבטחה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא אומת: תיעוד API ציבורי לא נקרא בבדיקה זו.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "אינטגרציות AI מובנות (AI integrations)",
+   "מסד נתונים עם שחזור (ב־Pro עד 28 ימים)",
+   "שליפת נתונים מ־BigQuery, Linear, Slack ו־Notion מתוך הצ'אט"
+  ],
+  "source_ids": [
+   "s1",
+   "s5"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של עברית או של כתיבה מימין לשמאל.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Replit, Inc.",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לפי תיעוד התמחור, ל־Replit יש תוכנית חינוך לסטודנטים ולמורים, עם הפניה ל־replit.com/education. גובה ההנחה ותנאי הזכאות לא פורסמו בעמוד שנקרא. עמוד המחירים אינו מזכיר סטודנטים.",
+  "source_ids": [
+   "s2",
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://replit.com/pricing",
+   "title": "עמוד המחירים של Replit",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://docs.replit.com/help/pricing-and-plans.md",
+   "title": "תיעוד Replit: תמחור ותוכניות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://replit.com/site/terms",
+   "title": "תנאי השימוש של Replit (עודכנו ב־3 באוגוסט 2026)",
+   "official": true,
+   "published": "2026-08-03",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://blog.replit.com/introducing-agent-4-built-for-creativity",
+   "title": "הבלוג של Replit: Introducing Replit Agent 4",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://docs.replit.com/updates/2026/03/13/changelog.md",
+   "title": "יומן השינויים של Replit: Introducing Replit Agent 4",
+   "official": true,
+   "published": "2026-03-13",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "Agent 4 הושק ב־13 במרץ 2026 לפי יומן השינויים הרשמי. ספירת הסקירות בקובץ המחקר.",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "Replit Agent 4",
+   "latest_version_date": "March 13, 2026",
+   "latest_version_date_iso": "2026-03-13",
+   "independent_reviews": 6,
+   "evidence": "research/stage4/no-code-apps.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 20,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Core",
+   "verified": true,
+   "label": "מ־20 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": [
+    "אפליקציות לנייד"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מופיע ברשימת אתרי הווב של a16z, Top 100 Gen AI Consumer Apps, מהדורה 7 (אוקטובר 2026, לפי Similarweb), בלי מקום מפורט בטקסט.",
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "מכסת Replit AI יומית ונקודות ענן חודשיות בתוכנית Starter החינמית.",
+    "evidence": "research/stage4/no-code-apps.md"
+   }
+  }
+ }
+}

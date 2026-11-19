@@ -1,0 +1,256 @@
+{
+ "id": null,
+ "slug": "deepseek",
+ "category_id": 1,
+ "name": "DeepSeek",
+ "former_name": null,
+ "rename_note": null,
+ "role": "עוזר שיחה של חברה סינית, באתר ובאפליקציה, עם API זול לפי שימוש.",
+ "url": "https://www.deepseek.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "API במחיר נמוך",
+   "detail": "במודל deepseek-flash הקלט עולה 0.15 עד 0.3 דולר למיליון טוקנים והפלט 0.6 עד 1.2 דולר, ובשעות שפל המחיר חצי.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מודל חדש באתר, באפליקציה וב־API",
+   "detail": "DeepSeek-V4.1-Flash-1017 שוחרר ב־17 באוקטובר 2026, \"Now live on our website, app, and API\".",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "הנתונים נשמרים בסין",
+   "detail": "לפי מדיניות הפרטיות, המידע האישי נאסף, מעובד ונשמר ברפובליקה העממית של סין.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "שימוש בנתונים לאימון, וביטול רק במייל",
+   "detail": "המדיניות מונה אימון מודלים בין מטרות השימוש בנתונים. ביטול נעשה בבקשה בדואר אלקטרוני ל־privacy@deepseek.com.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תנאי השימוש החינמי לא מפורסמים",
+   "detail": "בעמודים הרשמיים שנבדקו אין מחיר או מכסה לשימוש בצ'אט באתר ובאפליקציה.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "משתמשים ומפתחים שמחפשים עוזר שיחה ו־API במחיר נמוך, ומוכנים לשמירת נתונים בסין.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "ה־API לפי שימוש, מ־0.15 דולר למיליון טוקנים בקלט. מחיר הצ'אט באתר ובאפליקציה לא אומת.",
+  "model": "לפי שימוש",
+  "plans": [
+   {
+    "name": "צ'אט באתר ובאפליקציה",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "העמודים הרשמיים שנבדקו אינם מציינים אם הצ'אט חינמי.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "API: deepseek-flash",
+    "price": null,
+    "price_text": "קלט 0.15 עד 0.3 דולר, פלט 0.6 עד 1.2 דולר, למיליון טוקנים",
+    "price_short": "לפי שימוש",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "DeepSeek-V4.1-Flash-1017. קלט מהמטמון 0.003 עד 0.006 דולר.",
+    "notes": "המחיר הנמוך בשעות שפל, הגבוה בשעות שיא (01:00-04:00 ו־06:00-10:00 UTC בימים שני עד שישי). העמוד כותב \"$\" בלי קוד מטבע.",
+    "source_ids": [
+     "s2"
+    ]
+   },
+   {
+    "name": "API: deepseek-v4-pro",
+    "price": null,
+    "price_text": "קלט 0.66 עד 1.32 דולר, פלט 1.98 עד 3.96 דולר, למיליון טוקנים",
+    "price_short": "לפי שימוש",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "DeepSeek-V4-Pro-0813.",
+    "notes": "שעות שפל בחצי מחיר.",
+    "source_ids": [
+     "s2"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": null,
+  "unverified_notes": "לא נמצא עמוד רשמי שמציין אם הצ'אט באתר ובאפליקציה חינמי או מה המכסה שלו. מחירי ה־API אומתו בעמוד התיעוד, שבו כתוב \"$\" בלי קוד מטבע."
+ },
+ "privacy": {
+  "text": "לפי מדיניות הפרטיות (\"Last Update: Feb 10, 2026\"), אחת ממטרות השימוש במידע היא \"to train and improve our technology, such as our machine learning models and algorithms\". למשתמשים יש זכות לבטל את השימוש במידע האישי לאימון, בבקשה בדואר אלקטרוני ל־privacy@deepseek.com. המידע נאסף, מעובד ונשמר ברפובליקה העממית של סין.",
+  "training_on_user_data": "כן, עם זכות ביטול בבקשה בדואר אלקטרוני.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת. תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "API לפי שימוש עם שני מודלים, deepseek-flash ו־deepseek-v4-pro. בשעות שפל המחיר חצי. יש גם API לדיבור (TTS ו־ASR) ו־Search & Fetch ב־0.75 דולר ל־1,000 קריאות.",
+  "source_ids": [
+   "s2",
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "אפליקציה"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "לא אומת: לא נקרא עמוד רשמי על שפות נתמכות.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Hangzhou DeepSeek Artificial Intelligence Co., Ltd.",
+  "parent": null,
+  "country": "סין",
+  "note": "המדינה נגזרת מהשם המשפטי ומהצהרת מדיניות הפרטיות שהמידע נשמר בסין."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הצעה לסטודנטים בעמודים שנבדקו.",
+  "source_ids": []
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://api-docs.deepseek.com/news/news261017/",
+   "title": "DeepSeek: DeepSeek-V4.1-Flash-1017",
+   "official": true,
+   "published": "2026-10-17",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+   "title": "DeepSeek API Docs: Models & Pricing",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
+   "title": "DeepSeek Privacy Policy",
+   "official": true,
+   "published": "2026-02-10",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "כלי ותיק שקיבל את DeepSeek-V4.1-Flash-1017 באוקטובר 2026, ומופיע ב־5 מתוך 6 סקירות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "DeepSeek-V4.1-Flash-1017",
+   "latest_version_date": "2026/10/17",
+   "latest_version_date_iso": "2026-10-17",
+   "independent_reviews": 5,
+   "evidence": "research/stage4/assistants.md"
+  },
+  "hebrew": {
+   "value": "לא אומת",
+   "label": "עברית לא אומתה",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": null,
+   "billing": null,
+   "plan": null,
+   "verified": false,
+   "label": "לא נמצאה תוכנית אישית בתשלום",
+   "has_free_plan": null
+  },
+  "platforms": {
+   "verified": [
+    "אתר",
+    "אפליקציות לנייד"
+   ],
+   "unverified": [
+    "iOS",
+    "Android"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 5,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/assistants.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מקום 4 ברשימת אתרי הבינה המלאכותית ומקום 13 ברשימת אפליקציות הנייד של a16z, מהדורה 6 (מרץ 2026, לפי Similarweb ו־Sensor Tower לינואר 2026).",
+    "evidence": "research/stage4/assistants.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": "לא נמצא מקור רשמי על מכסה חינמית.",
+    "evidence": "research/stage4/assistants.md"
+   }
+  }
+ }
+}

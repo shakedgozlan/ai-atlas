@@ -1,0 +1,23 @@
+{
+  "adobe-illustrator": {
+    "file": "logos/adobe-illustrator.svg",
+    "file_dark": null,
+    "source_url": "https://github.com/gilbarbara/logos",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הלוגואים SVG Logos (חבילת ‎@iconify-json/logos‏, גרסה 1.2.20, רישיון CC0) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני."
+  },
+  "descript": {
+    "file": "logos/descript.svg",
+    "file_dark": null,
+    "source_url": "https://github.com/gilbarbara/logos",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הלוגואים SVG Logos (חבילת ‎@iconify-json/logos‏, גרסה 1.2.20, רישיון CC0) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. סמל צבעוני."
+  },
+  "bubble": {
+    "file": "logos/bubble.svg",
+    "file_dark": "logos/bubble-dark.svg",
+    "source_url": "https://github.com/gilbarbara/logos",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מספריית הלוגואים SVG Logos (חבילת ‎@iconify-json/logos‏, גרסה 1.2.20, רישיון CC0) ב־19 בנובמבר 2026, ולא מהאתר הרשמי. גרסה כהה לרקע בהיר, וגרסה שבה החלק הכהה הוחלף בלבן לרקע כהה."
+  }
+}

@@ -1,0 +1,320 @@
+{
+ "id": null,
+ "slug": "bubble",
+ "category_id": 11,
+ "name": "Bubble",
+ "former_name": null,
+ "rename_note": null,
+ "role": "פלטפורמה ותיקה לבניית אפליקציות ווב ומובייל בעורך חזותי, עם סוכן AI שבונה ועורך מתוך שיחה.",
+ "url": "https://bubble.io",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "הנחה לסטודנטים בכל התוכניות",
+   "detail": "לפי עמוד המחירים, Bubble מציעה הנחה לסטודנטים בכל התוכניות, ומוסדות לימוד יכולים לקבל הנחה קבוצתית.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הכול נשאר חזותי וניתן לעריכה ידנית",
+   "detail": "לפי Bubble, כל רכיבי האפליקציה, כולל צד השרת, חזותיים וניתנים לעריכה ביד, כך שהאפליקציה אינה תלויה בנקודות ה־AI.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "סוכן AI לווב ולמובייל",
+   "detail": "Agent 2 יצא מבטא ב־6 באוקטובר 2026, זמין לכל המשתמשים ועובד על אפליקציות ווב ומובייל. Bubble MCP בבטא מאפשר לחבר סוכן חיצוני כמו Claude Code.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "אין אפליקציה חיה בחינם",
+   "detail": "לפי ה־FAQ, פרסום גרסה חיה של האפליקציה ופרסום ב־App Store או ב־Google Play מחייבים תוכנית בתשלום. דומיין מותאם מופיע מ־Starter.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מחיר כניסה גבוה יחסית",
+   "detail": "Starter עולה 39 דולר לחודש בחיוב חודשי, או 32 דולר לחודש בחיוב שנתי, מ־20 באוקטובר 2026.",
+   "source_ids": [
+    "s2",
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות AI מוגבלות לאפליקציה",
+   "detail": "הנקודות שייכות לאפליקציה ומשותפות לכל השותפים בה: 500 בחודש ב־Free ו־1,000 ב־Starter. נקודות שנרכשו תקפות לשישה חודשים.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מי שרוצה לבנות אפליקציה מורכבת עם משתמשים ונתונים, ומוכן ללמוד עורך חזותי מעבר לשיחה עם AI.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־39 דולר לחודש בחיוב חודשי, או 32 דולר לחודש בחיוב שנתי (Starter, ווב). יש תוכנית חינמית לפיתוח בלי פרסום, והנחה לסטודנטים.",
+  "model": "מנוי עם יחידות עבודה ונקודות AI",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "50K יחידות עבודה ו־500 נקודות AI בחודש, API connector, גרסת פיתוח לווב, דיבאגר, בדיקה במכשיר נייד, OTA ללא הגבלה",
+    "notes": "אין פרסום של גרסה חיה ואין פרסום בחנויות האפליקציות.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Starter",
+    "price": 39,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "175K יחידות עבודה ו־1,000 נקודות AI בחודש, דומיין מותאם, גרסה חיה",
+    "notes": "תוכנית ווב בלבד. המחיר עלה ל־39 דולר ב־20 באוקטובר 2026, לפי הבלוג. עמוד המחירים אינו מציג מחירים בחיוב חודשי.",
+    "source_ids": [
+     "s2",
+     "s1"
+    ]
+   },
+   {
+    "name": "Starter",
+    "price": 32,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "175K יחידות עבודה ו־1,000 נקודות AI בחודש, דומיין מותאם, גרסה חיה",
+    "notes": "מחיר לחודש בחיוב שנתי.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Growth",
+    "price": 119,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "250K יחידות עבודה ו־2,000 נקודות AI בחודש",
+    "notes": "מחיר לחודש בחיוב שנתי. המחיר בחיוב חודשי לא מוצג.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Team",
+    "price": 349,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "500K יחידות עבודה ו־4,000 נקודות AI בחודש",
+    "notes": "מחיר לחודש בחיוב שנתי. המחיר בחיוב חודשי לא מוצג.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "יחידות עבודה בהתאמה, נקודות AI ללא הגבלה",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Free ללא תשלום: 50K יחידות עבודה ו־500 נקודות AI בחודש, שמתחדשות בראשון לכל חודש. מתאימה לבנייה ולבדיקה, אבל לא לפרסום גרסה חיה או לחנויות האפליקציות.",
+  "trial": null,
+  "unverified_notes": "המחירים שבעמוד הם בחיוב שנתי; המחיר החודשי ידוע רק ל־Starter, מהבלוג. המחירים של תוכניות המובייל ותוכניות Web & Mobile לא הוצגו בנפרד. המטבע מוצג כ־$ בלי קוד מטבע. גובה ההנחה לסטודנטים לא פורסם."
+ },
+ "privacy": {
+  "text": "לא אומת: מאמר העזרה על בעלות בנתונים אינו עוסק באימון מודלים, ותנאי השימוש ומדיניות הפרטיות המלאים לא נקראו. מנוי בתשלום אינו מבטיח כשלעצמו שהתוכן לא ישמש לאימון.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי מאמר עזרה רשמי (29 ביולי 2026) שמצטט את סעיף 7 בתנאי השימוש: \"You own your content. Bubble does not\". שאר הסעיף, היקף הזכויות של Bubble ואפשרות לייצא קוד לא נקראו. אין בכך הבטחה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "Bubble MCP (בטא) מאפשר לסוכן חיצוני, כמו Claude Code או Codex, להתחבר ישירות ל־Bubble ולערוך אפליקציות קיימות. הוא אינו קורא יומנים, אינו ממזג ענפים ואינו מפרסם. כל התוכניות כוללות API connector.",
+  "source_ids": [
+   "s2",
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "API connector",
+   "Bubble MCP (בטא) לסוכנים כמו Claude Code ו־Codex",
+   "פרסום ב־App Store וב־Google Play (בתוכנית בתשלום)"
+  ],
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של עברית או של כתיבה מימין לשמאל.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Bubble",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי לא נקרא במקור רשמי."
+ },
+ "student_benefits": {
+  "text": "לפי עמוד המחירים, Bubble מציעה הנחה לסטודנטים בכל התוכניות, ומוסדות לימוד יכולים לקבל הנחה קבוצתית לסטודנטים דרך יצירת קשר. גובה ההנחה ואופן האימות לא פורסמו בעמוד.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://bubble.io/pricing",
+   "title": "עמוד המחירים של Bubble",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://bubble.io/blog/agent-2",
+   "title": "הבלוג של Bubble: Introducing Agent 2 and the Bubble MCP",
+   "official": true,
+   "published": "2026-10-06",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://bubble.io/support/en/articles/8525413-does-bubble-own-my-user-s-data",
+   "title": "מרכז העזרה של Bubble: האם Bubble הבעלים של נתוני המשתמשים שלי",
+   "official": true,
+   "published": "2026-07-29",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "פלטפורמה ותיקה שקיבלה את Agent 2 ואת Bubble MCP ב־6 באוקטובר 2026, ומכוסה ב־2 סיכומים עצמאיים.",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "Agent 2",
+   "latest_version_date": "October 06, 2026",
+   "latest_version_date_iso": "2026-10-06",
+   "independent_reviews": 2,
+   "evidence": "research/stage4/no-code-apps.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 39,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Starter",
+   "verified": true,
+   "label": "מ־39 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 2,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "500 נקודות AI ו־50K יחידות עבודה שמתחדשות בראשון לכל חודש בתוכנית Free.",
+    "evidence": "research/stage4/no-code-apps.md"
+   }
+  }
+ }
+}

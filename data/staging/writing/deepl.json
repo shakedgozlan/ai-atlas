@@ -1,0 +1,307 @@
+{
+ "id": null,
+ "slug": "deepl",
+ "category_id": 2,
+ "name": "DeepL",
+ "former_name": null,
+ "rename_note": null,
+ "role": "מתרגם מכונה לטקסטים ולקבצים, עם כלי לשיפור ניסוח (DeepL Write).",
+ "url": "https://www.deepl.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "תרגום לעברית ומעברית",
+   "detail": "לפי מרכז העזרה, עברית נתמכת בתרגום במודל הדור הבא, כולל מילון מונחים, בחירת טון וחלופות ניסוח.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "50,000 תווים בחודש בחינם",
+   "detail": "הגרסה החינמית כוללת 50,000 תווים למשתמש בחודש ותרגום קובץ אחד בחודש עד 5MB.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "בגרסה בתשלום הטקסטים לא משמשים לאימון",
+   "detail": "לפי מדיניות הפרטיות, ב־DeepL Pro, ב־API Pro וב־Write Pro הטקסטים לא משמשים לשיפור השירות.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "בגרסה החינמית הטקסטים משמשים לאימון",
+   "detail": "לפי מדיניות הפרטיות, תוכן שמעלים למתרגם ול־Write החינמיים והתיקונים שלו משמשים לאימון ולשיפור הרשתות של DeepL.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "קובץ אחד בחודש בחינם",
+   "detail": "התרגום החינמי של קבצים מוגבל לקובץ אחד בחודש עד 5MB, ולמילון מונחים אחד עם 5 ערכים לכל זוג שפות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "Write Pro נמכר בנפרד",
+   "detail": "DeepL Write Pro הוא תוספת ב־6.99 אירו למשתמש לחודש בחיוב שנתי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים, מתרגמים ואנשי מקצוע שעובדים בכמה שפות, כולל עברית.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "Individual ב־7.49 אירו לחודש בחיוב שנתי, כולל מע״מ לפי המחירון הגרמני. יש גרסה חינמית עם 50,000 תווים בחודש.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "EUR",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "50,000 תווים למשתמש בחודש, תרגום קובץ אחד בחודש עד 5MB, מילון מונחים אחד עם 5 ערכים לזוג שפות, תרגום שמור אחד",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Individual",
+    "price": 7.49,
+    "price_text": null,
+    "price_short": null,
+    "currency": "EUR",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "\"billed annually\", כולל מע״מ. המחיר הוצג לפי מחירון גרמניה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Write Pro (תוספת)",
+    "price": 6.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "EUR",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "תוספת בתשלום, למשתמש, בחיוב שנתי, כולל מע״מ.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team",
+    "price": 24.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "EUR",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "למשתמש, בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": 49.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "EUR",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "למשתמש, בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "EUR",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "גרסה חינמית: 50,000 תווים למשתמש בחודש, תרגום קובץ אחד בחודש עד 5MB, מילון מונחים אחד ותרגום שמור אחד. הטקסטים בגרסה החינמית משמשים לאימון.",
+  "trial": null,
+  "unverified_notes": "עמוד המחירים הציג מחירון אזורי של גרמניה באירו כולל מע״מ. המחיר באזורים אחרים ובמטבעות אחרים לא נבדק. בעמוד יש מתג לחיוב חודשי, אבל המחיר החודשי לא הופיע בקריאה. לא אומת אם Write Pro כלול בגרסה החינמית בהיקף כלשהו."
+ },
+ "privacy": {
+  "text": "לפי מדיניות הפרטיות, בגרסאות החינמיות של המתרגם ושל DeepL Write החברה מעבדת את התוכן והתרגומים לזמן מוגבל כדי לאמן ולשפר את הרשתות שלה, כולל תיקונים שהמשתמש מבצע. ב־DeepL Translator Pro, ב־DeepL API Pro וב־DeepL Write Pro הטקסטים לא משמשים לשיפור השירות. עמוד Pro מציין שהתוכן נשמר זמנית רק כנדרש טכנית, נמחק אחר כך ולעולם לא משמש לאימון.",
+  "training_on_user_data": "כן בגרסה החינמית. לא בגרסאות Pro ו־API Pro.",
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "מדיניות הפרטיות מזכירה את DeepL API Pro, שבו הטקסטים לא משמשים לשיפור השירות. מחירי ה־API ותיעודו לא נקראו.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "לפי מרכז העזרה, עברית נתמכת בתרגום במודל הדור הבא, כולל מילון מונחים, טון וחלופות. המאמר לא מזכיר את DeepL Write בעברית, את שפת הממשק או תצוגה מימין לשמאל.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "company": {
+  "name": "DeepL SE",
+  "parent": null,
+  "country": "גרמניה",
+  "note": "מדיניות הפרטיות מונה כמה חברות בקבוצה, ראשונות DeepL SE ו־DeepL AI GmbH בקלן, גרמניה, בלי לקבוע חברה אחת כאחראית."
+ },
+ "student_benefits": {
+  "text": "לא נבדק. עמוד המחירים שנקרא לא הזכיר הנחה לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.deepl.com/en/pro",
+   "title": "עמוד DeepL Pro (מחירון גרמניה)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.deepl.com/privacy",
+   "title": "מדיניות הפרטיות של DeepL (נקראו 100,000 התווים הראשונים)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://support.deepl.com/hc/en-us/articles/360019925219-Languages-supported-by-DeepL",
+   "title": "מרכז העזרה של DeepL: שפות נתמכות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "לא אומת: תאריך הגרסה האחרונה לא נבדק במקור רשמי, והסקירות העצמאיות לא נספרו כי מכסת הגישה לדפים נגמרה.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": null,
+   "evidence": "research/stage4/writing.md"
+  },
+  "hebrew": {
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
+  },
+  "starting_price": {
+   "amount": 7.49,
+   "currency": "EUR",
+   "billing": "שנתי",
+   "plan": "Individual",
+   "verified": true,
+   "label": "מ־7.49 אירו לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": null,
+    "of": 0,
+    "value": null,
+    "evidence": "research/stage4/writing.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/writing.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "50,000 תווים וקובץ אחד בחודש בגרסה החינמית.",
+    "evidence": "research/stage4/writing.md"
+   }
+  }
+ }
+}

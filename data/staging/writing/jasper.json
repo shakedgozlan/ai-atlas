@@ -1,0 +1,254 @@
+{
+ "id": null,
+ "slug": "jasper",
+ "category_id": 2,
+ "name": "Jasper",
+ "former_name": null,
+ "rename_note": null,
+ "role": "פלטפורמת תוכן שיווקי עם סוכני AI שכותבים בקול המותג של החברה.",
+ "url": "https://www.jasper.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "שמירה על קול המותג",
+   "detail": "Pro כוללת 2 קולות מותג, 5 נכסי ידע ו־3 קהלים, ו־Business מסירה את המגבלות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "סוכנים לתהליכי שיווק",
+   "detail": "Pro כוללת סוכנים לתהליכי שיווק בסיסיים, ו־Business מוסיפה סוכנים לתרגום, למחקר ולבניית סוכנים בלי קוד.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "API בתוכנית Business",
+   "detail": "גישת API כלולה רק ב־Business.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "אין תוכנית חינמית",
+   "detail": "יש רק 7 ימי ניסיון בתוכנית Pro.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מחיר גבוה למשתמש יחיד",
+   "detail": "Pro עולה 69 דולר למשתמש לחודש בחיוב חודשי, או 59 דולר בחיוב שנתי עם התחייבות ל־12 חודשים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "Business בהתחייבות שנתית",
+   "detail": "Business מתומחרת בהצעת מחיר ומתחילה בהתחייבות ל־12 חודשים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "צוותי שיווק וכותבי תוכן שיווקי בחברות, פחות סטודנטים.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "Pro ב־69 דולר למשתמש לחודש בחיוב חודשי, או 59 דולר בחיוב שנתי. אין תוכנית חינמית, יש 7 ימי ניסיון.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Pro",
+    "price": 69,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "מושב אחד, Canvas, סוכנים לתהליכי שיווק, 2 קולות מותג, 5 נכסי ידע, 3 קהלים",
+    "notes": "בלי התחייבות, אפשר לבטל בכל עת. 7 ימי ניסיון.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 59,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "מושב אחד, Canvas, סוכנים לתהליכי שיווק, 2 קולות מותג, 5 נכסי ידע, 3 קהלים",
+    "notes": "התחייבות ל־12 חודשים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": null,
+    "includes": "סוכנים מתקדמים, בונה סוכנים בלי קוד, Jasper Grid, קולות מותג ללא הגבלה, API, ניהול הרשאות",
+    "notes": "מתחילה בהתחייבות ל־12 חודשים.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": "7 ימי ניסיון בתוכנית Pro.",
+  "unverified_notes": null
+ },
+ "privacy": {
+  "text": "לפי עמוד האמון של Jasper, נתוני החברה והתוצרים לעולם לא משמשים לאימון מודלי שפה של צד שלישי. העמוד לא אומר אם Jasper עצמה מאמנת מודלים על התוכן.",
+  "training_on_user_data": "לא לאימון מודלים של צד שלישי. לגבי מודלים של Jasper עצמה המקור לא אומר.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת. תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "API כלול בתוכנית Business. עמוד האמון מפנה גם ל־Jasper APIs, Jasper MCP ו־Image APIs. התיעוד לא נקרא.",
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Jasper MCP"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [],
+  "source_ids": []
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: עמודי המחירים והאמון לא מפרטים שפות נתמכות.",
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "company": {
+  "name": "Jasper",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי לא אומת."
+ },
+ "student_benefits": {
+  "text": "בעמוד המחירים לא נמצאה הנחה לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.jasper.ai/pricing",
+   "title": "עמוד המחירים של Jasper",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://jasper.ai/trust",
+   "title": "עמוד האמון של Jasper",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "לא אומת: תאריך הגרסה האחרונה לא נבדק במקור רשמי, והסקירות העצמאיות לא נספרו כי מכסת הגישה לדפים נגמרה.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": null,
+   "evidence": "research/stage4/writing.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 59,
+   "currency": "USD",
+   "billing": "שנתי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־59 דולר לחודש",
+   "has_free_plan": false
+  },
+  "platforms": {
+   "verified": [],
+   "unverified": [
+    "אתר"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": null,
+    "of": 0,
+    "value": null,
+    "evidence": "research/stage4/writing.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/writing.md"
+   },
+   "free_renewing": {
+    "value": false,
+    "basis": "אין תוכנית חינמית, רק 7 ימי ניסיון.",
+    "evidence": "research/stage4/writing.md"
+   }
+  }
+ }
+}

@@ -1,0 +1,340 @@
+{
+ "id": null,
+ "slug": "zapier",
+ "category_id": 12,
+ "name": "Zapier",
+ "former_name": null,
+ "rename_note": "המוצר Zapier Agents שולב ב־6 באוקטובר 2026 בשלב AI by Zapier בתוך עורך ה־Zaps, לפי בלוג החברה.",
+ "role": "פלטפורמה לחיבור אפליקציות ולבניית תהליכים אוטומטיים וסוכני AI בלי קוד.",
+ "url": "https://zapier.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": "המוצר Zapier Agents הפך לשלב AI by Zapier בתוך עורך ה־Zaps. ההרצות נרשמות בהיסטוריה ומחויבות כמשימות.",
+  "date_as_written": "October 6, 2026",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "מספר גדול מאוד של אפליקציות מחוברות",
+   "detail": "לפי עמוד המחירים Zapier מחברת \"9,000+ apps\". בבלוג מאוקטובר 2026 מופיע גם \"10,000+ apps\".",
+   "source_ids": [
+    "s1",
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית שמתחדשת כל חודש",
+   "detail": "100 משימות בחודש, מספר בלתי מוגבל של Zaps דו־שלביים, Tables ו־Forms, ו־400 פעולות סוכן בחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "סוכן AI כשלב בתוך תהליך",
+   "detail": "שלב AI by Zapier מקבל הנחיה, כלים ואישור לפני פעולה, ואפשר לשלב אותו עם צעדים קבועים באותו Zap. Zapier MCP זמין בכל התוכניות.",
+   "source_ids": [
+    "s3",
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "הממשק באנגלית בלבד",
+   "detail": "לפי מרכז העזרה \"Zapier is only available in English\".",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "התוכנית החינמית מוגבלת לשני שלבים",
+   "detail": "Zaps של שני שלבים בלבד, בדיקה כל 15 דקות. תהליכים מרובי שלבים ואפליקציות Premium רק מ־Pro.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תשלום לפי משימות שעלול לטפס",
+   "detail": "Pro הזולה כוללת 750 משימות. חריגה עולה פי 2.5 מהתעריף הבסיסי בחיוב חודשי, וכל קריאה לכלי ב־MCP צורכת 2 משימות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מי שרוצה לחבר בין שירותים מוכרים, כמו Gmail, Google Sheets ו־Slack, ולהפעיל תהליכים קבועים בלי לכתוב קוד.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "תוכנית חינמית עם 100 משימות בחודש. Pro מ־29.99 דולר לחודש בחיוב חודשי, או 19.99 דולר לחודש בחיוב שנתי, ל־750 משימות.",
+  "model": "מנוי לפי מכסת משימות",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "100 משימות בחודש, Zaps דו־שלביים ללא הגבלה, Tables ו־Forms, משתמש אחד, Copilot עם מגבלה יומית, 400 פעולות סוכן בחודש",
+    "notes": "בדיקה כל 15 דקות. Tables: עד 2,500 רשומות בחשבון.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Professional",
+    "price": 29.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "750 משימות בחודש, Zaps מרובי שלבים, אפליקציות Premium, Webhooks ו־AI by Zapier, משתמש אחד, 1,500 פעולות סוכן בחודש",
+    "notes": "המחיר עולה לפי מדרגת המשימות, עד 2,000,000 משימות (5,099 דולר לחודש). למשל 2,000 משימות: 73.50 דולר.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Professional",
+    "price": 19.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "750 משימות בחודש, Zaps מרובי שלבים, אפליקציות Premium, Webhooks ו־AI by Zapier, משתמש אחד, 1,500 פעולות סוכן בחודש",
+    "notes": "מחיר לחודש בחיוב שנתי (33% הנחה). למשל 2,000 משימות: 49 דולר לחודש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team",
+    "price": 103.5,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "כל מה שב־Pro, 25 משתמשים, חיבורים משותפים, SAML SSO, מ־2,000 משימות בחודש",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team",
+    "price": 69,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "כל מה שב־Pro, 25 משתמשים, חיבורים משותפים, SAML SSO, מ־2,000 משימות בחודש",
+    "notes": "מחיר לחודש בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "משתמשים ללא הגבלה, מכסת משימות שנתית",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free קבועה: 100 משימות בחודש, Zaps דו־שלביים ללא הגבלה, Tables ו־Forms, משתמש אחד, בדיקה כל 15 דקות, Copilot עם מגבלה יומית, גישה בסיסית ל־Agents, Chatbots (2), Canvas ו־MCP, ו־400 פעולות סוכן בחודש.",
+  "trial": "14 ימים של Pro, בלי כרטיס אשראי.",
+  "unverified_notes": "המחירים בדולר. אפשר לשלם ב־19 מטבעות, בהם שקל (ILS), אבל המחיר מומר מהדולר לפי שער יום התשלום. המכסות מתאפסות כל חודש גם בחיוב שנתי. לא נמצא אם משימות שלא נוצלו עוברות לחודש הבא."
+ },
+ "privacy": {
+  "text": "לפי עמוד המידע המשפטי (מיום 2 ביולי 2026), לקוחות Enterprise מוחרגים אוטומטית משימוש בתוכן שלהם לאימון מודלים. לקוחות אחרים יכולים לבטל זאת בכל עת בטופס ייעודי. לספקי המשנה של Zapier, כמו OpenAI, Anthropic ו־Google, אסור לאמן מודלים על תוכן הלקוחות. מקום אחסון הנתונים לא מצוין בעמוד. מנוי בתשלום אינו מבטיח כשלעצמו שהתוכן לא ישמש לאימון.",
+  "training_on_user_data": "בחשבונות שאינם Enterprise אין החרגה אוטומטית, ואפשר לבטל את השימוש לאימון בטופס. Enterprise מוחרג אוטומטית.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: בעלות על התוכן אינה מוסדרת בעמוד שנקרא, והוא מפנה להסכם הלקוח עם Zapier, שלא נקרא.",
+  "watermark": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "Zapier MCP זמין בכל התוכניות, עם גישה בסיסית בתוכנית החינמית; כל קריאה לכלי צורכת 2 משימות. Webhooks כלולים מ־Pro. API ציבורי לניהול החשבון לא נבדק.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "יותר מ־9,000 אפליקציות לפי עמוד המחירים",
+   "Zapier MCP",
+   "Webhooks (מ־Pro)",
+   "Tables, Forms, Chatbots ו־Canvas"
+  ],
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "לפי מרכז העזרה הממשק זמין באנגלית בלבד (\"Zapier is only available in English\"). לא נבדק אם תהליכים מטפלים בטקסט בעברית. החיוב יכול להיות בשקלים.",
+  "source_ids": [
+   "s4",
+   "s1"
+  ]
+ },
+ "company": {
+  "name": "Zapier",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים. עמוד ההנחות הרשמי מציין רק 33% בחיוב שנתי ו־15% לעמותות. עמוד המחירים אינו מזכיר סטודנטים.",
+  "source_ids": [
+   "s5",
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://zapier.com/pricing.md",
+   "title": "עמוד המחירים של Zapier (גרסת Markdown רשמית)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://zapier.com/legal/automation-platform-information",
+   "title": "Zapier: מידע משפטי ותאימות לפלטפורמת האוטומציה (AI)",
+   "official": true,
+   "published": "2026-07-02",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://zapier.com/blog/zapier-agents-is-now-ai-by-zapier/",
+   "title": "הבלוג של Zapier: Zapier Agents is now AI by Zapier",
+   "official": true,
+   "published": "2026-10-06",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://help.zapier.com/hc/en-us/articles/35201074788877-Can-I-change-the-language-of-my-Zapier-account",
+   "title": "מרכז העזרה של Zapier: שינוי שפת החשבון",
+   "official": true,
+   "published": "2026-01-23",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://help.zapier.com/hc/en-us/articles/8496197165581-Discounts-for-Zapier-plans",
+   "title": "מרכז העזרה של Zapier: הנחות לתוכניות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "כלי ותיק שקיבל גרסה משמעותית ב־6 באוקטובר 2026 (AI by Zapier) ומופיע ב־3 מ־5 סיכומים עצמאיים.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "AI by Zapier (מחליף את Zapier Agents)",
+   "latest_version_date": "October 6, 2026",
+   "latest_version_date_iso": "2026-10-06",
+   "independent_reviews": 3,
+   "evidence": "research/stage4/agents-automation.md"
+  },
+  "hebrew": {
+   "value": "לא נתמכת לפי המקור",
+   "label": "עברית לא נתמכת",
+   "supported": false
+  },
+  "starting_price": {
+   "amount": 29.99,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Professional",
+   "verified": true,
+   "label": "מ־29.99 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 3,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/agents-automation.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "100 משימות ו־400 פעולות סוכן בכל חודש בתוכנית החינמית.",
+    "evidence": "research/stage4/agents-automation.md"
+   }
+  }
+ }
+}

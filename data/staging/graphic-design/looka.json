@@ -1,0 +1,308 @@
+{
+ "id": null,
+ "slug": "looka",
+ "category_id": 4,
+ "name": "Looka",
+ "former_name": null,
+ "rename_note": null,
+ "role": "מחולל לוגו וזהות מותג בבינה מלאכותית, עם ערכת מותג, תבניות ממותגות ובונה אתרים.",
+ "url": "https://looka.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "בעלות מלאה על הלוגו שנרכש",
+   "detail": "לפי מרכז העזרה, הלוגו שנרכש שייך למשתמש ומותר לכל שימוש מסחרי או לא מסחרי. הבעלות נשמרת גם אחרי סיום מנוי Brand Kit.",
+   "source_ids": [
+    "s3",
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ערכת מותג עם 300+ תבניות",
+   "detail": "Brand Kit בעלות 96 דולר לשנה נותן גישה ליותר מ־300 תבניות ממותגות שנוצרות מהלוגו, הצבעים והגופנים. Brand Kit Web בעלות 129 דולר לשנה מוסיף בונה אתרים עם אחסון.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "קבצי וקטור בחבילת Premium",
+   "detail": "חבילת Premium Logo כוללת PNG ברזולוציה גבוהה, PDF, קבצי EPS ו־SVG להדפסה, גרסאות שקופות וגרסאות בשחור ובלבן.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "אין זכויות יוצרים על רכיבי הלוגו",
+   "detail": "זכויות היוצרים חלות על הלוגו כשלם ולא על האייקונים והגופנים, שנלקחים ממאגר ואינם מוסרים ממנו אחרי הרכישה. Looka לא נותנת מסמך רשמי, ורישום סימן מסחר דורש עורך דין.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חבילת Basic מוגבלת לקובץ אחד",
+   "detail": "חבילת Basic כוללת קובץ PNG אחד בגודל 1000 על 1000 פיקסלים עם רקע צבעוני, ברזולוציה נמוכה.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "שם העסק לא ניתן לשינוי אחרי רכישה",
+   "detail": "בחבילת Premium אפשר לשנות ולהוריד מחדש, אבל לא לערוך את שדה השם אחרי הרכישה.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "בעלי עסקים קטנים, יזמים וסטודנטים שצריכים לוגו וזהות מותג בסיסית מהר ובלי מעצב.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "Brand Kit ב־96 דולר לשנה. מחירי חבילות הלוגו החד־פעמיות לא אומתו.",
+  "model": "רכישה חד־פעמית ומנוי",
+  "plans": [
+   {
+    "name": "Basic Logo Package",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "קובץ PNG אחד, 1000 על 1000 פיקסלים, עם רקע צבעוני",
+    "notes": "רכישה חד־פעמית.",
+    "source_ids": [
+     "s2"
+    ]
+   },
+   {
+    "name": "Premium Logo Package",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "לא אומת",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "PNG ברזולוציה גבוהה, PDF, EPS ו־SVG, גרסאות שקופות, שחורות ולבנות, תמיכה טכנית לכל החיים",
+    "notes": "רכישה חד־פעמית. לא כולל נכסי רשתות חברתיות וכרטיסי ביקור.",
+    "source_ids": [
+     "s2"
+    ]
+   },
+   {
+    "name": "Brand Kit Subscription",
+    "price": 96,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "גישה ליותר מ־300 תבניות ממותגות מהלוגו, הצבעים, הגופנים ותמונות הסטוק",
+    "notes": "מתחדש מדי שנה מיום הרכישה. אפשר לבטל בחשבון.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Brand Kit Web Subscription",
+    "price": 129,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "כל מה שב־Brand Kit, ובונה אתרים כולל אחסון ועיצוב",
+    "notes": "נדרש לפרסום אתר. לא כולל מסחר מקוון.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "לא אומת. המקורות שנקראו לא מתארים שימוש חינמי.",
+  "trial": null,
+  "unverified_notes": "עמוד המחירים הרשמי (looka.com/pricing) לא נטען בשני ניסיונות. מחירי חבילות הלוגו החד־פעמיות (Basic ו־Premium) לא אומתו, וגם לא האם קיימת אפשרות חינמית. מחירי Brand Kit אומתו ממרכז העזרה הרשמי, שלא מציין תאריך עדכון."
+ },
+ "privacy": {
+  "text": "לא אומת: תנאי השימוש ומדיניות הפרטיות של Looka לא נבדקו.",
+  "training_on_user_data": null,
+  "source_ids": []
+ },
+ "commercial_rights": {
+  "text": "לפי מרכז העזרה, ללוגו שנרכש יש בעלות מלאה ושימוש מסחרי ולא מסחרי מותר. זכויות היוצרים חלות על הלוגו כשלם, לא על האייקונים והגופנים שמגיעים ממאגר, ו־Looka לא מסירה אותם מהמאגר אחרי הרכישה. Looka אינה מספקת מסמך רשמי, ולרישום סימן מסחר יש לפנות לעורך דין. הבעלות נשמרת גם אחרי סיום מנוי Brand Kit.",
+  "watermark": null,
+  "source_ids": [
+   "s3",
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": null,
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Looka",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הנחה רשמית לסטודנטים בעמודים שנבדקו.",
+  "source_ids": []
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://help.looka.com/en/articles/4636515-what-is-the-brand-kit",
+   "title": "מרכז העזרה של Looka: מה זה Brand Kit",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://help.looka.com/en/articles/485739-what-s-included-in-each-of-the-packages",
+   "title": "מרכז העזרה של Looka: מה כלול בכל חבילה",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://help.looka.com/en/articles/484949-do-i-own-the-full-copyright-to-my-purchased-logo",
+   "title": "מרכז העזרה של Looka: בעלות וזכויות יוצרים בלוגו שנרכש",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://looka.com/pricing",
+   "title": "עמוד המחירים של Looka (העמוד לא נטען)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://www.jotform.com/ai/best-ai-logo-generator/",
+   "title": "Jotform: 8 Best AI Logo Generators in 2026 (April 6, 2026)",
+   "official": false,
+   "published": "2026-04-06",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s6",
+   "url": "https://designlab.com/blog/top-best-ai-logo-generators-a-review",
+   "title": "Designlab: Best AI Logo Generators (May 22, 2026)",
+   "official": false,
+   "published": "2026-05-22",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s7",
+   "url": "https://hyscaler.com/insights/best-ai-graphic-design-tool/",
+   "title": "HyScaler: Best AI Graphic Design Tools in 2026 (Nov 1, 2026)",
+   "official": false,
+   "published": "2026-11-01",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "לא נמצאה גרסה משמעותית מתוארכת אחרי 18 במאי 2025 במקור רשמי. נכלל ככלי ותיק ומוביל ליצירת לוגו, שמופיע ב־3 סקירות עצמאיות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 3,
+   "evidence": "research/stage4/graphic-design.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 96,
+   "currency": "USD",
+   "billing": "שנתי",
+   "plan": "Brand Kit Subscription",
+   "verified": false,
+   "label": "Brand Kit ב־96 דולר לשנה",
+   "has_free_plan": null
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 3,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/graphic-design.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/graphic-design.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/graphic-design.md"
+   }
+  }
+ }
+}

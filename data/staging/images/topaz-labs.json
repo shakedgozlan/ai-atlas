@@ -1,0 +1,398 @@
+{
+ "id": null,
+ "slug": "topaz-labs",
+ "category_id": 3,
+ "name": "Topaz Labs",
+ "former_name": null,
+ "rename_note": null,
+ "role": "תוכנות לשיפור תמונות: הגדלה, חידוד והסרת רעש, במחשב, בדפדפן ובנייד.",
+ "url": "https://www.topazlabs.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "הגדלה ושיפור במנוי לאפליקציה אחת",
+   "detail": "אפשר לשלם רק על Gigapixel (מ־29 דולר לחודש) או רק על Topaz for Web לתמונות (19 דולר לחודש, עיבוד ללא הגבלה).",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "המודלים זמינים גם בכלים אחרים",
+   "detail": "Adobe הכריזה ב־MAX 2026 על מודלי Wonder 4 ו־Image HDR של Topaz Labs לשיפור תמונות, ותוכנית Plus של Magnific כוללת את משדרגי Topaz.",
+   "source_ids": [
+    "s2",
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "עבודה במחשב, בדפדפן ובנייד",
+   "detail": "Topaz Studio כולל את Photo, Gigapixel ו־Video לצד Topaz for Web ו־Topaz for Mobile.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "שימוש מסחרי מלא רק ב־Pro",
+   "detail": "התוכניות האישיות והרגילות מכסות שימוש מסחרי מוגבל לארגונים עם הכנסה שנתית מתחת למיליון דולר. מעל זה נדרשת תוכנית Pro.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "אין תוכנית חינמית בעמוד המחירים",
+   "detail": "עמוד המחירים אינו מציג תוכנית חינמית או תקופת ניסיון.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות חודשיות לא עוברות לחודש הבא",
+   "detail": "לפי העמוד, נקודות חודשיות פגות בסוף החודש ואינן נצברות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "צלמים, מעצבים ויוצרים שצריכים להגדיל ולשפר תמונות קיימות.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־19 דולר לחודש (Topaz for Web – Image). מחירים שנתיים רבים מוזלים במבצע זמני. אין תוכנית חינמית בעמוד המחירים.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Topaz for Web – Image",
+    "price": 19,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "Topaz for Web לתמונות ו־Topaz for Mobile לתמונות, עיבוד תמונות ללא הגבלה",
+    "notes": "\"Cancel anytime\" לא צוין לתוכנית זו במפורש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Topaz for Web – Image",
+    "price": 199,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "כמו בחיוב חודשי",
+    "notes": "מבצע: 169 דולר לשנה. בהתחייבות שנתית עם תשלום חודשי: 16 דולר לחודש במקום 19.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Topaz Gigapixel",
+    "price": 29,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "Gigapixel להגדלת תמונות",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Topaz Gigapixel",
+    "price": 149,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "Gigapixel",
+    "notes": "מבצע: 127 דולר לשנה. בהתחייבות שנתית עם תשלום חודשי: 16 דולר לחודש במקום 19.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Topaz Photo",
+    "price": 39,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "Topaz Photo לחידוד, הסרת רעש ושיפור תמונות",
+    "notes": "\"Cancel anytime\".",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Topaz Photo",
+    "price": 199,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "Topaz Photo",
+    "notes": "מבצע: 169 דולר לשנה. בהתחייבות שנתית עם תשלום חודשי: 21 דולר לחודש במקום 25.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Topaz Studio",
+    "price": 79,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "Video, Photo, Gigapixel, Topaz for Mobile ו־Topaz for Web, 300 נקודות וידאו בחודש",
+    "notes": "\"Cancel anytime\". סתירה בעמוד: במקום אחד מוצג 69 דולר לחודש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Topaz Studio",
+    "price": 499,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "כמו בחיוב חודשי",
+    "notes": "מבצע לשנה הראשונה בלבד: 299 דולר לשנה, או 29 דולר לחודש במקום 49 בהתחייבות שנתית.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Topaz Studio Pro",
+    "price": 799,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "כל האפליקציות ברישיונות Pro, 600 נקודות וידאו בחודש, שימוש מסחרי מלא",
+    "notes": "מבצע: 499 דולר לשנה, או 49 דולר לחודש במקום 79 בהתחייבות שנתית.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Topaz Gigapixel Pro",
+    "price": 499,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "Gigapixel ברישיון Pro",
+    "notes": "או 54 דולר לחודש בהתחייבות שנתית.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Topaz Photo Pro",
+    "price": 599,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "Topaz Photo ברישיון Pro",
+    "notes": "או 63 דולר לחודש בהתחייבות שנתית.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": null,
+  "unverified_notes": "רבים מהמחירים השנתיים מוצגים כמבצע (חלקם \"First year only\"); נרשמו המחירים המחוקים כמחיר הרגיל וההנחה בהערות. סתירה בעמוד במחיר החודשי של Topaz Studio (69 או 79 דולר). לא נבדקו: תוכניות Topaz Video (שייכות לקטגוריית עריכת הווידאו), קיום תקופת ניסיון, פרטיות ואימון על תוכן המשתמש."
+ },
+ "privacy": {
+  "text": "לא אומת: מדיניות הפרטיות ותנאי השימוש לא נקראו.",
+  "training_on_user_data": null,
+  "source_ids": []
+ },
+ "commercial_rights": {
+  "text": "לפי עמוד המחירים, התוכניות האישיות ושימוש מסחרי מוגבל ב־Image, Video ו־Studio מיועדים לארגונים עם הכנסה שנתית מתחת ל־1M USD. תוכניות Pro מוסיפות שימוש מסחרי מלא לארגונים מעל סף זה.",
+  "watermark": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק מקור רשמי על API.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "Adobe Firefly (מודלים של Topaz)",
+   "Magnific (משדרגי Topaz בתוכנית Plus)"
+  ],
+  "source_ids": [
+   "s3",
+   "s4"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "אפליקציות לנייד"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: עמוד המחירים אינו מזכיר שפות ממשק.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Topaz Labs",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הנחה לסטודנטים. עמוד המחירים אינו מזכיר הנחה כזו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.topazlabs.com/pricing",
+   "title": "עמוד המחירים של Topaz Labs",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://news.adobe.com/news/downloads/pdfs/2026/11/umbrella-release-max-2026.pdf",
+   "title": "Adobe: הודעה לעיתונות, Adobe MAX 2026",
+   "official": true,
+   "published": "2026-11-10",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://news.adobe.com/news/2025/10/adobe-max-2025-firefly",
+   "title": "Adobe: הודעה לעיתונות, Adobe MAX 2025, Firefly",
+   "official": true,
+   "published": "2025-10-28",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://www.magnific.com/pricing",
+   "title": "עמוד המחירים של Magnific",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "Adobe הכריזה ב־10 בנובמבר 2026 על מודלי Wonder 4 ו־Image HDR של Topaz Labs, אך הכלי לא מופיע באף אחת מ־6 הסקירות. נכלל ככלי ותיק ומוביל להגדלת תמונות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Wonder 4, Image HDR (לפי הודעת Adobe)",
+   "latest_version_date": "November 10, 2026",
+   "latest_version_date_iso": "2026-11-10",
+   "independent_reviews": 0,
+   "evidence": "research/stage4/images.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 19,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Topaz for Web – Image",
+   "verified": true,
+   "label": "מ־19 דולר לחודש",
+   "has_free_plan": false
+  },
+  "platforms": {
+   "verified": [
+    "אתר",
+    "אפליקציות לנייד"
+   ],
+   "unverified": [
+    "Mac",
+    "Windows"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 0,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/images.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/images.md"
+   },
+   "free_renewing": {
+    "value": false,
+    "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
+    "evidence": "research/stage4/images.md"
+   }
+  }
+ }
+}

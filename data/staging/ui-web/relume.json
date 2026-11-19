@@ -1,0 +1,310 @@
+{
+ "id": null,
+ "slug": "relume",
+ "category_id": 5,
+ "name": "Relume",
+ "former_name": null,
+ "rename_note": "הכתובת relume.io/pricing מפנה כעת ל־relume.ai/pricing. לא נמצאה הודעה רשמית על שינוי שם.",
+ "role": "סביבת עבודה בבינה מלאכותית שמתכננת מפת אתר ו־wireframes ובונה מהם אתר, עם ספריית רכיבים ל־Webflow ול־Figma ואחסון אתרים.",
+ "url": "https://www.relume.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "אתר שלם בתוכנית החינמית",
+   "detail": "לפי השאלות הנפוצות, התוכנית החינמית כוללת מספיק שימוש חודשי בבינה מלאכותית לבניית אתר שלם, ואחסון חינם בכתובת relumesite.ai.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "שימוש מסחרי מותר",
+   "detail": "לשאלה אם מותר להשתמש במוצר בפרויקטים מסחריים, עמוד המחירים עונה 'You sure can!'.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "עורכים בלי תשלום לכל מושב",
+   "detail": "אפשר להזמין כל אחד לסביבת העבודה כעורך, בלי חיוב לכל מושב.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מיתוג ומגבלות באתר החינמי",
+   "detail": "באתרים בתוכנית החינמית מוצג תג של Relume, ויש מגבלה של 20 שליחות טופס בחודש ו־7 ימי אנליטיקה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מבנה תמחור מבלבל",
+   "detail": "העמוד מציג גם תוכנית Pro של סביבת העבודה וגם Pro של Site Builder, במחירים שונים, בלי מכסות מספריות לנקודות הזיכוי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבי אתרים, פרילנסרים וסוכנויות, בעיקר מי שעובדים עם Webflow או Figma.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "סביבת העבודה Pro מ־24 דולר לחודש, ואחסון אתר מ־12 דולר לפרויקט לחודש בחיוב שנתי. יש תוכנית חינמית.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "שימוש חודשי בבינה מלאכותית שמספיק לאתר שלם, אחסון בכתובת relumesite.ai, 20 שליחות טופס בחודש, 7 ימי אנליטיקה",
+    "notes": "בלי כרטיס אשראי. תג Relume מוצג באתר.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro (סביבת עבודה)",
+    "price": 24,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "מתחיל ב־1 עד 2 אתרים בחודש",
+    "notes": "כתוב 'from $24 / month' ו־'Cancel anytime'. השאלות הנפוצות מזכירות ניסיון של 7 ימים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Launch (אחסון)",
+    "price": 12,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לאתר",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "אחסון אתר אחד",
+    "notes": "מחיר לפרויקט.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Launch (אחסון)",
+    "price": 16,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לאתר",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "אחסון אתר אחד",
+    "notes": "מחיר לפרויקט.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Site Builder Starter",
+    "price": 18,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "כתוב 'From $18/mo'. סוג החיוב לא צוין.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Site Builder Pro",
+    "price": 40,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "כתוב 'From $40/mo'. סוג החיוב לא צוין.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Site Builder Team",
+    "price": 36,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": null,
+    "notes": "מינימום 3 משתמשים. לא ברור אם המחיר למשתמש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "שימוש בבינה מלאכותית ותמחור כמות מותאמים",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית חינמית לתמיד, בלי כרטיס אשראי: שימוש חודשי בבינה מלאכותית שמספיק לבניית אתר שלם, אחסון בכתובת relumesite.ai, 20 שליחות טופס בחודש ו־7 ימי אנליטיקה. תג Relume מוצג באתר.",
+  "trial": "השאלות הנפוצות מזכירות ניסיון של 7 ימים לתוכנית Pro.",
+  "unverified_notes": "העמוד מציג '$' בלי קוד מטבע. מחירי Pro ו־Site Builder מופיעים כ־'from', כלומר מחיר התחלתי, וסוג החיוב שלהם לא צוין. לא פורסמו מכסות מספריות של נקודות זיכוי, והטבלה לא מייחסת בבירור את רמות השימוש לתוכניות. היחס בין תוכניות Site Builder לבין סביבת העבודה Pro לא ברור מהעמוד. מבצע אזורי: קוד BRAZIL40 ל־40% הנחה על Starter."
+ },
+ "privacy": {
+  "text": "לא אומת: מדיניות הפרטיות ותנאי השימוש לא נקראו, ועמוד המחירים לא עוסק באימון על נתוני משתמשים.",
+  "training_on_user_data": null,
+  "source_ids": []
+ },
+ "commercial_rights": {
+  "text": "עמוד המחירים עונה 'You sure can!' לשאלה על שימוש בפרויקטים מסחריים. הבעלות על התוכן שנוצר לא מוסברת בעמוד, ותנאי הרישיון לא נקראו.",
+  "watermark": "באתרים בתוכנית החינמית מוצג תג של Relume.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק תיעוד API.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "Webflow"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "לא אומת: לא נקרא עמוד רשמי על שפות או על תמיכה בימין־לשמאל.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Relume",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי לא נקרא במקור שנפתח."
+ },
+ "student_benefits": {
+  "text": "עמוד המחירים לא מזכיר הנחה לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.relume.ai/pricing",
+   "title": "עמוד המחירים של Relume (relume.io מפנה ל־relume.ai)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "לא אומת: תאריך הגרסה המשמעותית האחרונה לא נקרא במקור רשמי.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 2,
+   "evidence": "research/stage4/ui-web.md"
+  },
+  "hebrew": {
+   "value": "לא אומת",
+   "label": "עברית לא אומתה",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 12,
+   "currency": "USD",
+   "billing": "שנתי",
+   "plan": "Launch",
+   "verified": false,
+   "label": "מ־12 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 2,
+    "of": 4,
+    "value": false,
+    "evidence": "research/stage4/ui-web.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/ui-web.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "התוכנית החינמית כוללת שימוש חודשי בבינה מלאכותית; הכמות לא פורסמה.",
+    "evidence": "research/stage4/ui-web.md"
+   }
+  }
+ }
+}

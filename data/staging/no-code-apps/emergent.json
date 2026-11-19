@@ -1,0 +1,366 @@
+{
+ "id": null,
+ "slug": "emergent",
+ "category_id": 11,
+ "name": "Emergent",
+ "former_name": null,
+ "rename_note": null,
+ "role": "בניית אפליקציות ווב ואפליקציות לנייד מתוך שיחה, עד פרסום בחנויות האפליקציות.",
+ "url": "https://emergent.sh",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "אפליקציות לנייד עד החנויות",
+   "detail": "לפי מרכז העזרה, אפליקציות React Native נבנות ונשלחות ל־App Store ול־Google Play דרך Expo Application Services. נדרשים חשבונות מפתח משלך אצל Apple ו־Google.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הנתונים לא משמשים לאימון",
+   "detail": "לפי השאלות הנפוצות הרשמיות, הנתונים של המשתמש אינם משמשים לאימון מודלים, עם הפניה לסעיף 12.1 בהסכם עיבוד הנתונים.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הבעלות על האפליקציה אצל המשתמש",
+   "detail": "Emergent כותבת שהמשתמש שומר על בעלות מלאה באפליקציות ובתוכן שיצר, ויכול למכור אותן או לשווק אותן תחת מותג משלו, בכפוף לתנאי התוכנית.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "אין פרסום לפרודקשן בחינם",
+   "detail": "בתוכנית החינמית אי אפשר לפרסם אפליקציות לפרודקשן ואי אפשר לחבר דומיין מותאם. אפליקציה שמתפרסמת דורשת לפחות 50 נקודות זיכוי.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מכסת נקודות קטנה בחינם",
+   "detail": "החינם כולל 10 נקודות זיכוי, ו־Standard ב־20 דולר לחודש כולל 100. נקודות המנוי אינן עוברות לחודש הבא.",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ייצוא קוד דרך GitHub בלבד",
+   "detail": "אין כפתור הורדה. הקוד יוצא בדחיפה ל־GitHub בתוכניות בתשלום, או בהעתקה ידנית מתצוגת VS Code.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "יזמים וסטודנטים שרוצים לבנות אפליקציה לנייד או לווב בלי לכתוב קוד, ומוכנים לשלם כדי לפרסם אותה.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־20 דולר לחודש בחיוב חודשי, או 17 דולר לחודש בחיוב שנתי (Standard, 100 נקודות זיכוי). יש תוכנית חינמית עם 10 נקודות זיכוי.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "10 נקודות זיכוי, כל תכונות הליבה, בניית חוויות ווב ומובייל",
+    "notes": "סתירה בין מקורות רשמיים: עמוד המחירים כותב \"10 free monthly credits\", ומרכז העזרה כותב \"10 credits on your first day\" ואינו אומר אם הן מתחדשות. אין פרסום לפרודקשן ואין דומיין מותאם.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Standard",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "100 נקודות זיכוי בחודש, אפליקציות ווב ומובייל, אחסון פרויקט פרטי, GitHub, רכישת נקודות נוספות",
+    "notes": "נקודות המנוי אינן עוברות לחודש הבא. נקודות שנרכשו בנפרד אינן פגות.",
+    "source_ids": [
+     "s1",
+     "s2"
+    ]
+   },
+   {
+    "name": "Standard",
+    "price": 17,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "100 נקודות זיכוי בחודש, אפליקציות ווב ומובייל, אחסון פרויקט פרטי, GitHub, רכישת נקודות נוספות",
+    "notes": "מחיר לחודש בחיוב שנתי. בעמוד: \"Save $36\".",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 200,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "750 נקודות זיכוי בחודש, חלון הקשר של מיליון טוקנים, Ultra thinking, סוכנים מותאמים, עריכת הנחיית מערכת, תמיכה בעדיפות",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 167,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "750 נקודות זיכוי בחודש, חלון הקשר של מיליון טוקנים, Ultra thinking, סוכנים מותאמים, עריכת הנחיית מערכת, תמיכה בעדיפות",
+    "notes": "מחיר לחודש בחיוב שנתי. בעמוד: \"Save $396\".",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Business",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "RBAC, SSO, סביבות צוות ועריכה משותפת",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "10 נקודות זיכוי ותכונות הליבה. לפי מרכז העזרה אין פרסום לפרודקשן ואין דומיין מותאם, אבל משתמשי החינם עשויים לקבל אפליקציה אחת שמתפרסמת בחינם, חזית בלבד. לא ברור אם הנקודות מתחדשות כל חודש.",
+  "trial": null,
+  "unverified_notes": "העמוד אינו מתייג במפורש את 20 ו־200 הדולר כמחירים בחיוב חודשי; זה עולה מסכומי החיסכון השנתי. המטבע מוצג כ־$ בלי קוד מטבע. עלות הפרסום והאחסון החודשית בנקודות לא פורסמה, מלבד מינימום של 50 נקודות. יש סתירה רשמית בשאלה אם 10 הנקודות החינמיות מתחדשות כל חודש."
+ },
+ "privacy": {
+  "text": "לפי השאלות הנפוצות הרשמיות, הנתונים של המשתמש אינם משמשים לאימון מודלים, בהפניה לסעיף 12.1 בהסכם עיבוד הנתונים (app.emergent.sh/dpa), שהוא חלק מתנאי השימוש. הנתונים מעובדים ונשמרים בארצות הברית ובהודו, ואחסון באיחוד האירופי בלבד אינו זמין בשירות עצמי. תנאי השימוש ומדיניות הפרטיות המלאים לא נקראו.",
+  "training_on_user_data": "לא, לפי השאלות הנפוצות הרשמיות.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי השאלות הנפוצות הרשמיות, המשתמש שומר על בעלות מלאה באפליקציות ובתוכן שהוא יוצר ב־Emergent, ויכול לשווק אותן תחת מותג משלו או למכור אותן, בכפוף לתנאי התוכנית. תנאי השימוש המלאים לא נקראו, ואין בכך הבטחה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נמצא API ציבורי בעמודים שנבדקו. הקוד יוצא בדחיפה ל־GitHub בתוכניות בתשלום או בהעתקה מתצוגת VS Code בכל התוכניות.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "GitHub (בתוכניות בתשלום)",
+   "Expo Application Services לפרסום ב־App Store וב־Google Play",
+   "חיבור מודלי שפה בלחיצה (One-click LLM integration)"
+  ],
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "אפליקציה ל־iOS ול־Android בשלב ניסוי (לפי TechCrunch)"
+  ],
+  "source_ids": [
+   "s1",
+   "s4"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית. לפי השאלות הנפוצות, Emergent מקבלת הנחיות בשפה טבעית \"in multiple languages\", בלי רשימת שפות.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "company": {
+  "name": "Emergent",
+  "parent": null,
+  "country": "ארצות הברית",
+  "note": "לפי TechCrunch החברה יושבת בסן פרנסיסקו ויש לה משרד בבנגלור. השם המשפטי לא נקרא במקור רשמי."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים: עמוד המחירים והשאלות הנפוצות אינם מזכירים הנחה לסטודנטים.",
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://emergent.sh/pricing",
+   "title": "עמוד המחירים של Emergent",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://help.emergent.sh/plans-and-credits",
+   "title": "מרכז העזרה של Emergent: תוכניות ונקודות זיכוי",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://help.emergent.sh/faqs",
+   "title": "מרכז העזרה של Emergent: שאלות נפוצות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://techcrunch.com/2026/02/17/emergent-hits-100m-arr-eight-months-after-launch-rolls-out-mobile-app",
+   "title": "TechCrunch: Emergent hits $100M ARR eight months after launch, rolls out mobile app",
+   "official": false,
+   "published": "2026-02-17",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://geekflare.com/guides/emergent-ai-review/",
+   "title": "Geekflare: Is Emergent.sh Worth It?",
+   "official": false,
+   "published": "2026-07-09",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s6",
+   "url": "https://www.analyticsvidhya.com/blog/2026/01/vibe-coding-game-with-emergent-in-minutes/",
+   "title": "Analytics Vidhya: Vibe Coding a Bridge-Ball Game with Emergent",
+   "official": false,
+   "published": "2026-01-22",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "לפי TechCrunch מ־17 בפברואר 2026, Emergent הושקה \"eight months ago\", כלומר בתוך החלון (הסקה). שתי סקירות ייעודיות מהשנה האחרונה, Geekflare ו־Analytics Vidhya, עם הסתייגויות. בששת הסיכומים שנספרו הכלי לא מכוסה.",
+   "launch_date": "launched just eight months ago (TechCrunch, February 17, 2026)",
+   "launched_in_window": true,
+   "latest_version": "Emergent mobile app (iOS, Android)",
+   "latest_version_date": "February 17, 2026",
+   "latest_version_date_iso": "2026-02-17",
+   "independent_reviews": 2,
+   "evidence": "research/stage4/no-code-apps.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 20,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Standard",
+   "verified": true,
+   "label": "מ־20 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": [
+    "iOS",
+    "Android"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 0,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/no-code-apps.md"
+   }
+  }
+ }
+}

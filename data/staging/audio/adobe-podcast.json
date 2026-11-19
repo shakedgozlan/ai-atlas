@@ -1,0 +1,259 @@
+{
+  "id": null,
+  "slug": "adobe-podcast",
+  "category_id": 8,
+  "name": "Adobe Podcast",
+  "former_name": null,
+  "rename_note": null,
+  "role": "כלי דפדפן לניקוי והשבחת הקלטות דיבור, הקלטה מרחוק ועריכת פודקאסטים.",
+  "url": "https://podcast.adobe.com",
+  "logo": {
+    "file": null,
+    "file_dark": null,
+    "source_url": null,
+    "missing_reason": "ייאסף בשלב הלוגואים",
+    "note": null
+  },
+  "status": {
+    "state": "פעיל",
+    "note": "לפי עמוד התוכניות, Adobe Podcast Premium מוצעת כחלק מתוכנית Adobe Firefly Pro. תאריך השינוי לא אומת.",
+    "date_as_written": null,
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "strengths": [
+    {
+      "lead": "ניקוי דיבור בכל שפה",
+      "detail": "לפי השאלות הנפוצות, Enhance Speech \"is language agnostic\": הוא משפר הקלטה בלי לתרגם או ליצור דיבור.",
+      "source_ids": [
+        "s4"
+      ],
+      "inference": false
+    },
+    {
+      "lead": "ניקוי דיבור עד 4 שעות ביום בפרימיום",
+      "detail": "Enhance Speech בתוכנית הפרימיום מעבד עד 4 שעות ביום, קבצים עד 1GB, גם וידאו MP4 ו־MOV, עם העלאה בכמות.",
+      "source_ids": [
+        "s1"
+      ],
+      "inference": false
+    },
+    {
+      "lead": "כוונון נפרד של דיבור, מוזיקה ורקע",
+      "detail": "בגרסת הפרימיום אפשר לכוונן כל אחד מהם בנפרד כדי שהתוצאה תישמע טבעית.",
+      "source_ids": [
+        "s1"
+      ],
+      "inference": false
+    }
+  ],
+  "limitations": [
+    {
+      "lead": "הגישה לפרימיום עברה ל־Firefly Pro",
+      "detail": "עמוד התוכניות מציג את Adobe Podcast Premium רק כחלק מ־Firefly Pro, ב־19.99 דולר לחודש במחיר הרגיל, יחד עם נקודות יצירה ל־Firefly.",
+      "source_ids": [
+        "s1",
+        "s3"
+      ],
+      "inference": false
+    },
+    {
+      "lead": "מגבלות יומיות בשימוש החינמי",
+      "detail": "לפי השאלות הנפוצות יש מגבלות יומיות לפי התוכנית, אבל הכמויות אינן מפורטות.",
+      "source_ids": [
+        "s4"
+      ],
+      "inference": false
+    },
+    {
+      "lead": "כלי דפדפן בלבד",
+      "detail": "לפי השאלות הנפוצות זה כלי מבוסס אתר, וההקלטה והעריכה נעשות בדפדפן. לא מוזכרת אפליקציה.",
+      "source_ids": [
+        "s4"
+      ],
+      "inference": false
+    }
+  ],
+  "audience": "יוצרי פודקאסטים, סטודנטים ויוצרי וידאו שמקליטים דיבור בתנאים לא אידיאליים.",
+  "pricing": {
+    "verification": "אומת חלקית",
+    "summary_line": "Adobe Podcast Premium כלולה ב־Firefly Pro, שמחירה הרגיל 19.99 דולר לחודש. יש גם שימוש חינמי עם מגבלות יומיות.",
+    "model": "מנוי",
+    "plans": [
+      {
+        "name": "Free",
+        "price": 0,
+        "price_text": null,
+        "price_short": null,
+        "currency": null,
+        "per": null,
+        "billing": null,
+        "price_period": null,
+        "includes": "שימוש ב־Enhance Speech ובכלים בדפדפן, עם מגבלות יומיות",
+        "notes": "לפי השאלות הנפוצות יש \"daily limits enforced by your current plan\", אך הכמויות לא צוינו.",
+        "source_ids": [
+          "s4"
+        ]
+      },
+      {
+        "name": "Adobe Firefly Pro (כולל Adobe Podcast Premium)",
+        "price": 19.99,
+        "price_text": null,
+        "price_short": null,
+        "currency": "USD",
+        "per": null,
+        "billing": "חודשי",
+        "price_period": "לחודש",
+        "includes": "Enhance Speech עד 4 שעות ביום וקבצים עד 1GB, הורדות ללא הגבלה ב־Studio, הורדת הקלטות מקוריות לפי דובר, 4,000 נקודות יצירה בחודש ב־Firefly",
+        "notes": "המחיר הרגיל לפי עמוד Firefly. מבצע זמני: 9.99 דולר לחודש בששת החודשים הראשונים, עד 6 בדצמבר. עמוד Firefly אינו מזכיר את Podcast; הכללת Podcast Premium ב־Firefly Pro מופיעה בעמוד התוכניות של Adobe Podcast. העמוד אינו מציין אם מדובר בהתחייבות שנתית בתשלום חודשי.",
+        "source_ids": [
+          "s1",
+          "s3"
+        ]
+      }
+    ],
+    "free_tier": "שימוש חינמי בכלים בדפדפן עם מגבלות יומיות. הכמויות לא צוינו בעמודים שנקראו.",
+    "trial": "בעמוד יש כפתור \"Start free trial\" בלי פירוט משך הניסיון או המחיר שאחריו.",
+    "unverified_notes": "מגבלות השימוש החינמי לא צוינו. עמוד Firefly אינו מזכיר את Adobe Podcast, ולכן הקשר בין המחיר להטבות Podcast נשען על עמוד התוכניות של Podcast. לא צוין אם החיוב החודשי כרוך בהתחייבות שנתית. השאלות הנפוצות על שינוי התוכנית (helpx.adobe.com/podcast/adobe-podcast-premium-plan-change-faq.html) חסומות לקריאה אוטומטית. זכויות שימוש ופרטיות לא נקראו."
+  },
+  "privacy": {
+    "text": "לא אומת.",
+    "training_on_user_data": null,
+    "source_ids": []
+  },
+  "commercial_rights": {
+    "text": "לא אומת.",
+    "watermark": null,
+    "source_ids": []
+  },
+  "developer_access": {
+    "api": "לא אומת",
+    "text": "לא נבדק.",
+    "source_ids": []
+  },
+  "integrations": {
+    "items": [
+      "Adobe Firefly"
+    ],
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "platforms": {
+    "items": [
+      "אתר"
+    ],
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "hebrew": {
+    "text": "המקור לא מזכיר עברית. לפי השאלות הנפוצות Enhance Speech \"is language agnostic\" ואינו יוצר או מתרגם דיבור, אך העמוד אינו מונה שפות נתמכות.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "company": {
+    "name": "Adobe",
+    "parent": null,
+    "country": null,
+    "note": null
+  },
+  "student_benefits": {
+    "text": "לא נמצאה הנחה לסטודנטים על Firefly: בלשונית Students & Teachers בעמוד Firefly מוצגים אותם מחירים. ההנחה לסטודנטים שמוזכרת בתפריט האתר נוגעת ל־Creative Cloud, ולא נבדק אם היא כוללת את Podcast Premium.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://podcast.adobe.com/en/plans",
+      "title": "עמוד התוכניות של Adobe Podcast",
+      "official": true,
+      "published": null,
+      "checked": "2026-11-18",
+      "stale": false
+    },
+    {
+      "id": "s2",
+      "url": "https://helpx.adobe.com/podcast/adobe-podcast-premium-plan-change-faq.html",
+      "title": "Adobe: שאלות נפוצות על שינוי תוכנית Adobe Podcast Premium (חסום, לא נקרא)",
+      "official": true,
+      "published": null,
+      "checked": "2026-11-18",
+      "stale": false
+    },
+    {
+      "id": "s3",
+      "url": "https://www.adobe.com/products/firefly/plans.html",
+      "title": "עמוד התוכניות של Adobe Firefly (ארה״ב)",
+      "official": true,
+      "published": null,
+      "checked": "2026-11-18",
+      "stale": false
+    },
+    {
+      "id": "s4",
+      "url": "https://helpx.adobe.com/il_en/podcast/adobe-podcast-faq.html",
+      "title": "Adobe: שאלות נפוצות על Adobe Podcast (עודכן ב־15 באפריל 2026)",
+      "official": true,
+      "published": "2026-04-15",
+      "checked": "2026-11-18",
+      "stale": false
+    }
+  ],
+  "checked_date": "2026-11-18",
+  "filters": {
+    "new_notable": {
+      "value": false,
+      "basis": "מופיע רק בסקירה עצמאית אחת מתוך 6. נכלל ככלי מוכר של Adobe לניקוי דיבור.",
+      "launch_date": null,
+      "launched_in_window": null,
+      "latest_version": null,
+      "latest_version_date": null,
+      "latest_version_date_iso": null,
+      "independent_reviews": 1,
+      "evidence": "research/stage4/audio.md"
+    },
+    "hebrew": {
+      "value": "המקור לא מזכיר עברית",
+      "label": "עברית לא מוזכרת",
+      "supported": null
+    },
+    "starting_price": {
+      "amount": 19.99,
+      "currency": "USD",
+      "billing": "חודשי",
+      "plan": "Adobe Firefly Pro",
+      "verified": true,
+      "label": "מ־19.99 דולר לחודש",
+      "has_free_plan": true
+    },
+    "platforms": {
+      "verified": [
+        "אתר"
+      ],
+      "unverified": []
+    },
+    "tags": {
+      "review_roundups": {
+        "count": 1,
+        "of": 6,
+        "value": false,
+        "evidence": "research/stage4/audio.md"
+      },
+      "popular": {
+        "value": false,
+        "basis": null,
+        "evidence": "research/stage4/audio.md"
+      },
+      "free_renewing": {
+        "value": true,
+        "basis": "לפי השאלות הנפוצות, לשימוש החינמי יש מגבלות יומיות.",
+        "evidence": "research/stage4/audio.md"
+      }
+    }
+  }
+}

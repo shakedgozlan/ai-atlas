@@ -1,0 +1,331 @@
+{
+ "id": null,
+ "slug": "gemini-notebook",
+ "category_id": 13,
+ "name": "Gemini Notebook",
+ "former_name": "NotebookLM",
+ "rename_note": "Google הודיעה ב־16 ביולי 2026 על שינוי השם מ־NotebookLM ל־Gemini Notebook. המוצר נשאר עצמאי, והכתובת notebooklm.google עדיין בשימוש.",
+ "role": "מחברת מחקר של Google שעונה על שאלות ויוצרת סיכומים, סקירות קוליות ווידאו מתוך המקורות שהעלית.",
+ "url": "https://notebooklm.google",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "שינוי שם",
+  "note": "NotebookLM נקרא מעתה Gemini Notebook. לפי Google המוצר נשאר עצמאי, והמחברות מסתנכרנות גם עם אפליקציית Gemini.",
+  "date_as_written": "July 16, 2026",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "שימוש חינמי נדיב",
+   "detail": "בחשבון Google חינמי אפשר ליצור עד 100 מחברות עם עד 50 מקורות בכל אחת. מכסות יומיות מתאפסות כל 24 שעות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "פלט בעברית",
+   "detail": "עברית מופיעה ברשימת שפות הפלט, וההגדרה חלה גם על Audio Overviews ו־Video Overviews. Google מציינת שתכונות שונות תומכות בשפות שונות.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ניתוח נתונים עם קוד",
+   "detail": "מיולי 2026 כל מחברת יכולה לכתוב ולהריץ קוד לניתוח נתונים מתוך המקורות. זמין ב־Google AI Ultra, ועובר בהדרגה לכל מנויי Pro ברשת.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "ההגבלות הגבוהות בתשלום",
+   "detail": "Pro מעלה את המכסה ל־500 מחברות ו־300 מקורות במחברת, ונכלל במנוי Google AI Pro ב־19.99 דולר לחודש.",
+   "source_ids": [
+    "s1",
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "סימן מים בתוכנית החינמית",
+   "detail": "הסרת סימן המים מתאפשרת רק מ־Pro. בהודו, בדרום קוריאה ובווייטנאם מתווסף סימן מים גלוי באופן אוטומטי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים וחוקרים שעובדים עם מאמרים, הרצאות ומסמכים ורוצים לשאול עליהם שאלות ולקבל סיכומים.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "חינם עם חשבון Google. מכסות גבוהות יותר במנויי Google AI, מ־4.99 דולר לחודש (Google AI Plus, בעמוד המנויים בארה״ב).",
+  "model": "חינם, ושדרוג דרך מנויי Google AI",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "עד 100 מחברות, 50 מקורות במחברת, 500 מקורות מסוג הערה",
+    "notes": "דורש חשבון Google. מכסות יומיות מתאפסות כל 24 שעות.",
+    "source_ids": [
+     "s1",
+     "s4"
+    ]
+   },
+   {
+    "name": "Google AI Plus",
+    "price": 4.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "עד 200 מחברות, 100 מקורות במחברת, 400GB אחסון",
+    "notes": "מנוי Google AI כללי.",
+    "source_ids": [
+     "s1",
+     "s4"
+    ]
+   },
+   {
+    "name": "Google AI Pro",
+    "price": 19.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "עד 500 מחברות, 300 מקורות במחברת, הסרת סימן מים, 5TB אחסון",
+    "notes": "מנוי Google AI כללי.",
+    "source_ids": [
+     "s1",
+     "s4"
+    ]
+   },
+   {
+    "name": "Google AI Ultra",
+    "price": 99.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "עד 500 מחברות, 500 מקורות במחברת, ההגבלות הגבוהות ביותר, 20TB אחסון",
+    "notes": "מוצגת גם אפשרות של 199.99 דולר לחודש (30TB, 600 מקורות במחברת).",
+    "source_ids": [
+     "s1",
+     "s4"
+    ]
+   },
+   {
+    "name": "Enterprise (Google Cloud)",
+    "price": null,
+    "price_text": "דרך Google Cloud",
+    "price_short": "דרך Google Cloud",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "פי 5 או יותר פריטים שנוצרים, שיתוף מתקדם, VPC-SC ו־IAM",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "חינם עם חשבון Google: עד 100 מחברות ו־50 מקורות בכל מחברת, צ'אט, Audio ו־Video Overviews ופריטים נוספים. מכסות יומיות מתאפסות כל 24 שעות.",
+  "trial": null,
+  "unverified_notes": "המחירים נקראו בעמוד המנויים בגרסת ארה״ב, והעמוד מציג סימן דולר בלי מטבע. מכסות יומיות מדויקות (צ'אטים, סקירות קוליות ווידאו) לא פורסמו בעמוד העזרה. מחיר שנתי ומחירים בישראל לא נבדקו."
+ },
+ "privacy": {
+  "text": "לפי עמוד העזרה, בחשבונות פרטיים הנתונים לא משמשים לאימון Gemini Notebook אלא אם נותנים משוב, ואז ייתכן עיון בכל האינטראקציה. בחשבונות Workspace ו־Workspace for Education ההעלאות, השאלות והתשובות לא נבדקות על ידי אדם ולא משמשות לאימון.",
+  "training_on_user_data": "לא בחשבונות פרטיים, אלא אם נותנים משוב. ב־Workspace לא.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נקראו.",
+  "watermark": "סימן מים על פריטים שנוצרים עד שמשדרגים ל־Pro. בהודו, בדרום קוריאה ובווייטנאם מתווסף סימן מים גלוי באופן אוטומטי.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "גרסה ארגונית זמינה דרך Google Cloud. API ציבורי לא נבדק.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "אפליקציית Gemini (סנכרון מחברות)",
+   "Google Workspace"
+  ],
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "אפליקציות לנייד"
+  ],
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "hebrew": {
+  "text": "עברית נתמכת לפי המקור כשפת פלט: היא מופיעה ברשימת שפות הפלט בדפדפן, וההגדרה חלה גם על Audio ו־Video Overviews. Google מציינת ש\"Different features may support different languages\", ולכן תמיכה בעברית בכל תכונה לא אומתה.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "company": {
+  "name": "Google",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "דף הסטודנטים של Gemini מציע שנה של Google AI Pro בחינם (ואחר כך 19.99 דולר לחודש אלא אם מבטלים), לסטודנטים בקולג' בארה״ב מגיל 18, עם מימוש עד 31 בדצמבר 2026. סטודנטים בישראל אינם מוזכרים כזכאים, והדף לא מזכיר את Gemini Notebook בשמו. גישה דרך חשבון Workspace for Education מוזכרת בעמוד העזרה.",
+  "source_ids": [
+   "s5",
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://support.google.com/notebooklm/answer/16213268?hl=en",
+   "title": "מרכז העזרה של Gemini Notebook: התוכניות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+   "title": "Google: NotebookLM is now Gemini Notebook",
+   "official": true,
+   "published": "2026-07-16",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://support.google.com/gemininotebook/answer/16261963?hl=en&co=GENIE.Platform%3DDesktop",
+   "title": "מרכז העזרה של Gemini Notebook: שינוי שפת הפלט",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://gemini.google/subscriptions/",
+   "title": "Google: מנויי Google AI",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://gemini.google/students/",
+   "title": "Google: Gemini לסטודנטים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s9",
+   "url": "https://a16z.com/100-gen-ai-apps-7/",
+   "title": "a16z: Top 100 Gen AI Consumer Apps, מהדורה 7",
+   "official": false,
+   "published": "2026-10-05",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "שינוי השם וניתוח הנתונים בקוד הגיעו ב־16 ביולי 2026, אבל רק אחת מ־6 הסקירות שנספרו מכסה את הכלי. נכלל ככלי מוביל.",
+   "launch_date": null,
+   "launched_in_window": false,
+   "latest_version": "Gemini Notebook (rename, code execution)",
+   "latest_version_date": "July 16, 2026",
+   "latest_version_date_iso": "2026-07-16",
+   "evidence": "research/stage4/meetings-knowledge.md",
+   "independent_reviews": 1
+  },
+  "hebrew": {
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
+  },
+  "starting_price": {
+   "amount": 4.99,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Google AI Plus",
+   "verified": true,
+   "label": "מ־4.99 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": [
+    "iOS",
+    "Android"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 1,
+    "of": 6,
+    "value": false,
+    "evidence": "research/stage4/meetings-knowledge.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "לפי מהדורה 7 של רשימת a16z (אוקטובר 2026, נתוני Similarweb), NotebookLM היא אחת מחמש הכניסות של Google ברשימת האתרים; דירוג מדויק לא צוין בטקסט.",
+    "evidence": "research/stage4/meetings-knowledge.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "מכסות יומיות שמתאפסות כל 24 שעות, לפי עמוד העזרה.",
+    "evidence": "research/stage4/meetings-knowledge.md"
+   }
+  }
+ }
+}

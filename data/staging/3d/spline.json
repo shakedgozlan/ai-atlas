@@ -1,0 +1,357 @@
+{
+ "id": null,
+ "slug": "spline",
+ "category_id": 9,
+ "name": "Spline",
+ "former_name": null,
+ "rename_note": null,
+ "role": "כלי עיצוב תלת־ממד בדפדפן ליצירת סצנות אינטראקטיביות לאתרים ולאפליקציות, עם יצירת מודלים בבינה מלאכותית מטקסט ומתמונה.",
+ "url": "https://spline.design",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "עיצוב, אינטראקציה ויצירה בבינה מלאכותית במקום אחד",
+   "detail": "מודל שנוצר מטקסט או מתמונה נפתח ישר בעורך הסצנה. אפשר לבחור בין המנועים Hunyuan3D, Hunyuan 3.1 Pro, Trellis 2 ו־Meshy.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית לעבודה בעורך",
+   "detail": "Free כוללת צפייה ללא הגבלה בקבצים, גישה לספריית Spline וייצוא לרשת (עם סימן מים), אבל בלי נקודות AI.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חיבור לסוכני בינה מלאכותית",
+   "detail": "Spline MCP מאפשר לסוכן לעבוד בקבצים: 20 קריאות ביום ב־Free, 100 ב־Hobby, 200 ב־Pro ו־400 ב־Max. Omma, כלי בטא של Spline, בונה סצנות, אתרים ומשחקים מתיאור טקסט.",
+   "source_ids": [
+    "s1",
+    "s4"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "יצירת מודלים בבינה מלאכותית רק בתשלום",
+   "detail": "בתוכנית Free אין נקודות AI. היצירה כלולה מ־Hobby, עם 2,000 נקודות למושב בחודש, והיא גובה נקודות גם על תמונות התצוגה המקדימה וגם על הרשת.",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "סימן מים ומגבלות קבצים בחינם",
+   "detail": "ב־Free ייצוא לרשת נושא סימן מים ומספר הקבצים האישיים מוגבל. ייצוא וידאו וייצוא ל־Apple ול־Android רק מ־Pro.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות AI אינן נצברות",
+   "detail": "הנקודות מתחדשות בכל מחזור חיוב ואינן עוברות הלאה. אפשר להוסיף נקודות עד תקרה של 10,000 למושב ב־Hobby וב־Pro.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבי אתרים, מעצבי מוצר ומעצבים גרפיים שרוצים תלת־ממד אינטראקטיבי בלי תוכנת תלת־ממד מסורתית.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־12 דולר למושב לחודש בחיוב שנתי (Hobby). יש תוכנית חינמית בלי נקודות AI.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "קבצים אישיים מוגבלים, צפייה ללא הגבלה, ספריית Spline, 20 קריאות MCP ביום",
+    "notes": "בלי נקודות AI. ייצוא לרשת עם סימן מים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Hobby",
+    "price": 12,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למושב",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "2,000 נקודות AI למושב בחודש, קבצים ללא הגבלה, בלי סימן מים, 100 קריאות MCP ביום",
+    "notes": "למושב. חיסכון של 36 דולר בשנה לעומת חיוב חודשי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Hobby",
+    "price": 15,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למושב",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "2,000 נקודות AI למושב בחודש, קבצים ללא הגבלה, בלי סימן מים, 100 קריאות MCP ביום",
+    "notes": "למושב. מחיר החיוב החודשי מוצג בעמוד כמחיר מחוק ליד המחיר השנתי ואינו מסומן במפורש כחודשי; ההתאמה נקבעה לפי סכום החיסכון השנתי שמוצג.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 25,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למושב",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "3,000 נקודות AI למושב בחודש, ייצוא וידאו, ייצוא ל־Apple ול־Android, 200 קריאות MCP ביום",
+    "notes": "למושב.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 30,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למושב",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "3,000 נקודות AI למושב בחודש, ייצוא וידאו, ייצוא ל־Apple ול־Android, 200 קריאות MCP ביום",
+    "notes": "למושב. מחיר החיוב החודשי מוצג בעמוד כמחיר מחוק ליד המחיר השנתי ואינו מסומן במפורש כחודשי; ההתאמה נקבעה לפי סכום החיסכון השנתי שמוצג.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Max",
+    "price": 60,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למושב",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "10,000 נקודות AI למושב בחודש, פי 5 יצירת מדיה בשבוע, 400 קריאות MCP ביום",
+    "notes": "למושב.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Max",
+    "price": 70,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למושב",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "10,000 נקודות AI למושב בחודש, פי 5 יצירת מדיה בשבוע, 400 קריאות MCP ביום",
+    "notes": "למושב. מחיר החיוב החודשי מוצג בעמוד כמחיר מחוק ליד המחיר השנתי ואינו מסומן במפורש כחודשי; ההתאמה נקבעה לפי סכום החיסכון השנתי שמוצג.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "כמה צוותים, SSO, ייצוא באחסון עצמי, היסטוריית גרסאות",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free קבועה: קבצים אישיים מוגבלים, צפייה ללא הגבלה, ספריית Spline ו־20 קריאות MCP ביום. אין נקודות AI, וייצוא לרשת נושא סימן מים.",
+  "trial": null,
+  "unverified_notes": "המחירים מוצגים עם הסימן $ בלי קוד מטבע. המחירים בחיוב חודשי לא מסומנים במפורש. מחיר נקודות נוספות לא ברור: בעמוד מופיעים גם 48 דולר לשנה וגם 5 דולר לחודש לכל 1,000 נקודות נוספות למושב. עלות יצירת מודל בודד בנקודות לא פורסמה."
+ },
+ "privacy": {
+  "text": "לפי תנאי השימוש (בתוקף מ־29 באוקטובר 2026), Spline רשאית ליצור נתונים מותממים ומצטברים מתוכן המשתמשים, מנתוני השימוש בכלי ה־AI ומנתוני שימוש, והיא הבעלים שלהם ויכולה להשתמש בהם לפיתוח, אימון והערכה של מודלים. ההרשאה חלה גם על תוכן שנוצר לפני מועד זה. לא נמצאה אפשרות ביטול בתנאים.",
+  "training_on_user_data": "כן, בנתונים מותממים ומצטברים, לפי תנאי השימוש.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תנאי השימוש, המשתמש שומר על הבעלות בתוכן שלו. התנאים אינם מתייחסים במפורש לבעלות על תוצרים שנוצרו בבינה מלאכותית. תוכן שמתפרסם בקהילת Spline מקבל כברירת מחדל Standard Commercial License, שמתיר לאחרים לשנות אותו גם לשימוש מסחרי.",
+  "watermark": "ייצוא לרשת בתוכנית Free נושא סימן מים. מ־Hobby ומעלה בלי סימן מים.",
+  "source_ids": [
+   "s3",
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "יש Spline MCP לסוכני בינה מלאכותית, עם מכסת קריאות יומית לפי תוכנית. API ציבורי לא נבדק.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Spline MCP",
+   "Hunyuan3D",
+   "Trellis 2",
+   "Meshy",
+   "ייצוא ל־Apple ול־Android"
+  ],
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Spline, Inc.",
+  "parent": null,
+  "country": null,
+  "note": "לפי תנאי השימוש זו חברה מדלאוור, וחלים דיני דלאוור. מדינת הפעילות לא אומתה."
+ },
+ "student_benefits": {
+  "text": "עמוד המחירים מקשר לעמוד Education נפרד, שלא נקרא. ההטבה לא אומתה.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.spline.design/pricing",
+   "title": "עמוד המחירים של Spline",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://docs.spline.design/generate/ai-3d-generation",
+   "title": "תיעוד Spline: AI 3D Generation",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://spline.design/terms",
+   "title": "תנאי השימוש של Spline (עודכנו ב־29 בספטמבר 2026)",
+   "official": true,
+   "published": "2026-09-29",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://spline.design/changelog/meet-omma-create-3d-websites-and-apps-with-ai-agents",
+   "title": "יומן השינויים של Spline: Omma",
+   "official": true,
+   "published": "2026-03-24",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "Omma (בטא) הוצג ב־24 במרץ 2026, אבל הכלי נמצא רק בסקירה עצמאית אחת. נכלל ככלי מוביל ומבוסס.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Omma (בטא)",
+   "latest_version_date": "March 24, 2026",
+   "latest_version_date_iso": "2026-03-24",
+   "independent_reviews": 1,
+   "evidence": "research/stage4/3d.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 12,
+   "currency": "USD",
+   "billing": "שנתי",
+   "plan": "Hobby",
+   "verified": true,
+   "label": "מ־12 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 1,
+    "of": 4,
+    "value": false,
+    "evidence": "research/stage4/3d.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   },
+   "free_renewing": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/3d.md"
+   }
+  }
+ }
+}

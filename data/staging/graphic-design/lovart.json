@@ -1,0 +1,307 @@
+{
+ "id": null,
+ "slug": "lovart",
+ "category_id": 4,
+ "name": "Lovart",
+ "former_name": null,
+ "rename_note": null,
+ "role": "סוכן עיצוב מבוסס בינה מלאכותית שיוצר עיצובים על קנבס לפי בקשה בשפה חופשית.",
+ "url": "https://www.lovart.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "אפשר להתחיל בחינם",
+   "detail": "עמוד המחירים מציע תוכנית חינמית (\"Get started for free\"). הפרטים שלה לא מופיעים בטקסט העמוד.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "נקודות שנרכשו בנפרד תקפות לשנה",
+   "detail": "נקודות זיכוי שנקנות כתוספת תקפות 366 יום מיום הרכישה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "יצירה איטית ללא הגבלה בחלק מהתוכניות",
+   "detail": "בתוכניות מסוימות יש Unlimited Relax Generation, תור איטי שלא צורך נקודות, לתקופה קבועה כמו 31 או 180 יום.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "נקודות חודשיות לא נצברות",
+   "detail": "בתוכניות חודשיות ושנתיות כאחד, הנקודות מתאפסות כל חודש ונקודות שלא נוצלו אובדות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "היצירה החופשית היא הטבה חד־פעמית",
+   "detail": "Unlimited Relax Generation ניתנת פעם אחת לחשבון, לתקופה קבועה, ורק בתוכניות מסוימות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מגבלת חיבורים לחשבון",
+   "detail": "עד 2 חיבורים מדפדפן במחשב וחיבור אחד מדפדפן בנייד לכל חשבון. לעבודה של כמה משתמשים צריך את תוכנית Team.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים ויוצרים שרוצים לנסות סוכן עיצוב שמפיק חומרים גרפיים מתיאור, לצד עבודה בכלים הרגילים.",
+ "pricing": {
+  "verification": "לא אומת",
+  "summary_line": null,
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "העמוד מציע \"Get started for free\" בלי לפרט מה כלול.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Basic",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "השם מופיע רק בשאלות הנפוצות על תור ה־Relax.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "לפי תיאור העמוד: יכולות מתקדמות, נפח גדול יותר ופרויקטים מסחריים",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Ultimate",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "השם מופיע רק בשאלות הנפוצות על תור ה־Relax.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "המחיר לא אומת",
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "שימוש של כמה משתמשים",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "יש תוכנית חינמית, אבל המכסות שלה לא מופיעות בטקסט של עמוד המחירים.",
+  "trial": null,
+  "unverified_notes": "עמוד המחירים מוצג בסקריפט. בשתי קריאות (אחת בשלב המחקר הראשון ואחת עכשיו) הופיעו רק שמות תוכניות, מתג חודשי/שנתי וכללי נקודות, בלי מחירים, מטבע או כמויות נקודות. מחירונים של צד שלישי לא שימשו."
+ },
+ "privacy": {
+  "text": "מדיניות הפרטיות (23 ביולי 2025) אינה מתייחסת לאימון מודלים על תוכן המשתמשים.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי תיאור עמוד המחירים, Pro מיועדת בין השאר ל\"commercial projects\". זכויות השימוש בכל תוכנית לא אומתו מתנאי השימוש. אין בכך הבטחה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "בעמודים הרשמיים שנבדקו אין אזכור של API.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר (דפדפן במחשב ובנייד)"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודים הרשמיים שנבדקו אין אזכור של שפות ממשק או של טקסט בעברית בעיצובים.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Resonate International INC.",
+  "parent": null,
+  "country": "ארצות הברית",
+  "note": "לפי תנאי השימוש, המפעילה היא Resonate International INC., חברה מדלאוור."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה לסטודנטים בעמודים הרשמיים שנבדקו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.lovart.ai/pricing",
+   "title": "עמוד המחירים של Lovart (בלי מחירים בטקסט)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-19",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://lovart.ai/statement/terms-of-use",
+   "title": "תנאי השימוש של Lovart (עודכנו ב־9 ביולי 2026)",
+   "official": true,
+   "published": "2026-07-09",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://lovart.ai/statement/67819415bf39427eac98fdea77510a9d",
+   "title": "מדיניות הפרטיות של Lovart",
+   "official": true,
+   "published": "2025-07-23",
+   "checked": "2026-11-18",
+   "stale": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.newsfilecorp.com/release/259781",
+   "title": "הודעה לעיתונות של Lovart על ההשקה העולמית (Newsfile)",
+   "official": true,
+   "published": "2025-07-23",
+   "checked": "2026-11-18",
+   "stale": true
+  },
+  {
+   "id": "s5",
+   "url": "https://www.lovart.ai/zh/changelog",
+   "title": "יומן השינויים של Lovart (בסינית)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "יצא מגרסת בטא להשקה עולמית ב־23 ביולי 2025, בתוך חלון הזמן. לא נמצאה אף סקירה עצמאית: כל הסקירות שנמצאו נכתבו בידי Lovart, בידי מתחרים, או היו תוכן ממומן.",
+   "launch_date": "July 23, 2025",
+   "launched_in_window": true,
+   "latest_version": null,
+   "latest_version_date": "May 6, 2026",
+   "latest_version_date_iso": "2026-05-06",
+   "independent_reviews": 0,
+   "evidence": "research/stage4/added-tools.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": null,
+   "currency": null,
+   "billing": null,
+   "plan": null,
+   "verified": false,
+   "label": null,
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 0,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/graphic-design.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/added-tools.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": "יש תוכנית חינמית, אבל המקור לא מפרט את המכסה שלה ואם היא מתחדשת.",
+    "evidence": "research/stage4/added-tools.md"
+   }
+  }
+ }
+}

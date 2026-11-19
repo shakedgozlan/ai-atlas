@@ -1,0 +1,333 @@
+{
+ "id": null,
+ "slug": "base44",
+ "category_id": 11,
+ "name": "Base44",
+ "former_name": null,
+ "rename_note": null,
+ "role": "בניית אפליקציות מלאות מתוך שיחה, עם התחברות משתמשים, מסד נתונים ואחסון מובנים.",
+ "url": "https://base44.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": "Wix רכשה את Base44 בתמורה ראשונית של כ־80 מיליון דולר, ועוד תשלומים מותנים בביצועים עד 2029. Base44 ממשיכה לפעול כמוצר נפרד, והתשלום באזורים מסוימים מתבצע דרך Wix.",
+  "date_as_written": "Jun 18, 2025",
+  "source_ids": [
+   "s4",
+   "s2"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "תיעוד רשמי בעברית",
+   "detail": "מרכז התיעוד של Base44 זמין בעברית, כולל יומן השינויים.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הכול כלול כבר בחינם",
+   "detail": "Free כוללת עד 5 אפליקציות, התחברות משתמשים, מסד נתונים ואנליטיקה, עם 25 נקודות הודעה ו־100 נקודות אינטגרציה בחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "סנכרון דו־כיווני עם GitHub",
+   "detail": "לפי עמוד המחירים, סנכרון דו־כיווני עם GitHub מייצא את קוד המקור המלא למאגר של המשתמש. האינטגרציה מופיעה מתוכנית Builder.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "דומיין מותאם רק בתשלום",
+   "detail": "דומיין מותאם מופיע מתוכנית Starter, ו־GitHub ובחירת מודל מתוכנית Builder.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מכסת הודעות קטנה בחינם",
+   "detail": "Free כוללת 25 נקודות הודעה בחודש, וצריכת הנקודות משתנה לפי הפעולה והמודל שנבחר.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תנאי השימוש מאפשרים אימון מודלים",
+   "detail": "לפי עדכון תנאי השימוש שנכנס לתוקף ב־21 ביוני 2026, הרישיון שהמשתמש נותן ל־Base44 כולל גם שימוש ואימון של מודלי AI. העדכון אינו מפרט ברירת מחדל או אפשרות ביטול.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים, יזמים וסטודנטים שרוצים לבנות אפליקציה עם משתמשים ונתונים בלי להתעסק בשרתים.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־16 דולר לחודש בחיוב שנתי (Starter, 100 נקודות הודעה). יש תוכנית חינמית עם 25 נקודות הודעה בחודש.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "עד 5 אפליקציות, 25 נקודות הודעה ו־100 נקודות אינטגרציה בחודש, תכונות הליבה, התחברות משתמשים, מסד נתונים, אנליטיקה",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Starter",
+    "price": 16,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "100 נקודות הודעה ו־2,000 נקודות אינטגרציה בחודש, אפליקציות ללא הגבלה, עריכת קוד באפליקציה, דומיין מותאם",
+    "notes": "מחיר לחודש בחיוב שנתי. דומיין חינם לשנה בכל תוכנית בתשלום.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Builder",
+    "price": 40,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "250 נקודות הודעה ו־10,000 נקודות אינטגרציה בחודש, אפליקציות ללא הגבלה, בחירת מודל AI, דומיין מותאם, GitHub",
+    "notes": "מחיר לחודש בחיוב שנתי. מסומנת \"Popular\". כוללת 25 נקודות לשיתוף עם חבר.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 80,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "500 נקודות הודעה ו־20,000 נקודות אינטגרציה בחודש, כל מה שב־Builder, גישה מוקדמת לבטא",
+    "notes": "מחיר לחודש בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Elite",
+    "price": 160,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "1,200 נקודות הודעה ו־50,000 נקודות אינטגרציה בחודש, כל מה שב־Pro, תמיכה מועדפת",
+    "notes": "מחיר לחודש בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free: עד 5 אפליקציות, 25 נקודות הודעה ו־100 נקודות אינטגרציה בחודש, התחברות משתמשים, מסד נתונים ואנליטיקה. עמוד המחירים אינו מזכיר תג או מגבלת פרסום, ודומיין מותאם ו־GitHub אינם כלולים.",
+  "trial": null,
+  "unverified_notes": "המחירים בחיוב חודשי לא מוצגים: לפי ה־FAQ החיוב השנתי חוסך 20%, ולכן המחירים שבעמוד הם בחיוב שנתי. המטבע מוצג כ־$ בלי קוד מטבע. לא ברור אם יש תג Base44 באפליקציות בתוכנית החינמית."
+ },
+ "privacy": {
+  "text": "לפי עדכון תנאי השימוש של Base44, שנכנס לתוקף ב־21 ביוני 2026, שונו תנאי הרישיון \"including by using and training AI models\". העדכון אינו מפרט ברירת מחדל, אפשרות ביטול או תוכניות שאינן כלולות. תנאי השימוש המלאים ומדיניות הפרטיות לא נקראו. מנוי בתשלום אינו מבטיח כשלעצמו שהתוכן לא ישמש לאימון.",
+  "training_on_user_data": "התנאים מתירים שימוש בתוכן לאימון מודלים לפי עדכון יוני 2026; ברירת המחדל ואפשרות הביטול לא אומתו.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: סעיף הבעלות בתנאי השימוש המלאים לא נקרא. לפי עמוד המחירים, סנכרון GitHub מייצא את קוד המקור המלא למאגר של המשתמש, ולפי עדכון התנאים הם מכסים גם מכירת מוצרים ושירותים דרך אפליקציות שנבנו ב־Base44.",
+  "watermark": null,
+  "source_ids": [
+   "s1",
+   "s3"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "יומן השינויים כולל מדור למפתחים, ועמוד המחירים מזכיר סנכרון דו־כיווני עם GitHub. API ציבורי לבניית אפליקציות לא אומת.",
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "GitHub (סנכרון דו־כיווני, מתוכנית Builder)",
+   "Base44 Payments",
+   "שירותי צד שלישי כמו Stripe, SendGrid ו־OpenAI, בחיוב ישיר מול הספק"
+  ],
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "אפליקציה ל־Android",
+   "אפליקציה ל־Mac"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "התיעוד הרשמי של Base44, כולל יומן השינויים, זמין בעברית. יומן השינויים מזכיר תרגום של ממשק האינטגרציות למשתמשים שאינם דוברי אנגלית, אך אינו מזכיר במפורש עברית או כתיבה מימין לשמאל בממשק או באפליקציות שנבנות.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "company": {
+  "name": "Base44",
+  "parent": "Wix",
+  "country": null,
+  "note": "לפי הודעת Wix מ־18 ביוני 2025, Wix רכשה את Base44. השם המשפטי של Base44 ומדינת מושבה לא נכתבו במקור שנקרא."
+ },
+ "student_benefits": {
+  "text": "לפי עמוד המחירים, תמחור לחינוך ולעמותות ניתן לפי בחינה פרטנית. סטודנטים יכולים להירשם עם כתובת מייל של מוסד לימודים לאימות, או לפנות לתמיכה. יש גם עמוד פתרונות להשכלה גבוהה. גובה ההנחה לא פורסם.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://base44.com/pricing",
+   "title": "עמוד המחירים של Base44",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://docs.base44.com/he/changelog/product.md",
+   "title": "יומן השינויים הרשמי של Base44 (בעברית)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://docs.base44.com/Community-and-support/terms-of-service-update-june-2026.md",
+   "title": "תיעוד Base44: עדכון תנאי השימוש ביוני 2026",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://www.wix.com/press-room/home/post/wix-further-expands-into-vibe-coding-with-acquisition-of-base44-a-hyper-growth-startup-that-simplif",
+   "title": "הודעת Wix לעיתונות על רכישת Base44",
+   "official": true,
+   "published": "2025-06-18",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "כלי מוביל שמכוסה ב־5 סיכומים עצמאיים, ויומן השינויים מראה עדכונים שוטפים עד 8 בנובמבר 2026, אבל בלי גרסה משמעותית בשם. נרכש על ידי Wix ב־18 ביוני 2025.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 5,
+   "evidence": "research/stage4/no-code-apps.md"
+  },
+  "hebrew": {
+   "value": "נתמכת לפי המקור",
+   "label": "עברית נתמכת",
+   "supported": true
+  },
+  "starting_price": {
+   "amount": 16,
+   "currency": "USD",
+   "billing": "שנתי",
+   "plan": "Starter",
+   "verified": true,
+   "label": "מ־16 דולר לחודש בחיוב שנתי",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר",
+    "Android",
+    "Mac"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 5,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מקום 46 ברשימת אתרי הווב של a16z, Top 100 Gen AI Consumer Apps, מהדורה 7 (אוקטובר 2026, לפי Similarweb).",
+    "evidence": "research/stage4/no-code-apps.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "25 נקודות הודעה ו־100 נקודות אינטגרציה בכל חודש בתוכנית החינמית.",
+    "evidence": "research/stage4/no-code-apps.md"
+   }
+  }
+ }
+}

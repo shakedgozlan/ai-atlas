@@ -1,0 +1,271 @@
+{
+ "id": null,
+ "slug": "quillbot",
+ "category_id": 2,
+ "name": "QuillBot",
+ "former_name": null,
+ "rename_note": null,
+ "role": "ערכת כלים לכתיבה: ניסוח מחדש, בדיקת דקדוק, סיכום, זיהוי טקסט AI ותרגום.",
+ "url": "https://quillbot.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "כלי ניסוח מחדש ב־23 שפות",
+   "detail": "לפי מרכז העזרה, הכלי לניסוח מחדש עובד ב־23 שפות, והמתרגם ב־34 שפות, בהן עברית.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית חינמית בלי כרטיס אשראי",
+   "detail": "בחינם אפשר לנסח מחדש עד 125 מילים בשני מצבים, לסכם עד 1,200 מילים ולהשתמש בגרסה מוגבלת של זיהוי טקסט AI.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מנוי אחד לעשרה מכשירים",
+   "detail": "Premium אפשר להפעיל על עד 10 מכשירים בבת אחת, ויש החזר כספי עד 3 ימים למשתמשים חדשים זכאים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "עברית רק במתרגם",
+   "detail": "הניסוח מחדש, בדיקת הדקדוק, הסיכום ובדיקת ההעתקה לא תומכים בעברית. בדיקת הדקדוק עובדת באנגלית, גרמנית, ספרדית וצרפתית, והסיכום באנגלית בלבד.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מגבלות מילים בחינם",
+   "detail": "הניסוח מחדש מוגבל ל־125 מילים, הסיכום ל־1,200 מילים, ומצב Humanizer מתקדם ל־3 שימושים.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "המחיר משתנה לפי אזור",
+   "detail": "לפי מרכז העזרה, מחיר Premium תלוי באזור ובמטבע המקומי בקופה.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים וכותבים שכותבים באנגלית או בשפות הנתמכות וצריכים ניסוח מחדש, סיכום ובדיקה.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "Premium ב־8.33 דולר לחודש בחיוב שנתי. יש תוכנית חינמית.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "ניסוח מחדש של עד 125 מילים בשני מצבים, תיקון דקדוק בסיסי, סיכום עד 1,200 מילים, זיהוי טקסט AI מוגבל, אחסון של 10MB",
+    "notes": "ללא כרטיס אשראי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Premium",
+    "price": 8.33,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "סיכום עד 6,000 מילים, בדיקת העתקה של 25,000 מילים בחודש, Humanizer מתקדם ללא הגבלה, אחסון של 100MB, עד 10 מכשירים במקביל",
+    "notes": "\"billed annually\". החזר כספי עד 3 ימים למשתמשים חדשים זכאים. אפשר להשהות את המנוי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team",
+    "price": null,
+    "price_text": "לפי הצעת מחיר",
+    "price_short": "לפי הצעת מחיר",
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "פנייה לצוות פיתוח עסקי. מ־5 משתמשים ומעלה ניתנת חשבונית אחת עם הנחה.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free ללא תשלום וללא כרטיס אשראי: ניסוח מחדש של עד 125 מילים בשני מצבים, תיקון דקדוק בסיסי, סיכומים של עד 1,200 מילים, זיהוי טקסט AI מוגבל ו־3 שימושים במצב Humanizer מתקדם.",
+  "trial": null,
+  "unverified_notes": "המחיר בחיוב חודשי ורבעוני לא אומת: מרכז העזרה מזכיר תוכניות חודשית, רבעונית ושנתית בלי סכומים, ועמוד Premium הציג רק 8.33 דולר בחיוב שנתי, וגם סכום של 5 דולר בלי הסבר. המחיר משתנה לפי אזור, והסכום שנקרא עשוי להיות המחיר שמוצג באזור הגישה. לא ברור אם מכסות החינם מתחדשות."
+ },
+ "privacy": {
+  "text": "לא אומת. מדיניות הפרטיות ותנאי השימוש לא נקראו.",
+  "training_on_user_data": null,
+  "source_ids": []
+ },
+ "commercial_rights": {
+  "text": "לא אומת.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [],
+  "source_ids": []
+ },
+ "hebrew": {
+  "text": "לפי מרכז העזרה, עברית נתמכת רק במתרגם של QuillBot, שעובד ב־34 שפות. הכלי לניסוח מחדש תומך ב־23 שפות בלי עברית, בדיקת הדקדוק באנגלית, גרמנית, ספרדית וצרפתית, והסיכום, הציטוטים ובדיקת ההעתקה באנגלית בלבד. שפת הממשק ותצוגה מימין לשמאל לא מוזכרות.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "company": {
+  "name": "QuillBot",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי וחברת האם לא אומתו."
+ },
+ "student_benefits": {
+  "text": "עמוד Premium לא מזכיר הנחה לסטודנטים.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://quillbot.com/premium",
+   "title": "עמוד Premium של QuillBot",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://help.quillbot.com/hc/en-us/articles/36491424881943-What-is-the-price-of-QuillBot-Premium",
+   "title": "מרכז העזרה של QuillBot: מחיר Premium",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://help.quillbot.com/hc/en-us/articles/4541525640727-What-languages-does-QuillBot-work-in",
+   "title": "מרכז העזרה של QuillBot: שפות נתמכות",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://a16z.com/100-gen-ai-apps-6/",
+   "title": "a16z: The Top 100 Gen AI Consumer Apps, מהדורה 6",
+   "official": false,
+   "published": "2026-03-09",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://www.theneuron.ai/explainer-articles/a16z-just-ranked-the-100-most-popular-ai-apps-heres-the-full-list-and-what-it-tells-us-/",
+   "title": "The Neuron: העתק של רשימת a16z עם הדירוג",
+   "official": false,
+   "published": "2026-03-13",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "לא אומת: תאריך הגרסה האחרונה לא נבדק במקור רשמי, והסקירות העצמאיות לא נספרו כי מכסת הגישה לדפים נגמרה.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": null,
+   "evidence": "research/stage4/writing.md"
+  },
+  "hebrew": {
+   "value": "נתמכת לפי המקור",
+   "label": "עברית במתרגם בלבד",
+   "supported": true
+  },
+  "starting_price": {
+   "amount": 8.33,
+   "currency": "USD",
+   "billing": "שנתי",
+   "plan": "Premium",
+   "verified": true,
+   "label": "מ־8.33 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [],
+   "unverified": [
+    "אתר"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": null,
+    "of": 0,
+    "value": null,
+    "evidence": "research/stage4/writing.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מקום 20 ברשימת 50 מוצרי הרשת של a16z, מהדורה 6 ממרץ 2026, לפי ביקורים ייחודיים ב־Similarweb בינואר 2026.",
+    "evidence": "research/stage4/writing.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": null,
+    "evidence": "research/stage4/writing.md"
+   }
+  }
+ }
+}

@@ -1,0 +1,338 @@
+{
+ "id": null,
+ "slug": "microsoft-copilot",
+ "category_id": 1,
+ "name": "Microsoft Copilot",
+ "former_name": null,
+ "rename_note": null,
+ "role": "עוזר השיחה של Microsoft, זמין בחינם ובתוך אפליקציות Microsoft 365 כמו Word, Excel ו־PowerPoint.",
+ "url": "https://copilot.microsoft.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "Copilot בתוך Word, Excel ו־PowerPoint",
+   "detail": "מנויי Microsoft 365 Personal, Family ו־Premium כוללים Copilot באפליקציות Word, Excel, PowerPoint ו־Outlook למחשב.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חבילה שכוללת אחסון ו־Office",
+   "detail": "Microsoft 365 Personal עולה 9.99 דולר לחודש או 99.99 דולר לשנה וכוללת 1TB אחסון לצד Copilot.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חודש ניסיון חינם",
+   "detail": "Personal, Family ו־Premium מוצעות עם \"Try free for 1 month\", בכפוף לתנאי ההצעה והאזור.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "הגרסה החינמית מוגבלת בקיבולת",
+   "detail": "לפי עמוד המחירים, Copilot החינמי הוא \"limited free version of Copilot subject to available capacity and limits\", בלי מכסה מספרית.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "ב־Family רק בעל המנוי מקבל Copilot",
+   "detail": "ב־Family וב־Premium תכונות ה־AI שמורות לבעל המנוי ואי אפשר לשתף אותן עם בני המשפחה.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "שמע שנוצר ב־AI באנגלית בלבד",
+   "detail": "בכל התוכניות, יצירת שמע ב־AI מסומנת \"English only\".",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "משתמשי Windows ו־Microsoft 365 שרוצים עוזר שיחה בתוך כלי Office.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "Copilot בסיסי בחינם. Microsoft 365 Personal עם Copilot עולה 9.99 דולר לחודש או 99.99 דולר לשנה.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "\"limited free version of Copilot subject to available capacity and limits\".",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Personal",
+    "price": 9.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לחשבון",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "משתמש אחד, עד 5 מכשירים במקביל, 1TB אחסון, Copilot ב־Word, Excel, PowerPoint ו־Outlook למחשב, צ'אט מתקדם עם יותר שימוש מ־Free, יצירת תמונות.",
+    "notes": "חלות מגבלות קרדיטים ותכונות. חודש ניסיון חינם לפי תנאי האזור.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Personal",
+    "price": 99.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לחשבון",
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "כמו בחיוב חודשי.",
+    "notes": "\"Save up to 17%\" בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Family",
+    "price": 12.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לחשבון",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "1 עד 6 אנשים, 2TB אחסון משותף. Copilot לבעל המנוי בלבד.",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Family",
+    "price": 129.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לחשבון",
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "כמו בחיוב חודשי.",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Premium",
+    "price": 19.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לחשבון",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "1 עד 6 אנשים (AI לבעל המנוי בלבד), 2TB אחסון, צ'אט מתקדם עם \"extensive usage\", תכונות בלעדיות ל־Premium ול־Pro, שימוש מוגבל בסוכנים כולל מחקר מתקדם.",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Premium",
+    "price": 199.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לחשבון",
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "כמו בחיוב חודשי.",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Pro",
+    "price": 99.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "לחשבון",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "עד 6 אנשים, 5TB אחסון, השימוש הגבוה ביותר בצ'אט, בסוכנים, בתמונות ובשמע. כולל את כל מה שב־Premium.",
+    "notes": "חיוב חודשי בלבד, בלי ניסיון חינם.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Copilot חינמי בגרסה מוגבלת, \"subject to available capacity and limits\". המכסה ומחזור ההתחדשות לא פורסמו.",
+  "trial": "חודש ניסיון חינם ל־Personal, Family ו־Premium. הזכאות, המשך והצורך בפרטי תשלום \"vary by offer and region\".",
+  "unverified_notes": "המחירים נקראו בעמוד בארצות הברית בדולרים. מחירים בישראל לא נבדקו. מכסות השימוש אינן מפורסמות במספרים. Copilot Pro כמנוי נפרד אינו מופיע בעמוד."
+ },
+ "privacy": {
+  "text": "לפי שאלות ותשובות הפרטיות של Microsoft Copilot (עודכן 11/03/2026), Microsoft משתמשת בשיחות לאימון מודלים, \"Except for certain categories of users or users who have opted out\". מוחרגים: חשבונות ארגוניים, משתמשי Copilot בתוך Microsoft 365 Personal או Family, משתמשים שלא נכנסו לחשבון, משתמשים מתחת לגיל 18 ומשתמשים בכמה מדינות, בהן ישראל. סעיף זה חל לפי העמוד על הגרסה הישנה של האפליקציה; לגרסה המעודכנת (מאז 18 באוגוסט 2026) ולגרסת האתר יש עמוד פרטיות אחר שלא נקרא.",
+  "training_on_user_data": "כן כברירת מחדל למשתמשים מחוברים באפליקציה הישנה, עם אפשרות ביטול. משתמשים בישראל מוחרגים לפי העמוד. המדיניות לאפליקציה החדשה לא נבדקה.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת. תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "לא נבדק אם יש API לעוזר הצרכני.",
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "Word",
+   "Excel",
+   "PowerPoint",
+   "Outlook"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "אפליקציה",
+   "אפליקציות Microsoft 365 למחשב"
+  ],
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "לא אומת: עמוד העזרה על אזורים ושפות נתמכים ב־Microsoft Copilot לא נטען.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Microsoft",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לפי שאלות ותשובות בעמוד המחירים, סטודנטים זכאים \"may qualify for special Microsoft education offers and discounts\", כולל מנויי Microsoft 365 מוזלים, וחלק מהמוסדות נותנים גישה בלי עלות. לא מצוין מחיר, והזכאות תלויה במוסד ובאזור.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.microsoft.com/en-us/copilot/pricing/individuals",
+   "title": "Microsoft: Copilot Pricing Plans for Individuals",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot",
+   "title": "Microsoft Support: Privacy FAQ for Microsoft Copilot",
+   "official": true,
+   "published": "2026-11-03",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "כלי מוביל ותיק. לפי עמוד הפרטיות, אפליקציה מעודכנת זמינה מאז 18 באוגוסט 2026. מופיע בכל שש הסקירות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "אפליקציית Copilot המעודכנת",
+   "latest_version_date": "August 18, 2026",
+   "latest_version_date_iso": "2026-08-18",
+   "independent_reviews": 6,
+   "evidence": "research/stage4/assistants.md"
+  },
+  "hebrew": {
+   "value": "לא אומת",
+   "label": "עברית לא אומתה",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 9.99,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Microsoft 365 Personal",
+   "verified": true,
+   "label": "מ־9.99 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": [
+    "Windows",
+    "Mac",
+    "iOS",
+    "Android"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/assistants.md"
+   },
+   "popular": {
+    "value": true,
+    "basis": "מקום 23 ברשימת אפליקציות הנייד של a16z, מהדורה 6 (מרץ 2026, לפי Sensor Tower); מופיע ברשימת האתרים של המהדורה השביעית (אוקטובר 2026, לפי Similarweb לאוגוסט 2026).",
+    "evidence": "research/stage4/assistants.md"
+   },
+   "free_renewing": {
+    "value": null,
+    "basis": "המקור מתאר גרסה חינמית מוגבלת בקיבולת, בלי מחזור התחדשות מוצהר.",
+    "evidence": "research/stage4/assistants.md"
+   }
+  }
+ }
+}

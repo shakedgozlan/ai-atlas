@@ -1,0 +1,288 @@
+{
+ "id": null,
+ "slug": "adobe-illustrator",
+ "category_id": 4,
+ "name": "Adobe Illustrator",
+ "former_name": null,
+ "rename_note": null,
+ "role": "תוכנת הגרפיקה הווקטורית של Adobe ללוגואים, איורים וזהות חזותית, עם כלי Firefly וסוכן בינה מלאכותית בבטא.",
+ "url": "https://www.adobe.com/products/illustrator.html",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "מחיר מוזל לסטודנטים",
+   "detail": "Creative Cloud Pro, שכולל את Illustrator ו־4,000 נקודות יצירה בחודש, מוצע לסטודנטים ולמורים במחיר מוזל. בבדיקה רץ מבצע Black Friday של 76% הנחה לשנה הראשונה עד Nov 27.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "סוכן בינה מלאכותית בתוך התוכנה",
+   "detail": "לפי ההודעה מ־10 בנובמבר 2026, Adobe Creative Agent זמין בבטא ב־Illustrator, לצד פקדי Blend חדשים על הקנבס וספריות תוכן מחודשות.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "פלט Firefly מותר לשימוש מסחרי",
+   "detail": "לפי השאלות הנפוצות של Firefly, פלט מתכונות שאינן בבטא מותר בפרויקטים מסחריים, ו־Adobe מצהירה שאינה מאמנת על תוכן אישי של מנויי Creative Cloud.",
+   "source_ids": [
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "מעט נקודות יצירה בתוכנית היחידה",
+   "detail": "תוכנית Illustrator בלבד כוללת 25 נקודות יצירה בחודש. 4,000 נקודות דורשות Creative Cloud Pro.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מנוי שנתי",
+   "detail": "כל התוכניות שהוצגו בעמוד הן שנתיות בתשלום חודשי; לא הוצגה אפשרות חודשית בלי התחייבות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "סטודנטים לתקשורת חזותית ומעצבים מקצועיים שבונים לוגואים, איורים וזהות חזותית בקבצים וקטוריים.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "Illustrator מ־Ch$ 15.640 לחודש (פסו צ׳יליאני, לפני מע״מ) במנוי שנתי בתשלום חודשי. אין תוכנית חינמית; יש ניסיון של 7 ימים.",
+  "model": "מנוי",
+  "plans": [
+   {
+    "name": "Illustrator",
+    "price": 15640,
+    "price_text": null,
+    "price_short": null,
+    "currency": "CLP",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "Illustrator, 25 נקודות יצירה בחודש, 100GB אחסון",
+    "notes": "מנוי שנתי בתשלום חודשי, לפני מע״מ. ניסיון של 7 ימים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Creative Cloud Pro",
+    "price": 46250,
+    "price_text": null,
+    "price_short": null,
+    "currency": "CLP",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "Illustrator ואפליקציות Creative Cloud, 4,000 נקודות יצירה בחודש, 100GB אחסון",
+    "notes": "המחיר הרגיל. במבצע Black Friday עד Nov 27: Ch$ 19.818 לחודש בשנה הראשונה. ניסיון של 7 ימים.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Creative Cloud Pro (students and teachers)",
+    "price": 10875,
+    "price_text": null,
+    "price_short": null,
+    "currency": "CLP",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "כמו Creative Cloud Pro: 4,000 נקודות יצירה בחודש, 100GB אחסון",
+    "notes": "מחיר מבצע לשנה הראשונה (76% הנחה, עד Nov 27); הזכאות נבדקת. המחיר הרגיל לסטודנטים אחרי המבצע לא הוצג.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Illustrator for teams",
+    "price": 32810,
+    "price_text": null,
+    "price_short": null,
+    "currency": "CLP",
+    "per": "לרישיון",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "25 נקודות יצירה בחודש, 1TB אחסון",
+    "notes": "לרישיון. ניסיון של 14 יום.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Creative Cloud Pro for teams",
+    "price": 91150,
+    "price_text": null,
+    "price_short": null,
+    "currency": "CLP",
+    "per": "לרישיון",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "4,000 נקודות יצירה בחודש, 1TB אחסון",
+    "notes": "לרישיון, מחיר רגיל. במבצע: Ch$ 40.972 לחודש בשנה הראשונה.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": null,
+  "trial": "ניסיון חינם של 7 ימים לתוכניות האישיות ו־14 יום לתוכניות הצוות.",
+  "unverified_notes": "עמוד התוכניות הוצג בגרסת צ׳ילה, ולכן המחירים בפסו צ׳יליאני ולפני מע״מ; מחירים בדולר אמריקאי או בשקלים לא נקראו. לא הוצגו תשלום שנתי מראש או מנוי חודשי בלי התחייבות. המחיר הרגיל לסטודנטים אחרי השנה הראשונה לא הוצג."
+ },
+ "privacy": {
+  "text": "לפי השאלות הנפוצות של Firefly: ״we don't train on any Creative Cloud subscribers' personal content״. תוכן של תורמי Adobe Stock משמש לאימון לפי הסכם התורמים.",
+  "training_on_user_data": "לא, לגבי תוכן אישי של מנויי Creative Cloud לפי Adobe.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי השאלות הנפוצות של Firefly, פלט מתכונות שאינן בבטא מותר לשימוש מסחרי, וגם פלט מתכונות בטא אלא אם צוין אחרת. רישיון מסחרי אינו מבטיח הגנה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "Adobe הודיעה על חיבור MCP מקומי שיאפשר לסוכנים חיצוניים לעבוד ב־Illustrator, בבטא פרטית שמתוכננת לתחילת 2027. נכון למועד הבדיקה זה עדיין לא זמין.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Adobe Creative Agent (בטא)"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "תוכנה למחשב (מערכות ההפעלה לא פורטו בעמודים שנקראו)"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית. העמודים שנקראו לא עוסקים בשפות ממשק או בכתיבה מימין לשמאל ב־Illustrator.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Adobe",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "עמוד התוכניות מציע Creative Cloud Pro (כולל Illustrator) לסטודנטים ולמורים במחיר מוזל; בבדיקה רץ מבצע Black Friday של 76% הנחה לשנה הראשונה, Ch$ 10.875 לחודש, עד Nov 27. הזכאות נבדקת בנפרד.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.adobe.com/products/illustrator/plans.html",
+   "title": "עמוד התוכניות של Adobe Illustrator (הוצג בגרסת צ׳ילה, מחירים בפסו צ׳יליאני)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://news.adobe.com/news/2026/11/adobe-transforms-creative-cloud-tools",
+   "title": "הודעה לעיתונות של Adobe: עדכוני Creative Cloud ב־MAX 2026 (November 10, 2026)",
+   "official": true,
+   "published": "2026-11-10",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://helpx.adobe.com/firefly/faq.html",
+   "title": "מרכז העזרה של Adobe: שאלות נפוצות על Firefly",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "עדכון ב־MAX 2026 (10 בנובמבר 2026), אבל אף סקירה עצמאית מאלה שנספרו לא מכסה את Illustrator. נכלל ככלי ותיק ומוביל לעיצוב וקטורי ולוגואים.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Adobe Creative Agent (beta) ו־Blend controls, MAX 2026",
+   "latest_version_date": "Tuesday, November 10, 2026",
+   "latest_version_date_iso": "2026-11-10",
+   "independent_reviews": 0,
+   "evidence": "research/stage4/graphic-design.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 15640,
+   "currency": "CLP",
+   "billing": "שנתי",
+   "plan": "Illustrator",
+   "verified": true,
+   "label": "מ־15,640 פסו צ׳יליאני לחודש",
+   "has_free_plan": false
+  },
+  "platforms": {
+   "verified": [],
+   "unverified": [
+    "Mac",
+    "Windows"
+   ]
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 0,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/graphic-design.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/graphic-design.md"
+   },
+   "free_renewing": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/graphic-design.md"
+   }
+  }
+ }
+}

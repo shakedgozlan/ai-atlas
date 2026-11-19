@@ -1,0 +1,243 @@
+{
+ "id": null,
+ "slug": "ideogram",
+ "category_id": 3,
+ "name": "Ideogram",
+ "former_name": null,
+ "rename_note": null,
+ "role": "מחולל תמונות לפי תיאור טקסט, שמתאים במיוחד לתמונות שכוללות טקסט כתוב.",
+ "url": "https://ideogram.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "נקודות חינמיות שבועיות",
+   "detail": "חשבונות חינמיים זכאים מקבלים נקודות יצירה איטיות בכל שבוע, בלי תשלום.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "שימוש מסחרי בכל התוכניות",
+   "detail": "לפי עמוד המחירים, Ideogram אינה טוענת לבעלות על התמונות ומותר להשתמש בהן לכל מטרה, כולל מסחרית.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מכסה גדולה ב־Pro",
+   "detail": "Pro כוללת 3,500 נקודות עדיפות בחודש ויצירה פרטית.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "הנקודות החינמיות אינן מובטחות",
+   "detail": "הנקודות השבועיות ניתנות רק לחשבונות זכאים שנרשמו עם Google, Apple או Microsoft, והכמות עשויה להשתנות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "אין הנחות ואין ניסיון חינם",
+   "detail": "לפי העמוד, Ideogram אינה מציעה הנחות או תקופת ניסיון לתוכניות המנוי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "יצירה פרטית רק בתשלום",
+   "detail": "לפי העמוד, יצירת תמונות שאינן מתפרסמות זמינה למנויי Plus ו־Pro.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים וסטודנטים שצריכים תמונות עם טקסט, לוגו או טיפוגרפיה.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "יש תוכנית חינמית עם נקודות שבועיות לחשבונות זכאים. Plus עולה 15 דולר לחודש, Pro עולה 504 דולר לשנה.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "נקודות יצירה איטיות שבועיות לחשבונות זכאים",
+    "notes": "לפי העמוד, נקודות שבועיות ניתנות לחשבונות חינמיים שנרשמו עם Google, Apple או Microsoft, והכמות עשויה להשתנות.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Plus",
+    "price": 15,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "1,000 נקודות עדיפות בחודש, יצירת תמונות לא מפורסמות (לפי ה־FAQ)",
+    "notes": "מחיר בחיוב שנתי לא הוצג, וסוג החיוב של 15 הדולר לא צוין במפורש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 504,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "3,500 נקודות עדיפות בחודש, יצירה פרטית",
+    "notes": "העמוד מציג 42 דולר לחודש לצד מחיר מחוק של 60 דולר, ו־504 דולר בחיוב שנתי. כנראה ש־60 דולר הוא המחיר בחיוב חודשי, אך הדבר לא נכתב במפורש.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "נקודות יצירה איטיות שבועיות לחשבונות חינמיים זכאים שנרשמו עם Google, Apple או Microsoft. הכמות לא צוינה ועשויה להשתנות.",
+  "trial": null,
+  "unverified_notes": "לא אומתו: מחיר Plus בחיוב שנתי, מחיר Pro בחיוב חודשי (60 דולר מוצג כמחיר מחוק), כמות הנקודות השבועיות בתוכנית החינמית, תוכנית Basic (לא מופיעה בעמוד), מחירי ה־API, ומדיניות הפרטיות והאימון. מרכז העזרה ב־docs.ideogram.ai לא נבדק."
+ },
+ "privacy": {
+  "text": "לא אומת: מדיניות הפרטיות ותנאי השימוש לא נקראו. לפי עמוד המחירים, יצירה שאינה מתפרסמת זמינה רק למנויי Plus ו־Pro.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי עמוד המחירים: \"We do not claim ownership of your generated images, and you're free to use them for any purpose, including commercial use.\" אין בכך הגנה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "עמוד המחירים מתאר תעריפי API והנחות נפח ל־API בחיוב נפרד ל־Enterprise, אך התעריפים עצמם לא הוצגו בקריאה.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: עמוד המחירים אינו מזכיר שפות ממשק, הנחיות בעברית או טקסט עברי בתמונות.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Ideogram",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי לא נקרא ממקור רשמי."
+ },
+ "student_benefits": {
+  "text": "אין הנחה לסטודנטים. לפי עמוד המחירים: \"We don't offer discounts or free trials for subscription plans\".",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://ideogram.ai/pricing/",
+   "title": "עמוד המחירים של Ideogram",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "הגרסה האחרונה של המודל ותאריכה לא אומתו ממקור רשמי. מופיע ב־6 מתוך 6 סקירות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 6,
+   "evidence": "research/stage4/images.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 15,
+   "currency": "USD",
+   "billing": null,
+   "plan": "Plus",
+   "verified": true,
+   "label": "מ־15 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/images.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/images.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "נקודות איטיות שבועיות לחשבונות חינמיים זכאים.",
+    "evidence": "research/stage4/images.md"
+   }
+  }
+ }
+}

@@ -1,0 +1,317 @@
+{
+ "id": null,
+ "slug": "adobe-firefly",
+ "category_id": 3,
+ "name": "Adobe Firefly",
+ "former_name": null,
+ "rename_note": null,
+ "role": "סטודיו ליצירה ועריכה של תמונות ווידאו במודלים של Adobe ושל שותפים, משולב בתוכנות Creative Cloud.",
+ "url": "https://www.adobe.com/products/firefly.html",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "מודלים של Adobe מוצגים כבטוחים לשימוש מסחרי",
+   "detail": "לפי Adobe, המודלים שלה אומנו על תוכן מורשה מ־Adobe Stock ועל חומר ברשות הציבור, והתוצרים שלהם מותרים לשימוש מסחרי.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מודלים של שותפים באותו מקום",
+   "detail": "לצד מודלי Firefly זמינים GPT Image, Gemini (Nano Banana) ו־FLUX, ובהכרזת MAX 2026 נוספו מודלי שיפור התמונה של Topaz Labs.",
+   "source_ids": [
+    "s1",
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "חיבור לתוכנות Adobe",
+   "detail": "אפשר להעביר תוצרים לעריכה ב־Photoshop, Illustrator, Premiere, Lightroom ו־Adobe Express. Firefly Image Model 5 מייצר תמונות ברזולוציה טבעית של 4MP.",
+   "source_ids": [
+    "s2",
+    "s3"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "התוכנית החינמית מוגבלת ולא מוגדרת",
+   "detail": "Firefly Free כוללת מספר מוגבל של יצירות יומיות וגישה מוגבלת למודלים, בלי מספר נקודות מפורש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מודלים של שותפים בלי הבטחה מסחרית",
+   "detail": "לפי Adobe, האחריות לבדוק אם תוכן שנוצר במודל של שותף מתאים לפרויקט מוטלת על המשתמש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מחירי Pro ו־Pro Plus כוללים מבצע זמני",
+   "detail": "המחיר המוצג ל־6 החודשים הראשונים מוזל ב־50% עד 60%, ואחריו המחיר הרגיל הוא 19.99 או 49.99 דולר לחודש.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים וסטודנטים שעובדים בכלי Adobe ורוצים תוצרים לשימוש מסחרי.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "יש תוכנית חינמית עם יצירות יומיות מוגבלות. בתשלום מ־9.99 דולר לחודש (Standard, 2,000 נקודות). מחירי Pro ו־Pro Plus מוזלים זמנית.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Firefly Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "מספר מוגבל של יצירות יומיות לתמונות ולווידאו, גישה מוגבלת למודלים של Adobe ושל שותפים, עורכי תמונה ווידאו ו־Firefly Boards, יצירה אחת במקביל",
+    "notes": "מספר הנקודות לא מצוין (\"Limited\").",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Firefly Standard",
+    "price": 9.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "2,000 נקודות יצירה בחודש, עד כ־400 תמונות או 20 סרטונים של 5 שניות, 2 יצירות במקביל",
+    "notes": "העמוד מציג \"/mo\" ואינו מציין אם נדרשת התחייבות שנתית.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Firefly Pro",
+    "price": 19.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "4,000 נקודות יצירה בחודש, עד כ־800 תמונות או 40 סרטונים של 5 שניות, 4 יצירות במקביל",
+    "notes": "מבצע זמני: 9.99 דולר לחודש בששת החודשים הראשונים (\"Save 50%\"), עד 6 בדצמבר. סוג החיוב לא צוין.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Firefly Pro Plus",
+    "price": 49.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": "לחודש",
+    "includes": "10,000 נקודות יצירה בחודש, עד כ־2,000 תמונות או 100 סרטונים של 5 שניות, 6 יצירות במקביל",
+    "notes": "מבצע זמני: 19.99 דולר לחודש בששת החודשים הראשונים (\"Save 60%\"), עד 6 בדצמבר. סוג החיוב לא צוין.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Firefly Premium",
+    "price": 199.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "50,000 נקודות יצירה בחודש",
+    "notes": "מופיעה בעמוד תחת תוכניות לצוותים, למשתמש, \"Annual, billed monthly\".",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Firefly Free: מספר מוגבל של יצירות יומיות לתמונות ולווידאו, גישה מוגבלת למודלים של Adobe ושל שותפים, עורכי תמונה ווידאו ו־Firefly Boards.",
+  "trial": null,
+  "unverified_notes": "לא אומתו: האם מחירי התוכניות האישיות הם בחיוב חודשי או בהתחייבות שנתית, מחירים בחיוב שנתי מראש, מספר היצירות היומיות בתוכנית החינמית, וקיומו של סימן מים או Content Credentials בתוצרים. ה־FAQ במרכז העזרה של Adobe לא נטען. המחירים הם מחירי ארה״ב כפי שהוצגו בעמוד."
+ },
+ "privacy": {
+  "text": "לפי עמוד המוצר, \"Firefly models never train on what you create or upload\", ו־Adobe אינה מאמנת את מודלי Firefly או מודלים של שותפים על תוכן אישי של מנויי Creative Cloud. מדיניות הפרטיות המלאה לא נבדקה.",
+  "training_on_user_data": "לפי Adobe, לא: המודלים של Adobe ושל השותפים אינם מאומנים על תוכן שהמשתמשים יוצרים או מעלים.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי Adobe, התוצרים של מודלי Firefly מותרים לשימוש מסחרי. בתוכן שנוצר במודלים של שותפים האחריות לבדוק את התאמתו לפרויקט מוטלת על המשתמש. אין בכך הבטחה מלאה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": "עמוד המוצר אינו מזכיר API. לא נקרא עמוד רשמי על Firefly Services.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "Photoshop",
+   "Illustrator",
+   "Premiere",
+   "Lightroom",
+   "Adobe Express"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "iOS",
+   "Android"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: לפי עמוד המוצר Firefly מקבלת הנחיות \"in multiple languages\" ותרגום ב־\"over 20 languages\", אך השפות אינן מפורטות.",
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "company": {
+  "name": "Adobe",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "אין מחיר נפרד ל־Firefly לסטודנטים: לשונית Students & Teachers מציגה את אותם מחירים. העמוד מפנה להנחה כללית על Creative Cloud: \"Students & Teachers Save 77% on Creative Cloud\".",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.adobe.com/products/firefly/plans.html",
+   "title": "Adobe: תוכניות ומחירים של Firefly",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.adobe.com/products/firefly.html",
+   "title": "Adobe: עמוד המוצר של Firefly",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://news.adobe.com/news/2025/10/adobe-max-2025-firefly",
+   "title": "Adobe: הודעה לעיתונות, Adobe MAX 2025, Firefly",
+   "official": true,
+   "published": "2025-10-28",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://news.adobe.com/news/downloads/pdfs/2026/11/umbrella-release-max-2026.pdf",
+   "title": "Adobe: הודעה לעיתונות, Adobe MAX 2026",
+   "official": true,
+   "published": "2026-11-10",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "Firefly Image Model 5 הוכרז ב־28 באוקטובר 2025 בבטא ציבורית. מופיע ב־6 מתוך 6 סקירות.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Firefly Image Model 5 (public beta)",
+   "latest_version_date": "Tuesday, October 28, 2025",
+   "latest_version_date_iso": "2025-10-28",
+   "independent_reviews": 6,
+   "evidence": "research/stage4/images.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 9.99,
+   "currency": "USD",
+   "billing": null,
+   "plan": "Firefly Standard",
+   "verified": true,
+   "label": "מ־9.99 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר",
+    "iOS",
+    "Android"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/images.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/images.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "Firefly Free כוללת יצירות יומיות מוגבלות.",
+    "evidence": "research/stage4/images.md"
+   }
+  }
+ }
+}

@@ -1,0 +1,381 @@
+{
+ "id": null,
+ "slug": "claude-code",
+ "category_id": 10,
+ "name": "Claude Code",
+ "former_name": null,
+ "rename_note": null,
+ "role": "סוכן התכנות של Anthropic: קורא את קבצי הפרויקט, עורך אותם ומריץ פקודות. עובד בשורת הפקודה, כתוסף לעורך קוד, באפליקציה שולחנית ובדפדפן.",
+ "url": "https://claude.com/product/claude-code",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": "Claude Code אינו נמכר כמנוי נפרד: לפי עמוד המחירים הוא כלול בכל התוכניות בתשלום של Claude (Pro, Max, Team, Enterprise) ואינו כלול ב־Free.",
+  "date_as_written": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "כלול במנוי Claude Pro",
+   "detail": "מי שמשלם על Pro (20 דולר לחודש, או 17 דולר לחודש בחיוב שנתי) מקבל גם את Claude Code.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מכסה אחת לצ׳אט ולקוד",
+   "detail": "Claude Code חולק את אותן מגבלות שימוש עם שאר התוכנית, בחלון מתגלגל של חמש שעות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "זמין בכמה סביבות עבודה",
+   "detail": "אותו סוכן פועל בשורת הפקודה, כתוסף ל־VS Code ול־JetBrains, באפליקציה השולחנית ובדפדפן, וגם מהטלפון דרך אפליקציית Claude.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "אין גישה בתוכנית החינמית",
+   "detail": "לפי טבלת ההשוואה Claude Code אינו כלול ב־Free.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מגבלות שבועיות",
+   "detail": "בתוכניות בתשלום יש גם מגבלות שבועיות, נוסף על החלון של חמש שעות.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "דורש היכרות בסיסית עם טרמינל",
+   "detail": "ההתקנה המומלצת היא בפקודה בטרמינל. האפליקציה השולחנית והדפדפן הם חלופה, אבל גם הם דורשים מנוי בתשלום.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מפתחים ולומדים שמוכנים לעבוד עם שורת פקודה ורוצים סוכן שמבצע משימות שלמות בפרויקט.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "כלול במנויי Claude בתשלום: Pro ב־20 דולר לחודש, או 17 דולר לחודש בחיוב שנתי. לא כלול בתוכנית החינמית.",
+  "model": "מנוי עם מכסת שימוש",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "Claude Code אינו כלול",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "Claude Code, לפחות פי 5 מהשימוש של Free בכל חלון",
+    "notes": "המכסה מתאפסת בחלון מתגלגל של חמש שעות, עם מגבלה שבועית.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 17,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "Claude Code, לפחות פי 5 מהשימוש של Free בכל חלון",
+    "notes": "מחיר לחודש בחיוב שנתי, 200 דולר מראש.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Max",
+    "price": 100,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "Claude Code, פי 5 או פי 20 מהשימוש של Pro",
+    "notes": "העמוד מציג \"From $100/month\" בלי מחיר נפרד למדרגת 20x.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team Standard",
+    "price": 25,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "Claude Code",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team Standard",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "Claude Code",
+    "notes": "מחיר לחודש בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team Premium",
+    "price": 125,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "Claude Code",
+    "notes": null,
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Team Premium",
+    "price": 100,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "Claude Code",
+    "notes": "מחיר לחודש בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Enterprise",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": "למשתמש",
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "Claude Code",
+    "notes": "למושב, בחיוב שנתי, מינימום 20 מושבים, ובנוסף שימוש לפי תעריפי API.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "התוכנית החינמית של Claude אינה כוללת את Claude Code.",
+  "trial": null,
+  "unverified_notes": "העמוד מציג $ בלי קוד מטבע, חוץ מ־Enterprise שמוצג ב־US$. המחירים אינם כוללים מס. מחיר מדרגת Max 20x לא הופיע. העמוד אינו מזכיר תוכנית Ultra, ששמה מופיע בכותרת מאמר עזרה של Anthropic שלא נקרא."
+ },
+ "privacy": {
+  "text": "לפי מרכז הפרטיות של Anthropic (16 במרץ 2026), בתוכניות הצרכניות (Free, Pro, Max) שיחות וגם סשנים של Claude Code משמשים לשיפור Claude אם המשתמש בחר לאפשר זאת, אם הם סומנו לבדיקת בטיחות, או אם הצטרף לתוכנית בדיקה. העמוד אינו מציין מה ברירת המחדל של ההגדרה. משוב בלחיצת אגודל נשמר עד 5 שנים. מוצרים מסחריים ו־API מכוסים במאמר אחר שלא נקרא.",
+  "training_on_user_data": "רק אם המשתמש בחר לאפשר שיפור מודלים (או במקרי בדיקת בטיחות). ברירת המחדל לא צוינה במקור.",
+  "source_ids": [
+   "s3"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לא אומת: תנאי השימוש לא נקראו.",
+  "watermark": null,
+  "source_ids": []
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "Agent SDK מאפשר לבנות סוכנים מותאמים על בסיס הכלים של Claude Code. אפשר להתחבר גם עם חשבון Anthropic Console ומפתח API. תוכנית Enterprise כוללת שימוש לפי תעריפי API.",
+  "source_ids": [
+   "s2",
+   "s1"
+  ]
+ },
+ "integrations": {
+  "items": [
+   "GitHub Actions",
+   "GitLab CI/CD",
+   "Slack",
+   "MCP",
+   "Chrome"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "שורת פקודה (macOS, Linux, Windows)",
+   "תוסף ל־VS Code ול־Cursor",
+   "תוסף ל־JetBrains",
+   "אפליקציה שולחנית ל־macOS ול־Windows (בטא ל־Linux)",
+   "דפדפן (claude.ai/code)",
+   "אפליקציית Claude ל־iOS ול־Android"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Anthropic",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "עמוד המחירים מציג תוכנית Education למוסדות, שמכסה את הסטודנטים, הסגל והעובדים של המוסד, בלי הצעה לסטודנט יחיד ובלי אזכור מפורש של Claude Code.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://claude.com/pricing?mode=code",
+   "title": "Anthropic: עמוד המחירים של Claude, תצוגת Claude Code",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://code.claude.com/docs/en/overview",
+   "title": "תיעוד Claude Code: סקירה כללית",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+   "title": "מרכז הפרטיות של Anthropic: האם המידע שלי משמש לאימון",
+   "official": true,
+   "published": "2026-03-16",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://code.claude.com/docs/en/changelog",
+   "title": "תיעוד Claude Code: changelog",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": null,
+   "basis": "כלי מוביל שמופיע בכל שש הסקירות. הגרסה האחרונה ביומן השינויים היא 2.1.311 מ־26 באוקטובר 2026, עדכון שוטף בסדרת 2.1. גרסה משמעותית ותאריכה לא אומתו.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "2.1.311",
+   "latest_version_date": "October 26, 2026",
+   "latest_version_date_iso": "2026-10-26",
+   "independent_reviews": 6,
+   "evidence": "research/stage4/code.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 20,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Pro",
+   "verified": true,
+   "label": "מ־20 דולר לחודש",
+   "has_free_plan": false
+  },
+  "platforms": {
+   "verified": [
+    "שורת פקודה",
+    "תוסף לעורך קוד",
+    "Mac",
+    "Windows",
+    "אתר",
+    "iOS",
+    "Android",
+    "אפליקציות לנייד"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 6,
+    "of": 6,
+    "value": true,
+    "evidence": "research/stage4/code.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/code.md"
+   },
+   "free_renewing": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/code.md"
+   }
+  }
+ }
+}

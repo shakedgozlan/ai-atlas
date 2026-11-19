@@ -1,0 +1,342 @@
+{
+ "id": null,
+ "slug": "microsoft-designer",
+ "category_id": 4,
+ "name": "Microsoft Designer",
+ "former_name": null,
+ "rename_note": null,
+ "role": "אפליקציית עיצוב חינמית של Microsoft ליצירת פוסטים, הזמנות, כרטיסים ותמונות בבינה מלאכותית.",
+ "url": "https://designer.microsoft.com",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": "תכונות Designer משולבות גם באפליקציות Microsoft כמו Photos,‏ Word ו־PowerPoint, והנקודות משותפות לכל תכונות הבינה המלאכותית של Microsoft.",
+  "date_as_written": null,
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "strengths": [
+  {
+   "lead": "חינמי עם נקודות שמתחדשות כל חודש",
+   "detail": "יש מסלול חינמי עם נקודות חודשיות ליצירה ולעריכה, שמתחדשות בתחילת כל חודש. כל פעולה עם Copilot מורידה נקודה אחת.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "זמין באתר ובנייד",
+   "detail": "אפשר לעבוד באתר designer.microsoft.com ובאפליקציות ל־iOS ול־Android.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "מנוי Microsoft 365 מגדיל את המכסה",
+   "detail": "Microsoft 365 Personal,‏ Family ו־Premium נותנים לבעל החשבון עד פי 4 נקודות ב־Designer, לצד אפליקציות Office.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "רישיון לשימוש אישי בלבד",
+   "detail": "לפי השאלות הנפוצות, Designer מורשה ״לשימוש אישי ולא מסחרי״ עם חשבון Microsoft.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "כמות הנקודות החינמיות לא מפורסמת",
+   "detail": "העמוד מציין נקודות חודשיות בלי מספר, ובחשבון משפחתי ההגדלה חלה רק על בעל המנוי.",
+   "source_ids": [
+    "s1"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "טקסט בתמונות עלול לצאת בשפה אחרת",
+   "detail": "השאלות הנפוצות מזהירות שטקסט בתמונות שנוצרות עלול לא להופיע בשפה שביקשתם.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "משתמשים פרטיים וסטודנטים שרוצים להכין גרפיקה אישית מהירה בחינם, במיוחד מי שכבר משתמש ב־Microsoft 365.",
+ "pricing": {
+  "verification": "אומת ממקור רשמי",
+  "summary_line": "חינמי עם נקודות חודשיות. יותר נקודות דרך Microsoft 365 Personal מ־9.99 דולר לחודש או 99.99 דולר לשנה.",
+  "model": "חינמי, עם הרחבה דרך מנוי Microsoft 365",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "נקודות חודשיות ליצירה ולעריכה (הכמות לא צוינה)",
+    "notes": "הנקודות מתחדשות בתחילת כל חודש ומשותפות לתכונות הבינה המלאכותית באפליקציות Microsoft.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Personal",
+    "price": 9.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "עד פי 4 נקודות ב־Designer לבעל החשבון, אפליקציות Microsoft 365",
+    "notes": "לאדם אחד.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Personal",
+    "price": 99.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "עד פי 4 נקודות ב־Designer לבעל החשבון, אפליקציות Microsoft 365",
+    "notes": "לאדם אחד.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Family",
+    "price": 12.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "עד פי 4 נקודות ב־Designer לבעל החשבון, אפליקציות Microsoft 365",
+    "notes": "עד 6 אנשים; תכונות הבינה המלאכותית לבעל המנוי בלבד.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Family",
+    "price": 129.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "עד פי 4 נקודות ב־Designer לבעל החשבון, אפליקציות Microsoft 365",
+    "notes": "עד 6 אנשים; תכונות הבינה המלאכותית לבעל המנוי בלבד.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Premium",
+    "price": 19.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "עד פי 4 נקודות ב־Designer לבעל החשבון, יצירת תמונות נרחבת ב־Copilot",
+    "notes": "מסומנת ״Best for AI & productivity״.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Microsoft 365 Premium",
+    "price": 199.99,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לשנה",
+    "includes": "עד פי 4 נקודות ב־Designer לבעל החשבון, יצירת תמונות נרחבת ב־Copilot",
+    "notes": "מסומנת ״Best for AI & productivity״.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "Designer חינמי לשימוש, עם נקודות חודשיות שמתחדשות בתחילת כל חודש. כל פעולה עם Copilot עולה נקודה אחת. כמות הנקודות לא צוינה.",
+  "trial": null,
+  "unverified_notes": "כמות הנקודות החודשית בחינם ובמנויים לא צוינה (רק ״עד פי 4״). המחירים הם של עמוד ארה״ב; מחירים מקומיים לא נבדקו. Copilot Pro לא מוזכר בעמוד המוצר."
+ },
+ "privacy": {
+  "text": "לפי השאלות הנפוצות, הנחיות ותשובות נאספות לחקירת שימוש לרעה, ו־Microsoft משתמשת בנתונים ״כדי לספק, לתמוך ולשפר״ את השירות. המקור לא אומר במפורש אם התוכן משמש לאימון מודלים.",
+  "training_on_user_data": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "commercial_rights": {
+  "text": "לפי השאלות הנפוצות, Designer מורשה לשימוש אישי ולא מסחרי עם חשבון Microsoft. המקור לא מבחין בין חשבון חינמי למנוי.",
+  "watermark": null,
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "לא אומת",
+  "text": null,
+  "source_ids": []
+ },
+ "integrations": {
+  "items": [
+   "Microsoft Photos",
+   "Word",
+   "PowerPoint"
+  ],
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "platforms": {
+  "items": [
+   "אתר",
+   "iOS",
+   "Android"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית. עמוד המוצר מציין שזמינות האפליקציה משתנה לפי מכשיר ושפה, ולא מונה שפות.",
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "company": {
+  "name": "Microsoft",
+  "parent": null,
+  "country": null,
+  "note": null
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הטבה ייעודית לסטודנטים בעמודים שנבדקו.",
+  "source_ids": []
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.microsoft.com/en-us/microsoft-365/microsoft-designer",
+   "title": "עמוד המוצר והתוכניות של Microsoft Designer",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://support.microsoft.com/en-us/designer/frequently-asked-questions-about-microsoft-designer",
+   "title": "התמיכה של Microsoft: שאלות נפוצות על Microsoft Designer (עודכן 2026-09-11 לפי נתוני העמוד)",
+   "official": true,
+   "published": "2026-09-11",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://designer.microsoft.com/",
+   "title": "אפליקציית האינטרנט של Microsoft Designer (נטענה רק מעטפת)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://resources.rework.com/tools/ai-tools/best-ai-graphic-design-tools-2026",
+   "title": "Rework: Best AI Graphic Design Tools in 2026 (Updated Jul 16, 2026)",
+   "official": false,
+   "published": "2026-07-16",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": false,
+   "basis": "לא נמצאה גרסה משמעותית מתוארכת אחרי 18 במאי 2025 במקור רשמי, ורק סקירה עצמאית אחת מתוך אלה שנספרו מכסה אותו. נכלל ככלי מוכר וחינמי של Microsoft.",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": null,
+   "latest_version_date": null,
+   "latest_version_date_iso": null,
+   "independent_reviews": 1,
+   "evidence": "research/stage4/graphic-design.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 9.99,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Microsoft 365 Personal",
+   "verified": true,
+   "label": "חינם, או מ־9.99 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר",
+    "iOS",
+    "Android"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 1,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/graphic-design.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/graphic-design.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "הנקודות החינמיות מתחדשות בתחילת כל חודש.",
+    "evidence": "research/stage4/graphic-design.md"
+   }
+  }
+ }
+}

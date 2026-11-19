@@ -1,0 +1,469 @@
+{
+ "id": null,
+ "slug": "recraft",
+ "category_id": 4,
+ "name": "Recraft",
+ "former_name": null,
+ "rename_note": null,
+ "role": "מחולל תמונות ווקטורים לעיצוב, עם עורך וקטורים, סגנונות מותאמים ו־API.",
+ "url": "https://www.recraft.ai",
+ "logo": {
+  "file": null,
+  "file_dark": null,
+  "source_url": null,
+  "missing_reason": "ייאסף בשלב הלוגואים",
+  "note": null
+ },
+ "status": {
+  "state": "פעיל",
+  "note": null,
+  "date_as_written": null,
+  "source_ids": []
+ },
+ "strengths": [
+  {
+   "lead": "פלט וקטורי בכל התוכניות",
+   "detail": "לפי התיעוד, יצירת וקטורים ועורך הווקטורים כלולים בכל תוכנית, כולל החינמית, וגם מודל V4 זמין לכל התוכניות. וקטור ב־Recraft V4.1 עולה 4 נקודות, וב־V4.1 Pro עולה 12.",
+   "source_ids": [
+    "s3",
+    "s7"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "תוכנית Basic זולה יחסית",
+   "detail": "Basic עולה 12 דולר לחודש, או 10 דולר לחודש בחיוב שנתי, עם 1,000 נקודות בחודש. תמונה ב־V4.1 עולה 2 נקודות.",
+   "source_ids": [
+    "s1",
+    "s3"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "API נפרד לשימוש תכנותי",
+   "detail": "התיעוד מציין שיש גישה תכנותית ב־API עם תמחור יחידות נפרד מנקודות הסטודיו, וקלט ופלט ב־API לעולם אינם משמשים לאימון.",
+   "source_ids": [
+    "s3",
+    "s4"
+   ],
+   "inference": false
+  }
+ ],
+ "limitations": [
+  {
+   "lead": "בתוכנית החינמית התמונות שייכות ל־Recraft",
+   "detail": "תמונות מהתוכנית החינמית ציבוריות בגלריה הקהילתית, שייכות ל־Recraft ואינן מורשות לשימוש מסחרי.",
+   "source_ids": [
+    "s2"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "התוכן משמש לאימון כברירת מחדל",
+   "detail": "ב־Free וב־Pro תמונות, העלאות והנחיות משמשות לאימון. ב־Free אין אפשרות ביטול, וב־Pro אפשר לבטל בהגדרות הפרופיל.",
+   "source_ids": [
+    "s4"
+   ],
+   "inference": false
+  },
+  {
+   "lead": "הזכויות המסחריות תלויות במנוי",
+   "detail": "בתוכניות בתשלום זכויות השימוש המסחרי חלות על תמונות שנוצרו בזמן המנוי.",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "inference": false
+  }
+ ],
+ "audience": "מעצבים וסטודנטים שצריכים איורים, אייקונים ולוגואים בפורמט וקטורי, וכן מפתחים שמשלבים יצירת תמונות ב־API.",
+ "pricing": {
+  "verification": "אומת חלקית",
+  "summary_line": "מ־12 דולר לחודש בחיוב חודשי, או 10 דולר לחודש בחיוב שנתי. יש תוכנית חינמית עם נקודות יומיות, בלי שימוש מסחרי.",
+  "model": "מנוי עם נקודות זיכוי",
+  "plans": [
+   {
+    "name": "Free",
+    "price": 0,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": "נקודות זיכוי שמתאפסות מדי יום (הכמות לא צוינה), כולל יצירת וקטורים ועורך הווקטורים",
+    "notes": "התמונות שייכות ל־Recraft, מוצגות בגלריה הציבורית ואינן מורשות לשימוש מסחרי.",
+    "source_ids": [
+     "s2",
+     "s3"
+    ]
+   },
+   {
+    "name": "Basic",
+    "price": 12,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "1,000 נקודות זיכוי בחודש, יצירה פרטית וזכויות שימוש מסחרי בזמן המנוי",
+    "notes": "תוכנית אישית. המטבע מסומן ב־$ בלי ציון שמו.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Basic",
+    "price": 10,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "1,000 נקודות זיכוי בחודש, יצירה פרטית וזכויות שימוש מסחרי בזמן המנוי",
+    "notes": "120 דולר לשנה.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 20,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "2,000 נקודות זיכוי בחודש, יצירה פרטית וזכויות שימוש מסחרי בזמן המנוי",
+    "notes": "אחת מכמה מדרגות Pro לפי כמות הנקודות. המטבע מסומן ב־$ בלי ציון שמו.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 16,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "2,000 נקודות זיכוי בחודש, יצירה פרטית וזכויות שימוש מסחרי בזמן המנוי",
+    "notes": "מחיר לחודש בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 40,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "4,000 נקודות זיכוי בחודש, יצירה פרטית וזכויות שימוש מסחרי בזמן המנוי",
+    "notes": "אחת מכמה מדרגות Pro לפי כמות הנקודות. המטבע מסומן ב־$ בלי ציון שמו.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 32,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "4,000 נקודות זיכוי בחודש, יצירה פרטית וזכויות שימוש מסחרי בזמן המנוי",
+    "notes": "מחיר לחודש בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 80,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "8,000 נקודות זיכוי בחודש, יצירה פרטית וזכויות שימוש מסחרי בזמן המנוי",
+    "notes": "אחת מכמה מדרגות Pro לפי כמות הנקודות. המטבע מסומן ב־$ בלי ציון שמו.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 64,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "8,000 נקודות זיכוי בחודש, יצירה פרטית וזכויות שימוש מסחרי בזמן המנוי",
+    "notes": "מחיר לחודש בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 160,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "16,000 נקודות זיכוי בחודש, יצירה פרטית וזכויות שימוש מסחרי בזמן המנוי",
+    "notes": "אחת מכמה מדרגות Pro לפי כמות הנקודות. המטבע מסומן ב־$ בלי ציון שמו.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Pro",
+    "price": 128,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "16,000 נקודות זיכוי בחודש, יצירה פרטית וזכויות שימוש מסחרי בזמן המנוי",
+    "notes": "מחיר לחודש בחיוב שנתי.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Teams",
+    "price": 22,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "חודשי",
+    "price_period": "לחודש",
+    "includes": "2,000 נקודות זיכוי בחודש, סגנונות משותפים, ניהול חשבונות מרוכז, SSO",
+    "notes": "מדרגת הכניסה של Teams. קיימות מדרגות של 4,000, 8,000 ו־16,000 נקודות.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Teams",
+    "price": 18,
+    "price_text": null,
+    "price_short": null,
+    "currency": "USD",
+    "per": null,
+    "billing": "שנתי",
+    "price_period": "לחודש",
+    "includes": "2,000 נקודות זיכוי בחודש, סגנונות משותפים, ניהול חשבונות מרוכז, SSO",
+    "notes": "מחיר לחודש בחיוב שנתי. בעמוד התיעוד מדרגת 8,000 הנקודות מופיעה ב־70 דולר בחיוב חודשי וב־88 דולר בחיוב שנתי, כנראה טעות בעמוד.",
+    "source_ids": [
+     "s1"
+    ]
+   },
+   {
+    "name": "Premium",
+    "price": null,
+    "price_text": "המחיר לא אומת",
+    "price_short": "לא אומת",
+    "currency": null,
+    "per": null,
+    "billing": null,
+    "price_period": null,
+    "includes": null,
+    "notes": "התוכניות מוזכרות כמיועדות למי שרוצה יצירה פרטית ובעלות מלאה, אבל בלי מחיר ובלי מכסה בעמוד שנקרא.",
+    "source_ids": [
+     "s1"
+    ]
+   }
+  ],
+  "free_tier": "תוכנית Free עם נקודות זיכוי שמתאפסות מדי יום (הכמות לא צוינה במקור שנקרא). כוללת יצירת וקטורים ועורך וקטורים. התמונות ציבוריות, שייכות ל־Recraft ואינן לשימוש מסחרי.",
+  "trial": null,
+  "unverified_notes": "המחירים נלקחו מעמוד התיעוד הרשמי, שמפנה לטבלת המחירים כמקור הקובע. בטבלת המחירים עצמה המספרים לא הופיעו בטקסט שנקרא. לא אומתו: כמות הנקודות היומית בתוכנית החינמית, מחיר תוכניות Premium, ושם המטבע (מסומן ב־$). בתיעוד יש סתירה פנימית במדרגת Teams של 8,000 נקודות (70 דולר חודשי מול 88 דולר שנתי). חבילות נקודות נוספות של 200, 400, 800 או 1,600 נקודות אינן פגות; מחירן לא צוין."
+ },
+ "privacy": {
+  "text": "לפי התיעוד, Recraft משתמשת לאימון בתוכן של משתמשים, כולל תמונות שנוצרו או הועלו וטקסט בהנחיות. ב־Free אין אפשרות ביטול. ב־Pro האימון פעיל כברירת מחדל ואפשר לכבות אותו בהגדרות הפרופיל (״Help improve Recraft״). ב־Team הביטול מופעל כברירת מחדל. קלט ופלט ב־API לעולם אינם משמשים לאימון.",
+  "training_on_user_data": "כן כברירת מחדל ב־Free וב־Pro; ב־Pro אפשר לבטל; ב־Team לא כברירת מחדל; ב־API לא.",
+  "source_ids": [
+   "s4"
+  ]
+ },
+ "commercial_rights": {
+  "text": "בתוכניות בתשלום המשתמש מקבל בעלות מלאה וזכויות מסחריות על תמונות שנוצרו בזמן המנוי, והן נשארות פרטיות גם אחרי ביטול. בתוכנית החינמית התמונות שייכות ל־Recraft, ציבוריות ואינן מורשות לשימוש מסחרי. רישיון מסחרי אינו מבטיח הגנה מפני תביעות זכויות יוצרים.",
+  "watermark": null,
+  "source_ids": [
+   "s1",
+   "s2"
+  ]
+ },
+ "developer_access": {
+  "api": "יש",
+  "text": "קיים API לגישה תכנותית, עם תמחור ביחידות API נפרד מנקודות הסטודיו. מחירון ה־API לא נקרא.",
+  "source_ids": [
+   "s3",
+   "s4"
+  ]
+ },
+ "integrations": {
+  "items": [],
+  "source_ids": []
+ },
+ "platforms": {
+  "items": [
+   "אתר"
+  ],
+  "source_ids": [
+   "s2"
+  ]
+ },
+ "hebrew": {
+  "text": "המקור לא מזכיר עברית: בעמודי התיעוד שנבדקו אין אזכור של שפות ממשק או של כתב מימין לשמאל.",
+  "source_ids": []
+ },
+ "company": {
+  "name": "Recraft",
+  "parent": null,
+  "country": null,
+  "note": "השם המשפטי המלא לא נבדק."
+ },
+ "student_benefits": {
+  "text": "לא נמצאה הנחה רשמית לסטודנטים בעמודים שנבדקו.",
+  "source_ids": [
+   "s1"
+  ]
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.recraft.ai/docs/plans-and-billing/paid-plans",
+   "title": "מרכז התיעוד של Recraft: תוכניות בתשלום",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s2",
+   "url": "https://www.recraft.ai/pricing",
+   "title": "עמוד המחירים של Recraft (המחירים לא הופיעו בטקסט שנקרא; נקרא סעיף הבעלות)",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s3",
+   "url": "https://www.recraft.ai/docs/plans-and-billing/credits",
+   "title": "מרכז התיעוד של Recraft: נקודות זיכוי ועלות לפי מודל",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s4",
+   "url": "https://www.recraft.ai/docs/trust-and-security/data-use-and-model-training",
+   "title": "מרכז התיעוד של Recraft: שימוש בנתונים ואימון מודלים",
+   "official": true,
+   "published": null,
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s5",
+   "url": "https://designlab.com/blog/top-best-ai-logo-generators-a-review",
+   "title": "Designlab: Best AI Logo Generators (May 22, 2026)",
+   "official": false,
+   "published": "2026-05-22",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s7",
+   "url": "https://www.recraft.ai/blog/introducing-recraft-v4-design-taste-meets-image-generation",
+   "title": "הבלוג של Recraft: Introducing Recraft V4 (February 17, 2026)",
+   "official": true,
+   "published": "2026-02-17",
+   "checked": "2026-11-18",
+   "stale": false
+  },
+  {
+   "id": "s6",
+   "url": "https://resources.rework.com/tools/ai-tools/best-ai-graphic-design-tools-2026",
+   "title": "Rework: Best AI Graphic Design Tools in 2026 (Updated Jul 16, 2026)",
+   "official": false,
+   "published": "2026-07-16",
+   "checked": "2026-11-18",
+   "stale": false
+  }
+ ],
+ "checked_date": "2026-11-18",
+ "filters": {
+  "new_notable": {
+   "value": true,
+   "basis": "Recraft V4 יצא ב־17 בפברואר 2026 לפי הבלוג הרשמי, וכיום התיעוד מציג את V4.1. מופיע ב־2 סקירות עצמאיות (Designlab,‏ Rework).",
+   "launch_date": null,
+   "launched_in_window": null,
+   "latest_version": "Recraft V4 (בתיעוד הנוכחי V4.1)",
+   "latest_version_date": "February 17, 2026",
+   "latest_version_date_iso": "2026-02-17",
+   "independent_reviews": 2,
+   "evidence": "research/stage4/graphic-design.md"
+  },
+  "hebrew": {
+   "value": "המקור לא מזכיר עברית",
+   "label": "עברית לא מוזכרת",
+   "supported": null
+  },
+  "starting_price": {
+   "amount": 12,
+   "currency": "USD",
+   "billing": "חודשי",
+   "plan": "Basic",
+   "verified": true,
+   "label": "מ־12 דולר לחודש",
+   "has_free_plan": true
+  },
+  "platforms": {
+   "verified": [
+    "אתר"
+   ],
+   "unverified": []
+  },
+  "tags": {
+   "review_roundups": {
+    "count": 2,
+    "of": 5,
+    "value": false,
+    "evidence": "research/stage4/graphic-design.md"
+   },
+   "popular": {
+    "value": false,
+    "basis": null,
+    "evidence": "research/stage4/graphic-design.md"
+   },
+   "free_renewing": {
+    "value": true,
+    "basis": "נקודות התוכנית החינמית מתאפסות מדי יום.",
+    "evidence": "research/stage4/graphic-design.md"
+   }
+  }
+ }
+}
