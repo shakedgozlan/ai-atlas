@@ -252,9 +252,9 @@
   dlg.innerHTML =
     '<form class="fb-form" id="fb-form" novalidate>' +
       '<div class="fb-top"><h2 id="fb-h" tabindex="-1">משוב על האתר</h2><button type="button" class="btn btn-icon fb-x" id="fb-close"><svg class="ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg><span class="sr-only">סגירה</span></button></div>' +
-      '<p class="fb-lede">מצאתם באג, חסרה תכונה או יש רעיון לשיפור? כותבים כאן. ההודעה אנונימית.</p>' +
+      '<p class="fb-lede">מצאתם באג, חסרה תכונה או יש רעיון לשיפור? כותבים כאן. אפשר לשלוח אנונימית. ואם אתם רוצים לשמוע כשזה טופל, אפשר להשאיר מייל.</p>' +
       '<div class="fb-kinds" role="group" aria-label="סוג ההודעה">' +
-        [['bug', 'באג'], ['feature', 'תכונה שחסרה'], ['idea', 'רעיון לשיפור'], ['other', 'משהו אחר']].map(function (k, i) { return '<button type="button" class="btn short" data-kind="' + k[0] + '" aria-pressed="' + (i === 0) + '">' + k[1] + '</button>'; }).join('') +
+        [['bug', 'באג'], ['feature', 'תכונה שחסרה'], ['idea', 'רעיון לשיפור'], ['report', 'דיווח על כלי'], ['other', 'משהו אחר']].map(function (k, i) { return '<button type="button" class="btn short" data-kind="' + k[0] + '" aria-pressed="' + (i === 0) + '">' + k[1] + '</button>'; }).join('') +
       '</div>' +
       '<label class="fb-l" for="fb-text">מה רציתם לספר?</label>' +
       '<textarea id="fb-text" name="text" rows="5" maxlength="2000" dir="auto" required></textarea>' +
@@ -263,9 +263,10 @@
         '<div class="fb-acts"><button type="button" class="btn" id="fb-pick">סימון חלק בעמוד</button><button type="button" class="btn btn-quiet" id="fb-unpin" hidden>הסרת הסימון</button></div></div>' +
       '<div class="fb-box"><p class="fb-l">תמונה (לא חובה)</p><img class="fb-img" id="fb-img" alt="התמונה שתצורף להודעה" hidden>' +
         '<div class="fb-acts"><label class="btn fb-file"><input type="file" id="fb-file" accept="image/*" class="sr-only"><span id="fb-file-t">צירוף תמונה</span></label><button type="button" class="btn btn-quiet" id="fb-noimg" hidden>הסרת התמונה</button></div></div>' +
+      '<div class="fb-box"><label class="fb-l" for="fb-contact">מייל לעדכון (לא חובה)</label><input type="email" id="fb-contact" name="contact" maxlength="120" dir="ltr" autocomplete="email" inputmode="email"><p class="fb-note">נשתמש בו רק כדי לכתוב לכם כשההודעה טופלה, והוא נמחק מיד אחר כך.</p></div>' +
       '<p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>' +
       '<div class="fb-send"><button type="submit" class="btn btn-primary" id="fb-submit">שליחה</button><button type="button" class="btn" id="fb-cancel">ביטול</button></div>' +
-      '<p class="fb-note">לא נשמרים שם, מייל או כתובת רשת. סוג הדפדפן וגודל המסך מצורפים להודעה, כדי שאפשר יהיה לשחזר תקלות.</p>' +
+      '<p class="fb-note">שם וכתובת רשת לא נשמרים. מייל נשמר רק אם השארתם אותו. סוג הדפדפן וגודל המסך מצורפים להודעה, כדי שאפשר יהיה לשחזר תקלות.</p>' +
     '</form>' +
     '<div class="fb-done" id="fb-done" hidden><h2 tabindex="-1" id="fb-done-h">תודה, ההודעה התקבלה</h2><p>כל הודעה נקראת. אין צורך לשלוח שוב.</p><button type="button" class="btn btn-primary" id="fb-done-close">סגירה</button></div>';
   doc.body.appendChild(dlg);
@@ -441,18 +442,22 @@
     e.preventDefault();
     var body = text.value.trim();
     if (body.length < 3) { say('צריך לכתוב כמה מילים לפני השליחה.', true); text.focus(); return; }
+    var contact = form.elements.contact.value.trim();
+    if (contact && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)) { say('כתובת המייל לא נראית תקינה. אפשר לתקן אותה או להשאיר את השדה ריק.', true); form.elements.contact.focus(); return; }
     var submit = $('#fb-submit');
     submit.disabled = true; say('שולח…');
     post('/feedback', {
-      kind: state.kind, text: body, tool: state.tool, target: state.target, image: state.image,
+      kind: state.kind, text: body, tool: state.tool, target: state.target, image: state.image, contact: contact,
       website: form.elements.website.value,
       context: { w: window.innerWidth, h: window.innerHeight, theme: root.dataset.theme || 'auto', view: root.dataset.view || 'cards', ua: String(navigator.userAgent).slice(0, 200) },
     }).then(function (d) {
       if (d.ok) {
-        form.hidden = true; done.hidden = false; text.value = ''; state.image = ''; say('');
+        form.hidden = true; done.hidden = false; text.value = ''; form.elements.contact.value = ''; state.image = ''; say('');
         $('#fb-done-h').focus();
       } else if (d.httpStatus === 429) {
         say('נשלחו כמה הודעות בזמן קצר. אפשר לשלוח שוב בעוד שעה.', true);
+      } else if (d.error === 'bad_contact') {
+        say('כתובת המייל לא התקבלה. אפשר לתקן אותה או להשאיר את השדה ריק.', true);
       } else if (d.error === 'bad_image') {
         say('התמונה לא התקבלה. אפשר להסיר אותה ולשלוח שוב.', true);
       } else {
