@@ -1,0 +1,1987 @@
+{
+  "google-flow": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר אצל Zapier, אבל המודל Veo 3.1 ירד בדירוגים.",
+      "evidence": {
+        "file": "research/community/video-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "update_regression",
+      "type": "העדכון האחרון הרע את הכלי",
+      "text": "אחרי עדכון באוגוסט 2026 דיווחו משתמשים באנדרואיד על שגיאות יצירה ועל הורדה ב־720p במקום 1080p.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "unstar Flow",
+            "url": "https://unstar.app/de/events/google-flow-android-complaints-august-2026",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "נספר",
+        "note": "אתר ניטור תיעד 15 ביקורות שליליות ב־Google Play בתוך 48 שעות, ב־22 באוגוסט 2026. זה מקור אחד.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "runway": {
+    "recommended": {
+      "value": false,
+      "basis": "שבחים לכלי העריכה, ביקורת על איכות הווידאו.",
+      "evidence": {
+        "file": "research/community/video-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "credits_on_failure",
+      "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+      "text": "משתמשים מדווחים שנקודות יורדות גם על יצירות שנכשלו, ושקשה לקבל החזר.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot",
+            "url": "https://www.trustpilot.com/review/runwayml.com",
+            "report": "research/community/video-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 1.1 מתוך 5 על סמך 378 ביקורות. התאריכים של הביקורות הבודדות לא נרשמו בדוח.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "kling": {
+    "recommended": {
+      "value": true,
+      "basis": "מקום שלישי במבחן מעשי עדכני של Curious Refuge, ושבחים חוזרים במקורות נוספים.",
+      "evidence": {
+        "file": "research/community/video-report.md",
+        "sources": [
+          {
+            "name": "Curious Refuge",
+            "url": "https://curiousrefuge.com/blog/ai-video-generator-2027",
+            "report": "research/community/video-report.md"
+          },
+          {
+            "name": "AA",
+            "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+            "report": "research/community/video-report.md"
+          },
+          {
+            "name": "Tech Hacker",
+            "url": "https://techhacker.substack.com/p/which-ai-video-generator-is-actually",
+            "report": "research/community/video-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "credits_on_failure",
+      "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+      "text": "משתמשים מדווחים שנקודות יורדות גם על תוצאות כושלות או לא שמישות, ושאין החזר.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot",
+            "url": "https://ca.trustpilot.com/review/klingai.com",
+            "report": "research/community/video-report.md"
+          },
+          {
+            "name": "App Store Kling",
+            "url": "https://apps.apple.com/us/app/kling-ai-ai-image-video-maker/id6738049229?see-all=reviews",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 1.2 מתוך 5 על סמך 431 ביקורות. רוב הביקורות הכתובות ב־App Store הן מ־2025.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "hailuo": {
+    "recommended": {
+      "value": false,
+      "basis": "בצמרת טבלאות הדירוג, אבל הביקורת המעשית בינונית.",
+      "evidence": {
+        "file": "research/community/video-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "luma": {
+    "recommended": {
+      "value": false,
+      "basis": "שבחים למראה הקולנועי, אבל מתחרים עקפו אותו.",
+      "evidence": {
+        "file": "research/community/video-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "pika": {
+    "recommended": {
+      "value": false,
+      "basis": "דירוג בינוני־גבוה בלי ביקורת מעשית של המודל החדש.",
+      "evidence": {
+        "file": "research/community/video-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "higgsfield": {
+    "recommended": {
+      "value": false,
+      "basis": "הביקורות שנמצאו לא בדקו את יצירת הווידאו.",
+      "evidence": {
+        "file": "research/community/video-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "vidu": {
+    "recommended": {
+      "value": false,
+      "basis": "דירוג נמוך ומעט ביקורות.",
+      "evidence": {
+        "file": "research/community/video-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "dreamina": {
+    "recommended": {
+      "value": true,
+      "basis": "מודל Seedance במקום ראשון במבחנים המעשיים של Curious Refuge ובטבלת תמונה־לווידאו של Artificial Analysis.",
+      "evidence": {
+        "file": "research/community/video-report.md",
+        "sources": [
+          {
+            "name": "Curious Refuge",
+            "url": "https://curiousrefuge.com/blog/ai-video-generator-2027",
+            "report": "research/community/video-report.md"
+          },
+          {
+            "name": "AA תמונה־לווידאו",
+            "url": "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+            "report": "research/community/video-report.md"
+          },
+          {
+            "name": "Theoretically Media",
+            "url": "https://theoreticallymedia.beehiiv.com/p/seedance-2-5-inches-closer",
+            "report": "research/community/video-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": null
+  },
+  "wan": {
+    "recommended": {
+      "value": true,
+      "basis": "מקום ראשון בטבלת טקסט־לווידאו של Artificial Analysis, ושבחים במבחן מעשי של Curious Refuge. ההמלצה נשענת על בודק מעשי אחד.",
+      "evidence": {
+        "file": "research/community/video-report.md",
+        "sources": [
+          {
+            "name": "AA",
+            "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+            "report": "research/community/video-report.md"
+          },
+          {
+            "name": "Curious Refuge, ביקורת",
+            "url": "https://curiousrefuge.com/blog/wan3-review",
+            "report": "research/community/video-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": null
+  },
+  "chatgpt": {
+    "recommended": {
+      "value": true,
+      "basis": "נבחר לשימוש כללי אצל Zapier ואצל UCStrategies, ומופיע בכל הסקירות שנקראו.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/chatbots/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "UCStrategies",
+            "url": "https://ucstrategies.com/news/best-ai-chatbots-2026-i-tested-chatgpt-claude-gemini-perplexity-and-grok/",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "bot_support",
+      "type": "תמיכה של בוט בלבד",
+      "text": "משתמשים מדווחים שפניות לתמיכה ובקשות החזר נענות בתשובה אוטומטית בלבד.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot ChatGPT",
+            "url": "https://www.trustpilot.com/review/chatgpt.com?page=1",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 4,016 ביקורות, 75% מהן כוכב אחד. בהערות המחקר יש דוגמה מתוארכת אחת (17 בנובמבר 2026).",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "claude": {
+    "recommended": {
+      "value": true,
+      "basis": "מקום ראשון אצל eWeek, ונבחר לכתיבה ולקוד בשלוש סקירות.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "eWeek",
+            "url": "https://www.eweek.com/news/top-10-ai-chatbots-ranked/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/chatbots/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "UCStrategies",
+            "url": "https://ucstrategies.com/news/best-ai-chatbots-2026-i-tested-chatgpt-claude-gemini-perplexity-and-grok/",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "account_block",
+      "type": "חסימת חשבון בלי הסבר",
+      "text": "משתמשים מדווחים על חשבונות שנחסמו בלי הסבר, ועל תמיכה שהיא בוט בלבד.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Claude",
+            "url": "https://www.trustpilot.com/review/claude.ai?page=1",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 2,164 ביקורות, 81% מהן כוכב אחד. התלונות נקראו בביקורות מנובמבר 2026.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "gemini": {
+    "recommended": {
+      "value": false,
+      "basis": "מקום שני אצל eWeek, אבל Zapier מתלונן על חוסר עקביות. מודל התמונות שלו, Nano Banana, נבחר בכל שש סקירות התמונות, אך זה לא מספיק לכלי כולו.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "eWeek",
+            "url": "https://www.eweek.com/news/top-10-ai-chatbots-ranked/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/chatbots/",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": null
+  },
+  "microsoft-copilot": {
+    "recommended": {
+      "value": false,
+      "basis": "מופיע בכל הסקירות, אבל תמיד רק כהמלצה למשתמשי Microsoft.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "perplexity": {
+    "recommended": {
+      "value": true,
+      "basis": "מומלץ למחקר ולחיפוש: נבחר בארבע מתוך שש הסקירות שנקראו.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/chatbots/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "eWeek",
+            "url": "https://www.eweek.com/news/top-10-ai-chatbots-ranked/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Tom's Guide מחקר",
+            "url": "https://www.tomsguide.com/ai/i-tested-notebooklm-vs-perplexity-for-deep-research-with-5-difficult-prompts-heres-the-clear-winner",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "billing_surprise",
+      "type": "חיוב אחרי ביטול או חידוש שנתי מפתיע",
+      "text": "משתמשים מדווחים על חיוב שנמשך אחרי ביטול ועל תהליך ביטול מסורבל.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Perplexity",
+            "url": "https://www.trustpilot.com/review/perplexity.ai?page=1",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 849 ביקורות, 83% מהן כוכב אחד. בהערות המחקר שתי דוגמאות מתוארכות מאוקטובר 2026.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "deepseek": {
+    "recommended": {
+      "value": false,
+      "basis": "שתי תוויות חיוביות, כל אחת במקור אחד בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "grok": {
+    "recommended": {
+      "value": false,
+      "basis": "סקירה אחת קובעת שהוא לא מומלץ, ויש תלונות על דיוק.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "meta-ai": {
+    "recommended": {
+      "value": false,
+      "basis": "מוזכר רק כבחירה לרשתות חברתיות.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "mistral-vibe": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "gamma": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר בשתי סקירות מצגות, אחת מהן ישנה, ומשתמשים מדווחים שה־AI מודיע על שינוי שלא ביצע.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "ai_false_report",
+      "type": "ה־AI אומר שעשה משהו שלא עשה",
+      "text": "משתמשים מדווחים שה־AI מודיע שביצע שינוי בשקופית בלי ששינה דבר, ושחלון ההחזר הוא 3 ימים בלבד.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Gamma",
+            "url": "https://www.trustpilot.com/review/gamma.app?page=1",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 1.6 מתוך 5 על סמך 131 ביקורות. בהערות המחקר דוגמה מתוארכת אחת לכל תלונה.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "grammarly": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר כמנצח כללי רק במקור ישן.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "quillbot": {
+    "recommended": {
+      "value": false,
+      "basis": "אף סוקר לא המליץ עליו. הציון הגבוה אצל משתמשים מגיע כנראה מביקורות שהחברה מזמינה.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "beautiful-ai": {
+    "recommended": {
+      "value": false,
+      "basis": "שתי סקירות, שתיהן עם תוויות נישה.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "deepl": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "jasper": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר בשלוש סקירות, אבל לשיווק בלבד ורק אחת מהן עדכנית.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "napkin-ai": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "wordtune": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "midjourney": {
+    "recommended": {
+      "value": true,
+      "basis": "מומלץ לסגנון אמנותי אצל Zapier, Buffer ו־eWeek. לא נמצא ב־30 המקומות הראשונים בטבלת הדירוג של Artificial Analysis.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/best-ai-image-generator/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Buffer",
+            "url": "https://buffer.com/resources//ai-image-generator/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "eWeek",
+            "url": "https://eweek.com/news/ai-image-generators-power-ranking-2026/",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "billing_surprise",
+      "type": "חיוב אחרי ביטול או חידוש שנתי מפתיע",
+      "text": "משתמשים מדווחים על חיוב שנמשך אחרי ביטול המנוי.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Midjourney",
+            "url": "https://nz.trustpilot.com/review/www.midjourney.com",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 1.7 מתוך 5 על סמך 373 ביקורות. בהערות המחקר דוגמה מתוארכת אחת (6 באוגוסט 2026).",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "magnific": {
+    "recommended": {
+      "value": false,
+      "basis": "שלוש בחירות, שתיים מהן במקורות חלשים.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "photoroom": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "adobe-firefly": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר בכל שש הסקירות לעבודה בתוך Adobe, אבל משתמשים מדווחים על ירידה באיכות מאז העדכונים, ולכן אין המלצה מלאה.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/best-ai-image-generator/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Adobe Community",
+            "url": "https://community.adobe.com/questions-404/adobe-firefly-has-become-nearly-unusable-since-the-updates-1651563",
+            "report": "research/community/user-experience-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "credits_on_failure",
+      "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+      "text": "משתמשים מדווחים שנקודות בתשלום יורדות גם כשהיצירה נכשלת, ושהאיכות ירדה מאז העדכונים האחרונים.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Adobe Community",
+            "url": "https://community.adobe.com/questions-404/adobe-firefly-has-become-nearly-unusable-since-the-updates-1651563",
+            "report": "research/community/user-experience-report.md"
+          },
+          {
+            "name": "שרשור 2",
+            "url": "https://community.adobe.com/bug-reports-403/adobe-taking-credits-when-generation-fails-1550475",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "פוסט אחד נקרא במלואו (15 באוקטובר 2026). שאר השרשורים בפורום של Adobe נספרו לפי הכותרת בלבד.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "flux": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר כקוד הפתוח הטוב ביותר במקור אחד בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "ideogram": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר לטקסט בתמונה בשני מקורות, אבל Zapier כותב שפיגר.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "leonardo-ai": {
+    "recommended": {
+      "value": false,
+      "basis": "שלוש בחירות, אחת מהן ישנה, והציון הגבוה אצל משתמשים מגיע מביקורות מוזמנות.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "stability-ai": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "krea": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "credits_run_out",
+      "type": "הנקודות נגמרות בתוך ימים או באמצע משימה",
+      "text": "משתמשים מדווחים שהנקודות נגמרות מהר, בעיקר כשמשתמשים בסוכן.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Krea",
+            "url": "https://www.trustpilot.com/review/www.krea.ai",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 3.6 מתוך 5 על סמך 177 ביקורות. בדוח הכלי רשום תחת \"נקודות יורדות גם כשהתוצאה נכשלה\"; הסוג כאן נבחר לפי נוסח התלונות עצמן.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "topaz-labs": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "canva": {
+    "recommended": {
+      "value": true,
+      "basis": "מנצח בהשוואה של Style Factory, ציון 4.7 ב־Capterra על סמך 13,450 ביקורות, ונבחר גם אצל TechRadar (מקור ישן).",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "Style Factory",
+            "url": "https://stylefactoryproductions.com/blog/adobe-express-vs-canva",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Capterra",
+            "url": "https://www.capterra.com/compare/168956-174232/Canva-vs-adobe-express",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "TechRadar",
+            "url": "https://www.techradar.com/best/best-logo-designer",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": null
+  },
+  "looka": {
+    "recommended": {
+      "value": false,
+      "basis": "ביקורת פושרת בשני מקורות.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "adobe-express": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר לעסקים במקור ישן, ומפסיד ל־Canva בהשוואה של Style Factory.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "recraft": {
+    "recommended": {
+      "value": true,
+      "basis": "מומלץ לעיצוב ולקובצי וקטור אצל Designlab, Zapier, Buffer ו־G2.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "Designlab",
+            "url": "https://designlab.com/blog/top-best-ai-logo-generators-a-review",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/best-ai-image-generator/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Buffer",
+            "url": "https://buffer.com/resources//ai-image-generator/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "G2",
+            "url": "https://www.g2.com/articles/best-ai-image-generator-software",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "no_refund",
+      "type": "אין החזר, או חלון החזר קצר",
+      "text": "משתמשים מדווחים על סירוב להחזר אחרי שימוש ביותר מ־30 נקודות, ועל נקודות שיורדות על יצירות כושלות.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Recraft",
+            "url": "https://br.trustpilot.com/review/www.recraft.ai",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 2.4 מתוך 5 על סמך 47 ביקורות, 40 מהן מהשנה האחרונה. בהערות המחקר שתי דוגמאות מתוארכות לכל תלונה.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "kittl": {
+    "recommended": {
+      "value": false,
+      "basis": "מקרה גבולי: ציון 4.3 במבחן של Style Factory, והמקור השני הוא ביקורות Trustpilot שהחברה מזמינה ורובן ישנות. לפי כלל המחקר זה לא מספיק להמלצה מלאה.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Style Factory Kittl",
+            "url": "https://www.stylefactoryproductions.com/blog/kittl-review",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Trustpilot Kittl",
+            "url": "https://uk.trustpilot.com/review/kittl.com?page=4",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": null
+  },
+  "microsoft-designer": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "adobe-illustrator": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "lovart": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "figma": {
+    "recommended": {
+      "value": false,
+      "basis": "ל־Figma Make יש מבחן מעצבים אחד, ו־Zapier פסל אותו.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "credits_run_out",
+      "type": "הנקודות נגמרות בתוך ימים או באמצע משימה",
+      "text": "ב־Figma Make משתמשים מדווחים ש־3,000 נקודות נגמרות בתוך כ־3 ימים, בעיקר על תיקון טעויות של ה־AI.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "פורום Figma",
+            "url": "https://forum.figma.com/share-your-feedback-26/figma-make-ai-credit-limits-not-feasible-51713/index19.html",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "נספר",
+        "note": "שרשור בפורום הרשמי של Figma עם 190 תגובות, פעיל ממרץ עד 13 בנובמבר 2026.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "framer": {
+    "recommended": {
+      "value": false,
+      "basis": "בחירה אחת בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "relume": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר על מבנה האתר במבחן אחד בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "google-stitch": {
+    "recommended": {
+      "value": false,
+      "basis": "מבחן מעצבים אחד, שממליץ עליו לחקירה ראשונית בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "ux-pilot": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "v0": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר רק במקור ישן.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "webflow": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "wix": {
+    "recommended": {
+      "value": true,
+      "basis": "מוביל בשתי סקירות מעשיות של בוני אתרים, אצל Zapier ואצל Tech.co.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/best-ai-website-builder/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Tech.co",
+            "url": "https://tech.co/website-builders/best-ai-website-builders",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "lock_in",
+      "type": "קשה לעזוב או להוריד את מה שיצרת",
+      "text": "משתמשים מדווחים שקשה להעביר אתר ודומיין החוצה, ועל חידוש במחיר גבוה בלי הודעה.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Wix",
+            "url": "https://nz.trustpilot.com/review/www.wix.com?page=6",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 3.4 מתוך 5 על סמך 29,105 ביקורות. בהערות המחקר שתי דוגמאות מתוארכות לכל תלונה, מאוגוסט ומספטמבר 2026.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "capcut": {
+    "recommended": {
+      "value": false,
+      "basis": "בחירה אחת בלבד, ומשתמשים מתלוננים שכמעט כל התכונות עברו לתשלום.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "lock_in",
+      "type": "קשה לעזוב או להוריד את מה שיצרת",
+      "text": "משתמשים מדווחים שהייצוא נחסם בשלב האחרון עד שמשלמים, ושתכונות שהיו חינמיות עברו ל־Pro.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "unstar",
+            "url": "https://unstar.app/blog/capcut-everything-is-pro-now-cant-export-reviews-2026",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "נספר",
+        "note": "ניתוח של 14,000 ביקורות מיולי עד ספטמבר 2026: 31.2% מהביקורות השליליות המפורטות עוסקות בחומת התשלום. הכלי לא מופיע בטבלת האזהרות שבדוח; הסוג הוא הקרוב ביותר מבין העשרה.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "veed": {
+    "recommended": {
+      "value": true,
+      "basis": "נבחר בשתי הסקירות העדכניות, אצל Zapier ואצל Buffer. לא נקראו ביקורות משתמשים.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/best-ai-video-generator/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Buffer",
+            "url": "https://buffer.com/library/ai-video-tools/",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": null
+  },
+  "descript": {
+    "recommended": {
+      "value": true,
+      "basis": "נבחר בשתי הסקירות העדכניות, אצל Zapier ואצל Buffer.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/best-ai-video-generator/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Buffer",
+            "url": "https://buffer.com/library/ai-video-tools/",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": null
+  },
+  "opusclip": {
+    "recommended": {
+      "value": true,
+      "basis": "נבחר בשתי הסקירות העדכניות, אצל Zapier ואצל Buffer.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/best-ai-video-generator/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Buffer",
+            "url": "https://buffer.com/library/ai-video-tools/",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": null
+  },
+  "heygen": {
+    "recommended": {
+      "value": false,
+      "basis": "בחירה עדכנית אחת בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "synthesia": {
+    "recommended": {
+      "value": false,
+      "basis": "בחירה עדכנית אחת בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "captions": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "d-id": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "hedra": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "suno": {
+    "recommended": {
+      "value": true,
+      "basis": "מוביל בטבלת המוזיקה של Artificial Analysis ונבחר בשתי סקירות. על גרסה 6 יש גם ביקורת מעורבת.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "AA כלי",
+            "url": "https://artificialanalysis.ai/music/leaderboard/instrumental",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "ToolChase",
+            "url": "https://www.toolchase.com/blog/best-ai-music-generators/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "SoftPicker",
+            "url": "https://softpicker.com/best-ai-music-generators/",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": null
+  },
+  "elevenlabs": {
+    "recommended": {
+      "value": true,
+      "basis": "מקום ראשון בטבלת הדיבור של Artificial Analysis ובחירה ראשונה אצל Zapier.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "AA דיבור",
+            "url": "https://artificialanalysis.ai/text-to-speech/leaderboard",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/best-ai-voice-generator/",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "billing_surprise",
+      "type": "חיוב אחרי ביטול או חידוש שנתי מפתיע",
+      "text": "משתמשים מדווחים על חיוב שנמשך אחרי ביטול ועל נקודות שאבדו.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot ElevenLabs",
+            "url": "https://www.trustpilot.com/review/elevenlabs.io?page=7",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 3.0 מתוך 5 על סמך 1,126 ביקורות, 37% מהן כוכב אחד. נקרא בסבב המחקר הקודם.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "moises": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "speechify": {
+    "recommended": {
+      "value": true,
+      "basis": "בעשירייה הראשונה בטבלת הדיבור של Artificial Analysis ונבחר אצל Zapier.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "AA",
+            "url": "https://artificialanalysis.ai/text-to-speech/leaderboard",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/best-ai-voice-generator/",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "billing_surprise",
+      "type": "חיוב אחרי ביטול או חידוש שנתי מפתיע",
+      "text": "משתמשים מדווחים על חידושי מנוי וחיובים לא צפויים, ועל קושי לקבל החזר.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Speechify",
+            "url": "https://uk.trustpilot.com/review/speechify.com?page=3",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "התלונות נקראו בביקורות מאוקטובר 2026. הציון הכללי גבוה (4.7), כנראה בזכות ביקורות שהחברה מזמינה.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "udio": {
+    "recommended": {
+      "value": false,
+      "basis": "שתי סקירות, אבל לא מופיע בטבלת הדירוג, ומשתמשים מדווחים שאי אפשר להוריד שירים.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "lock_in",
+      "type": "קשה לעזוב או להוריד את מה שיצרת",
+      "text": "משתמשים מדווחים שאי אפשר להוריד את השירים שיצרו.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Udio",
+            "url": "https://uk.trustpilot.com/review/udio.com",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "נספר",
+        "note": "שלוש ביקורות מתוארכות בתוך חצי השנה האחרונה: 28 ביוני, 5 ביולי ו־21 ביולי 2026.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "murf": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר אצל Zapier ובמקור ישן אחד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "adobe-podcast": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "lalal-ai": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "stable-audio": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "google-flow-music": {
+    "recommended": {
+      "value": false,
+      "basis": "מודל Lyria מופיע בטבלת דירוג אחת בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "hyper3d-rodin": {
+    "recommended": {
+      "value": false,
+      "basis": "All3DP לא התרשם, והמקום הראשון מופיע רק בכתבה מקדמת.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "meshy": {
+    "recommended": {
+      "value": false,
+      "basis": "המלצה של All3DP עם הסתייגות על חוסר עקביות.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "tripo": {
+    "recommended": {
+      "value": false,
+      "basis": "המלצה של All3DP. המקום הראשון בטבלה מגיע דרך בלוג של מתחרה.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "sloyd": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "marble": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "spline": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "hunyuan-3d": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר כקוד הפתוח הטוב ביותר במקור אחד ישן.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "cursor": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר אצל Zapier ואצל The New Stack, אבל תלונות חוזרות של משתמשים על חיובים, על החזרים ועל תמיכה מחלישות את ההמלצה לפי דוח חוויית המשתמשים.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Zapier",
+            "url": "https://www.zapier.com/blog/ai-coding-tools",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "The New Stack",
+            "url": "https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Trustpilot Cursor",
+            "url": "https://www.trustpilot.com/review/cursor.com?page=1",
+            "report": "research/community/user-experience-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "no_refund",
+      "type": "אין החזר, או חלון החזר קצר",
+      "text": "משתמשים מדווחים על חיובים ושדרוגי מסלול בלי אישור, בלי החזר, ועם תמיכה שהיא בוט בלבד.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Cursor",
+            "url": "https://www.trustpilot.com/review/cursor.com?page=1",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 1.5 מתוך 5 על סמך 351 ביקורות. התלונות נקראו בביקורות מספטמבר ומאוקטובר 2026.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "google-antigravity": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר אצל The New Stack בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "claude-code": {
+    "recommended": {
+      "value": true,
+      "basis": "הכלי האהוב ביותר בסקר של Pragmatic Engineer, ונבחר אצל Zapier ואצל The New Stack.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "Pragmatic Engineer",
+            "url": "https://newsletter.pragmaticengineer.com/p/ai-tooling-2026?open=false",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Zapier",
+            "url": "https://www.zapier.com/blog/ai-coding-tools",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "The New Stack",
+            "url": "https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": null
+  },
+  "devin": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר אצל Zapier בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "github-copilot": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר אצל Zapier בלבד, ומשתמשים מתוסכלים מאז המעבר לחיוב לפי שימוש.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "credits_run_out",
+      "type": "הנקודות נגמרות בתוך ימים או באמצע משימה",
+      "text": "מאז המעבר לחיוב לפי שימוש ביוני 2026 משתמשים מדווחים שהקצבה החודשית נגמרת בתוך יום־יומיים.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "VSM",
+            "url": "https://visualstudiomagazine.com/articles/2026/08/07/copilot-credit-complaints-keep-coming-too-expensive-to-use.aspx",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "נספר",
+        "note": "כתבה של Visual Studio Magazine מ־7 באוגוסט 2026 מביאה שלושה דיווחים של משתמשים שונים.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "codex": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר אצל The New Stack בלבד; הסקירה של Zapier ישנה.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "cline": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "kiro": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "zed": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "lovable": {
+    "recommended": {
+      "value": true,
+      "basis": "נבחר אצל Zapier ואצל Designlab, עם ציון 4.2 ב־Trustpilot על סמך 1,894 ביקורות.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": [
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/best-vibe-coding-tools/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Designlab",
+            "url": "https://designlab.com/blog/best-vibe-coding-tools",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Trustpilot Lovable",
+            "url": "https://www.trustpilot.com/review/lovable.dev?page=1",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": null
+  },
+  "replit": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר אצל Zapier וב־G2, אבל סוקרים ומשתמשים מדווחים שהסוכן מודיע שתיקן בעיה כשלא תיקן, ולכן אין המלצה מלאה.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/blog/best-vibe-coding-tools/",
+            "report": "research/community/all-categories-report.md"
+          },
+          {
+            "name": "Trustpilot Replit",
+            "url": "https://www.trustpilot.com/review/repl.it",
+            "report": "research/community/all-categories-report.md"
+          }
+        ]
+      }
+    },
+    "watch_out": {
+      "type_id": "ai_false_report",
+      "type": "ה־AI אומר שעשה משהו שלא עשה",
+      "text": "משתמשים וסוקרים מדווחים שהסוכן מודיע שתיקן בעיה כשלא תיקן, ועל חיובי חריגה.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Replit",
+            "url": "https://www.trustpilot.com/review/repl.it",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "נקרא בסבב המחקר הקודם ולא נקרא מחדש.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "base44": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר רק במקור ישן.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "credits_on_failure",
+      "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+      "text": "משתמשים מדווחים שנקודות יורדות גם כשהתוצאה שגויה, ועל מנוי חודשי שהפך לשנתי.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Base44",
+            "url": "https://trustpilot.com/review/base44.com",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 2.7 מתוך 5 על סמך 925 ביקורות, 54% מהן כוכב אחד. בהערות המחקר דוגמה מתוארכת אחת לכל תלונה.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "google-ai-studio": {
+    "recommended": {
+      "value": false,
+      "basis": "לא נמצאה המלצה.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "bolt": {
+    "recommended": {
+      "value": false,
+      "basis": "רק סקירה עדכנית אחת.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "credits_on_failure",
+      "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+      "text": "משתמשים מדווחים שהטוקנים נשרפים על ניסיונות שלא מניבים תוצאה, ושאין החזר.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Bolt",
+            "url": "https://www.trustpilot.com/review/bolt.new?page=1",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "נספר",
+        "note": "שלוש ביקורות מתוארכות: 4 באוקטובר, 29 באוקטובר ו־11 בנובמבר 2026.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "bubble": {
+    "recommended": {
+      "value": false,
+      "basis": "בחירה אחת בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "emergent": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "manus": {
+    "recommended": {
+      "value": false,
+      "basis": "מקום שני במקור אחד, וביקורות משתמשים גרועות מאוד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "credits_on_failure",
+      "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+      "text": "משתמשים מדווחים שאלפי נקודות יורדות על משימות שלא בוצעו, ושהחזרים לא מטופלים.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Manus",
+            "url": "https://www.trustpilot.com/review/manus.im?page=1",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 1.2 מתוך 5 על סמך 210 ביקורות, 95% מהן כוכב אחד.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "genspark": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "n8n": {
+    "recommended": {
+      "value": false,
+      "basis": "שני המקורות שממליצים הם בעלי אינטרס.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "lindy": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "microsoft-copilot-studio": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "zapier": {
+    "recommended": {
+      "value": false,
+      "basis": "המקורות שממליצים הם בעלי אינטרס או ישנים.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": {
+      "type_id": "billing_surprise",
+      "type": "חיוב אחרי ביטול או חידוש שנתי מפתיע",
+      "text": "משתמשים מדווחים על חידוש שנתי שלא שמו לב אליו, על חיובי חריגה ועל סירוב להחזר.",
+      "evidence": {
+        "file": "research/community/user-experience-report.md",
+        "sources": [
+          {
+            "name": "Trustpilot Zapier",
+            "url": "https://www.trustpilot.com/review/zapier.com?page=1",
+            "report": "research/community/user-experience-report.md"
+          }
+        ],
+        "strength": "לפי סיכום הדוח",
+        "note": "Trustpilot: 1.3 מתוך 5 על סמך 327 ביקורות. בהערות המחקר דוגמה מתוארכת אחת לכל תלונה, מאוגוסט עד אוקטובר 2026.",
+        "checked": "2026-11-18"
+      }
+    }
+  },
+  "gumloop": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "make": {
+    "recommended": {
+      "value": false,
+      "basis": "מקור אחד בלבד, בעל אינטרס.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "activepieces": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "notion": {
+    "recommended": {
+      "value": false,
+      "basis": "הציונים של Notion AI סותרים זה את זה, ואחד המקורות ישן.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "gemini-notebook": {
+    "recommended": {
+      "value": false,
+      "basis": "לא נקראה סקירה עדכנית.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "fireflies": {
+    "recommended": {
+      "value": false,
+      "basis": "מקור עדכני אחד ומקור ישן אחד. משתמשים ב־G2 מדרגים אותו מעל Otter.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "granola": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר אצל Zapier בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "otter": {
+    "recommended": {
+      "value": false,
+      "basis": "שלוש סקירות, אבל אין מבחן מעשי עדכני.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "fathom": {
+    "recommended": {
+      "value": false,
+      "basis": "נבחר אצל Zapier בלבד, כאפשרות חינמית.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "tldv": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "julius": {
+    "recommended": {
+      "value": false,
+      "basis": "מקור אחד בלבד.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "read-ai": {
+    "recommended": {
+      "value": null,
+      "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+      "evidence": {
+        "file": null,
+        "sources": []
+      }
+    },
+    "watch_out": null
+  },
+  "wispr-flow": {
+    "recommended": {
+      "value": false,
+      "basis": "הסוקרים מיוצגים במקור אחד ישן עם קישורי שותפים. משתמשים משבחים אותו, אבל רוב הביקורות ישנות.",
+      "evidence": {
+        "file": "research/community/all-categories-report.md",
+        "sources": []
+      }
+    },
+    "watch_out": null
+  }
+}

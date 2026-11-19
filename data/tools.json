@@ -86,11 +86,12 @@
       },
       "status": {
         "state": "פעיל",
-        "note": "Google הודיעה שהמודלים Veo 3.1 Fast, Veo 3.1 Quality ו־Omni Flash 1.1 יוצאו משימוש ב־5 בדצמבר 2026; נכון למועד הבדיקה זה עדיין לא קרה. Veo 3.1 Lite אינו נכלל בהודעה. Veo Extend כבר הוצא משימוש ב־5 בנובמבר 2026. העמודים אינם מפרטים מה יקרה לפרויקטים קיימים.",
+        "note": "Google הודיעה שהמודלים Veo 3.1 Fast, Veo 3.1 Quality ו־Omni Flash 1.1 יוצאו משימוש ב־5 בדצמבר 2026; נכון למועד הבדיקה זה עדיין לא קרה. Veo 3.1 Lite אינו נכלל בהודעה. Veo Extend כבר הוצא משימוש ב־5 בנובמבר 2026. העמודים אינם מפרטים מה יקרה לפרויקטים קיימים. לפי מדריך של צד שלישי (Agentpedia), Google אמרה ש־Omni יחליף את Veo באפליקציית Gemini.",
         "date_as_written": "December 5, 2026",
         "source_ids": [
           "s1",
-          "s2"
+          "s2",
+          "s11"
         ]
       },
       "strengths": [
@@ -382,6 +383,15 @@
           "published": null,
           "checked": "2026-11-18",
           "stale": false
+        },
+        {
+          "id": "s11",
+          "url": "https://agentpedia.codes/blog/gemini-omni-flash-rollout-guide.md",
+          "title": "Agentpedia: מדריך להשקת Gemini Omni Flash",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
         }
       ],
       "checked_date": "2026-11-18",
@@ -444,6 +454,32 @@
             "worthwhile": null,
             "basis": "המכסה מתחדשת כל יום, אבל לא ברור מהמקור אם התוצר החינמי נושא סימן מים גלוי וכמה סרטונים המכסה מאפשרת.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר אצל Zapier, אבל המודל Veo 3.1 ירד בדירוגים.",
+            "evidence": {
+              "file": "research/community/video-report.md",
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "update_regression",
+          "type": "העדכון האחרון הרע את הכלי",
+          "text": "אחרי עדכון באוגוסט 2026 דיווחו משתמשים באנדרואיד על שגיאות יצירה ועל הורדה ב־720p במקום 1080p.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "unstar Flow",
+                "url": "https://unstar.app/de/events/google-flow-android-complaints-august-2026",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "נספר",
+            "note": "אתר ניטור תיעד 15 ביקורות שליליות ב־Google Play בתוך 48 שעות, ב־22 באוגוסט 2026. זה מקור אחד.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -469,15 +505,17 @@
         "note": "תוכנית Unlimited מוחלפת בתוכנית Max: Max מוצעת למנויים חדשים מאז 29 במאי 2026, ומנויי Unlimited הקיימים מתוכננים לעבור אליה ב־30 בנובמבר 2026. נכון למועד הבדיקה המעבר עדיין לא בוצע.",
         "date_as_written": "November 30, 2026",
         "source_ids": [
-          "s3"
+          "s3",
+          "s8"
         ]
       },
       "strengths": [
         {
           "lead": "מודלים רבים במנוי אחד",
-          "detail": "לפי עמוד המחירים, התוכניות מ־Standard ומעלה כוללות את כל מודלי הווידאו והתמונה, בהם Gen-4.5, Aleph 2.0, Kling 4.0, Seedance 2.0 Pro, Gen-4 Image ו־Nano Banana Pro.",
+          "detail": "לפי עמוד המחירים, התוכניות מ־Standard ומעלה כוללות את כל מודלי הווידאו והתמונה, בהם Gen-4.5, Aleph 2.0, Kling 4.0, Seedance 2.0 Pro, Gen-4 Image ו־Nano Banana Pro. לפי TechCrunch (יולי 2026), מודל יצירת הווידאו האחרון של Runway עצמה הוא Gen-4.5 מדצמבר 2025, והחברה מתמקדת היום בכלי העריכה ובגישה למודלים של חברות אחרות.",
           "source_ids": [
-            "s1"
+            "s1",
+            "s10"
           ],
           "inference": false
         },
@@ -491,9 +529,10 @@
         },
         {
           "lead": "תוספות להפקה בתוכניות הגבוהות",
-          "detail": "Pro מוסיפה שדרוג וידאו ל־4K ללא הגבלה, ערכת מותג אחת, שכפול קול אחד ו־Runway MCP. Max מוסיפה פלט HDR, ProRes ורצפי תמונות.",
+          "detail": "Pro מוסיפה שדרוג וידאו ל־4K ללא הגבלה, ערכת מותג אחת, שכפול קול אחד ו־Runway MCP. Max מוסיפה פלט HDR, ProRes ורצפי תמונות. משתמש אחד ב־Trustpilot דיווח שחויב בנקודות על שדרוג רזולוציה; הטענה לא אומתה.",
           "source_ids": [
-            "s1"
+            "s1",
+            "s9"
           ],
           "inference": false
         }
@@ -787,6 +826,33 @@
           "published": null,
           "checked": "2026-11-18",
           "stale": false
+        },
+        {
+          "id": "s8",
+          "url": "https://www.usagepricing.com/blueprint/activity/runway-2026-06-24-max-plan-replaces-unlimited",
+          "title": "usagepricing.com: תוכנית Max מחליפה את Unlimited",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s9",
+          "url": "https://www.trustpilot.com/review/runwayml.com",
+          "title": "Trustpilot: ביקורות משתמשים על Runway",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s10",
+          "url": "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/",
+          "title": "TechCrunch: Runway מהמרת על ניתוב בין מודלים",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
         }
       ],
       "checked_date": "2026-11-18",
@@ -849,6 +915,32 @@
             "worthwhile": false,
             "basis": "נקודות חד־פעמיות שאינן מתחדשות, והסרטונים נושאים סימן מים.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "שבחים לכלי העריכה, ביקורת על איכות הווידאו.",
+            "evidence": {
+              "file": "research/community/video-report.md",
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "credits_on_failure",
+          "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+          "text": "משתמשים מדווחים שנקודות יורדות גם על יצירות שנכשלו, ושקשה לקבל החזר.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot",
+                "url": "https://www.trustpilot.com/review/runwayml.com",
+                "report": "research/community/video-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 1.1 מתוך 5 על סמך 378 ביקורות. התאריכים של הביקורות הבודדות לא נרשמו בדוח.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -981,7 +1073,7 @@
             ]
           }
         ],
-        "free_tier": "משתמשים חדשים מקבלים נקודות חינם בהרשמה, ומשתמשים חוזרים יכולים לקבל הקצאה נוספת בכניסה לחשבון מדי חודש. הכמות והתוקף עשויים להשתנות; הכמות המדויקת לא אומתה.",
+        "free_tier": "משתמשים חדשים מקבלים נקודות חינם בהרשמה, ומשתמשים חוזרים יכולים לקבל הקצאה נוספת בכניסה לחשבון מדי חודש. הכמות והתוקף עשויים להשתנות; הכמות המדויקת לא אומתה. המקורות העצמאיים סותרים זה את זה: לפי Scrimba (נובמבר 2026) אין נקודות חינם חודשיות או יומיות, ואילו PC Tech Magazine מזכיר שכבה חינמית בסיסית בלי לפרט כמות. לא הוכרע מול העמוד הרשמי.",
         "trial": "לא נמצאה תקופת ניסיון חינמית לתוכנית בתשלום. באפליקציית iOS נמכר מנוי Standard לשבוע ב־1.19 או ב־1.49 דולר (שתי רשומות בחנות); זה מנוי קצר בתשלום, לא ניסיון חינם.",
         "unverified_notes": "דף המחירים באתר מפנה לדף הבית למי שאינו מחובר, ולכן מחירי האתר, המחירים השנתיים וכמות הנקודות בכל תוכנית לא אומתו. המחירים שכאן נלקחו רק מרשומת ה־App Store האמריקאית, ולכן לא נקבעה שורת מחיר מסכמת. מחירי Ultra+‏, Team ו־Enterprise לא אומתו; ידוע רק ש־Team מחויבת לפי מושב לחודש. הודעת ההשקה מפברואר 2026 מזכירה מנויי Ultra, ואילו תנאי התשלום מ־2026/10/10 מונים רק Ultra+. הסקה: הדרגה שונתה או הוחלפה בין התאריכים; לא נמצאה הודעה רשמית."
       },
@@ -1116,6 +1208,24 @@
           "published": null,
           "checked": "2026-11-18",
           "stale": false
+        },
+        {
+          "id": "s9",
+          "url": "https://scrimba.com/articles/free-ai-video-generators-2026/",
+          "title": "Scrimba: מחוללי וידאו חינמיים ב־2026 (אתר עם אינטרס מסחרי)",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s10",
+          "url": "https://pctechmag.com/2026/09/top-10-free-ai-video-generators-best-tools-you-can-try-without-paying/",
+          "title": "PC Tech Magazine: מחוללי וידאו חינמיים",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
         }
       ],
       "checked_date": "2026-11-18",
@@ -1180,6 +1290,53 @@
             "worthwhile": false,
             "basis": "מי שאינו מנוי חייב לסמן את התוצרים במותג של Kling. כמות הנקודות לא אומתה.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "מקום שלישי במבחן מעשי עדכני של Curious Refuge, ושבחים חוזרים במקורות נוספים.",
+            "evidence": {
+              "file": "research/community/video-report.md",
+              "sources": [
+                {
+                  "name": "Curious Refuge",
+                  "url": "https://curiousrefuge.com/blog/ai-video-generator-2027",
+                  "report": "research/community/video-report.md"
+                },
+                {
+                  "name": "AA",
+                  "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+                  "report": "research/community/video-report.md"
+                },
+                {
+                  "name": "Tech Hacker",
+                  "url": "https://techhacker.substack.com/p/which-ai-video-generator-is-actually",
+                  "report": "research/community/video-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "credits_on_failure",
+          "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+          "text": "משתמשים מדווחים שנקודות יורדות גם על תוצאות כושלות או לא שמישות, ושאין החזר.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot",
+                "url": "https://ca.trustpilot.com/review/klingai.com",
+                "report": "research/community/video-report.md"
+              },
+              {
+                "name": "App Store Kling",
+                "url": "https://apps.apple.com/us/app/kling-ai-ai-image-video-maker/id6738049229?see-all=reviews",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 1.2 מתוך 5 על סמך 431 ביקורות. רוב הביקורות הכתובות ב־App Store הן מ־2025.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -1202,12 +1359,13 @@
       },
       "status": {
         "state": "פעיל",
-        "note": "המודל הנוכחי, MiniMax H3, זמין באתר ובאפליקציה; תאריך ההשקה שלו לא אומת ממקור רשמי. תוכנית Unlimited היא תוכנית ישנה שנמכרה רק עד יוני 2025.",
+        "note": "המודל הנוכחי, MiniMax H3, זמין באתר ובאפליקציה; תאריך ההשקה שלו לא אומת ממקור רשמי; מקור אקדמי (NYU Shanghai) נותן 30 ביולי 2026. תוכנית Unlimited היא תוכנית ישנה שנמכרה רק עד יוני 2025.",
         "date_as_written": "only available for purchase before June 18, 2025",
         "source_ids": [
           "s3",
           "s7",
-          "s8"
+          "s8",
+          "s9"
         ]
       },
       "strengths": [
@@ -1229,9 +1387,10 @@
         },
         {
           "lead": "משקלי המודל פתוחים",
-          "detail": "משקלי H3 זמינים בחינם ברישיון MiniMax H3 Community License, בלי תמלוגים, למחקר ולשימוש מסחרי, ב־Hugging Face, ב־ModelScope וב־GitHub.",
+          "detail": "משקלי H3 זמינים בחינם ברישיון MiniMax H3 Community License, בלי תמלוגים, למחקר ולשימוש מסחרי, ב־Hugging Face, ב־ModelScope וב־GitHub. כותרת של מקור אקדמי מיום ההשקה (NYU Shanghai) מדברת על משקלים ש״הובטחו״; הזמינות בפועל נשענת על העמוד הרשמי ולא נבדקה מחדש.",
           "source_ids": [
-            "s5"
+            "s5",
+            "s9"
           ],
           "inference": false
         }
@@ -1311,7 +1470,7 @@
             ]
           }
         ],
-        "free_tier": "יש תוכנית חינמית. לפי תנאי המנוי (14.7.2025, מקור ישן): ההורדות כוללות סימן מים, ואפשר להעמיד עד שלוש משימות בתור. כמות הנקודות החינמיות כיום, וקיומה של הקצאה יומית, לא אומתו.",
+        "free_tier": "יש תוכנית חינמית. לפי תנאי המנוי (14.7.2025, מקור ישן): ההורדות כוללות סימן מים, ואפשר להעמיד עד שלוש משימות בתור. כמות הנקודות החינמיות כיום, וקיומה של הקצאה יומית, לא אומתו. לפי מקור צד שלישי מנובמבר 2026 (Scrimba, אתר עם אינטרס מסחרי), מדובר בנקודות פתיחה חד־פעמיות שפגות אחרי 3 ימים, עם תור של 3 משימות. לא אומת בעמוד הרשמי.",
         "trial": "לא נמצאה תקופת ניסיון חינמית לתוכנית בתשלום. נקודות הבונוס למשתמשים חדשים פוקעות שלושה ימים אחרי שניתנו (מקור ישן).",
         "unverified_notes": "הכרעה בין שני מחירונים רשמיים סותרים: מוצג המחירון מהבלוג הרשמי מ־27 ביולי 2026 (9.99, 34.99 ו־79.99 דולר לחודש), כי הוא המקור הרשמי החדש יותר. המחירון הקודם, מתנאי המנוי מ־14.7.2025 (14.99, 54.99 ו־119.99 דולר לחודש, ועוד התוכניות Ultra, Max ו־Unlimited), נשמר לתיעוד בלבד ואינו מוצג. המחיר נשאר מאומת חלקית: דף המנויים באתר נפתח רק למשתמש מחובר ולא נקרא, והבלוג אינו מציין אם החיוב חודשי או שנתי. הסקה: ייתכן שהמחירים הוזלו, וייתכן שהבלוג מצטט מחיר לחודש בחיוב שנתי. לא אומתו גם מחירים שנתיים, כמות נקודות הזיכוי בתוכניות הנוכחיות, והשאלה אם Ultra ו־Max עדיין נמכרות. יתר התנאים לקוחים מהמקור הישן: נקודות המנוי תקפות חודש ואינן נצברות, נקודות שנרכשו תקפות עד 31 בדצמבר של השנה השנייה שאחרי הרכישה, אפשר לבטל בכל עת החל ממחזור החיוב הבא, ואין החזר על תשלום שבוצע.",
         "superseded_plans": [
@@ -1531,6 +1690,24 @@
           "published": null,
           "checked": "2026-11-18",
           "stale": false
+        },
+        {
+          "id": "s9",
+          "url": "https://rits.shanghai.nyu.edu/ai/minimax-releases-h3-2k-video-with-native-audio-open-weights-promised/",
+          "title": "NYU Shanghai: MiniMax משיקה את H3, משקלים פתוחים הובטחו",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s10",
+          "url": "https://scrimba.com/articles/free-ai-video-generators-2026/",
+          "title": "Scrimba: מחוללי וידאו חינמיים ב־2026 (אתר עם אינטרס מסחרי)",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
         }
       ],
       "checked_date": "2026-11-18",
@@ -1594,8 +1771,17 @@
             "worthwhile": false,
             "basis": "ההורדות בתוכנית החינמית כוללות סימן מים. המכסה לא אומתה.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "בצמרת טבלאות הדירוג, אבל הביקורת המעשית בינונית.",
+            "evidence": {
+              "file": "research/community/video-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -1800,7 +1986,7 @@
             ]
           }
         ],
-        "free_tier": "לא אומת. בעמוד המחירים הרשמי אין תוכנית חינמית. בדף הבית ובדף האפליקציה יש כפתור ניסיון חינם בלי פירוט של כמות או מגבלות, ומאמר העזרה הרשמי מזכיר חשבון חינמי שאליו חוזר החשבון אחרי ביטול מנוי. אף מקור רשמי לא מפרט מה כלול בו.",
+        "free_tier": "לא אומת. בעמוד המחירים הרשמי אין תוכנית חינמית. בדף הבית ובדף האפליקציה יש כפתור ניסיון חינם בלי פירוט של כמות או מגבלות, ומאמר העזרה הרשמי מזכיר חשבון חינמי שאליו חוזר החשבון אחרי ביטול מנוי. אף מקור רשמי לא מפרט מה כלול בו. מקור צד שלישי מנובמבר 2026 (Scrimba, אתר עם אינטרס מסחרי) קובע שאין תוכנית חינמית ושהמנויים מתחילים ב־30 דולר לחודש.",
         "trial": "לא אומת. דף המידע הרשמי של Luma מציין שנקודות ניסיון חינמיות כלולות בכל התוכניות, בלי לפרט כמה. לפי מאמר העזרה, בכל הרשמה נדרש כרטיס אשראי, גם לחשבון חינמי וגם לחשבון ניסיון.",
         "unverified_notes": "המחירים של Plus, Pro ו־Ultra אומתו מעמוד המחירים הרשמי, שאינו נושא תאריך, והם חוזרים גם בעמוד התמיכה הרשמי. מה שלא אומת: (1) מה בדיוק ניתן בחינם וכמה נקודות ניסיון מקבלים. סקירת צד שלישי מתארת תוכנית חינמית של כ־5 יצירות ביום ב־720p עם סימן מים ובלי שימוש מסחרי, אבל היא מתייחסת ל־Dream Machine ואף עמוד רשמי עדכני אינו מאשר אותה. (2) אם המחיר למשתמש או לחשבון. (3) מחירי Team ו־Enterprise. (4) קוד המטבע: העמוד מציג את הסימן $ בלי לנקוב במטבע. (5) שיעור ההנחה השנתית: העמוד מבטיח חיסכון של עד 20%, אבל המחירים המפורסמים מסתכמים בכ־17%. (6) מחירי ה־API בדולרים: מפורסמים רק בנקודות זיכוי."
       },
@@ -2023,6 +2209,15 @@
           "published": "2026-06-26",
           "checked": "2026-11-18",
           "stale": false
+        },
+        {
+          "id": "s17",
+          "url": "https://scrimba.com/articles/free-ai-video-generators-2026/",
+          "title": "Scrimba: מחוללי וידאו חינמיים ב־2026 (אתר עם אינטרס מסחרי)",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
         }
       ],
       "checked_date": "2026-11-18",
@@ -2085,8 +2280,17 @@
             "worthwhile": null,
             "basis": "לא אומת אם יש תוכנית חינמית ומה כלול בה.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "שבחים למראה הקולנועי, אבל מתחרים עקפו אותו.",
+            "evidence": {
+              "file": "research/community/video-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -2117,10 +2321,11 @@
       "strengths": [
         {
           "lead": "הרבה מודלים בחשבון אחד",
-          "detail": "חשבון אחד נותן גישה למודלים של Pika עצמה, Pika 2.5 ו־Pika H3 Flex, ולמודלי וידאו, תמונה וקול של חברות אחרות. לפי עמוד המחירים, כל המודלים זמינים בכל תוכנית.",
+          "detail": "חשבון אחד נותן גישה למודלים של Pika עצמה, Pika 2.5 ו־Pika H3 Flex, ולמודלי וידאו, תמונה וקול של חברות אחרות. לפי עמוד המחירים, כל המודלים זמינים בכל תוכנית. לפי מקור משני אחד (aiwiki.ai), Pika H3 Flex הוא התאמה של המודל MiniMax H3 ולא מודל שנבנה מאפס; לא אומת.",
           "source_ids": [
             "s2",
-            "s1"
+            "s1",
+            "s10"
           ],
           "inference": false
         },
@@ -2436,6 +2641,15 @@
           "published": "2026-08-17",
           "checked": "2026-11-18",
           "stale": false
+        },
+        {
+          "id": "s10",
+          "url": "https://aiwiki.ai/wiki/pika_h3_flex",
+          "title": "aiwiki.ai: Pika H3 Flex",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
         }
       ],
       "checked_date": "2026-11-18",
@@ -2497,8 +2711,17 @@
             "worthwhile": false,
             "basis": "התוכנית החינמית כוללת אפס נקודות זיכוי: כדי ליצור צריך לשלם.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "דירוג בינוני־גבוה בלי ביקורת מעשית של המודל החדש.",
+            "evidence": {
+              "file": "research/community/video-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -2508,7 +2731,7 @@
       "name": "Higgsfield",
       "former_name": null,
       "rename_note": null,
-      "role": "פלטפורמה ליצירת וידאו ותמונות במודלים משלה ובמודלים של חברות אחרות.",
+      "role": "פלטפורמה ליצירת וידאו ותמונות שמרכזת מודלים של חברות אחרות לצד כלים משלה.",
       "url": "https://higgsfield.ai",
       "logo": {
         "file": "logos/higgsfield.svg",
@@ -2519,11 +2742,12 @@
       },
       "status": {
         "state": "פעיל",
-        "note": "תנאי שימוש ומדיניות פרטיות חדשים נכנסו לתוקף בקיץ 2026. לא נמצאה הודעה על סגירה, רכישה או שינוי שם.",
+        "note": "תנאי שימוש ומדיניות פרטיות חדשים נכנסו לתוקף בקיץ 2026. לא נמצאה הודעה על סגירה, רכישה או שינוי שם. לפי המקורות העצמאיים שנקראו, המודלים של החברה עצמה הם בעיקר לתמונות, ולא נמצא לה מודל וידאו מוביל משלה. לפי סקירה אחת (SaaS CRM Review), Cinema Studio 4.0 רץ על Seedance 2.5; לא אומת.",
         "date_as_written": "effective August 27, 2026",
         "source_ids": [
           "s6",
-          "s7"
+          "s7",
+          "s11"
         ]
       },
       "strengths": [
@@ -2892,6 +3116,15 @@
           "published": null,
           "checked": "2026-11-18",
           "stale": false
+        },
+        {
+          "id": "s11",
+          "url": "https://saascrmreview.com/higgsfield-ai-review/",
+          "title": "SaaS CRM Review: סקירת Higgsfield",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
         }
       ],
       "checked_date": "2026-11-18",
@@ -2954,8 +3187,17 @@
             "worthwhile": false,
             "basis": "בלי נקודות זיכוי חודשיות או יומיות, ולא צוין מודל וידאו חינמי.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "הביקורות שנמצאו לא בדקו את יצירת הווידאו.",
+            "evidence": {
+              "file": "research/community/video-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -2976,7 +3218,7 @@
       },
       "status": {
         "state": "פעיל",
-        "note": "Vidu Q4 Preview, גרסת תצוגה מקדימה פומבית של מודל הדגל הבא, הוכרז בסתיו 2026 עם מחירי השקה. לא נמצאה הודעה על סגירה, רכישה או שינוי שם.",
+        "note": "Vidu Q4 Preview, גרסת תצוגה מקדימה פומבית של מודל הדגל הבא, הוכרז ב־7 באוקטובר 2026 (לפי הודעה לעיתונות שלא נקראה מחדש) עם מחירי השקה. לא נמצאה הודעה על סגירה, רכישה או שינוי שם.",
         "date_as_written": "October 7, 2026",
         "source_ids": [
           "s5"
@@ -3312,8 +3554,17 @@
             "worthwhile": false,
             "basis": "התוצר החינמי נושא סימן מים גלוי. כמות הנקודות לא צוינה.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "דירוג נמוך ומעט ביקורות.",
+            "evidence": {
+              "file": "research/community/video-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -3334,11 +3585,12 @@
       },
       "status": {
         "state": "פעיל",
-        "note": "מערך התוכניות הוחלף: דף המחירים מציג את Pro, Max ו־Standard הקודמות כמחירים היסטוריים, והתוכניות הנוכחיות הן Basic, Standard, Advanced ו־Ultra. ההצעה הנוכחית בתוקף מהתאריך שלהלן. באתר יש גם דף רשמי על Seedance 2.5 (מ־24 באוקטובר 2026), אך מועד ההשקה של המודל והכללתו בתוכניות לא אומתו.",
+        "note": "מערך התוכניות הוחלף: דף המחירים מציג את Pro, Max ו־Standard הקודמות כמחירים היסטוריים, והתוכניות הנוכחיות הן Basic, Standard, Advanced ו־Ultra. ההצעה הנוכחית בתוקף מהתאריך שלהלן. באתר יש גם דף רשמי על Seedance 2.5 (מ־24 באוקטובר 2026), אך מועד ההשקה של המודל והכללתו בתוכניות לא אומתו. החוזקות בכרטיס מתארות את Seedance 2.0. על Seedance 2.5 דווח (The Decoder, לפי מפרט החברה) שהוא מקבל עד 30 תמונות, 10 סרטונים ו־10 קטעי קול ויוצר קליפים של 30 שניות; לא אומת מה מזה זמין ב־Dreamina מחוץ לסין.",
         "date_as_written": "2026.10.21",
         "source_ids": [
           "s1",
-          "s4"
+          "s4",
+          "s7"
         ]
       },
       "strengths": [
@@ -3566,6 +3818,15 @@
           "published": "2026-02-16",
           "checked": "2026-11-18",
           "stale": true
+        },
+        {
+          "id": "s7",
+          "url": "https://the-decoder.com/bytedances-seedance-2-5-generates-30-second-video-clips-with-built-in-audio/",
+          "title": "The Decoder: Seedance 2.5 של ByteDance יוצר קליפים של 30 שניות עם קול",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
         }
       ],
       "checked_date": "2026-11-18",
@@ -3628,8 +3889,33 @@
             "worthwhile": null,
             "basis": "נקודות יומיות, אבל הכמות וסימני המים לא צוינו ועשויים להשתנות.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "מודל Seedance במקום ראשון במבחנים המעשיים של Curious Refuge ובטבלת תמונה־לווידאו של Artificial Analysis.",
+            "evidence": {
+              "file": "research/community/video-report.md",
+              "sources": [
+                {
+                  "name": "Curious Refuge",
+                  "url": "https://curiousrefuge.com/blog/ai-video-generator-2027",
+                  "report": "research/community/video-report.md"
+                },
+                {
+                  "name": "AA תמונה־לווידאו",
+                  "url": "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+                  "report": "research/community/video-report.md"
+                },
+                {
+                  "name": "Theoretically Media",
+                  "url": "https://theoreticallymedia.beehiiv.com/p/seedance-2-5-inches-closer",
+                  "report": "research/community/video-report.md"
+                }
+              ]
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -3650,12 +3936,15 @@
       },
       "status": {
         "state": "פעיל",
-        "note": "דף הבית הרשמי מקדם את Wan3.0. מועד ההשקה של המודל לא אומת ממקור רשמי. תיעוד ה־API שנקרא (עודכן ב־11 באוקטובר 2026) עדיין מתאר את wan2.7, בלי הודעה על הפסקת תמיכה. המוצר לצרכנים נקרא Wan Create.",
+        "note": "דף הבית הרשמי מקדם את Wan3.0. מועד ההשקה של המודל לא אומת ממקור רשמי; מקור חדשותי (The Next Web) נותן 24 באוגוסט 2026. תיעוד ה־API שנקרא (עודכן ב־11 באוקטובר 2026) עדיין מתאר את wan2.7, בלי הודעה על הפסקת תמיכה. המוצר לצרכנים נקרא Wan Create. לפי מקור צד שלישי אחד (howaiworks.ai), רק Wan 2.2 מיולי 2025 פתוח להורדה ולהרצה מקומית; הגרסאות 2.5 עד 3.0 סגורות וזמינות בענן בלבד. החוזקות והמגבלות בכרטיס נשענות על ביקורת של Wan 2.7; ביקורת מעשית של Wan 3.0 (Curious Refuge) כבר קיימת ועוד לא שולבה בכרטיס.",
         "date_as_written": null,
         "source_ids": [
           "s1",
           "s2",
-          "s3"
+          "s3",
+          "s5",
+          "s6",
+          "s7"
         ]
       },
       "strengths": [
@@ -3879,13 +4168,40 @@
           "published": "2026-06-09",
           "checked": "2026-11-18",
           "stale": false
+        },
+        {
+          "id": "s5",
+          "url": "https://howaiworks.ai/blog/alibaba-wan-open-weights-stopped-at-2-2",
+          "title": "howaiworks.ai: המשקלים הפתוחים של Wan נעצרו בגרסה 2.2",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s6",
+          "url": "https://thenextweb.com/news/alibaba-wan3-video-model-after-share-sale",
+          "title": "The Next Web: Alibaba משיקה את Wan 3.0",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
+        },
+        {
+          "id": "s7",
+          "url": "https://curiousrefuge.com/blog/wan3-review",
+          "title": "Curious Refuge: ביקורת מעשית של Wan 3.0",
+          "official": false,
+          "published": null,
+          "checked": "2026-11-18",
+          "stale": false
         }
       ],
       "checked_date": "2026-11-18",
       "filters": {
         "new_notable": {
           "value": true,
-          "basis": "המודל נפתח לציבור בפברואר 2025 לפי מקור חדשותי, והגרסה הנוכחית יצאה באוגוסט 2026 לפי מקור חדשותי. תאריך ההשקה של האתר לא אומת.",
+          "basis": "המודל נפתח לציבור בפברואר 2025 לפי מקור חדשותי, והגרסה הנוכחית יצאה באוגוסט 2026 לפי מקור חדשותי. תאריך ההשקה של האתר לא אומת. לפי כלל 90 הימים, התג ״מודל חדש״ פג ב־22 בנובמבר 2026.",
           "launch_date": null,
           "launched_in_window": false,
           "latest_version": "Wan3.0",
@@ -3941,8 +4257,28 @@
             "worthwhile": null,
             "basis": "נקודות בכניסה יומית, אבל הכמות לא צוינה והמקור לא מפרט אם יש סימן מים.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "מקום ראשון בטבלת טקסט־לווידאו של Artificial Analysis, ושבחים במבחן מעשי של Curious Refuge. ההמלצה נשענת על בודק מעשי אחד.",
+            "evidence": {
+              "file": "research/community/video-report.md",
+              "sources": [
+                {
+                  "name": "AA",
+                  "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+                  "report": "research/community/video-report.md"
+                },
+                {
+                  "name": "Curious Refuge, ביקורת",
+                  "url": "https://curiousrefuge.com/blog/wan3-review",
+                  "report": "research/community/video-report.md"
+                }
+              ]
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -4289,6 +4625,43 @@
             "worthwhile": true,
             "basis": "שיחות טקסט ללא הגבלה בתוכנית החינמית, לצד כלים במכסה מוגבלת.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "נבחר לשימוש כללי אצל Zapier ואצל UCStrategies, ומופיע בכל הסקירות שנקראו.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/chatbots/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "UCStrategies",
+                  "url": "https://ucstrategies.com/news/best-ai-chatbots-2026-i-tested-chatgpt-claude-gemini-perplexity-and-grok/",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "bot_support",
+          "type": "תמיכה של בוט בלבד",
+          "text": "משתמשים מדווחים שפניות לתמיכה ובקשות החזר נענות בתשובה אוטומטית בלבד.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot ChatGPT",
+                "url": "https://www.trustpilot.com/review/chatgpt.com?page=1",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 4,016 ביקורות, 75% מהן כוכב אחד. בהערות המחקר יש דוגמה מתוארכת אחת (17 בנובמבר 2026).",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -4707,6 +5080,48 @@
             "worthwhile": null,
             "basis": "המכסה מתחדשת בחלון של 5 שעות ובכל שבוע, אבל גודלה לא פורסם.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "מקום ראשון אצל eWeek, ונבחר לכתיבה ולקוד בשלוש סקירות.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "eWeek",
+                  "url": "https://www.eweek.com/news/top-10-ai-chatbots-ranked/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/chatbots/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "UCStrategies",
+                  "url": "https://ucstrategies.com/news/best-ai-chatbots-2026-i-tested-chatgpt-claude-gemini-perplexity-and-grok/",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "account_block",
+          "type": "חסימת חשבון בלי הסבר",
+          "text": "משתמשים מדווחים על חשבונות שנחסמו בלי הסבר, ועל תמיכה שהיא בוט בלבד.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Claude",
+                "url": "https://www.trustpilot.com/review/claude.ai?page=1",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 2,164 ביקורות, 81% מהן כוכב אחד. התלונות נקראו בביקורות מנובמבר 2026.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -5044,8 +5459,28 @@
             "worthwhile": null,
             "basis": "גודל המכסה ומחזור ההתחדשות לא צוינו.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "מקום שני אצל eWeek, אבל Zapier מתלונן על חוסר עקביות. מודל התמונות שלו, Nano Banana, נבחר בכל שש סקירות התמונות, אך זה לא מספיק לכלי כולו.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "eWeek",
+                  "url": "https://www.eweek.com/news/top-10-ai-chatbots-ranked/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/chatbots/",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -5391,8 +5826,17 @@
             "worthwhile": null,
             "basis": "המכסה ומחזור ההתחדשות לא פורסמו.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "מופיע בכל הסקירות, אבל תמיד רק כהמלצה למשתמשי Microsoft.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -5710,6 +6154,48 @@
             "worthwhile": true,
             "basis": "חיפושים בסיסיים כמעט ללא הגבלה ו־3 חיפושי Pro ביום.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "מומלץ למחקר ולחיפוש: נבחר בארבע מתוך שש הסקירות שנקראו.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/chatbots/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "eWeek",
+                  "url": "https://www.eweek.com/news/top-10-ai-chatbots-ranked/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Tom's Guide מחקר",
+                  "url": "https://www.tomsguide.com/ai/i-tested-notebooklm-vs-perplexity-for-deep-research-with-5-difficult-prompts-heres-the-clear-winner",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "billing_surprise",
+          "type": "חיוב אחרי ביטול או חידוש שנתי מפתיע",
+          "text": "משתמשים מדווחים על חיוב שנמשך אחרי ביטול ועל תהליך ביטול מסורבל.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Perplexity",
+                "url": "https://www.trustpilot.com/review/perplexity.ai?page=1",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 849 ביקורות, 83% מהן כוכב אחד. בהערות המחקר שתי דוגמאות מתוארכות מאוקטובר 2026.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -5975,8 +6461,17 @@
             "worthwhile": null,
             "basis": "לא נמצא מקור רשמי על מכסה חינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "שתי תוויות חיוביות, כל אחת במקור אחד בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -6260,8 +6755,17 @@
             "worthwhile": null,
             "basis": "המכסה מתחדשת מדי שבוע, אבל גודלה לא פורסם.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "סקירה אחת קובעת שהוא לא מומלץ, ויש תלונות על דיוק.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -6503,8 +7007,17 @@
             "worthwhile": null,
             "basis": "חינמי לכולם לפי המקור, בלי פירוט של מכסות.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "מוזכר רק כבחירה לרשתות חברתיות.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -6827,8 +7340,17 @@
             "worthwhile": null,
             "basis": "גודל המכסה ומחזור ההתחדשות לא צוינו.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -7158,6 +7680,32 @@
             "worthwhile": false,
             "basis": "400 נקודות חד־פעמיות שאינן מתחדשות, והמצגות נושאות את התווית של Gamma.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר בשתי סקירות מצגות, אחת מהן ישנה, ומשתמשים מדווחים שה־AI מודיע על שינוי שלא ביצע.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "ai_false_report",
+          "type": "ה־AI אומר שעשה משהו שלא עשה",
+          "text": "משתמשים מדווחים שה־AI מודיע שביצע שינוי בשקופית בלי ששינה דבר, ושחלון ההחזר הוא 3 ימים בלבד.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Gamma",
+                "url": "https://www.trustpilot.com/review/gamma.app?page=1",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 1.6 מתוך 5 על סמך 131 ביקורות. בהערות המחקר דוגמה מתוארכת אחת לכל תלונה.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -7536,8 +8084,17 @@
             "worthwhile": true,
             "basis": "תיקון טעויות שוטף ו־100 הנחיות AI בחודש.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר כמנצח כללי רק במקור ישן.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -7816,8 +8373,17 @@
             "worthwhile": true,
             "basis": "ניסוח מחדש של עד 125 מילים בכל פעם, בלי מכסה כוללת מוצהרת.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "אף סוקר לא המליץ עליו. הציון הגבוה אצל משתמשים מגיע כנראה מביקורות שהחברה מזמינה.",
+            "evidence": {
+              "file": "research/community/user-experience-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -8104,8 +8670,17 @@
             "worthwhile": false,
             "basis": "אין תוכנית חינמית, רק 14 ימי ניסיון.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "שתי סקירות, שתיהן עם תוויות נישה.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -8420,8 +8995,17 @@
             "worthwhile": true,
             "basis": "50,000 תווים בחודש. הטקסטים בגרסה החינמית משמשים לאימון.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -8683,8 +9267,17 @@
             "worthwhile": false,
             "basis": "אין תוכנית חינמית, רק 7 ימי ניסיון.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר בשלוש סקירות, אבל לשיווק בלבד ורק אחת מהן עדכנית.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -8972,8 +9565,17 @@
             "worthwhile": false,
             "basis": "500 נקודות בשבוע, אבל הוויזואלים נושאים מיתוג של Napkin.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -9239,8 +9841,17 @@
             "worthwhile": false,
             "basis": "10 ניסוחים מחדש ביום, מתחת לסף של 20 בקשות ביום.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -9593,6 +10204,48 @@
             "worthwhile": false,
             "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "מומלץ לסגנון אמנותי אצל Zapier, Buffer ו־eWeek. לא נמצא ב־30 המקומות הראשונים בטבלת הדירוג של Artificial Analysis.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/best-ai-image-generator/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Buffer",
+                  "url": "https://buffer.com/resources//ai-image-generator/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "eWeek",
+                  "url": "https://eweek.com/news/ai-image-generators-power-ranking-2026/",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "billing_surprise",
+          "type": "חיוב אחרי ביטול או חידוש שנתי מפתיע",
+          "text": "משתמשים מדווחים על חיוב שנמשך אחרי ביטול המנוי.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Midjourney",
+                "url": "https://nz.trustpilot.com/review/www.midjourney.com",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 1.7 מתוך 5 על סמך 373 ביקורות. בהערות המחקר דוגמה מתוארכת אחת (6 באוגוסט 2026).",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -9924,8 +10577,17 @@
             "worthwhile": null,
             "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "שלוש בחירות, שתיים מהן במקורות חלשים.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -10206,8 +10868,17 @@
             "worthwhile": null,
             "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -10532,6 +11203,48 @@
             "worthwhile": null,
             "basis": "יצירות יומיות מוגבלות. הכמות לא צוינה.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר בכל שש הסקירות לעבודה בתוך Adobe, אבל משתמשים מדווחים על ירידה באיכות מאז העדכונים, ולכן אין המלצה מלאה.",
+            "evidence": {
+              "file": "research/community/user-experience-report.md",
+              "sources": [
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/best-ai-image-generator/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Adobe Community",
+                  "url": "https://community.adobe.com/questions-404/adobe-firefly-has-become-nearly-unusable-since-the-updates-1651563",
+                  "report": "research/community/user-experience-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "credits_on_failure",
+          "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+          "text": "משתמשים מדווחים שנקודות בתשלום יורדות גם כשהיצירה נכשלת, ושהאיכות ירדה מאז העדכונים האחרונים.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Adobe Community",
+                "url": "https://community.adobe.com/questions-404/adobe-firefly-has-become-nearly-unusable-since-the-updates-1651563",
+                "report": "research/community/user-experience-report.md"
+              },
+              {
+                "name": "שרשור 2",
+                "url": "https://community.adobe.com/bug-reports-403/adobe-taking-credits-when-generation-fails-1550475",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "פוסט אחד נקרא במלואו (15 באוקטובר 2026). שאר השרשורים בפורום של Adobe נספרו לפי הכותרת בלבד.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -10860,8 +11573,17 @@
             "worthwhile": null,
             "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר כקוד הפתוח הטוב ביותר במקור אחד בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -11112,8 +11834,17 @@
             "worthwhile": null,
             "basis": "נקודות איטיות שבועיות לחשבונות זכאים. הכמות לא צוינה.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר לטקסט בתמונה בשני מקורות, אבל Zapier כותב שפיגר.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -11464,8 +12195,17 @@
             "worthwhile": null,
             "basis": "150 Fast Tokens ביום עם רישיון מסחרי. המקור לא מפרט כמה תמונות זה מאפשר.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "שלוש בחירות, אחת מהן ישנה, והציון הגבוה אצל משתמשים מגיע מביקורות מוזמנות.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -11737,8 +12477,17 @@
             "worthwhile": false,
             "basis": "25 נקודות חד־פעמיות לחשבון API חדש.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -12043,6 +12792,32 @@
             "worthwhile": null,
             "basis": "100 יחידות חישוב ביום. רישיון מסחרי לא מופיע בתוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "credits_run_out",
+          "type": "הנקודות נגמרות בתוך ימים או באמצע משימה",
+          "text": "משתמשים מדווחים שהנקודות נגמרות מהר, בעיקר כשמשתמשים בסוכן.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Krea",
+                "url": "https://www.trustpilot.com/review/www.krea.ai",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 3.6 מתוך 5 על סמך 177 ביקורות. בדוח הכלי רשום תחת \"נקודות יורדות גם כשהתוצאה נכשלה\"; הסוג כאן נבחר לפי נוסח התלונות עצמן.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -12450,8 +13225,17 @@
             "worthwhile": false,
             "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -12739,8 +13523,33 @@
             "worthwhile": null,
             "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "מנצח בהשוואה של Style Factory, ציון 4.7 ב־Capterra על סמך 13,450 ביקורות, ונבחר גם אצל TechRadar (מקור ישן).",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "Style Factory",
+                  "url": "https://stylefactoryproductions.com/blog/adobe-express-vs-canva",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Capterra",
+                  "url": "https://www.capterra.com/compare/168956-174232/Canva-vs-adobe-express",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "TechRadar",
+                  "url": "https://www.techradar.com/best/best-logo-designer",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -13056,8 +13865,17 @@
             "worthwhile": null,
             "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "ביקורת פושרת בשני מקורות.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -13409,8 +14227,17 @@
             "worthwhile": null,
             "basis": "יצירות חינמיות יומיות בחלק מהתכונות. הכמות לא צוינה.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר לעסקים במקור ישן, ומפסיד ל־Canva בהשוואה של Style Factory.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -13887,6 +14714,53 @@
             "worthwhile": false,
             "basis": "התמונות בתוכנית החינמית ציבוריות, שייכות ל־Recraft ואינן לשימוש מסחרי.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "מומלץ לעיצוב ולקובצי וקטור אצל Designlab, Zapier, Buffer ו־G2.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "Designlab",
+                  "url": "https://designlab.com/blog/top-best-ai-logo-generators-a-review",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/best-ai-image-generator/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Buffer",
+                  "url": "https://buffer.com/resources//ai-image-generator/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "G2",
+                  "url": "https://www.g2.com/articles/best-ai-image-generator-software",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "no_refund",
+          "type": "אין החזר, או חלון החזר קצר",
+          "text": "משתמשים מדווחים על סירוב להחזר אחרי שימוש ביותר מ־30 נקודות, ועל נקודות שיורדות על יצירות כושלות.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Recraft",
+                "url": "https://br.trustpilot.com/review/www.recraft.ai",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 2.4 מתוך 5 על סמך 47 ביקורות, 40 מהן מהשנה האחרונה. בהערות המחקר שתי דוגמאות מתוארכות לכל תלונה.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -14247,8 +15121,28 @@
             "worthwhile": null,
             "basis": "המקור לא מציין אם יש נקודות בינה מלאכותית מתחדשות.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "מקרה גבולי: ציון 4.3 במבחן של Style Factory, והמקור השני הוא ביקורות Trustpilot שהחברה מזמינה ורובן ישנות. לפי כלל המחקר זה לא מספיק להמלצה מלאה.",
+            "evidence": {
+              "file": "research/community/user-experience-report.md",
+              "sources": [
+                {
+                  "name": "Style Factory Kittl",
+                  "url": "https://www.stylefactoryproductions.com/blog/kittl-review",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Trustpilot Kittl",
+                  "url": "https://uk.trustpilot.com/review/kittl.com?page=4",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -14598,8 +15492,17 @@
             "worthwhile": null,
             "basis": "נקודות חודשיות שמתחדשות. הכמות לא צוינה.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -14895,8 +15798,17 @@
             "worthwhile": null,
             "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -15211,8 +16123,17 @@
             "worthwhile": null,
             "basis": "יש תוכנית חינמית, אבל המכסות שלה לא נקראו.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -15538,6 +16459,32 @@
             "worthwhile": true,
             "basis": "500 נקודות זיכוי לבינה מלאכותית בחודש ו־3 פרויקטים.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "ל־Figma Make יש מבחן מעצבים אחד, ו־Zapier פסל אותו.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "credits_run_out",
+          "type": "הנקודות נגמרות בתוך ימים או באמצע משימה",
+          "text": "ב־Figma Make משתמשים מדווחים ש־3,000 נקודות נגמרות בתוך כ־3 ימים, בעיקר על תיקון טעויות של ה־AI.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "פורום Figma",
+                "url": "https://forum.figma.com/share-your-feedback-26/figma-make-ai-credit-limits-not-feasible-51713/index19.html",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "נספר",
+            "note": "שרשור בפורום הרשמי של Figma עם 190 תגובות, פעיל ממרץ עד 13 בנובמבר 2026.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -15832,8 +16779,17 @@
             "worthwhile": null,
             "basis": "500 נקודות בחודש ופרסום בדומיין של Framer. המקור לא מפרט אם האתר נושא מיתוג.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "בחירה אחת בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -16151,8 +17107,17 @@
             "worthwhile": false,
             "basis": "שימוש חודשי שמספיק לאתר שלם לפי המקור, אבל האתר נושא תג של Relume.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר על מבנה האתר במבחן אחד בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -16361,8 +17326,17 @@
             "worthwhile": null,
             "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "מבחן מעצבים אחד, שממליץ עליו לחקירה ראשונית בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -16545,8 +17519,17 @@
             "worthwhile": null,
             "basis": "80 נקודות ביום ופרויקט אחד. לא ברור כמה מסכים זה מאפשר.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -16826,8 +17809,17 @@
             "worthwhile": true,
             "basis": "עד 7 הודעות ביום, עם פרסום ב־Vercel: עומד בסף של פרויקט אחד שאפשר לפרסם.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר רק במקור ישן.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -17193,8 +18185,17 @@
             "worthwhile": null,
             "basis": "אתר של שני עמודים בדומיין webflow.io. המקור לא מפרט אם האתר נושא מיתוג.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -17515,6 +18516,43 @@
             "worthwhile": false,
             "basis": "האתר החינמי נושא מיתוג של Wix. מכסת הבינה המלאכותית לא פורטה.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "מוביל בשתי סקירות מעשיות של בוני אתרים, אצל Zapier ואצל Tech.co.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/best-ai-website-builder/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Tech.co",
+                  "url": "https://tech.co/website-builders/best-ai-website-builders",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "lock_in",
+          "type": "קשה לעזוב או להוריד את מה שיצרת",
+          "text": "משתמשים מדווחים שקשה להעביר אתר ודומיין החוצה, ועל חידוש במחיר גבוה בלי הודעה.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Wix",
+                "url": "https://nz.trustpilot.com/review/www.wix.com?page=6",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 3.4 מתוך 5 על סמך 29,105 ביקורות. בהערות המחקר שתי דוגמאות מתוארכות לכל תלונה, מאוגוסט ומספטמבר 2026.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -17832,6 +18870,32 @@
             "worthwhile": false,
             "basis": "העריכה הבסיסית חינמית, אבל כלי הבינה המלאכותית שמורים ל־Pro.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "בחירה אחת בלבד, ומשתמשים מתלוננים שכמעט כל התכונות עברו לתשלום.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "lock_in",
+          "type": "קשה לעזוב או להוריד את מה שיצרת",
+          "text": "משתמשים מדווחים שהייצוא נחסם בשלב האחרון עד שמשלמים, ושתכונות שהיו חינמיות עברו ל־Pro.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "unstar",
+                "url": "https://unstar.app/blog/capcut-everything-is-pro-now-cant-export-reviews-2026",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "נספר",
+            "note": "ניתוח של 14,000 ביקורות מיולי עד ספטמבר 2026: 31.2% מהביקורות השליליות המפורטות עוסקות בחומת התשלום. הכלי לא מופיע בטבלת האזהרות שבדוח; הסוג הוא הקרוב ביותר מבין העשרה.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -18138,8 +19202,28 @@
             "worthwhile": null,
             "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "נבחר בשתי הסקירות העדכניות, אצל Zapier ואצל Buffer. לא נקראו ביקורות משתמשים.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/best-ai-video-generator/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Buffer",
+                  "url": "https://buffer.com/library/ai-video-tools/",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -18507,8 +19591,28 @@
             "worthwhile": false,
             "basis": "נקודות AI חד־פעמיות, והייצוא נושא סימן מים.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "נבחר בשתי הסקירות העדכניות, אצל Zapier ואצל Buffer.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/best-ai-video-generator/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Buffer",
+                  "url": "https://buffer.com/library/ai-video-tools/",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -18827,8 +19931,28 @@
             "worthwhile": false,
             "basis": "הקליפים בתוכנית החינמית נושאים סימן מים.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "נבחר בשתי הסקירות העדכניות, אצל Zapier ואצל Buffer.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/best-ai-video-generator/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Buffer",
+                  "url": "https://buffer.com/library/ai-video-tools/",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -19199,8 +20323,17 @@
             "worthwhile": false,
             "basis": "עד 3 סרטונים בחודש, עד דקה, עם סימן מים.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "בחירה עדכנית אחת בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -19567,8 +20700,17 @@
             "worthwhile": false,
             "basis": "הסרטונים בתוכנית החינמית נושאים סימן מים.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "בחירה עדכנית אחת בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -19883,8 +21025,17 @@
             "worthwhile": false,
             "basis": "הנקודות ניתנות לכל חיי החשבון ואינן מתחדשות.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -20155,8 +21306,17 @@
             "worthwhile": null,
             "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -20489,8 +21649,17 @@
             "worthwhile": false,
             "basis": "עמוד המחירים אינו מציג תוכנית חינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -20839,8 +22008,33 @@
             "worthwhile": false,
             "basis": "50 נקודות ביום, אבל בלי הורדות ובלי זכויות מסחריות.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "מוביל בטבלת המוזיקה של Artificial Analysis ונבחר בשתי סקירות. על גרסה 6 יש גם ביקורת מעורבת.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "AA כלי",
+                  "url": "https://artificialanalysis.ai/music/leaderboard/instrumental",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "ToolChase",
+                  "url": "https://www.toolchase.com/blog/best-ai-music-generators/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "SoftPicker",
+                  "url": "https://softpicker.com/best-ai-music-generators/",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -21186,6 +22380,43 @@
             "worthwhile": null,
             "basis": "10 אלף נקודות בחודש. רישיון מסחרי לא מצוין בתוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "מקום ראשון בטבלת הדיבור של Artificial Analysis ובחירה ראשונה אצל Zapier.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "AA דיבור",
+                  "url": "https://artificialanalysis.ai/text-to-speech/leaderboard",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/best-ai-voice-generator/",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "billing_surprise",
+          "type": "חיוב אחרי ביטול או חידוש שנתי מפתיע",
+          "text": "משתמשים מדווחים על חיוב שנמשך אחרי ביטול ועל נקודות שאבדו.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot ElevenLabs",
+                "url": "https://www.trustpilot.com/review/elevenlabs.io?page=7",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 3.0 מתוך 5 על סמך 1,126 ביקורות, 37% מהן כוכב אחד. נקרא בסבב המחקר הקודם.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -21483,8 +22714,17 @@
             "worthwhile": null,
             "basis": "מספר מוגבל של העלאות בחודש. הכמות לא צוינה.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -21768,6 +23008,43 @@
             "worthwhile": true,
             "basis": "הקראה בלי מכסה מוצגת, רק בקולות רובוטיים.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "בעשירייה הראשונה בטבלת הדיבור של Artificial Analysis ונבחר אצל Zapier.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "AA",
+                  "url": "https://artificialanalysis.ai/text-to-speech/leaderboard",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/best-ai-voice-generator/",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "billing_surprise",
+          "type": "חיוב אחרי ביטול או חידוש שנתי מפתיע",
+          "text": "משתמשים מדווחים על חידושי מנוי וחיובים לא צפויים, ועל קושי לקבל החזר.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Speechify",
+                "url": "https://uk.trustpilot.com/review/speechify.com?page=3",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "התלונות נקראו בביקורות מאוקטובר 2026. הציון הכללי גבוה (4.7), כנראה בזכות ביקורות שהחברה מזמינה.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -22079,6 +23356,32 @@
             "worthwhile": null,
             "basis": "10 נקודות ביום ועוד 100 בחודש. המקור שנקרא לא מפרט זכויות והורדות בחינם.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "שתי סקירות, אבל לא מופיע בטבלת הדירוג, ומשתמשים מדווחים שאי אפשר להוריד שירים.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "lock_in",
+          "type": "קשה לעזוב או להוריד את מה שיצרת",
+          "text": "משתמשים מדווחים שאי אפשר להוריד את השירים שיצרו.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Udio",
+                "url": "https://uk.trustpilot.com/review/udio.com",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "נספר",
+            "note": "שלוש ביקורות מתוארכות בתוך חצי השנה האחרונה: 28 ביוני, 5 ביולי ו־21 ביולי 2026.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -22319,8 +23622,17 @@
             "worthwhile": null,
             "basis": "יש ניסיון חינמי, ולא צוין אם הדקות מתחדשות.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר אצל Zapier ובמקור ישן אחד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -22587,8 +23899,17 @@
             "worthwhile": null,
             "basis": "שימוש חינמי עם מגבלות יומיות. הכמויות לא צוינו.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -22905,8 +24226,17 @@
             "worthwhile": false,
             "basis": "10 דקות עיבוד, ולא צוין אם הן מתחדשות.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -23201,8 +24531,17 @@
             "worthwhile": false,
             "basis": "50 נקודות חד־פעמיות לחשבון חדש.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -23533,8 +24872,17 @@
             "worthwhile": null,
             "basis": "נקודות יומיות והורדות כלולות. כמות הנקודות לא צוינה.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "מודל Lyria מופיע בטבלת דירוג אחת בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -23875,8 +25223,17 @@
             "worthwhile": false,
             "basis": "ייצוא רק ממודלים ישנים, ופרסום בגלריה הציבורית.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "All3DP לא התרשם, והמקום הראשון מופיע רק בכתבה מקדמת.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -24289,8 +25646,17 @@
             "worthwhile": true,
             "basis": "100 נקודות ועד 10 הורדות בחודש, ברישיון CC BY 4.0: מעל הסף של 5 מודלים בחודש.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "המלצה של All3DP עם הסתייגות על חוסר עקביות.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -24528,8 +25894,17 @@
             "worthwhile": null,
             "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "המלצה של All3DP. המקום הראשון בטבלה מגיע דרך בלוג של מתחרה.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -24853,8 +26228,17 @@
             "worthwhile": false,
             "basis": "יצירה אחת ביום, וייצוא רק של מודלים מהקהילה.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -25175,8 +26559,17 @@
             "worthwhile": false,
             "basis": "עד 4 יצירות עולם, לשימוש אישי בלבד.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -25550,8 +26943,17 @@
             "worthwhile": false,
             "basis": "בלי נקודות AI, וייצוא לרשת נושא סימן מים.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -25816,8 +27218,17 @@
             "worthwhile": null,
             "basis": "המקורות שנקראו לא מתארים את התוכנית החינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר כקוד הפתוח הטוב ביותר במקור אחד ישן.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -26289,6 +27700,48 @@
             "worthwhile": null,
             "basis": "שימוש מוגבל ביכולות הליבה. המכסה לא פורסמה.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר אצל Zapier ואצל The New Stack, אבל תלונות חוזרות של משתמשים על חיובים, על החזרים ועל תמיכה מחלישות את ההמלצה לפי דוח חוויית המשתמשים.",
+            "evidence": {
+              "file": "research/community/user-experience-report.md",
+              "sources": [
+                {
+                  "name": "Zapier",
+                  "url": "https://www.zapier.com/blog/ai-coding-tools",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "The New Stack",
+                  "url": "https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Trustpilot Cursor",
+                  "url": "https://www.trustpilot.com/review/cursor.com?page=1",
+                  "report": "research/community/user-experience-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "no_refund",
+          "type": "אין החזר, או חלון החזר קצר",
+          "text": "משתמשים מדווחים על חיובים ושדרוגי מסלול בלי אישור, בלי החזר, ועם תמיכה שהיא בוט בלבד.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Cursor",
+                "url": "https://www.trustpilot.com/review/cursor.com?page=1",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 1.5 מתוך 5 על סמך 351 ביקורות. התלונות נקראו בביקורות מספטמבר ומאוקטובר 2026.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -26596,8 +28049,17 @@
             "worthwhile": null,
             "basis": "המכסה מתחדשת מדי שבוע, אבל גודלה לא פורסם.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר אצל The New Stack בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -26986,8 +28448,33 @@
             "worthwhile": false,
             "basis": "התוכנית החינמית של Claude אינה כוללת את Claude Code.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "הכלי האהוב ביותר בסקר של Pragmatic Engineer, ונבחר אצל Zapier ואצל The New Stack.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "Pragmatic Engineer",
+                  "url": "https://newsletter.pragmaticengineer.com/p/ai-tooling-2026?open=false",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Zapier",
+                  "url": "https://www.zapier.com/blog/ai-coding-tools",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "The New Stack",
+                  "url": "https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -27291,8 +28778,17 @@
             "worthwhile": null,
             "basis": "מכסה קלה לעבודה עם סוכנים. הגודל לא פורסם.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר אצל Zapier בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -27649,6 +29145,32 @@
             "worthwhile": true,
             "basis": "2,000 השלמות קוד בחודש, עם צ׳אט וסוכן בשימוש מוגבל.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר אצל Zapier בלבד, ומשתמשים מתוסכלים מאז המעבר לחיוב לפי שימוש.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "credits_run_out",
+          "type": "הנקודות נגמרות בתוך ימים או באמצע משימה",
+          "text": "מאז המעבר לחיוב לפי שימוש ביוני 2026 משתמשים מדווחים שהקצבה החודשית נגמרת בתוך יום־יומיים.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "VSM",
+                "url": "https://visualstudiomagazine.com/articles/2026/08/07/copilot-credit-complaints-keep-coming-too-expensive-to-use.aspx",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "נספר",
+            "note": "כתבה של Visual Studio Magazine מ־7 באוגוסט 2026 מביאה שלושה דיווחים של משתמשים שונים.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -27989,8 +29511,17 @@
             "worthwhile": null,
             "basis": "זמין בתוכנית Free של ChatGPT. המכסה לא פורסמה.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר אצל The New Stack בלבד; הסקירה של Zapier ישנה.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -28258,8 +29789,17 @@
             "worthwhile": false,
             "basis": "הכלי עצמו חינמי, אבל השימוש במודלים בתשלום.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -28600,8 +30140,17 @@
             "worthwhile": null,
             "basis": "50 נקודות זיכוי בחודש: מכסה קטנה.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -28896,8 +30445,17 @@
             "worthwhile": false,
             "basis": "העורך חינמי, אבל הבינה המלאכותית דורשת מפתח אישי בתשלום.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -29215,8 +30773,33 @@
             "worthwhile": null,
             "basis": "מכסת הנקודות בחינם לא מוצגת בעמוד המחירים.",
             "inference": true
+          },
+          "recommended": {
+            "value": true,
+            "basis": "נבחר אצל Zapier ואצל Designlab, עם ציון 4.2 ב־Trustpilot על סמך 1,894 ביקורות.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": [
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/best-vibe-coding-tools/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Designlab",
+                  "url": "https://designlab.com/blog/best-vibe-coding-tools",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Trustpilot Lovable",
+                  "url": "https://www.trustpilot.com/review/lovable.dev?page=1",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -29561,6 +31144,43 @@
             "worthwhile": true,
             "basis": "מכסת AI יומית ואפליקציה מפורסמת אחת: עומד בסף של פרויקט אחד שאפשר לפרסם.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר אצל Zapier וב־G2, אבל סוקרים ומשתמשים מדווחים שהסוכן מודיע שתיקן בעיה כשלא תיקן, ולכן אין המלצה מלאה.",
+            "evidence": {
+              "file": "research/community/user-experience-report.md",
+              "sources": [
+                {
+                  "name": "Zapier",
+                  "url": "https://zapier.com/blog/best-vibe-coding-tools/",
+                  "report": "research/community/all-categories-report.md"
+                },
+                {
+                  "name": "Trustpilot Replit",
+                  "url": "https://www.trustpilot.com/review/repl.it",
+                  "report": "research/community/all-categories-report.md"
+                }
+              ]
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "ai_false_report",
+          "type": "ה־AI אומר שעשה משהו שלא עשה",
+          "text": "משתמשים וסוקרים מדווחים שהסוכן מודיע שתיקן בעיה כשלא תיקן, ועל חיובי חריגה.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Replit",
+                "url": "https://www.trustpilot.com/review/repl.it",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "נקרא בסבב המחקר הקודם ולא נקרא מחדש.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -29903,6 +31523,32 @@
             "worthwhile": null,
             "basis": "עד 5 אפליקציות ו־25 נקודות הודעה בחודש. המקור לא מפרט אם האפליקציה נושאת מיתוג.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר רק במקור ישן.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "credits_on_failure",
+          "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+          "text": "משתמשים מדווחים שנקודות יורדות גם כשהתוצאה שגויה, ועל מנוי חודשי שהפך לשנתי.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Base44",
+                "url": "https://trustpilot.com/review/base44.com",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 2.7 מתוך 5 על סמך 925 ביקורות, 54% מהן כוכב אחד. בהערות המחקר דוגמה מתוארכת אחת לכל תלונה.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -30221,8 +31867,17 @@
             "worthwhile": true,
             "basis": "חינמי במגבלות הקצב של הרמה החינמית, כולל פרסום של עד 2 אפליקציות לחשבונות זכאים.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "לא נמצאה המלצה.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -30557,6 +32212,32 @@
             "worthwhile": false,
             "basis": "מיליון טוקנים בחודש, אבל האתרים נושאים מיתוג של Bolt.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "רק סקירה עדכנית אחת.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "credits_on_failure",
+          "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+          "text": "משתמשים מדווחים שהטוקנים נשרפים על ניסיונות שלא מניבים תוצאה, ושאין החזר.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Bolt",
+                "url": "https://www.trustpilot.com/review/bolt.new?page=1",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "נספר",
+            "note": "שלוש ביקורות מתוארכות: 4 באוקטובר, 29 באוקטובר ו־11 בנובמבר 2026.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -30886,8 +32567,17 @@
             "worthwhile": false,
             "basis": "מתאימה לבנייה ולבדיקה, לא לפרסום גרסה חיה.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "בחירה אחת בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -31261,8 +32951,17 @@
             "worthwhile": false,
             "basis": "10 נקודות זיכוי, בלי פרסום לפרודקשן.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -31602,6 +33301,32 @@
             "worthwhile": null,
             "basis": "300 נקודות ביום. לא ברור כמה משימות זה מאפשר.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "מקום שני במקור אחד, וביקורות משתמשים גרועות מאוד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "credits_on_failure",
+          "type": "נקודות יורדות גם כשהתוצאה נכשלה",
+          "text": "משתמשים מדווחים שאלפי נקודות יורדות על משימות שלא בוצעו, ושהחזרים לא מטופלים.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Manus",
+                "url": "https://www.trustpilot.com/review/manus.im?page=1",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 1.2 מתוך 5 על סמך 210 ביקורות, 95% מהן כוכב אחד.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -31881,8 +33606,17 @@
             "worthwhile": null,
             "basis": "100 נקודות ביום, אבל המילוי נעצר אחרי תקרה כוללת שגובהה לא צוין.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -32210,8 +33944,17 @@
             "worthwhile": false,
             "basis": "אין תוכנית חינמית בענן. גרסת Community לאירוח עצמי חינמית.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "שני המקורות שממליצים הם בעלי אינטרס.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -32483,8 +34226,17 @@
             "worthwhile": false,
             "basis": "נקודות חד־פעמיות שתקפות 7 ימים.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -32778,8 +34530,17 @@
             "worthwhile": false,
             "basis": "אין תוכנית חינמית, רק ניסיון.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -33127,6 +34888,32 @@
             "worthwhile": true,
             "basis": "100 משימות ו־400 פעולות סוכן בחודש.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "המקורות שממליצים הם בעלי אינטרס או ישנים.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
+          }
+        },
+        "watch_out": {
+          "type_id": "billing_surprise",
+          "type": "חיוב אחרי ביטול או חידוש שנתי מפתיע",
+          "text": "משתמשים מדווחים על חידוש שנתי שלא שמו לב אליו, על חיובי חריגה ועל סירוב להחזר.",
+          "evidence": {
+            "file": "research/community/user-experience-report.md",
+            "sources": [
+              {
+                "name": "Trustpilot Zapier",
+                "url": "https://www.trustpilot.com/review/zapier.com?page=1",
+                "report": "research/community/user-experience-report.md"
+              }
+            ],
+            "strength": "לפי סיכום הדוח",
+            "note": "Trustpilot: 1.3 מתוך 5 על סמך 327 ביקורות. בהערות המחקר דוגמה מתוארכת אחת לכל תלונה, מאוגוסט עד אוקטובר 2026.",
+            "checked": "2026-11-18"
           }
         }
       }
@@ -33403,8 +35190,17 @@
             "worthwhile": false,
             "basis": "לא נמצאה תוכנית חינמית, רק ניסיון של 14 יום.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -33715,8 +35511,17 @@
             "worthwhile": true,
             "basis": "1,000 נקודות זיכוי בחודש.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "מקור אחד בלבד, בעל אינטרס.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -34047,8 +35852,17 @@
             "worthwhile": true,
             "basis": "1,000 נקודות זיכוי שמתחדשות ותהליכים ללא הגבלה. העמוד סותר את עצמו אם החידוש יומי או חודשי.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -34383,8 +36197,17 @@
             "worthwhile": false,
             "basis": "העמודים חינמיים, אבל Notion AI ניתן רק בניסיון מוגבל.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "הציונים של Notion AI סותרים זה את זה, ואחד המקורות ישן.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -34723,8 +36546,17 @@
             "worthwhile": true,
             "basis": "עד 100 מחברות ו־50 מקורות במחברת, במכסות יומיות. על פריטים שנוצרים יש סימן מים עד שמשדרגים.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "לא נקראה סקירה עדכנית.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -35059,8 +36891,17 @@
             "worthwhile": null,
             "basis": "תמלול ללא הגבלה, אבל סיכומים מוגבלים ובלי הורדת תמלולים.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "מקור עדכני אחד ומקור ישן אחד. משתמשים ב־G2 מדרגים אותו מעל Otter.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -35356,8 +37197,17 @@
             "worthwhile": true,
             "basis": "הערות פגישה בלי מכסה מוגדרת, עם היסטוריה של 30 יום.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר אצל Zapier בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -35697,8 +37547,17 @@
             "worthwhile": true,
             "basis": "300 דקות הקלטה בחודש, עד 30 דקות לשיחה.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "שלוש סקירות, אבל אין מבחן מעשי עדכני.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -36082,8 +37941,17 @@
             "worthwhile": true,
             "basis": "הקלטות ותמלולים ללא הגבלה, עם סיכומים מיידיים.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "נבחר אצל Zapier בלבד, כאפשרות חינמית.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -36406,8 +38274,17 @@
             "worthwhile": false,
             "basis": "הקלטות ללא הגבלה, אבל סיכום AI מלא רק ל־10 הפגישות הראשונות.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -36712,8 +38589,17 @@
             "worthwhile": null,
             "basis": "מכסת הנקודות בחינם אינה חד־משמעית במקור.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "מקור אחד בלבד.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -37078,8 +38964,17 @@
             "worthwhile": true,
             "basis": "5 פגישות בחודש של עד שעה, עם סיכום: עומד בסף של 5 שעות בחודש. בלי השמעת הקלטות.",
             "inference": true
+          },
+          "recommended": {
+            "value": null,
+            "basis": "הכלי לא נבדק בדוחות המחקר על קהילות וביקורות.",
+            "evidence": {
+              "file": null,
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     },
     {
@@ -37403,8 +39298,17 @@
             "worthwhile": null,
             "basis": "מכסת מילים שבועית. המספרים לא צוינו.",
             "inference": true
+          },
+          "recommended": {
+            "value": false,
+            "basis": "הסוקרים מיוצגים במקור אחד ישן עם קישורי שותפים. משתמשים משבחים אותו, אבל רוב הביקורות ישנות.",
+            "evidence": {
+              "file": "research/community/all-categories-report.md",
+              "sources": []
+            }
           }
-        }
+        },
+        "watch_out": null
       }
     }
   ]
