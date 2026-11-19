@@ -1,0 +1,20 @@
+- leonardo-ai | Leonardo.Ai | https://leonardo.ai
+- magnific | Magnific | https://www.magnific.com
+- photoroom | Photoroom | https://www.photoroom.com
+- base44 | Base44 | https://base44.com
+- bolt | Bolt | https://bolt.new
+- emergent | Emergent | https://emergent.sh
+- google-stitch | Stitch | https://stitch.google.com
+- relume | Relume | https://www.relume.ai
+- ux-pilot | UX Pilot | https://uxpilot.ai
+- captions | Captions | https://captions.ai
+- d-id | D-ID | https://www.d-id.com
+- heygen | HeyGen | https://www.heygen.com
+- opusclip | OpusClip | https://www.opus.pro
+- synthesia | Synthesia | https://www.synthesia.io
+- beautiful-ai | Beautiful.ai | https://www.beautiful.ai
+- gamma | Gamma | https://gamma.app
+- jasper | Jasper | https://www.jasper.ai
+- napkin-ai | Napkin AI | https://www.napkin.ai
+- quillbot | QuillBot | https://quillbot.com
+- wordtune | Wordtune | https://www.wordtune.com

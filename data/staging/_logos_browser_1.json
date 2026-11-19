@@ -1,0 +1,6 @@
+{
+  "hyper3d-rodin": {"file": "logos/hyper3d-rodin.png", "file_dark": null, "source_url": "https://hyper3d.ai/apple-touch-icon.png", "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (apple-touch-icon) ב־19 בנובמבר 2026. תמונה בגודל 128 פיקסלים עם רקע מלא (סמל לבן על אריח שחור)."},
+  "marble": {"file": null, "file_dark": null, "source_url": null,
+    "missing_reason": "באתר של Marble אין סמל נפרד למוצר: גם סמל האתר (favicon) וגם הסמל בכותרת הם הסמל של חברת האם World Labs.", "note": null}
+}

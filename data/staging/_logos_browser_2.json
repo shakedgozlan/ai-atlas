@@ -1,0 +1,23 @@
+{
+  "leonardo-ai": {
+    "file": "logos/leonardo-ai.png",
+    "file_dark": null,
+    "source_url": "https://leonardo.ai/images/leonardo_favicon.png",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026. תמונה בגודל 128 פיקסלים עם רקע מלא."
+  },
+  "magnific": {
+    "file": "logos/magnific.svg",
+    "file_dark": null,
+    "source_url": "https://media.magnific.com/magnific-favicons/favicon-dark.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026. קובץ וקטורי עם אריח רקע מלא, ולכן אין צורך בגרסה נוספת."
+  },
+  "photoroom": {
+    "file": "logos/photoroom.svg",
+    "file_dark": "logos/photoroom-dark.svg",
+    "source_url": "https://www.photoroom.com/favicons/safari-pinned-tab.svg",
+    "missing_reason": null,
+    "note": "סמל בלבד, בלי שם המותג. נלקח מסמל האתר הרשמי (favicon) ב־19 בנובמבר 2026. בצבע אחד (סמל ה־mask-icon של האתר), עם גרסה כהה ולבנה."
+  }
+}
