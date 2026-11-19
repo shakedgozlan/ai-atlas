@@ -10,6 +10,13 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dataPath = process.env.ATLAS_DATA || join(root, 'data/tools.json');
 const outPath = process.env.ATLAS_SOURCES_OUT || join(root, 'sources.html');
 const data = JSON.parse(readFileSync(dataPath, 'utf8'));
+// Google Analytics: נטען רק כשיש מזהה מדידה ב־build/analytics.config.json (או במשתנה ATLAS_GA_ID).
+// מזהה ריק משאיר את האתר בלי שום קוד מדידה.
+const gaId = String(process.env.ATLAS_GA_ID ?? JSON.parse(readFileSync(new URL('./analytics.config.json', import.meta.url), 'utf8')).measurement_id ?? '').trim();
+if (gaId && !/^G-[A-Z0-9]{4,20}$/.test(gaId)) throw new Error('מזהה המדידה של Google Analytics לא תקין: ' + gaId);
+const gaHtml = gaId ? `
+<script async src="https://www.googletagmanager.com/gtag/js?id=${gaId}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${gaId}')</script>` : '';
 
 const stamp = (rel) => createHash('sha256').update(readFileSync(new URL(rel, import.meta.url))).digest('hex').slice(0, 10);
 const cssV = stamp('../assets/style.css');
@@ -119,7 +126,7 @@ const html = `<!doctype html>
 <meta name="color-scheme" content="light dark">
 <script>try{var t=localStorage.getItem('atlas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="stylesheet" href="assets/style.css?v=${cssV}">
-<link rel="stylesheet" href="assets/sources.css?v=${srcCssV}">
+<link rel="stylesheet" href="assets/sources.css?v=${srcCssV}">${gaHtml}
 </head>
 <body class="src-page">
 <a class="skip" href="#main">דילוג לתוכן</a>
