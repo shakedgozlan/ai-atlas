@@ -54,6 +54,8 @@ for (const t of data.tools) {
 }
 for (const list of toolsByCat.values()) list.sort((a, b) => a.id - b.id);
 const liveCats = data.categories.filter((c) => toolsByCat.has(c.id));
+/* מספור לפי סדר ההצגה: סדר הקטגוריות, ובתוך כל קטגוריה סדר הכלים */
+{ let n = 0; for (const c of liveCats) for (const t of toolsByCat.get(c.id)) t.no = ++n; }
 
 /* ---------- כרטיס ---------- */
 
@@ -102,31 +104,62 @@ function isNewModel(t) {
 const CHEAP_MAX = 10;
 // סדר התגים הוא סדר החשיבות. בכרטיס מוצגים שני הראשונים בלבד (בקשת שקד), ובחלון הפרטים כולם.
 const TAGS = [
-  ['popular', 'פופולרי', 'מהאתרים שהכי הרבה נכנסים אליהם'],
-  ['reviews', 'בולט בסקירות', 'מופיע ברוב הסקירות העצמאיות'],
-  ['free', 'חינם מתחדש', 'נקודות חינם שמתחדשות כל יום או כל חודש'],
-  ['low', 'מחיר נמוך', 'מנוי של עד 10 דולר לחודש'],
+  ['recommended', 'מומלץ', 'לפחות שני מקורות עצמאיים ממליצים עליו, ואין תלונה חמורה שחוזרת על התוצר עצמו'],
+  ['popular', 'פופולרי', 'מהכלים שהכי הרבה משתמשים בהם, לפי נתוני שימוש חיצוניים'],
+  ['free', 'חינם משתלם', 'תוכנית חינמית שמתחדשת, נותנת תוצר שמיש ומספיקה לשימוש אמיתי'],
   ['new', 'מודל חדש', 'גרסה שיצאה ב־90 הימים האחרונים'],
 ];
 const CARD_TAGS_MAX = 2;
 function toolTags(t) {
   const g = t.filters?.tags || {};
   const sp = t.filters?.starting_price || {};
+  // החלטת שקד (19.11.2026): ארבעה תגים. ״מחיר נמוך״ ירד, ״בולט בסקירות״ הוחלף ב״מומלץ״.
+  // ״מומלץ״ מוצג רק כשהשדה קיים בנתונים; עד אז אף כלי לא מקבל אותו.
   const on = {
+    recommended: g.recommended?.value === true,
     popular: g.popular?.value === true,
-    reviews: g.review_roundups?.value === true,
-    free: g.free_renewing?.value === true,
-    low: sp.verified === true && sp.currency === 'USD' && typeof sp.amount === 'number' && sp.amount <= CHEAP_MAX,
+    free: g.free_plan?.worthwhile === true,
     new: isNewModel(t),
   };
   return TAGS.filter(([k]) => on[k]);
+}
+// שתי דרגות לאזהרה (החלטת שקד, 19.11.2026): תלונה על חיוב, החזר, תמיכה או חשבון מוצגת בשקט,
+// ותלונה על התוצר עצמו מוצגת כפס בולט. החלוקה לפי סוג התלונה שבקובץ הנתונים.
+const WATCH_QUIET = new Set(['bot_support', 'account_block', 'billing_surprise', 'no_refund']);
+const watchLevel = (t) => (WATCH_QUIET.has(t.filters?.watch_out?.type_id) ? 'quiet' : 'loud');
+function watchHtml(t, level) {
+  const w = String(t.filters?.watch_out?.text || '').trim();
+  if (!w || watchLevel(t) !== level) return '';
+  return `<p class="watch watch-${level}"><span class="watch-k">שימו לב</span><span class="watch-t">${esc(w)}</span></p>`;
+}
+function evidenceLinks(ev) {
+  const src = (ev?.sources || []).filter((x) => has(x.url));
+  if (!src.length) return '';
+  return src.map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer"><bdi>${esc(x.name || x.url)}</bdi><span class="sr-only"> (נפתח בלשונית חדשה)</span></a>`).join('<span aria-hidden="true">, </span>');
+}
+function sheetNotesHtml(t) {
+  const w = t.filters?.watch_out;
+  const r = t.filters?.tags?.recommended;
+  const out = [];
+  if (w && String(w.text || '').trim()) {
+    const links = evidenceLinks(w.evidence);
+    const strength = w.evidence?.strength === 'נספר'
+      ? 'הדיווחים נספרו אחד אחד.'
+      : 'לפי סיכום דוח המחקר, בלי ספירה של כל דיווח.';
+    out.push(`<div class="note note-watch note-${watchLevel(t)}"><p class="note-h">שימו לב</p><p class="note-t">${esc(w.text)}</p><p class="note-src">${links ? `מקור: ${links}. ` : ''}${strength}</p></div>`);
+  }
+  if (r?.value === true && has(r.basis)) {
+    const links = evidenceLinks(r.evidence);
+    out.push(`<div class="note note-rec"><p class="note-h">למה מומלץ</p><p class="note-t">${esc(r.basis)}</p>${links ? `<p class="note-src">מקורות: ${links}.</p>` : ''}</div>`);
+  }
+  return out.length ? `<div class="sheet-notes">${out.join('')}</div>` : '';
 }
 const tagPill = ([k, label]) => `<li class="verify tag-${k}">${label}</li>`;
 function tagsHtml(t, max = CARD_TAGS_MAX, cls = '') {
   const items = toolTags(t).slice(0, max).map(tagPill).join('');
   return items ? `<ul class="card-tags${cls}" role="list" aria-label="תגים">${items}</ul>` : '';
 }
-const legendHtml = `<div class="legend" role="group" aria-labelledby="legend-h"><h2 class="filters-h" id="legend-h">מקרא התגים</h2><ul class="legend-list" role="list">${TAGS.map((x) => `<li><span class="verify tag-${x[0]}">${x[1]}</span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul></div>`;
+const legendHtml = `<details class="legend" id="legend"><summary class="btn legend-btn"><span>מקרא התגים</span></summary><ul class="legend-list" role="list">${TAGS.map((x) => `<li><span class="verify tag-${x[0]}">${x[1]}</span><span class="legend-text">${x[2]}</span></li>`).join('')}</ul></details>`;
 
 function verifyPill(t) {
   const p = t.pricing || {};
@@ -186,7 +219,11 @@ function sourcesHtml(t) {
 const unverified = (v) => /לא אומת/.test(String(v ?? ''));
 const planUnverified = (p) => (p.price === null || p.price === undefined) && (!has(p.price_text) || unverified(p.price_text));
 // האטלס פונה ליוצרים ולסטודנטים, ולכן תוכניות לארגונים בהצעת מחיר לא מוצגות.
-const planForOrgs = (p) => /enterprise/i.test(p.name) || /הצעת מחיר/.test(String(p.price_text ?? ''));
+// גם תוכניות לצוותים לא מוצגות (החלטת שקד, 19.11.2026): הקהל הוא אדם אחד שמשלם על עצמו.
+// ״Business״ מוסתרת רק כשהמחיר שלה נקוב למשתמש או למושב, כי אז זו תוכנית של ארגון.
+const planForTeams = (p) => /\bteams?\b|organi[sz]ation|google workspace/i.test(p.name)
+  || (/\bbusiness\b/i.test(p.name) && /משתמש|מושב|רישיון|עורך/.test(String(p.per ?? '')));
+const planForOrgs = (p) => /enterprise/i.test(p.name) || /הצעת מחיר/.test(String(p.price_text ?? '')) || planForTeams(p);
 const BILL = { 'חודשי': 'm', 'שנתי': 'y' };
 
 // תוכניות לתצוגה: בלי מה שלא אומת ובלי תוכניות לארגונים, עם שם קצר (בלי קידומת שחוזרת בכל השמות),
@@ -203,7 +240,23 @@ function shownPlans(t) {
     const same = out.filter((q) => q.p.name === o.p.name).map((q) => q.p.billing);
     if (same.includes('חודשי') && same.includes('שנתי') && BILL[o.p.billing]) o.bill = BILL[o.p.billing];
   }
+  // כשיש בכלי מתג חודשי ושנתי, תוכנית שנמצא לה רק אחד מהשניים אומרת זאת במפורש
+  if (out.some((o) => o.bill)) {
+    for (const o of out) if (!o.bill && BILL[o.p.billing] && o.p.price !== 0) o.only = o.p.billing;
+  }
   return out;
+}
+// כלי בלי מתג: שורה אחת שאומרת איזה סוג חיוב נמצא במקור, כדי שמחיר שלא משתנה לא ייראה כמו טעות
+function billNote(shown) {
+  const paid = shown.filter((o) => o.p.price !== 0 && o.p.price !== null && o.p.price !== undefined);
+  if (!paid.length || shown.some((o) => o.bill)) return '';
+  const kinds = new Set(paid.map((o) => (has(o.p.billing) ? o.p.billing : '')));
+  if (kinds.size !== 1) return '';
+  const k = [...kinds][0];
+  const text = k === 'שנתי' ? 'המחירים בחיוב שנתי. מחיר חודשי לא נמצא במקור.'
+    : k === 'חודשי' ? 'המחירים בחיוב חודשי. מחיר שנתי לא נמצא במקור.'
+      : k === '' ? 'סוג החיוב, חודשי או שנתי, לא צוין במקור.' : '';
+  return text ? `<p class="bill-note">${text}</p>` : '';
 }
 const billAttr = (o) => (o.bill ? ` data-bill="${o.bill}"` : '');
 const billToggle = (name) => `<div class="bill" role="group" aria-label="סוג החיוב ב־${esc(name)}"><button type="button" class="bill-btn" data-bill-set="m" aria-pressed="true">חודשי</button><button type="button" class="bill-btn" data-bill-set="y" aria-pressed="false">שנתי</button></div>`;
@@ -215,7 +268,8 @@ function planPrice(o) {
   const priced = p.price !== null && p.price !== undefined;
   const main = priced ? `${num(p.price)}${cur ? ' ' + cur : ''}${has(p.price_period) ? ' ' + p.price_period : ''}` : (has(p.price_short) ? p.price_short : p.price_text);
   const terms = [];
-  if (has(p.billing) && !o.bill) terms.push(`חיוב ${p.billing}`);
+  if (o.only) terms.push(`חיוב ${p.billing}, מחיר ${p.billing === 'חודשי' ? 'שנתי' : 'חודשי'} לא נמצא`);
+  else if (has(p.billing) && !o.bill) terms.push(`חיוב ${p.billing}`);
   if (has(p.per)) terms.push(p.per);
   return `<span class="tier-line"${billAttr(o)}><span class="tier-price">${esc(main)}</span>${terms.length ? `<span class="tier-terms">${esc(terms.join(', '))}</span>` : ''}</span>`;
 }
@@ -243,14 +297,14 @@ function sheetHtml(t) {
   const more = (key, title, inner) => { if (inner) mores.push({ key, title, inner }); };
 
   const key = [
-    sec('sec-pro', 'מה עובד טוב', t.strengths?.length ? `<ul class="points" role="list">${t.strengths.map(pt).join('')}</ul>` : '', ICON.good),
-    sec('sec-con', 'מה חשוב לדעת', t.limitations?.length ? `<ul class="points" role="list">${t.limitations.map(pt).join('')}</ul>` : '', ICON.warn),
+    sec('sec-pro', `מה עובד טוב${t.strengths?.length ? ` <span class="sec-n">${t.strengths.length}</span>` : ''}`, t.strengths?.length ? `<ul class="points" role="list">${t.strengths.map(pt).join('')}</ul>` : '', ICON.good),
+    sec('sec-con', `מה חשוב לדעת${t.limitations?.length ? ` <span class="sec-n">${t.limitations.length}</span>` : ''}`, t.limitations?.length ? `<ul class="points" role="list">${t.limitations.map(pt).join('')}</ul>` : '', ICON.warn),
     sec('sec-who', 'למי זה מתאים', para(t.audience)),
   ].join('');
 
   const shown = shownPlans(t);
   const toggle = shown.some((o) => o.bill) ? billToggle(t.name) : '';
-  const price = sec('sec-price', 'מחיר', shown.length ? tiersHtml(shown) : '<p>המחיר לא אומת מול מקור רשמי.</p>', '', toggle);
+  const price = sec('sec-price', 'מחיר', shown.length ? tiersHtml(shown) : '<p>המחיר לא אומת מול מקור רשמי.</p>', '', toggle || billNote(shown));
 
   const api = t.developer_access?.api;
   const extra = [
@@ -283,7 +337,9 @@ function sheetHtml(t) {
   more('plans', 'מה כלול בכל תוכנית', plansFull);
   more('terms', 'פרטיות וזכויות', terms ? `<div class="facts">${terms}</div>` : '');
   more('about', 'פלטפורמות, עברית והחברה', about ? `<div class="facts">${about}</div>` : '');
-  more('src', 'מקורות', src || checked ? `${src}${checked}` : '');
+  // קישור לעמוד המקורות, ישר לכלי הזה (החלטת שקד, 19.11.2026)
+  const srcAll = `<p class="src-all"><a href="sources.html#tool-${t.id}">כל המקורות של ${esc(t.name)} בעמוד המקורות</a></p>`;
+  more('src', 'מקורות', src || checked ? `${src}${checked}${srcAll}` : '');
   // שורת הכפתורים נשארת במקומה, והחלק שנבחר נפתח מתחתיה.
   const moreHtml = mores.length ? `<div class="sheet-more">
           <div class="more-tabs">${mores.map((x) => `<button type="button" class="btn more-btn" aria-expanded="false" aria-controls="d${id}-${x.key}"><span>${x.title}</span>${ICON.chev}</button>`).join('')}</div>
@@ -297,16 +353,18 @@ function sheetHtml(t) {
       <div class="sheet-head-in">
         ${logoHtml(t)}
         <div class="sheet-id">
-          <h3 class="sheet-title" id="detail-${id}-h" tabindex="-1"><span class="num" aria-hidden="true">${pad(id)}</span><span class="sr-only">כל הפרטים על </span><bdi>${esc(t.name)}</bdi></h3>
+          <h3 class="sheet-title" id="detail-${id}-h" tabindex="-1"><span class="num" aria-hidden="true">${pad(t.no)}</span><span class="sr-only">כל הפרטים על </span><bdi>${esc(t.name)}</bdi></h3>
           <p class="sheet-role">${esc(t.role)}${former}</p>
-          ${tagsHtml(t, 9, ' sheet-tags')}
+          ${tagsHtml(t, 9, ' sheet-tags sheet-tags-head')}
         </div>
         <a class="btn btn-site" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">לאתר הרשמי<span class="sr-only"> של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
-        <button type="button" class="btn btn-close" data-sheet-close>${ICON.close}<span>סגירה</span></button>
+        <button type="button" class="btn btn-close" data-sheet-close>${ICON.close}<span class="close-t">סגירה</span></button>
       </div>
     </header>
     <div class="sheet-scroll" tabindex="-1">
       <div class="sheet-body">
+        ${sheetNotesHtml(t)}
+        ${tagsHtml(t, 9, ' sheet-tags sheet-tags-body')}
         ${key ? `<div class="sheet-row">${key}</div>` : ''}
         ${price}
         ${below ? `<div class="sheet-row sheet-row-b" style="--cols:${belowCols}">${below}</div>` : ''}
@@ -340,9 +398,9 @@ function startPrice(t) {
 // גרסה מצומצמת של הכלי, לתצוגות האינדקס והגלריה. מוסתרת בתצוגת הכרטיסים.
 function miniHtml(t, free) {
   return `<div class="mini">
-    <span class="mini-num" aria-hidden="true">${pad(t.id)}</span>
+    <span class="mini-num" aria-hidden="true">${pad(t.no)}</span>
     <span class="mini-logo">${logoHtml(t)}</span>
-    <h3 class="mini-name"><span class="sr-only">כלי מספר ${t.id}: </span><bdi>${esc(t.name)}</bdi></h3>
+    <h3 class="mini-name"><span class="sr-only">כלי מספר ${t.no}: </span><bdi>${esc(t.name)}</bdi></h3>
     <p class="mini-role">${esc(t.role)}</p>
     <p class="mini-price"><span>${esc(startPrice(t)[0])}</span>${startPrice(t)[1] ? `<small class="mini-note">${esc(startPrice(t)[1])}</small>` : ''}${free ? '<small class="mini-free">יש תוכנית חינמית</small>' : ''}</p>
     <button type="button" class="mini-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-${t.id}"><span class="sr-only">פרטים נוספים על ${esc(t.name)}</span>${ICON.expand}</button>
@@ -356,15 +414,17 @@ function cardHtml(t) {
   const search = [t.name, t.former_name, t.role, cat?.name].filter(has).join(' ').toLowerCase();
   const former = has(t.former_name) ? `<p class="former">לשעבר <bdi>${esc(t.former_name)}</bdi></p>` : '';
   return `
-<li class="card" id="tool-${t.id}" data-cat="${t.category_id}" data-flags="${flags}" data-search="${esc(search)}">
+<li class="card" id="tool-${t.id}" data-no="${pad(t.no)}" data-cat="${t.category_id}" data-flags="${flags}" data-search="${esc(search)}">
   <div class="card-head">
+    ${watchHtml(t, 'loud')}
     <div class="card-id${has(t.logo?.file) ? '' : ' no-logo'}">
       ${logoHtml(t)}
       <div class="card-meta">
-        <div class="card-top"><span class="num" aria-hidden="true">${pad(t.id)}</span>${tagsHtml(t)}</div>
-        <h3 class="name" tabindex="-1"><span class="sr-only">כלי מספר ${t.id}: </span><bdi>${esc(t.name)}</bdi></h3>
+        <div class="card-top"><span class="num" aria-hidden="true">${pad(t.no)}</span>${tagsHtml(t)}</div>
+        <h3 class="name" tabindex="-1"><span class="sr-only">כלי מספר ${t.no}: </span><bdi>${esc(t.name)}</bdi></h3>
         ${former}
         <p class="role">${esc(t.role)}</p>
+        ${watchHtml(t, 'quiet')}
       </div>
     </div>
     ${priceLine(t)}
@@ -400,9 +460,9 @@ const sections = liveCats.map((c) => {
 }).join('\n');
 
 // חלון החיפוש: שורה מוכנה לכל כלי, ואינדקס שהחיפוש המקומי קורא. אותו אינדקס ישמש גם מודל, כשיחובר.
-const finderResults = data.tools.slice().sort((a, b) => a.id - b.id).map((t) => {
+const finderResults = data.tools.slice().sort((a, b) => a.no - b.no).map((t) => {
   const cat = catById.get(t.category_id);
-  return `<li data-result="${t.id}"><button type="button" class="res" data-open-tool="${t.id}"><span class="num" aria-hidden="true">${pad(t.id)}</span><span class="res-text"><bdi class="res-name">${esc(t.name)}</bdi><span class="res-role">${esc(t.role)}</span><span class="res-why" data-why hidden></span></span><span class="res-cat">${esc(cat?.name)}</span></button></li>`;
+  return `<li data-result="${t.id}"><button type="button" class="res" data-open-tool="${t.id}"><span class="num" aria-hidden="true">${pad(t.no)}</span><span class="res-text"><bdi class="res-name">${esc(t.name)}</bdi><span class="res-role">${esc(t.role)}</span><span class="res-why" data-why hidden></span></span><span class="res-cat">${esc(cat?.name)}</span></button></li>`;
 }).join('');
 const low = (v) => String(v ?? '').toLowerCase();
 const searchIndex = data.tools.map((t) => ({
@@ -423,9 +483,12 @@ const catNav = data.categories.map((c) => {
     : `<li class="pending"><span class="num" aria-hidden="true">${pad(c.id)}</span><span>${esc(c.name)}</span><span class="cat-nav-count">עוד לא נחקרה</span></li>`;
 }).join('');
 
+// שמות קצרים לרשימה שבתחתית בלבד, כדי שכל קטגוריה תהיה בשורה אחת (בקשת שקד, 19.11.2026)
+const FOOT_SHORT = { 1: 'עוזרי שיחה ומחקר', 2: 'כתיבה ומצגות', 5: 'ממשקים ואתרים', 6: 'יצירת וידאו', 7: 'עריכת וידאו', 11: 'אפליקציות בלי קוד', 13: 'פגישות, תמלול וידע' };
+const footName = (c) => FOOT_SHORT[c.id] || c.name;
 const footerCats = data.categories.map((c) => {
   const n = toolsByCat.get(c.id)?.length || 0;
-  return `<li${n ? '' : ' class="pending"'}><span class="num" aria-hidden="true">${pad(c.id)}</span><span>${n ? `<a href="#cat-${c.id}">${esc(c.name)}</a>` : esc(c.name)}</span><span class="cat-nav-count">${n ? countTools(n) : 'עוד לא נחקרה'}</span></li>`;
+  return `<li${n ? '' : ' class="pending"'}><span class="num" aria-hidden="true">${pad(c.id)}</span><span>${n ? `<a href="#cat-${c.id}"${FOOT_SHORT[c.id] ? ` aria-label="${esc(c.name)}"` : ''}>${esc(footName(c))}</a>` : esc(footName(c))}</span><span class="cat-nav-count">${n ? countTools(n) : 'עוד לא נחקרה'}</span></li>`;
 }).join('');
 
 const heroSentence = liveCats.length === 1
@@ -439,7 +502,7 @@ const facts = [
 ];
 
 const html = `<!doctype html>
-<html lang="he" dir="rtl">
+<html lang="he" dir="rtl" data-card="c">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -482,7 +545,7 @@ const html = `<!doctype html>
     <div class="filters" id="filters" role="group" aria-labelledby="filters-h">
       <h2 class="filters-h" id="filters-h">סינון</h2>
       <div class="filters-row">
-        ${liveCats.length > 1 ? `<div class="filters-set" role="group" aria-label="קטגוריה">${liveCats.map((c) => `<button type="button" class="btn short" data-filter-cat="${c.id}" aria-pressed="false">${esc(c.name)}</button>`).join('')}</div>` : ''}
+        ${liveCats.length > 1 ? `<div class="cat-pick" id="cat-pick"><button type="button" class="cat-btn" id="filter-cat" value="" aria-haspopup="listbox" aria-expanded="false" aria-controls="cat-list"><span class="sr-only">קטגוריה: </span><span class="cat-current" id="cat-current">כל הקטגוריות</span></button><div class="cat-list" id="cat-list" role="listbox" aria-label="קטגוריה" hidden><button type="button" class="cat-opt" role="option" aria-selected="true" data-cat-opt=""><span class="cat-opt-name">כל הקטגוריות</span><span class="cat-opt-n">${countTools(data.tools.length)}</span></button>${liveCats.map((c) => `<button type="button" class="cat-opt" role="option" aria-selected="false" data-cat-opt="${c.id}"><span class="cat-opt-name">${esc(c.name)}</span><span class="cat-opt-n">${countTools(toolsByCat.get(c.id).length)}</span></button>`).join('')}</div></div>` : ''}
         <div class="filters-set" role="group" aria-label="מה יש בכלי">${SHORTCUTS.map(([k]) => `<button type="button" class="btn short" data-filter-flag="${k}" aria-pressed="false">${FLAGS.find((f) => f[0] === k)[1]}</button>`).join('')}</div>
       </div>
       <div class="filter-bar" id="filter-bar" hidden>
@@ -503,9 +566,10 @@ ${sections}
 <footer class="foot">
   <div class="wrap">
     <h2>הקטגוריות באטלס</h2>
-    <p class="foot-lede">${data.categories.length} קטגוריות מתוכננות, ${liveCats.length === 1 ? 'אחת מהן נחקרה' : liveCats.length + ' מהן נחקרו'} עד עכשיו.</p>
+    <p class="foot-lede">${liveCats.length === data.categories.length ? `${data.categories.length} קטגוריות, ${countTools(total)}.` : `${data.categories.length} קטגוריות מתוכננות, ${liveCats.length === 1 ? 'אחת מהן נחקרה' : liveCats.length + ' מהן נחקרו'} עד עכשיו.`}</p>
     <ol class="foot-cats" role="list">${footerCats}</ol>
     <p class="foot-note">המידע נכון ליום הבדיקה, ${dateLong(data.snapshot_date)}. מחירים ותנאים משתנים, ולכן כדאי לבדוק באתר הרשמי של כל כלי לפני החלטה. הלוגואים שייכים לחברות ומוצגים לצורך זיהוי בלבד.</p>
+    <p class="foot-src"><a href="sources.html">מאיפה המידע מגיע</a></p>
     <p class="foot-date">תאריך הבדיקה האחרונה: <time datetime="${esc(data.snapshot_date)}">${dateShort(data.snapshot_date)}</time></p>
   </div>
 </footer>
