@@ -468,6 +468,36 @@ function miniHtml(t, free) {
   </div>`;
 }
 
+// נתוני ההשוואה בין כלים: ערכים קצרים לכל שדה, מאותו קובץ נתונים. מה שלא אומת מסומן כך ולא מושמט.
+const firstSentence = (v, max = 120) => {
+  const x = String(v ?? '').replace(/\s+/g, ' ').trim();
+  if (!x) return '';
+  const cut = x.search(/[.!?](\s|$)/);
+  const one = cut === -1 ? x : x.slice(0, cut + 1);
+  return one.length > max ? `${one.slice(0, max - 1).trimEnd()}…` : one;
+};
+function compareRow(t) {
+  const fl = toolFlags(t);
+  const api = t.developer_access?.api;
+  return {
+    price: startPrice(t)[0],
+    free: fl.free ? 'יש' : 'לא נמצאה',
+    adv: (t.strengths || [])[0]?.lead || '',
+    lim: (t.limitations || [])[0]?.lead || '',
+    aud: firstSentence(t.audience, 110),
+    plat: (t.platforms?.items || []).join(', '),
+    heb: t.filters?.hebrew?.label || '',
+    stud: firstSentence(t.student_benefits?.text, 110),
+    api: has(api) ? api : 'לא אומת',
+    com: firstSentence(t.commercial_rights?.text, 110),
+  };
+}
+const COMPARE_ROWS = [['price', 'מחיר התחלתי'], ['free', 'תוכנית חינמית'], ['adv', 'יתרון בולט'], ['lim', 'חשוב לדעת'], ['aud', 'למי מתאים'], ['plat', 'פלטפורמות'], ['heb', 'עברית'], ['stud', 'סטודנטים'], ['api', 'ממשק למפתחים'], ['com', 'שימוש מסחרי']];
+const compareData = data.tools.map((t) => ({
+  id: t.id, no: pad(t.no), cat: t.category_id, name: t.name, url: t.url,
+  l: t.logo?.file || '', ld: t.logo?.file_dark || '', r: compareRow(t),
+}));
+
 function cardHtml(t) {
   const fl = toolFlags(t);
   const flags = FLAGS.map(([k]) => k).filter((k) => fl[k]).join(' ');
@@ -490,6 +520,7 @@ function cardHtml(t) {
     ${priceLine(t)}
     <div class="card-actions">
       <button type="button" class="btn btn-open" data-sheet-open aria-haspopup="dialog" aria-controls="detail-${t.id}"><span>פרטים נוספים</span><span class="sr-only"> על ${esc(t.name)}</span>${ICON.expand}</button>
+      <button type="button" class="btn btn-cmp" data-compare="${t.id}" aria-pressed="false"><span class="cmp-box" aria-hidden="true"></span><span>השוואה</span><span class="sr-only"> ${esc(t.name)} עם כלים אחרים</span></button>
       <div class="card-quick">
         <a class="btn btn-site btn-ico" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer" title="לאתר הרשמי">${ICON.ext}<span class="sr-only">לאתר הרשמי של ${esc(t.name)} (נפתח בלשונית חדשה)</span></a>
       </div>
@@ -685,6 +716,24 @@ ${sections}
     </div>
   </div>
 </dialog>
+<div class="cmp-tray" id="cmp-tray" hidden role="region" aria-label="השוואה בין כלים">
+  <ul class="cmp-chips" id="cmp-chips" role="list"></ul>
+  <p class="cmp-hint" id="cmp-hint" role="status" aria-live="polite"></p>
+  <button type="button" class="btn btn-primary" id="cmp-go">השוואה</button>
+  <button type="button" class="btn btn-quiet" id="cmp-clear">ניקוי</button>
+</div>
+
+<dialog class="sheet cmp" id="cmp" aria-labelledby="cmp-title">
+  <header class="sheet-head">
+    <div class="sheet-head-in">
+      <div class="sheet-id"><h3 class="sheet-title" id="cmp-title" tabindex="-1">השוואה בין כלים</h3><p class="sheet-role">מה שלא אומת במחקר מסומן באפור.</p></div>
+      <button type="button" class="btn btn-quiet cmp-diff" id="cmp-diff" aria-pressed="false">הצגת הבדלים בלבד</button>
+      <button type="button" class="btn btn-close" data-sheet-close title="סגירה">${ICON.close}<span class="close-t">סגירה</span></button>
+    </div>
+  </header>
+  <div class="sheet-scroll" tabindex="-1"><div class="cmp-wrap" id="cmp-body"></div></div>
+</dialog>
+<script type="application/json" id="compare-data">${JSON.stringify({ rows: COMPARE_ROWS, tools: compareData }).replace(/</g, '\\u003c')}</script>
 <script type="application/json" id="search-index">${JSON.stringify(searchIndex).replace(/</g, '\\u003c')}</script>
 
 <script src="assets/app.js?v=${jsV}" defer></script>${communityApi ? `
