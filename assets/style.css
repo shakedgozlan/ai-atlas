@@ -424,8 +424,6 @@ html:has(.sheet[open]){overflow:hidden}
 .sec>p+p{margin-top:6px}
 .sec-meta{color:var(--ink-soft);margin-bottom:12px}
 .points{display:grid}
-/* קו דק מתחת לכל נקודה, כדי שכל אחת תיקרא כפריט נפרד */
-.points>li{border-bottom:1px solid var(--line)}
 
 .pt summary{display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;list-style:none;min-height:34px;padding:4px 0;padding-inline-end:4px}
 .pt summary::-webkit-details-marker{display:none}
@@ -605,6 +603,8 @@ html:not(.js) #finder-open{display:none}
   .sheet-body,.sheet-head{--t-sheet:1.0625rem}
   .sheet-body{gap:40px}
   .sheet-notes{margin-bottom:0}
+  /* קו דק מתחת לכל נקודה, בפלאפון בלבד, כדי שכל אחת תיקרא כפריט נפרד */
+  .points>li{border-bottom:1px solid var(--line)}
   .sheet-notes+.sheet-tags-body{margin-top:-26px}
   .sheet-row{row-gap:40px}
   .sec h4{font-size:1rem}
